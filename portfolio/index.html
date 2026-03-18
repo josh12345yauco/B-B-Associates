@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kitchen & Bathroom Remodeling Portfolio | Montgomery County & Bucks County | B&B Associates Creations</title>
+  <meta name="description" content="Browse 30+ completed kitchen and bathroom remodeling projects across Montgomery County, Bucks County, and the Main Line. See real results from Blue Bell, Doylestown, Wayne, Ambler, and beyond.">
+  <link rel="canonical" href="https://bbassociatescreations.com/portfolio/">
+  <meta property="og:title" content="Project Portfolio | B&B Associates Creations">
+  <meta property="og:description" content="Browse 30+ luxury kitchen and bathroom remodeling projects across the Philadelphia suburbs.">
+  <meta property="og:image" content="https://bbassociatescreations.com/IMAGES/Custom-Kitchen-Ambler-Pa.png">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://bbassociatescreations.com/portfolio/">
+  <meta property="og:site_name" content="B&amp;B Associates Creations">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Kitchen &amp; Bathroom Remodeling Portfolio | B&amp;B Associates Creations">
+  <meta name="twitter:description" content="Browse 30+ luxury kitchen and bathroom remodeling projects across the Philadelphia suburbs.">
+  <meta name="twitter:image" content="https://bbassociatescreations.com/IMAGES/Custom-Kitchen-Ambler-Pa.png">
+
+  <!-- Geo -->
+  <meta name="geo.region" content="US-PA">
+  <meta name="geo.placename" content="Ambler, Pennsylvania">
+  <meta name="geo.position" content="40.1537;-75.2249">
+  <meta name="ICBM" content="40.1537, -75.2249">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/design-system.css">
+  <link rel="stylesheet" href="../css/components.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "B&B Associates Creations Portfolio",
+    "description": "Luxury kitchen and bathroom remodeling projects across the Philadelphia Main Line, Bucks County, and Montgomery County",
+    "url": "https://bbassociatescreations.com/portfolio/",
+    "provider": {
+      "@type": "HomeAndConstructionBusiness",
+      "name": "B&B Associates Creations",
+      "telephone": "+12674028758"
+    }
+  }
+  </script>
+
+  <!-- BreadcrumbList Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://bbassociatescreations.com/" },
+      { "@type": "ListItem", "position": 2, "name": "Portfolio", "item": "https://bbassociatescreations.com/portfolio/" }
+    ]
+  }
+  </script>
+
+  <style>
+    /* ── PORTFOLIO HEADER (solid background) ──────── */
+    .portfolio-header {
+      position: relative;
+      min-height: 320px;
+      padding: var(--sp-10) var(--grid-padding) var(--sp-6);
+      text-align: center;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: #1A1C23;
+    }
+    .portfolio-header > .section-label,
+    .portfolio-header > .portfolio-header-title,
+    .portfolio-header > .portfolio-header-sub,
+    .portfolio-header > .portfolio-filter-wrap,
+    .portfolio-header > .portfolio-count {
+      position: relative;
+      z-index: 2;
+    }
+    .portfolio-header .section-label {
+      color: var(--color-gold);
+      margin-bottom: var(--sp-3);
+    }
+    .portfolio-header-title {
+      font-family: var(--font-display);
+      font-size: var(--text-h1);
+      font-weight: var(--weight-light);
+      font-style: italic;
+      color: var(--color-white);
+      line-height: var(--leading-display);
+      margin-bottom: var(--sp-2);
+    }
+    .portfolio-header-sub {
+      font-family: var(--font-mono);
+      font-size: var(--text-label);
+      letter-spacing: var(--tracking-wider);
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.7);
+      margin-bottom: var(--sp-6);
+    }
+
+    /* ── FILTER BAR (centered) ───────────────────── */
+    .portfolio-filter-wrap {
+      display: flex;
+      justify-content: center;
+      margin-bottom: var(--sp-5);
+    }
+    .portfolio-header .filter-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--sp-3);
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+      background: transparent;
+      border: none;
+      position: static;
+    }
+    .portfolio-count {
+      font-family: var(--font-mono);
+      font-size: var(--text-label);
+      color: rgba(255,255,255,0.6);
+      letter-spacing: var(--tracking-wide);
+      margin-bottom: var(--sp-6);
+    }
+
+    /* ── PORTFOLIO GRID (white background) ────────── */
+    .portfolio-grid-section { padding: var(--sp-8) 0 var(--sp-10); background: #ffffff; }
+
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+      padding: 0 var(--grid-padding);
+    }
+
+    .portfolio-grid-item {
+      display: block;
+    }
+
+    .portfolio-card {
+      position: relative;
+      overflow: hidden;
+      border-radius: 0;
+      cursor: pointer;
+      background: #ffffff;
+      border: 1px solid #e5e7eb;
+      display: flex;
+      flex-direction: column;
+      text-decoration: none;
+      color: inherit;
+    }
+    .portfolio-card::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      pointer-events: none;
+      z-index: 2;
+      background:
+        linear-gradient(#9ca3af,#9ca3af) left top/18px 1px no-repeat,
+        linear-gradient(#9ca3af,#9ca3af) left top/1px 18px no-repeat,
+        linear-gradient(#9ca3af,#9ca3af) right top/18px 1px no-repeat,
+        linear-gradient(#9ca3af,#9ca3af) right top/1px 18px no-repeat,
+        linear-gradient(#9ca3af,#9ca3af) left bottom/18px 1px no-repeat,
+        linear-gradient(#9ca3af,#9ca3af) left bottom/1px 18px no-repeat,
+        linear-gradient(#9ca3af,#9ca3af) right bottom/18px 1px no-repeat,
+        linear-gradient(#9ca3af,#9ca3af) right bottom/1px 18px no-repeat;
+    }
+    .portfolio-card:hover { border-color: var(--color-gold-border); }
+
+    .portfolio-card-img-wrap {
+      position: relative;
+      padding: 20px;
+    }
+    .portfolio-card-img-inner {
+      aspect-ratio: 3/4;
+      overflow: hidden;
+      border: 1px solid #d1d5db;
+      position: relative;
+    }
+    .portfolio-card-img-inner img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform var(--dur-slow) var(--ease-out-quart), opacity 0.3s ease;
+    }
+    .portfolio-card-img-inner.has-video-playing img {
+      opacity: 0;
+      pointer-events: none;
+    }
+    .portfolio-card:hover .portfolio-card-img-inner img { transform: scale(1.04); }
+    .portfolio-card-img-inner video,
+    .portfolio-card-img-inner .portfolio-card-video {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform var(--dur-slow) var(--ease-out-quart), opacity 0.3s ease;
+      opacity: 0;
+    }
+    .portfolio-card-img-inner .portfolio-card-video.is-visible {
+      opacity: 1;
+    }
+    .portfolio-card:hover .portfolio-card-img-inner video { transform: scale(1.04); }
+
+    /* Hover gallery: show img on top so next image is visible */
+    .portfolio-card.portfolio-card-gallery-hover .portfolio-card-img-inner img {
+      opacity: 1 !important;
+      pointer-events: auto;
+    }
+    .portfolio-card.portfolio-card-gallery-hover .portfolio-card-img-inner .portfolio-card-video {
+      opacity: 0 !important;
+    }
+
+    .portfolio-card-body {
+      padding: var(--sp-5);
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: var(--sp-4);
+      flex: 1;
+    }
+    .portfolio-card-title {
+      font-family: var(--font-display);
+      font-size: 18px;
+      font-style: italic;
+      color: var(--color-bg);
+      margin: 0 0 var(--sp-1);
+      line-height: 1.2;
+    }
+    .portfolio-card-meta {
+      font-family: var(--font-mono);
+      font-size: 10px;
+      letter-spacing: var(--tracking-wider);
+      text-transform: uppercase;
+      color: var(--color-text-dim);
+      margin: 0;
+    }
+    .portfolio-card-arrow {
+      flex-shrink: 0;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      border: 1px solid #e5e7eb;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--color-bg);
+      transition: background var(--dur-fast) ease, border-color var(--dur-fast) ease, color var(--dur-fast) ease;
+    }
+    .portfolio-card-arrow svg {
+      width: 18px;
+      height: 18px;
+    }
+    .portfolio-card:hover .portfolio-card-arrow {
+      background: var(--color-gold);
+      border-color: var(--color-gold);
+      color: #fff;
+    }
+
+    /* ── LOAD MORE ──────────────────────────────── */
+    .portfolio-load-more {
+      text-align: center;
+      padding: var(--sp-8) var(--grid-padding);
+    }
+
+    /* ── HIDDEN (filtered) ──────────────────────── */
+    .portfolio-grid-item.hidden { display: none; }
+
+    /* ── RESPONSIVE ─────────────────────────────── */
+    @media (max-width: 992px) { .portfolio-grid { grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 768px) { .portfolio-grid { grid-template-columns: 1fr; gap: 20px; } }
+
+    /* ── FILTER PILLS (dark header) ───────────────── */
+    .portfolio-header .filter-pill {
+      color: rgba(255,255,255,0.8);
+      border-color: rgba(255,255,255,0.35);
+      border-radius: 0;
+    }
+    .portfolio-header .filter-pill:hover {
+      color: var(--color-gold);
+      border-color: var(--color-gold-border);
+    }
+    .portfolio-header .filter-pill.active {
+      color: var(--color-bg);
+      background: var(--color-gold);
+      border-color: var(--color-gold);
+    }
+    .portfolio-load-more p { color: #666; }
+
+    /* ── PHIL BUTTONS ─────────────────────────────── */
+    .phil-btn { position: relative; display: inline-flex; align-items: center; justify-content: center; padding: 16px 36px; font-family: var(--font-sans); font-size: 13px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; text-decoration: none; overflow: hidden; border: none; background: transparent; cursor: pointer; transition: color 0.5s cubic-bezier(0.77,0,0.175,1); }
+    .phil-btn-fill { color: #0a0a0a; }
+    .phil-btn-fill .phil-fill { position: absolute; inset: 0; background: #fff; transition: opacity 0.5s cubic-bezier(0.77,0,0.175,1); z-index: 0; }
+    .phil-btn-fill .phil-label { position: relative; z-index: 3; }
+    .phil-btn-fill::before { content: ''; position: absolute; inset: 0; border: 0.5px solid rgba(255,255,255,0.35); pointer-events: none; z-index: 1; }
+    .phil-btn-fill::after { content: ''; position: absolute; inset: 4px; pointer-events: none; z-index: 2; opacity: 0; transition: opacity 0.5s cubic-bezier(0.77,0,0.175,1); background: linear-gradient(#fff,#fff) left top/12px 2px no-repeat, linear-gradient(#fff,#fff) left top/2px 12px no-repeat, linear-gradient(#fff,#fff) right top/12px 2px no-repeat, linear-gradient(#fff,#fff) right top/2px 12px no-repeat, linear-gradient(#fff,#fff) left bottom/12px 2px no-repeat, linear-gradient(#fff,#fff) left bottom/2px 12px no-repeat, linear-gradient(#fff,#fff) right bottom/12px 2px no-repeat, linear-gradient(#fff,#fff) right bottom/2px 12px no-repeat; }
+    .phil-btn-fill:hover .phil-fill { opacity: 0; }
+    .phil-btn-fill:hover { color: #fff; }
+    .phil-btn-fill:hover::after { opacity: 1; }
+    .phil-btn-fill-dark { color: #ffffff; }
+    .phil-btn-fill-dark .phil-fill { background: #1A1C23; }
+    .phil-btn-fill-dark .phil-label { color: #ffffff; }
+    .phil-btn-fill-dark::before { border-color: rgba(26,28,35,0.3); }
+    .phil-btn-fill-dark::after { background: linear-gradient(#1A1C23,#1A1C23) left top/12px 2px no-repeat, linear-gradient(#1A1C23,#1A1C23) left top/2px 12px no-repeat, linear-gradient(#1A1C23,#1A1C23) right top/12px 2px no-repeat, linear-gradient(#1A1C23,#1A1C23) right top/2px 12px no-repeat, linear-gradient(#1A1C23,#1A1C23) left bottom/12px 2px no-repeat, linear-gradient(#1A1C23,#1A1C23) left bottom/2px 12px no-repeat, linear-gradient(#1A1C23,#1A1C23) right bottom/12px 2px no-repeat, linear-gradient(#1A1C23,#1A1C23) right bottom/2px 12px no-repeat; }
+    .phil-btn-fill-dark:hover .phil-fill { opacity: 0; }
+    .phil-btn-fill-dark:hover .phil-label { color: #1A1C23; }
+    .phil-btn-fill-dark:hover::after { opacity: 1; }
+
+    /* ── CORNER TICKS ─────────────────────────────── */
+    .corner-ticks-white { position: relative; }
+    .corner-ticks-white::before { content: ''; position: absolute; inset: 10px; pointer-events: none; z-index: 1; background: linear-gradient(#fff,#fff) left top/14px 1.5px no-repeat, linear-gradient(#fff,#fff) left top/1.5px 14px no-repeat, linear-gradient(#fff,#fff) right top/14px 1.5px no-repeat, linear-gradient(#fff,#fff) right top/1.5px 14px no-repeat, linear-gradient(#fff,#fff) left bottom/14px 1.5px no-repeat, linear-gradient(#fff,#fff) left bottom/1.5px 14px no-repeat, linear-gradient(#fff,#fff) right bottom/14px 1.5px no-repeat, linear-gradient(#fff,#fff) right bottom/1.5px 14px no-repeat; }
+  </style>
+</head>
+<body>
+
+  <!-- ── NAVIGATION ──────────────────────────────────────── -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <a href="../" class="nav-logo" aria-label="B&B Associates Creations home">
+      <img src="../IMAGES/B&amp;B Logo with Tagline_Solid+white.png" alt="B&B Associates Creations" class="nav-logo-img">
+    </a>
+
+    <div class="nav-links" role="list">
+      <a href="../" class="nav-link" role="listitem">Home</a>
+      <a href="../services.html" class="nav-link" role="listitem">Services</a>
+      <div class="nav-item" role="listitem">
+        <a href="index.html" class="nav-link has-dropdown">Portfolio <span class="dropdown-arrow"></span></a>
+        <div class="nav-dropdown">
+          <a href="index.html">All Projects</a>
+          <a href="index.html?filter=kitchen">Kitchens</a>
+          <a href="index.html?filter=bathroom">Bathrooms</a>
+        </div>
+      </div>
+      <div class="nav-item" role="listitem">
+        <a href="../about.html" class="nav-link has-dropdown">Company <span class="dropdown-arrow"></span></a>
+        <div class="nav-dropdown">
+          <a href="../about.html">About B&amp;B</a>
+          <a href="../reviews.html">Testimonials</a>
+          <a href="../service-areas/main-line-pa-remodeling.html">Service Areas</a>
+        </div>
+      </div>
+      <a href="../contact.html" class="nav-link" role="listitem">Contact</a>
+    </div>
+
+    <div class="nav-right">
+      <a href="tel:+12674028758" class="nav-phone">Call Now</a>
+      <a href="../estimator.html" class="nav-cta">Online Estimator</a>
+    </div>
+
+    <button class="nav-hamburger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Nav Overlay -->
+  <div class="nav-mobile" role="dialog" aria-label="Mobile navigation">
+    <nav class="nav-mobile-links">
+      <a href="../" class="nav-mobile-link">Home</a>
+      <a href="../services.html" class="nav-mobile-link">Services</a>
+      <div class="nav-mobile-item">
+        <a class="nav-mobile-link has-dropdown">Portfolio <span class="mobile-dropdown-arrow"></span></a>
+        <div class="mobile-dropdown">
+          <a href="index.html">All Projects</a>
+          <a href="index.html?filter=kitchen">Kitchens</a>
+          <a href="index.html?filter=bathroom">Bathrooms</a>
+        </div>
+      </div>
+      <div class="nav-mobile-item">
+        <a class="nav-mobile-link has-dropdown">Company <span class="mobile-dropdown-arrow"></span></a>
+        <div class="mobile-dropdown">
+          <a href="../about.html">About B&amp;B</a>
+          <a href="../reviews.html">Testimonials</a>
+          <a href="../service-areas/main-line-pa-remodeling.html">Service Areas</a>
+        </div>
+      </div>
+      <a href="../contact.html" class="nav-mobile-link">Contact</a>
+      <a href="../estimator.html" class="nav-mobile-link">Online Estimator</a>
+    </nav>
+    <div class="nav-mobile-footer">
+      <a href="tel:+12674028758" class="nav-mobile-phone">267.402.8758</a>
+      <div class="nav-mobile-socials">
+        <a href="https://instagram.com/bbassociatescreations" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://facebook.com/bbassociatescreations" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- PORTFOLIO HEADER (solid background) -->
+    <header class="portfolio-header" aria-labelledby="portfolio-heading">
+      <p class="section-label">Our Portfolio</p>
+      <h1 id="portfolio-heading" class="portfolio-header-title">Project Gallery</h1>
+      <p class="portfolio-header-sub">All Projects</p>
+
+      <div class="portfolio-filter-wrap">
+        <div class="filter-bar" role="toolbar" aria-label="Filter projects">
+          <button class="filter-pill active" data-filter="all">All</button>
+          <button class="filter-pill" data-filter="kitchen">Kitchens</button>
+          <button class="filter-pill" data-filter="bathroom">Bathrooms</button>
+        </div>
+      </div>
+      <p id="portfolio-count" class="portfolio-count"></p>
+    </header>
+
+    <!-- PORTFOLIO GRID -->
+    <section class="portfolio-grid-section" aria-labelledby="portfolio-grid-heading">
+      <h2 id="portfolio-grid-heading" class="sr-only">Project Gallery</h2>
+      <div class="portfolio-grid reveal-group" id="portfolio-grid">
+        <!-- Rendered by JS -->
+      </div>
+      <div class="portfolio-load-more">
+        <a href="../estimator.html" class="phil-btn phil-btn-fill phil-btn-fill-dark"><span class="phil-fill"></span><span class="phil-label">Start Your Own Project</span></a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- CTA PANEL -->
+  <section class="cta-panel corner-ticks-white" aria-labelledby="cta-heading">
+    <p class="section-label reveal">Start Your Project</p>
+    <h2 id="cta-heading" class="cta-panel-title headline-reveal"><span class="line-wrap"><span class="line-inner">Ready to Create Something</span></span> <span class="line-wrap"><span class="line-inner">This Beautiful?</span></span></h2>
+    <p class="cta-panel-body reveal">The consultation is free. We'll visit your home, understand your vision, and design something extraordinary.</p>
+    <div class="cta-panel-actions reveal">
+      <a href="../estimator.html" class="phil-btn phil-btn-fill"><span class="phil-fill"></span><span class="phil-label">Get Your Free Estimate</span></a>
+      <p class="cta-panel-secondary">Or call: <a href="tel:+12674028758">267.402.8758</a></p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top">
+        <h2 class="footer-hero-title">DISCOVER THE WORLD OF POSSIBILITIES WITH B&amp;B</h2>
+        <p class="footer-hero-sub">Luxury kitchen &amp; bathroom remodeling across Montgomery County, Bucks County, and the Philadelphia Main Line.</p>
+      </div>
+
+      <div class="footer-grid">
+        <div class="footer-col">
+          <p class="footer-col-title">Navigation</p>
+          <nav class="footer-links" aria-label="Footer navigation">
+            <a href="../" class="footer-link">Home</a>
+            <a href="../services.html" class="footer-link">Services</a>
+            <a href="../showroom.html" class="footer-link">Showroom</a>
+            <a href="index.html" class="footer-link">Portfolio</a>
+            <a href="../about.html" class="footer-link">About</a>
+            <a href="../contact.html" class="footer-link">Contact</a>
+            <a href="../estimator.html" class="footer-link">Online Estimator</a>
+            <a href="../journal/index.html" class="footer-link">Blog</a>
+          </nav>
+        </div>
+
+        <div class="footer-col">
+          <p class="footer-col-title">Services</p>
+          <nav class="footer-links" aria-label="Services navigation">
+            <a href="../services.html" class="footer-link">Luxury Kitchen Remodeling</a>
+            <a href="../services.html" class="footer-link">Custom Bathroom Renovations</a>
+            <a href="../showroom.html" class="footer-link">Ambler Design Showroom</a>
+            <a href="../reviews.html" class="footer-link">Client Reviews</a>
+          </nav>
+        </div>
+
+        <div class="footer-col">
+          <p class="footer-col-title">Service Areas</p>
+          <nav class="footer-links" aria-label="Service areas navigation">
+            <p class="footer-area-group">Montgomery County</p>
+            <a href="../service-areas/ambler-pa-remodeling-contractor.html" class="footer-link">Ambler PA</a>
+            <a href="../service-areas/blue-bell-north-wales-remodeling.html" class="footer-link">Blue Bell PA</a>
+            <a href="../service-areas/blue-bell-north-wales-remodeling.html" class="footer-link">North Wales PA</a>
+            <a href="../service-areas/lower-gwynedd-pa-remodeling.html" class="footer-link">Lower Gwynedd PA</a>
+            <p class="footer-area-group">Bucks County</p>
+            <a href="../service-areas/newtown-pa-kitchen-bathroom-remodeling.html" class="footer-link">Newtown PA</a>
+            <a href="../service-areas/doylestown-new-hope-kitchen-remodeling.html" class="footer-link">Doylestown PA</a>
+            <a href="../service-areas/doylestown-new-hope-kitchen-remodeling.html" class="footer-link">New Hope PA</a>
+            <p class="footer-area-group">Main Line</p>
+            <a href="../service-areas/wayne-villanova-bathroom-remodeling.html" class="footer-link">Wayne PA</a>
+            <a href="../service-areas/wayne-villanova-bathroom-remodeling.html" class="footer-link">Villanova PA</a>
+            <a href="../service-areas/main-line-pa-remodeling.html" class="footer-link">Bryn Mawr PA</a>
+            <a href="../service-areas/main-line-pa-remodeling.html" class="footer-link" style="color:var(--color-gold);">View All Areas →</a>
+          </nav>
+        </div>
+
+        <div class="footer-col footer-col-stay-informed">
+          <p class="footer-col-title">Stay Connected</p>
+          <p class="footer-newsletter-sub">Design insights, project reveals, and exclusive updates — delivered monthly.</p>
+          <form class="footer-newsletter-form" aria-label="Newsletter signup">
+            <input type="email" placeholder="Your email address" required>
+            <button type="submit">Subscribe</button>
+          </form>
+          <div class="footer-connect-inline">
+            <div class="footer-contact-line">
+              <a href="tel:+12674028758">267.402.8758</a>
+            </div>
+            <div class="footer-contact-line">
+              <a href="mailto:bb3associates@gmail.com">bb3associates@gmail.com</a>
+            </div>
+            <div class="footer-contact-line">
+              <address>1147 E Welsh Rd, Ambler, PA 19002</address>
+            </div>
+            <div class="footer-social-row">
+              <a href="https://instagram.com/bbassociatescreations" class="footer-social-link" target="_blank" rel="noopener" aria-label="B&amp;B Associates on Instagram">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                Instagram
+              </a>
+              <a href="https://facebook.com/bbassociatescreations" class="footer-social-link" target="_blank" rel="noopener" aria-label="B&amp;B Associates on Facebook">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                Facebook
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">&copy; 2026 B&amp;B Associates Creations LLC. All Rights Reserved.</p>
+        <p class="footer-tagline-right">Luxury Design-Build Remodeling — Philadelphia, PA</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox -->
+  <div id="lightbox" style="display:none;position:fixed;inset:0;background:rgba(26,28,35,0.96);z-index:9999;align-items:center;justify-content:center;">
+    <img id="lightbox-img" src="" alt="Project detail" style="max-width:90vw;max-height:90vh;object-fit:contain;">
+    <button id="lightbox-close" aria-label="Close" style="position:fixed;top:20px;right:24px;background:none;border:none;color:#fff;font-size:32px;cursor:pointer;">×</button>
+  </div>
+
+  <!-- Visually hidden heading helper -->
+  <style>.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;}</style>
+
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script>if(typeof gsap!=='undefined'&&typeof ScrollTrigger!=='undefined')gsap.registerPlugin(ScrollTrigger);</script>
+  <script src="../js/projects-data.js"></script>
+  <script src="../js/data-layer.js"></script>
+  <script src="../js/init.js"></script>
+  <script src="../js/analytics.js"></script>
+  <script>
+    const grid = document.getElementById('portfolio-grid');
+    const countEl = document.getElementById('portfolio-count');
+    let activeFilter = 'all';
+
+    // Read URL param for pre-filtering
+    const urlParams = new URLSearchParams(window.location.search);
+    const filterParam = urlParams.get('filter');
+    if (filterParam) activeFilter = filterParam;
+
+    function renderGrid(filter) {
+      const locationFilters = ['montgomery-county', 'bucks-county', 'main-line'];
+      // Use projects array (already patched from localStorage by projects-data.js)
+      const allVisible = projects.filter(p => !p._hidden);
+      let filtered;
+      if (filter === 'all') {
+        // If admin has defined a custom order (bb_projects in localStorage), respect it exactly
+        const hasAdminOrder = !!localStorage.getItem('bb_projects');
+        if (hasAdminOrder) {
+          filtered = allVisible;
+        } else {
+          // Default interleave: video projects first, kitchen/bath alternating
+          const withVideo = allVisible.filter(p => p.video);
+          const withoutVideo = allVisible.filter(p => !p.video);
+          const kitchens = withVideo.filter(p => p.type === 'Kitchen');
+          const bathrooms = withVideo.filter(p => p.type === 'Bathroom');
+          const interleaved = [];
+          const maxLen = Math.max(bathrooms.length, kitchens.length);
+          for (let i = 0; i < maxLen; i++) {
+            if (bathrooms[i]) interleaved.push(bathrooms[i]);
+            if (kitchens[i]) interleaved.push(kitchens[i]);
+          }
+          filtered = [...interleaved, ...withoutVideo];
+        }
+      } else {
+        filtered = allVisible.filter(p => {
+            if (locationFilters.includes(filter)) {
+              return p.tags.includes(filter) || (p.county && p.county.toLowerCase().replace(/\s+/g, '-') === filter);
+            }
+            return p.tags.includes(filter);
+          });
+      }
+
+      grid.innerHTML = filtered.map(p => {
+        const gallery = p.images && p.images.length ? p.images : [p.thumbnail];
+        const galleryAttr = JSON.stringify(gallery).replace(/"/g, '&quot;');
+        return `
+        <div class="portfolio-grid-item" data-tags="${p.tags.join(' ')}">
+          <a href="project.html?id=${p.id}" class="portfolio-card" aria-label="${p.title} — ${p.type} remodel by B&amp;B Associates Creations" data-gallery="${galleryAttr}" data-thumbnail="${p.thumbnail}" data-gallery-index="0">
+            <div class="portfolio-card-img-wrap">
+              <div class="portfolio-card-img-inner">
+                ${p.video
+                  ? `<img
+                       src="${p.thumbnail}"
+                       alt="${p.style} ${p.type.toLowerCase()} remodel by B&amp;B Associates Creations"
+                       loading="lazy"
+                     >
+                     <video
+                       class="portfolio-card-video"
+                       preload="none"
+                       muted
+                       loop
+                       playsinline
+                       poster="${p.thumbnail}"
+                       data-video-src="${p.video}"
+                       aria-hidden="true"
+                     ></video>`
+                  : `<img
+                       src="${p.thumbnail}"
+                       alt="${p.style} ${p.type.toLowerCase()} remodel by B&amp;B Associates Creations"
+                       loading="lazy"
+                     >`
+                }
+              </div>
+            </div>
+            <div class="portfolio-card-body">
+              <div>
+                <h2 class="portfolio-card-title">${p.title}</h2>
+                <p class="portfolio-card-meta">${p.type.toUpperCase()} REMODEL</p>
+              </div>
+              <span class="portfolio-card-arrow" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </span>
+            </div>
+          </a>
+        </div>
+      `;
+      }).join('');
+
+      countEl.textContent = `Showing ${filtered.length} of ${projects.length} projects`;
+
+      setupPortfolioVideoObserver();
+      setupPortfolioCardReveal();
+      setupPortfolioGalleryHover();
+    }
+
+    function setupPortfolioGalleryHover() {
+      grid.querySelectorAll('.portfolio-card[data-gallery]').forEach(card => {
+        const galleryJson = card.getAttribute('data-gallery');
+        const thumbnail = card.getAttribute('data-thumbnail');
+        if (!galleryJson || !thumbnail) return;
+        let gallery;
+        try {
+          gallery = JSON.parse(galleryJson);
+        } catch (e) {
+          return;
+        }
+        if (!Array.isArray(gallery) || gallery.length <= 1) return;
+        const img = card.querySelector('.portfolio-card-img-inner img');
+        if (!img) return;
+
+        card.addEventListener('mouseenter', () => {
+          card.classList.add('portfolio-card-gallery-hover');
+          const current = parseInt(card.getAttribute('data-gallery-index') || '0', 10);
+          const next = (current + 1) % gallery.length;
+          card.setAttribute('data-gallery-index', String(next));
+          img.src = gallery[next];
+        });
+
+        card.addEventListener('mouseleave', () => {
+          card.classList.remove('portfolio-card-gallery-hover');
+          card.setAttribute('data-gallery-index', '0');
+          img.src = thumbnail;
+        });
+      });
+    }
+
+    function setupPortfolioCardReveal() {
+      if (typeof gsap === 'undefined' || typeof ScrollTrigger === 'undefined') return;
+      const prev = ScrollTrigger.getById('portfolio-cards');
+      if (prev) prev.kill();
+      const children = grid.querySelectorAll('.portfolio-grid-item');
+      if (!children.length) return;
+      gsap.from(children, {
+        scrollTrigger: {
+          trigger: grid,
+          start: 'top 88%',
+          id: 'portfolio-cards'
+        },
+        y: 56,
+        opacity: 0,
+        scale: 0.96,
+        duration: 0.9,
+        stagger: 0.1,
+        ease: 'power3.out'
+      });
+    }
+
+    const PLAYING_CAP = 6;
+    const VIEWPORT_VIDEO_MARGIN = 150;
+    let playingVideos = [];
+    let videoScrollRafId = null;
+    let videoScrollListener = null;
+
+    function isCardInViewport(card, margin) {
+      const rect = card.getBoundingClientRect();
+      return rect.top < window.innerHeight + margin && rect.bottom > -margin;
+    }
+
+    function runPortfolioVideoViewportCheck() {
+      const cards = grid.querySelectorAll('.portfolio-card');
+      const inViewWithVideo = [];
+
+      cards.forEach(card => {
+        const video = card.querySelector('.portfolio-card-video[data-video-src]');
+        if (!video) return;
+        const inner = video.closest('.portfolio-card-img-inner');
+        const inView = isCardInViewport(card, VIEWPORT_VIDEO_MARGIN);
+
+        if (inView) {
+          if (!video.src || video.src.length === 0) {
+            const src = video.dataset.videoSrc;
+            video.src = src;
+            video.load();
+            video.addEventListener('canplay', function onCanplay() {
+              video.removeEventListener('canplay', onCanplay);
+              runPortfolioVideoViewportCheck();
+            }, { once: true });
+          } else {
+            inViewWithVideo.push({ card, video, inner });
+          }
+        } else {
+          video.pause();
+          video.classList.remove('is-visible');
+          if (inner) inner.classList.remove('has-video-playing');
+          const idx = playingVideos.findIndex(p => p.video === video);
+          if (idx !== -1) playingVideos.splice(idx, 1);
+        }
+      });
+
+      applyPortfolioVideoPlayingCap(inViewWithVideo);
+    }
+
+    function applyPortfolioVideoPlayingCap(inViewLoaded) {
+      const withRect = inViewLoaded
+        .filter(({ video }) => video.src && video.src.length > 0)
+        .map(({ card, video, inner }) => ({
+          card,
+          video,
+          inner,
+          top: card.getBoundingClientRect().top
+        }));
+      withRect.sort((a, b) => a.top - b.top);
+
+      const toPlay = withRect.slice(0, PLAYING_CAP);
+      const toPause = playingVideos.filter(p => !toPlay.find(t => t.video === p.video));
+
+      toPause.forEach(({ video, inner }) => {
+        video.pause();
+        video.classList.remove('is-visible');
+        if (inner) inner.classList.remove('has-video-playing');
+      });
+
+      playingVideos = toPlay.map(({ card, video, inner }) => ({ card, video, inner }));
+      playingVideos.forEach(({ video, inner }) => {
+        video.classList.add('is-visible');
+        if (inner) inner.classList.add('has-video-playing');
+        video.play().catch(() => {});
+      });
+    }
+
+    function setupPortfolioVideoObserver() {
+      if (videoScrollListener) {
+        window.removeEventListener('scroll', videoScrollListener, { passive: true });
+        if (typeof lenis !== 'undefined' && lenis.on) {
+          try { lenis.off('scroll', videoScrollListener); } catch (e) {}
+        }
+      }
+
+      function throttledCheck() {
+        if (videoScrollRafId) return;
+        videoScrollRafId = requestAnimationFrame(() => {
+          runPortfolioVideoViewportCheck();
+          videoScrollRafId = null;
+        });
+      }
+
+      videoScrollListener = throttledCheck;
+      window.addEventListener('scroll', videoScrollListener, { passive: true });
+      if (typeof lenis !== 'undefined' && lenis.on) {
+        lenis.on('scroll', videoScrollListener);
+      }
+
+      requestAnimationFrame(() => {
+        runPortfolioVideoViewportCheck();
+        setTimeout(runPortfolioVideoViewportCheck, 150);
+      });
+    }
+
+    // Init
+    renderGrid(activeFilter);
+
+    // Filter buttons
+    document.querySelectorAll('.filter-pill').forEach(btn => {
+      if (btn.dataset.filter === activeFilter) btn.classList.add('active');
+      else btn.classList.remove('active');
+
+      btn.addEventListener('click', () => {
+        activeFilter = btn.dataset.filter;
+        document.querySelectorAll('.filter-pill').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        renderGrid(activeFilter);
+        // Update URL without reload
+        const url = new URL(window.location);
+        if (activeFilter === 'all') url.searchParams.delete('filter');
+        else url.searchParams.set('filter', activeFilter);
+        window.history.replaceState({}, '', url);
+      });
+    });
+  </script>
+<script>(function(){var logo=document.querySelector(".nav-logo");if(!logo)return;var clicks=0,timer=null;logo.addEventListener("click",function(e){e.preventDefault();clicks++;if(timer)clearTimeout(timer);if(clicks>=6){clicks=0;window.location.href="/admin/index.html";return;}timer=setTimeout(function(){clicks=0;},3000);});})()</script>
+</body>
+</html>

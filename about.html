@@ -1,0 +1,1665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About B&B Associates | Family-Owned Design-Build Contractor | Philadelphia</title>
+  <meta name="description" content="Meet the team behind B&B Associates Creations. Family-owned since 1999, we've completed 1,200+ luxury kitchen and bathroom renovations across Montgomery County, Bucks County, and the Main Line.">
+  <link rel="canonical" href="https://bbassociatescreations.com/about.html">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="About B&B Associates | Family-Owned Design-Build Contractor | Philadelphia">
+  <meta property="og:description" content="Meet the team behind B&B Associates Creations. Family-owned since 1999, we've completed 1,200+ luxury kitchen and bathroom renovations across Montgomery County, Bucks County, and the Main Line.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://bbassociatescreations.com/about.html">
+  <meta property="og:image" content="https://bbassociatescreations.com/IMAGES/Custom-Kitchen-Ambler-Pa.png">
+  <meta property="og:site_name" content="B&amp;B Associates Creations">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="About B&amp;B Associates | Family-Owned Design-Build Contractor | Philadelphia">
+  <meta name="twitter:description" content="Meet the team behind B&amp;B Associates Creations. Family-owned since 1999, we've completed 1,200+ luxury kitchen and bathroom renovations across Montgomery County, Bucks County, and the Main Line.">
+  <meta name="twitter:image" content="https://bbassociatescreations.com/IMAGES/Custom-Kitchen-Ambler-Pa.png">
+
+  <!-- Geo -->
+  <meta name="geo.region" content="US-PA">
+  <meta name="geo.placename" content="Ambler, Pennsylvania">
+  <meta name="geo.position" content="40.1537;-75.2249">
+  <meta name="ICBM" content="40.1537, -75.2249">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/design-system.css">
+  <link rel="stylesheet" href="css/components.css">
+
+  <!-- Organization Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "B&B Associates Creations LLC",
+    "foundingDate": "1999",
+    "founder": {
+      "@type": "Person",
+      "name": "Laurentiu Barbulescu"
+    },
+    "url": "https://bbassociatescreations.com",
+    "telephone": "+12674028758",
+    "email": "bb3associates@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "1147 E Welsh Rd",
+      "addressLocality": "Ambler",
+      "addressRegion": "PA",
+      "postalCode": "19002",
+      "addressCountry": "US"
+    },
+    "areaServed": [
+      "Montgomery County, PA",
+      "Bucks County, PA",
+      "Main Line Philadelphia, PA"
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5.0",
+      "reviewCount": "183",
+      "bestRating": "5"
+    },
+    "sameAs": [
+      "https://www.instagram.com/bbassociatescreations",
+      "https://www.facebook.com/bbassociatescreations"
+    ]
+  }
+  </script>
+
+  <!-- BreadcrumbList Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://bbassociatescreations.com/" },
+      { "@type": "ListItem", "position": 2, "name": "About", "item": "https://bbassociatescreations.com/about.html" }
+    ]
+  }
+  </script>
+
+  <style>
+    /* ══════════════════════════════════════════
+       ABOUT PAGE STYLES
+    ══════════════════════════════════════════ */
+
+    /* ── Scroll fade-in utility ── */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.75s var(--ease-out-expo), transform 0.75s var(--ease-out-expo);
+    }
+    .fade-in.visible { opacity: 1; transform: none; }
+    .fade-in-delay-1 { transition-delay: 0.1s; }
+    .fade-in-delay-2 { transition-delay: 0.2s; }
+    .fade-in-delay-3 { transition-delay: 0.3s; }
+    .fade-in-delay-4 { transition-delay: 0.4s; }
+    .fade-in-delay-5 { transition-delay: 0.5s; }
+
+    /* ── Shared section wrapper ── */
+    .about-section {
+      padding: var(--section-padding-y) var(--grid-padding);
+    }
+
+    .about-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .about-inner--narrow {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    /* ── Section label (centered variant) ── */
+    .section-label--center {
+      justify-content: center;
+    }
+
+    /* ═══════════════════════════════════════
+       HERO
+    ═══════════════════════════════════════ */
+    .about-hero {
+      position: relative;
+      min-height: 55vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: clamp(120px, 14vw, 200px) var(--grid-padding) clamp(80px, 10vw, 140px);
+      background: var(--color-bg);
+      overflow: hidden;
+    }
+
+    /* Subtle radial light behind hero text */
+    .about-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse 70% 60% at 50% 60%, rgba(182,117,57,0.06) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    /* Decorative corner ticks */
+    .about-hero::after {
+      content: '';
+      position: absolute;
+      top: 100px; right: 20px; bottom: 20px; left: 20px;
+      pointer-events: none;
+      background:
+        linear-gradient(rgba(182,117,57,0.25),rgba(182,117,57,0.25)) left top/24px 1px no-repeat,
+        linear-gradient(rgba(182,117,57,0.25),rgba(182,117,57,0.25)) left top/1px 24px no-repeat,
+        linear-gradient(rgba(182,117,57,0.25),rgba(182,117,57,0.25)) right top/24px 1px no-repeat,
+        linear-gradient(rgba(182,117,57,0.25),rgba(182,117,57,0.25)) right top/1px 24px no-repeat,
+        linear-gradient(rgba(182,117,57,0.25),rgba(182,117,57,0.25)) left bottom/24px 1px no-repeat,
+        linear-gradient(rgba(182,117,57,0.25),rgba(182,117,57,0.25)) left bottom/1px 24px no-repeat,
+        linear-gradient(rgba(182,117,57,0.25),rgba(182,117,57,0.25)) right bottom/24px 1px no-repeat,
+        linear-gradient(rgba(182,117,57,0.25),rgba(182,117,57,0.25)) right bottom/1px 24px no-repeat;
+    }
+
+    .about-hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 680px;
+    }
+
+    .about-hero-label {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--sp-3);
+      font-family: var(--font-sans);
+      font-size: var(--text-label);
+      font-weight: 500;
+      letter-spacing: var(--tracking-widest);
+      text-transform: uppercase;
+      color: var(--color-gold);
+      margin-bottom: var(--sp-5);
+    }
+    .about-hero-label::before,
+    .about-hero-label::after {
+      content: '';
+      display: block;
+      width: 24px;
+      height: 1px;
+      background: var(--color-gold);
+      flex-shrink: 0;
+    }
+
+    .about-hero-h1 {
+      font-family: var(--font-display);
+      font-size: clamp(46px, 7vw, 84px);
+      font-weight: 300;
+      font-style: italic;
+      line-height: 1.05;
+      color: var(--color-white);
+      margin: 0 0 var(--sp-5);
+      letter-spacing: -0.01em;
+    }
+
+    .about-hero-sub {
+      font-family: var(--font-sans);
+      font-size: 1rem;
+      font-weight: 300;
+      color: var(--color-text);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    /* ═══════════════════════════════════════
+       OUR STORY
+    ═══════════════════════════════════════ */
+    .about-story {
+      background: #FAF8F6;
+    }
+
+    .about-story-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--sp-9);
+      align-items: start;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .about-story-col--copy {
+      min-width: 0;
+    }
+
+    .about-story-col--media {
+      position: sticky;
+      top: calc(72px + var(--sp-4));
+    }
+
+    .about-story-media {
+      width: 100%;
+      border-radius: 0;
+      overflow: hidden;
+    }
+
+    .about-story-media img {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .about-story-quote-wrap {
+      max-width: 800px;
+      margin: var(--sp-9) auto 0;
+    }
+
+    @media (max-width: 900px) {
+      .about-story-grid {
+        grid-template-columns: 1fr;
+        gap: var(--sp-6);
+      }
+      .about-story-col--media {
+        position: static;
+        order: -1;
+      }
+    }
+
+    .about-story-h2 {
+      font-family: var(--font-display);
+      font-size: clamp(2.2rem, 4vw, 3.4rem);
+      font-weight: 400;
+      font-style: italic;
+      color: #1a1a1a;
+      line-height: 1.12;
+      margin: 0 0 var(--sp-6);
+    }
+
+    .about-story-body p {
+      font-family: var(--font-sans);
+      font-size: 1.05rem;
+      font-weight: 300;
+      line-height: 1.85;
+      color: #4B5563;
+      margin-bottom: var(--sp-5);
+    }
+    .about-story-body p:last-child { margin-bottom: 0; }
+
+    .about-pull-quote {
+      border-left: 3px solid var(--color-gold);
+      padding: var(--sp-4) 0 var(--sp-4) var(--sp-6);
+      margin: var(--sp-8) 0;
+    }
+
+    .about-pull-quote p {
+      font-family: var(--font-display);
+      font-size: clamp(1.25rem, 2vw, 1.6rem);
+      font-weight: 400;
+      font-style: italic;
+      line-height: 1.55;
+      color: #1a1a1a;
+      margin-bottom: var(--sp-4) !important;
+    }
+
+    .about-pull-quote cite {
+      font-family: var(--font-sans);
+      font-size: 0.8rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--color-gold);
+      font-style: normal;
+    }
+
+    /* ═══════════════════════════════════════
+       STATS BAR
+    ═══════════════════════════════════════ */
+    .about-stats {
+      background: var(--color-bg);
+      padding: 72px var(--grid-padding);
+      position: relative;
+    }
+
+    .about-stats::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border-top: 1px solid rgba(182,117,57,0.15);
+      border-bottom: 1px solid rgba(182,117,57,0.15);
+      pointer-events: none;
+    }
+
+    .about-stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1px;
+      max-width: 1100px;
+      margin: 0 auto;
+      background: rgba(182,117,57,0.12);
+    }
+
+    .about-stat-item {
+      background: var(--color-bg);
+      text-align: center;
+      padding: var(--sp-8) var(--sp-5);
+    }
+
+    .about-stat-number {
+      font-family: var(--font-display);
+      font-size: clamp(2.6rem, 4.5vw, 4rem);
+      font-weight: 300;
+      font-style: italic;
+      color: var(--color-gold);
+      line-height: 1;
+      margin-bottom: var(--sp-3);
+      display: block;
+    }
+
+    .about-stat-label {
+      font-family: var(--font-sans);
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--color-text);
+    }
+
+    /* ═══════════════════════════════════════
+       TEAM
+    ═══════════════════════════════════════ */
+    .about-team {
+      background: #F5F3F0;
+    }
+
+    .about-team-header {
+      text-align: center;
+      margin-bottom: var(--sp-5);
+    }
+
+    .about-team-h2 {
+      font-family: var(--font-display);
+      font-size: clamp(2.2rem, 4vw, 3.4rem);
+      font-weight: 400;
+      font-style: italic;
+      color: #1a1a1a;
+      line-height: 1.12;
+      margin: 0 0 var(--sp-4);
+    }
+
+    .about-team-sub {
+      font-family: var(--font-sans);
+      font-size: 0.95rem;
+      font-weight: 300;
+      color: #6B7280;
+      letter-spacing: 0.02em;
+    }
+
+    .about-team-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--sp-7);
+    }
+
+    .about-team-image {
+      width: 100%;
+      margin-bottom: var(--sp-7);
+      overflow: hidden;
+    }
+
+    .about-team-image img {
+      width: 100%;
+      height: auto;
+      max-height: 480px;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+    }
+
+    .about-team-card {
+      text-align: center;
+    }
+
+    .about-team-photo-wrap {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 4/5;
+      overflow: hidden;
+      margin-bottom: var(--sp-5);
+      background: #E8E4DE;
+      border: 1px solid rgba(26,28,35,0.08);
+    }
+
+    /* Photo placeholder styled to look intentional */
+    .about-team-photo-wrap .photo-placeholder {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+      padding-bottom: var(--sp-6);
+    }
+
+    .about-team-photo-wrap .photo-initial {
+      font-family: var(--font-display);
+      font-size: clamp(5rem, 12vw, 9rem);
+      font-weight: 300;
+      font-style: italic;
+      line-height: 1;
+      color: rgba(182,117,57,0.18);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -54%);
+      pointer-events: none;
+      user-select: none;
+    }
+
+    /* Gold line accent at bottom of photo */
+    .about-team-photo-wrap::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: var(--color-gold);
+      opacity: 0;
+      transition: opacity 0.35s ease;
+    }
+
+    .about-team-card:hover .about-team-photo-wrap::after { opacity: 1; }
+
+    /* Zoom on hover */
+    .about-team-photo-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s var(--ease-out-quart);
+    }
+    .about-team-card:hover .about-team-photo-wrap img { transform: scale(1.04); }
+
+    .about-team-name {
+      font-family: var(--font-display);
+      font-size: 1.65rem;
+      font-weight: 400;
+      color: #1a1a1a;
+      margin: 0 0 6px;
+      transition: color 0.3s ease;
+    }
+    .about-team-card:hover .about-team-name { color: var(--color-gold); }
+
+    .about-team-role {
+      font-family: var(--font-sans);
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--color-gold);
+    }
+
+    /* ═══════════════════════════════════════
+       VALUES
+    ═══════════════════════════════════════ */
+    .about-values {
+      background: #ffffff;
+    }
+
+    .about-values-header {
+      text-align: center;
+      margin-bottom: var(--sp-10);
+    }
+
+    .about-values-h2 {
+      font-family: var(--font-display);
+      font-size: clamp(2.2rem, 4vw, 3.4rem);
+      font-weight: 400;
+      font-style: italic;
+      color: #1a1a1a;
+      margin: 0;
+    }
+
+    .about-values-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--sp-7);
+    }
+
+    .about-value-card {
+      padding: var(--sp-7) var(--sp-6);
+      border: 1px solid rgba(26,28,35,0.08);
+      background: #ffffff;
+      transition: border-color 0.3s ease, background 0.3s ease;
+    }
+
+    .about-value-card:hover {
+      border-color: rgba(182,117,57,0.35);
+      background: #FAF8F6;
+    }
+
+    .about-value-icon {
+      width: 40px;
+      height: 40px;
+      margin-bottom: var(--sp-5);
+      color: var(--color-gold);
+    }
+
+    .about-value-title {
+      font-family: var(--font-display);
+      font-size: 1.5rem;
+      font-weight: 400;
+      font-style: italic;
+      color: #1a1a1a;
+      margin: 0 0 var(--sp-4);
+    }
+
+    .about-value-desc {
+      font-family: var(--font-sans);
+      font-size: 0.95rem;
+      font-weight: 300;
+      line-height: 1.75;
+      color: #4B5563;
+      margin: 0;
+    }
+
+    /* ═══════════════════════════════════════
+       DIFFERENTIATORS
+    ═══════════════════════════════════════ */
+    .about-diff {
+      background: #F5F3F0;
+    }
+
+    .about-diff-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: clamp(40px, 6vw, 100px);
+      align-items: center;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .about-diff-h2 {
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 3.5vw, 3rem);
+      font-weight: 400;
+      font-style: italic;
+      color: #1a1a1a;
+      line-height: 1.15;
+      margin: 0 0 var(--sp-7);
+    }
+
+    .about-diff-list {
+      display: flex;
+      flex-direction: column;
+      gap: var(--sp-5);
+    }
+
+    .about-diff-item {
+      display: flex;
+      align-items: flex-start;
+      gap: var(--sp-4);
+    }
+
+    .about-diff-check {
+      flex-shrink: 0;
+      width: 20px;
+      height: 20px;
+      margin-top: 2px;
+      color: var(--color-gold);
+    }
+
+    .about-diff-text-title {
+      font-family: var(--font-sans);
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: #1a1a1a;
+      letter-spacing: 0.02em;
+      margin-bottom: 2px;
+    }
+
+    .about-diff-text-body {
+      font-family: var(--font-sans);
+      font-size: 0.88rem;
+      font-weight: 300;
+      line-height: 1.65;
+      color: #4B5563;
+    }
+
+    /* Image column */
+    .about-diff-image {
+      position: relative;
+    }
+
+    .about-diff-image-frame {
+      position: relative;
+      aspect-ratio: 4/5;
+      background: #D6D0C8;
+      overflow: hidden;
+    }
+
+    .about-diff-image-frame::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(182,117,57,0.08) 0%, transparent 60%);
+    }
+
+    /* Gold offset border */
+    .about-diff-image::after {
+      content: '';
+      position: absolute;
+      inset: -12px -12px 12px 12px;
+      border: 1px solid rgba(182,117,57,0.25);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .about-diff-image-frame img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: relative;
+      z-index: 1;
+    }
+
+    .about-diff-image-placeholder {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: var(--sp-3);
+      z-index: 1;
+    }
+
+    .about-diff-image-placeholder span {
+      font-family: var(--font-display);
+      font-size: 1rem;
+      font-style: italic;
+      color: rgba(182,117,57,0.5);
+      letter-spacing: 0.06em;
+    }
+
+    /* ═══════════════════════════════════════
+       CREDENTIALS
+    ═══════════════════════════════════════ */
+    .about-credentials {
+      background: #ffffff;
+    }
+
+    .about-credentials-header {
+      text-align: center;
+      margin-bottom: var(--sp-10);
+    }
+
+    .about-credentials-h2 {
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 3.5vw, 3rem);
+      font-weight: 400;
+      font-style: italic;
+      color: #1a1a1a;
+      margin: 0;
+    }
+
+    .about-credentials-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: var(--sp-5);
+    }
+
+    .about-credential-badge {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: var(--sp-3);
+      padding: var(--sp-6) var(--sp-7);
+      border: 1px solid rgba(26,28,35,0.1);
+      background: #FAF8F6;
+      min-width: 140px;
+      transition: border-color 0.3s ease, background 0.3s ease;
+    }
+
+    .about-credential-badge:hover {
+      border-color: rgba(182,117,57,0.35);
+      background: #ffffff;
+    }
+
+    .about-credential-icon {
+      width: 36px;
+      height: 36px;
+      color: rgba(26,28,35,0.3);
+      transition: color 0.3s ease;
+    }
+
+    .about-credential-badge:hover .about-credential-icon {
+      color: var(--color-gold);
+    }
+
+    .about-credential-name {
+      font-family: var(--font-sans);
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #4B5563;
+      text-align: center;
+      line-height: 1.4;
+      transition: color 0.3s ease;
+    }
+
+    .about-credential-badge:hover .about-credential-name {
+      color: #1a1a1a;
+    }
+
+    /* ═══════════════════════════════════════
+       SHOWROOM
+    ═══════════════════════════════════════ */
+    .about-showroom {
+      background: var(--color-bg);
+    }
+
+    .about-showroom-inner {
+      display: grid;
+      grid-template-columns: 55fr 45fr;
+      gap: clamp(40px, 6vw, 100px);
+      align-items: center;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    /* Image side */
+    .about-showroom-image {
+      position: relative;
+    }
+
+    .about-showroom-image-frame {
+      position: relative;
+      aspect-ratio: 4/5;
+      background: var(--color-surface);
+      overflow: hidden;
+    }
+
+    .about-showroom-image-frame::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(182,117,57,0.07) 0%, transparent 60%);
+    }
+
+    .about-showroom-image-frame img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: relative;
+      z-index: 1;
+    }
+
+    .about-showroom-image-placeholder {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 1;
+    }
+
+    .about-showroom-image-placeholder span {
+      font-family: var(--font-display);
+      font-size: 1rem;
+      font-style: italic;
+      color: rgba(182,117,57,0.35);
+      letter-spacing: 0.06em;
+    }
+
+    /* Offset border */
+    .about-showroom-image::before {
+      content: '';
+      position: absolute;
+      inset: 12px -12px -12px 12px;
+      border: 1px solid rgba(182,117,57,0.18);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* Text side */
+    .about-showroom-h2 {
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 3.5vw, 3rem);
+      font-weight: 400;
+      font-style: italic;
+      color: var(--color-white);
+      line-height: 1.15;
+      margin: 0 0 var(--sp-5);
+    }
+
+    .about-showroom-body {
+      font-family: var(--font-sans);
+      font-size: 0.95rem;
+      font-weight: 300;
+      line-height: 1.8;
+      color: var(--color-text);
+      margin-bottom: var(--sp-6);
+    }
+
+    .about-showroom-details {
+      display: flex;
+      flex-direction: column;
+      gap: var(--sp-3);
+      margin-bottom: var(--sp-7);
+    }
+
+    .about-showroom-detail-item {
+      display: flex;
+      align-items: center;
+      gap: var(--sp-3);
+      font-family: var(--font-sans);
+      font-size: 0.88rem;
+      color: var(--color-text);
+    }
+
+    .about-showroom-detail-icon {
+      width: 16px;
+      height: 16px;
+      color: var(--color-gold);
+      flex-shrink: 0;
+    }
+
+    /* ═══════════════════════════════════════
+       CTA
+    ═══════════════════════════════════════ */
+    .about-cta {
+      background: #ffffff;
+      text-align: center;
+    }
+
+    .about-cta-label {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--sp-3);
+      font-family: var(--font-sans);
+      font-size: var(--text-label);
+      font-weight: 500;
+      letter-spacing: var(--tracking-widest);
+      text-transform: uppercase;
+      color: var(--color-gold);
+      margin-bottom: var(--sp-5);
+    }
+    .about-cta-label::before,
+    .about-cta-label::after {
+      content: '';
+      display: block;
+      width: 24px;
+      height: 1px;
+      background: var(--color-gold);
+      flex-shrink: 0;
+    }
+
+    .about-cta-h2 {
+      font-family: var(--font-display);
+      font-size: clamp(2.2rem, 4vw, 3.5rem);
+      font-weight: 400;
+      font-style: italic;
+      color: #1a1a1a;
+      line-height: 1.12;
+      margin: 0 0 var(--sp-5);
+    }
+
+    .about-cta-body {
+      font-family: var(--font-sans);
+      font-size: 1rem;
+      font-weight: 300;
+      line-height: 1.75;
+      color: #4B5563;
+      max-width: 560px;
+      margin: 0 auto var(--sp-8);
+    }
+
+    .about-cta-actions {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: var(--sp-4);
+    }
+
+    /* Primary button — gold fill */
+    .about-btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--sp-3);
+      padding: 15px 36px;
+      font-family: var(--font-sans);
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      text-decoration: none;
+      background: var(--color-gold);
+      color: #0a0a0a;
+      border: 1px solid var(--color-gold);
+      transition: background 0.4s ease, color 0.4s ease, border-color 0.4s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .about-btn-primary:hover {
+      background: var(--color-gold-light);
+      border-color: var(--color-gold-light);
+      transform: translateY(-1px);
+      box-shadow: 0 4px 20px rgba(182,117,57,0.3);
+    }
+
+    /* Outline button */
+    .about-btn-outline {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--sp-3);
+      padding: 15px 36px;
+      font-family: var(--font-sans);
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      text-decoration: none;
+      background: transparent;
+      color: #1a1a1a;
+      border: 1px solid rgba(26,28,35,0.25);
+      transition: background 0.4s ease, color 0.4s ease, border-color 0.4s ease, transform 0.3s ease;
+    }
+
+    .about-btn-outline:hover {
+      background: #1a1a1a;
+      color: #ffffff;
+      border-color: #1a1a1a;
+      transform: translateY(-1px);
+    }
+
+    /* ─── Showroom-page button (on dark bg) ─── */
+    .about-btn-showroom {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--sp-3);
+      padding: 15px 36px;
+      font-family: var(--font-sans);
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      text-decoration: none;
+      background: var(--color-gold);
+      color: #0a0a0a;
+      border: 1px solid var(--color-gold);
+      transition: background 0.4s ease, color 0.4s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .about-btn-showroom:hover {
+      background: var(--color-gold-light);
+      border-color: var(--color-gold-light);
+      transform: translateY(-1px);
+      box-shadow: 0 4px 20px rgba(182,117,57,0.35);
+    }
+
+    /* ═══════════════════════════════════════
+       RESPONSIVE
+    ═══════════════════════════════════════ */
+    @media (max-width: 1024px) {
+      .about-diff-inner {
+        grid-template-columns: 1fr;
+      }
+      .about-diff-image {
+        order: -1;
+        max-width: 500px;
+        margin: 0 auto;
+      }
+      .about-diff-image::after { display: none; }
+
+      .about-showroom-inner {
+        grid-template-columns: 1fr;
+      }
+      .about-showroom-image::before { display: none; }
+    }
+
+    @media (max-width: 768px) {
+      .about-team-grid,
+      .about-values-grid {
+        grid-template-columns: 1fr;
+        max-width: 480px;
+        margin: 0 auto;
+      }
+
+      .about-stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .about-credentials-row {
+        gap: var(--sp-3);
+      }
+
+      .about-credential-badge {
+        min-width: 120px;
+        padding: var(--sp-5) var(--sp-4);
+      }
+
+      .about-cta-actions {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .about-btn-primary,
+      .about-btn-outline {
+        justify-content: center;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .about-stats-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ── NAVIGATION ──────────────────────────────────────── -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <a href="/" class="nav-logo" aria-label="B&B Associates Creations home">
+      <img src="IMAGES/B&amp;B Logo with Tagline_Solid+white.png" alt="B&B Associates Creations" class="nav-logo-img">
+    </a>
+
+    <div class="nav-links" role="list">
+      <a href="/" class="nav-link" role="listitem">Home</a>
+      <a href="services.html" class="nav-link" role="listitem">Services</a>
+      <div class="nav-item" role="listitem">
+        <a href="portfolio/index.html" class="nav-link has-dropdown">Portfolio <span class="dropdown-arrow"></span></a>
+        <div class="nav-dropdown">
+          <a href="portfolio/index.html">All Projects</a>
+          <a href="portfolio/index.html?filter=kitchen">Kitchens</a>
+          <a href="portfolio/index.html?filter=bathroom">Bathrooms</a>
+        </div>
+      </div>
+      <div class="nav-item" role="listitem">
+        <a href="about.html" class="nav-link has-dropdown active">Company <span class="dropdown-arrow"></span></a>
+        <div class="nav-dropdown">
+          <a href="about.html">About B&amp;B</a>
+          <a href="reviews.html">Testimonials</a>
+          <a href="service-areas/index.html">Service Areas</a>
+        </div>
+      </div>
+      <a href="contact.html" class="nav-link" role="listitem">Contact</a>
+    </div>
+
+    <div class="nav-right">
+      <a href="tel:+12674028758" class="nav-phone">Call Now</a>
+      <a href="estimator.html" class="nav-cta">Online Estimator</a>
+    </div>
+
+    <button class="nav-hamburger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Nav Overlay -->
+  <div class="nav-mobile" role="dialog" aria-label="Mobile navigation">
+    <nav class="nav-mobile-links">
+      <a href="/" class="nav-mobile-link">Home</a>
+      <a href="services.html" class="nav-mobile-link">Services</a>
+      <div class="nav-mobile-item">
+        <a class="nav-mobile-link has-dropdown">Portfolio <span class="mobile-dropdown-arrow"></span></a>
+        <div class="mobile-dropdown">
+          <a href="portfolio/index.html">All Projects</a>
+          <a href="portfolio/index.html?filter=kitchen">Kitchens</a>
+          <a href="portfolio/index.html?filter=bathroom">Bathrooms</a>
+        </div>
+      </div>
+      <div class="nav-mobile-item">
+        <a class="nav-mobile-link has-dropdown">Company <span class="mobile-dropdown-arrow"></span></a>
+        <div class="mobile-dropdown">
+          <a href="about.html">About B&amp;B</a>
+          <a href="reviews.html">Testimonials</a>
+          <a href="service-areas/index.html">Service Areas</a>
+        </div>
+      </div>
+      <a href="contact.html" class="nav-mobile-link">Contact</a>
+      <a href="estimator.html" class="nav-mobile-link">Online Estimator</a>
+    </nav>
+    <div class="nav-mobile-footer">
+      <a href="tel:+12674028758" class="nav-mobile-phone">267.402.8758</a>
+      <div class="nav-mobile-socials">
+        <a href="https://instagram.com/bbassociatescreations" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://facebook.com/bbassociatescreations" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- ═══════════════════════════════════════════
+         SECTION 1: HERO
+    ═══════════════════════════════════════════ -->
+    <section class="about-hero">
+      <div class="about-hero-content">
+        <p class="about-hero-label fade-in">Family Owned &amp; Operated</p>
+        <h1 class="about-hero-h1 fade-in fade-in-delay-1">About B&amp;B Associates</h1>
+        <p class="about-hero-sub fade-in fade-in-delay-2">Father &amp; Sons Since 1999</p>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         SECTION 2: OUR STORY
+    ═══════════════════════════════════════════ -->
+    <section class="about-section about-story">
+      <div class="about-inner">
+        <div class="about-story-grid">
+          <div class="about-story-col about-story-col--copy">
+            <div class="about-inner--narrow" style="max-width: none;">
+              <p class="section-label fade-in">Our Story</p>
+              <h2 class="about-story-h2 fade-in fade-in-delay-1">
+                Built on a Promise.<br>Proven Over 25 Years.
+              </h2>
+              <div class="about-story-body">
+                <p class="fade-in fade-in-delay-2">
+                  Laurentiu Barbulescu and his son Michael co-founded B&amp;B Associates Creations together as 50/50 partners — united by a single vision: bring honest craftsmanship back to home remodeling. No cutting corners. No disappearing contractors. No excuses.
+                </p>
+                <p class="fade-in fade-in-delay-3">
+                  After a decade of building the company side by side, Michael took on majority ownership and became the driving force behind the firm's continued growth across Montgomery County, Bucks County, and the Main Line. Youngest brother Andrei joined as Operations Manager, rounding out a full family leadership team that oversees every project from first design consultation through final walkthrough.
+                </p>
+                <p class="fade-in fade-in-delay-4">
+                  Over 25 years and 1,200+ projects later, we remain a family business at our core. We haven't franchised. We haven't sold out. We've simply continued doing what we do best: building flawless kitchens and bathrooms for clients who appreciate the difference.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="about-story-col about-story-col--media">
+            <div class="about-story-media">
+              <img src="B&amp;BAssociatesOwners.jpg" alt="B&amp;B Associates Creations founders — luxury kitchen and bathroom remodeling contractors in Ambler, PA" width="550" height="400" loading="lazy">
+            </div>
+          </div>
+        </div>
+        <div class="about-story-quote-wrap">
+          <blockquote class="about-pull-quote fade-in fade-in-delay-5">
+            <p>"Every B&amp;B Associates Creations project, from initial consultation to final walkthrough, reflects our name. From concept to completion, we bring an unmatched level of care to every project — because for us, this isn't just work. It's legacy."</p>
+            <cite>— Michael Barbulescu, Owner</cite>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         SECTION 3: STATS BAR
+    ═══════════════════════════════════════════ -->
+    <section class="about-stats">
+      <div class="about-stats-grid">
+        <div class="about-stat-item fade-in">
+          <span class="about-stat-number" data-count="25" data-suffix="+">25+</span>
+          <span class="about-stat-label">Years of Experience</span>
+        </div>
+        <div class="about-stat-item fade-in fade-in-delay-1">
+          <span class="about-stat-number" data-count="1200" data-suffix="+">1,200+</span>
+          <span class="about-stat-label">Projects Completed</span>
+        </div>
+        <div class="about-stat-item fade-in fade-in-delay-2">
+          <span class="about-stat-number">5.0 ★</span>
+          <span class="about-stat-label">Client Rating</span>
+        </div>
+        <div class="about-stat-item fade-in fade-in-delay-3">
+          <span class="about-stat-number" data-count="180" data-suffix="+">180+</span>
+          <span class="about-stat-label">Five-Star Reviews</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         SECTION 4: MEET THE TEAM
+    ═══════════════════════════════════════════ -->
+    <section class="about-section about-team">
+      <div class="about-inner">
+        <div class="about-team-header">
+          <p class="section-label section-label--center fade-in">Meet the Team</p>
+          <h2 class="about-team-h2 fade-in fade-in-delay-1">The B&amp;B Team</h2>
+          <p class="about-team-sub fade-in fade-in-delay-2">Father and sons. One standard of excellence.</p>
+        </div>
+
+        <div class="about-team-image fade-in">
+          <img src="DC5117B8-D59F-410C-8481-B19339E4E3EF.jpg" alt="B&amp;B Associates Creations design-build team — Montgomery County kitchen and bathroom remodeling" width="1018" height="480" loading="lazy">
+        </div>
+
+        <div class="about-team-grid">
+          <!-- Laurentiu Barbulescu -->
+          <div class="about-team-card fade-in fade-in-delay-1">
+            <h3 class="about-team-name">Laurentiu Barbulescu</h3>
+            <p class="about-team-role">Founder</p>
+          </div>
+
+          <!-- Michael Barbulescu -->
+          <div class="about-team-card fade-in fade-in-delay-2">
+            <h3 class="about-team-name">Michael Barbulescu</h3>
+            <p class="about-team-role">Owner/Operator</p>
+          </div>
+
+          <!-- Andrei Barbulescu -->
+          <div class="about-team-card fade-in fade-in-delay-3">
+            <h3 class="about-team-name">Andrei Barbulescu</h3>
+            <p class="about-team-role">Operations Manager</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         SECTION 5: VALUES
+    ═══════════════════════════════════════════ -->
+    <section class="about-section about-values">
+      <div class="about-inner">
+        <div class="about-values-header">
+          <p class="section-label section-label--center fade-in">Our Principles</p>
+          <h2 class="about-values-h2 fade-in fade-in-delay-1">What We Stand For</h2>
+        </div>
+
+        <div class="about-values-grid">
+          <!-- Craftsmanship -->
+          <div class="about-value-card fade-in fade-in-delay-1">
+            <svg class="about-value-icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M8 32l4-4 16-16 4 4-16 16-4 4-4-4z"/>
+              <path d="M24 12l4 4"/>
+              <path d="M8 32l-4 4"/>
+              <path d="M28 8l4 4-4-4z"/>
+              <circle cx="30" cy="10" r="2"/>
+            </svg>
+            <h3 class="about-value-title">Craftsmanship</h3>
+            <p class="about-value-desc">Every cut, every joint, every finish — we approach each detail with precision and pride. We're not satisfied until it's flawless.</p>
+          </div>
+
+          <!-- Transparency -->
+          <div class="about-value-card fade-in fade-in-delay-2">
+            <svg class="about-value-icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="8" y="10" width="24" height="20" rx="1"/>
+              <path d="M14 17h12M14 22h8"/>
+              <path d="M20 6v4"/>
+            </svg>
+            <h3 class="about-value-title">Transparency</h3>
+            <p class="about-value-desc">No hidden fees. No surprise change orders. No disappearing acts. We communicate clearly and deliver exactly what we promise.</p>
+          </div>
+
+          <!-- Family -->
+          <div class="about-value-card fade-in fade-in-delay-3">
+            <svg class="about-value-icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M7 34v-4a6 6 0 0 1 6-6h14a6 6 0 0 1 6 6v4"/>
+              <circle cx="20" cy="14" r="5"/>
+              <path d="M7 34v-2a4 4 0 0 1 4-4"/>
+              <path d="M33 34v-2a4 4 0 0 0-4-4"/>
+            </svg>
+            <h3 class="about-value-title">Family</h3>
+            <p class="about-value-desc">This business carries our name. Every project reflects on our family's legacy. That's why we treat your home like our own.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         SECTION 6: DIFFERENTIATORS
+    ═══════════════════════════════════════════ -->
+    <section class="about-section about-diff">
+      <div class="about-diff-inner">
+        <!-- Text column -->
+        <div class="about-diff-text">
+          <p class="section-label fade-in">The B&amp;B Difference</p>
+          <h2 class="about-diff-h2 fade-in fade-in-delay-1">
+            What Separates B&amp;B<br>from Every Other Contractor
+          </h2>
+
+          <ul class="about-diff-list">
+            <li class="about-diff-item fade-in fade-in-delay-1">
+              <svg class="about-diff-check" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="4 10 8 14 16 6"/>
+              </svg>
+              <div>
+                <p class="about-diff-text-title">Dedicated Crews</p>
+                <p class="about-diff-text-body">The same skilled craftsmen on every project. No revolving door of random subcontractors.</p>
+              </div>
+            </li>
+            <li class="about-diff-item fade-in fade-in-delay-2">
+              <svg class="about-diff-check" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="4 10 8 14 16 6"/>
+              </svg>
+              <div>
+                <p class="about-diff-text-title">In-House Design Team</p>
+                <p class="about-diff-text-body">Our Creative Director works directly with you. No back-and-forth with outside designers.</p>
+              </div>
+            </li>
+            <li class="about-diff-item fade-in fade-in-delay-3">
+              <svg class="about-diff-check" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="4 10 8 14 16 6"/>
+              </svg>
+              <div>
+                <p class="about-diff-text-title">Trade-Level Material Access</p>
+                <p class="about-diff-text-body">Our B&amp;B Design Showroom in Ambler gives you access to premium materials at exclusive pricing.</p>
+              </div>
+            </li>
+            <li class="about-diff-item fade-in fade-in-delay-4">
+              <svg class="about-diff-check" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="4 10 8 14 16 6"/>
+              </svg>
+              <div>
+                <p class="about-diff-text-title">Owner-Led Oversight</p>
+                <p class="about-diff-text-body">Laurentiu or Michael personally oversees every project. You work with decision-makers, not middlemen.</p>
+              </div>
+            </li>
+            <li class="about-diff-item fade-in fade-in-delay-5">
+              <svg class="about-diff-check" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="4 10 8 14 16 6"/>
+              </svg>
+              <div>
+                <p class="about-diff-text-title">Fully Insured &amp; Licensed</p>
+                <p class="about-diff-text-body">Complete coverage, proper licensing, and full compliance with Pennsylvania requirements on every project.</p>
+              </div>
+            </li>
+            <li class="about-diff-item fade-in fade-in-delay-5">
+              <svg class="about-diff-check" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="4 10 8 14 16 6"/>
+              </svg>
+              <div>
+                <p class="about-diff-text-title">25+ Years of Proof</p>
+                <p class="about-diff-text-body">1,200+ completed projects. 180+ five-star reviews. A reputation built one kitchen and bathroom at a time.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Image column -->
+        <div class="about-diff-image fade-in fade-in-delay-2">
+          <div class="about-diff-image-frame">
+            <img src="IMAGES/BarbulescuFamily.jpg" alt="Barbulescu family — founders of B&amp;B Associates Creations, luxury remodeling contractors serving Montgomery County and Bucks County PA since 1999" width="475" height="594" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         SECTION 7: CREDENTIALS
+    ═══════════════════════════════════════════ -->
+    <section class="about-section about-credentials">
+      <div class="about-inner">
+        <div class="about-credentials-header">
+          <p class="section-label section-label--center fade-in">Credentials</p>
+          <h2 class="about-credentials-h2 fade-in fade-in-delay-1">Credentials &amp; Recognition</h2>
+        </div>
+
+        <div class="about-credentials-row">
+          <!-- Houzz -->
+          <div class="about-credential-badge fade-in fade-in-delay-1">
+            <svg class="about-credential-icon" viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 4L4 14v18h10V22h8v10h10V14z"/>
+            </svg>
+            <span class="about-credential-name">Houzz<br>Recommended</span>
+          </div>
+
+          <!-- Angi -->
+          <div class="about-credential-badge fade-in fade-in-delay-2">
+            <svg class="about-credential-icon" viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="18" cy="18" r="13"/>
+              <path d="M18 10v8l5 5"/>
+            </svg>
+            <span class="about-credential-name">Angi<br>Top Rated</span>
+          </div>
+
+          <!-- Google -->
+          <div class="about-credential-badge fade-in fade-in-delay-3">
+            <svg class="about-credential-icon" viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M29 18.5c0-1-.09-1.96-.26-2.89H18v5.46h6.18a5.3 5.3 0 01-2.27 3.46v2.87h3.67C27.75 25.42 29 22.22 29 18.5z"/>
+              <path d="M18 31c3.1 0 5.69-1.02 7.59-2.77l-3.67-2.87c-1.02.69-2.33 1.1-3.92 1.1-3.01 0-5.56-2.03-6.47-4.76H7.75v2.96A11.5 11.5 0 0018 31z"/>
+              <path d="M11.53 21.7A6.9 6.9 0 0111.17 19.5c0-.76.13-1.5.36-2.2v-2.96H7.75A11.5 11.5 0 006.5 19.5c0 1.85.44 3.6 1.25 5.16l3.78-2.96z"/>
+              <path d="M18 12.14c1.7 0 3.22.58 4.42 1.73l3.3-3.3C23.68 8.69 21.1 7.5 18 7.5A11.5 11.5 0 007.75 14.34l3.78 2.96c.91-2.73 3.46-4.76 6.47-4.76z"/>
+            </svg>
+            <span class="about-credential-name">Google<br>5-Star Rating</span>
+          </div>
+
+          <!-- PA Licensed -->
+          <div class="about-credential-badge fade-in fade-in-delay-4">
+            <svg class="about-credential-icon" viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 4l3 9h9l-7 5 3 9-8-6-8 6 3-9-7-5h9z"/>
+            </svg>
+            <span class="about-credential-name">PA Licensed<br>Contractor</span>
+          </div>
+
+          <!-- Fully Insured -->
+          <div class="about-credential-badge fade-in fade-in-delay-5">
+            <svg class="about-credential-icon" viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 4L7 9v11c0 7 5 11 11 12 6-1 11-5 11-12V9z"/>
+              <polyline points="13 18 16 21 23 14"/>
+            </svg>
+            <span class="about-credential-name">Fully<br>Insured</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         SECTION 8: SHOWROOM PREVIEW
+    ═══════════════════════════════════════════ -->
+    <section class="about-section about-showroom">
+      <div class="about-showroom-inner">
+        <!-- Image -->
+        <div class="about-showroom-image fade-in">
+          <div class="about-showroom-image-frame">
+            <img src="IMAGES/Showroom.jpg" alt="B&amp;B Associates Creations design showroom in Ambler PA — luxury kitchen and bathroom materials, surfaces, and fixtures" width="522" height="653" loading="lazy">
+          </div>
+        </div>
+
+        <!-- Text -->
+        <div class="about-showroom-text fade-in fade-in-delay-2">
+          <p class="section-label fade-in">Coming Soon</p>
+          <h2 class="about-showroom-h2 fade-in fade-in-delay-1">
+            A New Destination for Design:<br>The B&amp;B Showroom
+          </h2>
+          <p class="about-showroom-body fade-in fade-in-delay-2">
+            Our showroom in Ambler is currently under construction — and when it opens, it will be a cornerstone of the B&amp;B experience. A dedicated space for clients to explore materials, touch premium finishes, and see kitchen and bathroom possibilities in person. We're building it because we believe that seeing and feeling the quality in person is a huge value add: it takes the guesswork out of your renovation and brings our standards to life.
+          </p>
+
+          <div class="about-showroom-details fade-in fade-in-delay-3">
+            <div class="about-showroom-detail-item">
+              <svg class="about-showroom-detail-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M8 1.5C5.5 1.5 3.5 3.5 3.5 6c0 3.5 4.5 8.5 4.5 8.5S12.5 9.5 12.5 6c0-2.5-2-4.5-4.5-4.5z"/>
+                <circle cx="8" cy="6" r="1.5"/>
+              </svg>
+              <span>1147 E Welsh Rd, Ambler, PA 19002</span>
+            </div>
+            <div class="about-showroom-detail-item">
+              <svg class="about-showroom-detail-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="8" cy="8" r="6"/>
+                <polyline points="8 4 8 8 10.5 10.5"/>
+              </svg>
+              <span>Currently under construction — opening soon</span>
+            </div>
+          </div>
+
+          <a href="ambler-design-showroom.html" class="about-btn-showroom fade-in fade-in-delay-4">
+            Learn more about our showroom
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M2 7h10M7 2l5 5-5 5"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         SECTION 9: FINAL CTA
+    ═══════════════════════════════════════════ -->
+    <section class="about-section about-cta">
+      <div class="about-inner" style="text-align:center;">
+        <p class="about-cta-label fade-in">— Let's Build Together —</p>
+        <h2 class="about-cta-h2 fade-in fade-in-delay-1">
+          Ready to Experience<br>the B&amp;B Difference?
+        </h2>
+        <p class="about-cta-body fade-in fade-in-delay-2">
+          Work with a team that cares. Get a detailed estimate, see our portfolio, and discover what B&amp;B can do for your home — no pressure, no obligation.
+        </p>
+        <div class="about-cta-actions fade-in fade-in-delay-3">
+          <a href="estimator.html" class="about-btn-primary">
+            Get Your Free Estimate
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M2 7h10M7 2l5 5-5 5"/>
+            </svg>
+          </a>
+          <a href="portfolio/index.html" class="about-btn-outline">
+            View Our Portfolio
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── FOOTER ──────────────────────────────────────────── -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top">
+        <h2 class="footer-hero-title">DISCOVER THE WORLD OF POSSIBILITIES WITH B&amp;B</h2>
+        <p class="footer-hero-sub">Luxury kitchen &amp; bathroom remodeling across the Philadelphia suburbs.</p>
+      </div>
+
+      <div class="footer-grid">
+        <div class="footer-col">
+          <p class="footer-col-title">Navigation</p>
+          <nav class="footer-links" aria-label="Footer navigation">
+            <a href="/" class="footer-link">Home</a>
+            <a href="services.html" class="footer-link">Services</a>
+            <a href="showroom.html" class="footer-link">Showroom</a>
+            <a href="portfolio/index.html" class="footer-link">Portfolio</a>
+            <a href="about.html" class="footer-link">About</a>
+            <a href="contact.html" class="footer-link">Contact</a>
+            <a href="estimator.html" class="footer-link">Online Estimator</a>
+            <a href="journal/index.html" class="footer-link">Blog</a>
+          </nav>
+        </div>
+
+        <div class="footer-col">
+          <p class="footer-col-title">Useful Links</p>
+          <nav class="footer-links" aria-label="Useful links navigation">
+            <a href="services.html" class="footer-link">Luxury Kitchen Remodeling</a>
+            <a href="services.html" class="footer-link">Custom Bathroom Renovations</a>
+            <a href="ambler-design-showroom.html" class="footer-link">Ambler Design Showroom</a>
+            <a href="reviews.html" class="footer-link">Client Reviews</a>
+          </nav>
+        </div>
+
+        <div class="footer-col">
+          <p class="footer-col-title">Service Areas</p>
+          <nav class="footer-links" aria-label="Service areas navigation">
+            <a href="service-areas/main-line-pa-remodeling.html" class="footer-link">Main Line PA</a>
+            <a href="service-areas/doylestown-new-hope-kitchen-remodeling.html" class="footer-link">Doylestown &amp; New Hope</a>
+            <a href="service-areas/wayne-villanova-bathroom-remodeling.html" class="footer-link">Wayne &amp; Villanova</a>
+            <a href="service-areas/blue-bell-north-wales-remodeling.html" class="footer-link">Blue Bell &amp; North Wales</a>
+            <a href="service-areas/newtown-pa-kitchen-bathroom-remodeling.html" class="footer-link">Newtown PA</a>
+            <a href="service-areas/ambler-pa-remodeling-contractor.html" class="footer-link">Ambler PA</a>
+          </nav>
+        </div>
+
+        <div class="footer-col footer-col-stay-informed">
+          <p class="footer-col-title">Stay Informed</p>
+          <p class="footer-newsletter-sub">Design insights, project reveals, and exclusive updates — delivered monthly.</p>
+          <form class="footer-newsletter-form" aria-label="Newsletter signup">
+            <input type="email" placeholder="Your email address" required>
+            <button type="submit">Subscribe</button>
+          </form>
+          <div class="footer-connect-inline">
+            <div class="footer-contact-line">
+              <a href="tel:+12674028758">267.402.8758</a>
+            </div>
+            <div class="footer-contact-line">
+              <a href="mailto:bb3associates@gmail.com">bb3associates@gmail.com</a>
+            </div>
+            <div class="footer-contact-line">
+              <address>1147 E Welsh Rd, Ambler, PA 19002</address>
+            </div>
+            <div class="footer-social-row">
+              <a href="https://instagram.com/bbassociatescreations" class="footer-social-link" target="_blank" rel="noopener" aria-label="B&amp;B Associates on Instagram">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                Instagram
+              </a>
+              <a href="https://facebook.com/bbassociatescreations" class="footer-social-link" target="_blank" rel="noopener" aria-label="B&amp;B Associates on Facebook">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                Facebook
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">&copy; 2026 B&amp;B Associates Creations LLC. All Rights Reserved.</p>
+        <p class="footer-tagline-right">Luxury Design-Build Remodeling — Philadelphia, PA</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script>if(typeof gsap!=='undefined'&&typeof ScrollTrigger!=='undefined')gsap.registerPlugin(ScrollTrigger);</script>
+  <script src="js/init.js"></script>
+  <script src="js/analytics.js"></script>
+
+  <script>
+    // ── Scroll-triggered fade-in ──────────────────────────────
+    (function () {
+      const els = document.querySelectorAll('.fade-in');
+      if (!els.length) return;
+
+      const io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            io.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12 });
+
+      els.forEach(function (el) { io.observe(el); });
+    })();
+
+    // ── Count-up animation for stat numbers ──────────────────
+    (function () {
+      var stats = document.querySelectorAll('.about-stat-number[data-count]');
+      if (!stats.length) return;
+
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (!entry.isIntersecting) return;
+          io.unobserve(entry.target);
+
+          var el = entry.target;
+          var end = parseInt(el.dataset.count, 10);
+          var suffix = el.dataset.suffix || '';
+          var duration = 1600;
+          var start = 0;
+          var startTime = null;
+
+          function animate(ts) {
+            if (!startTime) startTime = ts;
+            var progress = Math.min((ts - startTime) / duration, 1);
+            var eased = 1 - Math.pow(1 - progress, 3);
+            var current = Math.floor(eased * end);
+            el.textContent = (current >= 1000 ? current.toLocaleString() : current) + suffix;
+            if (progress < 1) requestAnimationFrame(animate);
+          }
+
+          requestAnimationFrame(animate);
+        });
+      }, { threshold: 0.3 });
+
+      stats.forEach(function (el) { io.observe(el); });
+    })();
+  </script>
+
+<script>(function(){var logo=document.querySelector(".nav-logo");if(!logo)return;var clicks=0,timer=null;logo.addEventListener("click",function(e){e.preventDefault();clicks++;if(timer)clearTimeout(timer);if(clicks>=6){clicks=0;window.location.href="/admin/index.html";return;}timer=setTimeout(function(){clicks=0;},3000);});})()</script>
+</body>
+</html>

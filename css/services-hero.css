@@ -1,0 +1,175 @@
+/* ── WHAT WE BUILD (STACKED PANELS) ──────────────────────── */
+
+.wwb-wrap {
+  background: var(--color-bg);
+  padding-bottom: 80px;
+}
+
+.wwb-header-section {
+  position: sticky;
+  top: 0;
+  z-index: 0;
+  padding: 40px 0 32px;
+}
+
+.wwb-header {
+  padding: clamp(60px, 7vw, 110px) var(--grid-padding) clamp(24px, 3vw, 48px);
+  text-align: center;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.wwb-title {
+  font-family: var(--font-sans);
+  font-size: clamp(28px, 4vw, 44px);
+  font-weight: var(--weight-medium);
+  color: #FFFFFF;
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+
+.wwb-panel {
+  position: relative;
+  min-height: 108vh;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.wwb-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.wwb-overlay {
+  position: absolute;
+  inset: 0;
+}
+
+.wwb-panel--kitchen .wwb-overlay {
+  background: linear-gradient(
+    to bottom,
+    rgba(10, 11, 16, 0.88) 0%,
+    rgba(10, 11, 16, 0.78) 45%,
+    rgba(10, 11, 16, 0.9) 100%
+  );
+}
+
+.wwb-panel--bathroom .wwb-overlay {
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.9) 0%,
+    rgba(0, 0, 0, 0.8) 45%,
+    rgba(0, 0, 0, 0.95) 100%
+  );
+}
+
+.wwb-content {
+  position: relative;
+  z-index: 2;
+  max-width: 64rem;
+  padding: 0 var(--grid-padding);
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.wwb-eyebrow {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: #C9A063;
+  margin-bottom: 14px;
+}
+
+.wwb-heading {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(34px, 5vw, 60px);
+  font-weight: 300;
+  line-height: 1.1;
+  margin-bottom: 16px;
+  white-space: nowrap;
+}
+
+.wwb-body {
+  font-family: var(--font-sans);
+  font-size: 18px;
+  line-height: 1.75;
+  color: rgba(255, 255, 255, 0.86);
+  margin: 0;
+}
+
+.wwb-features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 10px;
+}
+
+.wwb-features li {
+  position: relative;
+  padding-left: 14px;
+  color: rgba(255, 255, 255, 0.92);
+  text-align: left;
+}
+
+.wwb-features li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.6em;
+  width: 6px;
+  height: 6px;
+  border-radius: 999px;
+  background: #C9A063;
+}
+
+.wwb-cta {
+  display: none;
+}
+
+.wwb-cta:hover {
+  /* no-op: now using global .btn styles */
+}
+
+.wwb-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1.4fr);
+  gap: 32px;
+  align-items: flex-start;
+  margin: 0 0 24px;
+  text-align: left;
+}
+
+.wwb-grid .wwb-features {
+  justify-self: flex-start;
+}
+
+.wwb-grid .wwb-body {
+  max-width: 32rem;
+}
+
+.wwb-panel--kitchen {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.wwb-panel--bathroom {
+  position: relative;
+  z-index: 2;
+}
+
+@media (max-width: 768px) {
+  .wwb-content { max-width: 100%; }
+  .wwb-heading { white-space: normal; }
+  .wwb-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+

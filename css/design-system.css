@@ -1,0 +1,445 @@
+/* ============================================================
+   B&B Associates Creations — Design System
+   Single source of truth for all design tokens.
+   NEVER redefine these per-page. Import this file everywhere.
+   ============================================================ */
+
+/* --- Google Fonts are loaded via <link> in HTML <head> --- */
+
+/* ── CUSTOM CROSSHAIR CURSOR (temporarily disabled for inspector) ──
+*,
+*::before,
+*::after {
+  cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Cline x1='16' y1='4' x2='16' y2='28' stroke='%23ffffff' stroke-width='1'/%3E%3Cline x1='4' y1='16' x2='28' y2='16' stroke='%23ffffff' stroke-width='1'/%3E%3C/svg%3E") 16 16, crosshair;
+}
+
+a, button, [role="button"], input[type="submit"],
+.btn, .hero-btn, .nav-link, .nav-cta, .nav-phone,
+.nav-hamburger, .accordion-trigger, [data-lightbox] {
+  cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Cline x1='16' y1='4' x2='16' y2='28' stroke='%23C9A063' stroke-width='1.5'/%3E%3Cline x1='4' y1='16' x2='28' y2='16' stroke='%23C9A063' stroke-width='1.5'/%3E%3C/svg%3E") 16 16, pointer !important;
+}
+──────────────────────────────────────────────────────────── */
+
+:root {
+  /* ── BACKGROUNDS ─────────────────────────────────────── */
+  --color-bg:           #1A1C23;
+  --color-bg-2:         #22242C;
+  --color-bg-3:         #2A2D36;
+  --color-surface:      #232630;
+  --color-surface-2:    #2C2F3A;
+
+  /* ── BRAND ───────────────────────────────────────────── */
+  --color-gold:         #B67539;
+  --color-gold-light:   #D4944F;
+  --color-gold-dark:    #8E5A2B;
+  --color-gold-muted:   rgba(182, 117, 57, 0.12);
+  --color-gold-border:  rgba(182, 117, 57, 0.25);
+
+  /* ── TEXT ────────────────────────────────────────────── */
+  --color-white:        #F8F4EF;
+  --color-text:         #C4BDAF;
+  --color-text-dim:     #7A7468;
+  --color-text-dimmer:  #4A4640;
+
+  /* ── BORDERS ─────────────────────────────────────────── */
+  --color-border:       rgba(182, 117, 57, 0.2);
+  --color-border-dim:   rgba(255, 255, 255, 0.07);
+
+  /* ── STATES ──────────────────────────────────────────── */
+  --color-error:        #C97A6C;
+  --color-success:      #6CA882;
+
+  /* ── TYPOGRAPHY ──────────────────────────────────────── */
+  --font-display: 'Cormorant Garamond', serif;
+  --font-sans:    'Manrope', sans-serif;
+  --font-mono:    'Manrope', sans-serif;
+
+  /* Scale — fluid using clamp() */
+  --text-hero:    clamp(72px, 10vw, 140px);
+  --text-h1:      clamp(52px, 7vw, 100px);
+  --text-h2:      clamp(38px, 5vw, 68px);
+  --text-h3:      clamp(28px, 3.5vw, 44px);
+  --text-h4:      clamp(20px, 2.5vw, 28px);
+  --text-body-lg: clamp(17px, 1.6vw, 21px);
+  --text-body:    clamp(15px, 1.3vw, 17px);
+  --text-small:   13px;
+  --text-label:   11px;
+
+  /* Line heights */
+  --leading-display: 1.0;
+  --leading-tight:   1.1;
+  --leading-snug:    1.25;
+  --leading-body:    1.75;
+
+  /* Letter spacing */
+  --tracking-tightest: -0.04em;
+  --tracking-tight:    -0.02em;
+  --tracking-normal:    0em;
+  --tracking-wide:      0.08em;
+  --tracking-wider:     0.14em;
+  --tracking-widest:    0.22em;
+
+  /* Weights */
+  --weight-light:   300;
+  --weight-regular: 400;
+  --weight-medium:  500;
+  --weight-bold:    600;
+
+  /* ── SPACING ─────────────────────────────────────────── */
+  --sp-1:  4px;   --sp-2:  8px;   --sp-3:  12px;
+  --sp-4:  16px;  --sp-5:  24px;  --sp-6:  32px;
+  --sp-7:  48px;  --sp-8:  64px;  --sp-9:  96px;
+  --sp-10: 128px; --sp-11: 160px; --sp-12: 200px;
+
+  /* Section vertical padding */
+  --section-padding-y: clamp(80px, 10vw, 160px);
+
+  /* Layout */
+  --grid-max:     1440px;
+  --grid-padding: clamp(20px, 5vw, 80px);
+
+  /* ── MOTION ──────────────────────────────────────────── */
+  --ease-out-expo:  cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-out-quart: cubic-bezier(0.25, 1, 0.5, 1);
+  --ease-spring:    cubic-bezier(0.34, 1.56, 0.64, 1);
+  --ease-in-out:    cubic-bezier(0.87, 0, 0.13, 1);
+
+  --dur-instant: 0.15s;
+  --dur-fast:    0.3s;
+  --dur-normal:  0.6s;
+  --dur-slow:    1.0s;
+  --dur-crawl:   1.6s;
+}
+
+/* ── GLOBAL RESET & BASE ─────────────────────────────────── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  font-size: var(--text-body);
+  line-height: var(--leading-body);
+  font-weight: var(--weight-regular);
+  overflow-x: hidden;
+}
+
+img, video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: inherit;
+}
+
+/* ── LAYOUT UTILITIES ─────────────────────────────────────── */
+.container {
+  max-width: var(--grid-max);
+  margin: 0 auto;
+  padding: 0 var(--grid-padding);
+}
+
+.section {
+  padding: var(--section-padding-y) 0;
+}
+
+/* ── TYPOGRAPHY UTILITIES ─────────────────────────────────── */
+.font-display { font-family: var(--font-display); }
+.font-sans    { font-family: var(--font-sans); }
+.font-mono    { font-family: var(--font-mono); }
+
+.text-hero { font-size: var(--text-hero); }
+.text-h1   { font-size: var(--text-h1); }
+.text-h2   { font-size: var(--text-h2); }
+.text-h3   { font-size: var(--text-h3); }
+.text-h4   { font-size: var(--text-h4); }
+
+.text-gold    { color: var(--color-gold); }
+.text-white   { color: var(--color-white); }
+.text-dim     { color: var(--color-text-dim); }
+.text-dimmer  { color: var(--color-text-dimmer); }
+
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: var(--text-label);
+  letter-spacing: var(--tracking-widest);
+  text-transform: uppercase;
+  color: var(--color-gold);
+}
+
+/* ── SECTION LABEL ────────────────────────────────────────── */
+.section-label {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sp-3);
+  font-family: var(--font-mono);
+  font-size: var(--text-label);
+  letter-spacing: var(--tracking-widest);
+  text-transform: uppercase;
+  color: var(--color-gold);
+  margin-bottom: var(--sp-5);
+}
+.section-label::before {
+  content: "\2014\00a0";
+}
+.section-label::after {
+  content: "\00a0\2014";
+}
+
+/* ── BUTTONS ──────────────────────────────────────────────── */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sp-3);
+  font-family: var(--font-sans);
+  font-size: var(--text-small);
+  font-weight: var(--weight-medium);
+  letter-spacing: var(--tracking-wider);
+  text-transform: uppercase;
+  padding: var(--sp-4) var(--sp-7);
+  border-radius: 0;
+  transition: all var(--dur-fast) var(--ease-out-quart);
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.btn-primary {
+  background: var(--color-gold);
+  color: var(--color-bg);
+  border: 1px solid var(--color-gold);
+}
+
+.btn-primary:hover {
+  background: var(--color-gold-light);
+  border-color: var(--color-gold-light);
+  transform: translateY(-1px);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--color-gold);
+  border: 1px solid var(--color-gold-border);
+}
+
+.btn-outline:hover {
+  background: var(--color-gold);
+  color: var(--color-bg);
+  border-color: var(--color-gold);
+  transform: translateY(-1px);
+}
+
+.btn-ghost {
+  background: transparent;
+  color: var(--color-white);
+  border: 1px solid var(--color-border-dim);
+  padding: var(--sp-3) var(--sp-5);
+}
+
+.btn-ghost:hover {
+  border-color: var(--color-gold-border);
+  color: var(--color-gold);
+}
+
+/* ── HEADLINE REVEAL UTILITY ──────────────────────────────── */
+.headline-reveal .line-wrap {
+  overflow: hidden;
+  display: block;
+}
+
+/* ── GOLD DIVIDER ─────────────────────────────────────────── */
+.gold-line {
+  display: block;
+  width: 40px;
+  height: 1px;
+  background: var(--color-gold);
+}
+
+/* ── STAR RATING ──────────────────────────────────────────── */
+.stars {
+  display: flex;
+  gap: 2px;
+  color: var(--color-gold);
+  font-size: 14px;
+}
+
+/* ── BADGE ────────────────────────────────────────────────── */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sp-2);
+  font-family: var(--font-mono);
+  font-size: var(--text-label);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  padding: var(--sp-1) var(--sp-3);
+  border: 1px solid var(--color-gold-border);
+  border-radius: 2px;
+  color: var(--color-gold);
+}
+
+/* ── GOLD CARD ────────────────────────────────────────────── */
+.gold-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  padding: var(--sp-6);
+  transition: border-color var(--dur-fast) var(--ease-out-quart),
+              background var(--dur-fast) var(--ease-out-quart);
+}
+
+.gold-card:hover {
+  border-color: var(--color-gold);
+  background: var(--color-surface-2);
+}
+
+/* ── FORM INPUTS ──────────────────────────────────────────── */
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-2);
+}
+
+.field label {
+  font-family: var(--font-mono);
+  font-size: var(--text-label);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  color: var(--color-text-dim);
+}
+
+.field input,
+.field select,
+.field textarea {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border-dim);
+  border-radius: 2px;
+  color: var(--color-white);
+  font-family: var(--font-sans);
+  font-size: var(--text-body);
+  padding: var(--sp-4) var(--sp-5);
+  outline: none;
+  transition: border-color var(--dur-fast) var(--ease-out-quart);
+  width: 100%;
+}
+
+.field input:focus,
+.field select:focus,
+.field textarea:focus {
+  border-color: var(--color-gold);
+}
+
+.field input::placeholder,
+.field textarea::placeholder {
+  color: var(--color-text-dimmer);
+}
+
+.field select option {
+  background: var(--color-surface);
+  color: var(--color-white);
+}
+
+/* ── ACCORDION ────────────────────────────────────────────── */
+.accordion-item {
+  border-bottom: 1px solid var(--color-border-dim);
+}
+
+.accordion-trigger {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--sp-5) 0;
+  font-family: var(--font-sans);
+  font-size: var(--text-body-lg);
+  font-weight: var(--weight-medium);
+  color: var(--color-white);
+  cursor: pointer;
+  text-align: left;
+  transition: color var(--dur-fast) var(--ease-out-quart);
+}
+
+.accordion-trigger:hover { color: var(--color-gold); }
+
+.accordion-icon {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  flex-shrink: 0;
+  margin-left: var(--sp-5);
+}
+
+.accordion-icon::before,
+.accordion-icon::after {
+  content: '';
+  position: absolute;
+  background: var(--color-gold);
+  border-radius: 1px;
+  transition: transform var(--dur-fast) var(--ease-out-quart),
+              opacity var(--dur-fast) var(--ease-out-quart);
+}
+
+.accordion-icon::before { width: 100%; height: 1px; top: 50%; left: 0; transform: translateY(-50%); }
+.accordion-icon::after  { width: 1px; height: 100%; left: 50%; top: 0; transform: translateX(-50%); }
+
+.accordion-item.open .accordion-icon::after { opacity: 0; transform: translateX(-50%) rotate(90deg); }
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height var(--dur-normal) var(--ease-out-quart);
+}
+
+.accordion-content-inner {
+  padding: 0 0 var(--sp-5);
+  color: var(--color-text);
+  line-height: var(--leading-body);
+}
+
+.accordion-item.open .accordion-content { max-height: 500px; }
+
+/* ── SCROLLBAR STYLING ────────────────────────────────────── */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--color-bg); }
+::-webkit-scrollbar-thumb { background: var(--color-surface-2); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--color-gold-dark); }
+
+/* ── SELECTION ────────────────────────────────────────────── */
+::selection {
+  background: var(--color-gold-muted);
+  color: var(--color-gold-light);
+}
+
+/* ── REDUCED MOTION ───────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
