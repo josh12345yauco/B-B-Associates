@@ -1,6 +1,0 @@
-# Exclude large video files - Vercel has a 1GB per file limit
-# Videos should be hosted on a CDN (Cloudinary, YouTube, Vimeo) instead
-**/*.MOV
-**/*.mov
-**/*.mp4
-**/*.MP4
