@@ -1,0 +1,1263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Kitchen &amp; Bathroom Remodeling in Montgomery County, PA | B&amp;B Associates Creations</title>
+  <meta name="description" content="Award-winning kitchen and bathroom remodeling in Montgomery County, PA. 25 years · 1,200+ projects · 183 five-star reviews. Free consultation. B&B Associates Creations — Ambler, PA.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Design System -->
+  <link rel="stylesheet" href="../css/design-system.css">
+  <link rel="stylesheet" href="../css/components.css">
+
+  <!-- Supabase -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+
+  <!-- Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HomeAndConstructionBusiness",
+    "name": "B&B Associates Creations",
+    "url": "https://b-b-associates.vercel.app",
+    "telephone": "+12674028758",
+    "address": { "@type": "PostalAddress", "streetAddress": "1147 E Welsh Rd", "addressLocality": "Ambler", "addressRegion": "PA", "postalCode": "19002" },
+    "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5.0", "reviewCount": "183" },
+    "areaServed": "Montgomery County, PA"
+  }
+  </script>
+
+  <style>
+    /* ── PAGE RESET ──────────────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    /* ── STICKY HEADER ───────────────────────────────────────── */
+    .lp-header {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+      height: 68px;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 clamp(16px, 4vw, 48px);
+      background: rgba(26, 28, 35, 0.0);
+      border-bottom: 1px solid transparent;
+      transition: background 0.4s ease, border-color 0.4s ease, backdrop-filter 0.4s ease;
+    }
+    .lp-header.scrolled {
+      background: rgba(26, 28, 35, 0.88);
+      backdrop-filter: blur(20px);
+      border-bottom-color: rgba(182, 117, 57, 0.15);
+    }
+    .lp-header-logo img { height: 44px; width: auto; display: block; }
+    .lp-header-right { display: flex; align-items: center; gap: 12px; }
+    .lp-header-phone {
+      font-family: var(--font-sans); font-size: 14px; font-weight: 600;
+      color: var(--color-white); text-decoration: none; letter-spacing: 0.04em;
+      display: flex; align-items: center; gap: 6px;
+      padding: 8px 14px; border: 1px solid rgba(255,255,255,0.2); border-radius: 2px;
+      transition: border-color 0.3s ease, color 0.3s ease;
+    }
+    .lp-header-phone:hover { color: var(--color-gold); border-color: var(--color-gold-border); }
+    .lp-header-cta {
+      font-family: var(--font-sans); font-size: 12px; font-weight: 600;
+      letter-spacing: 0.14em; text-transform: uppercase; text-decoration: none;
+      color: var(--color-bg); background: var(--color-gold);
+      padding: 10px 20px; border: none; cursor: pointer;
+      transition: background 0.3s ease, transform 0.2s ease;
+      white-space: nowrap;
+    }
+    .lp-header-cta:hover { background: var(--color-gold-light); transform: translateY(-1px); }
+    @media(max-width:640px) {
+      .lp-header-phone span { display: none; }
+      .lp-header-phone::before { content: '📞'; font-size: 16px; }
+    }
+
+    /* ── HERO ────────────────────────────────────────────────── */
+    .lp-hero {
+      position: relative; min-height: 100vh;
+      display: flex; align-items: center;
+      background: url('../IMAGES/Custom-Kitchen-Ambler-Pa.png') center center / cover no-repeat;
+      padding-top: 68px;
+    }
+    .lp-hero::before {
+      content: ''; position: absolute; inset: 0;
+      background: linear-gradient(135deg, rgba(10,10,14,0.82) 0%, rgba(26,28,35,0.65) 60%, rgba(26,28,35,0.4) 100%);
+    }
+    .lp-hero-inner {
+      position: relative; z-index: 1;
+      max-width: 780px;
+      padding: clamp(48px,8vw,120px) clamp(20px,5vw,80px);
+    }
+    .lp-hero-eyebrow {
+      font-family: var(--font-sans); font-size: 11px; font-weight: 500;
+      letter-spacing: 0.22em; text-transform: uppercase;
+      color: var(--color-gold); margin-bottom: 20px;
+      display: flex; align-items: center; gap: 10px;
+    }
+    .lp-hero-eyebrow::before { content: ''; display: block; width: 32px; height: 1px; background: var(--color-gold); }
+    .lp-hero h1 {
+      font-family: var(--font-sans); font-size: clamp(32px, 5vw, 58px);
+      font-weight: 700; line-height: 1.12;
+      color: var(--color-white); letter-spacing: -0.02em;
+      margin-bottom: 16px;
+    }
+    .lp-hero-tagline {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(26px, 4vw, 48px);
+      font-weight: 300; font-style: italic;
+      color: var(--color-gold-light); margin-bottom: 24px; line-height: 1.2;
+    }
+    .lp-hero-body {
+      font-family: var(--font-sans); font-size: clamp(15px, 1.5vw, 18px);
+      color: var(--color-text); line-height: 1.7; margin-bottom: 36px;
+      max-width: 560px;
+    }
+    .lp-hero-ctas { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 32px; }
+    .lp-btn-primary {
+      font-family: var(--font-sans); font-size: 13px; font-weight: 600;
+      letter-spacing: 0.14em; text-transform: uppercase; text-decoration: none;
+      color: var(--color-bg); background: var(--color-gold);
+      padding: 16px 32px; border: none; cursor: pointer;
+      transition: background 0.3s ease, transform 0.2s ease;
+      display: inline-flex; align-items: center; gap: 8px;
+    }
+    .lp-btn-primary:hover { background: var(--color-gold-light); transform: translateY(-2px); }
+    .lp-btn-outline {
+      font-family: var(--font-sans); font-size: 13px; font-weight: 500;
+      letter-spacing: 0.14em; text-transform: uppercase; text-decoration: none;
+      color: var(--color-white); background: transparent;
+      padding: 16px 32px;
+      border: 1px solid rgba(255,255,255,0.45);
+      backdrop-filter: blur(6px);
+      transition: border-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+      display: inline-flex; align-items: center; gap: 8px;
+    }
+    .lp-btn-outline:hover { border-color: var(--color-gold); color: var(--color-gold); transform: translateY(-2px); }
+    .lp-trust-badges {
+      display: flex; flex-wrap: wrap; gap: 20px; align-items: center;
+    }
+    .lp-trust-badge {
+      font-family: var(--font-sans); font-size: 12px; font-weight: 500;
+      color: var(--color-text); display: flex; align-items: center; gap: 6px;
+      letter-spacing: 0.04em;
+    }
+    .lp-trust-badge strong { color: var(--color-white); }
+    .lp-micro {
+      font-family: var(--font-sans); font-size: 12px;
+      color: var(--color-text-dim); margin-top: 14px; font-style: italic;
+    }
+
+    /* ── STAT BAR ────────────────────────────────────────────── */
+    .lp-stat-bar {
+      background: var(--color-surface);
+      border-top: 1px solid var(--color-border-dim);
+      border-bottom: 1px solid var(--color-border-dim);
+      padding: 32px clamp(20px,5vw,80px);
+    }
+    .lp-stat-grid {
+      display: grid; grid-template-columns: repeat(4, 1fr);
+      max-width: 1100px; margin: 0 auto;
+      gap: 0;
+    }
+    .lp-stat {
+      text-align: center; padding: 12px 20px;
+      border-right: 1px solid var(--color-border-dim);
+    }
+    .lp-stat:last-child { border-right: none; }
+    .lp-stat-num {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(36px, 5vw, 60px); font-weight: 300;
+      color: var(--color-gold); line-height: 1; margin-bottom: 6px;
+    }
+    .lp-stat-label {
+      font-family: var(--font-sans); font-size: 11px; font-weight: 500;
+      letter-spacing: 0.18em; text-transform: uppercase;
+      color: var(--color-text-dim);
+    }
+    @media(max-width:640px) {
+      .lp-stat-grid { grid-template-columns: repeat(2, 1fr); }
+      .lp-stat:nth-child(2) { border-right: none; }
+      .lp-stat:nth-child(3) { border-top: 1px solid var(--color-border-dim); border-right: 1px solid var(--color-border-dim); }
+      .lp-stat:nth-child(4) { border-top: 1px solid var(--color-border-dim); border-right: none; }
+    }
+
+    /* ── SECTION SHARED ──────────────────────────────────────── */
+    .lp-section {
+      padding: clamp(60px, 8vw, 120px) clamp(20px, 5vw, 80px);
+      max-width: 1440px; margin: 0 auto;
+    }
+    .lp-section-full {
+      padding: clamp(60px, 8vw, 120px) clamp(20px, 5vw, 80px);
+    }
+    .lp-eyebrow {
+      font-family: var(--font-sans); font-size: 11px; font-weight: 500;
+      letter-spacing: 0.22em; text-transform: uppercase;
+      color: var(--color-gold); margin-bottom: 16px;
+    }
+    .lp-heading {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(32px, 4.5vw, 62px); font-weight: 300;
+      color: var(--color-white); line-height: 1.1; margin-bottom: 16px;
+    }
+    .lp-subheading {
+      font-family: var(--font-sans); font-size: clamp(15px, 1.4vw, 17px);
+      color: var(--color-text); line-height: 1.7; max-width: 620px;
+    }
+    .lp-gold-line { width: 40px; height: 1px; background: var(--color-gold); margin: 20px 0; }
+
+    /* ── PHOTO MASONRY ───────────────────────────────────────── */
+    .lp-gallery-section { background: var(--color-bg-2); }
+    .lp-gallery-header { text-align: center; margin-bottom: 48px; }
+    .lp-gallery-header .lp-subheading { margin: 0 auto; }
+    .lp-masonry {
+      columns: 4; column-gap: 8px;
+      max-width: 1300px; margin: 0 auto 40px;
+    }
+    .lp-masonry-item {
+      break-inside: avoid; margin-bottom: 8px;
+      overflow: hidden; position: relative;
+      cursor: pointer;
+    }
+    .lp-masonry-item img {
+      width: 100%; height: auto; display: block;
+      transition: transform 0.6s cubic-bezier(0.25,1,0.5,1);
+    }
+    .lp-masonry-item:hover img { transform: scale(1.04); }
+    .lp-masonry-item::after {
+      content: ''; position: absolute; inset: 0;
+      background: rgba(182,117,57,0); transition: background 0.3s ease;
+    }
+    .lp-masonry-item:hover::after { background: rgba(182,117,57,0.08); }
+    .lp-gallery-cta { text-align: center; }
+    @media(max-width:900px) { .lp-masonry { columns: 3; } }
+    @media(max-width:640px) { .lp-masonry { columns: 2; } }
+    @media(max-width:400px) { .lp-masonry { columns: 1; } }
+
+    /* ── LEAD FORM SECTION ───────────────────────────────────── */
+    .lp-form-section {
+      background: var(--color-bg);
+      border-top: 1px solid var(--color-border-dim);
+      border-bottom: 1px solid var(--color-border-dim);
+    }
+    .lp-form-inner {
+      display: grid; grid-template-columns: 1fr 420px;
+      gap: 80px; max-width: 1200px; margin: 0 auto;
+      padding: clamp(60px,8vw,120px) clamp(20px,5vw,80px);
+      align-items: start;
+    }
+    .lp-form-wrap {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border-dim);
+      padding: 48px 40px;
+    }
+    .lp-form-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(28px, 3.5vw, 44px); font-weight: 300;
+      color: var(--color-white); margin-bottom: 8px; line-height: 1.15;
+    }
+    .lp-form-sub {
+      font-size: 14px; color: var(--color-text-dim); margin-bottom: 32px;
+    }
+    .lp-form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .lp-field { display: flex; flex-direction: column; gap: 6px; margin-bottom: 16px; }
+    .lp-field label {
+      font-family: var(--font-sans); font-size: 11px; font-weight: 500;
+      letter-spacing: 0.14em; text-transform: uppercase;
+      color: var(--color-text-dim);
+    }
+    .lp-field input,
+    .lp-field select,
+    .lp-field textarea {
+      width: 100%; background: var(--color-bg);
+      border: 1px solid rgba(255,255,255,0.1);
+      padding: 14px 16px; font-family: var(--font-sans);
+      font-size: 15px; color: var(--color-white);
+      transition: border-color 0.3s ease; outline: none;
+      border-radius: 0; appearance: none;
+    }
+    .lp-field input:focus,
+    .lp-field select:focus,
+    .lp-field textarea:focus { border-color: var(--color-gold); }
+    .lp-field select { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%237A7468' stroke-width='1.5' fill='none'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 16px center; padding-right: 40px; cursor: pointer; }
+    .lp-field textarea { resize: vertical; min-height: 100px; }
+    .lp-field input::placeholder, .lp-field textarea::placeholder { color: var(--color-text-dimmer); }
+    .lp-form-submit {
+      width: 100%; padding: 18px; margin-top: 8px;
+      background: var(--color-gold); color: var(--color-bg);
+      font-family: var(--font-sans); font-size: 13px; font-weight: 700;
+      letter-spacing: 0.18em; text-transform: uppercase;
+      border: none; cursor: pointer;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+    .lp-form-submit:hover { background: var(--color-gold-light); transform: translateY(-1px); }
+    .lp-form-assurance {
+      text-align: center; margin-top: 14px;
+      font-size: 12px; color: var(--color-text-dim); font-style: italic;
+    }
+    .lp-form-success {
+      display: none; text-align: center; padding: 40px 20px;
+    }
+    .lp-form-success h3 {
+      font-family: 'Cormorant Garamond', serif; font-size: 32px;
+      font-weight: 300; color: var(--color-gold); margin-bottom: 12px;
+    }
+    .lp-form-success p { font-size: 15px; color: var(--color-text); line-height: 1.7; }
+
+    /* Form sidebar */
+    .lp-form-sidebar { position: sticky; top: 88px; }
+    .lp-form-why {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border-dim);
+      padding: 32px 28px; margin-bottom: 20px;
+    }
+    .lp-form-why h3 {
+      font-family: var(--font-sans); font-size: 13px; font-weight: 600;
+      letter-spacing: 0.14em; text-transform: uppercase;
+      color: var(--color-gold); margin-bottom: 20px;
+    }
+    .lp-why-list { list-style: none; display: flex; flex-direction: column; gap: 12px; }
+    .lp-why-list li {
+      display: flex; gap: 12px; align-items: flex-start;
+      font-size: 14px; color: var(--color-text); line-height: 1.5;
+    }
+    .lp-why-list li::before {
+      content: '✓'; color: var(--color-gold); font-weight: 700;
+      flex-shrink: 0; margin-top: 1px;
+    }
+    .lp-sidebar-review {
+      background: var(--color-surface-2);
+      border-left: 3px solid var(--color-gold);
+      padding: 24px 20px; margin-bottom: 20px;
+    }
+    .lp-sidebar-review .stars { color: var(--color-gold); font-size: 14px; margin-bottom: 10px; }
+    .lp-sidebar-review blockquote {
+      font-family: 'Cormorant Garamond', serif; font-size: 18px;
+      font-style: italic; font-weight: 300; color: var(--color-white);
+      line-height: 1.5; margin-bottom: 12px;
+    }
+    .lp-sidebar-review cite {
+      font-style: normal; font-size: 12px; color: var(--color-text-dim);
+      letter-spacing: 0.1em; text-transform: uppercase;
+    }
+    .lp-sidebar-phone {
+      background: var(--color-bg-3); border: 1px solid var(--color-border-dim);
+      padding: 20px 24px; text-align: center;
+    }
+    .lp-sidebar-phone p { font-size: 12px; color: var(--color-text-dim); margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.1em; }
+    .lp-sidebar-phone a {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 28px; font-weight: 400; color: var(--color-gold);
+      text-decoration: none; letter-spacing: 0.02em;
+    }
+    .lp-sidebar-phone .response-badge {
+      margin-top: 8px; font-size: 11px; color: var(--color-text-dim);
+    }
+
+    @media(max-width:1024px) {
+      .lp-form-inner { grid-template-columns: 1fr; gap: 40px; }
+      .lp-form-sidebar { position: static; }
+    }
+    @media(max-width:640px) {
+      .lp-form-wrap { padding: 28px 20px; }
+      .lp-form-row { grid-template-columns: 1fr; }
+    }
+
+    /* ── REVIEWS ─────────────────────────────────────────────── */
+    .lp-reviews-section { background: var(--color-bg-2); }
+    .lp-reviews-header { text-align: center; margin-bottom: 48px; }
+    .lp-reviews-header .lp-gold-line { margin: 20px auto; }
+    .lp-reviews-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      gap: 20px; max-width: 1200px; margin: 0 auto 40px;
+    }
+    .lp-review-card {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border-dim);
+      padding: 28px 24px;
+      transition: border-color 0.3s ease;
+    }
+    .lp-review-card:hover { border-color: var(--color-gold-border); }
+    .lp-review-stars { color: var(--color-gold); font-size: 13px; margin-bottom: 14px; }
+    .lp-review-text {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 18px; font-style: italic; font-weight: 300;
+      color: var(--color-white); line-height: 1.55; margin-bottom: 16px;
+    }
+    .lp-review-author {
+      font-family: var(--font-sans); font-size: 11px; font-weight: 600;
+      letter-spacing: 0.14em; text-transform: uppercase;
+      color: var(--color-text-dim);
+    }
+    .lp-review-source {
+      display: inline-block; margin-top: 6px;
+      font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase;
+      color: var(--color-text-dimmer); border: 1px solid var(--color-border-dim);
+      padding: 2px 8px;
+    }
+    .lp-reviews-cta { text-align: center; }
+    @media(max-width:900px) { .lp-reviews-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media(max-width:580px) { .lp-reviews-grid { grid-template-columns: 1fr; } }
+
+    /* ── PROCESS ─────────────────────────────────────────────── */
+    .lp-process-section { background: var(--color-bg); }
+    .lp-process-header { text-align: center; margin-bottom: 56px; }
+    .lp-process-header .lp-gold-line { margin: 20px auto; }
+    .lp-process-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      gap: 0; max-width: 1100px; margin: 0 auto 48px;
+      position: relative;
+    }
+    .lp-process-step {
+      padding: 48px 36px; text-align: center;
+      border: 1px solid var(--color-border-dim);
+      position: relative;
+    }
+    .lp-process-step + .lp-process-step { border-left: none; }
+    .lp-step-num {
+      font-family: 'Cormorant Garamond', serif; font-size: 72px;
+      font-weight: 300; color: var(--color-gold); opacity: 0.2;
+      line-height: 1; margin-bottom: 8px;
+    }
+    .lp-step-title {
+      font-family: 'Cormorant Garamond', serif; font-size: 24px;
+      font-weight: 500; color: var(--color-white); margin-bottom: 12px;
+    }
+    .lp-step-body { font-size: 14px; color: var(--color-text); line-height: 1.7; }
+    .lp-process-cta { text-align: center; }
+    @media(max-width:768px) {
+      .lp-process-grid { grid-template-columns: 1fr; }
+      .lp-process-step + .lp-process-step { border-left: 1px solid var(--color-border-dim); border-top: none; }
+    }
+
+    /* ── COMPARISON TABLE ────────────────────────────────────── */
+    .lp-diff-section { background: var(--color-bg-2); }
+    .lp-diff-header { margin-bottom: 40px; }
+    .lp-diff-inner { max-width: 1100px; margin: 0 auto; }
+    .lp-compare-table {
+      width: 100%; border-collapse: collapse; margin-bottom: 32px;
+    }
+    .lp-compare-table th {
+      padding: 16px 24px; text-align: left;
+      font-family: var(--font-sans); font-size: 12px; font-weight: 600;
+      letter-spacing: 0.14em; text-transform: uppercase;
+      border-bottom: 1px solid var(--color-border-dim);
+    }
+    .lp-compare-table th:nth-child(2) { color: var(--color-gold); background: rgba(182,117,57,0.06); }
+    .lp-compare-table th:nth-child(3) { color: var(--color-text-dim); }
+    .lp-compare-table th:first-child { color: var(--color-text-dimmer); }
+    .lp-compare-table td {
+      padding: 14px 24px; font-size: 14px; color: var(--color-text);
+      border-bottom: 1px solid var(--color-border-dim);
+    }
+    .lp-compare-table td:first-child {
+      color: var(--color-text-dim); font-size: 12px;
+      font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase;
+    }
+    .lp-compare-table td:nth-child(2) {
+      color: var(--color-white); font-weight: 500;
+      background: rgba(182,117,57,0.04);
+    }
+    .lp-compare-table tr:hover td { background: var(--color-surface); }
+    .lp-compare-table tr:hover td:nth-child(2) { background: rgba(182,117,57,0.08); }
+    .lp-atoz-box {
+      background: rgba(182,117,57,0.08);
+      border: 1px solid var(--color-gold-border);
+      border-left: 3px solid var(--color-gold);
+      padding: 24px 28px; margin-top: 24px;
+    }
+    .lp-atoz-box h4 {
+      font-family: var(--font-sans); font-size: 13px; font-weight: 700;
+      letter-spacing: 0.1em; text-transform: uppercase;
+      color: var(--color-gold); margin-bottom: 8px;
+    }
+    .lp-atoz-box p { font-size: 15px; color: var(--color-text); line-height: 1.7; }
+    @media(max-width:640px) {
+      .lp-compare-table { font-size: 13px; }
+      .lp-compare-table th, .lp-compare-table td { padding: 12px 14px; }
+    }
+
+    /* ── INVESTMENT RANGES ───────────────────────────────────── */
+    .lp-invest-section { background: var(--color-bg); }
+    .lp-invest-header { text-align: center; margin-bottom: 48px; }
+    .lp-invest-header .lp-gold-line { margin: 20px auto; }
+    .lp-invest-grid {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 24px; max-width: 1000px; margin: 0 auto 32px;
+    }
+    .lp-invest-card {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border-dim);
+      padding: 40px 36px;
+      transition: border-color 0.3s ease;
+    }
+    .lp-invest-card:hover { border-color: var(--color-gold-border); }
+    .lp-invest-type {
+      font-family: var(--font-sans); font-size: 11px; font-weight: 600;
+      letter-spacing: 0.2em; text-transform: uppercase;
+      color: var(--color-gold); margin-bottom: 16px;
+    }
+    .lp-invest-range {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(28px, 3.5vw, 46px); font-weight: 300;
+      color: var(--color-white); line-height: 1.1; margin-bottom: 16px;
+    }
+    .lp-invest-body { font-size: 14px; color: var(--color-text); line-height: 1.7; margin-bottom: 20px; }
+    .lp-invest-projects {
+      font-size: 12px; color: var(--color-text-dim);
+      border-top: 1px solid var(--color-border-dim);
+      padding-top: 16px; line-height: 1.8;
+    }
+    .lp-invest-projects strong { color: var(--color-text); }
+    .lp-financing-badge {
+      text-align: center; max-width: 1000px; margin: 0 auto 32px;
+      background: var(--color-surface-2); border: 1px solid var(--color-border-dim);
+      padding: 18px 28px; font-size: 14px; color: var(--color-text);
+    }
+    .lp-financing-badge strong { color: var(--color-gold); }
+    .lp-invest-cta { text-align: center; }
+    @media(max-width:640px) {
+      .lp-invest-grid { grid-template-columns: 1fr; }
+      .lp-invest-card { padding: 28px 24px; }
+    }
+
+    /* ── TEAM SECTION ────────────────────────────────────────── */
+    .lp-team-section {
+      background: var(--color-bg-2);
+      display: grid; grid-template-columns: 1fr 1fr;
+      min-height: 480px;
+    }
+    .lp-team-img {
+      overflow: hidden; min-height: 380px;
+    }
+    .lp-team-img img { width: 100%; height: 100%; object-fit: cover; }
+    .lp-team-content {
+      display: flex; flex-direction: column; justify-content: center;
+      padding: clamp(40px, 6vw, 80px);
+    }
+    .lp-team-stats {
+      display: flex; gap: 28px; margin-top: 32px; flex-wrap: wrap;
+    }
+    .lp-team-stat { text-align: center; }
+    .lp-team-stat-num {
+      font-family: 'Cormorant Garamond', serif; font-size: 32px;
+      font-weight: 300; color: var(--color-gold); line-height: 1;
+    }
+    .lp-team-stat-label {
+      font-size: 11px; color: var(--color-text-dim);
+      text-transform: uppercase; letter-spacing: 0.12em;
+    }
+    @media(max-width:768px) {
+      .lp-team-section { grid-template-columns: 1fr; }
+      .lp-team-img { min-height: 260px; }
+    }
+
+    /* ── FAQ ─────────────────────────────────────────────────── */
+    .lp-faq-section { background: var(--color-bg); }
+    .lp-faq-header { text-align: center; margin-bottom: 48px; }
+    .lp-faq-header .lp-gold-line { margin: 20px auto; }
+    .lp-faq-list { max-width: 800px; margin: 0 auto; }
+    .lp-faq-item {
+      border-bottom: 1px solid var(--color-border-dim);
+    }
+    .lp-faq-item:first-child { border-top: 1px solid var(--color-border-dim); }
+    .lp-faq-q {
+      width: 100%; background: none; border: none; cursor: pointer;
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 22px 0; text-align: left; gap: 20px;
+    }
+    .lp-faq-q-text {
+      font-family: var(--font-sans); font-size: 16px; font-weight: 500;
+      color: var(--color-white); line-height: 1.4;
+      transition: color 0.2s ease;
+    }
+    .lp-faq-q:hover .lp-faq-q-text { color: var(--color-gold); }
+    .lp-faq-icon {
+      flex-shrink: 0; width: 20px; height: 20px;
+      border: 1px solid var(--color-border-dim); border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      transition: background 0.3s ease, border-color 0.3s ease;
+    }
+    .lp-faq-item.open .lp-faq-icon { background: var(--color-gold); border-color: var(--color-gold); }
+    .lp-faq-icon-bar {
+      position: relative; width: 8px; height: 1px;
+      background: var(--color-text-dim);
+    }
+    .lp-faq-icon-bar::after {
+      content: ''; position: absolute;
+      width: 1px; height: 8px; background: var(--color-text-dim);
+      top: -3.5px; left: 3.5px;
+      transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+    .lp-faq-item.open .lp-faq-icon-bar { background: var(--color-bg); }
+    .lp-faq-item.open .lp-faq-icon-bar::after { background: var(--color-bg); transform: scaleY(0); opacity: 0; }
+    .lp-faq-a {
+      overflow: hidden; max-height: 0;
+      transition: max-height 0.4s cubic-bezier(0.25,1,0.5,1), padding 0.3s ease;
+    }
+    .lp-faq-item.open .lp-faq-a { max-height: 400px; padding-bottom: 20px; }
+    .lp-faq-a-text { font-size: 15px; color: var(--color-text); line-height: 1.75; }
+
+    /* ── FINAL CTA ───────────────────────────────────────────── */
+    .lp-final-cta {
+      position: relative;
+      background: url('../IMAGES/Custom-Bathroom-Ambler-Pa.png') center 40% / cover no-repeat;
+      text-align: center;
+      padding: clamp(80px, 12vw, 160px) clamp(20px, 5vw, 80px);
+    }
+    .lp-final-cta::before {
+      content: ''; position: absolute; inset: 0;
+      background: linear-gradient(180deg, rgba(10,10,14,0.8) 0%, rgba(26,28,35,0.75) 100%);
+    }
+    .lp-final-cta-inner { position: relative; z-index: 1; max-width: 680px; margin: 0 auto; }
+    .lp-final-cta .lp-heading { font-size: clamp(36px, 5.5vw, 72px); }
+    .lp-final-cta .lp-subheading { margin: 0 auto 36px; text-align: center; max-width: 520px; }
+    .lp-final-ctas { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; margin-bottom: 20px; }
+    .lp-final-micro { font-size: 12px; color: rgba(196,189,175,0.6); font-style: italic; }
+
+    /* ── FOOTER ──────────────────────────────────────────────── */
+    .lp-footer {
+      background: var(--color-bg-3);
+      border-top: 1px solid var(--color-border-dim);
+      padding: 36px clamp(20px, 5vw, 80px);
+    }
+    .lp-footer-inner {
+      max-width: 1200px; margin: 0 auto;
+      display: flex; align-items: center; justify-content: space-between;
+      flex-wrap: wrap; gap: 20px;
+    }
+    .lp-footer-logo img { height: 36px; width: auto; }
+    .lp-footer-info { font-size: 13px; color: var(--color-text-dim); line-height: 1.8; }
+    .lp-footer-info a { color: var(--color-text-dim); text-decoration: none; }
+    .lp-footer-info a:hover { color: var(--color-gold); }
+    .lp-footer-copy { font-size: 12px; color: var(--color-text-dimmer); }
+
+    /* ── MOBILE STICKY CTA BAR ───────────────────────────────── */
+    .lp-sticky-bar {
+      position: fixed; bottom: 0; left: 0; right: 0; z-index: 999;
+      background: var(--color-bg-3);
+      border-top: 1px solid var(--color-border-dim);
+      display: none; /* shown via JS */
+      grid-template-columns: 1fr 1fr;
+    }
+    .lp-sticky-call, .lp-sticky-form {
+      padding: 16px; font-family: var(--font-sans);
+      font-size: 13px; font-weight: 600; letter-spacing: 0.1em;
+      text-transform: uppercase; text-decoration: none;
+      display: flex; align-items: center; justify-content: center; gap: 8px;
+      border: none; cursor: pointer;
+    }
+    .lp-sticky-call { background: transparent; color: var(--color-white); border-right: 1px solid var(--color-border-dim); }
+    .lp-sticky-form { background: var(--color-gold); color: var(--color-bg); }
+    @media(max-width:768px) {
+      .lp-sticky-bar { display: grid; }
+      body { padding-bottom: 56px; }
+    }
+
+    /* ── ANIMATIONS ──────────────────────────────────────────── */
+    .reveal {
+      opacity: 0; transform: translateY(28px);
+      transition: opacity 0.7s cubic-bezier(0.25,1,0.5,1),
+                  transform 0.7s cubic-bezier(0.25,1,0.5,1);
+    }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .reveal-delay-1 { transition-delay: 0.1s; }
+    .reveal-delay-2 { transition-delay: 0.2s; }
+    .reveal-delay-3 { transition-delay: 0.3s; }
+  </style>
+</head>
+<body>
+
+  <!-- ── STICKY HEADER ──────────────────────────────────────── -->
+  <header class="lp-header" id="lp-header">
+    <a href="../" class="lp-header-logo" aria-label="B&B Associates Creations — Home">
+      <img src="../IMAGES/bb-logo-white.png" alt="B&B Associates Creations">
+    </a>
+    <div class="lp-header-right">
+      <a href="tel:+12674028758" class="lp-header-phone">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.68A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.18 6.18l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"></path></svg>
+        <span>(267) 402-8758</span>
+      </a>
+      <a href="#form" class="lp-header-cta">Get Free Estimate</a>
+    </div>
+  </header>
+
+  <!-- ── HERO ───────────────────────────────────────────────── -->
+  <section class="lp-hero" aria-label="Hero">
+    <div class="lp-hero-inner">
+      <p class="lp-hero-eyebrow">Montgomery County, PA · Since 1999</p>
+      <h1>Kitchen &amp; Bathroom Remodeling in Montgomery County, PA</h1>
+      <p class="lp-hero-tagline">Luxury Within Your Means</p>
+      <p class="lp-hero-body">25 years. 1,200+ completed projects. 183 verified five-star reviews. B&amp;B Associates Creations is Montgomery County's premier design-build remodeling firm — family-owned, no subcontractors, lifetime guarantee.</p>
+      <div class="lp-hero-ctas">
+        <a href="#form" class="lp-btn-primary">Request Free Consultation →</a>
+        <a href="tel:+12674028758" class="lp-btn-outline">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.68A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.18 6.18l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"></path></svg>
+          Call (267) 402-8758
+        </a>
+      </div>
+      <div class="lp-trust-badges">
+        <span class="lp-trust-badge">⭐ <strong>5.0</strong> · 183 Google Reviews</span>
+        <span class="lp-trust-badge">🏠 <strong>25</strong> Years in Business</span>
+        <span class="lp-trust-badge">✅ <strong>No</strong> Subcontractors</span>
+        <span class="lp-trust-badge">🛡️ <strong>Lifetime</strong> Guarantee</span>
+      </div>
+      <p class="lp-micro">We respond within 1 hour. No obligation. No pressure.</p>
+    </div>
+  </section>
+
+  <!-- ── STAT BAR ────────────────────────────────────────────── -->
+  <div class="lp-stat-bar">
+    <div class="lp-stat-grid">
+      <div class="lp-stat reveal">
+        <div class="lp-stat-num" data-count="1200">0</div>
+        <div class="lp-stat-label">Projects Completed</div>
+      </div>
+      <div class="lp-stat reveal reveal-delay-1">
+        <div class="lp-stat-num" data-count="25">0</div>
+        <div class="lp-stat-label">Years in Business</div>
+      </div>
+      <div class="lp-stat reveal reveal-delay-2">
+        <div class="lp-stat-num" data-count="183">0</div>
+        <div class="lp-stat-label">Five-Star Reviews</div>
+      </div>
+      <div class="lp-stat reveal reveal-delay-3">
+        <div class="lp-stat-num" data-count="60">0</div>
+        <div class="lp-stat-label">Premium Supplier Partners</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── PHOTO SHOWCASE ──────────────────────────────────────── -->
+  <section class="lp-gallery-section lp-section-full" aria-label="Portfolio showcase">
+    <div class="lp-section">
+      <div class="lp-gallery-header reveal">
+        <p class="lp-eyebrow">Our Work · Kitchens &amp; Bathrooms</p>
+        <h2 class="lp-heading">Transformations Across Montgomery County</h2>
+        <div class="lp-gold-line" style="margin:20px auto;"></div>
+        <p class="lp-subheading">Every project is designed and built by the same team of master craftsmen — start to finish, no subcontractors, no exceptions.</p>
+      </div>
+      <div class="lp-masonry">
+        <div class="lp-masonry-item reveal"><img src="../portfolio/KITCHENS/BB-OLaughlin-kitchen/056F5D4A-01E4-476B-9D9C-06884681B5C9.jpeg" alt="Open-concept transitional kitchen remodel – Montgomery County PA" loading="lazy"></div>
+        <div class="lp-masonry-item reveal reveal-delay-1"><img src="../portfolio/BATHROOMS/B&B - Vartanian-bathroom/IMG_6078.jpg" alt="Luxury master bathroom remodel – Montgomery County PA" loading="lazy"></div>
+        <div class="lp-masonry-item reveal reveal-delay-2"><img src="../portfolio/KITCHENS/B&B - Jeff Kohl Kitchen/IMG_2798.jpg" alt="Open-concept grey and navy kitchen remodel – Pennsylvania" loading="lazy"></div>
+        <div class="lp-masonry-item reveal reveal-delay-3"><img src="../portfolio/BATHROOMS/BB-ODonnell-bathroom/085E5B7F-C0C3-4C1C-BCE2-B92BB2D4EF3C.jpeg" alt="Exotic coastal teal bathroom renovation – Montgomery County PA" loading="lazy"></div>
+        <div class="lp-masonry-item reveal"><img src="../portfolio/KITCHENS/B&B - Larkin Kitchen/02E0CC2D-DE46-4236-BC95-B3C1C07DE13B.jpeg" alt="Cherry amber structural kitchen renovation – Pennsylvania" loading="lazy"></div>
+        <div class="lp-masonry-item reveal reveal-delay-1"><img src="../portfolio/BATHROOMS/B&B - Guttridge -bathroom/3A187396-30B0-429C-A94A-DFBD89EC9C69.jpeg" alt="Spa and laundry master bathroom – Montgomery County PA" loading="lazy"></div>
+        <div class="lp-masonry-item reveal reveal-delay-2"><img src="../portfolio/KITCHENS/B&B - Hornig-kitchen/250A9B19-812C-4437-A819-2A9F84DEE3FB.jpeg" alt="Stacked brass and black luxury kitchen – Pennsylvania" loading="lazy"></div>
+        <div class="lp-masonry-item reveal reveal-delay-3"><img src="../portfolio/BATHROOMS/B&B - Cruz Master/43A1EA43-B24F-4E83-898B-1C9696445319.jpeg" alt="Modern dark spa master bath – Pennsylvania" loading="lazy"></div>
+      </div>
+      <div class="lp-gallery-cta reveal">
+        <a href="../portfolio/" class="lp-btn-outline">View Full Portfolio →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── LEAD FORM ───────────────────────────────────────────── -->
+  <section class="lp-form-section" id="form" aria-label="Request free consultation">
+    <div class="lp-form-inner">
+      <div>
+        <div class="reveal" style="margin-bottom:36px;">
+          <p class="lp-eyebrow">Free Consultation · No Obligation</p>
+          <h2 class="lp-heading">Start Your Dream Remodel Today</h2>
+          <div class="lp-gold-line"></div>
+          <p class="lp-subheading">Fill out the form and we'll reach out within 1 hour — no sales pitch, no pressure, just a real conversation about your vision.</p>
+        </div>
+        <div class="lp-form-wrap reveal reveal-delay-1">
+          <h3 class="lp-form-title">Request a Free Consultation</h3>
+          <p class="lp-form-sub">We'll respond within 1 business hour.</p>
+          <form id="lp-lead-form" novalidate>
+            <div class="lp-form-row">
+              <div class="lp-field">
+                <label for="lp-first">First Name *</label>
+                <input type="text" id="lp-first" name="firstName" placeholder="Jane" required>
+              </div>
+              <div class="lp-field">
+                <label for="lp-last">Last Name *</label>
+                <input type="text" id="lp-last" name="lastName" placeholder="Smith" required>
+              </div>
+            </div>
+            <div class="lp-field">
+              <label for="lp-phone">Phone Number *</label>
+              <input type="tel" id="lp-phone" name="phone" placeholder="(215) 555-0100" required>
+            </div>
+            <div class="lp-field">
+              <label for="lp-email">Email Address</label>
+              <input type="email" id="lp-email" name="email" placeholder="jane@email.com">
+            </div>
+            <div class="lp-form-row">
+              <div class="lp-field">
+                <label for="lp-type">Project Type</label>
+                <select id="lp-type" name="projectType">
+                  <option value="">Select one…</option>
+                  <option value="Kitchen Remodeling">Kitchen Remodeling</option>
+                  <option value="Bathroom Renovation">Bathroom Renovation</option>
+                  <option value="Kitchen + Bathroom">Kitchen + Bathroom</option>
+                </select>
+              </div>
+              <div class="lp-field">
+                <label for="lp-timeline">Timeline</label>
+                <select id="lp-timeline" name="timeline">
+                  <option value="">Select one…</option>
+                  <option value="ASAP">As soon as possible</option>
+                  <option value="1-3 months">1–3 months</option>
+                  <option value="3-6 months">3–6 months</option>
+                  <option value="Planning ahead">Planning ahead</option>
+                </select>
+              </div>
+            </div>
+            <div class="lp-field">
+              <label for="lp-msg">Tell Us About Your Project</label>
+              <textarea id="lp-msg" name="description" placeholder="Briefly describe your vision, timeline, or any questions…"></textarea>
+            </div>
+            <button type="submit" class="lp-form-submit">Request Free Consultation →</button>
+          </form>
+          <div class="lp-form-success" id="lp-form-success">
+            <h3>We'll Be In Touch Shortly</h3>
+            <p>Thank you for reaching out. Our team will contact you within 1 hour during business hours (Mon–Sat, 8am–6pm). For immediate assistance, call <a href="tel:+12674028758" style="color:var(--color-gold)">(267) 402-8758</a>.</p>
+          </div>
+          <p class="lp-form-assurance">We respond within 1 hour. No spam. No pressure. Consultation is completely free.</p>
+        </div>
+      </div>
+
+      <aside class="lp-form-sidebar">
+        <div class="lp-form-why reveal reveal-delay-2">
+          <h3>Why Homeowners Choose B&amp;B</h3>
+          <ul class="lp-why-list">
+            <li>25 years and 1,200+ completed projects in the Philadelphia area</li>
+            <li>183 verified five-star reviews on Google and Angi</li>
+            <li>Same master craftsmen from day one to final walkthrough — no subcontractors, ever</li>
+            <li>60+ premium supplier partners — 5–35% savings passed directly to you</li>
+            <li>Sub-1-hour response time and lifetime workmanship guarantee</li>
+          </ul>
+        </div>
+        <div class="lp-sidebar-review reveal reveal-delay-3">
+          <div class="stars">★★★★★</div>
+          <blockquote>"The result looks like a 5-star hotel bathroom. I keep walking in just to look at it. Thank you B&amp;B — you exceeded every expectation we had."</blockquote>
+          <cite>M.N. · Blue Bell, PA · Google Review</cite>
+        </div>
+        <div class="lp-sidebar-phone reveal reveal-delay-3">
+          <p>Or call us directly</p>
+          <a href="tel:+12674028758">(267) 402-8758</a>
+          <p class="response-badge">⚡ Sub-1-Hour Response Guaranteed</p>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ── REVIEWS ─────────────────────────────────────────────── -->
+  <section class="lp-reviews-section lp-section-full" aria-label="Customer reviews">
+    <div class="lp-section">
+      <div class="lp-reviews-header reveal">
+        <p class="lp-eyebrow">Verified Reviews · Google &amp; Angi</p>
+        <h2 class="lp-heading">What Montgomery County Homeowners Are Saying</h2>
+        <div class="lp-gold-line" style="margin:20px auto;"></div>
+        <p class="lp-subheading" style="margin:0 auto;">183 verified five-star reviews. Every single one.</p>
+      </div>
+      <div class="lp-reviews-grid">
+        <div class="lp-review-card reveal">
+          <div class="lp-review-stars">★★★★★</div>
+          <p class="lp-review-text">"The result looks like a 5-star hotel bathroom. I keep walking in just to look at it. Thank you B&amp;B — you exceeded every expectation we had."</p>
+          <div class="lp-review-author">M.N. · Blue Bell, PA</div>
+          <span class="lp-review-source">Google</span>
+        </div>
+        <div class="lp-review-card reveal reveal-delay-1">
+          <div class="lp-review-stars">★★★★★</div>
+          <p class="lp-review-text">"Best investment we've ever made. Removing those walls completely changed how we live. B&amp;B handled every detail perfectly."</p>
+          <div class="lp-review-author">Dana &amp; Roy M. · Wyncote, PA</div>
+          <span class="lp-review-source">Google</span>
+        </div>
+        <div class="lp-review-card reveal reveal-delay-2">
+          <div class="lp-review-stars">★★★★★</div>
+          <p class="lp-review-text">"The teal island was our dream and B&amp;B executed it better than we imagined. Every detail — from the backsplash to the brass fixtures — is perfect. Worth every penny."</p>
+          <div class="lp-review-author">The Marino Family · Newtown, PA</div>
+          <span class="lp-review-source">Angi</span>
+        </div>
+        <div class="lp-review-card reveal">
+          <div class="lp-review-stars">★★★★★</div>
+          <p class="lp-review-text">"The scale of what B&amp;B accomplished here is remarkable. They expanded our kitchen through the entire front of the house. The backsplash tile is stunning and the brass finishes are perfect."</p>
+          <div class="lp-review-author">The O'Laughlin Family · Pennsylvania</div>
+          <span class="lp-review-source">Google</span>
+        </div>
+        <div class="lp-review-card reveal reveal-delay-1">
+          <div class="lp-review-stars">★★★★★</div>
+          <p class="lp-review-text">"Our master bath now looks like something out of Architectural Digest. The curbless shower and the lighting design are absolutely stunning. We couldn't believe it was the same room."</p>
+          <div class="lp-review-author">Sarah &amp; Tom R. · Blue Bell, PA</div>
+          <span class="lp-review-source">Angi</span>
+        </div>
+        <div class="lp-review-card reveal reveal-delay-2">
+          <div class="lp-review-stars">★★★★★</div>
+          <p class="lp-review-text">"The arched cabinet detail is something we never imagined possible — and B&amp;B designed the whole kitchen around it perfectly. The navy and white combination is timeless. Everyone who sees it is floored."</p>
+          <div class="lp-review-author">The Giedrycz Family · Pennsylvania</div>
+          <span class="lp-review-source">Google</span>
+        </div>
+      </div>
+      <div class="lp-reviews-cta reveal">
+        <a href="https://www.google.com/maps?cid=bb-associates-creations" target="_blank" rel="noopener" class="lp-btn-outline">Read All 183 Reviews →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PROCESS ─────────────────────────────────────────────── -->
+  <section class="lp-process-section lp-section-full" aria-label="Our process">
+    <div class="lp-section">
+      <div class="lp-process-header reveal">
+        <p class="lp-eyebrow">No Pressure · No Obligation</p>
+        <h2 class="lp-heading">Getting Started Is Simple</h2>
+        <div class="lp-gold-line" style="margin:20px auto;"></div>
+      </div>
+      <div class="lp-process-grid">
+        <div class="lp-process-step reveal">
+          <div class="lp-step-num">01</div>
+          <h3 class="lp-step-title">Free In-Home Consultation</h3>
+          <p class="lp-step-body">We meet at your home, walk the space together, and listen to your vision. No pitch, no pressure — just a real conversation about what you want and what's possible.</p>
+        </div>
+        <div class="lp-process-step reveal reveal-delay-1">
+          <div class="lp-step-num">02</div>
+          <h3 class="lp-step-title">Custom Design &amp; Transparent Estimate</h3>
+          <p class="lp-step-body">We prepare custom CAD drawings and a fully itemized proposal — delivered within 1 day. No vague numbers, no hidden costs, no surprises.</p>
+        </div>
+        <div class="lp-process-step reveal reveal-delay-2">
+          <div class="lp-step-num">03</div>
+          <h3 class="lp-step-title">White-Glove Build</h3>
+          <p class="lp-step-body">Your dedicated master craftsmen build your project from day one through the final walkthrough. The same team. No subcontractors. No handoffs. Ever.</p>
+        </div>
+      </div>
+      <div class="lp-process-cta reveal">
+        <a href="#form" class="lp-btn-primary">Start With a Free Consultation →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── COMPARISON TABLE ────────────────────────────────────── -->
+  <section class="lp-diff-section lp-section-full" aria-label="Why choose B&B">
+    <div class="lp-section">
+      <div class="lp-diff-header reveal">
+        <p class="lp-eyebrow">The B&amp;B Difference</p>
+        <h2 class="lp-heading">Why Homeowners Choose B&amp;B Over Every Other Contractor</h2>
+        <div class="lp-gold-line"></div>
+      </div>
+      <div class="lp-diff-inner">
+        <table class="lp-compare-table">
+          <thead>
+            <tr>
+              <th></th>
+              <th>B&amp;B Associates Creations</th>
+              <th>Big-Box / Other Contractors</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Craftsmen</td>
+              <td>Same master team, start to finish</td>
+              <td>Rotating subcontractors</td>
+            </tr>
+            <tr>
+              <td>Experience</td>
+              <td>25 years, 1,200+ projects</td>
+              <td>Varies widely</td>
+            </tr>
+            <tr>
+              <td>Supplier Access</td>
+              <td>60+ premium partners, 5–35% savings to you</td>
+              <td>Standard retail markup</td>
+            </tr>
+            <tr>
+              <td>Estimate</td>
+              <td>Fully itemized, delivered in 1 day</td>
+              <td>Vague, weeks-long process</td>
+            </tr>
+            <tr>
+              <td>Guarantee</td>
+              <td>Lifetime commitment</td>
+              <td>Standard 1-year</td>
+            </tr>
+            <tr>
+              <td>Response Time</td>
+              <td>Sub-1-hour guaranteed</td>
+              <td>Days (if at all)</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="lp-atoz-box reveal">
+          <h4>Our A-to-Z Policy</h4>
+          <p>The same master craftsmen who start your project stay with it through completion. No handoffs. No strangers in your home halfway through. No crew rotation. This is our promise on every single project.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── INVESTMENT RANGES ────────────────────────────────────── -->
+  <section class="lp-invest-section lp-section-full" aria-label="Investment ranges">
+    <div class="lp-section">
+      <div class="lp-invest-header reveal">
+        <p class="lp-eyebrow">Transparent Pricing</p>
+        <h2 class="lp-heading">What Does a B&amp;B Remodel Cost?</h2>
+        <div class="lp-gold-line" style="margin:20px auto;"></div>
+        <p class="lp-subheading" style="margin:0 auto;">We believe in complete transparency. Here's what Montgomery County homeowners typically invest in a B&amp;B remodel.</p>
+      </div>
+      <div class="lp-invest-grid">
+        <div class="lp-invest-card reveal">
+          <p class="lp-invest-type">Kitchen Remodeling</p>
+          <div class="lp-invest-range">$55,000 – $250,000+</div>
+          <p class="lp-invest-body">Complete custom kitchen renovations in Montgomery County, depending on square footage, scope, and material selections. Structural work, custom cabinetry, countertops, appliances, lighting, and flooring all included.</p>
+          <div class="lp-invest-projects">
+            <strong>Recent projects:</strong><br>
+            Vanilla Island Open Kitchen · $55K–$75K<br>
+            Stacked Brass &amp; Black Kitchen · $65K–$85K<br>
+            Open-Concept Grey &amp; Navy · $80K–$110K<br>
+            Cherry Amber Structural Kitchen · $85K–$110K
+          </div>
+        </div>
+        <div class="lp-invest-card reveal reveal-delay-1">
+          <p class="lp-invest-type">Bathroom Renovation</p>
+          <div class="lp-invest-range">$25,000 – $150,000+</div>
+          <p class="lp-invest-body">Luxury bathroom transformations from powder rooms to full primary suite renovations. Custom tile work, vanities, curbless showers, freestanding tubs, lighting, and all finishes included.</p>
+          <div class="lp-invest-projects">
+            <strong>Recent projects:</strong><br>
+            Custom Tile Master Bath · $42K–$58K<br>
+            Modern Dark Spa Bath · $55K–$70K<br>
+            Exotic Coastal Teal Bath · $55K–$75K<br>
+            Mother of Pearl Luxury Bath · $65K–$85K
+          </div>
+        </div>
+      </div>
+      <div class="lp-financing-badge reveal">
+        <strong>Flexible financing available.</strong> 12–120 month plans for qualified homeowners. Ask us during your free consultation.
+      </div>
+      <div class="lp-invest-cta reveal">
+        <a href="#form" class="lp-btn-primary">Get Your Custom Estimate →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── TEAM ────────────────────────────────────────────────── -->
+  <section class="lp-team-section" aria-label="About B&B Associates">
+    <div class="lp-team-img">
+      <img src="../IMAGES/BandB-Associates-team.jpg" alt="B&B Associates Creations team — Ambler, PA" loading="lazy">
+    </div>
+    <div class="lp-team-content">
+      <p class="lp-eyebrow reveal">Family-Owned · Ambler, PA</p>
+      <h2 class="lp-heading reveal reveal-delay-1">Montgomery County's Master Craftsmen</h2>
+      <div class="lp-gold-line reveal reveal-delay-2"></div>
+      <p class="lp-subheading reveal reveal-delay-2">B&amp;B Associates Creations has been transforming kitchens and bathrooms across Montgomery County since 1999. Family-owned and operated, our core team has been together for decades. We don't rotate crews. We don't use subcontractors. The people you meet on day one are the people who finish your project — and stand behind it for life.</p>
+      <div class="lp-team-stats reveal reveal-delay-3">
+        <div class="lp-team-stat">
+          <div class="lp-team-stat-num">1999</div>
+          <div class="lp-team-stat-label">Founded</div>
+        </div>
+        <div class="lp-team-stat">
+          <div class="lp-team-stat-num">Family</div>
+          <div class="lp-team-stat-label">Owned &amp; Operated</div>
+        </div>
+        <div class="lp-team-stat">
+          <div class="lp-team-stat-num">Lifetime</div>
+          <div class="lp-team-stat-label">Workmanship Guarantee</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FAQ ────────────────────────────────────────────────── -->
+  <section class="lp-faq-section lp-section-full" aria-label="Frequently asked questions">
+    <div class="lp-section">
+      <div class="lp-faq-header reveal">
+        <p class="lp-eyebrow">Common Questions</p>
+        <h2 class="lp-heading">Frequently Asked Questions</h2>
+        <div class="lp-gold-line" style="margin:20px auto;"></div>
+      </div>
+      <div class="lp-faq-list">
+        <div class="lp-faq-item">
+          <button class="lp-faq-q" aria-expanded="false">
+            <span class="lp-faq-q-text">How long does a kitchen or bathroom remodel take?</span>
+            <span class="lp-faq-icon"><span class="lp-faq-icon-bar"></span></span>
+          </button>
+          <div class="lp-faq-a"><p class="lp-faq-a-text">Custom kitchen renovations typically take 6–16 weeks from demolition to final walkthrough, depending on scope and complexity. Full bathroom renovations typically take 4–10 weeks. We provide a detailed project timeline before any work begins — no surprises.</p></div>
+        </div>
+        <div class="lp-faq-item">
+          <button class="lp-faq-q" aria-expanded="false">
+            <span class="lp-faq-q-text">Do you use subcontractors?</span>
+            <span class="lp-faq-icon"><span class="lp-faq-icon-bar"></span></span>
+          </button>
+          <div class="lp-faq-a"><p class="lp-faq-a-text">Never. Our A-to-Z Policy guarantees that the same master craftsmen who start your project stay with it through completion. No subcontractors, no crew rotation, no strangers in your home. This is a core commitment that separates us from every other contractor in Montgomery County.</p></div>
+        </div>
+        <div class="lp-faq-item">
+          <button class="lp-faq-q" aria-expanded="false">
+            <span class="lp-faq-q-text">What areas of Montgomery County do you serve?</span>
+            <span class="lp-faq-icon"><span class="lp-faq-icon-bar"></span></span>
+          </button>
+          <div class="lp-faq-a"><p class="lp-faq-a-text">We serve all of Montgomery County including Ambler, Blue Bell, North Wales, Fort Washington, Lansdale, Horsham, Gwynedd, Doylestown, Warminster, and surrounding communities. We also serve the Philadelphia Main Line (Wayne, Villanova, Bryn Mawr, Haverford) and Bucks County.</p></div>
+        </div>
+        <div class="lp-faq-item">
+          <button class="lp-faq-q" aria-expanded="false">
+            <span class="lp-faq-q-text">How does the free consultation work?</span>
+            <span class="lp-faq-icon"><span class="lp-faq-icon-bar"></span></span>
+          </button>
+          <div class="lp-faq-a"><p class="lp-faq-a-text">We come to your home, walk the space with you, and listen to your vision. There's no pitch, no pressure, and no obligation. After the consultation, we prepare a fully itemized estimate and custom CAD drawings — delivered within 1 day. Only then do you decide if you'd like to move forward.</p></div>
+        </div>
+        <div class="lp-faq-item">
+          <button class="lp-faq-q" aria-expanded="false">
+            <span class="lp-faq-q-text">Do you offer financing?</span>
+            <span class="lp-faq-icon"><span class="lp-faq-icon-bar"></span></span>
+          </button>
+          <div class="lp-faq-a"><p class="lp-faq-a-text">Yes. We partner with leading financing providers to offer flexible payment plans with competitive rates for qualified homeowners. Plans range from 12 to 120 months. Ask about financing options during your free consultation and we'll help you find the right fit.</p></div>
+        </div>
+        <div class="lp-faq-item">
+          <button class="lp-faq-q" aria-expanded="false">
+            <span class="lp-faq-q-text">What warranty do you provide?</span>
+            <span class="lp-faq-icon"><span class="lp-faq-icon-bar"></span></span>
+          </button>
+          <div class="lp-faq-a"><p class="lp-faq-a-text">Every B&amp;B project includes a 5-year comprehensive workmanship warranty covering all labor, plus full manufacturer warranties on fixtures, appliances, cabinetry, and materials. Beyond that, we offer a lifetime commitment guarantee — we stand behind our work forever, even past the standard warranty period. If something isn't right, we make it right.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FINAL CTA ───────────────────────────────────────────── -->
+  <section class="lp-final-cta" aria-label="Final call to action">
+    <div class="lp-final-cta-inner">
+      <p class="lp-eyebrow reveal" style="justify-content:center;">Montgomery County, PA</p>
+      <h2 class="lp-heading reveal reveal-delay-1">Ready to Transform Your Home?</h2>
+      <div class="lp-gold-line reveal reveal-delay-2" style="margin:20px auto;"></div>
+      <p class="lp-subheading reveal reveal-delay-2">Join 1,200+ Montgomery County homeowners who chose B&amp;B. The consultation is free, we respond within 1 hour, and your dream kitchen or bathroom is closer than you think.</p>
+      <div class="lp-final-ctas reveal reveal-delay-3">
+        <a href="#form" class="lp-btn-primary">Request Free Consultation →</a>
+        <a href="tel:+12674028758" class="lp-btn-outline">Call (267) 402-8758</a>
+      </div>
+      <p class="lp-final-micro reveal reveal-delay-3">No obligation. No pressure. Just a conversation.</p>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ──────────────────────────────────────────────── -->
+  <footer class="lp-footer">
+    <div class="lp-footer-inner">
+      <div class="lp-footer-logo">
+        <img src="../IMAGES/bb-logo-white.png" alt="B&B Associates Creations">
+      </div>
+      <div class="lp-footer-info">
+        1147 E Welsh Rd, Ambler, PA 19002 &nbsp;·&nbsp;
+        <a href="tel:+12674028758">(267) 402-8758</a> &nbsp;·&nbsp;
+        Mon–Sat 8am–6pm &nbsp;·&nbsp;
+        <a href="../privacy.html">Privacy Policy</a>
+      </div>
+      <div class="lp-footer-copy">© 2025 B&amp;B Associates Creations. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <!-- ── MOBILE STICKY BAR ───────────────────────────────────── -->
+  <div class="lp-sticky-bar" id="lp-sticky-bar" role="navigation" aria-label="Quick contact">
+    <a href="tel:+12674028758" class="lp-sticky-call">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.68A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.18 6.18l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"></path></svg>
+      Call Now
+    </a>
+    <a href="#form" class="lp-sticky-form">Get Free Estimate</a>
+  </div>
+
+  <!-- ── SCRIPTS ─────────────────────────────────────────────── -->
+  <script src="../js/supabase-client.js"></script>
+  <script>
+    // ── HEADER SCROLL ───────────────────────────────────────────
+    const lpHeader = document.getElementById('lp-header');
+    window.addEventListener('scroll', () => {
+      lpHeader.classList.toggle('scrolled', window.scrollY > 40);
+    }, { passive: true });
+
+    // ── REVEAL ON SCROLL ────────────────────────────────────────
+    const revealEls = document.querySelectorAll('.reveal');
+    const revealObs = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); revealObs.unobserve(e.target); } });
+    }, { threshold: 0.12 });
+    revealEls.forEach(el => revealObs.observe(el));
+
+    // ── STAT COUNTER ANIMATION ──────────────────────────────────
+    const statNums = document.querySelectorAll('.lp-stat-num[data-count]');
+    const countObs = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (!e.isIntersecting) return;
+        const el = e.target;
+        const target = parseInt(el.dataset.count);
+        const suffix = target >= 1200 ? '+' : target === 60 ? '+' : '';
+        let start = 0;
+        const duration = 1800;
+        const step = timestamp => {
+          if (!start) start = timestamp;
+          const progress = Math.min((timestamp - start) / duration, 1);
+          const ease = 1 - Math.pow(1 - progress, 3);
+          el.textContent = Math.round(ease * target).toLocaleString() + suffix;
+          if (progress < 1) requestAnimationFrame(step);
+        };
+        requestAnimationFrame(step);
+        countObs.unobserve(el);
+      });
+    }, { threshold: 0.5 });
+    statNums.forEach(el => countObs.observe(el));
+
+    // ── FAQ ACCORDION ───────────────────────────────────────────
+    document.querySelectorAll('.lp-faq-q').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = btn.closest('.lp-faq-item');
+        const isOpen = item.classList.contains('open');
+        document.querySelectorAll('.lp-faq-item.open').forEach(i => {
+          i.classList.remove('open');
+          i.querySelector('.lp-faq-q').setAttribute('aria-expanded', 'false');
+        });
+        if (!isOpen) {
+          item.classList.add('open');
+          btn.setAttribute('aria-expanded', 'true');
+        }
+      });
+    });
+
+    // ── LEAD FORM SUBMIT ────────────────────────────────────────
+    document.getElementById('lp-lead-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const f = this;
+      const firstName = f.firstName.value.trim();
+      const lastName = f.lastName.value.trim();
+      const phone = f.phone.value.trim();
+      if (!firstName || !phone) {
+        alert('Please fill in your first name and phone number.');
+        return;
+      }
+      const lead = {
+        id: 'lp-' + Date.now(),
+        date: new Date().toISOString(),
+        status: 'new',
+        source: 'PPC Landing Page – Montgomery County',
+        firstName, lastName,
+        phone, email: f.email.value.trim(),
+        projectType: f.projectType.value,
+        timeline: f.timeline.value,
+        description: f.description.value.trim(),
+        service_area: 'Montgomery County, PA'
+      };
+      // Supabase insert
+      if (window.BB && window.BB.Supabase) {
+        BB.Supabase.insertLead(lead);
+      }
+      // localStorage fallback
+      try {
+        const existing = JSON.parse(localStorage.getItem('bb_leads') || '[]');
+        existing.push(lead);
+        localStorage.setItem('bb_leads', JSON.stringify(existing));
+      } catch(err) {}
+      // Show success
+      f.style.display = 'none';
+      document.getElementById('lp-form-success').style.display = 'block';
+      // Scroll to success
+      document.getElementById('form').scrollIntoView({ behavior: 'smooth', block: 'center' });
+    });
+
+    // ── SMOOTH ANCHOR SCROLL ─────────────────────────────────────
+    document.querySelectorAll('a[href="#form"]').forEach(a => {
+      a.addEventListener('click', e => {
+        e.preventDefault();
+        document.getElementById('form').scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    });
+  </script>
+</body>
+</html>
