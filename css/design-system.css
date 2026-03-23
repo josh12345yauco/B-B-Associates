@@ -124,6 +124,8 @@ html {
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  max-width: 100%;
 }
 
 body {
@@ -134,6 +136,8 @@ body {
   line-height: var(--leading-body);
   font-weight: var(--weight-regular);
   overflow-x: hidden;
+  max-width: 100%;
+  position: relative;
 }
 
 img, video {

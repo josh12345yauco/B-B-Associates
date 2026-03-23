@@ -248,30 +248,35 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 5px;
-  min-width: 44px;
-  min-height: 44px;
-  width: 44px;
+  gap: 6px;
+  min-width: 52px;
+  min-height: 52px;
+  width: 52px;
   cursor: pointer;
   z-index: 10001;
   background: none;
   border: none;
-  padding: 8px;
+  padding: 10px;
 }
 
 .nav-hamburger span {
   display: block;
-  height: 1px;
+  width: 26px;
+  height: 2px;
   background: var(--color-white);
   border-radius: 1px;
   transition: transform var(--dur-fast) ease,
-              opacity var(--dur-fast) ease;
+              opacity var(--dur-fast) ease,
+              background var(--dur-fast) ease;
   transform-origin: center;
 }
 
-.nav-hamburger.open span:nth-child(1) { transform: translateY(6px) rotate(45deg); }
+.nav-hamburger.open span {
+  background: var(--color-gold);
+}
+.nav-hamburger.open span:nth-child(1) { transform: translateY(8px) rotate(45deg); }
 .nav-hamburger.open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
-.nav-hamburger.open span:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
+.nav-hamburger.open span:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
 
 /* ── MOBILE NAV OVERLAY ───────────────────────────────────── */
 .nav-mobile {
@@ -600,7 +605,7 @@
 }
 
 @media (max-width: 768px) {
-  .nav-logo-img { max-height: 36px; height: auto; }
+  .nav-logo-img { max-height: 52px; height: auto; }
   .nav-cta { display: none; }
 }
 
