@@ -1200,33 +1200,54 @@
   <!-- Page-specific JS -->
   <script>
     // ── HERO: Circle cursor mask reveal + image parallax ─────
+    // Uses rAF + lerp so the circle glides frame-perfectly at 60fps
+    // instead of stacking CSS transitions that cause glitch/stutter.
     const heroEl = document.getElementById('home-hero');
     const cursorReveal = document.getElementById('hero-cursor-reveal');
     const windowImg = document.getElementById('hero-window-img');
     const REVEAL_RADIUS = 100;
 
     if (heroEl && cursorReveal) {
-      heroEl.addEventListener('mouseenter', () => {
-        cursorReveal.style.transition = 'clip-path 0.2s ease-out';
-      });
-      heroEl.addEventListener('mouseleave', () => {
-        cursorReveal.style.clipPath = 'circle(0px at 50% 50%)';
+      // Current interpolated positions
+      let cx = -999, cy = -999;
+      // Target positions (updated on mousemove / mouseleave)
+      let tx = -999, ty = -999;
+      // Image parallax
+      let ix = 0, iy = 0, itx = 0, ity = 0;
+
+      // Lerp factor: 0.12 = smooth follow, increase for snappier feel
+      const LERP_CIRCLE = 0.12;
+      const LERP_IMG    = 0.07;
+
+      function heroTick() {
+        cx += (tx - cx) * LERP_CIRCLE;
+        cy += (ty - cy) * LERP_CIRCLE;
+        ix += (itx - ix) * LERP_IMG;
+        iy += (ity - iy) * LERP_IMG;
+
+        cursorReveal.style.clipPath = `circle(${REVEAL_RADIUS}px at ${cx}px ${cy}px)`;
         if (windowImg) {
-          windowImg.style.transform = 'translate(0, 0) scale(1.08)';
+          windowImg.style.transform = `translate(${ix}px, ${iy}px) scale(1.08)`;
         }
-      });
+        requestAnimationFrame(heroTick);
+      }
+      requestAnimationFrame(heroTick);
+
       heroEl.addEventListener('mousemove', e => {
         const rect = heroEl.getBoundingClientRect();
-        const x = e.clientX - rect.left;
-        const y = e.clientY - rect.top;
-        cursorReveal.style.clipPath = `circle(${REVEAL_RADIUS}px at ${x}px ${y}px)`;
+        tx = e.clientX - rect.left;
+        ty = e.clientY - rect.top;
+        const xp = e.clientX / window.innerWidth - 0.5;
+        const yp = e.clientY / window.innerHeight - 0.5;
+        itx = xp * -20;
+        ity = yp * -20;
+      });
 
-        const xPercent = (e.clientX / window.innerWidth - 0.5);
-        const yPercent = (e.clientY / window.innerHeight - 0.5);
-        if (windowImg) {
-          windowImg.style.transform =
-            `translate(${xPercent * -20}px, ${yPercent * -20}px) scale(1.08)`;
-        }
+      heroEl.addEventListener('mouseleave', () => {
+        tx = -999;
+        ty = -999;
+        itx = 0;
+        ity = 0;
       });
     }
 
@@ -1535,8 +1556,8 @@
       background-image: url('IMAGES/Custom-Kitchen-Ambler-Pa.png');
       background-size: cover;
       background-position: center;
-      clip-path: circle(0px at 50% 50%);
-      transition: clip-path 0.2s ease-out;
+      clip-path: circle(0px at -999px -999px);
+      will-change: clip-path;
       pointer-events: none;
     }
 
