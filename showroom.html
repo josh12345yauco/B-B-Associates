@@ -95,7 +95,7 @@
       position: relative;
       z-index: 2;
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: minmax(0, 60%) minmax(0, 40%);
       gap: var(--sp-10);
       align-items: center;
       padding-top: 140px;
@@ -129,6 +129,7 @@
       line-height: var(--leading-tight);
       color: var(--color-white);
       margin-bottom: var(--sp-5);
+      max-width: 100%;
     }
     .showroom-hero-sub {
       font-family: var(--font-sans);
@@ -137,7 +138,10 @@
       color: var(--color-text);
       line-height: var(--leading-body);
       margin-bottom: var(--sp-7);
-      max-width: 480px;
+      max-width: 100%;
+    }
+    .showroom-hero-left {
+      min-width: 0;
     }
     .showroom-hero-actions {
       display: flex;
@@ -168,43 +172,42 @@
       font-weight: 300;
     }
 
-    /* Hero right panel */
-    .showroom-hero-panel {
+    /* Hero right: stacked material samples (~20% vertical offset per layer) */
+    .showroom-hero-stack {
       position: relative;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: var(--sp-4);
+      width: 100%;
+      max-width: 520px;
+      justify-self: end;
+      align-self: center;
     }
-    .showroom-hero-stat {
-      background: var(--color-surface);
-      border: 1px solid var(--color-border);
-      padding: var(--sp-6);
-      transition: border-color var(--dur-fast) var(--ease-out-quart);
+    .showroom-hero-stack-inner {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 1 / 1.18;
+      min-height: clamp(300px, 38vw, 480px);
     }
-    .showroom-hero-stat:hover {
-      border-color: var(--color-gold);
+    .showroom-hero-stack-img {
+      position: absolute;
+      left: 50%;
+      width: min(100%, 440px);
+      height: auto;
+      object-fit: contain;
+      transform: translateX(-50%);
+      pointer-events: none;
+      filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.35));
     }
-    .showroom-hero-stat-num {
-      font-family: var(--font-display);
-      font-size: clamp(36px, 4vw, 56px);
-      font-weight: 300;
-      color: var(--color-gold);
-      line-height: 1;
-      margin-bottom: var(--sp-2);
+    .showroom-hero-stack-img--1 {
+      top: 0;
+      z-index: 1;
     }
-    .showroom-hero-stat-label {
-      font-family: var(--font-sans);
-      font-size: var(--text-label);
-      font-weight: 500;
-      letter-spacing: var(--tracking-wide);
-      text-transform: uppercase;
-      color: var(--color-text-dim);
+    .showroom-hero-stack-img--2 {
+      top: 20%;
+      z-index: 2;
     }
-    .showroom-hero-stat.accent {
-      background: var(--color-gold-muted);
-      border-color: var(--color-gold-border);
+    .showroom-hero-stack-img--3 {
+      top: 40%;
+      z-index: 3;
     }
-    .showroom-hero-stat.accent .showroom-hero-stat-num { color: var(--color-gold-light); }
 
     /* ── ABOUT SECTION ──────────────────────────────────────── */
     .about-showroom {
@@ -421,102 +424,86 @@
       white-space: nowrap;
     }
 
-    /* ── TRADE SECTION ──────────────────────────────────────── */
+    /* ── TRADE SECTION (cream panel — from former Ambler showroom page) ── */
     .trade-section {
-      background: var(--color-bg-2);
-      border-top: 1px solid var(--color-border-dim);
-      border-bottom: 1px solid var(--color-border-dim);
       padding: var(--section-padding-y) 0;
     }
-    .trade-section .container {
+    .trade-section.section-cream {
+      background: #FAF8F6;
+      border-top: 1px solid rgba(26, 28, 35, 0.06);
+      border-bottom: 1px solid rgba(26, 28, 35, 0.06);
+    }
+    .trade-inner {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: var(--sp-12);
-      align-items: start;
+      gap: var(--sp-10);
+      align-items: center;
     }
-    .trade-h2 {
-      font-family: var(--font-display);
-      font-size: var(--text-h2);
-      font-weight: 300;
-      font-style: italic;
-      color: var(--color-white);
-      line-height: var(--leading-tight);
-      margin-bottom: var(--sp-5);
-    }
-    .trade-body {
-      font-family: var(--font-sans);
+    .trade-body-text {
       font-size: var(--text-body-lg);
-      font-weight: 300;
-      color: var(--color-text);
+      color: #4B5563;
       line-height: var(--leading-body);
-      margin-bottom: var(--sp-7);
+      margin-bottom: var(--sp-6);
     }
-    .trade-benefits {
+    .trade-section.section-cream .trade-benefits {
+      list-style: none;
+      margin: 0 0 var(--sp-7) 0;
+      padding: 0;
       display: flex;
       flex-direction: column;
       gap: var(--sp-3);
-      margin-bottom: var(--sp-7);
     }
-    .trade-benefit {
+    .trade-benefit-item {
       display: flex;
       align-items: flex-start;
-      gap: var(--sp-4);
+      gap: var(--sp-3);
+      font-size: var(--text-body);
+      color: #4B5563;
+      line-height: 1.5;
     }
-    .trade-benefit-check {
+    .trade-benefit-item::before {
+      content: '';
+      display: block;
+      width: 16px;
+      height: 1px;
+      background: var(--color-gold);
+      margin-top: 11px;
       flex-shrink: 0;
-      width: 18px;
-      height: 18px;
-      margin-top: 3px;
+    }
+    .trade-visual {
+      background: #fff;
+      border: 1px solid rgba(26, 28, 35, 0.1);
+      border-radius: 4px;
+      padding: var(--sp-9) var(--sp-7);
+      text-align: center;
+    }
+    .trade-visual-monogram {
+      font-family: var(--font-display);
+      font-size: 80px;
+      font-weight: var(--weight-light);
+      color: var(--color-gold);
+      opacity: 0.15;
+      line-height: 1;
+      margin-bottom: var(--sp-4);
+    }
+    .trade-visual-text {
+      font-family: var(--font-display);
+      font-size: var(--text-h4);
+      font-style: italic;
+      color: #1a1a1a;
+      line-height: 1.4;
+    }
+    .trade-section.section-cream .section-label {
       color: var(--color-gold);
     }
-    .trade-benefit-text {
-      font-family: var(--font-sans);
-      font-size: var(--text-body);
-      color: var(--color-text);
-      line-height: 1.6;
-    }
-    .trade-benefit-text strong {
-      color: var(--color-white);
-      font-weight: 500;
-    }
-    .trade-cards {
-      display: flex;
-      flex-direction: column;
-      gap: var(--sp-4);
-    }
-    .trade-card {
-      background: var(--color-surface);
-      border: 1px solid var(--color-border);
-      padding: var(--sp-6);
-      display: flex;
-      gap: var(--sp-5);
-      align-items: flex-start;
-      transition: border-color var(--dur-fast) var(--ease-out-quart);
-    }
-    .trade-card:hover { border-color: var(--color-gold); }
-    .trade-card-icon {
-      flex-shrink: 0;
-      width: 44px;
-      height: 44px;
-      background: var(--color-gold-muted);
-      border: 1px solid var(--color-gold-border);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--color-gold);
-    }
-    .trade-card-title {
-      font-family: var(--font-sans);
-      font-size: var(--text-body);
-      font-weight: 600;
-      color: var(--color-white);
-      margin-bottom: var(--sp-2);
-    }
-    .trade-card-desc {
-      font-family: var(--font-sans);
-      font-size: var(--text-small);
-      color: var(--color-text);
-      line-height: 1.6;
+    .trade-section.section-cream .section-h2 {
+      font-family: var(--font-display);
+      font-size: var(--text-h2);
+      font-weight: var(--weight-light);
+      color: #1a1a1a;
+      line-height: var(--leading-tight);
+      letter-spacing: var(--tracking-tight);
+      margin-bottom: var(--sp-5);
     }
 
     /* ── CTA PANEL ─────────────────────────────────────────── */
@@ -600,16 +587,22 @@
       .showroom-hero .container,
       .about-showroom .container,
       .location-section .container,
-      .trade-section .container {
+      .trade-inner {
         grid-template-columns: 1fr;
         gap: var(--sp-8);
+      }
+      .trade-visual {
+        order: -1;
       }
       .showroom-hero .container {
         padding-top: 120px;
         padding-bottom: 80px;
       }
-      .showroom-hero-panel {
+      .showroom-hero-stack {
         order: -1;
+        justify-self: center;
+        max-width: 400px;
+        margin-bottom: var(--sp-4);
       }
       .location-hours-grid {
         grid-template-columns: 1fr;
@@ -741,22 +734,36 @@
           </div>
         </div>
 
-        <div class="showroom-hero-panel fade-in fade-in-delay-2">
-          <div class="showroom-hero-stat fade-in fade-in-delay-2">
-            <div class="showroom-hero-stat-num">60+</div>
-            <div class="showroom-hero-stat-label">Supplier Partners</div>
-          </div>
-          <div class="showroom-hero-stat accent fade-in fade-in-delay-3">
-            <div class="showroom-hero-stat-num">500+</div>
-            <div class="showroom-hero-stat-label">Material Samples</div>
-          </div>
-          <div class="showroom-hero-stat accent fade-in fade-in-delay-3">
-            <div class="showroom-hero-stat-num">25+</div>
-            <div class="showroom-hero-stat-label">Years Experience</div>
-          </div>
-          <div class="showroom-hero-stat fade-in fade-in-delay-4">
-            <div class="showroom-hero-stat-num">Free</div>
-            <div class="showroom-hero-stat-label">Design Consultation</div>
+        <div class="showroom-hero-stack fade-in fade-in-delay-2" aria-hidden="true">
+          <div class="showroom-hero-stack-inner">
+            <img
+              class="showroom-hero-stack-img showroom-hero-stack-img--1"
+              src="IMAGES/ChatGPT Image Mar 2, 2026, 11_30_03 AM.png"
+              alt=""
+              width="800"
+              height="600"
+              loading="eager"
+              decoding="async"
+              fetchpriority="high"
+            >
+            <img
+              class="showroom-hero-stack-img showroom-hero-stack-img--2"
+              src="IMAGES/ChatGPT Image Mar 2, 2026, 11_28_59 AM.png"
+              alt=""
+              width="800"
+              height="600"
+              loading="eager"
+              decoding="async"
+            >
+            <img
+              class="showroom-hero-stack-img showroom-hero-stack-img--3"
+              src="IMAGES/ChatGPT Image Mar 2, 2026, 11_31_17 AM.png"
+              alt=""
+              width="800"
+              height="600"
+              loading="eager"
+              decoding="async"
+            >
           </div>
         </div>
       </div>
@@ -933,77 +940,27 @@
     </section>
 
     <!-- ═══ TRADE PROFESSIONALS ═══ -->
-    <section class="trade-section" aria-labelledby="trade-title">
+    <section class="trade-section section-cream" aria-labelledby="trade-title">
       <div class="container">
-        <div>
-          <p class="section-label fade-in">Trade Program</p>
-          <h2 class="trade-h2 fade-in" id="trade-title">
-            For Interior Designers<br>& Architects
-          </h2>
-          <p class="trade-body fade-in">
-            Our trade program provides interior designers, architects, and real estate professionals with dedicated showroom access, exclusive pricing, and a dedicated project liaison who keeps your client projects on schedule.
-          </p>
-          <div class="trade-benefits fade-in">
-            <div class="trade-benefit">
-              <svg class="trade-benefit-check" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 4 7 15 2 10"/></svg>
-              <span class="trade-benefit-text"><strong>Priority scheduling</strong> — private showroom appointments outside public hours</span>
-            </div>
-            <div class="trade-benefit">
-              <svg class="trade-benefit-check" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 4 7 15 2 10"/></svg>
-              <span class="trade-benefit-text"><strong>Trade pricing</strong> on all materials and installations</span>
-            </div>
-            <div class="trade-benefit">
-              <svg class="trade-benefit-check" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 4 7 15 2 10"/></svg>
-              <span class="trade-benefit-text"><strong>Dedicated project liaison</strong> — one point of contact for all your clients</span>
-            </div>
-            <div class="trade-benefit">
-              <svg class="trade-benefit-check" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 4 7 15 2 10"/></svg>
-              <span class="trade-benefit-text"><strong>Early access</strong> to new material collections and supplier launches</span>
-            </div>
-            <div class="trade-benefit">
-              <svg class="trade-benefit-check" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 4 7 15 2 10"/></svg>
-              <span class="trade-benefit-text"><strong>Sample loans</strong> — take materials to client homes for extended review</span>
-            </div>
+        <div class="trade-inner">
+          <div class="trade-content">
+            <p class="section-label fade-in">Trade Access</p>
+            <h2 class="section-h2 fade-in fade-in-delay-1" id="trade-title">Trade Professionals Welcome</h2>
+            <p class="trade-body-text fade-in fade-in-delay-1">B&amp;B's showroom will be open to interior designers and contractors who want to shop with their clients. Browse the full material selection, explore pricing, and access our supplier network at trade rates. Create a curated experience for your clients without leaving the region.</p>
+            <ul class="trade-benefits fade-in fade-in-delay-2">
+              <li class="trade-benefit-item">Trade pricing available</li>
+              <li class="trade-benefit-item">Bring your clients</li>
+              <li class="trade-benefit-item">Access our 60+ supplier catalog</li>
+              <li class="trade-benefit-item">Private sessions available by request</li>
+            </ul>
+            <a href="contact.html" class="phil-btn phil-btn-fill fade-in fade-in-delay-3">
+              <div class="phil-fill"></div>
+              <span class="phil-label">Register as a Trade Professional</span>
+            </a>
           </div>
-          <a href="contact.html" class="phil-btn phil-btn-fill fade-in">
-            <div class="phil-fill"></div>
-            <span class="phil-label">Apply for Trade Access</span>
-          </a>
-        </div>
-
-        <div class="trade-cards">
-          <div class="trade-card fade-in">
-            <div class="trade-card-icon">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/>
-              </svg>
-            </div>
-            <div>
-              <p class="trade-card-title">Interior Designers</p>
-              <p class="trade-card-desc">Present complete material boards to clients in our private consultation room. Our team supports your design vision while you retain full creative control.</p>
-            </div>
-          </div>
-          <div class="trade-card fade-in fade-in-delay-1">
-            <div class="trade-card-icon">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                <line x1="3" y1="22" x2="3" y2="2"/><line x1="9" y1="22" x2="9" y2="12"/><line x1="15" y1="22" x2="15" y2="6"/><line x1="21" y1="22" x2="21" y2="2"/>
-              </svg>
-            </div>
-            <div>
-              <p class="trade-card-title">Architects & Builders</p>
-              <p class="trade-card-desc">Spec materials with confidence. We provide detailed product sheets, cut sheets, and lead time data so your project timelines stay protected.</p>
-            </div>
-          </div>
-          <div class="trade-card fade-in fade-in-delay-2">
-            <div class="trade-card-icon">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>
-              </svg>
-            </div>
-            <div>
-              <p class="trade-card-title">Real Estate Professionals</p>
-              <p class="trade-card-desc">Bring sellers and buyers to our showroom to visualize renovation potential. We partner with agents across Montgomery County and the Main Line.</p>
-            </div>
+          <div class="trade-visual fade-in fade-in-delay-2">
+            <div class="trade-visual-monogram">B&amp;B</div>
+            <p class="trade-visual-text">"The region's most premium<br>material showroom — for designers,<br>contractors, and homeowners alike."</p>
           </div>
         </div>
       </div>
@@ -1136,8 +1093,8 @@
     // GSAP hero entrance
     if (typeof gsap !== 'undefined') {
       gsap.from('.showroom-hero-left', { y: 30, opacity: 0, duration: 1, ease: 'power2.out', delay: 0.2 });
-      gsap.from('.showroom-hero-panel .showroom-hero-stat', {
-        y: 20, opacity: 0, duration: 0.8, ease: 'power2.out', stagger: 0.1, delay: 0.4
+      gsap.from('.showroom-hero-stack-img', {
+        y: 28, opacity: 0, duration: 0.85, ease: 'power2.out', stagger: 0.12, delay: 0.45
       });
     }
   </script>

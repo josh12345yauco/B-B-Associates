@@ -172,30 +172,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-    }
-
-    .hero-bath .hero-media {
-      position: absolute;
-      inset: 0;
-      z-index: 0;
-      overflow: hidden;
-    }
-
-    .hero-bath .hero-media img {
-      position: absolute;
-      inset: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: center center;
-      display: block;
-    }
-
-    .hero-bath .hero-overlay {
-      position: absolute;
-      inset: 0;
-      background: rgba(26, 28, 35, 0.7);
-      z-index: 1;
+      background: var(--color-bg);
     }
 
     .hero-bath .hero-content {
@@ -225,6 +202,11 @@
       line-height: var(--leading-tight);
       letter-spacing: var(--tracking-tight);
       margin-bottom: var(--sp-4);
+      white-space: nowrap;
+    }
+
+    @media (max-width: 768px) {
+      .hero-h1 { white-space: normal; font-size: clamp(32px, 8vw, var(--text-h1)); }
     }
 
     .hero-sub {
@@ -252,77 +234,98 @@
       font-size: 16px;
     }
 
-    /* Intro Split */
-    .intro-split {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: var(--sp-10);
+    /* ── INTRO STACKED ─────────────────────────────────────── */
+    .intro-stacked {
+      display: flex;
+      flex-direction: column;
       align-items: center;
+      gap: var(--sp-8);
     }
 
-    .intro-split-text h2 {
+    .intro-stacked-title {
       font-family: var(--font-display);
       font-size: var(--text-h2);
       font-weight: var(--weight-light);
-      color: var(--color-white);
+      color: #1a1a1a;
       line-height: var(--leading-snug);
       letter-spacing: var(--tracking-tight);
-      margin-bottom: var(--sp-6);
+      text-align: center;
+      white-space: nowrap;
+      width: 100%;
     }
 
-    .intro-split-text p {
+    .intro-stacked-image-wrap {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 3 / 1;
+      overflow: hidden;
+    }
+
+    .intro-stacked-image-wrap img {
+      width: 100%;
+      height: 130%;
+      object-fit: cover;
+      object-position: center center;
+      display: block;
+      will-change: transform;
+    }
+
+    .houzz-badge {
+      position: absolute;
+      z-index: 2;
+      border-radius: 4px;
+      padding: var(--sp-4) var(--sp-6);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: var(--sp-1);
+      text-align: center;
+    }
+
+    .houzz-badge-center {
+      top: var(--sp-5);
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(255, 255, 255, 0.12);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+    }
+
+    .houzz-badge-label {
+      font-family: var(--font-mono);
+      font-size: 9px;
+      letter-spacing: var(--tracking-widest);
+      text-transform: uppercase;
+      color: var(--color-white);
+    }
+
+    .houzz-badge-title {
+      font-family: var(--font-display);
+      font-size: 15px;
+      color: var(--color-bg-3);
+      font-weight: var(--weight-medium);
+    }
+
+    .intro-stacked-body {
+      max-width: 800px;
+      width: 100%;
+    }
+
+    .intro-stacked-body p {
       font-size: var(--text-body-lg);
-      color: var(--color-text);
+      color: #4B5563;
       line-height: var(--leading-body);
       margin-bottom: var(--sp-5);
     }
 
-    .intro-split-text p:last-child {
+    .intro-stacked-body p:last-child {
       margin-bottom: 0;
     }
 
-    .intro-image-wrap {
-      position: relative;
-    }
-
-    .intro-badge {
-      position: absolute;
-      bottom: var(--sp-6);
-      left: calc(-1 * var(--sp-6));
-      z-index: 2;
-      background: var(--color-bg);
-      border: 1px solid var(--color-gold-border);
-      border-radius: 2px;
-      padding: var(--sp-4) var(--sp-5);
-    }
-
-    .intro-badge-label {
-      font-family: var(--font-mono);
-      font-size: var(--text-label);
-      letter-spacing: var(--tracking-widest);
-      text-transform: uppercase;
-      color: var(--color-gold);
-      display: block;
-      margin-bottom: var(--sp-1);
-    }
-
-    .intro-badge-value {
-      font-family: var(--font-display);
-      font-size: 18px;
-      font-style: italic;
-      color: var(--color-white);
-    }
-
-    @media (max-width: 900px) {
-      .intro-split {
-        grid-template-columns: 1fr;
-        gap: var(--sp-8);
-      }
-
-      .intro-badge {
-        left: var(--sp-4);
-        bottom: var(--sp-4);
-      }
+    @media (max-width: 768px) {
+      .intro-stacked-title { white-space: normal; font-size: clamp(28px, 6vw, 44px); }
+      .intro-stacked-image-wrap { aspect-ratio: 2 / 1; }
     }
 
     /* What's Included — same design as kitchen: numbers, icons, copy, corner ticks */
@@ -342,6 +345,8 @@
 
     .scope-grid {
       display: grid;
+      padding-top: 30px;
+      padding-bottom: 30px;
       grid-template-columns: repeat(3, 1fr);
       gap: var(--sp-5);
     }
@@ -502,10 +507,149 @@
       margin: 0;
     }
 
-    /* Process Timeline */
-    .process-list {
-      max-width: 720px;
-      margin: var(--sp-8) auto 0;
+    /* ── PROCESS TIMELINE ──────────────────────────────────── */
+    .process-tl-header {
+      max-width: 600px;
+      margin-bottom: var(--sp-10);
+    }
+
+    .process-tl-header h2 {
+      font-family: var(--font-display);
+      font-size: var(--text-h2);
+      font-weight: var(--weight-light);
+      color: var(--color-white);
+      line-height: var(--leading-snug);
+    }
+
+    .process-tl {
+      position: relative;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .process-tl-track {
+      position: absolute;
+      left: 50%;
+      top: 24px;
+      bottom: 24px;
+      width: 1px;
+      background: rgba(182, 117, 57, 0.15);
+      transform: translateX(-50%);
+      overflow: hidden;
+      pointer-events: none;
+    }
+
+    .process-tl-track-fill {
+      width: 100%;
+      height: 0%;
+      background: linear-gradient(to bottom, var(--color-gold), rgba(182, 117, 57, 0.35));
+    }
+
+    .process-tl-item {
+      display: grid;
+      grid-template-columns: 1fr 72px 1fr;
+      gap: 0 32px;
+      margin-bottom: var(--sp-9);
+      align-items: flex-start;
+    }
+
+    .process-tl-item:last-child { margin-bottom: 0; }
+
+    .process-tl-node {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: var(--sp-3);
+      padding-top: 22px;
+    }
+
+    .process-tl-dot {
+      width: 11px;
+      height: 11px;
+      border-radius: 50%;
+      border: 1.5px solid var(--color-gold);
+      background: var(--color-bg);
+      position: relative;
+      z-index: 2;
+      flex-shrink: 0;
+    }
+
+    .process-tl-dot::before {
+      content: '';
+      position: absolute;
+      inset: -5px;
+      border-radius: 50%;
+      background: rgba(182, 117, 57, 0.1);
+      transform: scale(0);
+      transition: transform 0.3s ease;
+    }
+
+    .process-tl-item:hover .process-tl-dot::before { transform: scale(1); }
+
+    .process-tl-step-num {
+      font-family: var(--font-display);
+      font-size: 11px;
+      letter-spacing: 0.22em;
+      color: var(--color-gold);
+      opacity: 0.7;
+    }
+
+    .process-tl-card {
+      padding: var(--sp-6) var(--sp-7);
+      background: var(--color-surface);
+      border: 1px solid var(--color-border-dim);
+      border-left: 2px solid var(--color-gold);
+      position: relative;
+    }
+
+    .process-tl-card--left {
+      border-left: 1px solid var(--color-border-dim);
+      border-right: 2px solid var(--color-gold);
+      text-align: right;
+    }
+
+    .process-tl-title {
+      font-family: var(--font-display);
+      font-size: clamp(20px, 2vw, 26px);
+      font-weight: var(--weight-light);
+      color: var(--color-white);
+      line-height: var(--leading-snug);
+      margin-bottom: var(--sp-3);
+      letter-spacing: var(--tracking-tight);
+    }
+
+    .process-tl-body {
+      font-size: var(--text-body);
+      color: var(--color-text);
+      line-height: var(--leading-body);
+      margin: 0;
+    }
+
+    .process-tl-empty { }
+
+    @media (max-width: 768px) {
+      .process-tl-track { left: 20px; transform: none; }
+      .process-tl-item {
+        grid-template-columns: 48px 1fr;
+        grid-template-rows: auto;
+        gap: 0 16px;
+        margin-bottom: var(--sp-6);
+      }
+      .process-tl-node { padding-top: 18px; }
+      .process-tl-empty { display: none; }
+      .process-tl-card {
+        padding: var(--sp-4) var(--sp-5);
+      }
+      .process-tl-card--left {
+        border-left: 2px solid var(--color-gold);
+        border-right: 1px solid var(--color-border-dim);
+        text-align: left;
+        padding: var(--sp-4) var(--sp-5);
+      }
+      .process-tl-title { font-size: 20px; }
+      .process-tl-body { font-size: var(--text-body); }
+      .process-tl-item .process-tl-card--left { order: 2; }
+      .process-tl-item .process-tl-node { order: 1; }
     }
 
     /* Featured Projects */
@@ -706,10 +850,10 @@
     .section-cream .section-label,
     .section-white .section-label { color: var(--color-gold); }
 
-    .section-cream .intro-split-text h2 { color: #1a1a1a; }
-    .section-cream .intro-split-text p { color: #4B5563; }
-    .section-cream .intro-badge { background: #fff; border-color: #e5e7eb; }
-    .section-cream .intro-badge-value { color: #1a1a1a; }
+    .section-cream .intro-stacked-title { color: #1a1a1a; }
+    .section-cream .intro-stacked-body p { color: #4B5563; }
+    .section-cream .houzz-badge-title { color: var(--color-bg); }
+    .section-cream .houzz-badge-label { color: var(--color-gold-dark); }
 
     .section-white .section-h2 { color: #1a1a1a; }
     .section-white .process-step-title { color: #1a1a1a; }
@@ -817,24 +961,12 @@
         <span>Bathroom Renovations</span>
       </nav>
 
-      <!-- Background image -->
-      <div class="hero-media">
-        <img
-          src="../portfolio/BATHROOMS/B%26B - Borgia-bathroom/684C7BA3-669B-4E0D-A2BC-9FFDAC759D2E.jpeg"
-          alt="Luxury spa master bathroom renovation by B&B Associates Creations, Ambler PA"
-          fetchpriority="high"
-          data-parallax="0.15"
-        >
-      </div>
-      <div class="hero-overlay"></div>
-
       <!-- Content -->
       <div class="hero-content">
         <p class="eyebrow reveal" style="margin-bottom: var(--sp-4);">Luxury Bath Design Studio</p>
         <div class="headline-reveal">
           <h1 class="hero-h1">
-            <span class="line-wrap"><span class="line-inner">Custom Bathroom</span></span>
-            <span class="line-wrap"><span class="line-inner">Renovations</span></span>
+            <span class="line-wrap"><span class="line-inner">Custom Bathroom Renovations</span></span>
           </h1>
         </div>
         <p class="hero-sub reveal">Spa-Inspired Luxury for Philadelphia's Finest Homes</p>
@@ -846,32 +978,27 @@
       </div>
     </section>
 
-    <!-- ── SECTION 2: INTRO SPLIT ──────────────────────────── -->
+    <!-- ── SECTION 2: INTRO STACKED ───────────────────────── -->
     <section class="section section-cream" aria-labelledby="intro-heading">
       <div class="container">
-        <div class="intro-split">
-          <!-- Left: text -->
-          <div class="intro-split-text reveal">
-            <h2 id="intro-heading">Your Master Bath. Reimagined as a Personal Sanctuary.</h2>
+        <div class="intro-stacked reveal">
+          <h2 id="intro-heading" class="intro-stacked-title">Your Master Bath. Reimagined as a Personal Sanctuary.</h2>
+          <div class="intro-stacked-image-wrap">
+            <div class="houzz-badge houzz-badge-center" aria-label="Best of Houzz 2021 award">
+              <span class="houzz-badge-label">Award</span>
+              <span class="houzz-badge-title">Best of Houzz 2021</span>
+            </div>
+            <img
+              src="../portfolio/BATHROOMS/B%26B - Borgia-bathroom/684C7BA3-669B-4E0D-A2BC-9FFDAC759D2E.jpeg"
+              alt="Luxury spa master bathroom renovation by B&amp;B Associates Creations, Ambler PA"
+              loading="lazy"
+              width="1600"
+              height="1067"
+            >
+          </div>
+          <div class="intro-stacked-body">
             <p>The master bathroom is no longer just a utility room — it is the private retreat at the center of your daily life. At B&amp;B Associates Creations, we design and build master baths that function as true sanctuaries: spaces where the pressures of the day dissolve the moment you walk through the door. Custom vanities with integrated storage, radiant heated floors, and curbless walk-in showers are just the beginning.</p>
             <p>Our designers work from your vision and your existing footprint to create a layout that feels expansive, intentional, and uniquely yours. Whether the style calls for a frameless glass enclosure with Italian porcelain tile, a freestanding soaking tub beneath a skylight, or a dual-head rainfall shower with a linear drain, our licensed build team executes every detail with precision. We have completed over 600 bathrooms across Montgomery County, Bucks County, and the Main Line — and every single one reflects the same commitment to flawless craftsmanship.</p>
-          </div>
-
-          <!-- Right: image with badge -->
-          <div class="intro-image-wrap reveal">
-            <div class="img-gold-offset">
-              <img
-                src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&q=80"
-                alt="Spa master bathroom with custom vanity and frameless glass by B&B Associates Creations, Blue Bell PA"
-                loading="lazy"
-                width="800"
-                height="600"
-              >
-            </div>
-            <div class="intro-badge">
-              <span class="intro-badge-label">Best of Houzz</span>
-              <span class="intro-badge-value">Design Award 2021</span>
-            </div>
           </div>
         </div>
       </div>
@@ -965,22 +1092,22 @@
         <div class="showcase-card">
           <div class="showcase-card-img">
             <img
-              src="https://images.unsplash.com/photo-1620626011761-996317b8d101?w=1920&q=85"
-              alt="Italian porcelain tile in a luxury bathroom"
+              src="../portfolio/BATHROOMS/B&B - Hershey-bathroom/6EE0A475-8B0B-4F61-BDF1-30C56C3458BC.jpeg"
+              alt="Porcelain tile in a B&B Associates bathroom renovation"
               loading="lazy"
               width="1920"
               height="1080"
             >
           </div>
           <div class="showcase-card-overlay" aria-hidden="true"></div>
-          <p class="showcase-card-label">Italian Porcelain Tile</p>
+          <p class="showcase-card-label">Porcelain Tile</p>
         </div>
 
         <div class="showcase-card">
           <div class="showcase-card-img">
             <img
-              src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=1920&q=85"
-              alt="Quartz vanity top in a modern bathroom"
+              src="../portfolio/BATHROOMS/B&B - Hershey-bathroom/4295BBFD-1C3A-4F8E-9DEE-1BBBC2411454.jpeg"
+              alt="Quartz vanity top in a B&B Associates bathroom renovation"
               loading="lazy"
               width="1920"
               height="1080"
@@ -993,8 +1120,8 @@
         <div class="showcase-card">
           <div class="showcase-card-img">
             <img
-              src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=1920&q=85"
-              alt="Frameless glass shower enclosure"
+              src="../portfolio/BATHROOMS/B&B - Pete V-bathroom/2CF149E9-E813-4EE8-92AA-47F49BCAA5FB.jpeg"
+              alt="Frameless glass enclosure in a B&B Associates bathroom renovation"
               loading="lazy"
               width="1920"
               height="1080"
@@ -1007,8 +1134,8 @@
         <div class="showcase-card">
           <div class="showcase-card-img">
             <img
-              src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=1920&q=85"
-              alt="Rainfall shower in a luxury bathroom"
+              src="../portfolio/BATHROOMS/B&B - Borgia-bathroom/95AA89D6-E2EB-4384-AD32-2FAB37C10B60.jpeg"
+              alt="Rainfall shower in a B&B Associates bathroom renovation"
               loading="lazy"
               width="1920"
               height="1080"
@@ -1021,8 +1148,8 @@
         <div class="showcase-card">
           <div class="showcase-card-img">
             <img
-              src="https://images.unsplash.com/photo-1600573472592-401b489a3cdc?w=1920&q=85"
-              alt="Heated floor system with tile in a bathroom"
+              src="../IMAGES/HeatedFlooring.png"
+              alt="Heated floor system in a B&B Associates bathroom renovation"
               loading="lazy"
               width="1920"
               height="1080"
@@ -1036,50 +1163,91 @@
     </section>
 
     <!-- ── SECTION 5: PROCESS TIMELINE ────────────────────── -->
-    <section class="section section-white" aria-labelledby="process-heading">
+    <section class="section" style="background: var(--color-bg);" aria-labelledby="process-heading">
       <div class="container">
-        <p class="section-label reveal">Our Process</p>
-        <h2 id="process-heading" class="section-h2 section-h2-centered reveal">The B&amp;B Bathroom Design-Build Process</h2>
 
-        <div class="process-list reveal-group">
+        <div class="process-tl-header reveal">
+          <p class="section-label">How It Works</p>
+          <h2 id="process-heading">The B&amp;B Bathroom Design-Build Process</h2>
+        </div>
 
-          <div class="process-step">
-            <div class="process-number" aria-hidden="true">01</div>
+        <div class="process-tl">
+          <div class="process-tl-track">
+            <div class="process-tl-track-fill"></div>
+          </div>
+
+          <!-- 01 — right -->
+          <div class="process-tl-item">
+            <div class="process-tl-empty"></div>
+            <div class="process-tl-node">
+              <div class="process-tl-dot"></div>
+              <span class="process-tl-step-num">01</span>
+            </div>
             <div>
-              <p class="process-step-title">Discovery Call</p>
-              <p class="process-step-body">We learn your vision and existing layout constraints. This introductory call is free, runs about an hour, and helps us understand what you want to achieve before we ever set foot in your home.</p>
+              <div class="process-tl-card">
+                <h3 class="process-tl-title">Discovery Call</h3>
+                <p class="process-tl-body">We learn your vision and existing layout constraints. This introductory call is free, runs about an hour, and helps us understand what you want to achieve before we ever set foot in your home.</p>
+              </div>
             </div>
           </div>
 
-          <div class="process-step">
-            <div class="process-number" aria-hidden="true">02</div>
+          <!-- 02 — left -->
+          <div class="process-tl-item">
             <div>
-              <p class="process-step-title">In-Home Consultation</p>
-              <p class="process-step-body">We measure, assess plumbing and electrical conditions, and explore possibilities for the space. This on-site visit is where the real creative conversation begins — and where your ideas start to feel real.</p>
+              <div class="process-tl-card process-tl-card--left">
+                <h3 class="process-tl-title">In-Home Consultation</h3>
+                <p class="process-tl-body">We measure, assess plumbing and electrical conditions, and explore possibilities for the space. This on-site visit is where the real creative conversation begins — and where your ideas start to feel real.</p>
+              </div>
+            </div>
+            <div class="process-tl-node">
+              <div class="process-tl-dot"></div>
+              <span class="process-tl-step-num">02</span>
+            </div>
+            <div class="process-tl-empty"></div>
+          </div>
+
+          <!-- 03 — right -->
+          <div class="process-tl-item">
+            <div class="process-tl-empty"></div>
+            <div class="process-tl-node">
+              <div class="process-tl-dot"></div>
+              <span class="process-tl-step-num">03</span>
+            </div>
+            <div>
+              <div class="process-tl-card">
+                <h3 class="process-tl-title">Design &amp; 3D Rendering</h3>
+                <p class="process-tl-body">Full bathroom design with a complete material board sourced from our 60+ supplier partners. You receive photorealistic 3D renderings so you can approve every detail — tile, fixture, vanity, layout — before construction begins.</p>
+              </div>
             </div>
           </div>
 
-          <div class="process-step">
-            <div class="process-number" aria-hidden="true">03</div>
+          <!-- 04 — left -->
+          <div class="process-tl-item">
             <div>
-              <p class="process-step-title">Design &amp; 3D Rendering</p>
-              <p class="process-step-body">Full bathroom design with a complete material board sourced from our 60+ supplier partners. You receive photorealistic 3D renderings so you can approve every detail — tile, fixture, vanity, layout — before construction begins.</p>
+              <div class="process-tl-card process-tl-card--left">
+                <h3 class="process-tl-title">Dedicated Build Team</h3>
+                <p class="process-tl-body">The same licensed crew arrives every day — handling every trade from tile and carpentry to plumbing and electrical. No revolving door of subcontractors, no coordination gaps. One team, one standard of excellence.</p>
+              </div>
             </div>
+            <div class="process-tl-node">
+              <div class="process-tl-dot"></div>
+              <span class="process-tl-step-num">04</span>
+            </div>
+            <div class="process-tl-empty"></div>
           </div>
 
-          <div class="process-step">
-            <div class="process-number" aria-hidden="true">04</div>
-            <div>
-              <p class="process-step-title">Dedicated Build Team</p>
-              <p class="process-step-body">The same licensed crew arrives every day — handling every trade from tile and carpentry to plumbing and electrical. No revolving door of subcontractors, no coordination gaps. One team, one standard of excellence.</p>
+          <!-- 05 — right -->
+          <div class="process-tl-item">
+            <div class="process-tl-empty"></div>
+            <div class="process-tl-node">
+              <div class="process-tl-dot"></div>
+              <span class="process-tl-step-num">05</span>
             </div>
-          </div>
-
-          <div class="process-step">
-            <div class="process-number" aria-hidden="true">05</div>
             <div>
-              <p class="process-step-title">Final Walkthrough</p>
-              <p class="process-step-body">We don't consider a project complete until you're in love with every detail. Our final walkthrough is thorough and unhurried — we address anything that doesn't meet your expectations before we close out the project.</p>
+              <div class="process-tl-card">
+                <h3 class="process-tl-title">Final Walkthrough</h3>
+                <p class="process-tl-body">We don't consider a project complete until you're in love with every detail. Our final walkthrough is thorough and unhurried — we address anything that doesn't meet your expectations before we close out the project.</p>
+              </div>
             </div>
           </div>
 
@@ -1288,7 +1456,7 @@
           <nav class="footer-links" aria-label="Useful links navigation">
             <a href="../services.html" class="footer-link">Luxury Kitchen Remodeling</a>
             <a href="../services.html" class="footer-link">Custom Bathroom Renovations</a>
-            <a href="../ambler-design-showroom.html" class="footer-link">Ambler Design Showroom</a>
+            <a href="../showroom.html" class="footer-link">Ambler Design Showroom</a>
             <a href="../reviews.html" class="footer-link">Client Reviews</a>
           </nav>
         </div>
@@ -1372,7 +1540,7 @@
         link.setAttribute('aria-label', p.title + ' — ' + p.town);
 
         var img = document.createElement('img');
-        img.src = p.thumbnail;
+        img.src = '../portfolio/' + p.thumbnail;
         img.alt = p.title + ' bathroom renovation by B&B Associates Creations, ' + p.town;
         img.loading = 'lazy';
         img.width = 800;
@@ -1392,7 +1560,90 @@
     })();
   </script>
 
-  <!-- Showcase is now stacked (no drag-scroll) -->
+  <!-- Intro image entrance + parallax animation -->
+  <script>
+    (function () {
+      if (typeof gsap === 'undefined') return;
+      var wrap = document.querySelector('.intro-stacked-image-wrap');
+      var img  = wrap ? wrap.querySelector('img') : null;
+      if (!wrap || !img) return;
+
+      gsap.set(img, { yPercent: -15 });
+      gsap.set(wrap, { clipPath: 'inset(100% 0% 0% 0%)' });
+
+      var tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: wrap,
+          start: 'top 82%',
+          toggleActions: 'play none none none'
+        }
+      });
+
+      tl.to(wrap, {
+        clipPath: 'inset(0% 0% 0% 0%)',
+        duration: 1.1,
+        ease: 'expo.out'
+      });
+
+      gsap.to(img, {
+        yPercent: 0,
+        ease: 'none',
+        scrollTrigger: {
+          trigger: wrap,
+          start: 'top bottom',
+          end: 'bottom top',
+          scrub: true
+        }
+      });
+    })();
+  </script>
+
+  <!-- Process timeline animations -->
+  <script>
+    (function () {
+      if (typeof gsap === 'undefined') return;
+
+      gsap.to('.process-tl-track-fill', {
+        height: '100%',
+        ease: 'none',
+        scrollTrigger: {
+          trigger: '.process-tl',
+          start: 'top 75%',
+          end: 'bottom 40%',
+          scrub: 1
+        }
+      });
+
+      document.querySelectorAll('.process-tl-dot').forEach(function (dot) {
+        gsap.from(dot, {
+          scale: 0,
+          opacity: 0,
+          duration: 0.5,
+          ease: 'back.out(2.5)',
+          scrollTrigger: {
+            trigger: dot,
+            start: 'top 82%',
+            toggleActions: 'play none none none'
+          }
+        });
+      });
+
+      document.querySelectorAll('.process-tl-card').forEach(function (card) {
+        var fromLeft = card.classList.contains('process-tl-card--left');
+        gsap.from(card, {
+          x: fromLeft ? -48 : 48,
+          opacity: 0,
+          duration: 0.9,
+          ease: 'expo.out',
+          scrollTrigger: {
+            trigger: card,
+            start: 'top 84%',
+            toggleActions: 'play none none none'
+          }
+        });
+      });
+    })();
+  </script>
 
   <!-- Accordion: update aria-expanded -->
   <script>

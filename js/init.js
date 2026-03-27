@@ -33,13 +33,48 @@ if (nav) {
 // ── MOBILE NAV ───────────────────────────────────────────────
 const hamburger = document.querySelector('.nav-hamburger');
 const mobileNav = document.querySelector('.nav-mobile');
+
+if (mobileNav) {
+  mobileNav.querySelectorAll('a.nav-mobile-link[href*="estimator"]').forEach(a => {
+    if (a.querySelector('.nav-mobile-link--glasi-inner') || a.classList.contains('has-dropdown')) return;
+    const label = a.textContent.replace(/\s+/g, ' ').trim() || 'Online Estimator';
+    a.classList.add('btn-glasi', 'nav-mobile-link--glasi');
+    a.innerHTML =
+      '<div class="corners nav-mobile-link--glasi-inner">' +
+      '<div class="corner-tl"></div><div class="corner-tr"></div><div class="corner-bl"></div><div class="corner-br"></div>' +
+      '<div class="line line-top"></div><div class="line line-bottom"></div>' +
+      '<div class="line line-left"></div><div class="line line-right"></div>' +
+      '</div>' +
+      '<span class="clip"><span class="text-top"></span><span class="text-bottom"></span></span>';
+    a.querySelectorAll('.text-top, .text-bottom').forEach(el => {
+      el.textContent = label;
+    });
+  });
+}
+
 const mobileLinks = document.querySelectorAll('.nav-mobile-link');
 
 if (hamburger && mobileNav) {
+  const setMenuOpen = open => {
+    mobileNav.classList.toggle('open', open);
+    document.body.style.overflow = open ? 'hidden' : '';
+    hamburger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    hamburger.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+  };
+
+  if (!mobileNav.querySelector('.nav-mobile-close')) {
+    const closeBtn = document.createElement('button');
+    closeBtn.type = 'button';
+    closeBtn.className = 'nav-mobile-close';
+    closeBtn.setAttribute('aria-label', 'Close menu');
+    closeBtn.innerHTML =
+      '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>';
+    mobileNav.insertBefore(closeBtn, mobileNav.firstChild);
+    closeBtn.addEventListener('click', () => setMenuOpen(false));
+  }
+
   hamburger.addEventListener('click', () => {
-    hamburger.classList.toggle('open');
-    mobileNav.classList.toggle('open');
-    document.body.style.overflow = mobileNav.classList.contains('open') ? 'hidden' : '';
+    setMenuOpen(!mobileNav.classList.contains('open'));
   });
 
   mobileLinks.forEach(link => {
@@ -52,18 +87,14 @@ if (hamburger && mobileNav) {
       });
     } else {
       link.addEventListener('click', () => {
-        hamburger.classList.remove('open');
-        mobileNav.classList.remove('open');
-        document.body.style.overflow = '';
+        setMenuOpen(false);
       });
     }
   });
 
   mobileNav.querySelectorAll('.mobile-dropdown a').forEach(sub => {
     sub.addEventListener('click', () => {
-      hamburger.classList.remove('open');
-      mobileNav.classList.remove('open');
-      document.body.style.overflow = '';
+      setMenuOpen(false);
     });
   });
 }
@@ -106,36 +137,27 @@ gsap.utils.toArray('.reveal').forEach(el => {
   });
 });
 
-// ── FEATURED QUOTE — DRAMATIC LEFT REVEAL ────────────────────
+// ── FEATURED QUOTE — SCROLL SCALE (center, 30% → 100%) ─────────
 gsap.utils.toArray('.featured-quote').forEach(quote => {
-  const tl = gsap.timeline({
-    scrollTrigger: {
-      trigger: quote,
-      start: 'top 80%',
-      toggleActions: 'play none none none'
+  gsap.fromTo(
+    quote,
+    {
+      scale: 0.3,
+      opacity: 0
+    },
+    {
+      scale: 1,
+      opacity: 1,
+      duration: 1.15,
+      ease: 'expo.out',
+      transformOrigin: '50% 50%',
+      scrollTrigger: {
+        trigger: quote,
+        start: 'top 80%',
+        toggleActions: 'play none none none'
+      }
     }
-  });
-
-  tl.fromTo(quote, {
-    clipPath: 'inset(0 100% 0 0)',
-    opacity: 0
-  }, {
-    clipPath: 'inset(0 0% 0 0)',
-    opacity: 1,
-    duration: 1.4,
-    ease: 'expo.inOut'
-  });
-
-  const inner = quote.querySelectorAll('.featured-quote-mark, .featured-quote-text, .featured-quote-footer');
-  if (inner.length) {
-    tl.from(inner, {
-      x: -40,
-      opacity: 0,
-      duration: 0.8,
-      stagger: 0.15,
-      ease: 'expo.out'
-    }, '-=0.5');
-  }
+  );
 });
 
 // ── STAGGER REVEAL ───────────────────────────────────────────

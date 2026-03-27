@@ -203,7 +203,7 @@
   }
   </script>
 </head>
-<body>
+<body class="page-home">
 
   <!-- ── NAVIGATION ──────────────────────────────────────── -->
   <nav class="nav" role="navigation" aria-label="Main navigation">
@@ -292,8 +292,8 @@
         <div class="hero-image-window-overlay"></div>
       </div>
 
-      <!-- Circle cursor mask reveal — full image visible only inside circle -->
-      <div class="hero-cursor-reveal" id="hero-cursor-reveal"></div>
+      <!-- Circle cursor mask reveal — full bright image inside circle (desktop only) -->
+      <div class="hero-cursor-reveal" id="hero-cursor-reveal" aria-hidden="true"></div>
 
       <!-- LAYER 3: Scrolling text marquee -->
       <div class="hero-marquee">
@@ -315,11 +315,41 @@
 
       <!-- Stacked: tagline → buttons → reviews -->
       <div class="hero-lower-stack">
-        <p class="hero-tagline">Luxury Within Your Means</p>
+        <p class="hero-tagline">"Luxury Within Your Means."</p>
 
         <div class="hero-bottom-ctas">
-          <a href="portfolio/index.html" class="hero-btn">View Portfolio</a>
-          <a href="contact.html" class="hero-btn">INQUIRE HERE</a>
+          <a href="portfolio/index.html" class="hero-btn btn-glasi">
+            <div class="corners">
+              <div class="corner-tl"></div>
+              <div class="corner-tr"></div>
+              <div class="corner-bl"></div>
+              <div class="corner-br"></div>
+              <div class="line line-top"></div>
+              <div class="line line-bottom"></div>
+              <div class="line line-left"></div>
+              <div class="line line-right"></div>
+            </div>
+            <span class="clip">
+              <span class="text-top">View Portfolio</span>
+              <span class="text-bottom">View Portfolio</span>
+            </span>
+          </a>
+          <a href="contact.html" class="hero-btn btn-glasi">
+            <div class="corners">
+              <div class="corner-tl"></div>
+              <div class="corner-tr"></div>
+              <div class="corner-bl"></div>
+              <div class="corner-br"></div>
+              <div class="line line-top"></div>
+              <div class="line line-bottom"></div>
+              <div class="line line-left"></div>
+              <div class="line line-right"></div>
+            </div>
+            <span class="clip">
+              <span class="text-top">Inquire Here</span>
+              <span class="text-bottom">Inquire Here</span>
+            </span>
+          </a>
         </div>
 
         <div class="hero-review-badge">
@@ -469,23 +499,23 @@
               <div class="card-content">
                 <h3 class="card-title">Design</h3>
                 <p class="card-body">We begin with a free in-home consultation where our owner meets you personally to understand your vision, lifestyle, and goals — at no charge.</p>
-                <a href="services/luxury-kitchen-remodeling.html" class="card-link">View Services</a>
+                <a href="services.html" class="card-link">View Services</a>
               </div>
             </div>
             <div class="grid-empty"></div>
             <div class="service-card row-1">
-              <div class="card-bg-image" style="background-image:url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80')"></div>
+              <div class="card-bg-image" style="background-image:url('IMAGES/Rendering_bathroom.jpg')"></div>
               <span class="card-number">02</span>
               <div class="card-content">
                 <h3 class="card-title">Concept</h3>
                 <p class="card-body">Full 3D renderings and curated material selections from 60+ supplier partners bring your vision to life before a single wall is touched.</p>
-                <a href="services/custom-bathroom-renovations.html" class="card-link">View Services</a>
+                <a href="services.html" class="card-link">View Services</a>
               </div>
             </div>
 
             <!-- Row 2: [Planning] [empty] [Build] [empty] -->
             <div class="service-card row-2">
-              <div class="card-bg-image" style="background-image:url('https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80')"></div>
+              <div class="card-bg-image" style="background-image:url('IMAGES/sven-mieke-fteR0e2BzKo-unsplash.jpg')"></div>
               <span class="card-number">03</span>
               <div class="card-content">
                 <h3 class="card-title">Planning</h3>
@@ -495,12 +525,12 @@
             </div>
             <div class="grid-empty"></div>
             <div class="service-card row-2">
-              <div class="card-bg-image" style="background-image:url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80')"></div>
+              <div class="card-bg-image" style="background-image:url('IMAGES/immo-renovation-UqNEbyRQ660-unsplash.jpg')"></div>
               <span class="card-number">04</span>
               <div class="card-content">
                 <h3 class="card-title">Build</h3>
                 <p class="card-body">Our dedicated A-to-Z crew stays on your project every day until completion. Same team, start to finish. No bouncing between jobs. Ever.</p>
-                <a href="consultation.html" class="card-link">View Services</a>
+                <a href="services.html" class="card-link">View Services</a>
               </div>
             </div>
             <div class="grid-empty"></div>
@@ -516,9 +546,13 @@
 
     <!-- ── THREE IMAGE CARDS ──────────────────────────────── -->
     <section class="cards-section" aria-label="Explore B&B">
-      <div class="cards-scroll-overlay" aria-hidden="true"></div>
-      <div class="image-cards-row reveal-group">
+      <div class="image-cards-row">
         <a href="about.html" class="image-card">
+          <div class="card-lines">
+            <div class="card-line-top"></div>
+            <div class="card-line-bottom"></div>
+          </div>
+          <div class="card-mask"></div>
           <img
             src="IMAGES/BandB-Associates-team.jpg"
             alt="B&B Associates Creations family design-build team — luxury kitchen and bathroom remodeling in Montgomery County and Bucks County PA"
@@ -530,6 +564,11 @@
           </div>
         </a>
         <a href="portfolio/index.html" class="image-card">
+          <div class="card-lines">
+            <div class="card-line-top"></div>
+            <div class="card-line-bottom"></div>
+          </div>
+          <div class="card-mask"></div>
           <img
             src="IMAGES/Custom-Bathroom-Ambler-Pa.png"
             alt="Custom bathroom renovation in Ambler PA by B&B Associates Creations — spa-inspired master bath remodel"
@@ -541,6 +580,11 @@
           </div>
         </a>
         <a href="services/luxury-kitchen-remodeling.html" class="image-card">
+          <div class="card-lines">
+            <div class="card-line-top"></div>
+            <div class="card-line-bottom"></div>
+          </div>
+          <div class="card-mask"></div>
           <img
             src="IMAGES/High-Quality-Tile-Ambler-Pa.png"
             alt="High-quality luxury tile and surface materials for kitchen and bathroom remodeling in Montgomery County PA — B&B Associates Creations"
@@ -567,7 +611,7 @@
       <section class="wwb-panel wwb-panel--kitchen" aria-label="Kitchen remodeling">
         <img
           class="wwb-image"
-          src="https://images.unsplash.com/photo-1556911220-bff31c812dba?w=2000&q=85&auto=format&fit=crop"
+          src="portfolio/KITCHENS/B&B - Prager-kitchen/A3A70E7F-36C9-403A-AC21-F69948945540.jpeg"
           alt="Luxury kitchen remodeling by B&amp;B Associates Creations"
           loading="lazy"
         >
@@ -587,9 +631,22 @@
               <li>High-End Appliance Integration</li>
             </ul>
           </div>
-          <a class="btn hero-btn" href="services/luxury-kitchen-remodeling.html">
-            Explore Kitchen Remodeling
-          </a>
+          <button type="button" class="hero-btn btn-glasi" onclick="location.href='services/luxury-kitchen-remodeling.html'">
+            <div class="corners">
+              <div class="corner-tl"></div>
+              <div class="corner-tr"></div>
+              <div class="corner-bl"></div>
+              <div class="corner-br"></div>
+              <div class="line line-top"></div>
+              <div class="line line-bottom"></div>
+              <div class="line line-left"></div>
+              <div class="line line-right"></div>
+            </div>
+            <span class="clip">
+              <span class="text-top">Explore Kitchen Remodeling</span>
+              <span class="text-bottom">Explore Kitchen Remodeling</span>
+            </span>
+          </button>
         </div>
       </section>
 
@@ -597,7 +654,7 @@
       <section class="wwb-panel wwb-panel--bathroom" aria-label="Bathroom renovations">
         <img
           class="wwb-image"
-          src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=2000&q=85&auto=format&fit=crop"
+          src="portfolio/BATHROOMS/B&B - Stacey Goldberg bathroom/2434.jpg"
           alt="Spa-inspired bathroom renovation by B&amp;B Associates Creations"
           loading="lazy"
         >
@@ -617,9 +674,22 @@
               <li>Heated Floors &amp; Ambient Lighting</li>
             </ul>
           </div>
-          <a class="btn hero-btn" href="services/custom-bathroom-renovations.html">
-            Explore Bathroom Renovations
-          </a>
+          <button type="button" class="hero-btn btn-glasi" onclick="location.href='services/custom-bathroom-renovations.html'">
+            <div class="corners">
+              <div class="corner-tl"></div>
+              <div class="corner-tr"></div>
+              <div class="corner-bl"></div>
+              <div class="corner-br"></div>
+              <div class="line line-top"></div>
+              <div class="line line-bottom"></div>
+              <div class="line line-left"></div>
+              <div class="line line-right"></div>
+            </div>
+            <span class="clip">
+              <span class="text-top">Explore Bathroom Renovations</span>
+              <span class="text-bottom">Explore Bathroom Renovations</span>
+            </span>
+          </button>
         </div>
       </section>
     </div>
@@ -771,7 +841,7 @@
         <p class="eyebrow">Coming Soon</p>
         <h2 id="showroom-heading" class="showroom-title">The B&amp;B Associates Showroom Experience<br>Is Coming to Ambler, PA</h2>
         <p class="showroom-sub">A physical showroom where you can see, touch, and experience 60+ premium materials before your project begins. Opening Winter 2026–2027.</p>
-        <a href="ambler-design-showroom.html" class="btn btn-outline">Join the Invite List</a>
+        <a href="showroom.html" class="btn btn-outline">Join the Invite List</a>
       </div>
     </section>
 
@@ -1131,7 +1201,7 @@
           <nav class="footer-links" aria-label="Useful links navigation">
             <a href="services.html" class="footer-link">Luxury Kitchen Remodeling</a>
             <a href="services.html" class="footer-link">Custom Bathroom Renovations</a>
-            <a href="ambler-design-showroom.html" class="footer-link">Ambler Design Showroom</a>
+            <a href="showroom.html" class="footer-link">Ambler Design Showroom</a>
             <a href="reviews.html" class="footer-link">Client Reviews</a>
           </nav>
         </div>
@@ -1181,7 +1251,7 @@
 
       <div class="footer-bottom">
         <p class="footer-copy">&copy; 2026 B&amp;B Associates Creations LLC. All Rights Reserved.</p>
-        <p class="footer-tagline-right">Luxury Design-Build Remodeling — Philadelphia, PA</p>
+        <p class="footer-tagline-right">Kitchen &amp; Bathroom Remodeling — Montgomery County, Main Line &amp; Bucks County, PA</p>
       </div>
     </div>
   </footer>
@@ -1199,57 +1269,60 @@
 
   <!-- Page-specific JS -->
   <script>
-    // ── HERO: Circle cursor mask reveal + image parallax ─────
-    // Uses rAF + lerp so the circle glides frame-perfectly at 60fps
-    // instead of stacking CSS transitions that cause glitch/stutter.
-    const heroEl = document.getElementById('home-hero');
-    const cursorReveal = document.getElementById('hero-cursor-reveal');
-    const windowImg = document.getElementById('hero-window-img');
-    const REVEAL_RADIUS = 100;
-
-    if (heroEl && cursorReveal) {
-      // Current interpolated positions
-      let cx = -999, cy = -999;
-      // Target positions (updated on mousemove / mouseleave)
-      let tx = -999, ty = -999;
-      // Image parallax
-      let ix = 0, iy = 0, itx = 0, ity = 0;
-
-      // Lerp factor: 0.12 = smooth follow, increase for snappier feel
-      const LERP_CIRCLE = 0.12;
-      const LERP_IMG    = 0.07;
+    // ── HERO: Circle cursor mask reveal + image parallax (desktop only) ─────
+    (function () {
+      var mq = window.matchMedia('(min-width: 769px)');
+      var heroEl = document.getElementById('home-hero');
+      var cursorReveal = document.getElementById('hero-cursor-reveal');
+      var windowImg = document.getElementById('hero-window-img');
+      var REVEAL_RADIUS = 85;
+      var cx = -999, cy = -999, tx = -999, ty = -999;
+      var ix = 0, iy = 0, itx = 0, ity = 0;
+      var LERP_CIRCLE = 0.12;
+      var LERP_IMG = 0.07;
 
       function heroTick() {
-        cx += (tx - cx) * LERP_CIRCLE;
-        cy += (ty - cy) * LERP_CIRCLE;
-        ix += (itx - ix) * LERP_IMG;
-        iy += (ity - iy) * LERP_IMG;
-
-        cursorReveal.style.clipPath = `circle(${REVEAL_RADIUS}px at ${cx}px ${cy}px)`;
-        if (windowImg) {
-          windowImg.style.transform = `translate(${ix}px, ${iy}px) scale(1.08)`;
+        if (mq.matches && cursorReveal) {
+          cx += (tx - cx) * LERP_CIRCLE;
+          cy += (ty - cy) * LERP_CIRCLE;
+          ix += (itx - ix) * LERP_IMG;
+          iy += (ity - iy) * LERP_IMG;
+          cursorReveal.style.clipPath = 'circle(' + REVEAL_RADIUS + 'px at ' + cx + 'px ' + cy + 'px)';
+          if (windowImg) {
+            windowImg.style.transform = 'translate(' + ix + 'px, ' + iy + 'px) scale(1.08)';
+          }
         }
         requestAnimationFrame(heroTick);
       }
-      requestAnimationFrame(heroTick);
 
-      heroEl.addEventListener('mousemove', e => {
-        const rect = heroEl.getBoundingClientRect();
-        tx = e.clientX - rect.left;
-        ty = e.clientY - rect.top;
-        const xp = e.clientX / window.innerWidth - 0.5;
-        const yp = e.clientY / window.innerHeight - 0.5;
-        itx = xp * -20;
-        ity = yp * -20;
-      });
-
-      heroEl.addEventListener('mouseleave', () => {
+      function resetTargets() {
         tx = -999;
         ty = -999;
         itx = 0;
         ity = 0;
-      });
-    }
+      }
+
+      if (heroEl && cursorReveal) {
+        requestAnimationFrame(heroTick);
+        heroEl.addEventListener('mousemove', function (e) {
+          if (!mq.matches) return;
+          var rect = heroEl.getBoundingClientRect();
+          tx = e.clientX - rect.left;
+          ty = e.clientY - rect.top;
+          var xp = e.clientX / window.innerWidth - 0.5;
+          var yp = e.clientY / window.innerHeight - 0.5;
+          itx = xp * -20;
+          ity = yp * -20;
+        });
+        heroEl.addEventListener('mouseleave', resetTargets);
+        mq.addEventListener('change', function () {
+          resetTargets();
+          if (!mq.matches && windowImg) {
+            windowImg.style.removeProperty('transform');
+          }
+        });
+      }
+    })();
 
     // ── Philosophy image soft intro animations ──────────────
     const philoLeft = document.querySelector('.philosophy-img-left');
@@ -1273,20 +1346,54 @@
       });
     }
 
-    // Cards section — dark overlay fades on scroll
-    const cardsOverlay = document.querySelector('.cards-scroll-overlay');
-    if (cardsOverlay && typeof gsap !== 'undefined') {
-      gsap.to(cardsOverlay, {
-        scrollTrigger: {
-          trigger: '.cards-section',
-          start: 'top 80%',
-          end: 'top 20%',
-          scrub: true
-        },
-        opacity: 0,
-        ease: 'none'
+    // ── IMAGE CARDS — GLASI ENTRANCE ────────────────────────
+    (function () {
+      if (typeof gsap === 'undefined') return;
+      var cards = document.querySelectorAll('.image-card');
+      var isMobile = window.matchMedia('(max-width: 768px)').matches;
+
+      cards.forEach(function (card, i) {
+        var mask    = card.querySelector('.card-mask');
+        var lineTop = card.querySelector('.card-line-top');
+        var lineBtm = card.querySelector('.card-line-bottom');
+        var title   = card.querySelector('.image-card-title');
+        var sub     = card.querySelector('.image-card-sub');
+
+        var tl = gsap.timeline({
+          scrollTrigger: {
+            trigger: isMobile ? card : '.cards-section',
+            start: 'top 78%',
+            toggleActions: 'play none none none'
+          },
+          delay: isMobile ? 0 : i * 0.18
+        });
+
+        // Step 1: lines draw in from center
+        tl.fromTo([lineTop, lineBtm],
+          { scaleX: 0 },
+          { scaleX: 1, duration: 0.5, ease: 'expo.out' }
+        );
+
+        // Step 2: mask wipes to the left revealing image
+        tl.to(mask,
+          { scaleX: 0, duration: 0.85, ease: 'expo.inOut' },
+          '-=0.1'
+        );
+
+        // Step 3: lines fade out
+        tl.to([lineTop, lineBtm],
+          { opacity: 0, duration: 0.3 },
+          '-=0.5'
+        );
+
+        // Step 4: title + sub slide in from right
+        tl.fromTo([title, sub],
+          { x: 24, opacity: 0 },
+          { x: 0, opacity: 1, duration: 0.6, stagger: 0.1, ease: 'expo.out' },
+          '-=0.55'
+        );
       });
-    }
+    })();
 
     // Collections slider — uses 6 featured projects from admin or first 6 with videos
     const collSlider = document.getElementById('collections-slider');
@@ -1501,6 +1608,14 @@
 
   <!-- Page CSS -->
   <style>
+    /* Global overflow-x:hidden on html/body breaks position:sticky — clip on home only */
+    @supports (overflow: clip) {
+      html:has(body.page-home),
+      body.page-home {
+        overflow-x: clip;
+      }
+    }
+
     .sr-only {
       position: absolute;
       width: 1px;
@@ -1520,16 +1635,13 @@
       min-height: 700px;
       background: var(--color-bg);
       overflow: hidden;
-      cursor: none;
+      cursor: auto;
     }
 
-    /* Center image window */
+    /* Full-bleed hero image (mobile); desktop column + mask below */
     .hero-image-window {
       position: absolute;
-      top: 0;
-      left: 25vw;
-      width: 50vw;
-      height: 100%;
+      inset: 0;
       z-index: 1;
       overflow: hidden;
     }
@@ -1537,30 +1649,23 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
-      transform: scale(1.08);
-      transition: transform 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+      max-width: 100%;
+      transform: none;
+      transform-origin: center center;
+      animation: none;
       will-change: transform;
+    }
+
+    /* Hidden on small screens — mask + rAF run only on desktop */
+    .hero-cursor-reveal {
+      display: none;
     }
     .hero-image-window-overlay {
       position: absolute;
       inset: 0;
-      background: rgba(26, 28, 35, 0.40);
+      background: rgba(8, 23, 48, 0.5);
       z-index: 1;
     }
-
-    /* Circle cursor reveal — shows full bright image */
-    .hero-cursor-reveal {
-      position: absolute;
-      inset: 0;
-      z-index: 1;
-      background-image: url('IMAGES/Custom-Kitchen-Ambler-Pa.png');
-      background-size: cover;
-      background-position: center;
-      clip-path: circle(0px at -999px -999px);
-      will-change: clip-path;
-      pointer-events: none;
-    }
-
     /* Marquee text */
     .hero-marquee {
       position: absolute;
@@ -1601,7 +1706,7 @@
     /* Stacked lower group: tagline → buttons → reviews */
     .hero-lower-stack {
       position: absolute;
-      bottom: 90px;
+      top: 360px;
       left: 50%;
       transform: translateX(-50%);
       z-index: 4;
@@ -1616,7 +1721,9 @@
       font-style: italic;
       font-weight: 300;
       font-size: clamp(22px, 2.8vw, 38px);
-      color: #ffffff;
+      color: var(--color-white);
+      background: unset;
+      background-color: unset;
       letter-spacing: 0.04em;
       white-space: nowrap;
     }
@@ -1666,51 +1773,91 @@
       font-size: 13px;
       font-weight: var(--weight-medium);
       letter-spacing: var(--tracking-widest);
-      text-transform: uppercase;
-      color: #FFFFFF;
-      text-decoration: none;
       padding: 14px 32px;
-      border-radius: 0;
-      border: 1px solid rgba(255, 255, 255, 0.55);
-      background: linear-gradient(135deg, rgba(255,255,255,0.14), rgba(248,248,248,0.06));
-      box-shadow:
-        0 0 0 1px rgba(255,255,255,0.06),
-        0 18px 45px rgba(0,0,0,0.4);
-      backdrop-filter: blur(6px);
-      -webkit-backdrop-filter: blur(6px);
-      transition: background 0.4s ease,
-                  color 0.4s ease,
-                  border-color 0.4s ease,
-                  box-shadow 0.4s ease,
-                  transform 0.3s ease;
       white-space: nowrap;
       cursor: pointer;
+      /* Gold-tinted glass state */
+      color: #B67539;
+      border-color: rgba(182, 117, 57, 0.6);
+      background: linear-gradient(135deg, rgba(182,117,57,0.22), rgba(182,117,57,0.08));
+      box-shadow: 0 0 0 1px rgba(182,117,57,0.2), 0 18px 45px rgba(0,0,0,0.4);
+      backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
+      transition: background 0.5s cubic-bezier(0.77, 0, 0.175, 1),
+                  border-color 0.5s cubic-bezier(0.77, 0, 0.175, 1),
+                  color 0.35s ease,
+                  backdrop-filter 0.5s ease,
+                  box-shadow 0.4s ease;
     }
     .hero-btn:hover {
-      background: transparent;
-      color: #FFFFFF;
-      border: 1px solid rgba(255, 255, 255, 0.6);
-      box-shadow:
-        0 0 0 1px rgba(255,255,255,0.08),
-        0 18px 45px rgba(0,0,0,0.35);
-      backdrop-filter: blur(8px);
-      -webkit-backdrop-filter: blur(8px);
-      transform: translateY(-1px);
+      background: rgba(182,117,57,0.12);
+      border-color: rgba(182,117,57,0.85);
+      color: #D4944F;
+      box-shadow: 0 0 0 1px rgba(182,117,57,0.26), 0 14px 36px rgba(0,0,0,0.34);
+    }
+    .wwb-content .hero-btn:not(.btn-glasi) {
+      color: #ffffff;
+      border-color: rgba(255, 255, 255, 0.35);
+      background: rgba(255, 255, 255, 0.18);
+      box-shadow: 0 4px 24px rgba(0,0,0,0.18), inset 0 1px 0 rgba(255,255,255,0.25);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+    }
+    .wwb-content .hero-btn:not(.btn-glasi):hover {
+      color: #ffffff;
+      background: rgba(255, 255, 255, 0.25);
+      border-color: rgba(255, 255, 255, 0.5);
+      box-shadow: 0 8px 32px rgba(0,0,0,0.2), inset 0 1px 0 rgba(255,255,255,0.3);
+    }
+    button.hero-btn.btn-glasi {
+      appearance: none;
+      -webkit-appearance: none;
+    }
+
+    /* Desktop: center column + circular cursor reveal (rAF lerp in page script) */
+    @media (min-width: 769px) {
+      .home-hero {
+        cursor: none;
+      }
+      .hero-image-window {
+        inset: auto;
+        top: 0;
+        left: 15vw;
+        width: 70vw;
+        height: 100%;
+      }
+      .hero-window-img {
+        transform: scale(1.08);
+        transition: transform 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+      }
+      .hero-cursor-reveal {
+        display: block;
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+        background-image: url('IMAGES/Custom-Kitchen-Ambler-Pa.png');
+        background-size: cover;
+        background-position: center;
+        clip-path: circle(0px at -999px -999px);
+        will-change: clip-path;
+        pointer-events: none;
+      }
+    }
+    @media (min-width: 1025px) {
+      .hero-image-window {
+        left: 25vw;
+        width: 50vw;
+      }
     }
 
     /* Responsive */
-    @media(max-width:1024px) {
-      .hero-image-window {
-        left: 15vw;
-        width: 70vw;
-      }
-    }
     @media(max-width:768px) {
-      .home-hero { cursor: auto; }
-      .hero-cursor-reveal { display: none; }
+      .hero-marquee-track { animation-duration: 30s; }
       .hero-image-window {
-        left: 5vw;
-        width: 90vw;
+        inset: 0;
+      }
+      .hero-window-img {
+        transform: none !important;
       }
       .hero-marquee-text {
         font-size: clamp(50px, 12vw, 100px);
@@ -1719,7 +1866,7 @@
         font-size: clamp(50px, 12vw, 100px);
       }
       .hero-lower-stack {
-        bottom: 24px;
+        bottom: 56px;
         gap: 20px;
       }
       .hero-tagline {
@@ -1729,10 +1876,13 @@
         gap: var(--sp-3);
         flex-direction: column;
         align-items: center;
+        width: 100%;
+        max-width: 280px;
       }
       .hero-btn {
         font-size: 11px;
         padding: 14px 28px;
+        width: 100%;
       }
       .hero-tagline {
         overflow: hidden;
@@ -1741,11 +1891,13 @@
       }
     }
     @media(max-width:480px) {
-      .hero-image-window { left: 0; width: 100vw; }
+      .hero-image-window { inset: 0; }
+      .hero-marquee-track { animation-duration: 24s; }
       .hero-marquee-text, .hero-marquee-spacer { font-size: clamp(36px, 10vw, 56px); }
-      .hero-lower-stack { bottom: 16px; gap: 14px; padding: 0 16px; }
-      .hero-tagline { font-size: clamp(13px, 3.5vw, 16px); }
-      .hero-btn { font-size: 10px; padding: 13px 20px; width: 100%; max-width: 260px; text-align: center; }
+      .hero-lower-stack { bottom: 44px; gap: 14px; padding: 0 16px; }
+      .hero-tagline { font-size: clamp(21px, 3.5vw, 28px); }
+      .hero-bottom-ctas { max-width: 260px; }
+      .hero-btn { font-size: 10px; padding: 13px 20px; width: 100%; max-width: none; text-align: center; }
     }
 
     /* ── ORBITAL ESTIMATOR TEASER ────────────────────────── */
@@ -1780,8 +1932,8 @@
       padding: var(--sp-6) clamp(var(--sp-6), 6vw, 80px);
       display: flex;
       flex-direction: column;
-      align-items: flex-start;
-      text-align: left;
+      align-items: center;
+      text-align: center;
     }
     .orbital-estimator-content .section-label {
       color: var(--color-gold);
@@ -1802,27 +1954,35 @@
       color: rgba(255,255,255,0.9);
       line-height: 1.6;
       max-width: 28rem;
+      margin-left: auto;
+      margin-right: auto;
       margin-bottom: var(--sp-6);
     }
     .orbital-estimator-value {
       list-style: none;
       margin: 0 0 var(--sp-4);
       padding: 0;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
     .orbital-estimator-value li {
       font-family: var(--font-sans);
       font-size: 15px;
       color: rgba(255,255,255,0.85);
       padding: var(--sp-2) 0;
-      padding-left: 1.5em;
-      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5em;
+      text-align: center;
+      max-width: 28rem;
     }
     .orbital-estimator-value li::before {
       content: '';
-      position: absolute;
-      left: 0;
-      top: 50%;
-      transform: translateY(-50%);
+      position: static;
+      flex-shrink: 0;
       width: 6px;
       height: 6px;
       border-radius: 50%;
@@ -1833,6 +1993,8 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      width: 100%;
+      box-sizing: border-box;
     }
     .orbital-estimator-cta-wrap {
       padding: var(--sp-3) clamp(var(--sp-6), 6vw, 80px) var(--sp-6);
@@ -1899,7 +2061,7 @@
     .orbital-hub-line2 { font-family: var(--font-display); font-size: 24px; font-weight: 600; color: #ffffff; display: block; margin-top: 2px; line-height: 1.2; }
     .orbital-hub-line3 { font-family: var(--font-sans); font-size: 13px; color: #ffffff; display: block; margin-top: 2px; line-height: 1.2; }
     .orbital-lines, .orbital-paths { display: none; }
-    .orbital-points { position: absolute; inset: 0; z-index: 5; }
+    .orbital-points { position: static; z-index: 5; }
     .orbital-point {
       position: absolute;
       width: 80px;
@@ -1987,7 +2149,7 @@
       .orbital-hub-icon svg { width: 40px; height: 40px; }
     }
     @media (max-width: 767px) {
-      .orbital-estimator-viz { padding: 40px 24px; }
+      .orbital-estimator-viz { padding: 28px 16px; }
       .orbital-container { width: min(400px, calc(100vw - 48px)); height: min(400px, calc(100vw - 48px)); max-height: min(400px, calc(100vw - 48px)); }
       .orbital-hub { width: 140px; height: 140px; margin-left: -70px; margin-top: -70px; }
       .orbital-hub-icon svg { width: 32px; height: 32px; }
@@ -1997,9 +2159,9 @@
       .orbital-point .orbital-point-label { font-size: 8px; max-width: 52px; }
     }
     @media (max-width: 480px) {
-      .orbital-estimator-viz { padding: 24px 16px; }
+      .orbital-estimator-viz { padding: 18px 10px; }
       .orbital-estimator-content { padding: var(--sp-6) var(--sp-4); }
-      .orbital-container { width: min(320px, calc(100vw - 32px)); height: min(320px, calc(100vw - 32px)); }
+      .orbital-container { width: min(300px, calc(100vw - 24px)); height: min(300px, calc(100vw - 24px)); }
       .orbital-hub { width: 110px; height: 110px; margin-left: -55px; margin-top: -55px; }
       .orbital-hub-line1 { font-size: 9px; }
       .orbital-hub-line2 { font-size: 16px; }
@@ -2331,17 +2493,45 @@
     }
     @media(max-width:768px) {
       .philosophy-layout {
-        grid-template-columns: 1fr;
-        gap: var(--sp-7);
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: var(--sp-4);
+        align-items: start;
       }
       .philosophy-img {
-        height: 240px;
+        aspect-ratio: 3 / 4;
+        height: auto;
         border-radius: 4px;
-        margin: 0 var(--grid-padding);
+        margin: 0;
       }
-      .philosophy-img-left { order: 2; }
-      .philosophy-center { order: 1; padding: 0 var(--grid-padding); }
-      .philosophy-img-right { order: 3; }
+      .philosophy-img-left { order: 1; margin-left: var(--grid-padding); }
+      .philosophy-img-right { order: 1; margin-right: var(--grid-padding); }
+      .philosophy-center {
+        order: 2;
+        grid-column: 1 / -1;
+        padding: 0 var(--grid-padding);
+      }
+      .philosophy-ctas {
+        gap: 10px;
+        flex-wrap: nowrap;
+        justify-content: center;
+      }
+      .philosophy-ctas .phil-btn,
+      .philosophy-ctas .btn-glasi {
+        width: 150px;
+        padding: 12px 16px;
+        font-size: 10px;
+        letter-spacing: 0.08em;
+        white-space: nowrap;
+      }
+      .philosophy-ctas .phil-label,
+      .philosophy-ctas .btn-glasi .text-top,
+      .philosophy-ctas .btn-glasi .text-bottom {
+        white-space: nowrap;
+      }
+      .philosophy-ctas .btn-glasi .clip {
+        height: 1.2em;
+        line-height: 1.2;
+      }
     }
 
     /* ── RECENT PROJECTS — INSTAGRAM CAROUSEL ─────────────── */
@@ -2364,6 +2554,10 @@
       text-align: center;
       max-width: 620px;
       margin: 0 auto clamp(28px, 4vw, 40px);
+    }
+
+    .recent-projects-header .section-label {
+      color: var(--color-gold-light);
     }
 
     /* Right dash now handled globally in design-system.css */
@@ -2428,7 +2622,7 @@
 
     @media (max-width: 640px) {
       .recent-project-card {
-        flex: 0 0 65%;
+        flex: 0 0 40%;
       }
     }
 
@@ -2487,7 +2681,7 @@
       font-weight: 400;
       letter-spacing: 0.25em;
       text-transform: uppercase;
-      color: rgba(255,255,255,0.40);
+      color: var(--color-gold-light);
       margin-bottom: 48px;
     }
 
@@ -2666,12 +2860,34 @@
       background: var(--color-bg);
       padding: 0;
     }
-    .cards-scroll-overlay {
+
+    /* ── IMAGE CARD ENTRANCE ELEMENTS ───────────────────── */
+    .card-lines {
       position: absolute;
       inset: 0;
-      background: rgba(26, 28, 35, 0.70);
-      z-index: 3;
+      z-index: 4;
       pointer-events: none;
+    }
+    .card-line-top,
+    .card-line-bottom {
+      position: absolute;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background: rgba(255, 255, 255, 0.55);
+      transform: scaleX(0);
+      transform-origin: center;
+    }
+    .card-line-top    { top: 0; }
+    .card-line-bottom { bottom: 0; }
+    .card-mask {
+      position: absolute;
+      inset: 0;
+      background: #F8F4EF;
+      z-index: 3;
+      transform-origin: right center;
+      pointer-events: none;
+      will-change: transform;
     }
     .image-cards-row {
       display: grid;
@@ -2904,7 +3120,8 @@
       background: #ffffff;
       position: relative;
       box-shadow: none;
-      will-change: clip-path, opacity;
+      transform-origin: center center;
+      will-change: transform, opacity;
     }
     .featured-quote::before {
       content: '';
@@ -3291,14 +3508,16 @@
     /* ── CONTACT ───────────────────────────────── */
     .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--sp-10); align-items: start; }
     .contact-title { font-family: var(--font-sans); font-size: var(--text-h2); font-weight: var(--weight-medium); color: #ffffff; margin: var(--sp-4) 0; line-height: 1.1; }
+    .contact-form-col { padding-left: 10px; padding-right: 10px; }
     .contact-body { color: #e5e7eb; font-size: var(--text-body-lg); margin-bottom: var(--sp-6); line-height: var(--leading-body); }
+    .contact-content > h2.contact-title + p.contact-body { font-size: 14px; }
     .contact-trust { display: flex; flex-direction: column; gap: var(--sp-3); margin-bottom: var(--sp-6); }
     .trust-item { display: flex; align-items: center; gap: var(--sp-3); font-size: var(--text-body); color: var(--color-text); }
     .trust-icon { color: var(--color-gold); font-size: 12px; }
     .contact-info { display: flex; flex-direction: column; gap: var(--sp-3); }
     .contact-phone { font-family: var(--font-display); font-size: 28px; color: var(--color-gold); font-style: italic; }
     .contact-email { font-family: var(--font-mono); font-size: var(--text-small); color: var(--color-text-dim); letter-spacing: var(--tracking-wide); }
-    .contact-address { font-style: normal; font-family: var(--font-mono); font-size: var(--text-label); color: var(--color-text-dimmer); letter-spacing: var(--tracking-wide); }
+    .contact-address { font-style: normal; font-family: var(--font-mono); font-size: var(--text-label); color: var(--color-gold-light); letter-spacing: var(--tracking-wide); }
     .contact-form {
       background: #ffffff;
       border: 1px solid rgba(15,23,42,0.08);
@@ -3453,6 +3672,31 @@
     }
     .form-note { font-family: var(--font-mono); font-size: var(--text-label); color: var(--color-text-dimmer); letter-spacing: var(--tracking-wide); text-align: center; margin-top: var(--sp-3); }
     @media(max-width:900px) { .contact-grid { grid-template-columns: 1fr; } .form-row { grid-template-columns: 1fr; } }
+    @media (max-width: 767px) {
+      .contact-section .container {
+        padding-left: 5px;
+        padding-right: 5px;
+      }
+      .contact-form-col,
+      .contact-form {
+        min-width: 0;
+      }
+      .contact-form-col {
+        display: flex;
+        justify-content: center;
+      }
+      .contact-form {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 20px;
+      }
+      .contact-form-title {
+        text-align: center;
+      }
+    }
   </style>
 <script>
 /* ── Dynamic Video Carousel — 6 Featured Projects (from admin or defaults) ── */

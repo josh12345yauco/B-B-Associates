@@ -814,7 +814,7 @@
       <div class="stat-label">Google Reviews</div>
     </div>
     <div class="stat-box">
-      <div class="stat-number">123</div>
+      <div class="stat-number" data-count="123">123</div>
       <div class="stat-label">Angi Reviews</div>
     </div>
     <div class="stat-box">
@@ -822,7 +822,7 @@
       <div class="stat-label">Houzz Rating</div>
     </div>
     <div class="stat-box">
-      <div class="stat-number">180+</div>
+      <div class="stat-number" data-count="180" data-suffix="+">180+</div>
       <div class="stat-label">Total Reviews</div>
     </div>
   </div>
@@ -1291,6 +1291,53 @@
       stagger: 0.12,
       ease: 'expo.out'
     });
+  })();
+
+  /* ── HERO STATS: stagger entrance + count-up ───────────── */
+  (function () {
+    var boxes = document.querySelectorAll('.hero-stats .stat-box');
+    if (!boxes.length || typeof gsap === 'undefined') return;
+
+    // Stagger entrance: fade up from y:24
+    gsap.from(boxes, {
+      scrollTrigger: {
+        trigger: '.hero-stats',
+        start: 'top 88%',
+        toggleActions: 'play none none none'
+      },
+      y: 24,
+      opacity: 0,
+      duration: 0.7,
+      stagger: 0.12,
+      ease: 'expo.out'
+    });
+
+    // Count-up for numeric stats
+    var countEls = document.querySelectorAll('.hero-stats .stat-number[data-count]');
+    if (!countEls.length) return;
+
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) return;
+        io.unobserve(entry.target);
+        var el = entry.target;
+        var end = parseInt(el.dataset.count, 10);
+        var suffix = el.dataset.suffix || '';
+        var duration = 1600;
+        var startTime = null;
+        function animate(ts) {
+          if (!startTime) startTime = ts;
+          var progress = Math.min((ts - startTime) / duration, 1);
+          var eased = 1 - Math.pow(1 - progress, 3);
+          var current = Math.floor(eased * end);
+          el.textContent = (current >= 1000 ? current.toLocaleString() : current) + suffix;
+          if (progress < 1) requestAnimationFrame(animate);
+        }
+        requestAnimationFrame(animate);
+      });
+    }, { threshold: 0.3 });
+
+    countEls.forEach(function (el) { io.observe(el); });
   })();
 
   /* ── CLIP-PATH REVEAL ──────────────────────────────────── */

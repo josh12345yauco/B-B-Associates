@@ -2,7 +2,8 @@
 
 .wwb-wrap {
   background: var(--color-bg);
-  padding-bottom: 80px;
+  padding-bottom: 0;
+  isolation: isolate;
 }
 
 .wwb-header-section {
@@ -32,7 +33,8 @@
   position: relative;
   min-height: 108vh;
   display: grid;
-  place-items: center;
+  align-items: center;
+  justify-items: stretch;
   overflow: hidden;
 }
 
@@ -61,9 +63,9 @@
 .wwb-panel--bathroom .wwb-overlay {
   background: linear-gradient(
     to bottom,
-    rgba(0, 0, 0, 0.9) 0%,
-    rgba(0, 0, 0, 0.8) 45%,
-    rgba(0, 0, 0, 0.95) 100%
+    rgba(0, 0, 0, 0.70) 0%,
+    rgba(0, 0, 0, 0.65) 45%,
+    rgba(0, 0, 0, 0.75) 100%
   );
 }
 
@@ -71,8 +73,11 @@
   position: relative;
   z-index: 2;
   max-width: 64rem;
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
   padding: 0 var(--grid-padding);
-  text-align: center;
+  text-align: left;
   color: #FFFFFF;
 }
 
@@ -81,7 +86,7 @@
   font-size: 11px;
   letter-spacing: 0.25em;
   text-transform: uppercase;
-  color: #C9A063;
+  color: var(--color-gold-light);
   margin-bottom: 14px;
 }
 
@@ -89,9 +94,17 @@
   font-family: 'Cormorant Garamond', serif;
   font-size: clamp(34px, 5vw, 60px);
   font-weight: 300;
-  line-height: 1.1;
-  margin-bottom: 16px;
-  white-space: nowrap;
+  line-height: 1.15;
+  margin-bottom: 36px;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  word-wrap: break-word;
+}
+
+@media (min-width: 900px) {
+  .wwb-heading {
+    white-space: nowrap;
+  }
 }
 
 .wwb-body {
@@ -141,7 +154,7 @@
   grid-template-columns: minmax(0, 2fr) minmax(0, 1.4fr);
   gap: 32px;
   align-items: flex-start;
-  margin: 0 0 24px;
+  margin: 0 0 72px;
   text-align: left;
 }
 
@@ -153,10 +166,24 @@
   max-width: 32rem;
 }
 
+/* CTA: narrow width, anchored to left (same edge as .wwb-grid) */
+.wwb-content > button.hero-btn.btn-glasi {
+  display: flex;
+  width: fit-content;
+  max-width: 100%;
+  margin-left: 0;
+  margin-right: auto;
+}
+
+/* Kitchen panel: stick to viewport while bathroom section scrolls over (same idea as Services hero sticky) */
 .wwb-panel--kitchen {
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
+  align-self: flex-start;
   z-index: 1;
+  /* .wwb-panel overflow:hidden breaks position:sticky — clip content via children instead */
+  overflow: visible;
 }
 
 .wwb-panel--bathroom {
@@ -165,11 +192,70 @@
 }
 
 @media (max-width: 768px) {
-  .wwb-content { max-width: 100%; }
-  .wwb-heading { white-space: normal; }
+  .wwb-panel {
+    align-items: start;
+    justify-items: stretch;
+    align-content: start;
+    min-height: 100svh;
+    padding-top: clamp(20px, 5svh, 40px);
+    padding-bottom: clamp(24px, 6svh, 48px);
+    overflow-x: hidden;
+  }
+
+  .wwb-content {
+    max-width: 100%;
+  }
+
+  .wwb-eyebrow {
+    margin-bottom: 10px;
+    font-size: 10px;
+    letter-spacing: 0.18em;
+  }
+
+  .wwb-heading {
+    font-size: clamp(26px, 6.5vw, 34px);
+    margin-bottom: 20px;
+    line-height: 1.12;
+  }
+
+  .wwb-body {
+    font-size: 15px;
+    line-height: 1.55;
+  }
+
+  .wwb-features {
+    gap: 8px;
+  }
+
+  .wwb-features li {
+    font-size: 14px;
+    line-height: 1.35;
+  }
+
   .wwb-grid {
     grid-template-columns: 1fr;
-    gap: 20px;
+    gap: 16px;
+    margin: 0 0 48px;
+  }
+
+  .wwb-content > button.hero-btn.btn-glasi {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 12px clamp(10px, 3vw, 18px);
+    font-size: clamp(9px, 2.65vw, 11px);
+    letter-spacing: 0.1em;
+    white-space: nowrap;
+    text-align: center;
+  }
+
+  .wwb-content > button.hero-btn.btn-glasi .clip {
+    max-width: 100%;
+  }
+
+  /* Sticky kitchen must not use overflow-x:hidden from .wwb-panel above */
+  .wwb-panel--kitchen {
+    overflow: visible;
   }
 }
 
