@@ -628,15 +628,43 @@
     .process-tl-empty { }
 
     @media (max-width: 768px) {
+      .process-tl {
+        max-width: 100%;
+        padding: 0;
+        box-sizing: border-box;
+      }
       .process-tl-track { left: 20px; transform: none; }
       .process-tl-item {
-        grid-template-columns: 48px 1fr;
+        grid-template-columns: 52px minmax(0, 1fr);
         grid-template-rows: auto;
-        gap: 0 16px;
+        gap: 0 14px;
         margin-bottom: var(--sp-6);
+        align-items: start;
       }
-      .process-tl-node { padding-top: 18px; }
-      .process-tl-empty { display: none; }
+      .process-tl-empty {
+        display: none !important;
+      }
+      .process-tl-node {
+        grid-column: 1;
+        grid-row: 1;
+        padding-top: 18px;
+        justify-self: center;
+        width: 100%;
+      }
+      /* Card is nested in a wrapper <div> — that wrapper is the grid item, not .process-tl-card */
+      .process-tl-item > div:not(.process-tl-empty):not(.process-tl-node) {
+        grid-column: 2;
+        grid-row: 1;
+        min-width: 0;
+        width: 100%;
+        max-width: 100%;
+      }
+      .process-tl-card,
+      .process-tl-card--left {
+        min-width: 0;
+        width: 100%;
+        max-width: 100%;
+      }
       .process-tl-card {
         padding: var(--sp-4) var(--sp-5);
       }
@@ -647,9 +675,10 @@
         padding: var(--sp-4) var(--sp-5);
       }
       .process-tl-title { font-size: 20px; }
-      .process-tl-body { font-size: var(--text-body); }
-      .process-tl-item .process-tl-card--left { order: 2; }
-      .process-tl-item .process-tl-node { order: 1; }
+      .process-tl-body {
+        font-size: var(--text-body);
+        overflow-wrap: break-word;
+      }
     }
 
     /* Featured Projects */
@@ -899,7 +928,7 @@
         <div class="nav-dropdown">
           <a href="../about.html">About B&amp;B</a>
           <a href="../reviews.html">Testimonials</a>
-          <a href="../service-areas/main-line-pa-remodeling.html">Service Areas</a>
+          <a href="/service-areas/index.html">Service Areas</a>
         </div>
       </div>
       <a href="../contact.html" class="nav-link" role="listitem">Contact</a>
@@ -933,7 +962,7 @@
         <div class="mobile-dropdown">
           <a href="../about.html">About B&amp;B</a>
           <a href="../reviews.html">Testimonials</a>
-          <a href="../service-areas/main-line-pa-remodeling.html">Service Areas</a>
+          <a href="/service-areas/index.html">Service Areas</a>
         </div>
       </div>
       <a href="../contact.html" class="nav-mobile-link">Contact</a>
@@ -1464,6 +1493,7 @@
         <div class="footer-col">
           <p class="footer-col-title">Service Areas</p>
           <nav class="footer-links" aria-label="Service areas navigation">
+            <a href="/service-areas/index.html" class="footer-link" style="color:var(--color-gold);">View all areas →</a>
             <a href="../service-areas/main-line-pa-remodeling.html" class="footer-link">Main Line PA</a>
             <a href="../service-areas/doylestown-new-hope-kitchen-remodeling.html" class="footer-link">Doylestown &amp; New Hope</a>
             <a href="../service-areas/wayne-villanova-bathroom-remodeling.html" class="footer-link">Wayne &amp; Villanova</a>

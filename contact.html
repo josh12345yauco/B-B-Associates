@@ -142,10 +142,10 @@
       padding: var(--section-padding-y) 0;
     }
 
-    /* Dark-bg section: first contact-section (follows hero) */
+    /* Dark-bg section: first contact-section (matches footer) */
     .contact-hero + .contact-section,
     .contact-section:first-of-type {
-      background: var(--color-bg-3);
+      background: var(--color-bg);
     }
 
     .contact-hero + .contact-section .contact-content,
@@ -170,6 +170,9 @@
       max-width: var(--grid-max);
       margin: 0 auto;
       padding: 0 var(--grid-padding);
+      width: 100%;
+      min-width: 0;
+      box-sizing: border-box;
     }
 
     .contact-hero + .contact-section .contact-content .section-label,
@@ -281,11 +284,19 @@
       width: 100%;
       padding-left: var(--grid-padding);
       padding-right: var(--grid-padding);
+      box-sizing: border-box;
     }
 
     /* ── FORM CONTAINER ──────────────────────────────────────── */
     .contact-form-col {
-      /* column container — card styling lives on .contact-form */
+      min-width: 0;
+      max-width: 100%;
+    }
+
+    .contact-section .contact-content {
+      min-width: 0;
+      max-width: 100%;
+      overflow-wrap: break-word;
     }
 
     .contact-form {
@@ -293,6 +304,8 @@
       border: 1px solid rgba(15,23,42,0.08);
       padding: var(--sp-7);
       box-shadow: 0 24px 80px rgba(15,23,42,0.35);
+      max-width: 100%;
+      box-sizing: border-box;
     }
 
     .contact-form-title {
@@ -327,15 +340,6 @@
       text-align: center;
       margin-top: var(--sp-3);
     }
-
-    /* Glassi button dark variant (for white card background) */
-    .btn-glasi-dark { color: #0a0a0a; border-color: rgba(10,10,10,0.25); }
-    .btn-glasi-dark .corner-tl::before,.btn-glasi-dark .corner-tl::after,
-    .btn-glasi-dark .corner-tr::before,.btn-glasi-dark .corner-tr::after,
-    .btn-glasi-dark .corner-bl::before,.btn-glasi-dark .corner-bl::after,
-    .btn-glasi-dark .corner-br::before,.btn-glasi-dark .corner-br::after { background: #0a0a0a; }
-    .btn-glasi-dark .line { background: #0a0a0a; }
-    .btn-glasi-dark:hover { background: #0a0a0a; color: #ffffff; border-color: transparent; }
 
     .contact-form label {
       display: block;
@@ -432,14 +436,6 @@
       margin-bottom: var(--sp-5);
     }
 
-    .contact-card-divider {
-      width: 100%;
-      height: 1px;
-      background: linear-gradient(to right, var(--color-gold), transparent);
-      margin-bottom: var(--sp-6);
-      opacity: 0.5;
-    }
-
     .contact-card-table {
       display: grid;
       grid-template-columns: 80px 1fr;
@@ -486,12 +482,6 @@
       color: var(--color-gold) !important;
     }
 
-    .contact-card-divider-thin {
-      grid-column: 1 / -1;
-      height: 1px;
-      background: #e5e7eb;
-    }
-
     .contact-card-map-link {
       display: inline-flex;
       align-items: center;
@@ -532,6 +522,10 @@
       .contact-grid {
         grid-template-columns: 1fr;
         gap: var(--sp-8);
+        padding-left: 0;
+        padding-right: 0;
+        width: 100%;
+        max-width: 100%;
       }
       .contact-info-panel {
         position: static;
@@ -547,6 +541,13 @@
       }
       .contact-info-panel {
         padding: var(--sp-5);
+      }
+      .contact-form {
+        padding: var(--sp-6) var(--sp-4);
+      }
+      .contact-section .container {
+        width: 100%;
+        max-width: 100%;
       }
     }
   </style>
@@ -575,7 +576,7 @@
         <div class="nav-dropdown">
           <a href="about.html">About B&amp;B</a>
           <a href="reviews.html">Testimonials</a>
-          <a href="service-areas/index.html">Service Areas</a>
+          <a href="/service-areas/index.html">Service Areas</a>
         </div>
       </div>
       <a href="contact.html" class="nav-link" role="listitem">Contact</a>
@@ -609,7 +610,7 @@
         <div class="mobile-dropdown">
           <a href="about.html">About B&amp;B</a>
           <a href="reviews.html">Testimonials</a>
-          <a href="service-areas/index.html">Service Areas</a>
+          <a href="/service-areas/index.html">Service Areas</a>
         </div>
       </div>
       <a href="contact.html" class="nav-mobile-link">Contact</a>
@@ -626,7 +627,7 @@
 
   <!-- ── HERO ──────────────────────────────────────────── -->
   <section class="contact-hero">
-    <div class="contact-hero-bg" data-parallax="0.12">
+    <div class="contact-hero-bg">
       <div class="contact-hero-overlay"></div>
     </div>
     <p class="section-label reveal">Contact Us</p>
@@ -662,7 +663,7 @@
           <form class="contact-form" id="contact-page-form" novalidate>
             <h3 class="contact-form-title">Schedule Your Free Consultation</h3>
             <p class="contact-form-or">or if you want an instant estimate</p>
-            <a href="estimator.html" class="btn-glasi btn-glasi-dark contact-estimator-btn">
+            <a href="estimator.html" class="btn-glasi nav-mobile-link--glasi contact-estimator-btn">
               <div class="corners">
                 <div class="corner-tl"></div><div class="corner-tr"></div>
                 <div class="corner-bl"></div><div class="corner-br"></div>
@@ -671,7 +672,6 @@
               </div>
               <span class="clip">
                 <span class="text-top">Online Estimator</span>
-                <span class="text-bottom">Online Estimator</span>
               </span>
             </a>
             <div id="contact-form-fields"></div>
@@ -691,27 +691,19 @@
       <div class="contact-info-panel reveal">
         <p class="contact-card-brand">B&amp;B Associates Creations</p>
         <p class="contact-card-tagline">Luxury Kitchen &amp; Bathroom Remodeling</p>
-        <div class="contact-card-divider"></div>
         <div class="contact-card-table">
           <span class="contact-card-label">Phone</span>
           <span class="contact-card-value contact-card-phone"><a href="tel:+12674028758">267.402.8758</a></span>
 
-          <div class="contact-card-divider-thin"></div>
-
           <span class="contact-card-label">Email</span>
           <span class="contact-card-value"><a href="mailto:bb3associates@gmail.com">bb3associates@gmail.com</a></span>
-
-          <div class="contact-card-divider-thin"></div>
 
           <span class="contact-card-label">Address</span>
           <span class="contact-card-value"><address style="font-style:normal;">1147 E Welsh Rd<br>Ambler, PA 19002</address></span>
 
-          <div class="contact-card-divider-thin"></div>
-
           <span class="contact-card-label">Hours</span>
           <span class="contact-card-value">Mon – Sat<br>8:00 am – 6:00 pm</span>
         </div>
-        <div class="contact-card-divider"></div>
         <a href="https://maps.google.com/?q=1147+E+Welsh+Rd+Ambler+PA+19002" target="_blank" rel="noopener" class="contact-card-map-link">
           View on Google Maps →
         </a>
@@ -786,8 +778,8 @@
             <p class="footer-area-group">Main Line</p>
             <a href="service-areas/wayne-villanova-bathroom-remodeling.html" class="footer-link">Wayne PA</a>
             <a href="service-areas/wayne-villanova-bathroom-remodeling.html" class="footer-link">Villanova PA</a>
-            <a href="service-areas/main-line-pa-remodeling.html" class="footer-link">Bryn Mawr PA</a>
-            <a href="service-areas/index.html" class="footer-link" style="color:var(--color-gold);">View All Areas →</a>
+            <a href="/service-areas/bryn-mawr-pa-remodeling.html" class="footer-link">Bryn Mawr PA</a>
+            <a href="/service-areas/index.html" class="footer-link" style="color:var(--color-gold);">View All Areas →</a>
           </nav>
         </div>
 

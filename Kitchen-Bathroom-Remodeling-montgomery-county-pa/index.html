@@ -48,7 +48,7 @@
       transition: background 0.4s ease, border-color 0.4s ease, backdrop-filter 0.4s ease;
     }
     .lp-header.scrolled {
-      background: rgba(26, 28, 35, 0.88);
+      background: #090E1B;
       backdrop-filter: blur(20px);
       border-bottom-color: rgba(182, 117, 57, 0.15);
     }
@@ -78,6 +78,16 @@
     }
 
     /* ── HERO (first viewport includes stat bar) ───────────── */
+    /*
+     * UNDO — previous hero (single full-bleed photo + ::before tint):
+     * .lp-hero {
+     *   background: url('../IMAGES/Custom-Kitchen-Ambler-Pa.png') center center / cover no-repeat;
+     * }
+     * .lp-hero::before {
+     *   content: ''; position: absolute; inset: 0;
+     *   background: linear-gradient(145deg, rgba(10,10,14,0.85) 0%, rgba(14,15,20,0.85) 45%, rgba(18,20,26,0.85) 100%);
+     * }
+     */
     .lp-hero-viewport {
       min-height: 100vh;
       min-height: 100dvh;
@@ -89,15 +99,70 @@
       flex: 1 1 auto;
       min-height: 0;
       display: flex; align-items: center; justify-content: center;
-      background: url('../IMAGES/Custom-Kitchen-Ambler-Pa.png') center center / cover no-repeat;
+      overflow: hidden;
+      background: var(--color-bg);
       padding-top: 68px;
     }
-    .lp-hero::before {
-      content: ''; position: absolute; inset: 0;
-      background: linear-gradient(145deg, rgba(10,10,14,0.85) 0%, rgba(14,15,20,0.85) 45%, rgba(18,20,26,0.85) 100%);
+    .lp-hero-media {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+      pointer-events: none;
+    }
+    .lp-hero-gallery {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      mask-image: linear-gradient(90deg, transparent 0%, #000 8%, #000 92%, transparent 100%);
+      -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 8%, #000 92%, transparent 100%);
+    }
+    .lp-hero-gallery-track {
+      display: flex;
+      align-items: center;
+      gap: clamp(12px, 2vw, 20px);
+      width: max-content;
+      padding-inline: clamp(12px, 3vw, 32px);
+      animation: lp-hero-gallery-marquee 70s linear infinite;
+    }
+    @keyframes lp-hero-gallery-marquee {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .lp-hero-gallery-track { animation: none; }
+    }
+    .lp-hero-gallery-item {
+      flex: 0 0 auto;
+      width: clamp(132px, 16vw, 200px);
+      aspect-ratio: 3 / 4;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
+    }
+    .lp-hero-gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    /* Figma hero overlay: 0% #1A284E@0 → 20–81% #090E1B → 100% #2B4381@0 */
+    .lp-hero-readability {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      background: linear-gradient(
+        90deg,
+        rgba(26, 40, 78, 0) 0%,
+        rgb(9, 14, 27) 20%,
+        rgb(9, 14, 27) 81%,
+        rgba(43, 67, 129, 0) 100%
+      );
+      pointer-events: none;
     }
     .lp-hero-inner {
-      position: relative; z-index: 1;
+      position: relative; z-index: 2;
       width: 100%;
       max-width: min(96vw, 1040px);
       margin: 0 auto;
@@ -228,8 +293,6 @@
     .lp-stat-bar {
       flex-shrink: 0;
       background: var(--color-surface);
-      border-top: 1px solid var(--color-border-dim);
-      border-bottom: 1px solid var(--color-border-dim);
       padding: clamp(20px, 3vw, 28px) clamp(20px,5vw,80px);
       text-align: center;
     }
@@ -266,8 +329,6 @@
     @media(max-width:640px) {
       .lp-stat { flex: 1 1 42%; max-width: none; min-width: 0; }
       .lp-stat:nth-child(2) { border-right: none; }
-      .lp-stat:nth-child(3) { border-top: 1px solid var(--color-border-dim); border-right: 1px solid var(--color-border-dim); }
-      .lp-stat:nth-child(4) { border-top: 1px solid var(--color-border-dim); border-right: none; }
     }
 
     /* ── SECTION SHARED ──────────────────────────────────────── */
@@ -369,7 +430,15 @@
     }
     @media (max-width: 768px) {
       .lp-featured-arrow { display: none; }
-      .lp-featured-card { flex: 0 0 65%; }
+      /* Two full 9:16 tiles + both gaps + ~¼ of next tile (100% = carousel width) */
+      .lp-featured-carousel {
+        scroll-padding-inline: clamp(12px, 4vw, 20px);
+      }
+      .lp-featured-card {
+        flex: 0 0 calc((100% - 32px) / 2.25);
+        max-width: none;
+        scroll-snap-align: start;
+      }
     }
     .lp-gallery-divider {
       border: none;
@@ -1198,6 +1267,29 @@
   <!-- ── HERO + STAT (first viewport) ───────────────────────── -->
   <div class="lp-hero-viewport">
   <section class="lp-hero" aria-label="Hero">
+    <div class="lp-hero-media" aria-hidden="true">
+      <div class="lp-hero-gallery">
+        <div class="lp-hero-gallery-track">
+          <div class="lp-hero-gallery-item"><img src="../portfolio/KITCHENS/B&amp;B - Beth Rubin-kitchen/153E1359-5284-48E5-9F68-B497880FF6F7.jpeg" alt="" width="600" height="800" decoding="async" fetchpriority="high"></div>
+          <div class="lp-hero-gallery-item"><img src="../portfolio/BATHROOMS/B&amp;B - Barenbaum -bathroom/20417733-E7F8-46EA-BCD5-6F86787E240D.jpeg" alt="" width="600" height="800" decoding="async"></div>
+          <div class="lp-hero-gallery-item"><img src="../portfolio/KITCHENS/B&amp;B - Bill Broderick -kitchen/08173010-D148-4016-9EE9-4BBE6DDF4F67.jpeg" alt="" width="600" height="800" decoding="async"></div>
+          <div class="lp-hero-gallery-item"><img src="../portfolio/BATHROOMS/B&amp;B - Borgia-bathroom/0355861A-4E5F-4F8D-89B0-FC8F3F156B45.jpeg" alt="" width="600" height="800" decoding="async"></div>
+          <div class="lp-hero-gallery-item"><img src="../portfolio/KITCHENS/B&amp;B - Bryn Michaels Kitchen/294E52B4-81AA-44D1-A230-24D9680D37BB.jpeg" alt="" width="600" height="800" decoding="async"></div>
+          <div class="lp-hero-gallery-item"><img src="../portfolio/BATHROOMS/B&amp;B - Bridle hall-bathroom/163A65E7-E665-4FE1-AF20-D2BD1B85F3B9.jpeg" alt="" width="600" height="800" decoding="async"></div>
+          <div class="lp-hero-gallery-item"><img src="../portfolio/KITCHENS/B&amp;B - Chris Lee Kitchen /41957DB3-DDE9-44D4-A476-DA4308EA0100.jpeg" alt="" width="600" height="800" decoding="async"></div>
+          <div class="lp-hero-gallery-item"><img src="../portfolio/BATHROOMS/B&amp;B - Carolyn Frank-bathroom/1B6ADBE5-861A-42E7-A20B-D62799B81818.jpeg" alt="" width="600" height="800" decoding="async"></div>
+          <div class="lp-hero-gallery-item"><img src="../portfolio/KITCHENS/B&amp;B - Beth Rubin-kitchen/153E1359-5284-48E5-9F68-B497880FF6F7.jpeg" alt="" width="600" height="800" decoding="async"></div>
+          <div class="lp-hero-gallery-item"><img src="../portfolio/BATHROOMS/B&amp;B - Barenbaum -bathroom/20417733-E7F8-46EA-BCD5-6F86787E240D.jpeg" alt="" width="600" height="800" decoding="async"></div>
+          <div class="lp-hero-gallery-item"><img src="../portfolio/KITCHENS/B&amp;B - Bill Broderick -kitchen/08173010-D148-4016-9EE9-4BBE6DDF4F67.jpeg" alt="" width="600" height="800" decoding="async"></div>
+          <div class="lp-hero-gallery-item"><img src="../portfolio/BATHROOMS/B&amp;B - Borgia-bathroom/0355861A-4E5F-4F8D-89B0-FC8F3F156B45.jpeg" alt="" width="600" height="800" decoding="async"></div>
+          <div class="lp-hero-gallery-item"><img src="../portfolio/KITCHENS/B&amp;B - Bryn Michaels Kitchen/294E52B4-81AA-44D1-A230-24D9680D37BB.jpeg" alt="" width="600" height="800" decoding="async"></div>
+          <div class="lp-hero-gallery-item"><img src="../portfolio/BATHROOMS/B&amp;B - Bridle hall-bathroom/163A65E7-E665-4FE1-AF20-D2BD1B85F3B9.jpeg" alt="" width="600" height="800" decoding="async"></div>
+          <div class="lp-hero-gallery-item"><img src="../portfolio/KITCHENS/B&amp;B - Chris Lee Kitchen /41957DB3-DDE9-44D4-A476-DA4308EA0100.jpeg" alt="" width="600" height="800" decoding="async"></div>
+          <div class="lp-hero-gallery-item"><img src="../portfolio/BATHROOMS/B&amp;B - Carolyn Frank-bathroom/1B6ADBE5-861A-42E7-A20B-D62799B81818.jpeg" alt="" width="600" height="800" decoding="async"></div>
+        </div>
+      </div>
+      <div class="lp-hero-readability"></div>
+    </div>
     <div class="lp-hero-inner">
       <p class="lp-hero-eyebrow">Montgomery County, PA · Since 1999</p>
       <h1><span class="lp-hero-title-lines">Kitchen &amp; Bathroom Remodeling<br>in Montgomery County, PA</span></h1>

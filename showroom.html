@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Design Showroom — Ambler PA | Kitchen & Bath Materials | B&B Associates Creations</title>
-  <meta name="description" content="Visit our Ambler PA design showroom featuring luxury kitchen and bathroom materials, surfaces, and fixtures from 60+ premium suppliers. Serving Montgomery County, Bucks County, and the Main Line.">
+  <title>Ambler Design Showroom — Coming Soon | Join the List | B&amp;B Associates Creations</title>
+  <meta name="description" content="Our Ambler design showroom is opening soon. Join the list for news, opening updates, and early visit opportunities. Luxury kitchen and bath materials — Montgomery County &amp; the Main Line.">
   <link rel="canonical" href="https://bbassociatescreations.com/showroom.html">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Design Showroom — Ambler PA | Kitchen &amp; Bath Materials | B&amp;B Associates Creations">
-  <meta property="og:description" content="Visit our Ambler PA design showroom featuring luxury kitchen and bathroom materials, surfaces, and fixtures from 60+ premium suppliers. Serving Montgomery County, Bucks County, and the Main Line.">
+  <meta property="og:title" content="Ambler Design Showroom — Coming Soon | B&amp;B Associates Creations">
+  <meta property="og:description" content="Our Ambler showroom is opening soon. Join the list for news, opening dates, and early visit opportunities. Luxury kitchen &amp; bath materials.">
   <meta property="og:image" content="https://bbassociatescreations.com/IMAGES/Custom-Kitchen-Ambler-Pa.png">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://bbassociatescreations.com/showroom.html">
@@ -18,8 +18,8 @@
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Design Showroom — Ambler PA | Luxury Kitchen &amp; Bath Materials | B&amp;B Associates">
-  <meta name="twitter:description" content="Visit our Ambler PA design showroom featuring luxury kitchen and bathroom materials, surfaces, and fixtures from 60+ premium suppliers.">
+  <meta name="twitter:title" content="Ambler Design Showroom — Coming Soon | B&amp;B Associates">
+  <meta name="twitter:description" content="Showroom in development — join the list for opening updates and design news.">
   <meta name="twitter:image" content="https://bbassociatescreations.com/IMAGES/Custom-Kitchen-Ambler-Pa.png">
 
   <!-- Geo -->
@@ -52,7 +52,7 @@
     },
     "openingHours": ["Mo-Fr 09:00-17:00", "Sa 10:00-15:00"],
     "areaServed": ["Montgomery County PA", "Bucks County PA", "Main Line Philadelphia PA"],
-    "description": "Premium kitchen and bathroom design showroom featuring luxury surfaces, fixtures, and finishes from 60+ supplier partners."
+    "description": "Ambler design showroom — now in development. Premium kitchen and bathroom materials from 60+ supplier partners; join the list for opening updates."
   }
   </script>
 
@@ -69,8 +69,192 @@
   </script>
 
   <style>
-    /* ── HERO ──────────────────────────────────────────────── */
-    .showroom-hero {
+    /* ── LEAD HERO (coming soon + email) ───────────────────── */
+    .showroom-hero-lead {
+      min-height: 82vh;
+      display: flex;
+      align-items: center;
+      position: relative;
+      z-index: 0;
+      overflow: hidden;
+      background: #121a28;
+    }
+    .showroom-hero-lead-bg {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+      background-color: #121a28;
+      background-image: url('IMAGES/Showroom.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    .showroom-hero-lead-bg::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      background: rgba(16, 28, 48, 0.9);
+      pointer-events: none;
+    }
+    .showroom-hero-lead-bg::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      z-index: 2;
+      pointer-events: none;
+      background: radial-gradient(ellipse 85% 70% at 50% 45%, rgba(182, 117, 57, 0.06) 0%, transparent 55%);
+    }
+    .showroom-hero-lead .container {
+      position: relative;
+      z-index: 3;
+      max-width: none;
+      width: 100%;
+      margin: 0;
+      text-align: center;
+      padding: 140px 10px 100px;
+      box-sizing: border-box;
+    }
+    .showroom-hero-lead-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: clamp(14px, 3vw, 22px);
+      margin: 0 auto var(--sp-6);
+      padding: 0;
+      border: none;
+      background: none;
+      font-family: var(--font-display);
+      font-size: clamp(15px, 1.5vw, 18px);
+      font-weight: 400;
+      font-style: italic;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.94);
+    }
+    .showroom-hero-lead-badge::before,
+    .showroom-hero-lead-badge::after {
+      content: '';
+      display: block;
+      width: clamp(40px, 10vw, 88px);
+      height: 1px;
+      flex-shrink: 0;
+    }
+    .showroom-hero-lead-badge::before {
+      background: linear-gradient(90deg, transparent, rgba(212, 148, 79, 0.55));
+    }
+    .showroom-hero-lead-badge::after {
+      background: linear-gradient(90deg, rgba(212, 148, 79, 0.55), transparent);
+    }
+    .showroom-hero-lead-h1 {
+      font-family: var(--font-display);
+      font-size: clamp(1.35rem, 3.8vw, var(--text-h1));
+      font-weight: 300;
+      font-style: italic;
+      line-height: var(--leading-tight);
+      color: #ffffff;
+      margin-bottom: var(--sp-5);
+      text-shadow: 0 2px 40px rgba(0, 0, 0, 0.35);
+      width: 100%;
+      max-width: none;
+      box-sizing: border-box;
+      white-space: nowrap;
+    }
+    .showroom-hero-lead-sub {
+      font-family: var(--font-sans);
+      font-size: var(--text-body-lg);
+      font-weight: 300;
+      color: rgba(248, 244, 239, 0.96);
+      line-height: var(--leading-body);
+      margin-bottom: var(--sp-7);
+      max-width: 560px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .showroom-lead-form {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--sp-3);
+      justify-content: center;
+      align-items: stretch;
+      max-width: 520px;
+      margin: 0 auto var(--sp-5);
+    }
+    .showroom-lead-form input[type="email"] {
+      flex: 1 1 220px;
+      min-width: 0;
+      min-height: 0;
+      padding: 12px 16px;
+      font-family: var(--font-sans);
+      font-size: var(--text-body);
+      color: #1a1a1a;
+      background: #fff;
+      border: 1px solid rgba(255,255,255,0.2);
+      border-radius: 0;
+      line-height: 1.35;
+    }
+    .showroom-lead-form input[type="email"]::placeholder {
+      color: #6b7280;
+    }
+    .showroom-lead-form input[type="email"]:focus {
+      outline: 2px solid var(--color-gold);
+      outline-offset: 2px;
+    }
+    .showroom-lead-form button[type="submit"] {
+      flex: 0 0 auto;
+      padding: 16px 28px;
+      font-family: var(--font-sans);
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: #0a0a0a;
+      background: #fff;
+      border: 1px solid rgba(255,255,255,0.35);
+      cursor: pointer;
+      transition: background 0.3s var(--ease-out-quart), color 0.3s var(--ease-out-quart);
+    }
+    .showroom-lead-form button[type="submit"]:hover {
+      background: var(--color-gold);
+      color: #1a1208;
+      border-color: var(--color-gold);
+    }
+    @media (max-width: 480px) {
+      .showroom-lead-form {
+        flex-direction: column;
+        align-items: stretch;
+      }
+      /* Row uses 220px as min width; in column that became min height — keep field single-line */
+      .showroom-lead-form input[type="email"] {
+        flex: 0 0 auto;
+        width: 100%;
+        min-height: unset;
+      }
+      .showroom-lead-form button[type="submit"] {
+        width: 100%;
+      }
+      .showroom-hero-lead-h1 {
+        white-space: normal;
+      }
+    }
+    .showroom-hero-lead-note {
+      font-family: var(--font-sans);
+      font-size: var(--text-small);
+      color: rgba(255, 255, 255, 0.78);
+      line-height: 1.5;
+      max-width: 480px;
+      margin: 0 auto var(--sp-7);
+    }
+    .showroom-hero-lead-secondary {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--sp-4);
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* ── SHOWCASE (former hero — preview of finished experience) ─ */
+    .showroom-hero-showcase {
       min-height: 75vh;
       display: flex;
       align-items: center;
@@ -79,27 +263,31 @@
       overflow: hidden;
       background: var(--color-bg);
     }
-    .showroom-hero-bg {
+    .showroom-hero-showcase-bg {
       position: absolute;
       inset: 0;
       background: linear-gradient(135deg, var(--color-bg) 0%, #1e2028 50%, var(--color-bg-2) 100%);
       z-index: 0;
     }
-    .showroom-hero-bg::after {
+    .showroom-hero-showcase-bg::after {
       content: '';
       position: absolute;
       inset: 0;
       background: radial-gradient(ellipse 80% 60% at 65% 50%, rgba(182,117,57,0.07) 0%, transparent 70%);
     }
-    .showroom-hero .container {
+    .showroom-hero-showcase .container {
       position: relative;
       z-index: 2;
       display: grid;
-      grid-template-columns: minmax(0, 60%) minmax(0, 40%);
-      gap: var(--sp-10);
+      grid-template-columns: minmax(0, 1.55fr) minmax(260px, 0.45fr);
+      gap: var(--sp-8);
       align-items: center;
-      padding-top: 140px;
+      padding-top: 100px;
       padding-bottom: 100px;
+    }
+    .showroom-hero-showcase .showroom-hero-left {
+      max-width: none;
+      width: 100%;
     }
     .showroom-hero-eyebrow {
       display: inline-flex;
@@ -121,7 +309,8 @@
       background: var(--color-gold);
       flex-shrink: 0;
     }
-    .showroom-hero-h1 {
+    .showroom-hero-h1,
+    .showroom-hero-showcase-h2 {
       font-family: var(--font-display);
       font-size: var(--text-h1);
       font-weight: 300;
@@ -172,7 +361,7 @@
       font-weight: 300;
     }
 
-    /* Hero right: stacked material samples (~20% vertical offset per layer) */
+    /* Hero right: three PNG layers, same center — z-index stacks 1 (back) → 3 (front) */
     .showroom-hero-stack {
       position: relative;
       width: 100%;
@@ -185,6 +374,8 @@
       width: 100%;
       aspect-ratio: 1 / 1.18;
       min-height: clamp(300px, 38vw, 480px);
+      background: transparent;
+      isolation: isolate;
     }
     .showroom-hero-stack-img {
       position: absolute;
@@ -192,21 +383,24 @@
       width: min(100%, 440px);
       height: auto;
       object-fit: contain;
-      transform: translateX(-50%);
+      transform: translate(-50%, -50%);
       pointer-events: none;
-      filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.35));
+      background: transparent;
+      /* Shadow follows opaque pixels; strongest on front layer */
+      filter: drop-shadow(0 14px 28px rgba(0, 0, 0, 0.32));
     }
     .showroom-hero-stack-img--1 {
-      top: 0;
       z-index: 1;
+      top: 150px;
     }
     .showroom-hero-stack-img--2 {
-      top: 20%;
       z-index: 2;
+      top: 180px;
     }
     .showroom-hero-stack-img--3 {
-      top: 40%;
       z-index: 3;
+      top: 210px;
+      filter: drop-shadow(0 18px 36px rgba(0, 0, 0, 0.38));
     }
 
     /* ── ABOUT SECTION ──────────────────────────────────────── */
@@ -584,7 +778,7 @@
 
     /* ── RESPONSIVE ────────────────────────────────────────── */
     @media (max-width: 900px) {
-      .showroom-hero .container,
+      .showroom-hero-showcase .container,
       .about-showroom .container,
       .location-section .container,
       .trade-inner {
@@ -594,15 +788,19 @@
       .trade-visual {
         order: -1;
       }
-      .showroom-hero .container {
-        padding-top: 120px;
+      .showroom-hero-lead .container {
+        padding: 120px 10px 80px;
+      }
+      .showroom-hero-showcase .container {
+        padding-top: 80px;
         padding-bottom: 80px;
+        gap: var(--sp-3);
       }
       .showroom-hero-stack {
         order: -1;
         justify-self: center;
         max-width: 400px;
-        margin-bottom: var(--sp-4);
+        margin-bottom: 0;
       }
       .location-hours-grid {
         grid-template-columns: 1fr;
@@ -620,7 +818,10 @@
       }
     }
     @media (max-width: 640px) {
-      .showroom-hero .container {
+      .showroom-hero-lead .container {
+        padding: 80px 10px 60px;
+      }
+      .showroom-hero-showcase .container {
         padding-top: 80px;
         padding-bottom: 60px;
       }
@@ -654,7 +855,7 @@
         <div class="nav-dropdown">
           <a href="about.html">About B&amp;B</a>
           <a href="reviews.html">Testimonials</a>
-          <a href="service-areas/main-line-pa-remodeling.html">Service Areas</a>
+          <a href="/service-areas/index.html">Service Areas</a>
         </div>
       </div>
       <a href="contact.html" class="nav-link" role="listitem">Contact</a>
@@ -688,7 +889,7 @@
         <div class="mobile-dropdown">
           <a href="about.html">About B&amp;B</a>
           <a href="reviews.html">Testimonials</a>
-          <a href="service-areas/main-line-pa-remodeling.html">Service Areas</a>
+          <a href="/service-areas/index.html">Service Areas</a>
         </div>
       </div>
       <a href="contact.html" class="nav-mobile-link">Contact</a>
@@ -705,69 +906,119 @@
 
   <main>
 
-    <!-- ═══ HERO ═══ -->
-    <section class="showroom-hero" aria-label="Showroom hero">
-      <div class="showroom-hero-bg"></div>
+    <!-- ═══ LEAD HERO — coming soon + email ═══ -->
+    <section class="showroom-hero-lead" aria-label="Showroom coming soon">
+      <div class="showroom-hero-lead-bg"></div>
+      <div class="container">
+        <p class="showroom-hero-lead-badge showroom-hero-lead-anim">Coming soon</p>
+        <h1 class="showroom-hero-lead-h1 showroom-hero-lead-anim">
+          Our Ambler Showroom Is on the Way
+        </h1>
+        <p class="showroom-hero-lead-sub showroom-hero-lead-anim">
+          We are building a hands-on design space at 1147 E Welsh Road so you can see full-scale kitchens, stone, tile, and fixtures before you commit. Be the first to know when we open — plus news, inspiration, and early visit opportunities.
+        </p>
+        <form
+          class="showroom-lead-form showroom-hero-lead-anim"
+          action="https://formsubmit.co/bb3associates@gmail.com"
+          method="POST"
+          aria-label="Sign up for showroom news and updates"
+        >
+          <input type="hidden" name="_subject" value="Showroom — News &amp; updates signup">
+          <input type="hidden" name="_next" value="https://bbassociatescreations.com/showroom.html#thanks">
+          <input type="hidden" name="_captcha" value="false">
+          <input
+            type="email"
+            name="email"
+            placeholder="Your email address"
+            required
+            autocomplete="email"
+            inputmode="email"
+            aria-label="Email address"
+          >
+          <button type="submit">Get updates</button>
+        </form>
+        <p class="showroom-hero-lead-note showroom-hero-lead-anim" data-gsap="lead">
+          No spam — just opening updates and design news. Prefer to talk now? We are still taking projects across Montgomery County and the Main Line.
+        </p>
+        <div class="showroom-hero-lead-secondary showroom-hero-lead-anim" data-gsap="lead">
+          <a href="contact.html" class="phil-btn phil-btn-outline">
+            Contact us
+          </a>
+          <a href="tel:+12674028758" class="phil-btn phil-btn-outline">
+            267.402.8758
+          </a>
+          <a href="estimator.html" class="phil-btn phil-btn-fill">
+            <div class="phil-fill"></div>
+            <span class="phil-label">Online Estimator</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ SHOWCASE (previous hero — vision of the finished showroom) ═══ -->
+    <section class="showroom-hero-showcase" aria-label="Future showroom experience">
+      <div class="showroom-hero-showcase-bg"></div>
       <div class="container">
         <div class="showroom-hero-left">
-          <p class="showroom-hero-eyebrow fade-in">Ambler Design Showroom</p>
-          <h1 class="showroom-hero-h1 fade-in fade-in-delay-1">
+          <p class="showroom-hero-eyebrow showroom-showcase-anim">What we&apos;re building</p>
+          <h2 class="showroom-hero-showcase-h2 showroom-showcase-anim">
             Where Great Kitchens<br>Begin
-          </h1>
-          <p class="showroom-hero-sub fade-in fade-in-delay-2">
-            Touch the stone. Feel the texture. See the light play across the tile. Our Ambler showroom brings together 60+ premium supplier partners so you can make confident material choices before a single measurement is taken.
+          </h2>
+          <p class="showroom-hero-sub showroom-showcase-anim">
+            Touch the stone. Feel the texture. See the light play across the tile. Our Ambler showroom will bring together 60+ premium supplier partners so you can make confident material choices before a single measurement is taken.
           </p>
-          <div class="showroom-hero-actions fade-in fade-in-delay-3">
+          <div class="showroom-hero-actions showroom-showcase-anim">
             <a href="contact.html" class="phil-btn phil-btn-fill">
               <div class="phil-fill"></div>
-              <span class="phil-label">Schedule a Visit</span>
+              <span class="phil-label">Plan a Project</span>
             </a>
             <a href="tel:+12674028758" class="phil-btn phil-btn-outline">
               267.402.8758
             </a>
           </div>
-          <div class="showroom-hero-hours fade-in fade-in-delay-4">
-            <span class="showroom-hero-hours-label">Showroom Hours</span>
+          <div class="showroom-hero-hours showroom-showcase-anim">
+            <span class="showroom-hero-hours-label">Planned show hours</span>
             <span class="showroom-hero-hours-line">Mon – Fri &nbsp;9:00 AM – 5:00 PM</span>
             <span class="showroom-hero-hours-line">Saturday &nbsp;10:00 AM – 3:00 PM</span>
             <span class="showroom-hero-hours-line">Sunday &nbsp;Closed</span>
           </div>
         </div>
 
-        <div class="showroom-hero-stack fade-in fade-in-delay-2" aria-hidden="true">
+        <div class="showroom-hero-stack showroom-showcase-anim" aria-hidden="true">
           <div class="showroom-hero-stack-inner">
             <img
               class="showroom-hero-stack-img showroom-hero-stack-img--1"
-              src="IMAGES/ChatGPT Image Mar 2, 2026, 11_30_03 AM.png"
+              src="IMAGES/ChatGPT%20Image%20Mar%202%2C%202026%2C%2011_31_17%20AM%20%281%29.png"
               alt=""
-              width="800"
-              height="600"
-              loading="eager"
+              width="1536"
+              height="776"
+              loading="lazy"
               decoding="async"
-              fetchpriority="high"
             >
             <img
               class="showroom-hero-stack-img showroom-hero-stack-img--2"
-              src="IMAGES/ChatGPT Image Mar 2, 2026, 11_28_59 AM.png"
+              src="IMAGES/ChatGPT%20Image%20Mar%202%2C%202026%2C%2011_31_17%20AMwood.png"
               alt=""
-              width="800"
-              height="600"
-              loading="eager"
+              width="1536"
+              height="776"
+              loading="lazy"
               decoding="async"
             >
             <img
               class="showroom-hero-stack-img showroom-hero-stack-img--3"
-              src="IMAGES/ChatGPT Image Mar 2, 2026, 11_31_17 AM.png"
+              src="IMAGES/ChatGPT%20Image%20Mar%202%2C%202026%2C%2011_31_17Brass%20AM.png"
               alt=""
-              width="800"
-              height="600"
-              loading="eager"
+              width="1536"
+              height="776"
+              loading="lazy"
               decoding="async"
             >
           </div>
         </div>
       </div>
     </section>
+
+    <p id="thanks" tabindex="-1" style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;">Thank you — you&apos;re on the list.</p>
 
     <!-- ═══ ABOUT SHOWROOM ═══ -->
     <section class="about-showroom" aria-labelledby="about-showroom-title">
@@ -1036,8 +1287,8 @@
             <p class="footer-area-group">Main Line</p>
             <a href="service-areas/wayne-villanova-bathroom-remodeling.html" class="footer-link">Wayne PA</a>
             <a href="service-areas/wayne-villanova-bathroom-remodeling.html" class="footer-link">Villanova PA</a>
-            <a href="service-areas/main-line-pa-remodeling.html" class="footer-link">Bryn Mawr PA</a>
-            <a href="service-areas/main-line-pa-remodeling.html" class="footer-link" style="color:var(--color-gold);">View All Areas →</a>
+            <a href="/service-areas/bryn-mawr-pa-remodeling.html" class="footer-link">Bryn Mawr PA</a>
+            <a href="/service-areas/index.html" class="footer-link" style="color:var(--color-gold);">View All Areas →</a>
           </nav>
         </div>
         <div class="footer-col footer-col-stay-informed">
@@ -1090,12 +1341,63 @@
     }, { threshold: 0.12 });
     fadeEls.forEach(function(el) { observer.observe(el); });
 
-    // GSAP hero entrance
+    // GSAP: use fromTo(..., { opacity: 1 }) — gsap.from() alone ends at CSS opacity:0 when paired with .fade-in
     if (typeof gsap !== 'undefined') {
-      gsap.from('.showroom-hero-left', { y: 30, opacity: 0, duration: 1, ease: 'power2.out', delay: 0.2 });
-      gsap.from('.showroom-hero-stack-img', {
-        y: 28, opacity: 0, duration: 0.85, ease: 'power2.out', stagger: 0.12, delay: 0.45
-      });
+      var easeOut = 'power2.out';
+      gsap.fromTo('.showroom-hero-lead-badge',
+        { y: 20, opacity: 0 },
+        { y: 0, opacity: 1, duration: 0.75, ease: easeOut, delay: 0.1 }
+      );
+      gsap.fromTo('.showroom-hero-lead-h1',
+        { y: 28, opacity: 0 },
+        { y: 0, opacity: 1, duration: 0.95, ease: easeOut, delay: 0.2 }
+      );
+      gsap.fromTo('.showroom-hero-lead-sub',
+        { y: 22, opacity: 0 },
+        { y: 0, opacity: 1, duration: 0.85, ease: easeOut, delay: 0.35 }
+      );
+      gsap.fromTo('.showroom-lead-form',
+        { y: 18, opacity: 0 },
+        { y: 0, opacity: 1, duration: 0.8, ease: easeOut, delay: 0.48 }
+      );
+      gsap.fromTo('.showroom-hero-lead-note',
+        { y: 16, opacity: 0 },
+        { y: 0, opacity: 1, duration: 0.75, ease: easeOut, delay: 0.55 }
+      );
+      gsap.fromTo('.showroom-hero-lead-secondary',
+        { y: 14, opacity: 0 },
+        { y: 0, opacity: 1, duration: 0.75, ease: easeOut, delay: 0.62 }
+      );
+
+      if (typeof ScrollTrigger !== 'undefined') {
+        gsap.fromTo('.showroom-hero-showcase .showroom-hero-left',
+          { y: 30, opacity: 0 },
+          {
+            y: 0, opacity: 1, duration: 1, ease: easeOut,
+            scrollTrigger: { trigger: '.showroom-hero-showcase', start: 'top 78%', toggleActions: 'play none none none' }
+          }
+        );
+        gsap.fromTo('.showroom-hero-showcase .showroom-hero-stack-img',
+          { opacity: 0 },
+          {
+            opacity: 1,
+            duration: 0.85,
+            ease: easeOut,
+            stagger: 0.12,
+            delay: 0.15,
+            scrollTrigger: { trigger: '.showroom-hero-showcase', start: 'top 72%', toggleActions: 'play none none none' }
+          }
+        );
+      } else {
+        gsap.fromTo('.showroom-hero-showcase .showroom-hero-left',
+          { y: 30, opacity: 0 },
+          { y: 0, opacity: 1, duration: 1, ease: easeOut, delay: 0.35 }
+        );
+        gsap.fromTo('.showroom-hero-showcase .showroom-hero-stack-img',
+          { opacity: 0 },
+          { opacity: 1, duration: 0.85, ease: easeOut, stagger: 0.12, delay: 0.55 }
+        );
+      }
     }
   </script>
 

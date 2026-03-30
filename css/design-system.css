@@ -94,6 +94,9 @@ a, button, [role="button"], input[type="submit"],
   /* Section vertical padding */
   --section-padding-y: clamp(80px, 10vw, 160px);
 
+  /* Fixed `.nav` bar — approximate total height on mobile/tablet (logo + padding); used to clear hero copy */
+  --nav-bar-offset: 100px;
+
   /* Layout */
   --grid-max:     1440px;
   --grid-padding: clamp(20px, 5vw, 80px);

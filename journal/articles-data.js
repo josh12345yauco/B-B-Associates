@@ -2,6 +2,8 @@
  * B&B Associates Creations — Journal Articles Data
  * All articles for the blog/journal section.
  * Each article has: id, title, category, tags, date, readTime, excerpt, heroImage, body
+ *
+ * Hero images: Unsplash (https://unsplash.com/license) — unique photo per article.
  */
 
 const ARTICLES = [
@@ -13,7 +15,7 @@ const ARTICLES = [
     date: "January 2025",
     readTime: "8 min read",
     excerpt: "From $35,000 starter renovations to $150,000+ architectural transformations — we break down exactly what you're paying for, why the cheapest bid rarely delivers the best result, and what it really costs to do a luxury kitchen remodel in Wayne, Villanova, or Bryn Mawr.",
-    heroImage: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&q=80",
+    heroImage: "https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=1200&q=80",
     body: `<p>When Main Line homeowners in Wayne, Villanova, or Bryn Mawr begin researching a kitchen remodel, one of the first questions is always: what does it actually cost? The honest answer is that a true luxury kitchen remodel — the kind that transforms your space into something you'd see in Architectural Digest — typically runs between $75,000 and $150,000+.</p>
 
 <h2>Why the Range Is So Wide</h2>
@@ -49,7 +51,7 @@ const ARTICLES = [
     date: "December 2024",
     readTime: "6 min read",
     excerpt: "Historic Bucks County homes are full of character — and full of surprises. Here's what B&B looks for before the first demo day.",
-    heroImage: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200&q=80",
+    heroImage: "https://images.unsplash.com/photo-1519710164239-da123dc03ef4?w=1200&q=80",
     body: `<p>Doylestown and the surrounding Bucks County communities are home to some of the most beautiful older properties in the Philadelphia region. Federal-style colonials, Victorian farmhouses, and mid-century homes along the Delaware River all have something in common: hidden complexity.</p>
 
 <h2>What We Discover Before We Swing a Hammer</h2>
@@ -73,7 +75,7 @@ const ARTICLES = [
     date: "November 2024",
     readTime: "5 min read",
     excerpt: "When your designer and builder are separate, who's accountable when the vision doesn't match the build? Here's why the design-build model wins.",
-    heroImage: "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=1200&q=80",
+    heroImage: "https://images.unsplash.com/photo-1620626011761-996317b8d101?w=1200&q=80",
     body: `<p>The traditional approach to a major bathroom renovation goes something like this: hire an interior designer to create the vision, then take those plans to a contractor who bids on the construction. On paper, this sounds logical. In practice, it creates a dangerous gap between what was designed and what gets built.</p>
 
 <h2>The Coordination Gap</h2>
@@ -96,7 +98,7 @@ const ARTICLES = [
     date: "October 2024",
     readTime: "4 min read",
     excerpt: "Large format? Zellige? Bouclé texture? We break down the tile styles we're seeing in our most celebrated Main Line and Bucks County bathrooms.",
-    heroImage: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=1200&q=80",
+    heroImage: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=1200&q=80",
     body: `<p>Tile is the most expressive element in a bathroom — it sets the tone for the entire space. After completing dozens of bathroom renovations across the Philadelphia suburbs in 2024, here's what we're seeing homeowners choose — and why.</p>
 
 <h2>Large Format Porcelain (Still Dominant)</h2>
@@ -122,7 +124,7 @@ const ARTICLES = [
     date: "September 2024",
     readTime: "5 min read",
     excerpt: "Six weeks? Twelve weeks? It depends — and the honest answer matters more than a sales pitch. Here's how to set realistic expectations.",
-    heroImage: "https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=1200&q=80",
+    heroImage: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=1200&q=80",
     body: `<p>One of the most common questions we get during initial consultations: "How long will my kitchen take?" The honest answer is nuanced — but the framework below will help you set realistic expectations for any kitchen renovation in Pennsylvania.</p>
 
 <h2>Phase 1: Design and Permitting (3–8 Weeks Before Construction)</h2>
@@ -152,7 +154,7 @@ const ARTICLES = [
     date: "August 2024",
     readTime: "7 min read",
     excerpt: "Wayne, Villanova, Bryn Mawr, Ardmore — each neighborhood has its own home styles, HOA considerations, and remodeling norms. Here's what you need to know.",
-    heroImage: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200&q=80",
+    heroImage: "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1200&q=80",
     body: `<p>The Main Line communities — stretching from Ardmore through Wayne and into Malvern — have more in common than their historic SEPTA rail stops. They share a design aesthetic: refined, traditional with modern updates, always quality-forward. But each neighborhood has its own character, housing stock, and remodeling considerations.</p>
 
 <h2>Wayne & Strafford</h2>
@@ -176,7 +178,7 @@ const ARTICLES = [
     date: "July 2024",
     readTime: "6 min read",
     excerpt: "Inset? Overlay? Two-tone? Shaker vs. slab? After 1,200 projects, we've seen every trend come and go. Here's what stands the test of time.",
-    heroImage: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&q=80",
+    heroImage: "https://images.unsplash.com/photo-1556911220-bff31c812dba?w=1200&q=80",
     body: `<p>Cabinet style is the single most impactful design decision in a kitchen renovation. It sets the aesthetic for everything else — countertops, hardware, flooring, lighting. After 25 years and 1,200+ kitchens, we've watched every trend arrive and most of them fade. Here's our honest take on what we're building in 2025 and what we'd steer you away from.</p>
 
 <h2>What We're Building More of in 2025</h2>
@@ -198,7 +200,7 @@ const ARTICLES = [
     date: "June 2024",
     readTime: "7 min read",
     excerpt: "Quartzite, marble, quartz, granite — each material has distinct performance characteristics, price points, and design profiles. Here's the honest breakdown.",
-    heroImage: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&q=80",
+    heroImage: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&q=80",
     body: `<p>Countertops account for a significant portion of any kitchen renovation budget and have an outsized impact on the overall aesthetic. Choosing the wrong material — or the right material installed incorrectly — can be a very expensive mistake. Here's our honest guide to the major options.</p>
 
 <h2>Quartzite: The Premium Natural Stone</h2>
@@ -225,7 +227,7 @@ const ARTICLES = [
     date: "May 2024",
     readTime: "5 min read",
     excerpt: "Not all bathroom renovations pay off equally. Here's what Montgomery County and Bucks County homeowners should prioritize to maximize resale value.",
-    heroImage: "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=1200&q=80",
+    heroImage: "https://images.unsplash.com/photo-1604014237800-1c9102c219da?w=1200&q=80",
     body: `<p>Bathroom renovations are consistently among the highest-ROI home improvements you can make — but the return varies significantly based on what you renovate and how you do it. Here's what we've seen actually move the needle for home values in the Philadelphia suburbs.</p>
 
 <h2>Master Bath: The Highest Payoff</h2>
@@ -250,7 +252,7 @@ const ARTICLES = [
     date: "April 2024",
     readTime: "5 min read",
     excerpt: "The two dominant kitchen styles in 2025 — and how to know which one is right for your home, your lifestyle, and your future resale.",
-    heroImage: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200&q=80",
+    heroImage: "https://images.unsplash.com/photo-1600607688969-a5bfcd646154?w=1200&q=80",
     body: `<p>When Philadelphia-area homeowners begin exploring kitchen design, they almost inevitably land on one of two camps: transitional or modern. Here's how to think about the distinction — and which tends to perform better in different contexts.</p>
 
 <h2>Transitional: The Mainstream Premium</h2>
@@ -274,7 +276,7 @@ const ARTICLES = [
     date: "March 2024",
     readTime: "6 min read",
     excerpt: "What's the real difference between stock, semi-custom, and full custom cabinetry? What should Montgomery County homeowners expect to pay — and what do they get for the extra investment?",
-    heroImage: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&q=80",
+    heroImage: "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=1200&q=80",
     body: `<p>Cabinetry is the backbone of any kitchen renovation. It determines the aesthetic, the function, and a significant portion of the budget. In Montgomery County, where home values and renovation expectations are high, the decision between stock, semi-custom, and full custom cabinetry deserves serious thought.</p>
 
 <h2>Stock Cabinetry: Not What B&B Builds</h2>
@@ -298,7 +300,7 @@ const ARTICLES = [
     date: "February 2024",
     readTime: "4 min read",
     excerpt: "Radiant floor heating is one of the most-requested bathroom features. Here's what it actually costs, how it works, and whether it makes sense for your renovation.",
-    heroImage: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=1200&q=80",
+    heroImage: "https://images.unsplash.com/photo-1615529328331-f8917597711f?w=1200&q=80",
     body: `<p>Ask any homeowner who has radiant floor heating in their bathroom — they'll tell you it's one of the best upgrades they ever made. Cold tile floors on a Pennsylvania winter morning are a universal experience in the Philadelphia suburbs. Radiant heating eliminates that entirely.</p>
 
 <h2>How It Works</h2>
@@ -326,7 +328,7 @@ const ARTICLES = [
     date: "January 2024",
     readTime: "6 min read",
     excerpt: "Bucks County's stock of 18th and 19th century farmhouses and colonials is extraordinary — and challenging. What B&B checks for before every renovation in the county.",
-    heroImage: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200&q=80",
+    heroImage: "https://images.unsplash.com/photo-1513584684374-8bab748fbf90?w=1200&q=80",
     body: `<p>Bucks County is among the most architecturally rich counties in Pennsylvania. Homes dating to the 18th century are not uncommon in Doylestown, New Hope, Newtown, and Wrightstown. These properties have tremendous character — and require a contractor who understands their complexity.</p>
 
 <h2>What Makes Older Bucks County Homes Different</h2>
@@ -348,7 +350,7 @@ const ARTICLES = [
     date: "December 2023",
     readTime: "7 min read",
     excerpt: "A $15,000 price gap between bids isn't a steal — it's a warning sign. How to evaluate contractors fairly and avoid the most common mistakes.",
-    heroImage: "https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=1200&q=80",
+    heroImage: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&q=80",
     body: `<p>Finding a remodeling contractor you can trust is one of the most important decisions in a home renovation. The Philadelphia suburbs have hundreds of contractors — from solo tradespeople to regional companies — and the difference in quality, reliability, and communication can be enormous. Here's how we'd approach the selection process if we were the homeowner.</p>
 
 <h2>Step 1: Verify Credentials</h2>
@@ -375,7 +377,7 @@ const ARTICLES = [
     date: "November 2023",
     readTime: "5 min read",
     excerpt: "Removing a wall to open your kitchen to the living area is one of the most impactful renovations you can make. Here's what it actually costs — and what's involved.",
-    heroImage: "https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=1200&q=80",
+    heroImage: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1200&q=80",
     body: `<p>The open-concept kitchen — where the kitchen flows directly into the living or dining space — has been the dominant floor plan preference for 20 years, and it remains highly desirable in the Philadelphia suburbs. If your home has a wall separating the kitchen from adjacent living spaces, removing it can transform how the whole house feels and functions.</p>
 
 <h2>Is the Wall Load-Bearing?</h2>
@@ -399,7 +401,7 @@ const ARTICLES = [
     date: "October 2023",
     readTime: "5 min read",
     excerpt: "The bathroom renovations we're completing on the Main Line in 2024–2025 — and the design choices our clients are making in Wayne, Villanova, Ardmore, and Bryn Mawr.",
-    heroImage: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=1200&q=80",
+    heroImage: "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=1200&q=80",
     body: `<p>The Main Line's most elegant homes deserve bathrooms that match their standing. After completing dozens of master bath renovations across Wayne, Villanova, Haverford, Bryn Mawr, and Ardmore in the past 24 months, here's what our clients are choosing — and what's making a lasting impression.</p>
 
 <h2>Freestanding Tubs: The Statement Piece</h2>
@@ -423,7 +425,7 @@ const ARTICLES = [
     date: "September 2023",
     readTime: "5 min read",
     excerpt: "The kitchen island is the most versatile element in a modern kitchen — it can be a prep surface, dining area, appliance hub, and storage unit. Here's how B&B designs islands for Montgomery County homes.",
-    heroImage: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&q=80",
+    heroImage: "https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=1200&q=80",
     body: `<p>The kitchen island has become the command center of the modern home. It's where homework gets done, where guests gather during dinner parties, where morning coffee happens, and where serious cooking requires serious workspace. Designing it correctly — proportion, height, seating, storage, appliances — makes the difference between a kitchen you love and one that frustrates you daily.</p>
 
 <h2>Sizing: The Most Common Mistake</h2>

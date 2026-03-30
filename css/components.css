@@ -356,8 +356,9 @@
 
 .nav-mobile-link:hover { color: var(--color-gold); }
 
-/* Online Estimator in mobile menu — Glasi (dark on white, self-contained) */
-.nav-mobile a.nav-mobile-link.btn-glasi.nav-mobile-link--glasi {
+/* Online Estimator — Glasi (dark on light); mobile nav + contact form */
+.nav-mobile a.nav-mobile-link.btn-glasi.nav-mobile-link--glasi,
+.contact-form a.contact-estimator-btn.btn-glasi.nav-mobile-link--glasi {
   position: relative;
   display: inline-flex;
   align-items: center;
@@ -380,7 +381,8 @@
   overflow: hidden;
 }
 
-.nav-mobile a.nav-mobile-link.btn-glasi.nav-mobile-link--glasi .corners {
+.nav-mobile a.nav-mobile-link.btn-glasi.nav-mobile-link--glasi .corners,
+.contact-form a.contact-estimator-btn.btn-glasi.nav-mobile-link--glasi .corners {
   position: absolute;
   inset: 0;
   pointer-events: none;
@@ -389,16 +391,24 @@
 .nav-mobile a.nav-mobile-link.btn-glasi.nav-mobile-link--glasi .corner-tl,
 .nav-mobile a.nav-mobile-link.btn-glasi.nav-mobile-link--glasi .corner-tr,
 .nav-mobile a.nav-mobile-link.btn-glasi.nav-mobile-link--glasi .corner-bl,
-.nav-mobile a.nav-mobile-link.btn-glasi.nav-mobile-link--glasi .corner-br {
+.nav-mobile a.nav-mobile-link.btn-glasi.nav-mobile-link--glasi .corner-br,
+.contact-form a.contact-estimator-btn.btn-glasi.nav-mobile-link--glasi .corner-tl,
+.contact-form a.contact-estimator-btn.btn-glasi.nav-mobile-link--glasi .corner-tr,
+.contact-form a.contact-estimator-btn.btn-glasi.nav-mobile-link--glasi .corner-bl,
+.contact-form a.contact-estimator-btn.btn-glasi.nav-mobile-link--glasi .corner-br {
   position: absolute;
   width: 0;
   height: 0;
 }
 
-.nav-mobile a.nav-mobile-link.btn-glasi.nav-mobile-link--glasi .corner-tl { top: 0; left: 0; }
-.nav-mobile a.nav-mobile-link.btn-glasi.nav-mobile-link--glasi .corner-tr { top: 0; right: 0; }
-.nav-mobile a.nav-mobile-link.btn-glasi.nav-mobile-link--glasi .corner-bl { bottom: 0; left: 0; }
-.nav-mobile a.nav-mobile-link.btn-glasi.nav-mobile-link--glasi .corner-br { bottom: 0; right: 0; }
+.nav-mobile a.nav-mobile-link.btn-glasi.nav-mobile-link--glasi .corner-tl,
+.contact-form a.contact-estimator-btn.btn-glasi.nav-mobile-link--glasi .corner-tl { top: 0; left: 0; }
+.nav-mobile a.nav-mobile-link.btn-glasi.nav-mobile-link--glasi .corner-tr,
+.contact-form a.contact-estimator-btn.btn-glasi.nav-mobile-link--glasi .corner-tr { top: 0; right: 0; }
+.nav-mobile a.nav-mobile-link.btn-glasi.nav-mobile-link--glasi .corner-bl,
+.contact-form a.contact-estimator-btn.btn-glasi.nav-mobile-link--glasi .corner-bl { bottom: 0; left: 0; }
+.nav-mobile a.nav-mobile-link.btn-glasi.nav-mobile-link--glasi .corner-br,
+.contact-form a.contact-estimator-btn.btn-glasi.nav-mobile-link--glasi .corner-br { bottom: 0; right: 0; }
 
 .nav-mobile a.nav-mobile-link.btn-glasi.nav-mobile-link--glasi .corner-tl::before,
 .nav-mobile a.nav-mobile-link.btn-glasi.nav-mobile-link--glasi .corner-tr::before,
@@ -407,7 +417,15 @@
 .nav-mobile a.nav-mobile-link.btn-glasi.nav-mobile-link--glasi .corner-tl::after,
 .nav-mobile a.nav-mobile-link.btn-glasi.nav-mobile-link--glasi .corner-tr::after,
 .nav-mobile a.nav-mobile-link.btn-glasi.nav-mobile-link--glasi .corner-bl::after,
-.nav-mobile a.nav-mobile-link.btn-glasi.nav-mobile-link--glasi .corner-br::after {
+.nav-mobile a.nav-mobile-link.btn-glasi.nav-mobile-link--glasi .corner-br::after,
+.contact-form a.contact-estimator-btn.btn-glasi.nav-mobile-link--glasi .corner-tl::before,
+.contact-form a.contact-estimator-btn.btn-glasi.nav-mobile-link--glasi .corner-tr::before,
+.contact-form a.contact-estimator-btn.btn-glasi.nav-mobile-link--glasi .corner-bl::before,
+.contact-form a.contact-estimator-btn.btn-glasi.nav-mobile-link--glasi .corner-br::before,
+.contact-form a.contact-estimator-btn.btn-glasi.nav-mobile-link--glasi .corner-tl::after,
+.contact-form a.contact-estimator-btn.btn-glasi.nav-mobile-link--glasi .corner-tr::after,
+.contact-form a.contact-estimator-btn.btn-glasi.nav-mobile-link--glasi .corner-bl::after,
+.contact-form a.contact-estimator-btn.btn-glasi.nav-mobile-link--glasi .corner-br::after {
   content: '';
   position: absolute;
   background: #1a1c23;
@@ -416,7 +434,11 @@
 .nav-mobile a.nav-mobile-link.btn-glasi.nav-mobile-link--glasi .corner-tl::before,
 .nav-mobile a.nav-mobile-link.btn-glasi.nav-mobile-link--glasi .corner-tr::before,
 .nav-mobile a.nav-mobile-link.btn-glasi.nav-mobile-link--glasi .corner-bl::before,
-.nav-mobile a.nav-mobile-link.btn-glasi.nav-mobile-link--glasi .corner-br::before {
+.nav-mobile a.nav-mobile-link.btn-glasi.nav-mobile-link--glasi .corner-br::before,
+.contact-form a.contact-estimator-btn.btn-glasi.nav-mobile-link--glasi .corner-tl::before,
+.contact-form a.contact-estimator-btn.btn-glasi.nav-mobile-link--glasi .corner-tr::before,
+.contact-form a.contact-estimator-btn.btn-glasi.nav-mobile-link--glasi .corner-bl::before,
+.contact-form a.contact-estimator-btn.btn-glasi.nav-mobile-link--glasi .corner-br::before {
   width: 16px;
   height: 1.5px;
 }
@@ -424,21 +446,34 @@
 .nav-mobile a.nav-mobile-link.btn-glasi.nav-mobile-link--glasi .corner-tl::after,
 .nav-mobile a.nav-mobile-link.btn-glasi.nav-mobile-link--glasi .corner-tr::after,
 .nav-mobile a.nav-mobile-link.btn-glasi.nav-mobile-link--glasi .corner-bl::after,
-.nav-mobile a.nav-mobile-link.btn-glasi.nav-mobile-link--glasi .corner-br::after {
+.nav-mobile a.nav-mobile-link.btn-glasi.nav-mobile-link--glasi .corner-br::after,
+.contact-form a.contact-estimator-btn.btn-glasi.nav-mobile-link--glasi .corner-tl::after,
+.contact-form a.contact-estimator-btn.btn-glasi.nav-mobile-link--glasi .corner-tr::after,
+.contact-form a.contact-estimator-btn.btn-glasi.nav-mobile-link--glasi .corner-bl::after,
+.contact-form a.contact-estimator-btn.btn-glasi.nav-mobile-link--glasi .corner-br::after {
   width: 1.5px;
   height: 16px;
 }
 
-.nav-mobile a.nav-mobile-link.btn-glasi.nav-mobile-link--glasi .corner-tl::before { top: -1px; left: -1px; }
-.nav-mobile a.nav-mobile-link.btn-glasi.nav-mobile-link--glasi .corner-tl::after { top: -1px; left: -1px; }
-.nav-mobile a.nav-mobile-link.btn-glasi.nav-mobile-link--glasi .corner-tr::before { top: -1px; right: -1px; }
-.nav-mobile a.nav-mobile-link.btn-glasi.nav-mobile-link--glasi .corner-tr::after { top: -1px; right: -1px; }
-.nav-mobile a.nav-mobile-link.btn-glasi.nav-mobile-link--glasi .corner-bl::before { bottom: -1px; left: -1px; }
-.nav-mobile a.nav-mobile-link.btn-glasi.nav-mobile-link--glasi .corner-bl::after { bottom: -1px; left: -1px; }
-.nav-mobile a.nav-mobile-link.btn-glasi.nav-mobile-link--glasi .corner-br::before { bottom: -1px; right: -1px; }
-.nav-mobile a.nav-mobile-link.btn-glasi.nav-mobile-link--glasi .corner-br::after { bottom: -1px; right: -1px; }
+.nav-mobile a.nav-mobile-link.btn-glasi.nav-mobile-link--glasi .corner-tl::before,
+.contact-form a.contact-estimator-btn.btn-glasi.nav-mobile-link--glasi .corner-tl::before { top: -1px; left: -1px; }
+.nav-mobile a.nav-mobile-link.btn-glasi.nav-mobile-link--glasi .corner-tl::after,
+.contact-form a.contact-estimator-btn.btn-glasi.nav-mobile-link--glasi .corner-tl::after { top: -1px; left: -1px; }
+.nav-mobile a.nav-mobile-link.btn-glasi.nav-mobile-link--glasi .corner-tr::before,
+.contact-form a.contact-estimator-btn.btn-glasi.nav-mobile-link--glasi .corner-tr::before { top: -1px; right: -1px; }
+.nav-mobile a.nav-mobile-link.btn-glasi.nav-mobile-link--glasi .corner-tr::after,
+.contact-form a.contact-estimator-btn.btn-glasi.nav-mobile-link--glasi .corner-tr::after { top: -1px; right: -1px; }
+.nav-mobile a.nav-mobile-link.btn-glasi.nav-mobile-link--glasi .corner-bl::before,
+.contact-form a.contact-estimator-btn.btn-glasi.nav-mobile-link--glasi .corner-bl::before { bottom: -1px; left: -1px; }
+.nav-mobile a.nav-mobile-link.btn-glasi.nav-mobile-link--glasi .corner-bl::after,
+.contact-form a.contact-estimator-btn.btn-glasi.nav-mobile-link--glasi .corner-bl::after { bottom: -1px; left: -1px; }
+.nav-mobile a.nav-mobile-link.btn-glasi.nav-mobile-link--glasi .corner-br::before,
+.contact-form a.contact-estimator-btn.btn-glasi.nav-mobile-link--glasi .corner-br::before { bottom: -1px; right: -1px; }
+.nav-mobile a.nav-mobile-link.btn-glasi.nav-mobile-link--glasi .corner-br::after,
+.contact-form a.contact-estimator-btn.btn-glasi.nav-mobile-link--glasi .corner-br::after { bottom: -1px; right: -1px; }
 
-.nav-mobile a.nav-mobile-link.btn-glasi.nav-mobile-link--glasi .line {
+.nav-mobile a.nav-mobile-link.btn-glasi.nav-mobile-link--glasi .line,
+.contact-form a.contact-estimator-btn.btn-glasi.nav-mobile-link--glasi .line {
   position: absolute;
   background: #1a1c23;
   transform: scaleX(0);
@@ -446,7 +481,8 @@
   transition: transform 0.5s cubic-bezier(0.77, 0, 0.175, 1);
 }
 
-.nav-mobile a.nav-mobile-link.btn-glasi.nav-mobile-link--glasi .line-top {
+.nav-mobile a.nav-mobile-link.btn-glasi.nav-mobile-link--glasi .line-top,
+.contact-form a.contact-estimator-btn.btn-glasi.nav-mobile-link--glasi .line-top {
   top: -1px;
   left: 0;
   right: 0;
@@ -454,7 +490,8 @@
   transform-origin: left center;
 }
 
-.nav-mobile a.nav-mobile-link.btn-glasi.nav-mobile-link--glasi .line-bottom {
+.nav-mobile a.nav-mobile-link.btn-glasi.nav-mobile-link--glasi .line-bottom,
+.contact-form a.contact-estimator-btn.btn-glasi.nav-mobile-link--glasi .line-bottom {
   bottom: -1px;
   left: 0;
   right: 0;
@@ -462,7 +499,8 @@
   transform-origin: right center;
 }
 
-.nav-mobile a.nav-mobile-link.btn-glasi.nav-mobile-link--glasi .line-left {
+.nav-mobile a.nav-mobile-link.btn-glasi.nav-mobile-link--glasi .line-left,
+.contact-form a.contact-estimator-btn.btn-glasi.nav-mobile-link--glasi .line-left {
   left: -1px;
   top: 0;
   bottom: 0;
@@ -471,7 +509,8 @@
   transform: scaleY(0);
 }
 
-.nav-mobile a.nav-mobile-link.btn-glasi.nav-mobile-link--glasi .line-right {
+.nav-mobile a.nav-mobile-link.btn-glasi.nav-mobile-link--glasi .line-right,
+.contact-form a.contact-estimator-btn.btn-glasi.nav-mobile-link--glasi .line-right {
   right: -1px;
   top: 0;
   bottom: 0;
@@ -480,23 +519,28 @@
   transform: scaleY(0);
 }
 
-.nav-mobile a.nav-mobile-link.btn-glasi.nav-mobile-link--glasi:hover .line-top {
+.nav-mobile a.nav-mobile-link.btn-glasi.nav-mobile-link--glasi:hover .line-top,
+.contact-form a.contact-estimator-btn.btn-glasi.nav-mobile-link--glasi:hover .line-top {
   transform: scaleX(1);
 }
 
-.nav-mobile a.nav-mobile-link.btn-glasi.nav-mobile-link--glasi:hover .line-bottom {
+.nav-mobile a.nav-mobile-link.btn-glasi.nav-mobile-link--glasi:hover .line-bottom,
+.contact-form a.contact-estimator-btn.btn-glasi.nav-mobile-link--glasi:hover .line-bottom {
   transform: scaleX(1);
 }
 
-.nav-mobile a.nav-mobile-link.btn-glasi.nav-mobile-link--glasi:hover .line-left {
+.nav-mobile a.nav-mobile-link.btn-glasi.nav-mobile-link--glasi:hover .line-left,
+.contact-form a.contact-estimator-btn.btn-glasi.nav-mobile-link--glasi:hover .line-left {
   transform: scaleY(1);
 }
 
-.nav-mobile a.nav-mobile-link.btn-glasi.nav-mobile-link--glasi:hover .line-right {
+.nav-mobile a.nav-mobile-link.btn-glasi.nav-mobile-link--glasi:hover .line-right,
+.contact-form a.contact-estimator-btn.btn-glasi.nav-mobile-link--glasi:hover .line-right {
   transform: scaleY(1);
 }
 
-.nav-mobile a.nav-mobile-link.btn-glasi.nav-mobile-link--glasi .clip {
+.nav-mobile a.nav-mobile-link.btn-glasi.nav-mobile-link--glasi .clip,
+.contact-form a.contact-estimator-btn.btn-glasi.nav-mobile-link--glasi .clip {
   position: relative;
   overflow: hidden;
   display: inline-block;
@@ -505,25 +549,47 @@
 }
 
 .nav-mobile a.nav-mobile-link.btn-glasi.nav-mobile-link--glasi .text-top,
-.nav-mobile a.nav-mobile-link.btn-glasi.nav-mobile-link--glasi .text-bottom {
+.nav-mobile a.nav-mobile-link.btn-glasi.nav-mobile-link--glasi .text-bottom,
+.contact-form a.contact-estimator-btn.btn-glasi.nav-mobile-link--glasi .text-top,
+.contact-form a.contact-estimator-btn.btn-glasi.nav-mobile-link--glasi .text-bottom {
   display: block;
   transition: transform 0.5s cubic-bezier(0.77, 0, 0.175, 1);
 }
 
-.nav-mobile a.nav-mobile-link.btn-glasi.nav-mobile-link--glasi .text-bottom {
+.nav-mobile a.nav-mobile-link.btn-glasi.nav-mobile-link--glasi .text-bottom,
+.contact-form a.contact-estimator-btn.btn-glasi.nav-mobile-link--glasi .text-bottom {
   position: absolute;
   left: 0;
   top: 100%;
 }
 
 .nav-mobile a.nav-mobile-link.btn-glasi.nav-mobile-link--glasi:hover .text-top,
-.nav-mobile a.nav-mobile-link.btn-glasi.nav-mobile-link--glasi:hover .text-bottom {
+.nav-mobile a.nav-mobile-link.btn-glasi.nav-mobile-link--glasi:hover .text-bottom,
+.contact-form a.contact-estimator-btn.btn-glasi.nav-mobile-link--glasi:hover .text-top,
+.contact-form a.contact-estimator-btn.btn-glasi.nav-mobile-link--glasi:hover .text-bottom {
   transform: translateY(-100%);
 }
 
-.nav-mobile a.nav-mobile-link.btn-glasi.nav-mobile-link--glasi:hover {
+.nav-mobile a.nav-mobile-link.btn-glasi.nav-mobile-link--glasi:hover,
+.contact-form a.contact-estimator-btn.btn-glasi.nav-mobile-link--glasi:hover {
   color: var(--color-gold-dark);
   border-color: rgba(182, 117, 57, 0.55);
+}
+
+/* Contact form: full-width, no top margin; single-line label (no .text-bottom) */
+.contact-form a.contact-estimator-btn.btn-glasi.nav-mobile-link--glasi {
+  margin-top: 0;
+  max-width: 100%;
+}
+.contact-form a.contact-estimator-btn.btn-glasi.nav-mobile-link--glasi .clip {
+  height: auto;
+  overflow: visible;
+}
+.contact-form a.contact-estimator-btn.btn-glasi.nav-mobile-link--glasi .text-top {
+  transition: none;
+}
+.contact-form a.contact-estimator-btn.btn-glasi.nav-mobile-link--glasi:hover .text-top {
+  transform: none;
 }
 
 .nav-mobile-footer {
@@ -815,6 +881,93 @@
 @media (max-width: 768px) {
   .nav-logo-img { max-height: 52px; height: auto; }
   .nav-cta { display: none; }
+}
+
+/*
+ * Viewports where the hamburger nav is shown: vertically centered hero stacks
+ * can overflow upward under the fixed header. Pin content below the nav.
+ */
+@media (max-width: 1024px) {
+  /* `main` / `header` raises specificity so per-page `.hero-*` rules do not win. */
+  main .hero .hero-content {
+    justify-content: flex-start;
+    padding-top: max(
+      var(--sp-10),
+      calc(var(--nav-bar-offset) + var(--sp-4) + env(safe-area-inset-top, 0px))
+    );
+  }
+
+  main .hero.hero-services .hero-content {
+    justify-content: flex-start;
+  }
+
+  main .hero-bath {
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-top: max(
+      var(--sp-10),
+      calc(var(--nav-bar-offset) + var(--sp-4) + env(safe-area-inset-top, 0px))
+    );
+  }
+
+  main .sa-hero-inner {
+    align-items: flex-start;
+    padding-top: max(
+      140px,
+      calc(var(--nav-bar-offset) + var(--sp-5) + env(safe-area-inset-top, 0px))
+    );
+  }
+
+  main .sa-index-hero {
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-top: max(
+      140px,
+      calc(var(--nav-bar-offset) + var(--sp-5) + env(safe-area-inset-top, 0px))
+    );
+  }
+
+  header.reviews-hero {
+    justify-content: flex-start;
+    padding-top: max(
+      calc(80px + var(--sp-5)),
+      calc(var(--nav-bar-offset) + var(--sp-5) + env(safe-area-inset-top, 0px))
+    );
+  }
+
+  main .about-hero {
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-top: max(
+      clamp(120px, 14vw, 200px),
+      calc(var(--nav-bar-offset) + var(--sp-5) + env(safe-area-inset-top, 0px))
+    );
+  }
+
+  main .contact-hero {
+    justify-content: flex-start;
+    padding-top: max(
+      140px,
+      calc(var(--nav-bar-offset) + var(--sp-5) + env(safe-area-inset-top, 0px))
+    );
+  }
+
+  main .journal-hero {
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-top: max(
+      calc(120px + var(--sp-6)),
+      calc(var(--nav-bar-offset) + var(--sp-5) + env(safe-area-inset-top, 0px))
+    );
+  }
+
+  main .portfolio-header {
+    justify-content: flex-start;
+    padding-top: max(
+      var(--sp-10),
+      calc(var(--nav-bar-offset) + var(--sp-5) + env(safe-area-inset-top, 0px))
+    );
+  }
 }
 
 /* ── FOOTER ───────────────────────────────────────────────── */
@@ -1152,15 +1305,37 @@
   letter-spacing: var(--tracking-wide);
 }
 
+/* Google / Angi / Houzz wordmarks on testimonial cards */
+.review-source-logo__svg {
+  display: block;
+  height: 22px;
+  width: auto;
+}
+.review-source-logo__svg--angi {
+  height: 18px;
+  width: 52px;
+}
+.review-source-logo__svg--houzz {
+  height: 16px;
+  width: 72px;
+}
+
 .review-card-source {
   display: inline-flex;
   align-items: center;
-  gap: var(--sp-2);
-  font-family: var(--font-mono);
-  font-size: var(--text-label);
-  color: #9ca3af;
-  letter-spacing: var(--tracking-wide);
-  text-transform: uppercase;
+  margin-top: var(--sp-2);
+  line-height: 0;
+}
+
+/* Reviews page badge row (platform) */
+.review-badge-source {
+  display: inline-flex;
+  align-items: center;
+  padding: 0;
+  border: none;
+  background: transparent;
+  border-radius: 0;
+  line-height: 0;
 }
 
 /* ── HERO SHARED STYLES ───────────────────────────────────── */

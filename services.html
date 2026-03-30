@@ -542,9 +542,64 @@
       .scope-grid { grid-template-columns:1fr; }
       .process-grid { grid-template-columns:repeat(2,1fr); }
       .why-stats { grid-template-columns:repeat(2,1fr); }
-      .hero-trust-row { flex-direction:column; gap: var(--sp-2); }
-      .hero-trust-item { border-right:none; border-bottom:1px solid rgba(255,255,255,0.08); width:100%; justify-content:center; }
-      .hero-trust-item:last-child { border-bottom:none; }
+
+      /* Hero: full-bleed media under fixed nav; text only starts below nav */
+      .hero-services {
+        position: relative;
+        height: auto;
+        min-height: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        box-sizing: border-box;
+      }
+      main .hero.hero-services .hero-content,
+      .hero-services .hero-content {
+        position: relative;
+        inset: auto;
+        flex: 0 1 auto;
+        justify-content: flex-start;
+        padding-top: calc(var(--nav-bar-offset) + var(--sp-4) + env(safe-area-inset-top, 0px));
+        padding-bottom: var(--sp-7);
+        box-sizing: border-box;
+      }
+
+      .hero-services .hero-breadcrumb { margin-bottom: var(--sp-3); }
+      .hero-services .hero-content > .section-label { margin-bottom: var(--sp-3); font-size: 10px; }
+      .hero-services .hero-headline {
+        font-size: clamp(30px, 8vw, 48px);
+        margin-bottom: var(--sp-3);
+        line-height: 1.12;
+      }
+      .hero-services .hero-subtitle {
+        font-size: clamp(14px, 3.6vw, 18px);
+        margin-bottom: var(--sp-4);
+        line-height: 1.55;
+      }
+
+      /* Trust line: horizontal row (saves vertical space vs stacked) */
+      .hero-services .hero-trust-row {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: var(--sp-1) var(--sp-2);
+        margin-top: var(--sp-1);
+        max-width: 100%;
+      }
+      .hero-services .hero-trust-item {
+        width: auto;
+        flex: 0 1 auto;
+        justify-content: center;
+        padding: var(--sp-2) var(--sp-3);
+        font-size: 0.625rem;
+        letter-spacing: 0.08em;
+        border-bottom: none;
+        border-right: 1px solid rgba(255,255,255,0.12);
+      }
+      .hero-services .hero-trust-item:last-child {
+        border-right: none;
+      }
     }
     @media (max-width: 540px) {
       .process-grid { grid-template-columns:1fr; }
@@ -574,7 +629,7 @@
         <div class="nav-dropdown">
           <a href="about.html">About B&amp;B</a>
           <a href="reviews.html">Testimonials</a>
-          <a href="service-areas/index.html">Service Areas</a>
+          <a href="/service-areas/index.html">Service Areas</a>
         </div>
       </div>
       <a href="contact.html" class="nav-link" role="listitem">Contact</a>
@@ -606,7 +661,7 @@
         <div class="mobile-dropdown">
           <a href="about.html">About B&amp;B</a>
           <a href="reviews.html">Testimonials</a>
-          <a href="service-areas/index.html">Service Areas</a>
+          <a href="/service-areas/index.html">Service Areas</a>
         </div>
       </div>
       <a href="contact.html" class="nav-mobile-link">Contact</a>
@@ -885,9 +940,9 @@
             <div class="areas-town-list">
               <a href="service-areas/wayne-villanova-bathroom-remodeling.html" class="areas-town-link">Wayne</a>
               <a href="service-areas/wayne-villanova-bathroom-remodeling.html" class="areas-town-link">Villanova</a>
-              <a href="service-areas/main-line-pa-remodeling.html" class="areas-town-link">Bryn Mawr</a>
-              <a href="service-areas/main-line-pa-remodeling.html" class="areas-town-link">Gladwyne</a>
-              <a href="service-areas/main-line-pa-remodeling.html" class="areas-town-link">Newtown Square</a>
+              <a href="/service-areas/index.html" class="areas-town-link">Bryn Mawr</a>
+              <a href="/service-areas/index.html" class="areas-town-link">Gladwyne</a>
+              <a href="/service-areas/index.html" class="areas-town-link">Newtown Square</a>
             </div>
             <p class="areas-county-sub">Also Serving</p>
             <div class="areas-town-list">
@@ -1045,8 +1100,8 @@
             <p class="footer-area-group">Main Line</p>
             <a href="service-areas/wayne-villanova-bathroom-remodeling.html" class="footer-link">Wayne PA</a>
             <a href="service-areas/wayne-villanova-bathroom-remodeling.html" class="footer-link">Villanova PA</a>
-            <a href="service-areas/main-line-pa-remodeling.html" class="footer-link">Bryn Mawr PA</a>
-            <a href="service-areas/index.html" class="footer-link" style="color:var(--color-gold);">View All Areas →</a>
+            <a href="/service-areas/bryn-mawr-pa-remodeling.html" class="footer-link">Bryn Mawr PA</a>
+            <a href="/service-areas/index.html" class="footer-link" style="color:var(--color-gold);">View All Areas →</a>
           </nav>
         </div>
         <div class="footer-col footer-col-stay-informed">
