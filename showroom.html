@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <link rel="icon" type="image/png" href="IMAGES/bandbassociates.png">
+  <link rel="apple-touch-icon" href="IMAGES/bandbassociates.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ambler Design Showroom — Coming Soon | Join the List | B&amp;B Associates Creations</title>
   <meta name="description" content="Our Ambler design showroom is opening soon. Join the list for news, opening updates, and early visit opportunities. Luxury kitchen and bath materials — Montgomery County &amp; the Main Line.">
@@ -10,7 +12,7 @@
   <!-- Open Graph -->
   <meta property="og:title" content="Ambler Design Showroom — Coming Soon | B&amp;B Associates Creations">
   <meta property="og:description" content="Our Ambler showroom is opening soon. Join the list for news, opening dates, and early visit opportunities. Luxury kitchen &amp; bath materials.">
-  <meta property="og:image" content="https://bbassociatescreations.com/IMAGES/Custom-Kitchen-Ambler-Pa.png">
+  <meta property="og:image" content="https://bbassociatescreations.com/IMAGES/Custom-Kitchen-Ambler-Pa.webp">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://bbassociatescreations.com/showroom.html">
   <meta property="og:site_name" content="B&amp;B Associates Creations">
@@ -20,7 +22,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Ambler Design Showroom — Coming Soon | B&amp;B Associates">
   <meta name="twitter:description" content="Showroom in development — join the list for opening updates and design news.">
-  <meta name="twitter:image" content="https://bbassociatescreations.com/IMAGES/Custom-Kitchen-Ambler-Pa.png">
+  <meta name="twitter:image" content="https://bbassociatescreations.com/IMAGES/Custom-Kitchen-Ambler-Pa.webp">
 
   <!-- Geo -->
   <meta name="geo.region" content="US-PA">
@@ -84,7 +86,7 @@
       inset: 0;
       z-index: 0;
       background-color: #121a28;
-      background-image: url('IMAGES/Showroom.jpg');
+      background-image: url('IMAGES/Showroom.webp');
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -235,6 +237,7 @@
       }
       .showroom-hero-lead-h1 {
         white-space: normal;
+        font-size: clamp(2.2rem, 8vw, 3.5rem);
       }
     }
     .showroom-hero-lead-note {
@@ -383,6 +386,7 @@
       width: min(100%, 440px);
       height: auto;
       object-fit: contain;
+      opacity: 1;
       transform: translate(-50%, -50%);
       pointer-events: none;
       background: transparent;
@@ -836,7 +840,7 @@
   <!-- ── NAVIGATION ──────────────────────────────────────── -->
   <nav class="nav" role="navigation" aria-label="Main navigation">
     <a href="/" class="nav-logo" aria-label="B&B Associates Creations home">
-      <img src="IMAGES/bb-logo-white.png" alt="B&B Associates Creations" class="nav-logo-img">
+      <img src="IMAGES/bb-logo-white.webp" alt="B&B Associates Creations" class="nav-logo-img">
     </a>
 
     <div class="nav-links" role="list">
@@ -988,7 +992,7 @@
           <div class="showroom-hero-stack-inner">
             <img
               class="showroom-hero-stack-img showroom-hero-stack-img--1"
-              src="IMAGES/ChatGPT%20Image%20Mar%202%2C%202026%2C%2011_31_17%20AM%20%281%29.png"
+              src="IMAGES/ChatGPT%20Image%20Mar%202%2C%202026%2C%2011_31_17%20AM%20%281%29.webp"
               alt=""
               width="1536"
               height="776"
@@ -997,7 +1001,7 @@
             >
             <img
               class="showroom-hero-stack-img showroom-hero-stack-img--2"
-              src="IMAGES/ChatGPT%20Image%20Mar%202%2C%202026%2C%2011_31_17%20AMwood.png"
+              src="IMAGES/ChatGPT%20Image%20Mar%202%2C%202026%2C%2011_31_17%20AMwood.webp"
               alt=""
               width="1536"
               height="776"
@@ -1006,7 +1010,7 @@
             >
             <img
               class="showroom-hero-stack-img showroom-hero-stack-img--3"
-              src="IMAGES/ChatGPT%20Image%20Mar%202%2C%202026%2C%2011_31_17Brass%20AM.png"
+              src="IMAGES/ChatGPT%20Image%20Mar%202%2C%202026%2C%2011_31_17Brass%20AM.webp"
               alt=""
               width="1536"
               height="776"
@@ -1204,7 +1208,7 @@
               <li class="trade-benefit-item">Access our 60+ supplier catalog</li>
               <li class="trade-benefit-item">Private sessions available by request</li>
             </ul>
-            <a href="contact.html" class="phil-btn phil-btn-fill fade-in fade-in-delay-3">
+            <a href="contact.html?type=trade" class="phil-btn phil-btn-fill fade-in fade-in-delay-3">
               <div class="phil-fill"></div>
               <span class="phil-label">Register as a Trade Professional</span>
             </a>
@@ -1260,7 +1264,7 @@
             <a href="about.html" class="footer-link">About</a>
             <a href="contact.html" class="footer-link">Contact</a>
             <a href="estimator.html" class="footer-link">Online Estimator</a>
-            <a href="journal/index.html" class="footer-link">Blog</a>
+            <a href="blog/index.html" class="footer-link">Blog</a>
           </nav>
         </div>
         <div class="footer-col">
@@ -1401,6 +1405,6 @@
     }
   </script>
 
-<script>(function(){var logo=document.querySelector(".nav-logo");if(!logo)return;var clicks=0,timer=null;logo.addEventListener("click",function(e){e.preventDefault();clicks++;if(timer)clearTimeout(timer);if(clicks>=6){clicks=0;window.location.href="/admin/index.html";return;}timer=setTimeout(function(){clicks=0;},3000);});})()</script>
+<script>(function(){var logo=document.querySelector(".nav-logo");if(!logo)return;var clicks=0,timer=null;logo.addEventListener("click",function(e){clicks++;if(timer)clearTimeout(timer);if(clicks>=6){e.preventDefault();clicks=0;window.location.href="/admin/index.html";return;}timer=setTimeout(function(){clicks=0;},3000);});})()</script>
 </body>
 </html>

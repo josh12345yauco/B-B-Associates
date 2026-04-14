@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <link rel="icon" type="image/png" href="IMAGES/bandbassociates.png">
+  <link rel="apple-touch-icon" href="IMAGES/bandbassociates.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Us | Kitchen & Bathroom Remodeling | Montgomery County & Bucks County | B&B Associates</title>
   <meta name="description" content="Contact B&B Associates Creations for luxury kitchen and bathroom remodeling across Montgomery County, Bucks County, and the Main Line. Call 267.402.8758 or send a message — we respond within 1 business hour.">
@@ -10,7 +12,7 @@
   <!-- Open Graph -->
   <meta property="og:title" content="Contact Us | Kitchen &amp; Bathroom Remodeling | Montgomery County &amp; Bucks County | B&amp;B Associates">
   <meta property="og:description" content="Contact B&amp;B Associates Creations for luxury kitchen and bathroom remodeling. Call 267.402.8758 — we respond within 1 business hour.">
-  <meta property="og:image" content="https://bbassociatescreations.com/IMAGES/Custom-Kitchen-Ambler-Pa.png">
+  <meta property="og:image" content="https://bbassociatescreations.com/IMAGES/Custom-Kitchen-Ambler-Pa.webp">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://bbassociatescreations.com/contact.html">
   <meta property="og:site_name" content="B&amp;B Associates Creations">
@@ -20,7 +22,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Contact B&amp;B Associates | Luxury Kitchen &amp; Bath Remodeling | Ambler, PA">
   <meta name="twitter:description" content="Contact B&amp;B Associates Creations for luxury kitchen and bathroom remodeling across Montgomery County, Bucks County, and the Main Line. Call 267.402.8758.">
-  <meta name="twitter:image" content="https://bbassociatescreations.com/IMAGES/Custom-Kitchen-Ambler-Pa.png">
+  <meta name="twitter:image" content="https://bbassociatescreations.com/IMAGES/Custom-Kitchen-Ambler-Pa.webp">
 
   <!-- Geo -->
   <meta name="geo.region" content="US-PA">
@@ -557,7 +559,7 @@
   <!-- ── NAVIGATION ──────────────────────────────────────── -->
   <nav class="nav" role="navigation" aria-label="Main navigation">
     <a href="/" class="nav-logo" aria-label="B&B Associates Creations home">
-      <img src="IMAGES/bb-logo-white.png" alt="B&B Associates Creations" class="nav-logo-img">
+      <img src="IMAGES/bb-logo-white.webp" alt="B&B Associates Creations" class="nav-logo-img">
     </a>
 
     <div class="nav-links" role="list">
@@ -749,7 +751,7 @@
             <a href="about.html" class="footer-link">About</a>
             <a href="contact.html" class="footer-link">Contact</a>
             <a href="estimator.html" class="footer-link">Online Estimator</a>
-            <a href="journal/index.html" class="footer-link">Blog</a>
+            <a href="blog/index.html" class="footer-link">Blog</a>
           </nav>
         </div>
 
@@ -895,6 +897,27 @@
 
     render();
 
+    /* ── Trade Professional URL param routing ── */
+    (function() {
+      var params = new URLSearchParams(window.location.search);
+      if (params.get('type') === 'trade') {
+        var title = document.querySelector('.contact-form-title');
+        if (title) title.textContent = 'Register as a Trade Professional';
+        var submitBtn = document.querySelector('#contact-page-form button[type="submit"]');
+        if (submitBtn) submitBtn.textContent = 'Submit Trade Registration →';
+        var msgField = document.getElementById('cf-f-message');
+        if (msgField && !msgField.value) msgField.value = "I'd like to register as a trade professional.";
+        var projectSelect = document.getElementById('cf-f-project');
+        if (projectSelect) {
+          var tradeOpt = document.createElement('option');
+          tradeOpt.value = 'trade';
+          tradeOpt.textContent = 'Trade Professional Registration';
+          tradeOpt.selected = true;
+          projectSelect.insertBefore(tradeOpt, projectSelect.firstChild);
+        }
+      }
+    })();
+
     /* ── Submit: save lead to localStorage ── */
     var form = document.getElementById('contact-page-form');
     if (!form) return;
@@ -921,6 +944,6 @@
   })();
   </script>
 
-<script>(function(){var logo=document.querySelector(".nav-logo");if(!logo)return;var clicks=0,timer=null;logo.addEventListener("click",function(e){e.preventDefault();clicks++;if(timer)clearTimeout(timer);if(clicks>=6){clicks=0;window.location.href="/admin/index.html";return;}timer=setTimeout(function(){clicks=0;},3000);});})()</script>
+<script>(function(){var logo=document.querySelector(".nav-logo");if(!logo)return;var clicks=0,timer=null;logo.addEventListener("click",function(e){clicks++;if(timer)clearTimeout(timer);if(clicks>=6){e.preventDefault();clicks=0;window.location.href="/admin/index.html";return;}timer=setTimeout(function(){clicks=0;},3000);});})()</script>
 </body>
 </html>

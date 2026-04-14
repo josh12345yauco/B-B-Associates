@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <link rel="icon" type="image/png" href="../IMAGES/bandbassociates.png">
+  <link rel="apple-touch-icon" href="../IMAGES/bandbassociates.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- SEO -->
@@ -13,7 +15,7 @@
   <meta property="og:type" content="website">
   <meta property="og:title" content="Custom Bathroom Renovations in Montgomery County &amp; Main Line PA | B&amp;B Associates Creations">
   <meta property="og:description" content="Luxury master baths, spa showers, and custom vanities built by B&B Associates. Serving Montgomery County, Bucks County &amp; the Main Line since 1999. 600+ bathrooms completed.">
-  <meta property="og:image" content="https://bbassociatescreations.com/IMAGES/Custom-Bathroom-Ambler-Pa.png">
+  <meta property="og:image" content="https://bbassociatescreations.com/IMAGES/Custom-Bathroom-Ambler-Pa.webp">
   <meta property="og:url" content="https://bbassociatescreations.com/services/custom-bathroom-renovations.html">
   <meta property="og:site_name" content="B&amp;B Associates Creations">
   <meta property="og:locale" content="en_US">
@@ -22,7 +24,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Custom Bathroom Renovations | B&amp;B Associates Creations">
   <meta name="twitter:description" content="Luxury master baths, spa showers, and custom vanities. Montgomery County &amp; Main Line PA.">
-  <meta name="twitter:image" content="https://bbassociatescreations.com/IMAGES/Custom-Bathroom-Ambler-Pa.png">
+  <meta name="twitter:image" content="https://bbassociatescreations.com/IMAGES/Custom-Bathroom-Ambler-Pa.webp">
 
   <!-- Geo -->
   <meta name="geo.region" content="US-PA">
@@ -167,12 +169,20 @@
     .hero-bath {
       height: 80vh;
       min-height: 560px;
-      position: relative;
+      position: sticky;
+      top: 0;
+      z-index: 0;
       overflow: hidden;
       display: flex;
       align-items: center;
       justify-content: center;
       background: var(--color-bg);
+    }
+    @media (max-width: 768px) {
+      .hero-bath {
+        height: 64vh;
+        min-height: 448px;
+      }
     }
 
     .hero-bath .hero-content {
@@ -764,7 +774,7 @@
 
     .testimonial-text {
       font-family: var(--font-display);
-      font-size: clamp(22px, 3vw, 38px);
+      font-size: clamp(38px, 5vw, 68px);
       font-style: italic;
       font-weight: var(--weight-light);
       color: var(--color-white);
@@ -909,7 +919,7 @@
   <!-- ── NAVIGATION ──────────────────────────────────────── -->
   <nav class="nav" role="navigation" aria-label="Main navigation">
     <a href="../" class="nav-logo" aria-label="B&B Associates Creations home">
-      <img src="../IMAGES/bb-logo-white.png" alt="B&B Associates Creations" class="nav-logo-img">
+      <img src="../IMAGES/bb-logo-white.webp" alt="B&B Associates Creations" class="nav-logo-img">
     </a>
 
     <div class="nav-links" role="list">
@@ -985,7 +995,7 @@
       <nav class="hero-breadcrumb breadcrumb" aria-label="Breadcrumb">
         <a href="../">Home</a>
         <span class="breadcrumb-sep">›</span>
-        <a href="luxury-kitchen-remodeling.html">Services</a>
+        <a href="kitchen-remodeling.html">Services</a>
         <span class="breadcrumb-sep">›</span>
         <span>Bathroom Renovations</span>
       </nav>
@@ -1177,7 +1187,7 @@
         <div class="showcase-card">
           <div class="showcase-card-img">
             <img
-              src="../IMAGES/HeatedFlooring.png"
+              src="../IMAGES/HeatedFlooring.webp"
               alt="Heated floor system in a B&B Associates bathroom renovation"
               loading="lazy"
               width="1920"
@@ -1451,7 +1461,7 @@
       </div>
       <p class="cta-cross-links reveal" style="margin-top: var(--sp-7);">
         We also build:
-        <a href="luxury-kitchen-remodeling.html">Luxury Kitchen Remodeling</a>
+        <a href="kitchen-remodeling.html">Luxury Kitchen Remodeling</a>
       </p>
     </section>
 
@@ -1476,7 +1486,7 @@
             <a href="../about.html" class="footer-link">About</a>
             <a href="../contact.html" class="footer-link">Contact</a>
             <a href="../estimator.html" class="footer-link">Online Estimator</a>
-            <a href="../journal/index.html" class="footer-link">Blog</a>
+            <a href="../blog/index.html" class="footer-link">Blog</a>
           </nav>
         </div>
 
@@ -1546,7 +1556,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
   <script>if(typeof gsap!=='undefined'&&typeof ScrollTrigger!=='undefined')gsap.registerPlugin(ScrollTrigger);</script>
-  <script src="../js/projects-data.js"></script>
 
   <!-- Page-specific: render bathroom projects -->
   <script>
@@ -1692,6 +1701,6 @@
   <script src="../js/init.js"></script>
   <script src="../js/analytics.js"></script>
 
-<script>(function(){var logo=document.querySelector(".nav-logo");if(!logo)return;var clicks=0,timer=null;logo.addEventListener("click",function(e){e.preventDefault();clicks++;if(timer)clearTimeout(timer);if(clicks>=6){clicks=0;window.location.href="/admin/index.html";return;}timer=setTimeout(function(){clicks=0;},3000);});})()</script>
+<script>(function(){var logo=document.querySelector(".nav-logo");if(!logo)return;var clicks=0,timer=null;logo.addEventListener("click",function(e){clicks++;if(timer)clearTimeout(timer);if(clicks>=6){e.preventDefault();clicks=0;window.location.href="/admin/index.html";return;}timer=setTimeout(function(){clicks=0;},3000);});})()</script>
 </body>
 </html>

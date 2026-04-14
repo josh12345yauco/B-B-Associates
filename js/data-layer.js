@@ -9,13 +9,13 @@
   /* ── HARDCODED FALLBACKS ─────────────────────────────────── */
 
   var DEFAULT_FEATURED_VIDEO_SRCS = [
-    'portfolio/videos/04dbbb5471c74a3b8ac51db16487c1ad.mov',
-    'portfolio/videos/36c5e0c2f36f4633967755048c653e60.mov',
-    'portfolio/videos/39dfe7ffc6aa44a78f81ed2a0004c83c.mov',
-    'portfolio/videos/a3bfa0877c2e49cbb0bbe1b84cd55709.mov',
-    'portfolio/videos/def2b212633147c9abf52dbc2351495e.mov',
-    'portfolio/videos/fb608850f7a54cb99f98a76a6a90a86c.mov',
-    'portfolio/videos/v15025gf0000d5lqd3vog65khasgnfbg.mov'
+    'portfolio/videos/04dbbb5471c74a3b8ac51db16487c1ad.mp4',
+    'portfolio/videos/36c5e0c2f36f4633967755048c653e60.mp4',
+    'portfolio/videos/39dfe7ffc6aa44a78f81ed2a0004c83c.mp4',
+    'portfolio/videos/a3bfa0877c2e49cbb0bbe1b84cd55709.mp4',
+    'portfolio/videos/def2b212633147c9abf52dbc2351495e.mp4',
+    'portfolio/videos/fb608850f7a54cb99f98a76a6a90a86c.mp4',
+    'portfolio/videos/v15025gf0000d5lqd3vog65khasgnfbg.mp4'
   ];
 
   var DEFAULT_FAQ = [

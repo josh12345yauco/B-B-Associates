@@ -11,6 +11,9 @@
   top: 0;
   z-index: 0;
   padding: 40px 0 32px;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
 }
 
 .wwb-header {

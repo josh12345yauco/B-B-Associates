@@ -23,7 +23,7 @@ const projects = [
     ],
     investment: "$55,000–$75,000",
     duration: "7 weeks",
-    video: "KITCHENS/B&B - Beth Rubin-kitchen/IMG_2883.mov",
+    video: "KITCHENS/B&B - Beth Rubin-kitchen/IMG_2883.mp4",
     images: [
       "KITCHENS/B&B - Beth Rubin-kitchen/153E1359-5284-48E5-9F68-B497880FF6F7.jpeg",
       "KITCHENS/B&B - Beth Rubin-kitchen/2E65DD0B-0031-4C99-8136-3B8597A5D610.jpeg",
@@ -87,7 +87,7 @@ const projects = [
     ],
     investment: "$60,000–$80,000",
     duration: "7 weeks",
-    video: "KITCHENS/B&B - Bryn Michaels Kitchen/def2b212633147c9abf52dbc2351495e.mov",
+    video: "KITCHENS/B&B - Bryn Michaels Kitchen/def2b212633147c9abf52dbc2351495e.mp4",
     images: [
       "KITCHENS/B&B - Bryn Michaels Kitchen/294E52B4-81AA-44D1-A230-24D9680D37BB.jpeg",
       "KITCHENS/B&B - Bryn Michaels Kitchen/409DD10F-8F49-4084-812B-74F738D01F86.jpeg",
@@ -344,7 +344,7 @@ const projects = [
     ],
     investment: "$85,000–$110,000",
     duration: "10 weeks",
-    video: "KITCHENS/B&B - Larkin Kitchen/39dfe7ffc6aa44a78f81ed2a0004c83c.mov",
+    video: "KITCHENS/B&B - Larkin Kitchen/39dfe7ffc6aa44a78f81ed2a0004c83c.mp4",
     images: [
       "KITCHENS/B&B - Larkin Kitchen/02E0CC2D-DE46-4236-BC95-B3C1C07DE13B.jpeg",
       "KITCHENS/B&B - Larkin Kitchen/1D714CDE-ECC0-40E7-99D1-1DA7A3E40800.jpeg",
@@ -478,7 +478,7 @@ const projects = [
     ],
     investment: "$50,000–$65,000",
     duration: "6 weeks",
-    video: "KITCHENS/B&B - Oleg Kitchen /IMG_9321.mov",
+    video: "KITCHENS/B&B - Oleg Kitchen /IMG_9321.mp4",
     images: [
       "KITCHENS/B&B - Oleg Kitchen /05B686C2-2287-4232-894A-C6AE7F9593C9.jpeg",
       "KITCHENS/B&B - Oleg Kitchen /19E15506-CB9C-4968-80AF-78DD7337A12B.jpeg",
@@ -513,7 +513,7 @@ const projects = [
     ],
     investment: "$75,000–$100,000",
     duration: "9 weeks",
-    video: "KITCHENS/B&B - Prager-kitchen/fb608850f7a54cb99f98a76a6a90a86c.mov",
+    video: "KITCHENS/B&B - Prager-kitchen/fb608850f7a54cb99f98a76a6a90a86c.mp4",
     images: [
       "KITCHENS/B&B - Prager-kitchen/0DB0D4AE-8BC9-4CF0-B0BF-A4E71397B8DA.jpeg",
       "KITCHENS/B&B - Prager-kitchen/491D430B-F91A-4517-BE67-AC93BDA19E22.jpeg",
@@ -549,7 +549,7 @@ const projects = [
     ],
     investment: "$65,000–$85,000",
     duration: "8 weeks",
-    video: "KITCHENS/B&B - Slingsby Kitchen/def2b212633147c9abf52dbc2351495e.mov",
+    video: "KITCHENS/B&B - Slingsby Kitchen/def2b212633147c9abf52dbc2351495e.mp4",
     images: [
       "KITCHENS/B&B - Slingsby Kitchen/1CE15249-F293-4B34-B3C6-5F1C86012F0C.jpeg",
       "KITCHENS/B&B - Slingsby Kitchen/28C4BB94-6A47-45B9-9484-523A810360CC.jpeg",
@@ -587,7 +587,7 @@ const projects = [
     ],
     investment: "$40,000–$55,000",
     duration: "5 weeks",
-    video: "BATHROOMS/B&B - Barenbaum -bathroom/IMG_9420.mov",
+    video: "BATHROOMS/B&B - Barenbaum -bathroom/IMG_9420.mp4",
     images: [
       "BATHROOMS/B&B - Barenbaum -bathroom/20417733-E7F8-46EA-BCD5-6F86787E240D.jpeg",
       "BATHROOMS/B&B - Barenbaum -bathroom/2EFDC7C1-6273-4F20-9553-CAF6F32F2084.jpeg",
@@ -651,7 +651,7 @@ const projects = [
     ],
     investment: "$42,000–$58,000",
     duration: "5 weeks",
-    video: "BATHROOMS/B&B - Bridle hall-bathroom/a3bfa0877c2e49cbb0bbe1b84cd55709.mov",
+    video: "BATHROOMS/B&B - Bridle hall-bathroom/a3bfa0877c2e49cbb0bbe1b84cd55709.mp4",
     images: [
       "BATHROOMS/B&B - Bridle hall-bathroom/163A65E7-E665-4FE1-AF20-D2BD1B85F3B9.jpeg",
       "BATHROOMS/B&B - Bridle hall-bathroom/19F8E7EB-0C5C-4FEF-8C46-DE28227D9DDE.jpeg",
@@ -811,7 +811,7 @@ const projects = [
     ],
     investment: "$50,000–$68,000",
     duration: "6 weeks",
-    video: "BATHROOMS/B&B - Giedrycz Master bathroom/IMG_2372.mov",
+    video: "BATHROOMS/B&B - Giedrycz Master bathroom/IMG_2372.mp4",
     images: [
       "BATHROOMS/B&B - Giedrycz Master bathroom/1CCAA2C7-7DAC-4C75-8F5D-50098700FD18.jpg",
       "BATHROOMS/B&B - Giedrycz Master bathroom/37E32F50-DDEA-4743-A20C-E1BA2381C3DE.jpg",
@@ -845,7 +845,7 @@ const projects = [
     ],
     investment: "$55,000–$70,000",
     duration: "7 weeks",
-    video: "BATHROOMS/B&B - Guttridge -bathroom/IMG_6132.mov",
+    video: "BATHROOMS/B&B - Guttridge -bathroom/IMG_6132.mp4",
     images: [
       "BATHROOMS/B&B - Guttridge -bathroom/IMG_6078.jpg",
       "BATHROOMS/B&B - Guttridge -bathroom/IMG_6080.jpg",
@@ -877,7 +877,7 @@ const projects = [
     ],
     investment: "$42,000–$58,000",
     duration: "5 weeks",
-    video: "BATHROOMS/B&B - Hartka-bathroom/IMG_4014.mov",
+    video: "BATHROOMS/B&B - Hartka-bathroom/IMG_4014.mp4",
     images: [
       "BATHROOMS/B&B - Hartka-bathroom/0DFF0DCA-8172-45BF-9C23-55A9229A3245.jpeg",
       "BATHROOMS/B&B - Hartka-bathroom/2A735720-0A0E-41D2-8B33-D2497910A738.jpeg",
@@ -941,7 +941,7 @@ const projects = [
     ],
     investment: "$42,000–$58,000",
     duration: "5 weeks",
-    video: "BATHROOMS/B&B - Kaarby-bathroom/v15025gf0000d5lqd3vog65khasgnfbg.mov",
+    video: "BATHROOMS/B&B - Kaarby-bathroom/v15025gf0000d5lqd3vog65khasgnfbg.mp4",
     images: [
       "BATHROOMS/B&B - Kaarby-bathroom/1BC906A9-6171-4884-B786-75B737522F80.jpeg",
       "BATHROOMS/B&B - Kaarby-bathroom/397D7DB3-6550-4EDE-84DE-F39942BBE71E.jpeg",

@@ -2,11 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <link rel="icon" type="image/png" href="../IMAGES/bandbassociates.png">
+  <link rel="apple-touch-icon" href="../IMAGES/bandbassociates.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Title and meta set dynamically by JS -->
   <title>Journal | B&B Associates Creations</title>
   <meta name="description" content="Expert insights on luxury kitchen and bathroom remodeling from B&B Associates Creations.">
-  <link id="canonical" rel="canonical" href="https://bbassociatescreations.com/journal/article.html">
+  <link id="canonical" rel="canonical" href="https://bbassociatescreations.com/blog/article.html">
   <meta property="og:type" content="article">
   <meta id="og-title" property="og:title" content="Journal | B&B Associates Creations">
   <meta id="og-description" property="og:description" content="Expert insights on luxury remodeling from B&B Associates Creations.">
@@ -327,7 +329,7 @@
   <!-- ── NAVIGATION ──────────────────────────────────────── -->
   <nav class="nav" role="navigation" aria-label="Main navigation">
     <a href="../" class="nav-logo" aria-label="B&B Associates Creations home">
-      <img src="../IMAGES/bb-logo-white.png" alt="B&B Associates Creations" class="nav-logo-img">
+      <img src="../IMAGES/bb-logo-white.webp" alt="B&B Associates Creations" class="nav-logo-img">
     </a>
 
     <div class="nav-links" role="list">
@@ -512,7 +514,7 @@
       document.title = `${article.title} | B&B Associates Creations`;
       document.querySelector('meta[name="description"]').content = article.excerpt;
       document.getElementById('canonical').href =
-        `https://bbassociatescreations.com/journal/article.html?id=${article.id}`;
+        `https://bbassociatescreations.com/blog/article.html?id=${article.id}`;
       document.getElementById('og-title').content = document.title;
       document.getElementById('og-description').content = article.excerpt;
       document.getElementById('og-image').content = article.heroImage;
@@ -659,6 +661,6 @@
 
   <script src="../js/init.js"></script>
   <script src="../js/analytics.js"></script>
-  <script>(function(){var logo=document.querySelector(".nav-logo");if(!logo)return;var clicks=0,timer=null;logo.addEventListener("click",function(e){e.preventDefault();clicks++;if(timer)clearTimeout(timer);if(clicks>=6){clicks=0;window.location.href="/admin/index.html";return;}timer=setTimeout(function(){clicks=0;},3000);});})()</script>
+  <script>(function(){var logo=document.querySelector(".nav-logo");if(!logo)return;var clicks=0,timer=null;logo.addEventListener("click",function(e){clicks++;if(timer)clearTimeout(timer);if(clicks>=6){e.preventDefault();clicks=0;window.location.href="/admin/index.html";return;}timer=setTimeout(function(){clicks=0;},3000);});})()</script>
 </body>
 </html>

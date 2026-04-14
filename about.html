@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <link rel="icon" type="image/png" href="IMAGES/bandbassociates.png">
+  <link rel="apple-touch-icon" href="IMAGES/bandbassociates.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About B&B Associates | Family-Owned Design-Build Contractor | Philadelphia</title>
   <meta name="description" content="Meet the team behind B&B Associates Creations. Family-owned since 1999, we've completed 1,200+ luxury kitchen and bathroom renovations across Montgomery County, Bucks County, and the Main Line.">
@@ -12,7 +14,7 @@
   <meta property="og:description" content="Meet the team behind B&B Associates Creations. Family-owned since 1999, we've completed 1,200+ luxury kitchen and bathroom renovations across Montgomery County, Bucks County, and the Main Line.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://bbassociatescreations.com/about.html">
-  <meta property="og:image" content="https://bbassociatescreations.com/IMAGES/Custom-Kitchen-Ambler-Pa.png">
+  <meta property="og:image" content="https://bbassociatescreations.com/IMAGES/Custom-Kitchen-Ambler-Pa.webp">
   <meta property="og:site_name" content="B&amp;B Associates Creations">
   <meta property="og:locale" content="en_US">
 
@@ -20,7 +22,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="About B&amp;B Associates | Family-Owned Design-Build Contractor | Philadelphia">
   <meta name="twitter:description" content="Meet the team behind B&amp;B Associates Creations. Family-owned since 1999, we've completed 1,200+ luxury kitchen and bathroom renovations across Montgomery County, Bucks County, and the Main Line.">
-  <meta name="twitter:image" content="https://bbassociatescreations.com/IMAGES/Custom-Kitchen-Ambler-Pa.png">
+  <meta name="twitter:image" content="https://bbassociatescreations.com/IMAGES/Custom-Kitchen-Ambler-Pa.webp">
 
   <!-- Geo -->
   <meta name="geo.region" content="US-PA">
@@ -1027,6 +1029,10 @@
     }
 
     @media (max-width: 768px) {
+      .about-hero-content {
+        text-align: center;
+        width: 100%;
+      }
       .about-team-grid,
       .about-values-grid {
         grid-template-columns: 1fr;
@@ -1070,7 +1076,7 @@
   <!-- ── NAVIGATION ──────────────────────────────────────── -->
   <nav class="nav" role="navigation" aria-label="Main navigation">
     <a href="/" class="nav-logo" aria-label="B&B Associates Creations home">
-      <img src="IMAGES/bb-logo-white.png" alt="B&B Associates Creations" class="nav-logo-img">
+      <img src="IMAGES/bb-logo-white.webp" alt="B&B Associates Creations" class="nav-logo-img">
     </a>
 
     <div class="nav-links" role="list">
@@ -1375,7 +1381,7 @@
         <!-- Image column -->
         <div class="about-diff-image fade-in fade-in-delay-2">
           <div class="about-diff-image-frame">
-            <img src="IMAGES/BarbulescuFamily.jpg" alt="Barbulescu family — founders of B&amp;B Associates Creations, luxury remodeling contractors serving Montgomery County and Bucks County PA since 1999" width="475" height="594" loading="lazy">
+            <img src="IMAGES/BarbulescuFamily.webp" alt="Barbulescu family — founders of B&amp;B Associates Creations, luxury remodeling contractors serving Montgomery County and Bucks County PA since 1999" width="475" height="594" loading="lazy">
           </div>
         </div>
       </div>
@@ -1448,7 +1454,7 @@
         <!-- Image -->
         <div class="about-showroom-image fade-in">
           <div class="about-showroom-image-frame">
-            <img src="IMAGES/Showroom.jpg" alt="B&amp;B Associates Creations design showroom in Ambler PA — luxury kitchen and bathroom materials, surfaces, and fixtures" width="522" height="653" loading="lazy">
+            <img src="IMAGES/Showroom.webp" alt="B&amp;B Associates Creations design showroom in Ambler PA — luxury kitchen and bathroom materials, surfaces, and fixtures" width="522" height="653" loading="lazy">
           </div>
         </div>
 
@@ -1536,7 +1542,7 @@
             <a href="about.html" class="footer-link">About</a>
             <a href="contact.html" class="footer-link">Contact</a>
             <a href="estimator.html" class="footer-link">Online Estimator</a>
-            <a href="journal/index.html" class="footer-link">Blog</a>
+            <a href="blog/index.html" class="footer-link">Blog</a>
           </nav>
         </div>
 
@@ -1661,6 +1667,6 @@
     })();
   </script>
 
-<script>(function(){var logo=document.querySelector(".nav-logo");if(!logo)return;var clicks=0,timer=null;logo.addEventListener("click",function(e){e.preventDefault();clicks++;if(timer)clearTimeout(timer);if(clicks>=6){clicks=0;window.location.href="/admin/index.html";return;}timer=setTimeout(function(){clicks=0;},3000);});})()</script>
+<script>(function(){var logo=document.querySelector(".nav-logo");if(!logo)return;var clicks=0,timer=null;logo.addEventListener("click",function(e){clicks++;if(timer)clearTimeout(timer);if(clicks>=6){e.preventDefault();clicks=0;window.location.href="/admin/index.html";return;}timer=setTimeout(function(){clicks=0;},3000);});})()</script>
 </body>
 </html>
