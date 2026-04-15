@@ -411,7 +411,7 @@ const projects = [
     ],
     investment: "$70,000–$90,000",
     duration: "9 weeks",
-    video: "KITCHENS/B&B - Njani Peterson Kitchen /IMG_5528.MOV",
+    video: null, /* file missing from server */
     images: [
       "KITCHENS/B&B - Njani Peterson Kitchen /13AB3ECD-C8EF-49B0-B794-DB2CE47818B6.jpeg",
       "KITCHENS/B&B - Njani Peterson Kitchen /2A2214FF-C4F8-4664-BED0-DE1007134A68.jpeg",
@@ -587,7 +587,7 @@ const projects = [
     ],
     investment: "$40,000–$55,000",
     duration: "5 weeks",
-    video: "BATHROOMS/B&B - Barenbaum -bathroom/IMG_9420.mp4",
+    video: null, /* file missing from server */
     images: [
       "BATHROOMS/B&B - Barenbaum -bathroom/20417733-E7F8-46EA-BCD5-6F86787E240D.jpeg",
       "BATHROOMS/B&B - Barenbaum -bathroom/2EFDC7C1-6273-4F20-9553-CAF6F32F2084.jpeg",

@@ -722,13 +722,23 @@
         const inView = isCardInViewport(card, VIEWPORT_VIDEO_MARGIN);
 
         if (inView) {
-          if (!video.src || video.src.length === 0) {
+          if (video.dataset.videoFailed) {
+            // permanently failed — skip, keep thumbnail visible
+          } else if (!video.src || video.src.length === 0) {
             const src = video.dataset.videoSrc;
             video.src = src;
             video.load();
             video.addEventListener('canplay', function onCanplay() {
               video.removeEventListener('canplay', onCanplay);
               runPortfolioVideoViewportCheck();
+            }, { once: true });
+            video.addEventListener('error', function onVideoError() {
+              video.removeEventListener('error', onVideoError);
+              video.dataset.videoFailed = 'true';
+              video.classList.remove('is-visible');
+              if (inner) inner.classList.remove('has-video-playing');
+              const idx = playingVideos.findIndex(p => p.video === video);
+              if (idx !== -1) playingVideos.splice(idx, 1);
             }, { once: true });
           } else {
             inViewWithVideo.push({ card, video, inner });

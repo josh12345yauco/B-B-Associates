@@ -613,9 +613,10 @@
           <h2 id="gallery-heading" class="headline-reveal" style="font-family:var(--font-display);font-size:var(--text-h2);color:var(--color-white);font-weight:var(--weight-light);padding:0 var(--grid-padding);"><span class="line-wrap"><span class="line-inner">The Full Picture</span></span></h2>
           <div class="gallery-grid">
             ${project.video ? `
-              <div class="gallery-item reveal">
-                <video autoplay muted loop playsinline>
-                  <source src="${project.video}" type="video/mp4">
+              <div class="gallery-item reveal" id="project-video-wrap">
+                <video autoplay muted loop playsinline
+                  onerror="document.getElementById('project-video-wrap').style.display='none'">
+                  <source src="${project.video}" type="${project.video.toLowerCase().endsWith('.mov') ? 'video/quicktime' : 'video/mp4'}">
                 </video>
               </div>
             ` : ''}
