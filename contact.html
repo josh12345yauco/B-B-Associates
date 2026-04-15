@@ -918,7 +918,7 @@
       }
     })();
 
-    /* ── Submit: save lead to localStorage ── */
+    /* ── Submit: save lead to localStorage + Supabase + GHL ── */
     var form = document.getElementById('contact-page-form');
     if (!form) return;
     form.addEventListener('submit', function(e) {
@@ -935,10 +935,25 @@
         leads.unshift(data);
         localStorage.setItem('bb_leads', JSON.stringify(leads));
         if (window.BB && window.BB.Supabase) BB.Supabase.insertLead(data);
+
+        /* ── Also submit to GHL for email alerts ── */
+        var ghlBody = new FormData();
+        ghlBody.append('first_name', data.firstName);
+        ghlBody.append('last_name', data.lastName);
+        ghlBody.append('phone', data.phone);
+        ghlBody.append('email', data.email);
+        ghlBody.append('message', data.description);
+        ghlBody.append('formId', 'Ey8fdi6O3JIdS1xYUhkw');
+        ghlBody.append('location_id', '');
+        fetch('https://links.legacylinqdigital.com/widget/form/Ey8fdi6O3JIdS1xYUhkw', {
+          method: 'POST',
+          body: ghlBody,
+          mode: 'no-cors'
+        }).catch(function(){});
       } catch(err){}
       /* Show success feedback */
       var note = form.querySelector('.form-note');
-      if (note) { note.textContent = '✓ Sent! We\'ll be in touch within 1 hour.'; note.style.color = '#b17500'; }
+      if (note) { note.textContent = '\u2713 Sent! We\'ll be in touch within 1 hour.'; note.style.color = '#b17500'; }
       form.querySelectorAll('input,textarea,select').forEach(function(el){ el.value = ''; });
     });
   })();

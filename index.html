@@ -1162,7 +1162,6 @@
                   <option value="kitchen">Kitchen Remodeling</option>
                   <option value="bathroom">Bathroom Renovation</option>
                   <option value="both">Kitchen + Bathroom</option>
-                  
                 </select>
               </div>
               <div class="field">
@@ -1439,10 +1438,37 @@
       `).join('');
     }
 
-    // Home contact form
+    // Home contact form — save lead + send to GHL for email alerts
     document.getElementById('home-contact-form')?.addEventListener('submit', function(e) {
       e.preventDefault();
-      window.location.href = 'consultation.html';
+      var form = e.target;
+      try {
+        var data = { id: 'lead-' + Date.now(), date: new Date().toISOString(), status: 'new', type: 'contact', source: 'Home Page' };
+        form.querySelectorAll('[name]').forEach(function(el){ data[el.name] = el.value.trim(); });
+        data.firstName   = data.first_name || '';
+        data.lastName    = data.last_name  || '';
+        data.phone       = data.phone      || '';
+        data.email       = data.email      || '';
+        data.description = data.message    || '';
+        var leads = JSON.parse(localStorage.getItem('bb_leads') || '[]');
+        leads.unshift(data);
+        localStorage.setItem('bb_leads', JSON.stringify(leads));
+        if (window.BB && window.BB.Supabase) BB.Supabase.insertLead(data);
+
+        var ghlBody = new FormData();
+        ghlBody.append('first_name', data.firstName);
+        ghlBody.append('last_name', data.lastName);
+        ghlBody.append('phone', data.phone);
+        ghlBody.append('email', data.email);
+        ghlBody.append('message', data.description);
+        ghlBody.append('formId', 'Ey8fdi6O3JIdS1xYUhkw');
+        fetch('https://links.legacylinqdigital.com/widget/form/Ey8fdi6O3JIdS1xYUhkw', {
+          method: 'POST', body: ghlBody, mode: 'no-cors'
+        }).catch(function(){});
+      } catch(err){}
+      var note = form.querySelector('.form-note');
+      if (note) { note.textContent = '\u2713 Sent! We\'ll be in touch within 1 hour.'; note.style.color = '#b17500'; }
+      form.querySelectorAll('input,textarea,select').forEach(function(el){ el.value = ''; });
     });
 
     // Recent projects carousel arrows
@@ -1460,6 +1486,24 @@
       recentNext.addEventListener('click', () => {
         recentCarousel.scrollBy({ left: getScrollAmount(), behavior: 'smooth' });
       });
+    }
+
+    // On mobile, start carousel centered on 2nd card (partial | full | partial)
+    if (recentCarousel && window.innerWidth <= 640) {
+      function scrollToSecondCard() {
+        var cards = recentCarousel.querySelectorAll('.recent-project-card');
+        if (cards.length < 2) return;
+        var card = cards[1];
+        var scrollPos = card.offsetLeft - (recentCarousel.offsetWidth - card.offsetWidth) / 2;
+        recentCarousel.style.scrollSnapType = 'none';
+        recentCarousel.scrollLeft = scrollPos;
+        setTimeout(function() { recentCarousel.style.scrollSnapType = 'x mandatory'; }, 100);
+      }
+      if (document.readyState === 'complete') {
+        scrollToSecondCard();
+      } else {
+        window.addEventListener('load', scrollToSecondCard);
+      }
     }
 
     // ── FAQ Accordion ──────────────────────────────────────
@@ -2678,11 +2722,13 @@
 
     @media (max-width: 640px) {
       .recent-project-card {
-        flex: 0 0 82vw;
+        flex: 0 0 55vw;
+        scroll-snap-align: center;
       }
       .recent-projects-carousel {
-        padding-inline: 9vw;
-        scroll-padding-inline: 9vw;
+        padding-inline: 0;
+        scroll-padding-inline: 0;
+        scroll-snap-type: x mandatory;
       }
     }
 
@@ -3738,8 +3784,8 @@
     @media(max-width:900px) { .contact-grid { grid-template-columns: 1fr; } .form-row { grid-template-columns: 1fr; } }
     @media (max-width: 767px) {
       .contact-section .container {
-        padding-left: 5px;
-        padding-right: 5px;
+        padding-left: var(--grid-padding, 20px);
+        padding-right: var(--grid-padding, 20px);
       }
       .contact-form-col,
       .contact-form {
