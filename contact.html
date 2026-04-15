@@ -131,6 +131,32 @@
       margin-bottom: var(--sp-4);
     }
 
+    .contact-hero-cta {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+      margin-top: var(--sp-6, 24px);
+    }
+
+    .contact-hero-cta-text {
+      font-family: var(--font-body, sans-serif);
+      font-size: 0.85rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--color-gold, #b17500);
+    }
+
+    .contact-hero-arrow {
+      color: var(--color-gold, #b17500);
+      animation: bounceDown 1.6s ease-in-out infinite;
+    }
+
+    @keyframes bounceDown {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(8px); }
+    }
+
     .contact-hero p.contact-hero-sub {
       font-family: var(--font-display);
       font-size: var(--text-h4);
@@ -654,6 +680,10 @@
       </span></span>
     </div>
     <p class="contact-hero-sub reveal">We'd love to hear about your project.</p>
+    <div class="contact-hero-cta reveal">
+      <span class="contact-hero-cta-text">Fill out the form below</span>
+      <svg class="contact-hero-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="m19 12-7 7-7-7"/></svg>
+    </div>
   </section>
 
   <!-- ── CONTACT GRID ──────────────────────────────────────── -->
