@@ -1118,7 +1118,7 @@
           </div>
 
           <div class="contact-form-col reveal">
-            <form class="contact-form" id="home-contact-form" novalidate>
+            <div class="contact-form">
               <h3 class="contact-form-title">Schedule Your Free Consultation</h3>
               <p class="contact-form-or">or if you want an instant estimate</p>
               <a href="estimator.html" class="btn-glasi btn-glasi-dark contact-estimator-btn">
@@ -1137,40 +1137,24 @@
                   <span class="text-bottom">Online Estimator</span>
                 </span>
               </a>
-              <div class="form-row">
-                <div class="field">
-                  <label for="home-first">First Name</label>
-                  <input type="text" id="home-first" name="first_name" placeholder="Jane" autocomplete="given-name" required>
-                </div>
-                <div class="field">
-                  <label for="home-last">Last Name</label>
-                  <input type="text" id="home-last" name="last_name" placeholder="Smith" autocomplete="family-name" required>
-                </div>
-              </div>
-              <div class="field">
-                <label for="home-phone">Phone Number</label>
-                <input type="tel" id="home-phone" name="phone" placeholder="(215) 555-0100" autocomplete="tel" required>
-              </div>
-              <div class="field">
-                <label for="home-email">Email Address</label>
-                <input type="email" id="home-email" name="email" placeholder="jane@email.com" autocomplete="email" required>
-              </div>
-              <div class="field">
-                <label for="home-project">Project Type</label>
-                <select id="home-project" name="project_type">
-                  <option value="" disabled selected>Select project type</option>
-                  <option value="kitchen">Kitchen Remodeling</option>
-                  <option value="bathroom">Bathroom Renovation</option>
-                  <option value="both">Kitchen + Bathroom</option>
-                </select>
-              </div>
-              <div class="field">
-                <label for="home-message">Tell Us About Your Project (optional)</label>
-                <textarea id="home-message" name="message" rows="3" placeholder="Briefly describe your vision, timeline, or any questions..."></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary" style="width:100%; color:#ffffff;">Request Free Consultation →</button>
-              <p class="form-note">We respond within 1 hour. No spam. No pressure.</p>
-            </form>
+              <iframe
+                src="https://links.legacylinqdigital.com/widget/form/Ey8fdi6O3JIdS1xYUhkw"
+                style="width:100%;height:810px;border:none;border-radius:0;display:block"
+                id="inline-Ey8fdi6O3JIdS1xYUhkw"
+                data-layout="{'id':'INLINE'}"
+                data-trigger-type="alwaysShow"
+                data-trigger-value=""
+                data-activation-type="alwaysActivated"
+                data-activation-value=""
+                data-deactivation-type="neverDeactivate"
+                data-deactivation-value=""
+                data-form-name="Contact Us"
+                data-height="810"
+                data-layout-iframe-id="inline-Ey8fdi6O3JIdS1xYUhkw"
+                data-form-id="Ey8fdi6O3JIdS1xYUhkw"
+                title="Contact Us"
+              ></iframe>
+            </div>
           </div>
         </div>
       </div>
@@ -1437,39 +1421,6 @@
         </a>
       `).join('');
     }
-
-    // Home contact form — save lead + send to GHL for email alerts
-    document.getElementById('home-contact-form')?.addEventListener('submit', function(e) {
-      e.preventDefault();
-      var form = e.target;
-      try {
-        var data = { id: 'lead-' + Date.now(), date: new Date().toISOString(), status: 'new', type: 'contact', source: 'Home Page' };
-        form.querySelectorAll('[name]').forEach(function(el){ data[el.name] = el.value.trim(); });
-        data.firstName   = data.first_name || '';
-        data.lastName    = data.last_name  || '';
-        data.phone       = data.phone      || '';
-        data.email       = data.email      || '';
-        data.description = data.message    || '';
-        var leads = JSON.parse(localStorage.getItem('bb_leads') || '[]');
-        leads.unshift(data);
-        localStorage.setItem('bb_leads', JSON.stringify(leads));
-        if (window.BB && window.BB.Supabase) BB.Supabase.insertLead(data);
-
-        var ghlBody = new FormData();
-        ghlBody.append('first_name', data.firstName);
-        ghlBody.append('last_name', data.lastName);
-        ghlBody.append('phone', data.phone);
-        ghlBody.append('email', data.email);
-        ghlBody.append('message', data.description);
-        ghlBody.append('formId', 'Ey8fdi6O3JIdS1xYUhkw');
-        fetch('https://links.legacylinqdigital.com/widget/form/Ey8fdi6O3JIdS1xYUhkw', {
-          method: 'POST', body: ghlBody, mode: 'no-cors'
-        }).catch(function(){});
-      } catch(err){}
-      var note = form.querySelector('.form-note');
-      if (note) { note.textContent = '\u2713 Sent! We\'ll be in touch within 1 hour.'; note.style.color = '#b17500'; }
-      form.querySelectorAll('input,textarea,select').forEach(function(el){ el.value = ''; });
-    });
 
     // Recent projects carousel arrows
     const recentCarousel = document.querySelector('.recent-projects-carousel');
@@ -2722,13 +2673,14 @@
 
     @media (max-width: 640px) {
       .recent-project-card {
-        flex: 0 0 55vw;
+        flex: 0 0 62vw;
         scroll-snap-align: center;
       }
       .recent-projects-carousel {
-        padding-inline: 0;
+        padding-inline: 19vw;
         scroll-padding-inline: 0;
         scroll-snap-type: x mandatory;
+        gap: 10px;
       }
     }
 
@@ -3836,12 +3788,17 @@
     var carousel = document.querySelector('.recent-projects-carousel');
     if (!carousel) return;
 
+    function encodePath(p) {
+      return p.split('/').map(function(seg){ return encodeURIComponent(seg); }).join('/');
+    }
     carousel.innerHTML = cards.map(function(p){
-      var videoSrc = 'portfolio/' + p.video;
+      var videoSrc = 'portfolio/' + encodePath(p.video);
+      var posterSrc = p.thumbnail ? 'portfolio/' + encodePath(p.thumbnail) : '';
       var projectUrl = 'portfolio/project.html?id=' + p.id;
+      var posterAttr = posterSrc ? ' poster="' + posterSrc + '"' : '';
       return '<a href="' + projectUrl + '" class="recent-project-card">' +
         '<div class="recent-project-img-wrap">' +
-          '<video src="' + videoSrc + '" autoplay loop muted playsinline></video>' +
+          '<video src="' + videoSrc + '" autoplay loop muted playsinline' + posterAttr + '></video>' +
         '</div></a>';
     }).join('');
   } catch(e){}
@@ -3871,5 +3828,6 @@
 })();
 </script>
 <script>(function(){var logo=document.querySelector(".nav-logo");if(!logo)return;var clicks=0,timer=null;logo.addEventListener("click",function(e){clicks++;if(timer)clearTimeout(timer);if(clicks>=6){e.preventDefault();clicks=0;window.location.href="/admin/index.html";return;}timer=setTimeout(function(){clicks=0;},3000);});})()</script>
+<script src="https://links.legacylinqdigital.com/js/form_embed.js"></script>
 </body>
 </html>
