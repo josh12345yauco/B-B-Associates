@@ -97,10 +97,11 @@ BB.Panels.initAnalytics = function () {
   var ltbody = document.getElementById('analytics-locations-tbody');
   if (ltbody) {
     if (locations.length === 0) {
-      ltbody.innerHTML = '<tr><td colspan="4" style="padding:24px;text-align:center;color:#888;">No location data. Visitors must allow geolocation.</td></tr>';
+      ltbody.innerHTML = '<tr><td colspan="4" style="padding:24px;text-align:center;color:#888;">No location data yet.</td></tr>';
     } else {
       ltbody.innerHTML = locations.slice(0, 50).map(function (loc) {
-        return '<tr><td>' + esc(loc.path) + '</td><td>' + (loc.lat != null ? loc.lat.toFixed(4) : '—') + '</td><td>' + (loc.lng != null ? loc.lng.toFixed(4) : '—') + '</td><td>' + fmtDate(loc.ts) + '</td></tr>';
+        var place = [loc.city, loc.region, loc.country].filter(Boolean).join(', ') || '—';
+        return '<tr><td>' + esc(loc.path) + '</td><td>' + esc(place) + '</td><td>' + (loc.lat != null ? loc.lat.toFixed(4) : '—') + ', ' + (loc.lng != null ? loc.lng.toFixed(4) : '—') + '</td><td>' + fmtDate(loc.ts) + '</td></tr>';
       }).join('');
     }
   }

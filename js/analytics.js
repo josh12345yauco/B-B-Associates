@@ -86,21 +86,23 @@
     }, true);
   }
 
-  // ── Optional: location (one-time, may prompt) ─────────────
-  if (typeof navigator !== 'undefined' && navigator.geolocation && navigator.geolocation.getCurrentPosition) {
-    navigator.geolocation.getCurrentPosition(
-      function (pos) {
+  // ── IP-based geolocation (no prompt, approximate city/region) ──
+  try {
+    fetch('https://ipapi.co/json/')
+      .then(function (r) { return r.json(); })
+      .then(function (geo) {
         var data = getData();
         pushAndCap(data.locations, {
           path: path,
-          lat: pos.coords.latitude,
-          lng: pos.coords.longitude,
+          city: geo.city || '',
+          region: geo.region || '',
+          country: geo.country_name || '',
+          lat: geo.latitude || null,
+          lng: geo.longitude || null,
           ts: new Date().toISOString()
         }, MAX_LOCATIONS);
         setData(data);
-      },
-      function () {},
-      { maximumAge: 60000, timeout: 5000 }
-    );
-  }
+      })
+      .catch(function () {});
+  } catch (e) {}
 })();
