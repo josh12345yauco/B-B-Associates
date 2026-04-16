@@ -642,6 +642,7 @@
       position: relative;
       background: #D6D0C8;
       overflow: hidden;
+      max-height: 540px;
     }
 
     .about-diff-image-frame::before {
@@ -649,6 +650,8 @@
       position: absolute;
       inset: 0;
       background: linear-gradient(135deg, rgba(182,117,57,0.08) 0%, transparent 60%);
+      pointer-events: none;
+      z-index: 2;
     }
 
     /* Gold offset border */
@@ -664,6 +667,9 @@
     .about-diff-image-frame img {
       width: 100%;
       height: auto;
+      max-height: 540px;
+      object-fit: contain;
+      object-position: center top;
       display: block;
       position: relative;
       z-index: 1;
@@ -1183,7 +1189,7 @@
           </div>
           <div class="about-story-col about-story-col--media">
             <div class="about-story-media">
-              <img src="B&amp;BAssociatesOwners.jpg" alt="B&amp;B Associates Creations founders — luxury kitchen and bathroom remodeling contractors in Ambler, PA" width="550" height="400" loading="lazy">
+              <img src="/B&amp;BAssociatesOwners.jpg" alt="B&amp;B Associates Creations founders — luxury kitchen and bathroom remodeling contractors in Ambler, PA" width="550" height="400" loading="lazy">
             </div>
           </div>
         </div>
