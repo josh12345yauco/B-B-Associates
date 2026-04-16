@@ -445,37 +445,37 @@
 
             <a href="portfolio/index.html" class="recent-project-card">
               <div class="recent-project-img-wrap">
-                <video data-src="portfolio/videos/36c5e0c2f36f4633967755048c653e60.mp4" loop muted playsinline preload="none" poster="portfolio/videos/36c5e0c2f36f4633967755048c653e60-poster.jpg"></video>
+                <video src="portfolio/videos/36c5e0c2f36f4633967755048c653e60.mp4" autoplay loop muted playsinline preload="auto" poster="portfolio/videos/36c5e0c2f36f4633967755048c653e60-poster.jpg"></video>
               </div>
             </a>
 
             <a href="portfolio/index.html" class="recent-project-card">
               <div class="recent-project-img-wrap">
-                <video data-src="portfolio/videos/39dfe7ffc6aa44a78f81ed2a0004c83c.mp4" loop muted playsinline preload="none" poster="portfolio/videos/39dfe7ffc6aa44a78f81ed2a0004c83c-poster.jpg"></video>
+                <video src="portfolio/videos/39dfe7ffc6aa44a78f81ed2a0004c83c.mp4" autoplay loop muted playsinline preload="auto" poster="portfolio/videos/39dfe7ffc6aa44a78f81ed2a0004c83c-poster.jpg"></video>
               </div>
             </a>
 
             <a href="portfolio/index.html" class="recent-project-card">
               <div class="recent-project-img-wrap">
-                <video data-src="portfolio/videos/a3bfa0877c2e49cbb0bbe1b84cd55709.mp4" loop muted playsinline preload="none" poster="portfolio/videos/a3bfa0877c2e49cbb0bbe1b84cd55709-poster.jpg"></video>
+                <video src="portfolio/videos/a3bfa0877c2e49cbb0bbe1b84cd55709.mp4" autoplay loop muted playsinline preload="auto" poster="portfolio/videos/a3bfa0877c2e49cbb0bbe1b84cd55709-poster.jpg"></video>
               </div>
             </a>
 
             <a href="portfolio/index.html" class="recent-project-card">
               <div class="recent-project-img-wrap">
-                <video data-src="portfolio/videos/def2b212633147c9abf52dbc2351495e.mp4" loop muted playsinline preload="none" poster="portfolio/videos/def2b212633147c9abf52dbc2351495e-poster.jpg"></video>
+                <video src="portfolio/videos/def2b212633147c9abf52dbc2351495e.mp4" autoplay loop muted playsinline preload="auto" poster="portfolio/videos/def2b212633147c9abf52dbc2351495e-poster.jpg"></video>
               </div>
             </a>
 
             <a href="portfolio/index.html" class="recent-project-card">
               <div class="recent-project-img-wrap">
-                <video data-src="portfolio/videos/fb608850f7a54cb99f98a76a6a90a86c.mp4" loop muted playsinline preload="none" poster="portfolio/videos/fb608850f7a54cb99f98a76a6a90a86c-poster.jpg"></video>
+                <video src="portfolio/videos/fb608850f7a54cb99f98a76a6a90a86c.mp4" autoplay loop muted playsinline preload="auto" poster="portfolio/videos/fb608850f7a54cb99f98a76a6a90a86c-poster.jpg"></video>
               </div>
             </a>
 
             <a href="portfolio/index.html" class="recent-project-card">
               <div class="recent-project-img-wrap">
-                <video data-src="portfolio/videos/v15025gf0000d5lqd3vog65khasgnfbg.mp4" loop muted playsinline preload="none" poster="portfolio/videos/v15025gf0000d5lqd3vog65khasgnfbg-poster.jpg"></video>
+                <video src="portfolio/videos/v15025gf0000d5lqd3vog65khasgnfbg.mp4" autoplay loop muted playsinline preload="auto" poster="portfolio/videos/v15025gf0000d5lqd3vog65khasgnfbg-poster.jpg"></video>
               </div>
             </a>
           </div>
@@ -1262,36 +1262,12 @@
   <script src="js/projects-data.js"></script>
   <script src="js/data-layer.js"></script>
 
-  <!-- Lazy-load carousel videos: load all when section enters viewport -->
+  <!-- Carousel videos: ensure autoplay fires on all cards -->
   <script>
     (function () {
-      var shell = document.querySelector('.recent-projects-shell');
-      if (!shell) return;
-
-      function loadAll() {
-        shell.querySelectorAll('video[data-src]').forEach(function (v) {
-          if (v.dataset.src && (!v.src || v.src === window.location.href)) {
-            v.src = v.dataset.src;
-            v.load();
-            v.play().catch(function () {});
-          }
-        });
-      }
-
-      // Load all videos the moment the carousel section scrolls into view
-      var obs = new IntersectionObserver(function (entries) {
-        if (entries[0].isIntersecting) {
-          loadAll();
-          obs.disconnect();
-        }
-      }, { rootMargin: '200px' });
-      obs.observe(shell);
-
-      // Also load any stragglers when the user scrolls the carousel horizontally
-      var carousel = shell.querySelector('.recent-projects-carousel');
-      if (carousel) {
-        carousel.addEventListener('scroll', loadAll, { passive: true, once: true });
-      }
+      document.querySelectorAll('.recent-project-card video').forEach(function (v) {
+        v.play().catch(function () {});
+      });
     })();
   </script>
 
