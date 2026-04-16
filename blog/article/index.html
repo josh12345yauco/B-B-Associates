@@ -420,7 +420,7 @@
             <a href="/about/" class="footer-link">About</a>
             <a href="/contact/" class="footer-link">Contact</a>
             <a href="/estimator/" class="footer-link">Online Estimator</a>
-            <a href="/service-areas/index/" class="footer-link">Journal</a>
+            <a href="/blog/" class="footer-link">Journal</a>
           </nav>
         </div>
 
@@ -512,7 +512,7 @@
         <div class="not-found">
           <h1>Article Not Found</h1>
           <p style="color:var(--color-text);margin-bottom:var(--sp-6);">We couldn't find that article. Browse all of our insights below.</p>
-          <a href="/service-areas/index/" class="phil-btn phil-btn-fill"><span class="phil-fill"></span><span class="phil-label">View All Articles</span></a>
+          <a href="/blog/" class="phil-btn phil-btn-fill"><span class="phil-fill"></span><span class="phil-label">View All Articles</span></a>
         </div>`;
     } else {
       // ── SET META DYNAMICALLY ──────────────────────
@@ -556,7 +556,7 @@
 
       // ── BUILD TAGS HTML ───────────────────────────
       const tagsHtml = article.tags.map(tag =>
-        `<a href="/service-areas/index/?filter=${tag}" class="article-tag">${tag}</a>`
+        `<a href="/blog/?filter=${tag}" class="article-tag">${tag}</a>`
       ).join('');
 
       // ── BUILD RELATED SIDEBAR ─────────────────────
@@ -583,7 +583,7 @@
           </div>
           <div class="article-hero-overlay"></div>
           <div class="article-hero-content">
-            <a href="/service-areas/index/" class="article-hero-back">Back to Journal</a>
+            <a href="/blog/" class="article-hero-back">Back to Journal</a>
             <p class="article-hero-category">${article.category}</p>
             <h1 class="article-hero-title">${article.title}</h1>
             <div class="article-hero-meta">
@@ -631,12 +631,12 @@
               <div class="sidebar-section" style="margin-top:var(--sp-8);">
                 <p class="sidebar-title">Browse by Category</p>
                 <div class="sidebar-cats">
-                  <a href="/service-areas/index/?filter=kitchen" class="sidebar-cat">Kitchen</a>
-                  <a href="/service-areas/index/?filter=bathroom" class="sidebar-cat">Bathroom</a>
-                  <a href="/service-areas/index/?filter=design" class="sidebar-cat">Design</a>
-                  <a href="/service-areas/index/?filter=cost" class="sidebar-cat">Cost Guides</a>
-                  <a href="/service-areas/index/?filter=mainline" class="sidebar-cat">Main Line</a>
-                  <a href="/service-areas/index/?filter=bucks" class="sidebar-cat">Bucks County</a>
+                  <a href="/blog/?filter=kitchen" class="sidebar-cat">Kitchen</a>
+                  <a href="/blog/?filter=bathroom" class="sidebar-cat">Bathroom</a>
+                  <a href="/blog/?filter=design" class="sidebar-cat">Design</a>
+                  <a href="/blog/?filter=cost" class="sidebar-cat">Cost Guides</a>
+                  <a href="/blog/?filter=mainline" class="sidebar-cat">Main Line</a>
+                  <a href="/blog/?filter=bucks" class="sidebar-cat">Bucks County</a>
                 </div>
               </div>
 

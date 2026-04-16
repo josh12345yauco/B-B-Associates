@@ -324,19 +324,19 @@
 
   <!-- ── NAVIGATION ──────────────────────────────────────── -->
   <nav class="nav" role="navigation" aria-label="Main navigation">
-    <a href="../" class="nav-logo" aria-label="B&B Associates Creations home">
+    <a href="/" class="nav-logo" aria-label="B&B Associates Creations home">
       <img src="/IMAGES/bb-logo-white.webp" alt="B&B Associates Creations" class="nav-logo-img">
     </a>
 
     <div class="nav-links" role="list">
-      <a href="../" class="nav-link" role="listitem">Home</a>
+      <a href="/" class="nav-link" role="listitem">Home</a>
       <a href="/services/" class="nav-link" role="listitem">Services</a>
       <div class="nav-item" role="listitem">
-        <a href="/service-areas/index/" class="nav-link has-dropdown">Portfolio <span class="dropdown-arrow"></span></a>
+        <a href="/portfolio/" class="nav-link has-dropdown">Portfolio <span class="dropdown-arrow"></span></a>
         <div class="nav-dropdown">
-          <a href="/service-areas/index/">All Projects</a>
-          <a href="/service-areas/index/?filter=kitchen">Kitchens</a>
-          <a href="/service-areas/index/?filter=bathroom">Bathrooms</a>
+          <a href="/portfolio/">All Projects</a>
+          <a href="/portfolio/?filter=kitchen">Kitchens</a>
+          <a href="/portfolio/?filter=bathroom">Bathrooms</a>
         </div>
       </div>
       <div class="nav-item" role="listitem">
@@ -363,14 +363,14 @@
   <!-- Mobile Nav Overlay -->
   <div class="nav-mobile" role="dialog" aria-label="Mobile navigation">
     <nav class="nav-mobile-links">
-      <a href="../" class="nav-mobile-link">Home</a>
+      <a href="/" class="nav-mobile-link">Home</a>
       <a href="/services/" class="nav-mobile-link">Services</a>
       <div class="nav-mobile-item">
         <a class="nav-mobile-link has-dropdown">Portfolio <span class="mobile-dropdown-arrow"></span></a>
         <div class="mobile-dropdown">
-          <a href="/service-areas/index/">All Projects</a>
-          <a href="/service-areas/index/?filter=kitchen">Kitchens</a>
-          <a href="/service-areas/index/?filter=bathroom">Bathrooms</a>
+          <a href="/portfolio/">All Projects</a>
+          <a href="/portfolio/?filter=kitchen">Kitchens</a>
+          <a href="/portfolio/?filter=bathroom">Bathrooms</a>
         </div>
       </div>
       <div class="nav-mobile-item">
@@ -415,10 +415,10 @@
         <div class="footer-col">
           <p class="footer-col-title">Navigation</p>
           <nav class="footer-links" aria-label="Footer navigation">
-            <a href="../" class="footer-link">Home</a>
+            <a href="/" class="footer-link">Home</a>
             <a href="/services/" class="footer-link">Services</a>
             <a href="/showroom/" class="footer-link">Showroom</a>
-            <a href="/service-areas/index/" class="footer-link">Portfolio</a>
+            <a href="/portfolio/" class="footer-link">Portfolio</a>
             <a href="/about/" class="footer-link">About</a>
             <a href="/contact/" class="footer-link">Contact</a>
             <a href="/estimator/" class="footer-link">Online Estimator</a>
@@ -510,7 +510,7 @@
         <div class="not-found">
           <h1>Project Not Found</h1>
           <p style="color:var(--color-text);margin-bottom:var(--sp-6);">We couldn't find that project. Browse all of our work below.</p>
-          <a href="/service-areas/index/" class="phil-btn phil-btn-fill"><span class="phil-fill"></span><span class="phil-label">View All Projects</span></a>
+          <a href="/portfolio/" class="phil-btn phil-btn-fill"><span class="phil-fill"></span><span class="phil-label">View All Projects</span></a>
         </div>`;
     } else {
       // ── SET META DYNAMICALLY ──────────────────────
@@ -565,7 +565,7 @@
         <section class="project-info-section">
         <div class="project-info-header" style="max-width: var(--grid-max); margin: 0 auto; padding: var(--sp-9) var(--grid-padding) 0;">
           <nav class="breadcrumb" aria-label="Breadcrumb">
-            <a href="/service-areas/index/">Portfolio</a>
+            <a href="/portfolio/">Portfolio</a>
             <span class="breadcrumb-sep">›</span>
             <span>${project.title}</span>
           </nav>
