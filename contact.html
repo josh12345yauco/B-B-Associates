@@ -434,7 +434,15 @@
 
     .contact-form textarea {
       resize: vertical;
-      min-height: 120px;
+      min-height: 180px;
+    }
+
+    @media (max-width: 768px) {
+      .contact-form input,
+      .contact-form select,
+      .contact-form textarea {
+        font-size: 16px;
+      }
     }
 
     .form-privacy {
@@ -913,7 +921,7 @@
         { value: 'bathroom', label: 'Bathroom Renovation' },
         { value: 'both',     label: 'Kitchen + Bathroom'  }
       ]},
-      { id: 'f-message', type: 'textarea', name: 'message',      label: 'Tell Us About Your Project (optional)', placeholder: 'Briefly describe your vision, timeline, or any questions...', required: false, rows: 3 }
+      { id: 'f-message', type: 'textarea', name: 'message',      label: 'Tell Us About Your Project (optional)', placeholder: 'Briefly describe your vision, timeline, or any questions...', required: false, rows: 6 }
     ];
 
     function getConfig() {
