@@ -1,0 +1,1200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/png" href="/IMAGES/bandbassociates.png">
+  <link rel="apple-touch-icon" href="/IMAGES/bandbassociates.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kitchen & Bathroom Remodeling Services | Montgomery County & Bucks County | B&B Associates</title>
+  <meta name="description" content="Full-service luxury kitchen and bathroom renovations across Montgomery County, Bucks County, and the Main Line. Design-build contractor with 25+ years experience. Free estimates.">
+  <link rel="canonical" href="https://bbassociatescreations.com/services/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Kitchen &amp; Bathroom Remodeling Services | Montgomery County &amp; Bucks County | B&amp;B Associates">
+  <meta property="og:description" content="Full-service luxury kitchen and bathroom renovations across Montgomery County, Bucks County, and the Main Line. Design-build contractor with 25+ years experience. Free estimates.">
+  <meta property="og:image" content="https://bbassociatescreations.com/IMAGES/Custom-Kitchen-Ambler-Pa.webp">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://bbassociatescreations.com/services/">
+  <meta property="og:site_name" content="B&amp;B Associates Creations">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Kitchen &amp; Bathroom Remodeling Services | B&amp;B Associates | Ambler, PA">
+  <meta name="twitter:description" content="Full-service luxury kitchen and bathroom renovations across Montgomery County, Bucks County, and the Main Line. Design-build contractor with 25+ years experience.">
+  <meta name="twitter:image" content="https://bbassociatescreations.com/IMAGES/Custom-Kitchen-Ambler-Pa.webp">
+
+  <!-- Geo -->
+  <meta name="geo.region" content="US-PA">
+  <meta name="geo.placename" content="Ambler, Pennsylvania">
+  <meta name="geo.position" content="40.1537;-75.2249">
+  <meta name="ICBM" content="40.1537, -75.2249">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/design-system.css">
+  <link rel="stylesheet" href="/css/components.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HomeAndConstructionBusiness",
+    "name": "B&B Associates Creations",
+    "url": "https://bbassociatescreations.com",
+    "telephone": "+12674028758",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "1147 E Welsh Rd",
+      "addressLocality": "Ambler",
+      "addressRegion": "PA",
+      "postalCode": "19002"
+    },
+    "areaServed": ["Montgomery County PA", "Bucks County PA", "Main Line Philadelphia PA"],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5.0",
+      "reviewCount": "183",
+      "bestRating": "5"
+    }
+  }
+  </script>
+
+  <!-- BreadcrumbList Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://bbassociatescreations.com/" },
+      { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://bbassociatescreations.com/services/" }
+    ]
+  }
+  </script>
+
+  <style>
+    /* Global `overflow-x: hidden` on html/body breaks `position: sticky` — use clip on this page only */
+    @supports (overflow: clip) {
+      html:has(body.page-services),
+      body.page-services {
+        overflow-x: clip;
+      }
+    }
+
+    /* ── HERO INTRO ANIMATIONS ─────────────────────────────── */
+    @keyframes heroFadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes heroSlideUpFade {
+      from { opacity: 0; transform: translateY(24px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes heroSlideUpFadeLarge {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes heroSlideUpFadeSmall {
+      from { opacity: 0; transform: translateY(16px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes heroScaleIn {
+      from { opacity: 0; transform: scale(0.96); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    /* ── HERO ──────────────────────────────────────────────── */
+    .hero-services {
+      min-height: 90vh;
+      height: 90vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: -webkit-sticky;
+      position: sticky;
+      top: 0;
+      align-self: flex-start;
+      z-index: 0;
+      background: var(--color-bg);
+    }
+    .hero-services .hero-media {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+    }
+    .hero-services .hero-media::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to bottom, rgba(26,28,35,0.88) 0%, rgba(26,28,35,0.78) 50%, rgba(26,28,35,0.94) 100%);
+      z-index: 1;
+    }
+    .hero-services .hero-content {
+      position: absolute;
+      inset: 0;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: var(--sp-10) var(--grid-padding);
+      padding-top: 220px;
+    }
+    .hero-headline {
+      font-family: var(--font-display);
+      font-size: var(--text-h1);
+      font-weight: var(--weight-light);
+      font-style: italic;
+      color: var(--color-white);
+      line-height: var(--leading-tight);
+      margin-bottom: var(--sp-5);
+    }
+    .hero-subtitle {
+      font-family: var(--font-sans);
+      font-size: var(--text-body-lg);
+      color: rgba(255, 255, 255, 1);
+      max-width: 580px;
+      margin: 0 auto 30px;
+      line-height: var(--leading-body);
+    }
+    .hero-breadcrumb { margin-bottom: var(--sp-6); }
+
+    /* Hero intro animations — different for each element */
+    .hero-services .hero-breadcrumb.reveal {
+      animation: heroFadeIn 0.8s var(--ease-out-quart) both;
+    }
+    .hero-services .hero-content > .section-label.reveal {
+      animation: heroSlideUpFadeSmall 0.8s var(--ease-out-quart) 0.15s both;
+    }
+    .hero-services .hero-headline.reveal {
+      animation: heroSlideUpFadeLarge 1s var(--ease-out-quart) 0.3s both;
+    }
+    .hero-services .hero-subtitle.reveal {
+      animation: heroSlideUpFade 0.9s var(--ease-out-quart) 0.5s both;
+    }
+    .hero-services .hero-trust-row.reveal {
+      animation: heroSlideUpFadeSmall 0.8s var(--ease-out-quart) 0.7s both;
+    }
+
+    /* Trust badges */
+    .hero-trust-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 0;
+      margin-top: 0;
+    }
+    .hero-trust-item {
+      display: flex;
+      align-items: center;
+      gap: var(--sp-2);
+      padding: var(--sp-3) var(--sp-6);
+      font-family: var(--font-sans);
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--color-text);
+      border-right: 1px solid rgba(255,255,255,0.12);
+    }
+    .hero-trust-item:last-child { border-right: none; }
+    .hero-trust-item .hero-trust-star { color: var(--color-gold); }
+
+    /* Hero buttons */
+    .hero-btn-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: var(--sp-4);
+    }
+
+    /* ── SERVICE SECTIONS ──────────────────────────────────── */
+    .service-section {
+      position: relative;
+      z-index: 1;
+      padding: var(--section-padding-y) 0;
+      background: var(--color-bg);
+    }
+    #bathrooms {
+      background: var(--color-bg);
+      padding: var(--sp-10) 0;
+    }
+    .service-section + .service-section { border-top: 1px solid var(--color-border-dim); }
+    .service-header-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--sp-8);
+      align-items: center;
+    }
+    .service-header-img {
+      width: 100%;
+      height: 420px;
+      object-fit: cover;
+      display: block;
+    }
+    .service-headline {
+      font-family: var(--font-display);
+      font-size: var(--text-h2);
+      font-weight: var(--weight-light);
+      font-style: italic;
+      color: var(--color-white);
+      line-height: var(--leading-tight);
+      margin-bottom: var(--sp-5);
+    }
+    .service-body {
+      font-size: var(--text-body-lg);
+      color: var(--color-text);
+      line-height: var(--leading-body);
+      max-width: 640px;
+    }
+    .scope-grid {
+      display: grid;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      grid-template-columns: repeat(2,1fr);
+      gap: var(--sp-4);
+      margin-bottom: var(--sp-7);
+    }
+    .scope-item { border:none; border-radius:0; padding: var(--sp-4); }
+    .scope-item:hover { border-color:transparent; background:transparent; }
+    .scope-icon { border:none; background:none; width:auto; height:auto; }
+    .scope-icon svg { width:32px; height:32px; fill:none; stroke: var(--color-gold); stroke-width:1.5; stroke-linecap:round; stroke-linejoin:round; }
+    .service-cost-row { display:flex; align-items:center; gap: var(--sp-8); flex-wrap:wrap; }
+    .service-cost { display:flex; align-items:baseline; gap: var(--sp-3); }
+    .service-cost-label { font-family: var(--font-sans); font-size: var(--text-label); letter-spacing: var(--tracking-wider); text-transform:uppercase; color: var(--color-text-dim); }
+    .service-cost-value { font-family: var(--font-display); font-size: var(--text-h3); font-weight: var(--weight-light); color: var(--color-gold); line-height:1; }
+
+    #bathrooms .scope-title,
+    #bathrooms .scope-desc {
+      color: rgba(255, 255, 255, 1);
+    }
+
+    /* ── LIGHT SECTION (cream) ─────────────────────────────── */
+    .service-section-light { background: #FAF8F6; border-top: none !important; }
+    .service-section-light .service-headline { color:#1a1a1a; }
+    .service-section-light .service-body { color:#4B5563; }
+    .service-section-light .scope-title { color:#1a1a1a; }
+    .service-section-light .scope-desc { color:#4B5563; }
+    .service-section-light .scope-icon svg { fill: none; stroke: var(--color-gold); }
+    .service-section-light .service-cost-label { color:#6B7280; }
+    .service-section-light .section-label { color: var(--color-gold); }
+
+    /* Service header grid — slide-in animations (scroll-triggered via GSAP) */
+    #kitchens .service-header-grid .service-header,
+    #kitchens .service-header-grid .service-header-img,
+    #bathrooms .service-header-grid .service-header,
+    #bathrooms .service-header-grid .service-header-img {
+      will-change: transform, opacity;
+    }
+
+    /* ── PROCESS ───────────────────────────────────────────── */
+    .process-section {
+      padding: var(--section-padding-y) 0;
+      background: #ffffff;
+      z-index: 2;
+      position: relative;
+    }
+    .process-headline {
+      font-family: var(--font-display);
+      font-size: var(--text-h2);
+      font-weight: var(--weight-light);
+      font-style: italic;
+      color: #1a1a1a;
+      line-height: var(--leading-tight);
+      margin-bottom: var(--sp-8);
+    }
+    .process-grid {
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      gap: var(--sp-6);
+    }
+    .process-card {
+      padding: var(--sp-6) 0 var(--sp-6) var(--sp-5);
+      border-left: 2px solid var(--color-gold);
+    }
+    .process-card-number { font-family: var(--font-display); font-size:48px; font-weight:var(--weight-light); color: var(--color-gold); line-height:1; margin-bottom: var(--sp-4); }
+    .process-card-title { font-family: var(--font-display); font-size: var(--text-h4); color:#1a1a1a; font-weight: var(--weight-medium); margin-bottom: var(--sp-3); }
+    .process-card-body { font-size: var(--text-body); color:#4B5563; line-height: var(--leading-body); }
+    .process-section .section-label { color:#6B7280; }
+
+    /* ── WHY B&B (dark blue) ─────────────────────────────────── */
+    .why-section {
+      position: relative;
+      z-index: 1;
+      background: #1A1C23;
+      padding: var(--section-padding-y) 0;
+      border-top: 1px solid var(--color-border-dim);
+    }
+    .why-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: clamp(40px,6vw,100px);
+      align-items: start;
+    }
+    .why-headline {
+      font-family: var(--font-display);
+      font-size: clamp(2rem,3.5vw,3rem);
+      font-weight: 400;
+      font-style: italic;
+      color: var(--color-white);
+      line-height: 1.15;
+      margin: 0 0 var(--sp-3);
+    }
+    .why-sub {
+      font-family: var(--font-sans);
+      font-size: 0.9rem;
+      font-weight: 300;
+      line-height: 1.8;
+      color: var(--color-text);
+      margin-bottom: var(--sp-6);
+    }
+    .why-list { display:flex; flex-direction:column; gap: var(--sp-5); }
+    .why-item { display:flex; align-items:flex-start; gap: var(--sp-4); }
+    .why-check { flex-shrink:0; width:20px; height:20px; margin-top:2px; color: var(--color-gold); }
+    .why-text-title { font-family: var(--font-sans); font-size:0.88rem; font-weight:600; color: var(--color-white); margin-bottom:2px; }
+    .why-text-body { font-family: var(--font-sans); font-size:0.85rem; font-weight:300; line-height:1.65; color: var(--color-text); }
+
+    /* Right column: stats */
+    .why-stats { display:grid; grid-template-columns:1fr 1fr; gap:1px; background:rgba(182,117,57,0.12); }
+    .why-stat { background: var(--color-bg); padding: var(--sp-7) var(--sp-5); text-align:center; }
+    .why-stat-num { font-family: var(--font-display); font-size:clamp(2rem,4vw,3.2rem); font-weight:300; font-style:italic; color: var(--color-gold); line-height:1; margin-bottom: var(--sp-2); display:block; }
+    .why-stat-label { font-family: var(--font-sans); font-size:0.7rem; font-weight:500; letter-spacing:0.14em; text-transform:uppercase; color: var(--color-text); }
+
+    /* ── SERVICE AREAS (light grey) ──────────────────────────── */
+    .areas-section {
+      position: relative;
+      z-index: 1;
+      background: #E8E8E8;
+      padding: var(--section-padding-y) 0;
+    }
+    .areas-section .section-label { color: var(--color-gold); }
+    .areas-h2 {
+      font-family: var(--font-display);
+      font-size: clamp(2rem,3.5vw,3rem);
+      font-weight:400;
+      font-style:italic;
+      color:#1a1a1a;
+      margin: 0 0 var(--sp-8);
+    }
+    .areas-grid { display:grid; grid-template-columns:repeat(3,1fr); gap: var(--sp-7); }
+    .areas-county-title {
+      font-family: var(--font-sans);
+      font-size:0.72rem;
+      font-weight:600;
+      letter-spacing:0.14em;
+      text-transform:uppercase;
+      color: var(--color-gold);
+      padding-bottom: var(--sp-3);
+      border-bottom: 1px solid rgba(182,117,57,0.25);
+      margin-bottom: var(--sp-4);
+    }
+    .areas-county-sub {
+      font-family: var(--font-sans);
+      font-size:0.75rem;
+      font-weight:600;
+      letter-spacing:0.08em;
+      text-transform:uppercase;
+      color:#6B7280;
+      margin-top: var(--sp-4);
+      margin-bottom: var(--sp-2);
+      font-style:italic;
+    }
+    .areas-town-list { display:flex; flex-direction:column; gap: var(--sp-2); }
+    .areas-town-link {
+      font-family: var(--font-sans);
+      font-size:0.88rem;
+      color:#4B5563;
+      text-decoration:none;
+      transition: color 0.25s ease;
+    }
+    .areas-town-link:hover { color: var(--color-gold); }
+
+    /* ── TESTIMONIAL (dark blue) ──────────────────────────────── */
+    .services-testimonial {
+      position: sticky;
+      top: 0;
+      z-index: 1;
+      background: #1A1C23;
+      padding: var(--section-padding-y) 0;
+      border-top: 1px solid var(--color-border-dim);
+      border-bottom: 1px solid var(--color-border-dim);
+    }
+    .testimonial-inner {
+      max-width: 820px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .testimonial-stars {
+      display: flex;
+      justify-content: center;
+      gap: 4px;
+      margin-bottom: var(--sp-6);
+      color: var(--color-gold);
+      font-size: 20px;
+    }
+    .testimonial-quote {
+      font-family: var(--font-display);
+      font-size: clamp(1.3rem,2.5vw,1.85rem);
+      font-weight:400;
+      font-style:italic;
+      color: var(--color-white);
+      line-height:1.55;
+      margin-bottom: var(--sp-6);
+    }
+    .testimonial-attr {
+      font-family: var(--font-sans);
+      font-size:0.78rem;
+      font-weight:500;
+      letter-spacing:0.12em;
+      text-transform:uppercase;
+      color: var(--color-gold);
+    }
+
+    /* ── FAQ (white) ────────────────────────────────────────── */
+    .faq-section {
+      position: relative;
+      z-index: 1;
+      background: #ffffff;
+      padding: var(--section-padding-y) 0;
+    }
+    .faq-section .section-label { color: var(--color-gold); }
+    .faq-h2 {
+      font-family: var(--font-display);
+      font-size: clamp(2rem,3.5vw,3rem);
+      font-weight:400;
+      font-style:italic;
+      color:#1a1a1a;
+      margin: 0 0 var(--sp-8);
+    }
+    .faq-list { max-width:820px; }
+    .faq-item { border-bottom: 1px solid #e5e7eb; }
+    .faq-question {
+      width:100%;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding: var(--sp-5) 0;
+      font-family: var(--font-sans);
+      font-size:var(--text-body-lg);
+      font-weight:500;
+      color:#1a1a1a;
+      cursor:pointer;
+      text-align:left;
+      background:none;
+      border:none;
+      gap: var(--sp-4);
+      transition: color var(--dur-fast) ease;
+    }
+    .faq-question:hover { color: var(--color-gold); }
+    .faq-icon {
+      width:20px; height:20px; position:relative; flex-shrink:0;
+    }
+    .faq-icon::before,.faq-icon::after {
+      content:''; position:absolute; background:var(--color-gold); border-radius:1px;
+      transition: transform var(--dur-fast) ease, opacity var(--dur-fast) ease;
+    }
+    .faq-icon::before { width:100%; height:1px; top:50%; left:0; transform:translateY(-50%); }
+    .faq-icon::after  { width:1px; height:100%; left:50%; top:0; transform:translateX(-50%); }
+    .faq-item.open .faq-icon::after { opacity:0; transform:translateX(-50%) rotate(90deg); }
+    .faq-answer {
+      max-height:0; overflow:hidden;
+      transition: max-height var(--dur-normal) var(--ease-out-quart);
+    }
+    .faq-answer-inner {
+      padding:0 0 var(--sp-5);
+      font-family: var(--font-sans);
+      font-size: var(--text-body);
+      color:#4B5563;
+      line-height: var(--leading-body);
+    }
+    .faq-item.open .faq-answer { max-height:300px; }
+
+    /* ── CTA PANEL ──────────────────────────────────────────── */
+    .cta-panel-ticked { position:relative; z-index:2; }
+    .cta-panel-ticked::before { content:''; position:absolute; inset:24px; border:0.5px solid rgba(255,255,255,0.12); pointer-events:none; z-index:1; }
+    .cta-panel-ticked::after { content:''; position:absolute; inset:20px; pointer-events:none; z-index:2; background: linear-gradient(#fff,#fff) left top/16px 2px no-repeat, linear-gradient(#fff,#fff) left top/2px 16px no-repeat, linear-gradient(#fff,#fff) right top/16px 2px no-repeat, linear-gradient(#fff,#fff) right top/2px 16px no-repeat, linear-gradient(#fff,#fff) left bottom/16px 2px no-repeat, linear-gradient(#fff,#fff) left bottom/2px 16px no-repeat, linear-gradient(#fff,#fff) right bottom/16px 2px no-repeat, linear-gradient(#fff,#fff) right bottom/2px 16px no-repeat; opacity:0.3; }
+
+    /* ── PHIL BUTTONS ───────────────────────────────────────── */
+    .phil-btn { position:relative; display:inline-flex; align-items:center; justify-content:center; padding:16px 36px; font-family:var(--font-sans); font-size:13px; font-weight:600; letter-spacing:0.18em; text-transform:uppercase; text-decoration:none; overflow:hidden; border:none; background:transparent; cursor:pointer; transition:color 0.5s cubic-bezier(0.77,0,0.175,1); }
+    .phil-btn-fill { color:#0a0a0a; }
+    .phil-btn-fill .phil-fill { position:absolute; inset:0; background:#fff; transition:opacity 0.5s cubic-bezier(0.77,0,0.175,1); z-index:0; }
+    .phil-btn-fill .phil-label { position:relative; z-index:3; }
+    .phil-btn-fill::before { content:''; position:absolute; inset:0; border:0.5px solid rgba(255,255,255,0.35); pointer-events:none; z-index:1; }
+    .phil-btn-fill::after { content:''; position:absolute; inset:4px; pointer-events:none; z-index:2; opacity:0; transition:opacity 0.5s cubic-bezier(0.77,0,0.175,1); background: linear-gradient(#fff,#fff) left top/12px 2px no-repeat, linear-gradient(#fff,#fff) left top/2px 12px no-repeat, linear-gradient(#fff,#fff) right top/12px 2px no-repeat, linear-gradient(#fff,#fff) right top/2px 12px no-repeat, linear-gradient(#fff,#fff) left bottom/12px 2px no-repeat, linear-gradient(#fff,#fff) left bottom/2px 12px no-repeat, linear-gradient(#fff,#fff) right bottom/12px 2px no-repeat, linear-gradient(#fff,#fff) right bottom/2px 12px no-repeat; }
+    .phil-btn-fill:hover .phil-fill { opacity:0; } .phil-btn-fill:hover { color:#fff; } .phil-btn-fill:hover::after { opacity:1; }
+    .phil-btn-fill-dark { color:#ffffff; }
+    .phil-btn-fill-dark .phil-fill { background:#1A1C23; }
+    .phil-btn-fill-dark .phil-label { color:#ffffff; }
+    .phil-btn-fill-dark::before { border-color:rgba(26,28,35,0.3); }
+    .phil-btn-fill-dark::after { background: linear-gradient(#1A1C23,#1A1C23) left top/12px 2px no-repeat, linear-gradient(#1A1C23,#1A1C23) left top/2px 12px no-repeat, linear-gradient(#1A1C23,#1A1C23) right top/12px 2px no-repeat, linear-gradient(#1A1C23,#1A1C23) right top/2px 12px no-repeat, linear-gradient(#1A1C23,#1A1C23) left bottom/12px 2px no-repeat, linear-gradient(#1A1C23,#1A1C23) left bottom/2px 12px no-repeat, linear-gradient(#1A1C23,#1A1C23) right bottom/12px 2px no-repeat, linear-gradient(#1A1C23,#1A1C23) right bottom/2px 12px no-repeat; }
+    .phil-btn-fill-dark:hover .phil-fill { opacity:0; } .phil-btn-fill-dark:hover .phil-label { color:#1A1C23; } .phil-btn-fill-dark:hover::after { opacity:1; }
+    .headline-reveal { overflow:hidden; } .headline-reveal .line-wrap { display:block; overflow:hidden; } .headline-reveal .line-inner { display:block; }
+
+    /* ── RESPONSIVE ─────────────────────────────────────────── */
+    @media (max-width: 1024px) {
+      .why-inner { grid-template-columns:1fr; }
+      .why-stats { grid-template-columns:repeat(4,1fr); }
+    }
+    @media (max-width: 768px) {
+      .service-header-grid, .areas-grid { grid-template-columns:1fr; }
+      .service-header-img { height:280px; }
+      .scope-grid { grid-template-columns:1fr; }
+      .process-grid { grid-template-columns:repeat(2,1fr); }
+      .why-stats { grid-template-columns:repeat(2,1fr); }
+
+      /* Hero: full-bleed media under fixed nav; text only starts below nav */
+      .hero-services {
+        position: relative;
+        height: auto;
+        min-height: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        box-sizing: border-box;
+      }
+      main .hero.hero-services .hero-content,
+      .hero-services .hero-content {
+        position: relative;
+        inset: auto;
+        flex: 0 1 auto;
+        justify-content: flex-start;
+        padding-top: calc(var(--nav-bar-offset) + var(--sp-4) + env(safe-area-inset-top, 0px));
+        padding-bottom: var(--sp-7);
+        box-sizing: border-box;
+      }
+
+      .hero-services .hero-breadcrumb { margin-bottom: var(--sp-3); }
+      .hero-services .hero-content > .section-label { margin-bottom: var(--sp-3); font-size: 10px; }
+      .hero-services .hero-headline {
+        font-size: clamp(30px, 8vw, 48px);
+        margin-bottom: var(--sp-3);
+        line-height: 1.12;
+      }
+      .hero-services .hero-subtitle {
+        font-size: clamp(14px, 3.6vw, 18px);
+        margin-bottom: var(--sp-4);
+        line-height: 1.55;
+      }
+
+      /* Trust line: horizontal row (saves vertical space vs stacked) */
+      .hero-services .hero-trust-row {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: var(--sp-1) var(--sp-2);
+        margin-top: var(--sp-1);
+        max-width: 100%;
+      }
+      .hero-services .hero-trust-item {
+        width: auto;
+        flex: 0 1 auto;
+        justify-content: center;
+        padding: var(--sp-2) var(--sp-3);
+        font-size: 0.625rem;
+        letter-spacing: 0.08em;
+        border-bottom: none;
+        border-right: 1px solid rgba(255,255,255,0.12);
+      }
+      .hero-services .hero-trust-item:last-child {
+        border-right: none;
+      }
+    }
+    @media (max-width: 540px) {
+      .process-grid { grid-template-columns:1fr; }
+    }
+  </style>
+</head>
+<body class="page-services">
+
+  <!-- ── NAVIGATION ──────────────────────────────────────── -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <a href="/" class="nav-logo" aria-label="B&B Associates Creations home">
+      <img src="/IMAGES/bb-logo-white.webp" alt="B&B Associates Creations" class="nav-logo-img">
+    </a>
+    <div class="nav-links" role="list">
+      <a href="/" class="nav-link" role="listitem">Home</a>
+      <a href="/services/" class="nav-link active" role="listitem">Services</a>
+      <div class="nav-item" role="listitem">
+        <a href="/portfolio/" class="nav-link has-dropdown">Portfolio <span class="dropdown-arrow"></span></a>
+        <div class="nav-dropdown">
+          <a href="/portfolio/">All Projects</a>
+          <a href="/portfolio/?filter=kitchen">Kitchens</a>
+          <a href="/portfolio/?filter=bathroom">Bathrooms</a>
+        </div>
+      </div>
+      <div class="nav-item" role="listitem">
+        <a href="/about/" class="nav-link has-dropdown">Company <span class="dropdown-arrow"></span></a>
+        <div class="nav-dropdown">
+          <a href="/about/">About B&amp;B</a>
+          <a href="/reviews/">Testimonials</a>
+          <a href="/service-areas/">Service Areas</a>
+        </div>
+      </div>
+      <a href="/contact/" class="nav-link" role="listitem">Contact</a>
+    </div>
+    <div class="nav-right">
+      <a href="tel:+12674028758" class="nav-phone">Call Now</a>
+      <a href="/estimator/" class="nav-cta">Online Estimator</a>
+    </div>
+    <button class="nav-hamburger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Nav -->
+  <div class="nav-mobile" role="dialog" aria-label="Mobile navigation">
+    <nav class="nav-mobile-links">
+      <a href="/" class="nav-mobile-link">Home</a>
+      <a href="/services/" class="nav-mobile-link">Services</a>
+      <div class="nav-mobile-item">
+        <a class="nav-mobile-link has-dropdown">Portfolio <span class="mobile-dropdown-arrow"></span></a>
+        <div class="mobile-dropdown">
+          <a href="/portfolio/">All Projects</a>
+          <a href="/portfolio/?filter=kitchen">Kitchens</a>
+          <a href="/portfolio/?filter=bathroom">Bathrooms</a>
+        </div>
+      </div>
+      <div class="nav-mobile-item">
+        <a class="nav-mobile-link has-dropdown">Company <span class="mobile-dropdown-arrow"></span></a>
+        <div class="mobile-dropdown">
+          <a href="/about/">About B&amp;B</a>
+          <a href="/reviews/">Testimonials</a>
+          <a href="/service-areas/">Service Areas</a>
+        </div>
+      </div>
+      <a href="/contact/" class="nav-mobile-link">Contact</a>
+      <a href="/estimator/" class="nav-mobile-link">Online Estimator</a>
+    </nav>
+    <div class="nav-mobile-footer">
+      <a href="tel:+12674028758" class="nav-mobile-phone">267.402.8758</a>
+      <div class="nav-mobile-socials">
+        <a href="https://instagram.com/bbassociatescreations" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://facebook.com/bbassociatescreations" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- ═══ HERO ═══ -->
+    <section class="hero hero-services">
+      <div class="hero-media">
+        <img src="/IMAGES/ChatGPT Image Mar 4, 2026, 09_51_37 AM.webp" alt="Luxury kitchen by B&B Associates" loading="eager">
+      </div>
+      <div class="hero-content">
+        <nav class="breadcrumb hero-breadcrumb reveal" aria-label="Breadcrumb">
+          <a href="/">Home</a>
+          <span class="breadcrumb-sep">/</span>
+          <span>Services</span>
+        </nav>
+        <p class="section-label reveal">Luxury Design Build Services</p>
+        <h1 class="hero-headline reveal">Kitchen &amp; Bathroom Remodeling</h1>
+        <p class="hero-subtitle reveal">Full-service design-build renovations for discerning homeowners across Montgomery County, Bucks County, and the Philadelphia Main Line. From concept to completion, we handle every detail.</p>
+        <div class="hero-trust-row reveal">
+          <div class="hero-trust-item">25+ Years Experience</div>
+          <div class="hero-trust-item">1,200+ Projects Completed</div>
+          <div class="hero-trust-item"><span class="hero-trust-star">★</span> 5.0 Stars — 180+ Reviews</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ KITCHENS ═══ -->
+    <section id="kitchens" class="service-section service-section-light">
+      <div class="container">
+        <div class="service-header-grid reveal">
+          <div class="service-header">
+            <p class="section-label">Luxury Kitchens</p>
+            <h2 class="service-headline">Luxury Kitchens That Define Your Home</h2>
+            <p class="service-body">Your kitchen is the heart of your home — where family gathers, memories are made, and daily life unfolds. Our design-build approach ensures every element works in harmony, from the first sketch to the final reveal.</p>
+          </div>
+          <img src="portfolio/KITCHENS/B&B - Larkin Kitchen/02E0CC2D-DE46-4236-BC95-B3C1C07DE13B.jpeg" alt="Luxury kitchen remodel by B&B Associates" class="service-header-img" loading="lazy">
+        </div>
+
+        <div class="scope-grid reveal-group">
+          <div class="scope-item">
+            <div class="scope-icon"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="1"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="12" y1="9" x2="12" y2="20"/><circle cx="7.5" cy="14.5" r="0.8"/><circle cx="16.5" cy="14.5" r="0.8"/></svg></div>
+            <div><p class="scope-title">Custom Cabinetry &amp; Storage</p><p class="scope-desc">Hand-selected woods and finishes built to your specifications with soft-close hardware and concealed storage.</p></div>
+          </div>
+          <div class="scope-item">
+            <div class="scope-icon"><svg viewBox="0 0 24 24"><rect x="2" y="11" width="20" height="4" rx="0.5"/><rect x="4" y="15" width="16" height="5" rx="0.5"/><line x1="6" y1="11" x2="6" y2="8"/><line x1="18" y1="11" x2="18" y2="8"/><line x1="4" y1="8" x2="20" y2="8"/></svg></div>
+            <div><p class="scope-title">Premium Countertops</p><p class="scope-desc">Quartzite, marble, granite, and engineered surfaces — sourced from our showroom and fabricated with precision.</p></div>
+          </div>
+          <div class="scope-item">
+            <div class="scope-icon"><svg viewBox="0 0 24 24"><path d="M9 21h6"/><path d="M12 3v2"/><path d="M5 6l1.5 1.5"/><path d="M19 6l-1.5 1.5"/><path d="M8 12a4 4 0 0 1 8 0"/><path d="M7 17h10"/><path d="M12 14v3"/><path d="M9 14.5l-1.5 1.5"/><path d="M15 14.5l1.5 1.5"/></svg></div>
+            <div><p class="scope-title">Lighting Design &amp; Electrical</p><p class="scope-desc">Layered lighting plans — task, ambient, and accent — that elevate function and atmosphere throughout the space.</p></div>
+          </div>
+          <div class="scope-item">
+            <div class="scope-icon"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="18" rx="1"/><rect x="7" y="10" width="10" height="7" rx="0.5"/><line x1="2" y1="7" x2="22" y2="7"/><line x1="7" y1="3" x2="7" y2="7"/><line x1="17" y1="3" x2="17" y2="7"/></svg></div>
+            <div><p class="scope-title">Islands &amp; Layout Optimization</p><p class="scope-desc">Work-triangle analysis, island proportions, and traffic-flow planning tailored to how your household lives.</p></div>
+          </div>
+          <div class="scope-item">
+            <div class="scope-icon"><svg viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="1"/><path d="M7 5v14"/><path d="M17 5v14"/><circle cx="4.5" cy="10" r="1"/><circle cx="4.5" cy="14" r="1"/><path d="M9 9h6"/><path d="M9 12h6"/><path d="M9 15h3"/></svg></div>
+            <div><p class="scope-title">Appliance Integration</p><p class="scope-desc">Professional-grade appliance installation with panel-ready concealment and ventilation design.</p></div>
+          </div>
+          <div class="scope-item">
+            <div class="scope-icon"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="9" height="9" rx="0.5"/><rect x="13" y="2" width="9" height="9" rx="0.5"/><rect x="2" y="13" width="9" height="9" rx="0.5"/><rect x="13" y="13" width="9" height="9" rx="0.5"/></svg></div>
+            <div><p class="scope-title">Flooring &amp; Backsplash</p><p class="scope-desc">Tile, hardwood, and stone selections coordinated across all surfaces for a cohesive, intentional result.</p></div>
+          </div>
+        </div>
+
+        <div class="service-cost-row reveal">
+          <a href="/services/kitchen-remodeling/" class="phil-btn phil-btn-fill phil-btn-fill-dark">
+            <div class="phil-fill"></div>
+            <span class="phil-label">Explore Kitchen Remodeling</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ BATHROOMS ═══ -->
+    <section id="bathrooms" class="service-section">
+      <div class="container">
+        <div class="service-header-grid reveal">
+          <img src="portfolio/BATHROOMS/B&B - Barenbaum -bathroom/6EF2908C-EC4B-41A7-B127-CC5B6C7CA8BB.jpeg" alt="Luxury bathroom renovation by B&B Associates" class="service-header-img" loading="lazy">
+          <div class="service-header">
+            <p class="section-label">Custom Bathrooms</p>
+            <h2 class="service-headline">Spa-Inspired Bathrooms for Everyday Living</h2>
+            <p class="service-body">A B&amp;B bathroom is more than tile and plumbing — it's a private retreat engineered for comfort and calm. We design spa-inspired master baths with custom vanities, frameless glass, heated floors, and rain showers that transform your daily routine.</p>
+          </div>
+        </div>
+
+        <div class="scope-grid reveal-group">
+          <div class="scope-item">
+            <div class="scope-icon"><svg viewBox="0 0 24 24"><rect x="2" y="10" width="20" height="8" rx="1"/><rect x="5" y="6" width="14" height="4" rx="0.5"/><line x1="2" y1="18" x2="2" y2="21"/><line x1="22" y1="18" x2="22" y2="21"/><line x1="12" y1="6" x2="12" y2="4"/><path d="M10 4h4"/></svg></div>
+            <div><p class="scope-title">Custom Vanities &amp; Storage</p><p class="scope-desc">Floating, freestanding, or built-in vanities crafted to your dimensions with integrated storage and premium stone tops.</p></div>
+          </div>
+          <div class="scope-item">
+            <div class="scope-icon"><svg viewBox="0 0 24 24"><path d="M4 20 C4 13 7.5 9 12 8 C16.5 9 20 13 20 20"/><line x1="2" y1="20" x2="22" y2="20"/><path d="M8 8 C8 5.5 9.8 3.5 12 3.5 C14.2 3.5 16 5.5 16 8"/></svg></div>
+            <div><p class="scope-title">Walk-In Showers &amp; Freestanding Tubs</p><p class="scope-desc">Frameless glass enclosures, body jets, rain heads, and soaking tubs — designed for total immersion.</p></div>
+          </div>
+          <div class="scope-item">
+            <div class="scope-icon"><svg viewBox="0 0 24 24"><path d="M3 18 Q3 14 7 12 Q11 10 12 10 Q13 10 17 12 Q21 14 21 18"/><path d="M3 20h18"/><path d="M8 12 L6 6"/><path d="M10 11 L9 5"/><path d="M12 10 L12 4"/><path d="M14 11 L15 5"/><path d="M16 12 L18 6"/></svg></div>
+            <div><p class="scope-title">Heated Floors &amp; Towel Warmers</p><p class="scope-desc">Radiant in-floor heating beneath tile — invisible luxury that transforms cold mornings entirely.</p></div>
+          </div>
+          <div class="scope-item">
+            <div class="scope-icon"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="9" height="9" rx="0.5"/><rect x="13" y="2" width="9" height="9" rx="0.5"/><rect x="2" y="13" width="9" height="9" rx="0.5"/><rect x="13" y="13" width="9" height="9" rx="0.5"/></svg></div>
+            <div><p class="scope-title">Premium Tile &amp; Natural Stone</p><p class="scope-desc">Large-format porcelain, handmade zellige, and natural marble installed with flawless precision.</p></div>
+          </div>
+          <div class="scope-item">
+            <div class="scope-icon"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="14" height="18" rx="0.5"/><line x1="16" y1="7" x2="22" y2="7"/><line x1="16" y1="12" x2="22" y2="12"/><line x1="16" y1="17" x2="22" y2="17"/><line x1="2" y1="8" x2="16" y2="8"/><line x1="2" y1="13" x2="16" y2="13"/></svg></div>
+            <div><p class="scope-title">Complete Waterproofing Systems</p><p class="scope-desc">Industry-leading waterproofing membranes and moisture control behind every surface.</p></div>
+          </div>
+          <div class="scope-item">
+            <div class="scope-icon"><svg viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="14" rx="0.5"/><line x1="4" y1="10" x2="20" y2="10"/><circle cx="9" cy="6.5" r="1.5"/><circle cx="15" cy="6.5" r="1.5"/><path d="M7 17v4"/><path d="M17 17v4"/><path d="M7 21h10"/></svg></div>
+            <div><p class="scope-title">Custom Lighting &amp; Mirror Design</p><p class="scope-desc">Vanity lighting, backlit mirrors, and niche illumination that sets the mood while maximizing function.</p></div>
+          </div>
+        </div>
+
+        <div class="service-cost-row reveal">
+          <a href="/services/custom-bathroom-renovations/" class="phil-btn phil-btn-fill">
+            <div class="phil-fill"></div>
+            <span class="phil-label">Explore Bathroom Renovations</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ PROCESS ═══ -->
+    <section class="process-section">
+      <div class="container">
+        <p class="section-label reveal">The B&amp;B Difference</p>
+        <div class="headline-reveal">
+          <span class="line-wrap"><span class="line-inner">
+            <h2 class="process-headline">One Team. One Vision. One Seamless Experience.</h2>
+          </span></span>
+        </div>
+        <div class="process-grid reveal-group">
+          <div class="process-card">
+            <div class="process-card-number">01</div>
+            <h3 class="process-card-title">Design</h3>
+            <p class="process-card-body">Collaborate with our in-house designers to create your perfect space. We handle 3D renderings, material selection from our showroom, and detailed planning — all before a single wall is touched.</p>
+          </div>
+          <div class="process-card">
+            <div class="process-card-number">02</div>
+            <h3 class="process-card-title">Plan</h3>
+            <p class="process-card-body">Detailed project planning including permits, timelines, and itemized budgets. No surprises — you know exactly what to expect before we begin.</p>
+          </div>
+          <div class="process-card">
+            <div class="process-card-number">03</div>
+            <h3 class="process-card-title">Build</h3>
+            <p class="process-card-body">Our skilled craftsmen bring your vision to life with owner-led oversight on every project. Laurentiu or Michael is on-site — not a site manager you've never met.</p>
+          </div>
+          <div class="process-card">
+            <div class="process-card-number">04</div>
+            <h3 class="process-card-title">Reveal</h3>
+            <p class="process-card-body">Final walkthrough, quality inspection, and handoff. We don't consider it done until you're completely thrilled — and we back every project with our workmanship warranty.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ WHY B&B ═══ -->
+    <section class="why-section">
+      <div class="container">
+        <p class="section-label reveal">Why Choose B&amp;B</p>
+        <div class="why-inner">
+          <!-- Left: benefits -->
+          <div>
+            <h2 class="why-headline reveal">What Separates B&amp;B from Every Other Contractor</h2>
+            <p class="why-sub reveal">After 25 years building kitchens and bathrooms across Philadelphia's finest communities, here's what we've learned: quality isn't just about materials — it's about people, process, and accountability.</p>
+            <ul class="why-list">
+              <li class="why-item reveal">
+                <svg class="why-check" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 10 8 14 16 6"/></svg>
+                <div>
+                  <p class="why-text-title">Dedicated Crews</p>
+                  <p class="why-text-body">The same skilled craftsmen on every project. No revolving door of random subcontractors who don't know your home.</p>
+                </div>
+              </li>
+              <li class="why-item reveal">
+                <svg class="why-check" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 10 8 14 16 6"/></svg>
+                <div>
+                  <p class="why-text-title">In-House Design Team</p>
+                  <p class="why-text-body">Our Creative Director works directly with you. No back-and-forth with outside designers — design and build under one roof.</p>
+                </div>
+              </li>
+              <li class="why-item reveal">
+                <svg class="why-check" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 10 8 14 16 6"/></svg>
+                <div>
+                  <p class="why-text-title">Trade-Level Material Access</p>
+                  <p class="why-text-body">Our Ambler Design Showroom gives you access to 60+ premium suppliers at exclusive trade pricing.</p>
+                </div>
+              </li>
+              <li class="why-item reveal">
+                <svg class="why-check" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 10 8 14 16 6"/></svg>
+                <div>
+                  <p class="why-text-title">Owner-Led Oversight</p>
+                  <p class="why-text-body">Laurentiu or Michael personally oversees every project. You work with decision-makers, not middlemen.</p>
+                </div>
+              </li>
+              <li class="why-item reveal">
+                <svg class="why-check" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 10 8 14 16 6"/></svg>
+                <div>
+                  <p class="why-text-title">Transparent Pricing</p>
+                  <p class="why-text-body">No hidden fees. No surprise change orders. Detailed itemized estimates before work begins — and we stick to them.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!-- Right: stats grid -->
+          <div class="why-stats reveal-group">
+            <div class="why-stat">
+              <span class="why-stat-num">25+</span>
+              <span class="why-stat-label">Years in Business</span>
+            </div>
+            <div class="why-stat">
+              <span class="why-stat-num">1,200+</span>
+              <span class="why-stat-label">Projects Completed</span>
+            </div>
+            <div class="why-stat">
+              <span class="why-stat-num">5.0 ★</span>
+              <span class="why-stat-label">Client Rating</span>
+            </div>
+            <div class="why-stat">
+              <span class="why-stat-num">180+</span>
+              <span class="why-stat-label">Five-Star Reviews</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ SERVICE AREAS ═══ -->
+    <section class="areas-section">
+      <div class="container">
+        <p class="section-label reveal">Where We Work</p>
+        <h2 class="areas-h2 reveal">Proudly Serving Philadelphia's Finest Communities</h2>
+        <div class="areas-grid reveal-group">
+          <div>
+            <p class="areas-county-title">Montgomery County — Primary Service Area</p>
+            <div class="areas-town-list">
+              <a href="/service-areas/ambler-pa-remodeling-contractor/" class="areas-town-link">Ambler (Headquarters)</a>
+              <a href="/service-areas/blue-bell-north-wales-remodeling/" class="areas-town-link">Blue Bell</a>
+              <a href="/service-areas/blue-bell-north-wales-remodeling/" class="areas-town-link">North Wales</a>
+              <a href="/service-areas/lower-gwynedd-pa-remodeling/" class="areas-town-link">Lower Gwynedd</a>
+            </div>
+            <p class="areas-county-sub">Also Serving</p>
+            <div class="areas-town-list">
+              <span class="areas-town-link" style="cursor:default;">Fort Washington · Gwynedd Valley</span>
+              <span class="areas-town-link" style="cursor:default;">Horsham · Lafayette Hill · Dresher</span>
+            </div>
+          </div>
+          <div>
+            <p class="areas-county-title">Bucks County</p>
+            <div class="areas-town-list">
+              <a href="/service-areas/newtown-pa-kitchen-bathroom-remodeling/" class="areas-town-link">Newtown</a>
+              <a href="/service-areas/doylestown-new-hope-kitchen-remodeling/" class="areas-town-link">Doylestown</a>
+              <a href="/service-areas/doylestown-new-hope-kitchen-remodeling/" class="areas-town-link">New Hope</a>
+              <a href="/service-areas/newtown-pa-kitchen-bathroom-remodeling/" class="areas-town-link">Warminster</a>
+              <a href="/service-areas/newtown-pa-kitchen-bathroom-remodeling/" class="areas-town-link">Ivyland</a>
+            </div>
+            <p class="areas-county-sub">Also Serving</p>
+            <div class="areas-town-list">
+              <span class="areas-town-link" style="cursor:default;">Yardley · Upper Makefield</span>
+              <span class="areas-town-link" style="cursor:default;">Solebury · New Britain</span>
+            </div>
+          </div>
+          <div>
+            <p class="areas-county-title">The Main Line</p>
+            <div class="areas-town-list">
+              <a href="/service-areas/wayne-villanova-bathroom-remodeling/" class="areas-town-link">Wayne</a>
+              <a href="/service-areas/wayne-villanova-bathroom-remodeling/" class="areas-town-link">Villanova</a>
+              <a href="/service-areas/" class="areas-town-link">Bryn Mawr</a>
+              <a href="/service-areas/" class="areas-town-link">Gladwyne</a>
+              <a href="/service-areas/" class="areas-town-link">Newtown Square</a>
+            </div>
+            <p class="areas-county-sub">Also Serving</p>
+            <div class="areas-town-list">
+              <span class="areas-town-link" style="cursor:default;">Radnor · Devon · Haverford</span>
+              <span class="areas-town-link" style="cursor:default;">Ardmore · Merion</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ TESTIMONIAL ═══ -->
+    <section class="services-testimonial">
+      <div class="container">
+        <div class="testimonial-inner">
+          <div class="testimonial-stars reveal">★★★★★</div>
+          <p class="testimonial-quote reveal">
+            "The result looks like a 5-star hotel bathroom. I keep walking in just to look at it. Thank you B&amp;B — you exceeded every expectation. Laurentiu was on-site every single day and the craftsmanship is unlike anything we've seen."
+          </p>
+          <p class="testimonial-attr reveal">— Sarah M., Blue Bell PA &nbsp;·&nbsp; Master Bathroom Renovation</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ FAQ ═══ -->
+    <section class="faq-section">
+      <div class="container">
+        <p class="section-label reveal">Common Questions</p>
+        <h2 class="faq-h2 reveal">Answers for Homeowners</h2>
+        <div class="faq-list" id="faq-list">
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              How much does a kitchen remodel cost in Montgomery County?
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-answer" role="region">
+              <div class="faq-answer-inner">
+                Kitchen remodels in Montgomery County typically range from $35,000 to $150,000+ depending on scope, materials, and structural changes. Mid-range renovations in Ambler, Blue Bell, and North Wales average $65,000–$90,000 for a complete transformation. We provide detailed, itemized estimates so you know exactly where every dollar goes before we begin.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              What is design-build and why does it matter?
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-answer" role="region">
+              <div class="faq-answer-inner">
+                Design-build means one company handles both the design and construction of your project. Rather than hiring a separate architect or interior designer who then hands off to a contractor, B&amp;B manages everything in-house. The result: tighter communication, faster timelines, clear accountability, and a final product where design intent and execution are perfectly aligned.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              How long does a bathroom renovation take?
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-answer" role="region">
+              <div class="faq-answer-inner">
+                Most bathroom renovations take 3–6 weeks depending on scope, material lead times, and permit requirements. A powder room refresh may complete in 2 weeks, while a full master bath transformation with custom tile work typically runs 5–7 weeks. We provide a detailed project timeline before work begins and update you throughout the process.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              Do you handle permits and inspections?
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-answer" role="region">
+              <div class="faq-answer-inner">
+                Yes — completely. B&amp;B manages all permit applications, municipal inspections, and code compliance across every township we serve in Montgomery County, Bucks County, and the Main Line. You never have to worry about paperwork or inspections. We handle it all as part of the project.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              What areas do you serve?
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-answer" role="region">
+              <div class="faq-answer-inner">
+                B&amp;B Associates Creations serves Montgomery County (our primary area — headquartered in Ambler), Bucks County, and the Philadelphia Main Line. Our primary towns include Ambler, Blue Bell, North Wales, Lower Gwynedd, Newtown, Doylestown, New Hope, Wayne, Villanova, Bryn Mawr, and Gladwyne. Contact us to confirm service in your area.
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ CTA PANEL ═══ -->
+    <section class="cta-panel cta-panel-ticked">
+      <p class="section-label reveal">Start Your Project</p>
+      <div class="headline-reveal">
+        <span class="line-wrap"><span class="line-inner">
+          <h2 class="cta-panel-title">Ready to Transform Your Kitchen or Bathroom?</h2>
+        </span></span>
+      </div>
+      <p class="cta-panel-body reveal">Tell us about your project and receive a personalized estimate — no obligation, no pressure.</p>
+      <div class="cta-panel-actions reveal">
+        <a href="/estimator/" class="phil-btn phil-btn-fill"><div class="phil-fill"></div><span class="phil-label">Get Your Free Estimate →</span></a>
+        <span class="cta-panel-secondary">or call <a href="tel:+12674028758">267.402.8758</a></span>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top">
+        <h2 class="footer-hero-title">DISCOVER THE WORLD OF POSSIBILITIES WITH B&amp;B</h2>
+        <p class="footer-hero-sub">Luxury kitchen &amp; bathroom remodeling across Montgomery County, Bucks County, and the Philadelphia Main Line.</p>
+      </div>
+      <div class="footer-grid">
+        <div class="footer-col">
+          <p class="footer-col-title">Navigation</p>
+          <nav class="footer-links" aria-label="Footer navigation">
+            <a href="/" class="footer-link">Home</a>
+            <a href="/services/" class="footer-link">Services</a>
+            <a href="/showroom/" class="footer-link">Showroom</a>
+            <a href="/portfolio/" class="footer-link">Portfolio</a>
+            <a href="/about/" class="footer-link">About</a>
+            <a href="/contact/" class="footer-link">Contact</a>
+            <a href="/estimator/" class="footer-link">Online Estimator</a>
+            <a href="/blog/" class="footer-link">Blog</a>
+          </nav>
+        </div>
+        <div class="footer-col">
+          <p class="footer-col-title">Services</p>
+          <nav class="footer-links" aria-label="Services navigation">
+            <a href="/services/" class="footer-link">Luxury Kitchen Remodeling</a>
+            <a href="/services/" class="footer-link">Custom Bathroom Renovations</a>
+            <a href="/showroom/" class="footer-link">Ambler Design Showroom</a>
+            <a href="/reviews/" class="footer-link">Client Reviews</a>
+          </nav>
+        </div>
+        <div class="footer-col">
+          <p class="footer-col-title">Service Areas</p>
+          <nav class="footer-links" aria-label="Service areas navigation">
+            <p class="footer-area-group">Montgomery County</p>
+            <a href="/service-areas/ambler-pa-remodeling-contractor/" class="footer-link">Ambler PA</a>
+            <a href="/service-areas/blue-bell-north-wales-remodeling/" class="footer-link">Blue Bell PA</a>
+            <a href="/service-areas/blue-bell-north-wales-remodeling/" class="footer-link">North Wales PA</a>
+            <a href="/service-areas/lower-gwynedd-pa-remodeling/" class="footer-link">Lower Gwynedd PA</a>
+            <p class="footer-area-group">Bucks County</p>
+            <a href="/service-areas/newtown-pa-kitchen-bathroom-remodeling/" class="footer-link">Newtown PA</a>
+            <a href="/service-areas/doylestown-new-hope-kitchen-remodeling/" class="footer-link">Doylestown PA</a>
+            <a href="/service-areas/doylestown-new-hope-kitchen-remodeling/" class="footer-link">New Hope PA</a>
+            <p class="footer-area-group">Main Line</p>
+            <a href="/service-areas/wayne-villanova-bathroom-remodeling/" class="footer-link">Wayne PA</a>
+            <a href="/service-areas/wayne-villanova-bathroom-remodeling/" class="footer-link">Villanova PA</a>
+            <a href="/service-areas/bryn-mawr-pa-remodeling/" class="footer-link">Bryn Mawr PA</a>
+            <a href="/service-areas/" class="footer-link" style="color:var(--color-gold);">View All Areas →</a>
+          </nav>
+        </div>
+        <div class="footer-col footer-col-stay-informed">
+          <p class="footer-col-title">Stay Connected</p>
+          <p class="footer-newsletter-sub">Design insights, project reveals, and exclusive updates — delivered monthly.</p>
+          <form class="footer-newsletter-form" aria-label="Newsletter signup">
+            <input type="email" placeholder="Your email address" required>
+            <button type="submit">Subscribe</button>
+          </form>
+          <div class="footer-connect-inline">
+            <div class="footer-contact-line"><a href="tel:+12674028758">267.402.8758</a></div>
+            <div class="footer-contact-line"><a href="mailto:bb3associates@gmail.com">bb3associates@gmail.com</a></div>
+            <div class="footer-contact-line"><address>1147 E Welsh Rd, Ambler, PA 19002</address></div>
+            <div class="footer-social-row">
+              <a href="https://instagram.com/bbassociatescreations" class="footer-social-link" target="_blank" rel="noopener" aria-label="B&amp;B Associates on Instagram">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                Instagram
+              </a>
+              <a href="https://facebook.com/bbassociatescreations" class="footer-social-link" target="_blank" rel="noopener" aria-label="B&amp;B Associates on Facebook">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                Facebook
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">&copy; 2026 B&amp;B Associates Creations LLC. All Rights Reserved.</p>
+        <nav class="footer-legal-links" aria-label="Legal">
+          <a href="/privacy-policy/" class="footer-legal-link">Privacy Policy</a>
+          <span class="footer-legal-sep">&middot;</span>
+          <a href="/terms-of-service/" class="footer-legal-link">Terms of Service</a>
+        </nav>
+        <p class="footer-tagline-right">Luxury Design-Build Remodeling — Philadelphia, PA</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script>if(typeof gsap!=='undefined'&&typeof ScrollTrigger!=='undefined')gsap.registerPlugin(ScrollTrigger);</script>
+  <script src="/js/init.js"></script>
+  <script src="/js/analytics.js"></script>
+  <script>
+    // FAQ accordion
+    document.querySelectorAll('.faq-question').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        var item = this.closest('.faq-item');
+        var isOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item.open').forEach(function(el) {
+          el.classList.remove('open');
+          el.querySelector('.faq-question').setAttribute('aria-expanded','false');
+        });
+        if (!isOpen) {
+          item.classList.add('open');
+          this.setAttribute('aria-expanded','true');
+        }
+      });
+    });
+
+    // GSAP animations
+    if (typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined') {
+      gsap.from('.process-grid', {
+        scrollTrigger:{ trigger:'.process-grid', start:'top 80%', toggleActions:'play none none none' },
+        y:40, opacity:0, duration:1, ease:'power2.out'
+      });
+      gsap.from('.why-stats', {
+        scrollTrigger:{ trigger:'.why-stats', start:'top 80%', toggleActions:'play none none none' },
+        y:30, opacity:0, duration:0.8, ease:'power2.out'
+      });
+      // Kitchens: header slides in from left, image from right
+      gsap.from('#kitchens .service-header-grid .service-header', {
+        scrollTrigger: { trigger: '#kitchens .service-header-grid', start: 'top 85%', toggleActions: 'play none none none' },
+        x: -56, opacity: 0, duration: 0.85, ease: 'power2.out'
+      });
+      gsap.from('#kitchens .service-header-grid .service-header-img', {
+        scrollTrigger: { trigger: '#kitchens .service-header-grid', start: 'top 85%', toggleActions: 'play none none none' },
+        x: 56, opacity: 0, duration: 0.85, ease: 'power2.out'
+      });
+      // Bathrooms: image slides in from left, header from right
+      gsap.from('#bathrooms .service-header-grid .service-header-img', {
+        scrollTrigger: { trigger: '#bathrooms .service-header-grid', start: 'top 85%', toggleActions: 'play none none none' },
+        x: -56, opacity: 0, duration: 0.85, ease: 'power2.out'
+      });
+      gsap.from('#bathrooms .service-header-grid .service-header', {
+        scrollTrigger: { trigger: '#bathrooms .service-header-grid', start: 'top 85%', toggleActions: 'play none none none' },
+        x: 56, opacity: 0, duration: 0.85, ease: 'power2.out'
+      });
+    }
+  </script>
+<script>(function(){var logo=document.querySelector(".nav-logo");if(!logo)return;var clicks=0,timer=null;logo.addEventListener("click",function(e){clicks++;if(timer)clearTimeout(timer);if(clicks>=6){e.preventDefault();clicks=0;window.location.href="/admin/index.html";return;}timer=setTimeout(function(){clicks=0;},3000);});})()</script>
+</body>
+</html>

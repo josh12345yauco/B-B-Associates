@@ -1,1 +1,14 @@
 portfolio/KITCHENS/B&B - Njani Peterson Kitchen /IMG_5528.mp4
+
+# Large design files — keep local only
+*.ai
+*.pdf
+*.jp2
+*.zip
+design-estimator/
+retractable-*.jpg
+retractable-*.pdf
+"brightpathwaysPostcard-Final copy.*"
+BrightPathways-Postcard-Final*
+Brochure-BrightPathways-Final*
+StrengthInCare-Postcard-Final*

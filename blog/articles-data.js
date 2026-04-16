@@ -41,7 +41,7 @@ const ARTICLES = [
 
 <h2>Getting an Accurate Estimate</h2>
 <p>The only way to get a truly accurate estimate is through an in-home consultation where we can assess your existing layout, plumbing locations, electrical capacity, and structural opportunities. B&B offers free consultations with no obligation — and we provide fully itemized estimates within 24 hours.</p>
-<p>Ready to get started? <a href="../contact.html">Schedule your free consultation</a> or try our <a href="../estimator.html">online estimator</a> for an instant ballpark.</p>`
+<p>Ready to get started? <a href="/contact/">Schedule your free consultation</a> or try our <a href="/estimator/">online estimator</a> for an instant ballpark.</p>`
   },
   {
     id: "doylestown-historic-homes",
@@ -65,7 +65,7 @@ const ARTICLES = [
 
 <h2>Preserving Character While Upgrading Function</h2>
 <p>The best historic kitchen renovations honor what makes the home special. We've learned to balance period-appropriate design choices — beadboard cabinets, apron-front sinks, brass hardware — with modern performance: induction cooktops, integrated refrigerators, and quartz surfaces that look like soapstone.</p>
-<p>If you're in Doylestown, New Hope, Perkasie, or anywhere in Bucks County with a home that has character worth preserving, we'd love to talk through your project. <a href="../contact.html">Get in touch here.</a></p>`
+<p>If you're in Doylestown, New Hope, Perkasie, or anywhere in Bucks County with a home that has character worth preserving, we'd love to talk through your project. <a href="/contact/">Get in touch here.</a></p>`
   },
   {
     id: "design-build-vs-separate",
@@ -88,7 +88,7 @@ const ARTICLES = [
 
 <h2>Is Design-Build Right for Every Project?</h2>
 <p>For complex bathroom renovations — master bath transformations with custom tile work, frameless glass, heated floors, and high-end fixtures — design-build is almost always the superior model. For simpler cosmetic updates, the distinction matters less.</p>
-<p>If you're considering a significant bathroom renovation in Montgomery County, Bucks County, or the Main Line, we'd be happy to walk you through how our design-build process works. <a href="../contact.html">Schedule a free consultation.</a></p>`
+<p>If you're considering a significant bathroom renovation in Montgomery County, Bucks County, or the Main Line, we'd be happy to walk you through how our design-build process works. <a href="/contact/">Schedule a free consultation.</a></p>`
   },
   {
     id: "bathroom-tile-trends-2025",
@@ -114,7 +114,7 @@ const ARTICLES = [
 <h2>Fluted and Bouclé Textures</h2>
 <p>Vertical fluting is appearing everywhere — on vanity fronts, shower walls, and even bath surrounds. The ribbed texture catches light beautifully and adds depth without pattern. We're pairing it with smooth stone countertops for maximum contrast.</p>
 
-<p>Want to see these trends in person? Visit our Ambler showroom to see full-scale tile vignettes alongside vanities and fixtures. <a href="../showroom.html">Schedule a showroom visit here.</a></p>`
+<p>Want to see these trends in person? Visit our Ambler showroom to see full-scale tile vignettes alongside vanities and fixtures. <a href="/showroom/">Schedule a showroom visit here.</a></p>`
   },
   {
     id: "kitchen-renovation-timeline",
@@ -144,7 +144,7 @@ const ARTICLES = [
 
 <h2>The Realistic Total Timeline</h2>
 <p>From your first consultation to your final walkthrough: plan for 12–20 weeks for a standard kitchen renovation, 20–28 weeks for a complex architectural transformation. The best thing you can do is start the conversation early — especially if you're targeting a spring completion before summer entertaining season.</p>
-<p><a href="../contact.html">Schedule your free consultation</a> to get a project-specific timeline estimate.</p>`
+<p><a href="/contact/">Schedule your free consultation</a> to get a project-specific timeline estimate.</p>`
   },
   {
     id: "main-line-kitchen-neighborhood-guide",
@@ -168,7 +168,7 @@ const ARTICLES = [
 
 <h2>HOA and Historic Considerations</h2>
 <p>Several Main Line communities have architectural review requirements or historic overlay districts. While these typically don't affect interior renovations, exterior changes (new windows during a kitchen expansion) may require approval. B&B's team is familiar with every municipality and will advise you on any approval requirements before work begins.</p>
-<p>Ready to explore your Main Line kitchen renovation? <a href="../contact.html">We'd love to talk.</a></p>`
+<p>Ready to explore your Main Line kitchen renovation? <a href="/contact/">We'd love to talk.</a></p>`
   },
   {
     id: "kitchen-cabinet-trends-2025",
@@ -190,7 +190,7 @@ const ARTICLES = [
 <h2>What's Becoming Dated</h2>
 <p>All-white with white countertops and white subway tile — it was everywhere from 2015 to 2022 and is starting to feel like a decade. If you have it already, some warm accessories and hardware updates can refresh it. If you're designing new, we'd push you toward more layered materials.</p>
 <p>Farmhouse everything — shiplap backsplash, open shelving, barn doors on every cabinet. A few farmhouse elements in the right context are beautiful; a full farmhouse immersion is looking very 2018.</p>
-<p>Have questions about cabinet style for your renovation? We'd love to show you options in our Ambler showroom. <a href="../showroom.html">Book a visit here.</a></p>`
+<p>Have questions about cabinet style for your renovation? We'd love to show you options in our Ambler showroom. <a href="/showroom/">Book a visit here.</a></p>`
   },
   {
     id: "countertop-material-guide",
@@ -217,7 +217,7 @@ const ARTICLES = [
 
 <h2>Our Recommendation</h2>
 <p>For most Main Line and Montgomery County clients who want a premium result with manageable maintenance: quartzite or high-quality engineered quartz. For clients who want a forever kitchen with maximum character: marble or quartzite, sealed properly and embraced for what it is.</p>
-<p>Come visit our showroom to see full-slab displays of each material. <a href="../showroom.html">Book a showroom appointment.</a></p>`
+<p>Come visit our showroom to see full-slab displays of each material. <a href="/showroom/">Book a showroom appointment.</a></p>`
   },
   {
     id: "bathroom-remodeling-roi",
@@ -242,7 +242,7 @@ const ARTICLES = [
 
 <h2>The Right Approach</h2>
 <p>Match the renovation quality to the home's price tier. In a $900K+ Main Line home, marble and high-end fixtures are appropriate and will be expected by buyers. In a $450K Lansdale colonial, beautiful tilework, quality vanities, and solid fixtures will deliver excellent ROI without over-improving.</p>
-<p><a href="../contact.html">Schedule a free consultation</a> and we'll help you think through the right investment level for your specific home and market.</p>`
+<p><a href="/contact/">Schedule a free consultation</a> and we'll help you think through the right investment level for your specific home and market.</p>`
   },
   {
     id: "transitional-vs-modern-kitchen",
@@ -266,7 +266,7 @@ const ARTICLES = [
 <h2>Resale Considerations</h2>
 <p>Transitional is the safer investment from a resale perspective — it appeals to a broader buyer pool. A very contemporary, all-modern kitchen can be polarizing: buyers either love it or don't, and those who don't will mentally budget a renovation.</p>
 <p>Our recommendation: if you're planning to stay 10+ years, design for yourself. If you're potentially selling in 5–7 years, transitional with high-quality materials is the most universally appreciated choice.</p>
-<p>Want to explore your options? <a href="../contact.html">Book a free design consultation.</a></p>`
+<p>Want to explore your options? <a href="/contact/">Book a free design consultation.</a></p>`
   },
   {
     id: "custom-cabinetry-montgomery-county",
@@ -290,7 +290,7 @@ const ARTICLES = [
 
 <h2>What You Get for the Investment</h2>
 <p>The jump from semi-custom to full custom delivers: superior joinery, plywood (not particleboard) box construction, precisely fitted doors that won't shift over time, and the ability to integrate any functional feature — drawer organizers, pull-out spice racks, custom wine storage, integrated lighting. If you're planning to be in your Montgomery County home for 15+ years, full custom cabinetry is often the right investment.</p>
-<p>B&B works with both semi-custom and full custom fabricators. Come visit our Ambler showroom to see and touch the difference. <a href="../showroom.html">Schedule a showroom visit.</a></p>`
+<p>B&B works with both semi-custom and full custom fabricators. Come visit our Ambler showroom to see and touch the difference. <a href="/showroom/">Schedule a showroom visit.</a></p>`
   },
   {
     id: "heated-bathroom-floors",
@@ -318,7 +318,7 @@ const ARTICLES = [
   <li>The day-to-day comfort improvement is immediate and lasting</li>
 </ul>
 <p>The only situations where we'd pause: bathrooms used primarily in warm-weather months (vacation homes), or clients on a very tight budget where other priorities should come first.</p>
-<p>Ready to add heated floors to your bathroom renovation? <a href="../contact.html">Talk to us about your project.</a></p>`
+<p>Ready to add heated floors to your bathroom renovation? <a href="/contact/">Talk to us about your project.</a></p>`
   },
   {
     id: "bucks-county-older-homes",
@@ -340,7 +340,7 @@ const ARTICLES = [
 <h2>Our Process for Historic Properties</h2>
 <p>Before we provide any estimate on a Bucks County project, we conduct a thorough site assessment that includes: visual inspection of electrical service and panel, assessment of plumbing supply and drain condition, evaluation of structural members, and identification of any hazardous materials (asbestos, lead paint) that require abatement.</p>
 <p>We present this information transparently — including contingency ranges for discoveries that may emerge during demo. The worst outcome in any renovation is a "surprise" that doubles the budget. We build in realistic contingencies from the start.</p>
-<p><a href="../contact.html">Schedule a free consultation</a> for your Bucks County property.</p>`
+<p><a href="/contact/">Schedule a free consultation</a> for your Bucks County property.</p>`
   },
   {
     id: "choosing-remodeling-contractor-philadelphia",
@@ -367,7 +367,7 @@ const ARTICLES = [
 
 <h2>Step 5: Check Communication Quality</h2>
 <p>How long did they take to respond to your inquiry? Did they follow up? Were they on time for the consultation? Communication quality before you sign a contract is the best predictor of communication quality during construction.</p>
-<p>B&B Associates responds to all inquiries within 1 business hour and guarantees same-day scheduling for consultations. <a href="../contact.html">See for yourself.</a></p>`
+<p>B&B Associates responds to all inquiries within 1 business hour and guarantees same-day scheduling for consultations. <a href="/contact/">See for yourself.</a></p>`
   },
   {
     id: "open-concept-kitchen-costs",
@@ -391,7 +391,7 @@ const ARTICLES = [
 
 <h2>Is It Worth It?</h2>
 <p>Almost always — the transformation in how the home lives and how it photographs is dramatic. In the Philadelphia suburbs, open-concept kitchens are virtually expected in homes priced above $550,000. If your kitchen is separated from the living area by a wall, its absence is a liability at sale.</p>
-<p>The key is doing it right: proper engineering, proper permitting, and a finished result where you can't tell the wall was ever there. <a href="../contact.html">Talk to B&B about your structural project.</a></p>`
+<p>The key is doing it right: proper engineering, proper permitting, and a finished result where you can't tell the wall was ever there. <a href="/contact/">Talk to B&B about your structural project.</a></p>`
   },
   {
     id: "main-line-bathroom-trends",
@@ -415,7 +415,7 @@ const ARTICLES = [
 
 <h2>Natural Stone: Moving Beyond the Shower</h2>
 <p>Natural marble or quartzite is moving from the shower (where it's been common for a decade) to unexpected locations: heated floor slabs, floating vanity countertops in book-matched stone, and even stone wainscoting on feature walls.</p>
-<p>Interested in a Main Line master bath renovation? <a href="../contact.html">B&B would love to discuss your project.</a></p>`
+<p>Interested in a Main Line master bath renovation? <a href="/contact/">B&B would love to discuss your project.</a></p>`
   },
   {
     id: "kitchen-island-design-ideas",
@@ -445,7 +445,7 @@ const ARTICLES = [
 
 <h2>Island Countertop Selection</h2>
 <p>Many Montgomery County kitchens use a contrasting stone for the island — white perimeter counters with a dramatic quartzite or marble island, for instance. The contrast adds visual depth and can justify a more expressive material choice that would be overwhelming at full kitchen scale.</p>
-<p><a href="../contact.html">Talk to B&B about designing the perfect island for your kitchen.</a></p>`
+<p><a href="/contact/">Talk to B&B about designing the perfect island for your kitchen.</a></p>`
   }
 ];
 
