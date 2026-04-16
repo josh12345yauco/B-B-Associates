@@ -55,7 +55,7 @@ const projects = [
     ],
     investment: "$90,000–$120,000",
     duration: "10 weeks",
-    video: "KITCHENS/B&B - Bill Broderick -kitchen/IMG_0811.MOV",
+    video: "KITCHENS/B&B - Bill Broderick -kitchen/IMG_0811.mp4",
     images: [
       "KITCHENS/B&B - Bill Broderick -kitchen/08173010-D148-4016-9EE9-4BBE6DDF4F67.jpeg",
       "KITCHENS/B&B - Bill Broderick -kitchen/2EEAC68A-3208-499A-9B28-CB462423EB66.jpeg",
@@ -119,7 +119,7 @@ const projects = [
     ],
     investment: "$95,000–$130,000",
     duration: "12 weeks",
-    video: "KITCHENS/B&B - Chris Lee Kitchen /IMG_6560.MOV",
+    video: "KITCHENS/B&B - Chris Lee Kitchen /IMG_6560.mp4",
     images: [
       "KITCHENS/B&B - Chris Lee Kitchen /41957DB3-DDE9-44D4-A476-DA4308EA0100.jpeg",
       "KITCHENS/B&B - Chris Lee Kitchen /4BA7AE7A-2E65-4AFA-AEB6-6139D1A9DD8C.jpeg",
@@ -151,7 +151,7 @@ const projects = [
     ],
     investment: "$60,000–$80,000",
     duration: "7 weeks",
-    video: "KITCHENS/B&B - Ferrie-kitchen/IMG_0761.MOV",
+    video: "KITCHENS/B&B - Ferrie-kitchen/IMG_0761.mp4",
     images: [
       "KITCHENS/B&B - Ferrie-kitchen/6534D687-3AE7-4524-9657-EE34302DB729.jpeg",
       "KITCHENS/B&B - Ferrie-kitchen/7CDD416E-F9E1-4188-8CD4-033D46968546.jpeg",
@@ -246,7 +246,7 @@ const projects = [
     ],
     investment: "$55,000–$75,000",
     duration: "7 weeks",
-    video: "KITCHENS/B&B - Hess Kitchen /IMG_2266.MOV",
+    video: "KITCHENS/B&B - Hess Kitchen /IMG_2266.mp4",
     images: [
       "KITCHENS/B&B - Hess Kitchen /22A33749-9A97-40C9-9583-3D217973E06D.jpeg",
       "KITCHENS/B&B - Hess Kitchen /4211826F-3D83-4B65-8B87-4A8DDD219098.jpeg",
@@ -312,7 +312,7 @@ const projects = [
     ],
     investment: "$80,000–$110,000",
     duration: "9 weeks",
-    video: "KITCHENS/B&B - Jeff Kohl Kitchen/IMG_2830.MOV",
+    video: "KITCHENS/B&B - Jeff Kohl Kitchen/IMG_2830.mp4",
     images: [
       "KITCHENS/B&B - Jeff Kohl Kitchen/IMG_2798.jpg",
       "KITCHENS/B&B - Jeff Kohl Kitchen/IMG_2801.jpg",
@@ -619,7 +619,7 @@ const projects = [
     ],
     investment: "$45,000–$60,000",
     duration: "5 weeks",
-    video: "BATHROOMS/B&B - Borgia-bathroom/IMG_5410.MOV",
+    video: "BATHROOMS/B&B - Borgia-bathroom/IMG_5410.mp4",
     images: [
       "BATHROOMS/B&B - Borgia-bathroom/0355861A-4E5F-4F8D-89B0-FC8F3F156B45.jpeg",
       "BATHROOMS/B&B - Borgia-bathroom/0D134C23-4A08-4B29-B355-DF90FEE60378.jpeg",
@@ -747,7 +747,7 @@ const projects = [
     ],
     investment: "$55,000–$75,000",
     duration: "6 weeks",
-    video: "BATHROOMS/B&B - Emad Master Bath/IMG_6527.MOV",
+    video: "BATHROOMS/B&B - Emad Master Bath/IMG_6527.mp4",
     images: [
       "BATHROOMS/B&B - Emad Master Bath/4358B1C2-D2FE-43AB-9E16-DC20F5186ADE.jpeg",
       "BATHROOMS/B&B - Emad Master Bath/4F3C3524-9FDC-4AA5-8431-BAA6CF5D6418.jpeg",
@@ -975,7 +975,7 @@ const projects = [
     ],
     investment: "$65,000–$85,000",
     duration: "7 weeks",
-    video: "BATHROOMS/B&B - LaShannon Master bathroom/IMG_5481.MOV",
+    video: "BATHROOMS/B&B - LaShannon Master bathroom/IMG_5481.mp4",
     images: [
       "BATHROOMS/B&B - LaShannon Master bathroom/09DCC4C5-5F51-4A82-9C78-AB97A237A844.jpeg",
       "BATHROOMS/B&B - LaShannon Master bathroom/13EB5D87-8AA1-41E4-9C91-0547C266C65F.jpeg",
@@ -1111,7 +1111,7 @@ const projects = [
     ],
     investment: "$45,000–$60,000",
     duration: "5 weeks",
-    video: "BATHROOMS/B&B - Sharada -bathroom/IMG_3080.MOV",
+    video: "BATHROOMS/B&B - Sharada -bathroom/IMG_3080.mp4",
     images: [
       "BATHROOMS/B&B - Sharada -bathroom/1C191061-9F5B-4F6C-9AA5-89F710D2B392.jpeg",
       "BATHROOMS/B&B - Sharada -bathroom/35CC5FF1-09F1-4862-852A-734299AFBE76.jpeg",
@@ -1173,7 +1173,7 @@ const projects = [
     ],
     investment: "$38,000–$52,000",
     duration: "5 weeks",
-    video: "BATHROOMS/B&B - Vartanian-bathroom/IMG_1567.MOV",
+    video: "BATHROOMS/B&B - Vartanian-bathroom/IMG_1567.mp4",
     images: [
       "BATHROOMS/B&B - Vartanian-bathroom/10E542CC-6F7C-45E4-B9E2-4ADC289B5031.jpeg",
       "BATHROOMS/B&B - Vartanian-bathroom/12E12365-9F9A-4F88-ABD6-B7EE2FD86EC4.jpeg",

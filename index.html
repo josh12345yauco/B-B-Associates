@@ -3807,7 +3807,7 @@
       var posterAttr = posterSrc ? ' poster="' + posterSrc + '"' : '';
       return '<a href="' + projectUrl + '" class="recent-project-card">' +
         '<div class="recent-project-img-wrap">' +
-          '<video src="' + videoSrc + '" autoplay loop muted playsinline' + posterAttr + '></video>' +
+          '<video src="' + videoSrc + '" autoplay loop muted playsinline preload="auto"' + posterAttr + '></video>' +
         '</div></a>';
     }).join('');
   } catch(e){}
