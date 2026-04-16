@@ -674,7 +674,7 @@
             <h2 id="related-heading" class="headline-reveal" style="font-family:var(--font-display);font-size:var(--text-h2);color:var(--color-white);font-weight:var(--weight-light);margin-bottom:0;"><span class="line-wrap"><span class="line-inner">You Might Also Like</span></span></h2>
             <div class="related-grid reveal-group">
               ${related.map(r => `
-                <a href="/service-areas/project/?id=${r.id}" class="project-card" style="display:block;" aria-label="${r.title} — ${r.town}">
+                <a href="/portfolio/project/?id=${r.id}" class="project-card" style="display:block;" aria-label="${r.title} — ${r.town}">
                   <img src="${r.thumbnail}" alt="${r.style} ${r.type.toLowerCase()} in ${r.town} by B&amp;B Associates Creations" loading="lazy">
                   <div class="project-card-overlay">
                     <p class="project-card-meta">${r.town} · ${r.year}</p>

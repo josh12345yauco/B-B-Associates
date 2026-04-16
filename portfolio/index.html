@@ -600,7 +600,7 @@
         const galleryAttr = JSON.stringify(gallery).replace(/"/g, '&quot;');
         return `
         <div class="portfolio-grid-item" data-tags="${p.tags.join(' ')}">
-          <a href="/service-areas/project/?id=${p.id}" class="portfolio-card" aria-label="${p.title} — ${p.type} remodel by B&amp;B Associates Creations" data-gallery="${galleryAttr}" data-thumbnail="${p.thumbnail}" data-gallery-index="0">
+          <a href="/portfolio/project/?id=${p.id}" class="portfolio-card" aria-label="${p.title} — ${p.type} remodel by B&amp;B Associates Creations" data-gallery="${galleryAttr}" data-thumbnail="${p.thumbnail}" data-gallery-index="0">
             <div class="portfolio-card-img-wrap">
               <div class="portfolio-card-img-inner">
                 ${p.video
