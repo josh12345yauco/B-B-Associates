@@ -3801,8 +3801,8 @@
       return p.split('/').map(function(seg){ return encodeURIComponent(seg); }).join('/');
     }
     carousel.innerHTML = cards.map(function(p){
-      var videoSrc = 'portfolio/' + encodePath(p.video);
-      var posterSrc = p.thumbnail ? 'portfolio/' + encodePath(p.thumbnail) : '';
+      var videoSrc = encodePath(p.video);
+      var posterSrc = p.thumbnail ? encodePath(p.thumbnail) : '';
       var projectUrl = '/portfolio/project/?id=' + p.id;
       var posterAttr = posterSrc ? ' poster="' + posterSrc + '"' : '';
       return '<a href="' + projectUrl + '" class="recent-project-card">' +

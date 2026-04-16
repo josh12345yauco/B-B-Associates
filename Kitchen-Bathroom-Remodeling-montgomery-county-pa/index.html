@@ -1949,8 +1949,8 @@
         });
         if (!cards.length) return;
         carousel.innerHTML = cards.map(function (p, index) {
-          var rawVideo = '../portfolio/' + p.video;
-          var rawPoster = p.thumbnail ? ('../portfolio/' + p.thumbnail) : '';
+          var rawVideo = p.video;
+          var rawPoster = p.thumbnail ? p.thumbnail : '';
           var videoSrc = lpEscAttr(rawVideo);
           var posterSrc = lpEscAttr(rawPoster);
           var projectUrl = '/portfolio/project/?id=' + encodeURIComponent(p.id);
@@ -1997,7 +1997,7 @@
       var media = [];
       var idx = 0;
 
-      function base() { return '../portfolio/'; }
+      function base() { return ''; }
 
       function buildMedia(p) {
         var items = [];
