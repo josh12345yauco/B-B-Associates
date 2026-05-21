@@ -1,7 +1,5 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "cleanUrls": true,
-  "trailingSlash": true,
   "redirects": [
     {
       "source": "/service-areas/main-line-pa",
@@ -13,6 +11,5 @@
       "destination": "/service-areas/main-line-pa-remodeling/",
       "permanent": true
     }
-  ],
-  "redirectsHelp": "Apex/legacy domain (bbassociatescreations.com) 301 -> www.bbassociatesco.com is handled at the DNS/Vercel domain level under Project Settings -> Domains. Add bbassociatescreations.com as an alias domain pointing to www.bbassociatesco.com so Vercel issues a 301 automatically."
+  ]
 }
