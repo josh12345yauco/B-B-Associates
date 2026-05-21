@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /admin/
 
-Sitemap: https://bbassociatescreations.com/sitemap.xml
+Sitemap: https://www.bbassociatesco.com/sitemap.xml
