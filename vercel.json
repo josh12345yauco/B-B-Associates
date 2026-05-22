@@ -10,6 +10,26 @@
       "source": "/service-areas/main-line-pa/",
       "destination": "/service-areas/main-line-pa-remodeling/",
       "permanent": true
+    },
+    {
+      "source": "/Kitchen-Bathroom-Remodeling-montgomery-county-pa",
+      "destination": "/kitchen-bathroom-renovation-design/",
+      "permanent": true
+    },
+    {
+      "source": "/Kitchen-Bathroom-Remodeling-montgomery-county-pa/",
+      "destination": "/kitchen-bathroom-renovation-design/",
+      "permanent": true
+    },
+    {
+      "source": "/kitchen-bathroom-remodeling-montgomery-county-pa",
+      "destination": "/kitchen-bathroom-renovation-design/",
+      "permanent": true
+    },
+    {
+      "source": "/kitchen-bathroom-remodeling-montgomery-county-pa/",
+      "destination": "/kitchen-bathroom-renovation-design/",
+      "permanent": true
     }
   ]
 }

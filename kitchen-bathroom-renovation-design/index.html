@@ -1,0 +1,2233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KZZXTRLG');</script>
+<!-- End Google Tag Manager -->
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/png" href="/IMAGES/bandbassociates.png">
+  <link rel="apple-touch-icon" href="/IMAGES/bandbassociates.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Kitchen &amp; Bathroom Renovation &amp; Design | B&amp;B Associates Creations</title>
+  <meta name="description" content="Award-winning kitchen &amp; bathroom renovation and design serving the Main Line, Bucks &amp; Montgomery County, PA. 13 years · 1,200+ projects · 183 five-star reviews. Free consultation. B&B Associates Creations — Ambler, PA.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Design System -->
+  <link rel="stylesheet" href="/css/design-system.css">
+  <link rel="stylesheet" href="/css/components.css">
+
+  <!-- Supabase -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+
+  <!-- Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HomeAndConstructionBusiness",
+    "name": "B&B Associates Creations",
+    "url": "https://b-b-associates.vercel.app",
+    "telephone": "+12674028758",
+    "address": { "@type": "PostalAddress", "streetAddress": "1147 E Welsh Rd", "addressLocality": "Ambler", "addressRegion": "PA", "postalCode": "19002" },
+    "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5.0", "reviewCount": "183" },
+    "areaServed": [
+      { "@type": "AdministrativeArea", "name": "Montgomery County", "containedInPlace": { "@type": "State", "name": "Pennsylvania" } },
+      { "@type": "AdministrativeArea", "name": "Bucks County", "containedInPlace": { "@type": "State", "name": "Pennsylvania" } },
+      { "@type": "AdministrativeArea", "name": "Delaware County", "containedInPlace": { "@type": "State", "name": "Pennsylvania" } },
+      { "@type": "AdministrativeArea", "name": "Chester County", "containedInPlace": { "@type": "State", "name": "Pennsylvania" } }
+    ]
+  }
+  </script>
+
+  <style>
+    /* ── PAGE RESET ──────────────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    /* ── STICKY HEADER ───────────────────────────────────────── */
+    .lp-header {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+      height: 68px;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 clamp(16px, 4vw, 48px);
+      background: rgba(26, 28, 35, 0.0);
+      border-bottom: 1px solid transparent;
+      transition: background 0.4s ease, border-color 0.4s ease, backdrop-filter 0.4s ease;
+    }
+    .lp-header.scrolled {
+      background: #090E1B;
+      backdrop-filter: blur(20px);
+      border-bottom-color: rgba(182, 117, 57, 0.15);
+    }
+    .lp-header-logo img { height: 44px; width: auto; display: block; }
+    .lp-header-right { display: none; }
+    .lp-header { justify-content: center; }
+    .lp-header-phone {
+      font-family: var(--font-sans); font-size: 14px; font-weight: 600;
+      color: var(--color-white); text-decoration: none; letter-spacing: 0.04em;
+      display: flex; align-items: center; gap: 6px;
+      padding: 8px 14px; border: 1px solid rgba(255,255,255,0.2); border-radius: 2px;
+      transition: border-color 0.3s ease, color 0.3s ease;
+    }
+    .lp-header-phone:hover { color: var(--color-gold); border-color: var(--color-gold-border); }
+    .lp-header-cta {
+      font-family: var(--font-sans); font-size: 12px; font-weight: 600;
+      letter-spacing: 0.14em; text-transform: uppercase; text-decoration: none;
+      color: var(--color-bg); background: var(--color-gold);
+      padding: 10px 20px; border: none; cursor: pointer;
+      transition: background 0.3s ease, transform 0.2s ease;
+      white-space: nowrap;
+    }
+    .lp-header-cta:hover { background: var(--color-gold-light); transform: translateY(-1px); }
+    @media(max-width:640px) {
+      .lp-header-phone span { display: none; }
+      .lp-header-phone::before { content: '📞'; font-size: 16px; }
+    }
+    @media(max-width:768px) {
+      .lp-trust-badge--gg { order: 10; }
+    }
+
+    /* ── HERO (first viewport includes stat bar) ───────────── */
+    /*
+     * UNDO — previous hero (single full-bleed photo + ::before tint):
+     * .lp-hero {
+     *   background: url('../IMAGES/Custom-Kitchen-Ambler-Pa.webp') center center / cover no-repeat;
+     * }
+     * .lp-hero::before {
+     *   content: ''; position: absolute; inset: 0;
+     *   background: linear-gradient(145deg, rgba(10,10,14,0.85) 0%, rgba(14,15,20,0.85) 45%, rgba(18,20,26,0.85) 100%);
+     * }
+     */
+    .lp-hero-viewport {
+      min-height: 100vh;
+      min-height: 100dvh;
+      display: flex;
+      flex-direction: column;
+    }
+    .lp-hero {
+      position: relative;
+      flex: 1 1 auto;
+      min-height: 0;
+      display: flex; align-items: center; justify-content: center;
+      overflow: hidden;
+      background: var(--color-bg);
+      padding-top: 68px;
+    }
+    .lp-hero-media {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+      pointer-events: none;
+    }
+    .lp-hero-gallery {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      mask-image: linear-gradient(90deg, transparent 0%, #000 8%, #000 92%, transparent 100%);
+      -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 8%, #000 92%, transparent 100%);
+    }
+    .lp-hero-gallery-track {
+      display: flex;
+      align-items: center;
+      gap: clamp(12px, 2vw, 20px);
+      width: max-content;
+      padding-inline: clamp(12px, 3vw, 32px);
+      animation: lp-hero-gallery-marquee 70s linear infinite;
+    }
+    @keyframes lp-hero-gallery-marquee {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .lp-hero-gallery-track { animation: none; }
+    }
+    .lp-hero-gallery-item {
+      flex: 0 0 auto;
+      width: clamp(132px, 16vw, 200px);
+      aspect-ratio: 3 / 4;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
+    }
+    .lp-hero-gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    /* Figma hero overlay: 0% #1A284E@0 → 20–81% #090E1B → 100% #2B4381@0 */
+    .lp-hero-readability {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      background: linear-gradient(
+        90deg,
+        rgba(26, 40, 78, 0) 0%,
+        rgb(9, 14, 27) 20%,
+        rgb(9, 14, 27) 81%,
+        rgba(43, 67, 129, 0) 100%
+      );
+      pointer-events: none;
+    }
+    .lp-hero-inner {
+      position: relative; z-index: 2;
+      width: 100%;
+      max-width: min(96vw, 1040px);
+      margin: 0 auto;
+      padding: clamp(28px, 5vw, 72px) clamp(20px,5vw,80px);
+      text-align: center;
+    }
+    .lp-hero-eyebrow {
+      font-family: var(--font-sans); font-size: 11px; font-weight: 500;
+      letter-spacing: 0.22em; text-transform: uppercase;
+      color: var(--color-gold); margin-bottom: 14px;
+      display: flex; align-items: center; justify-content: center; gap: 10px;
+    }
+    .lp-hero-eyebrow::before,
+    .lp-hero-eyebrow::after {
+      content: ''; display: block; width: 28px; height: 1px; background: var(--color-gold);
+    }
+    .lp-hero h1 {
+      font-family: var(--font-display, 'Cormorant Garamond', serif);
+      font-size: clamp(26px, 3.6vw, 60px);
+      font-weight: 500; line-height: 1.08;
+      color: var(--color-white);
+      letter-spacing: 0.005em;
+      font-variant-numeric: proportional-nums;
+      margin: 0 auto 12px;
+      text-align: center;
+      width: calc(100% - 20px);
+      max-width: none;
+      padding-inline: 0;
+    }
+    .lp-hero-title-lines {
+      text-transform: uppercase;
+      display: block;
+      text-wrap: balance;
+      width: 100%;
+      box-sizing: border-box;
+      padding-inline: 10px;
+    }
+    .lp-hero-tagline {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(18px, 2.85vw, 36px);
+      font-weight: 300; font-style: italic;
+      color: #D4944F;
+      -webkit-text-stroke: 0.4px rgba(255,255,255,0.32);
+      text-shadow: 0 1px 10px rgba(0,0,0,0.18);
+      margin-bottom: 18px; line-height: 1.2;
+    }
+    .lp-hero-body {
+      font-family: var(--font-sans); font-size: clamp(14px, 1.45vw, 17px);
+      color: var(--color-text); line-height: 1.65; margin: 0 auto 26px;
+      max-width: 560px;
+    }
+    .lp-hero-ctas {
+      display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 22px; justify-content: center;
+    }
+    .lp-hero-ctas > .lp-btn-primary,
+    .lp-hero-ctas > .lp-btn-outline {
+      width: 260px;
+      max-width: 100%;
+      box-sizing: border-box;
+      justify-content: center;
+    }
+    .lp-hero-ctas > .lp-btn-primary { border: 1px solid transparent; }
+    .lp-btn-primary {
+      font-family: var(--font-sans); font-size: 13px; font-weight: 600;
+      letter-spacing: 0.14em; text-transform: uppercase; text-decoration: none;
+      color: var(--color-bg); background: var(--color-gold);
+      padding: 16px 32px; border: none; cursor: pointer;
+      transition: background 0.3s ease, transform 0.2s ease;
+      display: inline-flex; align-items: center; gap: 8px;
+    }
+    .lp-btn-primary:hover { background: var(--color-gold-light); transform: translateY(-2px); }
+    .lp-btn-outline {
+      font-family: var(--font-sans); font-size: 13px; font-weight: 500;
+      letter-spacing: 0.14em; text-transform: uppercase; text-decoration: none;
+      color: var(--color-white); background: transparent;
+      padding: 16px 32px;
+      border: 1px solid rgba(255,255,255,0.45);
+      backdrop-filter: blur(6px);
+      transition: border-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+      display: inline-flex; align-items: center; gap: 8px;
+    }
+    .lp-btn-outline:hover { border-color: var(--color-gold); color: var(--color-gold); transform: translateY(-2px); }
+    .lp-hero-ctas .lp-btn-outline {
+      color: var(--color-white);
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.32);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+    }
+    .lp-hero-ctas .lp-btn-outline:hover {
+      background: rgba(255,255,255,0.12);
+      border-color: var(--color-gold-border);
+      color: var(--color-gold-light);
+    }
+    .lp-hero-ctas .lp-btn-primary:hover {
+      background: rgba(255,255,255,0.08);
+      border-color: rgba(255,255,255,0.32);
+      color: var(--color-white);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+      transform: translateY(-2px);
+    }
+    .lp-trust-badges {
+      display: flex; flex-wrap: wrap; gap: 14px 20px; align-items: center;
+      justify-content: center;
+    }
+    .lp-trust-badge {
+      font-family: var(--font-sans); font-size: 12px; font-weight: 500;
+      color: var(--color-text); display: flex; align-items: center; gap: 8px;
+      letter-spacing: 0.04em; justify-content: center;
+    }
+    .lp-trust-badge strong { color: var(--color-white); }
+    .lp-trust-icon {
+      flex-shrink: 0;
+      width: 17px; height: 17px;
+      color: var(--color-gold);
+      opacity: 0.95;
+    }
+    .lp-micro {
+      font-family: var(--font-sans); font-size: 12px;
+      color: var(--color-gold-light); margin-top: 20px; font-style: italic;
+      text-align: center;
+    }
+
+    /* ── STAT BAR ────────────────────────────────────────────── */
+    .lp-stat-bar {
+      flex-shrink: 0;
+      background: var(--color-surface);
+      padding: clamp(20px, 3vw, 28px) clamp(20px,5vw,80px);
+      text-align: center;
+    }
+    .lp-stat-grid {
+      display: flex; flex-wrap: wrap;
+      justify-content: center;
+      align-items: stretch;
+      max-width: 1100px; margin: 0 auto;
+      gap: 0;
+    }
+    .lp-stat {
+      text-align: center;
+      padding: 10px clamp(16px, 3vw, 22px);
+      border-right: 1px solid var(--color-border-dim);
+      flex: 1 1 140px;
+      max-width: 220px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .lp-stat:last-child { border-right: none; }
+    .lp-stat-num {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(30px, 4.2vw, 52px); font-weight: 300;
+      color: var(--color-gold); line-height: 1; margin-bottom: 6px;
+    }
+    .lp-stat-label {
+      font-family: var(--font-sans); font-size: 10px; font-weight: 500;
+      letter-spacing: 0.16em; text-transform: uppercase;
+      color: var(--color-white);
+      max-width: 12em;
+    }
+    @media(max-width:640px) {
+      .lp-stat { flex: 1 1 42%; max-width: none; min-width: 0; }
+      .lp-stat:nth-child(2) { border-right: none; }
+    }
+
+    /* ── SECTION SHARED ──────────────────────────────────────── */
+    .lp-section {
+      padding: clamp(60px, 8vw, 120px) clamp(20px, 5vw, 80px);
+      max-width: 1440px; margin: 0 auto;
+    }
+    .lp-section-full {
+      padding: clamp(60px, 8vw, 120px) clamp(20px, 5vw, 80px);
+    }
+    .lp-eyebrow {
+      font-family: var(--font-sans); font-size: 11px; font-weight: 500;
+      letter-spacing: 0.22em; text-transform: uppercase;
+      color: rgba(182, 117, 57, 1); margin-bottom: 16px;
+    }
+    .lp-heading {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(32px, 4.5vw, 62px); font-weight: 300;
+      color: var(--color-white); line-height: 1.1; margin-bottom: 16px;
+    }
+    .lp-subheading {
+      font-family: var(--font-sans); font-size: clamp(15px, 1.4vw, 17px);
+      color: var(--color-text); line-height: 1.7; max-width: 620px;
+    }
+    .lp-gold-line { width: 40px; height: 1px; background: var(--color-gold); margin: 20px 0; }
+
+    /* ── PHOTO MASONRY ───────────────────────────────────────── */
+    .lp-gallery-section { background: var(--color-bg-2); }
+    .lp-gallery-header { text-align: center; margin-bottom: 48px; }
+    .lp-gallery-header .lp-subheading { margin: 0 auto; }
+    /* Featured video strip (matches home Recent Projects layout) */
+    .lp-featured-videos { margin-bottom: 0; }
+    .lp-featured-videos-header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .lp-featured-videos-header .lp-eyebrow {
+      justify-content: center;
+      margin-bottom: 0;
+    }
+    .lp-featured-videos-shell { position: relative; }
+    .lp-featured-carousel {
+      display: flex;
+      gap: var(--sp-4);
+      overflow-x: auto;
+      padding: var(--sp-2) 0 var(--sp-3);
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+    }
+    .lp-featured-carousel::-webkit-scrollbar { display: none; }
+    .lp-featured-card {
+      flex: 0 0 220px;
+      scroll-snap-align: center;
+      text-decoration: none;
+      color: inherit;
+    }
+    .lp-featured-img-wrap {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 9 / 16;
+      border-radius: 4px;
+      overflow: hidden;
+      background: #111;
+    }
+    .lp-featured-img-wrap video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      color: var(--color-white);
+      transition: transform 0.55s cubic-bezier(0.25, 1, 0.5, 1);
+    }
+    .lp-featured-card:hover .lp-featured-img-wrap video { transform: scale(1.04); }
+    .lp-featured-arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      border: 1px solid var(--color-border-dim);
+      background: rgba(10, 11, 16, 0.88);
+      color: var(--color-white);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      line-height: 1;
+      cursor: pointer;
+      z-index: 2;
+      transition: background 0.2s ease, border-color 0.2s ease;
+    }
+    .lp-featured-arrow--left { left: 8px; }
+    .lp-featured-arrow--right { right: 8px; }
+    .lp-featured-arrow:hover {
+      background: rgba(10, 11, 16, 1);
+      border-color: var(--color-gold-border);
+    }
+    @media (max-width: 768px) {
+      .lp-featured-arrow { display: none; }
+      /* Two full 9:16 tiles + both gaps + ~¼ of next tile (100% = carousel width) */
+      .lp-featured-carousel {
+        scroll-padding-inline: clamp(12px, 4vw, 20px);
+      }
+      .lp-featured-card {
+        flex: 0 0 calc((100% - 32px) / 2.25);
+        max-width: none;
+        scroll-snap-align: start;
+      }
+    }
+    .lp-gallery-divider {
+      border: none;
+      height: 0;
+      width: 100%;
+      max-width: 1300px;
+      margin: clamp(40px, 6vw, 72px) auto clamp(32px, 5vw, 56px);
+      border-top: 1px solid rgba(255, 255, 255, 0.12);
+      background: none;
+    }
+    .lp-masonry {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 8px;
+      max-width: 1300px;
+      margin: 0 auto 40px;
+      padding: 0;
+      color: var(--color-white);
+    }
+    button.lp-masonry-item {
+      border: none; padding: 0; margin: 0; background: transparent;
+      font: inherit; color: inherit; text-align: left; width: 100%;
+      display: block; cursor: pointer; -webkit-tap-highlight-color: transparent;
+    }
+    .lp-masonry-item {
+      aspect-ratio: 3 / 4;
+      margin-bottom: 0;
+      overflow: hidden; position: relative;
+      border-radius: 6px;
+    }
+    .lp-masonry-item:focus-visible {
+      outline: 2px solid var(--color-gold);
+      outline-offset: 2px;
+    }
+    .lp-masonry-item img {
+      width: 100%; height: 100%; object-fit: cover; display: block;
+      border-radius: 6px;
+      transition: transform 0.6s cubic-bezier(0.25,1,0.5,1);
+    }
+    .lp-masonry-item:hover img { transform: scale(1.04); }
+    .lp-masonry-item::after {
+      content: ''; position: absolute; inset: 0;
+      background: rgba(182,117,57,0); transition: background 0.3s ease;
+    }
+    .lp-masonry-item:hover::after { background: rgba(182,117,57,0.08); }
+    .lp-masonry-item--hidden { display: none !important; }
+    .lp-gallery-cta { text-align: center; }
+    .lp-gallery-load-more {
+      font-family: var(--font-sans); font-size: 13px; font-weight: 600;
+      letter-spacing: 0.14em; text-transform: uppercase;
+      color: var(--color-bg); background: var(--color-gold);
+      padding: 16px 36px; border: none; cursor: pointer;
+      transition: background 0.3s ease, transform 0.2s ease, opacity 0.3s ease;
+    }
+    .lp-gallery-load-more:hover:not(:disabled) { background: var(--color-gold-light); transform: translateY(-2px); }
+    .lp-gallery-load-more:disabled { opacity: 0.45; cursor: not-allowed; transform: none; }
+    @media (max-width: 1100px) { .lp-masonry { grid-template-columns: repeat(4, 1fr); } }
+    @media (max-width: 900px) { .lp-masonry { grid-template-columns: repeat(3, 1fr); } }
+    @media (max-width: 640px) { .lp-masonry { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 400px) { .lp-masonry { grid-template-columns: 1fr; } }
+
+    /* ── PROJECT LIGHTBOX (gallery grid) ─────────────────────── */
+    .lp-project-lightbox {
+      position: fixed; inset: 0; z-index: 10000;
+      display: flex; align-items: center; justify-content: center;
+      padding: clamp(12px, 3vw, 28px);
+      opacity: 0; visibility: hidden;
+      transition: opacity 0.35s ease, visibility 0.35s ease;
+    }
+    .lp-project-lightbox.is-open {
+      opacity: 1; visibility: visible;
+    }
+    .lp-project-lightbox-backdrop {
+      position: absolute; inset: 0;
+      background: rgba(10, 11, 16, 0.82);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+    }
+    .lp-project-lightbox-panel {
+      position: relative; z-index: 1;
+      width: min(1080px, 100%);
+      max-height: min(92vh, 900px);
+      display: flex; flex-direction: column;
+      background: linear-gradient(165deg, #232630 0%, #1a1c23 100%);
+      border: 1px solid rgba(182, 117, 57, 0.2);
+      border-radius: 4px;
+      box-shadow: 0 40px 100px rgba(0, 0, 0, 0.55);
+      overflow: hidden;
+    }
+    .lp-project-lightbox-close {
+      position: absolute; top: 12px; right: 12px; z-index: 5;
+      width: 44px; height: 44px;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 2px;
+      background: rgba(26, 28, 35, 0.9);
+      color: var(--color-white);
+      font-size: 22px; line-height: 1;
+      cursor: pointer;
+      transition: border-color 0.2s ease, color 0.2s ease, background 0.2s ease;
+    }
+    .lp-project-lightbox-close:hover {
+      border-color: var(--color-gold-border);
+      color: var(--color-gold-light);
+    }
+    .lp-project-lightbox-stage-wrap {
+      position: relative;
+      flex: 1; min-height: 0;
+      background: #111;
+    }
+    .lp-project-lightbox-stage {
+      width: 100%; height: min(52vh, 520px); min-height: 220px;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .lp-project-lightbox-stage img,
+    .lp-project-lightbox-stage video {
+      max-width: 100%; max-height: 100%;
+      width: auto; height: auto;
+      object-fit: contain;
+    }
+    .lp-project-lightbox-stage video { background: #000; }
+    .lp-project-lightbox-nav {
+      position: absolute; top: 50%; transform: translateY(-50%);
+      width: 44px; height: 44px;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 2px;
+      background: rgba(10, 11, 16, 0.75);
+      color: var(--color-white);
+      font-size: 18px; cursor: pointer;
+      transition: border-color 0.2s ease, color 0.2s ease;
+      z-index: 2;
+    }
+    .lp-project-lightbox-nav:hover {
+      border-color: var(--color-gold-border);
+      color: var(--color-gold-light);
+    }
+    .lp-project-lightbox-nav--prev { left: 10px; }
+    .lp-project-lightbox-nav--next { right: 10px; }
+    .lp-project-lightbox-nav:disabled {
+      opacity: 0.25; cursor: not-allowed;
+    }
+    .lp-project-lightbox-meta {
+      padding: clamp(18px, 3vw, 28px) clamp(20px, 3vw, 32px);
+      overflow-y: auto;
+      max-height: 38vh;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .lp-project-lightbox-eyebrow {
+      font-family: var(--font-sans); font-size: 10px; font-weight: 600;
+      letter-spacing: 0.2em; text-transform: uppercase;
+      color: var(--color-gold-light); margin-bottom: 8px;
+    }
+    .lp-project-lightbox-title {
+      font-family: 'Cormorant Garamond', serif; font-weight: 300;
+      font-size: clamp(26px, 4vw, 40px); color: var(--color-white);
+      line-height: 1.15; margin-bottom: 12px;
+    }
+    .lp-project-lightbox-chips {
+      display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 14px;
+    }
+    .lp-project-lightbox-chip {
+      font-family: var(--font-sans); font-size: 11px;
+      letter-spacing: 0.08em; text-transform: uppercase;
+      color: rgba(248, 244, 239, 0.85);
+      padding: 6px 10px;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 2px;
+    }
+    .lp-project-lightbox-desc {
+      font-family: var(--font-sans); font-size: 14px;
+      line-height: 1.75; color: var(--color-text);
+      margin-bottom: 16px;
+    }
+    .lp-project-lightbox-review {
+      font-family: var(--font-sans); font-size: 13px;
+      font-style: italic; line-height: 1.65;
+      color: rgba(196, 189, 175, 0.95);
+      padding: 14px 16px;
+      background: rgba(182, 117, 57, 0.08);
+      border-left: 2px solid var(--color-gold);
+      border-radius: 0 4px 4px 0;
+      margin-bottom: 16px;
+    }
+    .lp-project-lightbox-review p { margin: 0 0 8px; }
+    .lp-project-lightbox-review cite {
+      display: block; margin-top: 0;
+      font-style: normal; font-size: 12px;
+      color: rgba(248, 244, 239, 0.65);
+    }
+    .lp-project-lightbox-footer {
+      display: flex; flex-wrap: wrap; align-items: center; gap: 12px;
+    }
+    .lp-project-lightbox-link {
+      font-family: var(--font-sans); font-size: 12px; font-weight: 600;
+      letter-spacing: 0.12em; text-transform: uppercase;
+      color: var(--color-bg); background: var(--color-gold);
+      padding: 12px 22px; text-decoration: none; border-radius: 2px;
+      transition: background 0.2s ease;
+    }
+    .lp-project-lightbox-link:hover { background: var(--color-gold-light); }
+    .lp-project-lightbox-thumbs {
+      display: flex; gap: 8px; padding: 12px clamp(12px, 2vw, 20px);
+      overflow-x: auto; flex-shrink: 0;
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+      background: rgba(0, 0, 0, 0.25);
+      scrollbar-width: thin;
+    }
+    .lp-project-lightbox-thumb {
+      position: relative;
+      flex: 0 0 56px; width: 56px; height: 74px;
+      border-radius: 4px; overflow: hidden; border: 2px solid transparent;
+      padding: 0; cursor: pointer; background: #111;
+      transition: border-color 0.2s ease, opacity 0.2s ease;
+    }
+    .lp-project-lightbox-thumb img {
+      width: 100%; height: 100%; object-fit: cover; display: block;
+    }
+    .lp-project-lightbox-thumb.is-active { border-color: var(--color-gold); }
+    .lp-project-lightbox-thumb--video::after {
+      content: '▶'; position: absolute; inset: 0;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 14px; color: #fff;
+      background: rgba(0,0,0,0.45);
+    }
+    @media (max-width: 640px) {
+      .lp-project-lightbox-stage { height: min(42vh, 360px); }
+      .lp-project-lightbox-nav { width: 38px; height: 38px; font-size: 15px; }
+    }
+
+    /* ── LEAD FORM SECTION ───────────────────────────────────── */
+    .lp-form-section {
+      background: var(--color-bg);
+      border-top: 1px solid var(--color-border-dim);
+      border-bottom: 1px solid var(--color-border-dim);
+    }
+    .lp-form-section--light {
+      background: #ebeae8;
+      border-top: 1px solid rgba(55,50,45,0.07);
+      border-bottom: 1px solid rgba(55,50,45,0.07);
+    }
+    .lp-form-reveal-panel.reveal {
+      opacity: 0;
+      transform: translateY(-40px);
+      transition: opacity 0.85s cubic-bezier(0.25,1,0.5,1),
+                  transform 0.85s cubic-bezier(0.25,1,0.5,1);
+    }
+    .lp-form-reveal-panel.reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .lp-form-section--light .lp-heading { color: #1a1d24; }
+    .lp-form-section--light .lp-subheading { color: #3d4450; }
+    .lp-form-section--light .lp-form-wrap {
+      background: #ffffff;
+      border: 1px solid rgba(0,0,0,0.08);
+      box-shadow: 0 12px 40px rgba(0,0,0,0.06);
+    }
+    .lp-form-section--light .lp-form-title { color: #1a1d24; }
+    .lp-form-section--light .lp-form-sub { color: #5c6370; }
+    .lp-form-section--light .lp-form-sub--lead { color: #3d4450; }
+    .lp-form-section--light .lp-field label { color: #5c6370; }
+    .lp-form-section--light .lp-field input,
+    .lp-form-section--light .lp-field select,
+    .lp-form-section--light .lp-field textarea {
+      background: #fafafa;
+      border: 1px solid rgba(0,0,0,0.12);
+      color: #1a1d24;
+    }
+    .lp-ghl-iframe-wrap {
+      width: 100%;
+      overflow: hidden;
+    }
+    .lp-ghl-iframe-wrap iframe {
+      width: 100% !important;
+      min-height: 769px;
+      border: none;
+      display: block;
+    }
+    @media (max-width: 768px) {
+      .lp-form-section--light .lp-field input,
+      .lp-form-section--light .lp-field select,
+      .lp-form-section--light .lp-field textarea {
+        font-size: 16px;
+      }
+    }
+    .lp-form-section--light .lp-field select {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%233d4450' stroke-width='1.5' fill='none'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 16px center;
+      background-size: 12px 8px;
+      padding-right: 40px;
+      cursor: pointer;
+    }
+    .lp-form-section--light .lp-field input::placeholder,
+    .lp-form-section--light .lp-field textarea::placeholder { color: #8b9099; }
+    .lp-form-section--light .lp-form-assurance { color: #6a707a; }
+    .lp-form-section--light .lp-form-success h3 { color: var(--color-gold); }
+    .lp-form-section--light .lp-form-success p { color: #3d4450; }
+    .lp-form-section--light .lp-form-sidebar {
+      background: #e3e2df;
+      border-radius: 8px;
+      border: 1px solid rgba(45, 42, 38, 0.12);
+      padding: 26px 22px;
+      box-shadow: none;
+      color: var(--color-white);
+    }
+    .lp-form-section--light .lp-form-aside-section.lp-form-why,
+    .lp-form-section--light .lp-form-aside-section.lp-sidebar-review,
+    .lp-form-section--light .lp-form-aside-section.lp-sidebar-phone {
+      background: transparent;
+      border: none;
+      box-shadow: none;
+      margin-bottom: 0;
+      padding: 0;
+    }
+    .lp-form-section--light .lp-form-aside-section + .lp-form-aside-section {
+      margin-top: 22px;
+      padding-top: 22px;
+      border-top: 1px solid rgba(45, 42, 38, 0.1);
+    }
+    .lp-form-section--light .lp-form-aside-section.lp-sidebar-review {
+      border-left: 3px solid var(--color-gold);
+      padding-left: 18px;
+      margin-left: 0;
+    }
+    .lp-form-section--light .lp-why-list li { color: #3d4450; }
+    .lp-form-section--light .lp-sidebar-review blockquote { color: #1a1d24; }
+    .lp-form-section--light .lp-sidebar-review cite { color: #6a707a; }
+    .lp-form-section--light .lp-sidebar-phone p { color: #6a707a; }
+    .lp-form-section--light .lp-sidebar-phone .response-badge { color: #6a707a; }
+    .lp-form-inner {
+      display: flex;
+      flex-direction: column;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: clamp(60px,8vw,120px) clamp(20px,5vw,80px);
+      align-items: stretch;
+    }
+    .lp-form-intro {
+      text-align: center;
+      max-width: 720px;
+      margin: 0 auto 44px;
+      width: 100%;
+    }
+    .lp-form-intro .lp-subheading {
+      max-width: 640px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .lp-form-intro-line { margin: 20px auto; }
+    .lp-form-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) min(380px, 34vw);
+      gap: 52px;
+      align-items: start;
+      width: 100%;
+    }
+    .lp-form-column-form { min-width: 0; }
+    .lp-form-wrap {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border-dim);
+      padding: 48px 40px;
+    }
+    .lp-form-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(28px, 3.5vw, 44px); font-weight: 300;
+      color: var(--color-white); margin-bottom: 8px; line-height: 1.15;
+    }
+    .lp-form-sub {
+      font-size: 14px; color: var(--color-text-dim); margin-bottom: 32px;
+    }
+    .lp-form-sub.lp-form-sub--lead {
+      font-size: 15px;
+      line-height: 1.55;
+      margin-bottom: 28px;
+    }
+    .lp-form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .lp-field { display: flex; flex-direction: column; gap: 6px; margin-bottom: 16px; }
+    .lp-field label {
+      font-family: var(--font-sans); font-size: 11px; font-weight: 500;
+      letter-spacing: 0.14em; text-transform: uppercase;
+      color: var(--color-text-dim);
+    }
+    .lp-field input,
+    .lp-field select,
+    .lp-field textarea {
+      width: 100%; background: var(--color-bg);
+      border: 1px solid rgba(255,255,255,0.1);
+      padding: 14px 16px; font-family: var(--font-sans);
+      font-size: 15px; color: var(--color-white);
+      transition: border-color 0.3s ease; outline: none;
+      border-radius: 0; appearance: none;
+    }
+    .lp-field input:focus,
+    .lp-field select:focus,
+    .lp-field textarea:focus { border-color: var(--color-gold); }
+    .lp-field select { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%237A7468' stroke-width='1.5' fill='none'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 16px center; padding-right: 40px; cursor: pointer; }
+    .lp-field textarea { resize: vertical; min-height: 100px; }
+    .lp-field input::placeholder, .lp-field textarea::placeholder { color: var(--color-text-dimmer); }
+    .lp-form-submit {
+      width: 100%; padding: 18px; margin-top: 8px;
+      background: var(--color-gold); color: var(--color-bg);
+      font-family: var(--font-sans); font-size: 13px; font-weight: 700;
+      letter-spacing: 0.18em; text-transform: uppercase;
+      border: none; cursor: pointer;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+    .lp-form-submit:hover { background: var(--color-gold-light); transform: translateY(-1px); }
+    .lp-form-assurance {
+      text-align: center; margin-top: 14px;
+      font-size: 12px; color: var(--color-text-dim); font-style: italic;
+    }
+    .lp-form-success {
+      display: none; text-align: center; padding: 40px 20px;
+    }
+    .lp-form-success h3 {
+      font-family: 'Cormorant Garamond', serif; font-size: 32px;
+      font-weight: 300; color: var(--color-gold); margin-bottom: 12px;
+    }
+    .lp-form-success p { font-size: 15px; color: var(--color-text); line-height: 1.7; }
+
+    /* Form sidebar */
+    .lp-form-sidebar { position: sticky; top: 88px; color: var(--color-white); }
+    .lp-form-why {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border-dim);
+      padding: 32px 28px; margin-bottom: 20px;
+    }
+    .lp-form-why h3 {
+      font-family: var(--font-sans); font-size: 13px; font-weight: 600;
+      letter-spacing: 0.14em; text-transform: uppercase;
+      color: var(--color-gold); margin-bottom: 20px;
+    }
+    .lp-why-list { list-style: none; display: flex; flex-direction: column; gap: 12px; }
+    .lp-why-list li {
+      display: flex; gap: 12px; align-items: flex-start;
+      font-size: 14px; color: var(--color-text); line-height: 1.5;
+    }
+    .lp-why-list li::before {
+      content: '✓'; color: var(--color-gold); font-weight: 700;
+      flex-shrink: 0; margin-top: 1px;
+    }
+    .lp-sidebar-review {
+      background: var(--color-surface-2);
+      border-left: 3px solid var(--color-gold);
+      padding: 24px 20px; margin-bottom: 20px;
+    }
+    .lp-sidebar-review .stars { color: var(--color-gold); font-size: 14px; margin-bottom: 10px; }
+    .lp-sidebar-review blockquote {
+      font-family: 'Cormorant Garamond', serif; font-size: 18px;
+      font-style: italic; font-weight: 300; color: var(--color-white);
+      line-height: 1.5; margin-bottom: 12px;
+    }
+    .lp-sidebar-review cite {
+      font-style: normal; font-size: 12px; color: var(--color-text-dim);
+      letter-spacing: 0.1em; text-transform: uppercase;
+    }
+    .lp-sidebar-phone {
+      background: var(--color-bg-3); border: 1px solid var(--color-border-dim);
+      padding: 20px 24px; text-align: center;
+    }
+    .lp-sidebar-phone p { font-size: 12px; color: var(--color-text-dim); margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.1em; }
+    .lp-sidebar-phone a {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 28px; font-weight: 400; color: var(--color-gold);
+      text-decoration: none; letter-spacing: 0.02em;
+    }
+    .lp-sidebar-phone .response-badge {
+      margin-top: 8px; font-size: 11px; color: var(--color-text-dim);
+    }
+
+    @media(max-width:1024px) {
+      .lp-form-layout { grid-template-columns: 1fr; gap: 36px; }
+      .lp-form-sidebar { position: static; }
+      .lp-form-intro { margin-bottom: 36px; }
+    }
+    @media(max-width:640px) {
+      .lp-form-intro { margin-bottom: 28px; }
+      .lp-form-section--light .lp-form-sidebar { padding: 22px 18px; }
+      .lp-form-wrap { padding: 28px 20px; }
+      .lp-form-row { grid-template-columns: 1fr; }
+    }
+
+    /* ── REVIEWS ─────────────────────────────────────────────── */
+    .lp-reviews-section { background: var(--color-bg-2); }
+    .lp-reviews-header { text-align: center; margin-bottom: 48px; }
+    .lp-reviews-header .lp-gold-line { margin: 20px auto; }
+    .lp-reviews-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      gap: 20px; max-width: 1200px; margin: 0 auto 40px;
+      color: #0f172a;
+    }
+    .lp-review-card {
+      background: #ffffff;
+      border: 1px solid rgba(15, 23, 42, 0.1);
+      padding: 28px 24px;
+      transition: border-color 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 4px 24px rgba(15, 23, 42, 0.06);
+    }
+    .lp-review-card:hover {
+      border-color: var(--color-gold-border);
+      box-shadow: 0 8px 32px rgba(15, 23, 42, 0.1);
+    }
+    .lp-review-stars { color: var(--color-gold); font-size: 13px; margin-bottom: 14px; }
+    .lp-review-text {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 18px; font-style: italic; font-weight: 300;
+      color: #0f172a;
+      line-height: 1.55; margin-bottom: 16px;
+    }
+    .lp-review-author {
+      font-family: var(--font-sans); font-size: 11px; font-weight: 600;
+      letter-spacing: 0.14em; text-transform: uppercase;
+      color: #1e293b;
+    }
+    .lp-review-source {
+      display: inline-flex;
+      align-items: center;
+      margin-top: 10px;
+      padding: 0;
+      border: none;
+      background: transparent;
+      line-height: 0;
+    }
+    .lp-review-source__svg {
+      display: block;
+      height: 22px;
+      width: auto;
+    }
+    .lp-review-source__svg--angi {
+      height: 18px;
+      width: 52px;
+    }
+    .lp-reviews-cta { text-align: center; }
+    @media(max-width:900px) { .lp-reviews-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media(max-width:580px) { .lp-reviews-grid { grid-template-columns: 1fr; } }
+
+    /* ── PROCESS ─────────────────────────────────────────────── */
+    .lp-process-section { background: var(--color-bg); }
+    .lp-process-header { text-align: center; margin-bottom: 56px; }
+    .lp-process-header .lp-gold-line { margin: 20px auto; }
+    .lp-process-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      gap: 0; max-width: 1100px; margin: 0 auto 48px;
+      position: relative;
+    }
+    .lp-process-step {
+      padding: 48px 36px; text-align: center;
+      border: 1px solid var(--color-border-dim);
+      position: relative;
+    }
+    .lp-process-step + .lp-process-step { border-left: none; }
+    .lp-step-num {
+      font-family: 'Cormorant Garamond', serif; font-size: 72px;
+      font-weight: 300; color: #B67539;
+      line-height: 1; margin-bottom: 8px;
+    }
+    .lp-step-title {
+      font-family: 'Cormorant Garamond', serif; font-size: 24px;
+      font-weight: 500; color: var(--color-white); margin-bottom: 12px;
+    }
+    .lp-step-body { font-size: 14px; color: var(--color-text); line-height: 1.7; }
+    .lp-process-cta { text-align: center; }
+    @media(max-width:768px) {
+      .lp-process-grid { grid-template-columns: 1fr; }
+      .lp-process-step + .lp-process-step { border-left: 1px solid var(--color-border-dim); border-top: none; }
+    }
+
+    /* ── COMPARISON TABLE ────────────────────────────────────── */
+    .lp-diff-section { background: var(--color-bg-2); }
+    .lp-diff-header { margin-bottom: 40px; }
+    .lp-diff-inner { max-width: 1100px; margin: 0 auto; }
+    .lp-compare-table {
+      width: 100%; border-collapse: collapse; margin-bottom: 32px;
+    }
+    .lp-compare-table th {
+      padding: 16px 24px; text-align: left;
+      font-family: var(--font-sans); font-size: 12px; font-weight: 600;
+      letter-spacing: 0.14em; text-transform: uppercase;
+      border-bottom: 1px solid var(--color-border-dim);
+    }
+    .lp-compare-table th:nth-child(2) { color: var(--color-gold); background: rgba(182,117,57,0.06); }
+    .lp-compare-table th:nth-child(3) { color: var(--color-text-dim); }
+    .lp-compare-table th:first-child { color: var(--color-text-dimmer); }
+    .lp-compare-table td {
+      padding: 14px 24px; font-size: 14px; color: var(--color-text);
+      border-bottom: 1px solid var(--color-border-dim);
+    }
+    .lp-compare-table td:first-child {
+      color: var(--color-text-dim); font-size: 12px;
+      font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase;
+    }
+    .lp-compare-table td:nth-child(2) {
+      color: var(--color-white); font-weight: 500;
+      background: rgba(182,117,57,0.04);
+    }
+    .lp-compare-table tr:hover td { background: var(--color-surface); }
+    .lp-compare-table tr:hover td:nth-child(2) { background: rgba(182,117,57,0.08); }
+    .lp-atoz-box {
+      background: rgba(182,117,57,0.08);
+      border: 1px solid var(--color-gold-border);
+      border-left: 3px solid var(--color-gold);
+      padding: 24px 28px; margin-top: 24px;
+    }
+    .lp-atoz-box h4 {
+      font-family: var(--font-sans); font-size: 13px; font-weight: 700;
+      letter-spacing: 0.1em; text-transform: uppercase;
+      color: var(--color-gold); margin-bottom: 8px;
+    }
+    .lp-atoz-box p { font-size: 15px; color: var(--color-text); line-height: 1.7; }
+    @media(max-width:640px) {
+      .lp-compare-table { font-size: 13px; }
+      .lp-compare-table th, .lp-compare-table td { padding: 12px 14px; }
+    }
+
+    /* ── INVESTMENT RANGES ───────────────────────────────────── */
+    .lp-invest-section { background: var(--color-bg); color: var(--color-bg); }
+    .lp-invest-header { text-align: center; margin-bottom: 48px; }
+    .lp-invest-header .lp-gold-line { margin: 20px auto; }
+    .lp-invest-grid {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 24px; max-width: 1000px; margin: 0 auto 32px;
+    }
+    .lp-invest-card {
+      background: #ffffff;
+      border: 1px solid rgba(15, 23, 42, 0.1);
+      padding: 40px 36px;
+      transition: border-color 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 4px 24px rgba(15, 23, 42, 0.06);
+    }
+    .lp-invest-card:hover {
+      border-color: var(--color-gold-border);
+      box-shadow: 0 8px 32px rgba(15, 23, 42, 0.1);
+    }
+    .lp-invest-type {
+      font-family: var(--font-sans); font-size: 11px; font-weight: 600;
+      letter-spacing: 0.2em; text-transform: uppercase;
+      color: var(--color-gold); margin-bottom: 16px;
+    }
+    .lp-invest-range {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(28px, 3.5vw, 46px); font-weight: 300;
+      color: #0f172a;
+      line-height: 1.1; margin-bottom: 16px;
+    }
+    .lp-invest-body { font-size: 14px; color: #334155; line-height: 1.7; margin-bottom: 20px; }
+    .lp-invest-projects {
+      font-size: 12px; color: #475569;
+      border-top: 1px solid rgba(15, 23, 42, 0.1);
+      padding-top: 16px; line-height: 1.8;
+    }
+    .lp-invest-projects strong { color: #0f172a; }
+    .lp-invest-cta { text-align: center; }
+    @media(max-width:640px) {
+      .lp-invest-grid { grid-template-columns: 1fr; }
+      .lp-invest-card { padding: 28px 24px; }
+    }
+
+    /* ── TEAM SECTION ────────────────────────────────────────── */
+    .lp-team-section {
+      background: var(--color-bg-2);
+      display: grid; grid-template-columns: 1fr 1fr;
+      min-height: 480px;
+    }
+    .lp-team-img {
+      overflow: hidden; min-height: 380px;
+    }
+    .lp-team-img img { width: 100%; height: 100%; object-fit: cover; }
+    .lp-team-content {
+      display: flex; flex-direction: column; justify-content: center;
+      padding: clamp(40px, 6vw, 80px);
+    }
+    .lp-team-stats {
+      display: flex; gap: 28px; margin-top: 32px; flex-wrap: wrap;
+    }
+    .lp-team-stat { text-align: center; }
+    .lp-team-stat-num {
+      font-family: 'Cormorant Garamond', serif; font-size: 32px;
+      font-weight: 300; color: var(--color-gold); line-height: 1;
+      text-align: left;
+    }
+    .lp-team-stat-label {
+      font-size: 11px; color: var(--color-white);
+      text-transform: uppercase; letter-spacing: 0.12em;
+    }
+    @media(max-width:768px) {
+      .lp-team-section { grid-template-columns: 1fr; }
+      .lp-team-img { min-height: 260px; }
+    }
+
+    /* ── FAQ ─────────────────────────────────────────────────── */
+    .lp-faq-section { background: var(--color-bg); }
+    .lp-faq-header { text-align: center; margin-bottom: 48px; }
+    .lp-faq-header .lp-gold-line { margin: 20px auto; }
+    .lp-faq-list { max-width: 800px; margin: 0 auto; }
+    .lp-faq-item {
+      border-bottom: 1px solid var(--color-border-dim);
+    }
+    .lp-faq-item:first-child { border-top: 1px solid var(--color-border-dim); }
+    .lp-faq-q {
+      width: 100%; background: none; border: none; cursor: pointer;
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 22px 0; text-align: left; gap: 20px;
+    }
+    .lp-faq-q-text {
+      font-family: var(--font-sans); font-size: 16px; font-weight: 500;
+      color: var(--color-white); line-height: 1.4;
+      transition: color 0.2s ease;
+    }
+    .lp-faq-q:hover .lp-faq-q-text { color: var(--color-gold); }
+    .lp-faq-icon {
+      flex-shrink: 0; width: 20px; height: 20px;
+      border: 1px solid var(--color-border-dim); border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      transition: background 0.3s ease, border-color 0.3s ease;
+    }
+    .lp-faq-item.open .lp-faq-icon { background: var(--color-gold); border-color: var(--color-gold); }
+    .lp-faq-icon-bar {
+      position: relative; width: 8px; height: 1px;
+      background: var(--color-text-dim);
+    }
+    .lp-faq-icon-bar::after {
+      content: ''; position: absolute;
+      width: 1px; height: 8px; background: var(--color-text-dim);
+      top: -3.5px; left: 3.5px;
+      transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+    .lp-faq-item.open .lp-faq-icon-bar { background: var(--color-bg); }
+    .lp-faq-item.open .lp-faq-icon-bar::after { background: var(--color-bg); transform: scaleY(0); opacity: 0; }
+    .lp-faq-a {
+      overflow: hidden; max-height: 0;
+      transition: max-height 0.4s cubic-bezier(0.25,1,0.5,1), padding 0.3s ease;
+    }
+    .lp-faq-item.open .lp-faq-a { max-height: 400px; padding-bottom: 20px; }
+    .lp-faq-a-text { font-size: 15px; color: var(--color-text); line-height: 1.75; }
+
+    /* ── FINAL CTA ───────────────────────────────────────────── */
+    .lp-final-cta {
+      position: relative;
+      background: url('../IMAGES/lp-final-cta-montgomery-shower.webp') center / cover no-repeat;
+      text-align: center;
+      padding: clamp(80px, 12vw, 160px) clamp(20px, 5vw, 80px);
+    }
+    .lp-final-cta::before {
+      content: ''; position: absolute; inset: 0;
+      background: linear-gradient(180deg, rgba(10,10,14,0.8) 0%, rgba(26,28,35,0.75) 100%);
+    }
+    .lp-final-cta-inner { position: relative; z-index: 1; max-width: 680px; margin: 0 auto; }
+    .lp-final-cta .lp-heading { font-size: clamp(36px, 5.5vw, 72px); }
+    .lp-final-cta .lp-subheading { margin: 0 auto 36px; text-align: center; max-width: 520px; }
+    .lp-final-ctas { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; margin-bottom: 20px; }
+    .lp-final-micro { font-size: 12px; color: rgba(196,189,175,0.6); font-style: italic; }
+
+    /* ── FOOTER ──────────────────────────────────────────────── */
+    .lp-footer {
+      background: var(--color-bg);
+      border-top: 1px solid var(--color-border-dim);
+      padding: 36px clamp(20px, 5vw, 80px);
+      color: var(--color-white);
+    }
+    .lp-footer-inner {
+      max-width: 1200px; margin: 0 auto;
+      display: flex; align-items: center; justify-content: space-between;
+      flex-wrap: wrap; gap: 20px;
+    }
+    .lp-footer-logo img { height: 36px; width: auto; }
+    .lp-footer-info { font-size: 13px; color: var(--color-white); line-height: 1.8; }
+    .lp-footer-info a { color: var(--color-white); text-decoration: none; }
+    .lp-footer-info a:hover { color: var(--color-gold-light); }
+    .lp-footer-copy { font-size: 12px; color: var(--color-white); }
+    .lp-footer-social {
+      display: flex; align-items: center; gap: 12px;
+      text-align: left; justify-content: flex-start;
+    }
+    .lp-footer-social a {
+      display: inline-flex; align-items: center; justify-content: flex-start;
+      width: 40px; height: 40px;
+      text-align: left;
+      text-decoration: none;
+      color: var(--color-white);
+      border: none;
+      border-radius: 2px;
+      transition: color 0.25s ease, background 0.25s ease;
+    }
+    .lp-footer-social a:hover {
+      color: var(--color-gold-light);
+      background: rgba(255, 255, 255, 0.06);
+    }
+    .lp-footer-social a svg {
+      display: block; width: 18px; height: 18px;
+      fill: currentColor; color: inherit;
+    }
+
+    /* ── MOBILE STICKY CTA BAR ───────────────────────────────── */
+    .lp-sticky-bar {
+      position: fixed; bottom: 0; left: 0; right: 0; z-index: 999;
+      background: var(--color-bg-3);
+      border-top: 1px solid var(--color-border-dim);
+      display: none; /* shown via JS */
+      grid-template-columns: 1fr 1fr;
+    }
+    .lp-sticky-call, .lp-sticky-form {
+      padding: 16px; font-family: var(--font-sans);
+      font-size: 13px; font-weight: 600; letter-spacing: 0.1em;
+      text-transform: uppercase; text-decoration: none;
+      display: flex; align-items: center; justify-content: center; gap: 8px;
+      border: none; cursor: pointer;
+    }
+    .lp-sticky-call { background: transparent; color: var(--color-white); border-right: 1px solid var(--color-border-dim); }
+    .lp-sticky-form { background: var(--color-gold); color: var(--color-bg); }
+    @media(max-width:768px) {
+      .lp-sticky-bar { display: grid; }
+      body { padding-bottom: 56px; }
+    }
+
+    /* ── ANIMATIONS ──────────────────────────────────────────── */
+    .reveal {
+      opacity: 0; transform: translateY(28px);
+      transition: opacity 0.7s cubic-bezier(0.25,1,0.5,1),
+                  transform 0.7s cubic-bezier(0.25,1,0.5,1);
+    }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .reveal-delay-1 { transition-delay: 0.1s; }
+    .reveal-delay-2 { transition-delay: 0.2s; }
+    .reveal-delay-3 { transition-delay: 0.3s; }
+  </style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KZZXTRLG"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+  <!-- ── STICKY HEADER ──────────────────────────────────────── -->
+  <header class="lp-header" id="lp-header">
+    <div class="lp-header-logo">
+      <img src="/IMAGES/bb-logo-white.webp" alt="B&B Associates Creations">
+    </div>
+    <div class="lp-header-right">
+      <a href="tel:+12674028758" class="lp-header-phone">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.68A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.18 6.18l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"></path></svg>
+        <span>(267) 402-8758</span>
+      </a>
+      <a href="#form" class="lp-header-cta">Get Free Estimate</a>
+    </div>
+  </header>
+
+  <!-- ── HERO + STAT (first viewport) ───────────────────────── -->
+  <div class="lp-hero-viewport">
+  <section class="lp-hero" aria-label="Hero">
+    <div class="lp-hero-media" aria-hidden="true">
+      <div class="lp-hero-gallery">
+        <div class="lp-hero-gallery-track">
+          <div class="lp-hero-gallery-item"><img src="/portfolio/KITCHENS/B&amp;B - Beth Rubin-kitchen/153E1359-5284-48E5-9F68-B497880FF6F7.jpeg" alt="" width="600" height="800" decoding="async" fetchpriority="high"></div>
+          <div class="lp-hero-gallery-item"><img src="/portfolio/BATHROOMS/B&amp;B - Barenbaum -bathroom/20417733-E7F8-46EA-BCD5-6F86787E240D.jpeg" alt="" width="600" height="800" decoding="async"></div>
+          <div class="lp-hero-gallery-item"><img src="/portfolio/KITCHENS/B&amp;B - Bill Broderick -kitchen/08173010-D148-4016-9EE9-4BBE6DDF4F67.jpeg" alt="" width="600" height="800" decoding="async"></div>
+          <div class="lp-hero-gallery-item"><img src="/portfolio/BATHROOMS/B&amp;B - Borgia-bathroom/0355861A-4E5F-4F8D-89B0-FC8F3F156B45.jpeg" alt="" width="600" height="800" decoding="async"></div>
+          <div class="lp-hero-gallery-item"><img src="/portfolio/KITCHENS/B&amp;B - Bryn Michaels Kitchen/294E52B4-81AA-44D1-A230-24D9680D37BB.jpeg" alt="" width="600" height="800" decoding="async"></div>
+          <div class="lp-hero-gallery-item"><img src="/portfolio/BATHROOMS/B&amp;B - Bridle hall-bathroom/163A65E7-E665-4FE1-AF20-D2BD1B85F3B9.jpeg" alt="" width="600" height="800" decoding="async"></div>
+          <div class="lp-hero-gallery-item"><img src="/portfolio/KITCHENS/B&amp;B - Chris Lee Kitchen /41957DB3-DDE9-44D4-A476-DA4308EA0100.jpeg" alt="" width="600" height="800" decoding="async"></div>
+          <div class="lp-hero-gallery-item"><img src="/portfolio/BATHROOMS/B&amp;B - Carolyn Frank-bathroom/1B6ADBE5-861A-42E7-A20B-D62799B81818.jpeg" alt="" width="600" height="800" decoding="async"></div>
+          <div class="lp-hero-gallery-item"><img src="/portfolio/KITCHENS/B&amp;B - Beth Rubin-kitchen/153E1359-5284-48E5-9F68-B497880FF6F7.jpeg" alt="" width="600" height="800" decoding="async"></div>
+          <div class="lp-hero-gallery-item"><img src="/portfolio/BATHROOMS/B&amp;B - Barenbaum -bathroom/20417733-E7F8-46EA-BCD5-6F86787E240D.jpeg" alt="" width="600" height="800" decoding="async"></div>
+          <div class="lp-hero-gallery-item"><img src="/portfolio/KITCHENS/B&amp;B - Bill Broderick -kitchen/08173010-D148-4016-9EE9-4BBE6DDF4F67.jpeg" alt="" width="600" height="800" decoding="async"></div>
+          <div class="lp-hero-gallery-item"><img src="/portfolio/BATHROOMS/B&amp;B - Borgia-bathroom/0355861A-4E5F-4F8D-89B0-FC8F3F156B45.jpeg" alt="" width="600" height="800" decoding="async"></div>
+          <div class="lp-hero-gallery-item"><img src="/portfolio/KITCHENS/B&amp;B - Bryn Michaels Kitchen/294E52B4-81AA-44D1-A230-24D9680D37BB.jpeg" alt="" width="600" height="800" decoding="async"></div>
+          <div class="lp-hero-gallery-item"><img src="/portfolio/BATHROOMS/B&amp;B - Bridle hall-bathroom/163A65E7-E665-4FE1-AF20-D2BD1B85F3B9.jpeg" alt="" width="600" height="800" decoding="async"></div>
+          <div class="lp-hero-gallery-item"><img src="/portfolio/KITCHENS/B&amp;B - Chris Lee Kitchen /41957DB3-DDE9-44D4-A476-DA4308EA0100.jpeg" alt="" width="600" height="800" decoding="async"></div>
+          <div class="lp-hero-gallery-item"><img src="/portfolio/BATHROOMS/B&amp;B - Carolyn Frank-bathroom/1B6ADBE5-861A-42E7-A20B-D62799B81818.jpeg" alt="" width="600" height="800" decoding="async"></div>
+        </div>
+      </div>
+      <div class="lp-hero-readability"></div>
+    </div>
+    <div class="lp-hero-inner">
+      <p class="lp-hero-eyebrow">Serving the Main Line, Bucks &amp; Montgomery County Since 2013</p>
+      <h1><span class="lp-hero-title-lines">Kitchen &amp; Bathroom<br>Renovation &amp; Design</span></h1>
+      <p class="lp-hero-tagline">&ldquo;Luxury Within Your Means&rdquo;</p>
+      <p class="lp-hero-body">13 years. 1,200+ completed projects. 183 verified five-star reviews. B&amp;B Associates Creations is the region's premier design-build remodeling firm — family-owned, no subcontractors, lifetime guarantee.</p>
+      <div class="lp-hero-ctas">
+        <a href="#form" class="lp-btn-primary">Project Form</a>
+        <a href="tel:+12674028758" class="lp-btn-outline" aria-label="Call now, (267) 402-8758">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.68A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.18 6.18l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"></path></svg>
+          Call Now
+        </a>
+      </div>
+      <div class="lp-trust-badges">
+        <span class="lp-trust-badge">
+          <svg class="lp-trust-icon" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25 1.18-6.88-5-4.87 6.91-1.01L12 2z" stroke-linejoin="round"/></svg>
+          <span><strong>5.0</strong> · 183 Google Reviews</span>
+        </span>
+        <span class="lp-trust-badge">
+          <svg class="lp-trust-icon" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M3 9.5L12 3l9 6.5V20a1 1 0 01-1 1h-5v-6H9v6H4a1 1 0 01-1-1V9.5z" stroke-linejoin="round"/></svg>
+          <span><strong>13</strong> Years in Business</span>
+        </span>
+        <span class="lp-trust-badge lp-trust-badge--gg">
+          <div style="background:#fff;border-radius:6px;padding:4px 8px;display:inline-flex;align-items:center;">
+            <img src="/IMAGES/Google-Guaranteed.webp" alt="Google Guaranteed - B&amp;B Associates Creations" style="height:44px;width:auto;display:block;">
+          </div>
+        </span>
+        <span class="lp-trust-badge">
+          <svg class="lp-trust-icon" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 12l2.5 2.5L16 9" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span><strong>No</strong> Subcontractors</span>
+        </span>
+        <span class="lp-trust-badge">
+          <svg class="lp-trust-icon" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M12 3l7 4v5c0 5-3.5 9-7 10-3.5-1-7-5-7-10V7l7-4z" stroke-linejoin="round"/></svg>
+          <span><strong>Lifetime</strong> Workmanship</span>
+        </span>
+      </div>
+      <p class="lp-micro">We respond within 1 hour.</p>
+    </div>
+  </section>
+
+  <!-- ── STAT BAR ────────────────────────────────────────────── -->
+  <div class="lp-stat-bar">
+    <div class="lp-stat-grid">
+      <div class="lp-stat reveal">
+        <div class="lp-stat-num">1,200+</div>
+        <div class="lp-stat-label">Projects Completed</div>
+      </div>
+      <div class="lp-stat reveal reveal-delay-1">
+        <div class="lp-stat-num">13</div>
+        <div class="lp-stat-label">Years in Business</div>
+      </div>
+      <div class="lp-stat reveal reveal-delay-2">
+        <div class="lp-stat-num">183</div>
+        <div class="lp-stat-label">Five-Star Reviews</div>
+      </div>
+      <div class="lp-stat reveal reveal-delay-3">
+        <div class="lp-stat-num">60+</div>
+        <div class="lp-stat-label">Premium Partners</div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!-- ── LEAD FORM (after hero + stats) ──────────────────────── -->
+  <section class="lp-form-section lp-form-section--light" id="form" aria-label="Request free consultation">
+    <div class="lp-form-reveal-panel reveal">
+    <div class="lp-form-inner">
+      <div class="lp-form-intro">
+        <p class="lp-eyebrow">Free Consultation · No Obligation</p>
+        <h2 class="lp-heading">Start Your Dream Remodel Today</h2>
+        <div class="lp-gold-line lp-form-intro-line"></div>
+        <p class="lp-subheading">Fill out the form and we'll reach out within 1 hour — just a real conversation about your vision.</p>
+      </div>
+      <div class="lp-form-layout">
+        <div class="lp-form-column-form">
+        <div class="lp-form-wrap">
+          <p class="lp-form-sub lp-form-sub--lead">Tell us about your project — we'll respond within one business hour.</p>
+          <div class="lp-ghl-iframe-wrap">
+            <iframe
+              src="https://links.legacylinqdigital.com/widget/form/mkEFVx2YpX8rTVAlMtgR"
+              style="width:100%;height:769px;border:none;border-radius:0px;display:block;"
+              id="inline-mkEFVx2YpX8rTVAlMtgR"
+              data-layout="{'id':'INLINE'}"
+              data-trigger-type="alwaysShow"
+              data-trigger-value=""
+              data-activation-type="alwaysActivated"
+              data-activation-value=""
+              data-deactivation-type="neverDeactivate"
+              data-deactivation-value=""
+              data-form-name="Landing Page Contact Us Form"
+              data-height="769"
+              data-layout-iframe-id="inline-mkEFVx2YpX8rTVAlMtgR"
+              data-form-id="mkEFVx2YpX8rTVAlMtgR"
+              title="Landing Page Contact Us Form"
+            ></iframe>
+          </div>
+          <p class="lp-form-assurance">No obligation. No pressure. Consultation is completely free.</p>
+        </div>
+        </div>
+
+        <aside class="lp-form-sidebar">
+          <div class="lp-form-aside-section lp-form-why">
+            <h3>Why Homeowners Choose B&amp;B</h3>
+            <ul class="lp-why-list">
+              <li>13 years and 1,200+ completed projects in the Philadelphia area</li>
+              <li>183 verified five-star reviews on Google and Angi</li>
+              <li>Same master craftsmen from day one to final walkthrough — no subcontractors, ever</li>
+              <li>60+ premium supplier partners — 5–35% savings passed directly to you</li>
+              <li>Sub-1-hour response time and lifetime workmanship guarantee</li>
+            </ul>
+          </div>
+          <div class="lp-form-aside-section lp-sidebar-review">
+            <div class="stars">★★★★★</div>
+            <blockquote>"The result looks like a 5-star hotel bathroom. I keep walking in just to look at it. Thank you B&amp;B — you exceeded every expectation we had."</blockquote>
+            <cite>M.N. · Blue Bell, PA · Google Review</cite>
+          </div>
+          <div class="lp-form-aside-section lp-sidebar-phone">
+            <p>Or call us directly</p>
+            <a href="tel:+12674028758">(267) 402-8758</a>
+            <p class="response-badge">⚡ Sub-1-Hour Response Guaranteed</p>
+          </div>
+        </aside>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- ── PHOTO SHOWCASE ──────────────────────────────────────── -->
+  <section class="lp-gallery-section lp-section-full" aria-label="Portfolio showcase">
+    <div class="lp-section">
+      <div class="lp-gallery-header reveal">
+        <p class="lp-eyebrow">Our Work · Kitchens &amp; Bathrooms</p>
+        <h2 class="lp-heading">Transformations Across the Region</h2>
+        <div class="lp-gold-line" style="margin:20px auto;"></div>
+        <p class="lp-subheading">Every project is designed and built by the same team of master craftsmen — start to finish, no subcontractors, no exceptions.</p>
+      </div>
+      <div class="lp-featured-videos reveal">
+        <div class="lp-featured-videos-header">
+          <p class="lp-eyebrow">Featured Projects</p>
+        </div>
+        <div class="lp-featured-videos-shell">
+          <button class="lp-featured-arrow lp-featured-arrow--left" type="button" aria-label="Previous videos">‹</button>
+          <div class="lp-featured-carousel" aria-label="Featured project videos" data-lp-featured-carousel>
+            <a href="/portfolio/project/?id=barenbaum-bathroom" class="lp-featured-card">
+              <div class="lp-featured-img-wrap">
+                <video src="/portfolio/BATHROOMS/B&amp;B - Barenbaum -bathroom/IMG_9420.mp4" poster="../portfolio/BATHROOMS/B&amp;B - Barenbaum -bathroom/20417733-E7F8-46EA-BCD5-6F86787E240D.jpeg" autoplay loop muted playsinline preload="auto"></video>
+              </div>
+            </a>
+            <a href="/portfolio/project/?id=broderick-kitchen" class="lp-featured-card">
+              <div class="lp-featured-img-wrap">
+                <video src="/portfolio/KITCHENS/B&amp;B - Bill Broderick -kitchen/IMG_0811.mp4" poster="../portfolio/KITCHENS/B&amp;B - Bill Broderick -kitchen/08173010-D148-4016-9EE9-4BBE6DDF4F67.jpeg" autoplay loop muted playsinline preload="auto"></video>
+              </div>
+            </a>
+            <a href="/portfolio/project/?id=bryn-michaels-kitchen" class="lp-featured-card">
+              <div class="lp-featured-img-wrap">
+                <video src="/portfolio/KITCHENS/B&amp;B - Bryn Michaels Kitchen/def2b212633147c9abf52dbc2351495e.mp4" poster="../portfolio/KITCHENS/B&amp;B - Bryn Michaels Kitchen/294E52B4-81AA-44D1-A230-24D9680D37BB.jpeg" autoplay loop muted playsinline preload="auto"></video>
+              </div>
+            </a>
+            <a href="/portfolio/project/?id=borgia-bathroom" class="lp-featured-card">
+              <div class="lp-featured-img-wrap">
+                <video src="/portfolio/BATHROOMS/B&amp;B - Borgia-bathroom/IMG_5410.mp4" poster="../portfolio/BATHROOMS/B&amp;B - Borgia-bathroom/0355861A-4E5F-4F8D-89B0-FC8F3F156B45.jpeg" autoplay loop muted playsinline preload="auto"></video>
+              </div>
+            </a>
+            <a href="/portfolio/project/?id=rubin-kitchen" class="lp-featured-card">
+              <div class="lp-featured-img-wrap">
+                <video src="/portfolio/KITCHENS/B&amp;B - Beth Rubin-kitchen/IMG_2883.mp4" poster="../portfolio/KITCHENS/B&amp;B - Beth Rubin-kitchen/153E1359-5284-48E5-9F68-B497880FF6F7.jpeg" autoplay loop muted playsinline preload="auto"></video>
+              </div>
+            </a>
+            <a href="/portfolio/project/?id=ferrie-kitchen" class="lp-featured-card">
+              <div class="lp-featured-img-wrap">
+                <video src="/portfolio/KITCHENS/B&amp;B - Ferrie-kitchen/IMG_0761.mp4" poster="../portfolio/KITCHENS/B&amp;B - Ferrie-kitchen/6534D687-3AE7-4524-9657-EE34302DB729.jpeg" autoplay loop muted playsinline preload="auto"></video>
+              </div>
+            </a>
+          </div>
+          <button class="lp-featured-arrow lp-featured-arrow--right" type="button" aria-label="Next videos">›</button>
+        </div>
+      </div>
+      <hr class="lp-gallery-divider" aria-hidden="true">
+      <div class="lp-masonry" aria-label="Kitchen and bathroom project gallery — alternating">
+        <button type="button" class="lp-masonry-item reveal" data-project-id="rubin-kitchen" aria-label="Open project gallery: Rubin kitchen"><img src="/portfolio/KITCHENS/B&amp;B - Beth Rubin-kitchen/153E1359-5284-48E5-9F68-B497880FF6F7.jpeg" alt="Kitchen — stacked white and gray cabinetry, Montgomery County PA" loading="lazy" decoding="async"></button>
+        <button type="button" class="lp-masonry-item reveal reveal-delay-1" data-project-id="barenbaum-bathroom" aria-label="Open project gallery: Barenbaum bathroom"><img src="/portfolio/BATHROOMS/B&amp;B - Barenbaum -bathroom/20417733-E7F8-46EA-BCD5-6F86787E240D.jpeg" alt="Bathroom — reclaimed wood vanity, Pennsylvania" loading="lazy" decoding="async"></button>
+        <button type="button" class="lp-masonry-item reveal reveal-delay-2" data-project-id="broderick-kitchen" aria-label="Open project gallery: Broderick kitchen"><img src="/portfolio/KITCHENS/B&amp;B - Bill Broderick -kitchen/08173010-D148-4016-9EE9-4BBE6DDF4F67.jpeg" alt="Kitchen — open-concept cherry amber, Pennsylvania" loading="lazy" decoding="async"></button>
+        <button type="button" class="lp-masonry-item reveal reveal-delay-3" data-project-id="borgia-bathroom" aria-label="Open project gallery: Borgia bathroom"><img src="/portfolio/BATHROOMS/B&amp;B - Borgia-bathroom/0355861A-4E5F-4F8D-89B0-FC8F3F156B45.jpeg" alt="Bathroom — floor-to-ceiling slab tile, Pennsylvania" loading="lazy" decoding="async"></button>
+        <button type="button" class="lp-masonry-item reveal" data-project-id="bryn-michaels-kitchen" aria-label="Open project gallery: Bryn Michaels kitchen"><img src="/portfolio/KITCHENS/B&amp;B - Bryn Michaels Kitchen/294E52B4-81AA-44D1-A230-24D9680D37BB.jpeg" alt="Kitchen — two-tone with green backsplash, Pennsylvania" loading="lazy" decoding="async"></button>
+        <button type="button" class="lp-masonry-item reveal reveal-delay-1" data-project-id="bridlehall-bathroom" aria-label="Open project gallery: Bridle Hall bathroom"><img src="/portfolio/BATHROOMS/B&amp;B - Bridle hall-bathroom/163A65E7-E665-4FE1-AF20-D2BD1B85F3B9.jpeg" alt="Bathroom — classic transitional master bath, Pennsylvania" loading="lazy" decoding="async"></button>
+        <button type="button" class="lp-masonry-item reveal reveal-delay-2" data-project-id="lee-kitchen" aria-label="Open project gallery: Chris Lee kitchen"><img src="/portfolio/KITCHENS/B&amp;B - Chris Lee Kitchen /41957DB3-DDE9-44D4-A476-DA4308EA0100.jpeg" alt="Kitchen — structural raised-floor renovation, Pennsylvania" loading="lazy" decoding="async"></button>
+        <button type="button" class="lp-masonry-item reveal reveal-delay-3" data-project-id="frank-bathroom" aria-label="Open project gallery: Carolyn Frank bathroom"><img src="/portfolio/BATHROOMS/B&amp;B - Carolyn Frank-bathroom/1B6ADBE5-861A-42E7-A20B-D62799B81818.jpeg" alt="Bathroom — designer tile, Pennsylvania" loading="lazy" decoding="async"></button>
+        <button type="button" class="lp-masonry-item reveal" data-project-id="ferrie-kitchen" aria-label="Open project gallery: Ferrie kitchen"><img src="/portfolio/KITCHENS/B&amp;B - Ferrie-kitchen/6534D687-3AE7-4524-9657-EE34302DB729.jpeg" alt="Kitchen — navy and white with quartz, Pennsylvania" loading="lazy" decoding="async"></button>
+        <button type="button" class="lp-masonry-item reveal reveal-delay-1" data-project-id="cruz-bathroom" aria-label="Open project gallery: Cruz bathroom"><img src="/portfolio/BATHROOMS/B&amp;B - Cruz Master/3A187396-30B0-429C-A94A-DFBD89EC9C69.jpeg" alt="Bathroom — modern curbless shower, Pennsylvania" loading="lazy" decoding="async"></button>
+        <button type="button" class="lp-masonry-item reveal reveal-delay-2" data-project-id="ganescu-kitchen" aria-label="Open project gallery: Ganescu kitchen"><img src="/portfolio/KITCHENS/B&amp;B - Ganescu Kitchen/063A7109-A4EE-4AF8-9792-B964EFDB7B3F.jpeg" alt="Kitchen — seamless storage design, Pennsylvania" loading="lazy" decoding="async"></button>
+        <button type="button" class="lp-masonry-item reveal reveal-delay-3" data-project-id="emad-bathroom" aria-label="Open project gallery: Emad bathroom"><img src="/portfolio/BATHROOMS/B&amp;B - Emad Master Bath/4358B1C2-D2FE-43AB-9E16-DC20F5186ADE.jpeg" alt="Bathroom — monochromatic modern, Pennsylvania" loading="lazy" decoding="async"></button>
+        <button type="button" class="lp-masonry-item lp-masonry-item--hidden reveal" data-project-id="giedrycz-kitchen" aria-label="Open project gallery: Giedrycz kitchen"><img src="/portfolio/KITCHENS/B&amp;B - Giedrycz Kitchen/021A219C-F9C8-4FB0-B564-36FFF126EDCB.jpeg" alt="Kitchen remodel, Pennsylvania" loading="lazy" decoding="async"></button>
+        <button type="button" class="lp-masonry-item lp-masonry-item--hidden reveal reveal-delay-1" data-project-id="garvey-bathroom" aria-label="Open project gallery: Garvey bathroom"><img src="/portfolio/BATHROOMS/B&amp;B - Garvey-bathroom/55A55375-6991-4E1E-B73A-564EB2AB5E42.jpeg" alt="Bathroom — hexagon stone spa, Pennsylvania" loading="lazy" decoding="async"></button>
+        <button type="button" class="lp-masonry-item lp-masonry-item--hidden reveal reveal-delay-2" data-project-id="hess-kitchen" aria-label="Open project gallery: Hess kitchen"><img src="/portfolio/KITCHENS/B&amp;B - Hess Kitchen /22A33749-9A97-40C9-9583-3D217973E06D.jpeg" alt="Kitchen renovation, Pennsylvania" loading="lazy" decoding="async"></button>
+        <button type="button" class="lp-masonry-item lp-masonry-item--hidden reveal reveal-delay-3" data-project-id="giedrycz-bathroom" aria-label="Open project gallery: Giedrycz master bathroom"><img src="/portfolio/BATHROOMS/B&amp;B - Giedrycz Master bathroom/1CCAA2C7-7DAC-4C75-8F5D-50098700FD18.jpg" alt="Master bathroom, Pennsylvania" loading="lazy" decoding="async"></button>
+        <button type="button" class="lp-masonry-item lp-masonry-item--hidden reveal" data-project-id="hornig-kitchen" aria-label="Open project gallery: Hornig kitchen"><img src="/portfolio/KITCHENS/B&amp;B - Hornig-kitchen/250A9B19-812C-4437-A819-2A9F84DEE3FB.jpeg" alt="Kitchen — brass and black accents, Pennsylvania" loading="lazy" decoding="async"></button>
+        <button type="button" class="lp-masonry-item lp-masonry-item--hidden reveal reveal-delay-1" data-project-id="guttridge-bathroom" aria-label="Open project gallery: Guttridge bathroom"><img src="/portfolio/BATHROOMS/B&amp;B - Guttridge -bathroom/IMG_6078.jpg" alt="Bathroom — spa and laundry, Montgomery County PA" loading="lazy" decoding="async"></button>
+        <button type="button" class="lp-masonry-item lp-masonry-item--hidden reveal reveal-delay-2" data-project-id="kohl-kitchen" aria-label="Open project gallery: Jeff Kohl kitchen"><img src="/portfolio/KITCHENS/B&amp;B - Jeff Kohl Kitchen/IMG_2798.jpg" alt="Kitchen — grey and navy open concept, Pennsylvania" loading="lazy" decoding="async"></button>
+        <button type="button" class="lp-masonry-item lp-masonry-item--hidden reveal reveal-delay-3" data-project-id="hartka-bathroom" aria-label="Open project gallery: Hartka bathroom"><img src="/portfolio/BATHROOMS/B&amp;B - Hartka-bathroom/0DFF0DCA-8172-45BF-9C23-55A9229A3245.jpeg" alt="Bathroom renovation, Pennsylvania" loading="lazy" decoding="async"></button>
+        <button type="button" class="lp-masonry-item lp-masonry-item--hidden reveal" data-project-id="larkin-kitchen" aria-label="Open project gallery: Larkin kitchen"><img src="/portfolio/KITCHENS/B&amp;B - Larkin Kitchen/02E0CC2D-DE46-4236-BC95-B3C1C07DE13B.jpeg" alt="Kitchen — cherry amber, Pennsylvania" loading="lazy" decoding="async"></button>
+        <button type="button" class="lp-masonry-item lp-masonry-item--hidden reveal reveal-delay-1" data-project-id="hershey-bathroom" aria-label="Open project gallery: Hershey bathroom"><img src="/portfolio/BATHROOMS/B&amp;B - Hershey-bathroom/08477D74-323C-4FFA-95DA-415CA31AAC2C.jpeg" alt="Bathroom remodel, Pennsylvania" loading="lazy" decoding="async"></button>
+        <button type="button" class="lp-masonry-item lp-masonry-item--hidden reveal reveal-delay-2" data-project-id="mcbride-kitchen" aria-label="Open project gallery: McBride kitchen"><img src="/portfolio/KITCHENS/B&amp;B - McBride Kitchen/03A7198B-DACB-43CA-87B1-1148DB3DEEC8.jpeg" alt="Kitchen remodel, Pennsylvania" loading="lazy" decoding="async"></button>
+        <button type="button" class="lp-masonry-item lp-masonry-item--hidden reveal reveal-delay-3" data-project-id="kaarby-bathroom" aria-label="Open project gallery: Kaarby bathroom"><img src="/portfolio/BATHROOMS/B&amp;B - Kaarby-bathroom/1BC906A9-6171-4884-B786-75B737522F80.jpeg" alt="Master bathroom, Pennsylvania" loading="lazy" decoding="async"></button>
+        <button type="button" class="lp-masonry-item lp-masonry-item--hidden reveal" data-project-id="peterson-kitchen" aria-label="Open project gallery: Njani Peterson kitchen"><img src="/portfolio/KITCHENS/B&amp;B - Njani Peterson Kitchen /13AB3ECD-C8EF-49B0-B794-DB2CE47818B6.jpeg" alt="Kitchen renovation, Pennsylvania" loading="lazy" decoding="async"></button>
+        <button type="button" class="lp-masonry-item lp-masonry-item--hidden reveal reveal-delay-1" data-project-id="lashannon-bathroom" aria-label="Open project gallery: LaShannon bathroom"><img src="/portfolio/BATHROOMS/B&amp;B - LaShannon Master bathroom/09DCC4C5-5F51-4A82-9C78-AB97A237A844.jpeg" alt="Master bathroom, Pennsylvania" loading="lazy" decoding="async"></button>
+        <button type="button" class="lp-masonry-item lp-masonry-item--hidden reveal reveal-delay-2" data-project-id="olaughlin-kitchen" aria-label="Open project gallery: O’Laughlin kitchen"><img src="/portfolio/KITCHENS/BB-OLaughlin-kitchen/056F5D4A-01E4-476B-9D9C-06884681B5C9.jpeg" alt="Kitchen — transitional open concept, Montgomery County PA" loading="lazy" decoding="async"></button>
+        <button type="button" class="lp-masonry-item lp-masonry-item--hidden reveal reveal-delay-3" data-project-id="levinson-bathroom" aria-label="Open project gallery: Levinson bathroom"><img src="/portfolio/BATHROOMS/B&amp;B - Levinson Master Bathroom/3C24E771-25E4-4CB7-8C08-F0493A9BBA2A.jpeg" alt="Master bathroom, Pennsylvania" loading="lazy" decoding="async"></button>
+        <button type="button" class="lp-masonry-item lp-masonry-item--hidden reveal" data-project-id="oleg-kitchen" aria-label="Open project gallery: Oleg kitchen"><img src="/portfolio/KITCHENS/B&amp;B - Oleg Kitchen /05B686C2-2287-4232-894A-C6AE7F9593C9.jpeg" alt="Kitchen remodel, Pennsylvania" loading="lazy" decoding="async"></button>
+        <button type="button" class="lp-masonry-item lp-masonry-item--hidden reveal reveal-delay-1" data-project-id="petev-bathroom" aria-label="Open project gallery: Pete V bathroom"><img src="/portfolio/BATHROOMS/B&amp;B - Pete V-bathroom/059FFEC6-1BB2-4EF6-97A4-000D6C9D7369.jpeg" alt="Bathroom remodel, Pennsylvania" loading="lazy" decoding="async"></button>
+        <button type="button" class="lp-masonry-item lp-masonry-item--hidden reveal reveal-delay-2" data-project-id="prager-kitchen" aria-label="Open project gallery: Prager kitchen"><img src="/portfolio/KITCHENS/B&amp;B - Prager-kitchen/0DB0D4AE-8BC9-4CF0-B0BF-A4E71397B8DA.jpeg" alt="Kitchen renovation, Pennsylvania" loading="lazy" decoding="async"></button>
+        <button type="button" class="lp-masonry-item lp-masonry-item--hidden reveal reveal-delay-3" data-project-id="odonnell-bathroom" aria-label="Open project gallery: O’Donnell bathroom"><img src="/portfolio/BATHROOMS/BB-ODonnell-bathroom/085E5B7F-C0C3-4C1C-BCE2-B92BB2D4EF3C.jpeg" alt="Bathroom — coastal teal, Montgomery County PA" loading="lazy" decoding="async"></button>
+        <button type="button" class="lp-masonry-item lp-masonry-item--hidden reveal" data-project-id="slingsby-kitchen" aria-label="Open project gallery: Slingsby kitchen"><img src="/portfolio/KITCHENS/B&amp;B - Slingsby Kitchen/1CE15249-F293-4B34-B3C6-5F1C86012F0C.jpeg" alt="Kitchen — Welborn cabinetry, Pennsylvania" loading="lazy" decoding="async"></button>
+        <button type="button" class="lp-masonry-item lp-masonry-item--hidden reveal reveal-delay-1" data-project-id="sharada-bathroom" aria-label="Open project gallery: Sharada bathroom"><img src="/portfolio/BATHROOMS/B&amp;B - Sharada -bathroom/1C191061-9F5B-4F6C-9AA5-89F710D2B392.jpeg" alt="Bathroom renovation, Pennsylvania" loading="lazy" decoding="async"></button>
+        <button type="button" class="lp-masonry-item lp-masonry-item--hidden reveal reveal-delay-2" data-project-id="rubin-kitchen" aria-label="Open project gallery: Rubin kitchen"><img src="/portfolio/KITCHENS/B&amp;B - Beth Rubin-kitchen/2E65DD0B-0031-4C99-8136-3B8597A5D610.jpeg" alt="Kitchen — detail view, Pennsylvania" loading="lazy" decoding="async"></button>
+        <button type="button" class="lp-masonry-item lp-masonry-item--hidden reveal reveal-delay-3" data-project-id="goldberg-bathroom" aria-label="Open project gallery: Goldberg bathroom"><img src="/portfolio/BATHROOMS/B&amp;B - Stacey Goldberg bathroom/2434.jpg" alt="Master bathroom, Pennsylvania" loading="lazy" decoding="async"></button>
+      </div>
+      <div class="lp-gallery-cta reveal">
+        <button type="button" id="lp-masonry-load-more" class="lp-gallery-load-more">Load more</button>
+      </div>
+    </div>
+  </section>
+
+  <div id="lp-project-lightbox" class="lp-project-lightbox" role="dialog" aria-modal="true" aria-labelledby="lp-pl-title" aria-hidden="true">
+    <div class="lp-project-lightbox-backdrop" data-lp-pl-backdrop></div>
+    <div class="lp-project-lightbox-panel">
+      <button type="button" class="lp-project-lightbox-close" aria-label="Close project gallery">&times;</button>
+      <div class="lp-project-lightbox-stage-wrap">
+        <button type="button" class="lp-project-lightbox-nav lp-project-lightbox-nav--prev" aria-label="Previous photo or video">‹</button>
+        <div class="lp-project-lightbox-stage" id="lp-pl-stage"></div>
+        <button type="button" class="lp-project-lightbox-nav lp-project-lightbox-nav--next" aria-label="Next photo or video">›</button>
+      </div>
+      <div class="lp-project-lightbox-thumbs" id="lp-pl-thumbs"></div>
+      <div class="lp-project-lightbox-meta">
+        <p class="lp-project-lightbox-eyebrow" id="lp-pl-eyebrow"></p>
+        <h2 class="lp-project-lightbox-title" id="lp-pl-title"></h2>
+        <div class="lp-project-lightbox-chips" id="lp-pl-chips"></div>
+        <p class="lp-project-lightbox-desc" id="lp-pl-desc"></p>
+        <blockquote class="lp-project-lightbox-review" id="lp-pl-review" hidden>
+          <p id="lp-pl-review-text"></p>
+          <cite id="lp-pl-review-cite"></cite>
+        </blockquote>
+        <div class="lp-project-lightbox-footer">
+          <a class="lp-project-lightbox-link" id="lp-pl-link" href="#">Full project page</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── REVIEWS ─────────────────────────────────────────────── -->
+  <section class="lp-reviews-section lp-section-full" aria-label="Customer reviews">
+    <div class="lp-section">
+      <div class="lp-reviews-header reveal">
+        <p class="lp-eyebrow">Verified Reviews · Google &amp; Angi</p>
+        <h2 class="lp-heading">What Homeowners Are Saying</h2>
+        <div class="lp-gold-line" style="margin:20px auto;"></div>
+        <p class="lp-subheading" style="margin:0 auto;">183 verified five-star reviews. Every single one.</p>
+      </div>
+      <div class="lp-reviews-grid">
+        <div class="lp-review-card reveal">
+          <div class="lp-review-stars">★★★★★</div>
+          <p class="lp-review-text">"The result looks like a 5-star hotel bathroom. I keep walking in just to look at it. Thank you B&amp;B — you exceeded every expectation we had."</p>
+          <div class="lp-review-author">M.N. · Blue Bell, PA</div>
+          <span class="lp-review-source lp-review-source--google" role="img" aria-label="Review on Google">
+            <svg class="lp-review-source__svg" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path fill="#FFC107" d="M43.611 20.083H42V20H24v8h11.303c-1.649 4.657-6.08 8-11.303 8-6.627 0-12-5.373-12-12s5.373-12 12-12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4 12.955 4 4 12.955 4 24s8.955 20 20 20 20-8.955 20-20c0-1.341-.138-2.65-.389-3.917z"/><path fill="#FF3D00" d="m6.306 14.691 6.571 4.819C14.655 15.108 18.961 12 24 12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4 16.318 4 9.656 8.337 6.306 14.691z"/><path fill="#4CAF50" d="M24 44c5.166 0 9.86-1.977 13.409-5.192l-6.19-5.238C29.211 35.091 26.715 36 24 36c-5.222 0-9.652-3.343-11.303-8H5.663C9.08 39.304 16.066 44 24 44z"/><path fill="#1976D2" d="M43.611 20.083H42V20H24v8h11.303c-.792 2.237-2.231 4.166-4.087 5.571l6.19 5.238C42.022 39.196 44 34.218 44 24c0-1.341-.138-2.65-.389-3.917z"/></svg>
+          </span>
+        </div>
+        <div class="lp-review-card reveal reveal-delay-1">
+          <div class="lp-review-stars">★★★★★</div>
+          <p class="lp-review-text">"Best investment we've ever made. Removing those walls completely changed how we live. B&amp;B handled every detail perfectly."</p>
+          <div class="lp-review-author">Dana &amp; Roy M. · Wyncote, PA</div>
+          <span class="lp-review-source lp-review-source--google" role="img" aria-label="Review on Google">
+            <svg class="lp-review-source__svg" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path fill="#FFC107" d="M43.611 20.083H42V20H24v8h11.303c-1.649 4.657-6.08 8-11.303 8-6.627 0-12-5.373-12-12s5.373-12 12-12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4 12.955 4 4 12.955 4 24s8.955 20 20 20 20-8.955 20-20c0-1.341-.138-2.65-.389-3.917z"/><path fill="#FF3D00" d="m6.306 14.691 6.571 4.819C14.655 15.108 18.961 12 24 12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4 16.318 4 9.656 8.337 6.306 14.691z"/><path fill="#4CAF50" d="M24 44c5.166 0 9.86-1.977 13.409-5.192l-6.19-5.238C29.211 35.091 26.715 36 24 36c-5.222 0-9.652-3.343-11.303-8H5.663C9.08 39.304 16.066 44 24 44z"/><path fill="#1976D2" d="M43.611 20.083H42V20H24v8h11.303c-.792 2.237-2.231 4.166-4.087 5.571l6.19 5.238C42.022 39.196 44 34.218 44 24c0-1.341-.138-2.65-.389-3.917z"/></svg>
+          </span>
+        </div>
+        <div class="lp-review-card reveal reveal-delay-2">
+          <div class="lp-review-stars">★★★★★</div>
+          <p class="lp-review-text">"The teal island was our dream and B&amp;B executed it better than we imagined. Every detail — from the backsplash to the brass fixtures — is perfect. Worth every penny."</p>
+          <div class="lp-review-author">The Marino Family · Newtown, PA</div>
+          <span class="lp-review-source lp-review-source--angi" role="img" aria-label="Review on Angi">
+            <svg class="lp-review-source__svg lp-review-source__svg--angi" viewBox="0 0 72 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><text x="0" y="18" fill="#FF6154" font-family="Manrope, system-ui, -apple-system, sans-serif" font-weight="800" font-size="18" letter-spacing="-0.04em">angi</text></svg>
+          </span>
+        </div>
+        <div class="lp-review-card reveal">
+          <div class="lp-review-stars">★★★★★</div>
+          <p class="lp-review-text">"The scale of what B&amp;B accomplished here is remarkable. They expanded our kitchen through the entire front of the house. The backsplash tile is stunning and the brass finishes are perfect."</p>
+          <div class="lp-review-author">The O'Laughlin Family · Pennsylvania</div>
+          <span class="lp-review-source lp-review-source--google" role="img" aria-label="Review on Google">
+            <svg class="lp-review-source__svg" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path fill="#FFC107" d="M43.611 20.083H42V20H24v8h11.303c-1.649 4.657-6.08 8-11.303 8-6.627 0-12-5.373-12-12s5.373-12 12-12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4 12.955 4 4 12.955 4 24s8.955 20 20 20 20-8.955 20-20c0-1.341-.138-2.65-.389-3.917z"/><path fill="#FF3D00" d="m6.306 14.691 6.571 4.819C14.655 15.108 18.961 12 24 12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4 16.318 4 9.656 8.337 6.306 14.691z"/><path fill="#4CAF50" d="M24 44c5.166 0 9.86-1.977 13.409-5.192l-6.19-5.238C29.211 35.091 26.715 36 24 36c-5.222 0-9.652-3.343-11.303-8H5.663C9.08 39.304 16.066 44 24 44z"/><path fill="#1976D2" d="M43.611 20.083H42V20H24v8h11.303c-.792 2.237-2.231 4.166-4.087 5.571l6.19 5.238C42.022 39.196 44 34.218 44 24c0-1.341-.138-2.65-.389-3.917z"/></svg>
+          </span>
+        </div>
+        <div class="lp-review-card reveal reveal-delay-1">
+          <div class="lp-review-stars">★★★★★</div>
+          <p class="lp-review-text">"Our master bath now looks like something out of Architectural Digest. The curbless shower and the lighting design are absolutely stunning. We couldn't believe it was the same room."</p>
+          <div class="lp-review-author">Sarah &amp; Tom R. · Blue Bell, PA</div>
+          <span class="lp-review-source lp-review-source--angi" role="img" aria-label="Review on Angi">
+            <svg class="lp-review-source__svg lp-review-source__svg--angi" viewBox="0 0 72 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><text x="0" y="18" fill="#FF6154" font-family="Manrope, system-ui, -apple-system, sans-serif" font-weight="800" font-size="18" letter-spacing="-0.04em">angi</text></svg>
+          </span>
+        </div>
+        <div class="lp-review-card reveal reveal-delay-2">
+          <div class="lp-review-stars">★★★★★</div>
+          <p class="lp-review-text">"The arched cabinet detail is something we never imagined possible — and B&amp;B designed the whole kitchen around it perfectly. The navy and white combination is timeless. Everyone who sees it is floored."</p>
+          <div class="lp-review-author">The Giedrycz Family · Pennsylvania</div>
+          <span class="lp-review-source lp-review-source--google" role="img" aria-label="Review on Google">
+            <svg class="lp-review-source__svg" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path fill="#FFC107" d="M43.611 20.083H42V20H24v8h11.303c-1.649 4.657-6.08 8-11.303 8-6.627 0-12-5.373-12-12s5.373-12 12-12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4 12.955 4 4 12.955 4 24s8.955 20 20 20 20-8.955 20-20c0-1.341-.138-2.65-.389-3.917z"/><path fill="#FF3D00" d="m6.306 14.691 6.571 4.819C14.655 15.108 18.961 12 24 12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4 16.318 4 9.656 8.337 6.306 14.691z"/><path fill="#4CAF50" d="M24 44c5.166 0 9.86-1.977 13.409-5.192l-6.19-5.238C29.211 35.091 26.715 36 24 36c-5.222 0-9.652-3.343-11.303-8H5.663C9.08 39.304 16.066 44 24 44z"/><path fill="#1976D2" d="M43.611 20.083H42V20H24v8h11.303c-.792 2.237-2.231 4.166-4.087 5.571l6.19 5.238C42.022 39.196 44 34.218 44 24c0-1.341-.138-2.65-.389-3.917z"/></svg>
+          </span>
+        </div>
+      </div>
+      <div class="lp-reviews-cta reveal">
+        <a href="https://www.google.com/maps?cid=bb-associates-creations" target="_blank" rel="noopener" class="lp-btn-outline">Read All 183 Reviews →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PROCESS ─────────────────────────────────────────────── -->
+  <section class="lp-process-section lp-section-full" aria-label="Our process">
+    <div class="lp-section">
+      <div class="lp-process-header reveal">
+        <p class="lp-eyebrow">Free Consultation · 3 Simple Steps</p>
+        <h2 class="lp-heading">Getting Started Is Simple</h2>
+        <div class="lp-gold-line" style="margin:20px auto;"></div>
+      </div>
+      <div class="lp-process-grid">
+        <div class="lp-process-step reveal">
+          <div class="lp-step-num">01</div>
+          <h3 class="lp-step-title">Free In-Home Consultation</h3>
+          <p class="lp-step-body">We meet at your home, walk the space together, and listen to your vision — a real conversation about what you want and what's possible.</p>
+        </div>
+        <div class="lp-process-step reveal reveal-delay-1">
+          <div class="lp-step-num">02</div>
+          <h3 class="lp-step-title">Custom Design &amp; Transparent Estimate</h3>
+          <p class="lp-step-body">We prepare custom CAD drawings and a fully itemized proposal — delivered within 1 day. No vague numbers, no hidden costs, no surprises.</p>
+        </div>
+        <div class="lp-process-step reveal reveal-delay-2">
+          <div class="lp-step-num">03</div>
+          <h3 class="lp-step-title">White-Glove Build</h3>
+          <p class="lp-step-body">Your dedicated master craftsmen build your project from day one through the final walkthrough. The same team. No subcontractors. No handoffs. Ever.</p>
+        </div>
+      </div>
+      <div class="lp-process-cta reveal">
+        <a href="#form" class="lp-btn-primary">Start With a Free Consultation →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── COMPARISON TABLE ────────────────────────────────────── -->
+  <section class="lp-diff-section lp-section-full" aria-label="Why choose B&B">
+    <div class="lp-section">
+      <div class="lp-diff-header reveal">
+        <p class="lp-eyebrow">The B&amp;B Difference</p>
+        <h2 class="lp-heading">Why Homeowners Choose B&amp;B Over Every Other Contractor</h2>
+        <div class="lp-gold-line"></div>
+      </div>
+      <div class="lp-diff-inner">
+        <table class="lp-compare-table">
+          <thead>
+            <tr>
+              <th></th>
+              <th>B&amp;B Associates Creations</th>
+              <th>Big-Box / Other Contractors</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Craftsmen</td>
+              <td>Same master team, start to finish</td>
+              <td>Rotating subcontractors</td>
+            </tr>
+            <tr>
+              <td>Experience</td>
+              <td>13 years, 1,200+ projects</td>
+              <td>Varies widely</td>
+            </tr>
+            <tr>
+              <td>Supplier Access</td>
+              <td>60+ premium partners, 5–35% savings to you</td>
+              <td>Standard retail markup</td>
+            </tr>
+            <tr>
+              <td>Estimate</td>
+              <td>Fully itemized, delivered in 1 day</td>
+              <td>Vague, weeks-long process</td>
+            </tr>
+            <tr>
+              <td>Guarantee</td>
+              <td>Lifetime Workmanship Guarantee</td>
+              <td>Standard 1-year</td>
+            </tr>
+            <tr>
+              <td>Response Time</td>
+              <td>Sub-1-hour guaranteed</td>
+              <td>Days (if at all)</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="lp-atoz-box reveal">
+          <h4>Our A-to-Z Policy</h4>
+          <p>The same master craftsmen who start your project stay with it through completion. No handoffs. No strangers in your home halfway through. No crew rotation. This is our promise on every single project.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── INVESTMENT RANGES ────────────────────────────────────── -->
+  <section class="lp-invest-section lp-section-full" aria-label="Investment ranges">
+    <div class="lp-section">
+      <div class="lp-invest-header reveal">
+        <p class="lp-eyebrow">Transparent Pricing</p>
+        <h2 class="lp-heading">What Does a B&amp;B Remodel Cost?</h2>
+        <div class="lp-gold-line" style="margin:20px auto;"></div>
+        <p class="lp-subheading" style="margin:0 auto;">We believe in complete transparency. Here's what homeowners in our area typically invest in a B&amp;B remodel.</p>
+      </div>
+      <div class="lp-invest-grid">
+        <div class="lp-invest-card reveal">
+          <p class="lp-invest-type">Kitchen Remodeling</p>
+          <div class="lp-invest-range">$55,000 – $150,000+</div>
+          <p class="lp-invest-body">Complete custom kitchen renovations, depending on square footage, scope, and material selections. Structural work, custom cabinetry, countertops, appliances, lighting, and flooring all included.</p>
+          <div class="lp-invest-projects">
+            <strong>Recent projects:</strong><br>
+            Vanilla Island Open Kitchen · $55K–$75K<br>
+            Stacked Brass &amp; Black Kitchen · $65K–$85K<br>
+            Open-Concept Grey &amp; Navy · $80K–$110K<br>
+            Cherry Amber Structural Kitchen · $85K–$110K
+          </div>
+        </div>
+        <div class="lp-invest-card reveal reveal-delay-1">
+          <p class="lp-invest-type">Bathroom Renovation</p>
+          <div class="lp-invest-range">$22,000 – $70,000+</div>
+          <p class="lp-invest-body">Luxury bathroom transformations from powder rooms to full primary suite renovations. Custom tile work, vanities, curbless showers, freestanding tubs, lighting, and all finishes included.</p>
+          <div class="lp-invest-projects">
+            <strong>Recent projects:</strong><br>
+            Custom Tile Master Bath · $42K–$58K<br>
+            Modern Dark Spa Bath · $55K–$70K<br>
+            Exotic Coastal Teal Bath · $55K–$75K<br>
+            Mother of Pearl Luxury Bath · $65K–$85K
+          </div>
+        </div>
+      </div>
+      <div class="lp-invest-cta reveal">
+        <a href="#form" class="lp-btn-primary">Get Your Custom Estimate →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── TEAM ────────────────────────────────────────────────── -->
+  <section class="lp-team-section" aria-label="About B&B Associates">
+    <div class="lp-team-img">
+      <img src="/IMAGES/BandB-Associates-team.webp" alt="B&B Associates Creations team — Ambler, PA" loading="lazy">
+    </div>
+    <div class="lp-team-content">
+      <p class="lp-eyebrow reveal">Family-Owned · Ambler, PA</p>
+      <h2 class="lp-heading reveal reveal-delay-1">Master Craftsmen of the Main Line &amp; Greater Philadelphia</h2>
+      <div class="lp-gold-line reveal reveal-delay-2"></div>
+      <p class="lp-subheading reveal reveal-delay-2">B&amp;B Associates Creations has been transforming kitchens and bathrooms across the Main Line, Bucks, and Montgomery County since 2013. Family-owned and operated, our core team has been together for years. We don't rotate crews. We don't use subcontractors. The people you meet on day one are the people who finish your project — and stand behind it for life.</p>
+      <div class="lp-team-stats reveal reveal-delay-3">
+        <div class="lp-team-stat">
+          <div class="lp-team-stat-num">2013</div>
+          <div class="lp-team-stat-label">Founded</div>
+        </div>
+        <div class="lp-team-stat">
+          <div class="lp-team-stat-num">Family</div>
+          <div class="lp-team-stat-label">Owned &amp; Operated</div>
+        </div>
+        <div class="lp-team-stat">
+          <div class="lp-team-stat-num">Lifetime</div>
+          <div class="lp-team-stat-label">Workmanship Guarantee</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FAQ ────────────────────────────────────────────────── -->
+  <section class="lp-faq-section lp-section-full" aria-label="Frequently asked questions">
+    <div class="lp-section">
+      <div class="lp-faq-header reveal">
+        <p class="lp-eyebrow">Common Questions</p>
+        <h2 class="lp-heading">Frequently Asked Questions</h2>
+        <div class="lp-gold-line" style="margin:20px auto;"></div>
+      </div>
+      <div class="lp-faq-list">
+        <div class="lp-faq-item">
+          <button class="lp-faq-q" aria-expanded="false">
+            <span class="lp-faq-q-text">How long does a kitchen or bathroom remodel take?</span>
+            <span class="lp-faq-icon"><span class="lp-faq-icon-bar"></span></span>
+          </button>
+          <div class="lp-faq-a"><p class="lp-faq-a-text">Custom kitchen renovations typically take 6–16 weeks from demolition to final walkthrough, depending on scope and complexity. Full bathroom renovations typically take 4–10 weeks. We provide a detailed project timeline before any work begins — no surprises.</p></div>
+        </div>
+        <div class="lp-faq-item">
+          <button class="lp-faq-q" aria-expanded="false">
+            <span class="lp-faq-q-text">Do you use subcontractors?</span>
+            <span class="lp-faq-icon"><span class="lp-faq-icon-bar"></span></span>
+          </button>
+          <div class="lp-faq-a"><p class="lp-faq-a-text">Never. Our A-to-Z Policy guarantees that the same master craftsmen who start your project stay with it through completion. No subcontractors, no crew rotation, no strangers in your home. This is a core commitment that separates us from every other contractor in the region.</p></div>
+        </div>
+        <div class="lp-faq-item">
+          <button class="lp-faq-q" aria-expanded="false">
+            <span class="lp-faq-q-text">What areas do you serve?</span>
+            <span class="lp-faq-icon"><span class="lp-faq-icon-bar"></span></span>
+          </button>
+          <div class="lp-faq-a"><p class="lp-faq-a-text">We serve the Main Line (Wayne, Villanova, Bryn Mawr, Haverford, Newtown Square), Bucks County (Newtown, New Hope, Doylestown, Warminster), and Montgomery County (Ambler, Blue Bell, North Wales, Fort Washington, Lansdale, Horsham, Gwynedd) — plus surrounding communities across Greater Philadelphia.</p></div>
+        </div>
+        <div class="lp-faq-item">
+          <button class="lp-faq-q" aria-expanded="false">
+            <span class="lp-faq-q-text">How does the free consultation work?</span>
+            <span class="lp-faq-icon"><span class="lp-faq-icon-bar"></span></span>
+          </button>
+          <div class="lp-faq-a"><p class="lp-faq-a-text">We come to your home, walk the space with you, and listen to your vision. After the consultation, we prepare a fully itemized estimate and custom CAD drawings — delivered within 1 day. Only then do you decide if you'd like to move forward.</p></div>
+        </div>
+        <div class="lp-faq-item">
+          <button class="lp-faq-q" aria-expanded="false">
+            <span class="lp-faq-q-text">What warranty do you provide?</span>
+            <span class="lp-faq-icon"><span class="lp-faq-icon-bar"></span></span>
+          </button>
+          <div class="lp-faq-a"><p class="lp-faq-a-text">Every B&amp;B project is backed by our Lifetime Workmanship Guarantee — we stand behind our craftsmanship for as long as you own your home. In addition, you receive full manufacturer warranties on all fixtures, appliances, cabinetry, and materials. If something isn't right with our work, we make it right. Period.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FINAL CTA ───────────────────────────────────────────── -->
+  <section class="lp-final-cta" aria-label="Final call to action">
+    <div class="lp-final-cta-inner">
+      <p class="lp-eyebrow reveal" style="justify-content:center;">Main Line · Bucks · Montgomery County</p>
+      <h2 class="lp-heading reveal reveal-delay-1">Ready to Transform Your Home?</h2>
+      <div class="lp-gold-line reveal reveal-delay-2" style="margin:20px auto;"></div>
+      <p class="lp-subheading reveal reveal-delay-2">Join 1,200+ homeowners who chose B&amp;B. The consultation is free, we respond within 1 hour, and your dream kitchen or bathroom is closer than you think.</p>
+      <div class="lp-final-ctas reveal reveal-delay-3">
+        <a href="#form" class="lp-btn-primary">Request Free Consultation →</a>
+        <a href="tel:+12674028758" class="lp-btn-outline">Call (267) 402-8758</a>
+      </div>
+      <p class="lp-final-micro reveal reveal-delay-3">Consultation is completely free. We respond within 1 hour.</p>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ──────────────────────────────────────────────── -->
+  <footer class="lp-footer">
+    <div class="lp-footer-inner">
+      <div class="lp-footer-logo">
+        <img src="/IMAGES/bb-logo-white.webp" alt="B&B Associates Creations">
+      </div>
+      <div class="lp-footer-info">
+        1147 E Welsh Rd, Ambler, PA 19002 &nbsp;·&nbsp;
+        <a href="tel:+12674028758">(267) 402-8758</a> &nbsp;·&nbsp;
+        Mon–Sat 8am–6pm &nbsp;·&nbsp;
+        <a href="/privacy-policy/">Privacy Policy</a>
+      </div>
+      <div class="lp-footer-social">
+        <a href="https://instagram.com/bbassociatescreations" target="_blank" rel="noopener noreferrer" aria-label="B&amp;B Associates on Instagram">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        </a>
+        <a href="https://facebook.com/bbassociatescreations" target="_blank" rel="noopener noreferrer" aria-label="B&amp;B Associates on Facebook">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        </a>
+      </div>
+      <div class="lp-footer-copy">© 2026 B&amp;B Associates Creations. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <!-- ── MOBILE STICKY BAR ───────────────────────────────────── -->
+  <div class="lp-sticky-bar" id="lp-sticky-bar" role="navigation" aria-label="Quick contact">
+    <a href="tel:+12674028758" class="lp-sticky-call">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.68A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.18 6.18l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"></path></svg>
+      Call Now
+    </a>
+    <a href="#form" class="lp-sticky-form">Get Free Estimate</a>
+  </div>
+
+  <!-- ── SCRIPTS ─────────────────────────────────────────────── -->
+  <script src="/js/supabase-client.js"></script>
+  <script src="/js/projects-data.js"></script>
+  <script>
+    // ── HEADER SCROLL ───────────────────────────────────────────
+    const lpHeader = document.getElementById('lp-header');
+    window.addEventListener('scroll', () => {
+      lpHeader.classList.toggle('scrolled', window.scrollY > 40);
+    }, { passive: true });
+
+    // ── REVEAL ON SCROLL ────────────────────────────────────────
+    const revealEls = document.querySelectorAll('.reveal:not(.lp-masonry-item--hidden)');
+    const revealObs = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); revealObs.unobserve(e.target); } });
+    }, { threshold: 0.12 });
+    revealEls.forEach(el => revealObs.observe(el));
+
+    // ── FEATURED VIDEO CAROUSEL (curated for this LP + lazy load for large files) ──
+    function lpEscAttr(s) {
+      return String(s).replace(/&/g, '&amp;').replace(/"/g, '&quot;');
+    }
+    function bindFeaturedCarouselLazy(carousel) {
+      if (!carousel) return;
+      carousel.querySelectorAll('.lp-featured-card').forEach(function (card) {
+        var video = card.querySelector('video');
+        if (!video || video.dataset.lpLazyInit) return;
+        video.dataset.lpLazyInit = '1';
+        function activate() {
+          var ds = video.getAttribute('data-src');
+          if (ds) {
+            video.src = ds;
+            video.removeAttribute('data-src');
+          }
+          video.muted = true;
+          var pl = video.play();
+          if (pl && pl.catch) pl.catch(function () {});
+        }
+        if (!video.getAttribute('data-src')) {
+          activate();
+          return;
+        }
+        var io = new IntersectionObserver(function (entries) {
+          entries.forEach(function (en) {
+            if (en.isIntersecting) {
+              activate();
+              io.disconnect();
+            }
+          });
+        }, { root: carousel, rootMargin: '100px 0px', threshold: 0.02 });
+        io.observe(card);
+      });
+    }
+    (function () {
+      try {
+        var projectsArr = (typeof projects !== 'undefined') ? projects : [];
+        var carousel = document.querySelector('[data-lp-featured-carousel]');
+        if (!carousel || !projectsArr.length) return;
+        /* Slot 0 = Barenbaum bath, slot 3 = Borgia bath; ignore main-site localStorage on this PPC page */
+        var featuredIds = [
+          'barenbaum-bathroom',
+          'broderick-kitchen',
+          'bryn-michaels-kitchen',
+          'borgia-bathroom',
+          'rubin-kitchen',
+          'ferrie-kitchen'
+        ];
+        var cards = [];
+        featuredIds.forEach(function (id) {
+          var p = projectsArr.find(function (x) { return x.id === id; });
+          if (p && p.video) cards.push(p);
+        });
+        if (!cards.length) return;
+        carousel.innerHTML = cards.map(function (p, index) {
+          var rawVideo = p.video;
+          var rawPoster = p.thumbnail ? p.thumbnail : '';
+          var videoSrc = lpEscAttr(rawVideo);
+          var posterSrc = lpEscAttr(rawPoster);
+          var projectUrl = '/portfolio/project/?id=' + encodeURIComponent(p.id);
+          var attrsFirst = 'src="' + videoSrc + '" poster="' + posterSrc + '" autoplay loop muted playsinline preload="auto"';
+          var attrsLazy = 'poster="' + posterSrc + '" data-src="' + videoSrc + '" loop muted playsinline preload="none"';
+          var vidOpen = index === 0
+            ? '<video ' + attrsFirst + '>'
+            : '<video ' + attrsLazy + '>';
+          return '<a href="' + projectUrl + '" class="lp-featured-card">' +
+            '<div class="lp-featured-img-wrap">' + vidOpen + '</video></div></a>';
+        }).join('');
+      } catch (e) {}
+    })();
+    bindFeaturedCarouselLazy(document.querySelector('[data-lp-featured-carousel]'));
+    (function () {
+      var car = document.querySelector('.lp-featured-carousel');
+      var prev = document.querySelector('.lp-featured-arrow--left');
+      var next = document.querySelector('.lp-featured-arrow--right');
+      if (!car || !prev || !next) return;
+      var amt = function () { return car.clientWidth * 0.8; };
+      prev.addEventListener('click', function () { car.scrollBy({ left: -amt(), behavior: 'smooth' }); });
+      next.addEventListener('click', function () { car.scrollBy({ left: amt(), behavior: 'smooth' }); });
+    })();
+
+    // ── PROJECT LIGHTBOX (grid → full gallery + details) ───────────
+    (function () {
+      var root = document.getElementById('lp-project-lightbox');
+      if (!root) return;
+      var projectsArr = typeof projects !== 'undefined' ? projects : [];
+      var stage = document.getElementById('lp-pl-stage');
+      var thumbs = document.getElementById('lp-pl-thumbs');
+      var btnClose = root.querySelector('.lp-project-lightbox-close');
+      var btnPrev = root.querySelector('.lp-project-lightbox-nav--prev');
+      var btnNext = root.querySelector('.lp-project-lightbox-nav--next');
+      var backdrop = root.querySelector('[data-lp-pl-backdrop]');
+      var titleEl = document.getElementById('lp-pl-title');
+      var eyebrowEl = document.getElementById('lp-pl-eyebrow');
+      var chipsEl = document.getElementById('lp-pl-chips');
+      var descEl = document.getElementById('lp-pl-desc');
+      var reviewEl = document.getElementById('lp-pl-review');
+      var reviewTextEl = document.getElementById('lp-pl-review-text');
+      var reviewCiteEl = document.getElementById('lp-pl-review-cite');
+      var linkEl = document.getElementById('lp-pl-link');
+      var media = [];
+      var idx = 0;
+
+      function base() { return ''; }
+
+      function buildMedia(p) {
+        var items = [];
+        if (p.video) items.push({ type: 'video', path: p.video });
+        (p.images || []).forEach(function (im) { items.push({ type: 'image', path: im }); });
+        return items;
+      }
+
+      function pauseStage() {
+        var v = stage.querySelector('video');
+        if (v) { try { v.pause(); } catch (e) {} }
+      }
+
+      function renderStage() {
+        pauseStage();
+        stage.innerHTML = '';
+        var m = media[idx];
+        if (!m) return;
+        var src = base() + m.path;
+        if (m.type === 'video') {
+          var vid = document.createElement('video');
+          vid.src = src;
+          vid.setAttribute('controls', '');
+          vid.setAttribute('playsinline', '');
+          vid.setAttribute('preload', 'metadata');
+          stage.appendChild(vid);
+        } else {
+          var img = document.createElement('img');
+          img.src = src;
+          img.alt = '';
+          stage.appendChild(img);
+        }
+        Array.prototype.forEach.call(thumbs.querySelectorAll('.lp-project-lightbox-thumb'), function (t, i) {
+          t.classList.toggle('is-active', i === idx);
+        });
+        var n = media.length;
+        btnPrev.disabled = n <= 1 || idx <= 0;
+        btnNext.disabled = n <= 1 || idx >= n - 1;
+      }
+
+      function openForProject(projectId) {
+        var p = projectsArr.find(function (x) { return x.id === projectId; });
+        if (!p) return;
+        media = buildMedia(p);
+        if (!media.length) return;
+        idx = 0;
+        titleEl.textContent = p.title || 'Project';
+        eyebrowEl.textContent = (p.type || 'Project') + ' · Portfolio';
+        chipsEl.innerHTML = '';
+        function chip(label) {
+          if (!label) return;
+          var s = document.createElement('span');
+          s.className = 'lp-project-lightbox-chip';
+          s.textContent = label;
+          chipsEl.appendChild(s);
+        }
+        chip(p.town);
+        if (p.year) chip(String(p.year));
+        chip(p.style);
+        chip(p.investment);
+        chip(p.duration);
+        descEl.textContent = p.description || '';
+        if (p.review && p.review.text) {
+          reviewEl.hidden = false;
+          reviewTextEl.textContent = '"' + p.review.text + '"';
+          reviewCiteEl.textContent = '— ' + (p.review.author || 'Client') + (p.review.source ? ', ' + p.review.source : '');
+        } else {
+          reviewEl.hidden = true;
+        }
+        linkEl.href = '/portfolio/project/?id=' + encodeURIComponent(p.id);
+
+        thumbs.innerHTML = '';
+        media.forEach(function (m, i) {
+          var tb = document.createElement('button');
+          tb.type = 'button';
+          tb.className = 'lp-project-lightbox-thumb' + (m.type === 'video' ? ' lp-project-lightbox-thumb--video' : '');
+          tb.setAttribute('aria-label', m.type === 'video' ? 'Project video' : 'Photo ' + (i + 1));
+          var simg = document.createElement('img');
+          if (m.type === 'video') {
+            if (p.thumbnail) simg.src = base() + p.thumbnail;
+            else if (p.images && p.images[0]) simg.src = base() + p.images[0];
+            else simg.src = base() + m.path;
+          } else {
+            simg.src = base() + m.path;
+          }
+          simg.alt = '';
+          tb.appendChild(simg);
+          tb.addEventListener('click', function () { idx = i; renderStage(); });
+          thumbs.appendChild(tb);
+        });
+
+        renderStage();
+        root.classList.add('is-open');
+        root.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+        btnClose.focus();
+      }
+
+      function closeLb() {
+        pauseStage();
+        root.classList.remove('is-open');
+        root.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = '';
+      }
+
+      document.querySelectorAll('.lp-masonry-item[data-project-id]').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          var id = btn.getAttribute('data-project-id');
+          if (id) openForProject(id);
+        });
+      });
+
+      btnClose.addEventListener('click', closeLb);
+      if (backdrop) backdrop.addEventListener('click', closeLb);
+      btnPrev.addEventListener('click', function () { if (idx > 0) { idx--; renderStage(); } });
+      btnNext.addEventListener('click', function () { if (idx < media.length - 1) { idx++; renderStage(); } });
+      document.addEventListener('keydown', function (e) {
+        if (!root.classList.contains('is-open')) return;
+        if (e.key === 'Escape') { e.preventDefault(); closeLb(); }
+        if (e.key === 'ArrowLeft' && idx > 0) { idx--; renderStage(); }
+        if (e.key === 'ArrowRight' && idx < media.length - 1) { idx++; renderStage(); }
+      });
+    })();
+
+    // ── GALLERY LOAD MORE (12 tiles = 2 rows × 6 on desktop) ───────
+    (function () {
+      var BATCH = 12;
+      var btn = document.getElementById('lp-masonry-load-more');
+      if (!btn) return;
+      function hiddenItems() {
+        return Array.from(document.querySelectorAll('.lp-masonry-item.lp-masonry-item--hidden'));
+      }
+      function finish() {
+        btn.disabled = true;
+        btn.textContent = 'All projects shown';
+      }
+      btn.addEventListener('click', function () {
+        var items = hiddenItems().slice(0, BATCH);
+        if (!items.length) { finish(); return; }
+        items.forEach(function (el) {
+          el.classList.remove('lp-masonry-item--hidden');
+          revealObs.observe(el);
+        });
+        if (hiddenItems().length === 0) finish();
+      });
+      if (hiddenItems().length === 0) finish();
+    })();
+
+
+    // ── FAQ ACCORDION ───────────────────────────────────────────
+    document.querySelectorAll('.lp-faq-q').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = btn.closest('.lp-faq-item');
+        const isOpen = item.classList.contains('open');
+        document.querySelectorAll('.lp-faq-item.open').forEach(i => {
+          i.classList.remove('open');
+          i.querySelector('.lp-faq-q').setAttribute('aria-expanded', 'false');
+        });
+        if (!isOpen) {
+          item.classList.add('open');
+          btn.setAttribute('aria-expanded', 'true');
+        }
+      });
+    });
+
+    // ── LEAD FORM SUBMIT ────────────────────────────────────────
+    document.getElementById('lp-lead-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const f = this;
+      const firstName = f.firstName.value.trim();
+      const lastName = f.lastName.value.trim();
+      const phone = f.phone.value.trim();
+      if (!firstName || !phone) {
+        alert('Please fill in your first name and phone number.');
+        return;
+      }
+      const lead = {
+        id: 'lp-' + Date.now(),
+        date: new Date().toISOString(),
+        status: 'new',
+        source: 'PPC Landing Page — Renovation Design',
+        firstName, lastName,
+        phone, email: f.email.value.trim(),
+        projectType: f.projectType.value,
+        timeline: f.timeline.value,
+        description: f.description.value.trim(),
+        service_area: 'Main Line / Bucks / Montgomery County, PA'
+      };
+      // Supabase insert
+      if (window.BB && window.BB.Supabase) {
+        BB.Supabase.insertLead(lead);
+      }
+      // localStorage fallback
+      try {
+        const existing = JSON.parse(localStorage.getItem('bb_leads') || '[]');
+        existing.push(lead);
+        localStorage.setItem('bb_leads', JSON.stringify(existing));
+      } catch(err) {}
+      // Show success
+      f.style.display = 'none';
+      document.getElementById('lp-form-success').style.display = 'block';
+      // Scroll to success
+      document.getElementById('form').scrollIntoView({ behavior: 'smooth', block: 'center' });
+    });
+
+    // ── SMOOTH ANCHOR SCROLL ─────────────────────────────────────
+    document.querySelectorAll('a[href="#form"]').forEach(a => {
+      a.addEventListener('click', e => {
+        e.preventDefault();
+        document.getElementById('form').scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    });
+  </script>
+  <script src="https://links.legacylinqdigital.com/js/form_embed.js"></script>
+</body>
+</html>
