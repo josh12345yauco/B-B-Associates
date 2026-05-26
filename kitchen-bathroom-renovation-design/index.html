@@ -2181,7 +2181,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     });
 
     // ── LEAD FORM SUBMIT ────────────────────────────────────────
-    document.getElementById('lp-lead-form').addEventListener('submit', function(e) {
+    // NOTE: this targets a native <form id="lp-lead-form"> that no longer
+    // exists — the lead form is now an embedded GoHighLevel iframe (#form),
+    // which captures submissions itself. Guarded so the page no longer
+    // crashes when the element is absent. Kept in case a native form returns.
+    const leadForm = document.getElementById('lp-lead-form');
+    if (leadForm) leadForm.addEventListener('submit', function(e) {
       e.preventDefault();
       const f = this;
       const firstName = f.firstName.value.trim();
@@ -2229,11 +2234,5 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     });
   </script>
   <script src="https://links.legacylinqdigital.com/js/form_embed.js"></script>
-  <!-- ── DEBUG: log all postMessage events (GoHighLevel form submit payload) ── -->
-  <!-- REMOVE AFTER TESTING -->
-  <script>
-    window.addEventListener('message', (e) => console.log('PM:', e.origin, e.data));
-  </script>
-  <!-- ── END DEBUG / REMOVE AFTER TESTING ── -->
 </body>
 </html>
