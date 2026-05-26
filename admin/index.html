@@ -732,11 +732,23 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <!-- ── PANEL: ANALYTICS ────────────────────────────────── -->
     <div class="admin-panel" id="panel-analytics">
+      <style>
+        .analytics-period-bar { display:flex; gap:8px; align-items:center; flex-wrap:wrap; margin-bottom:20px; }
+        .analytics-period-bar .period-label { font-size:12px; color:#888; margin-right:4px; }
+        .analytics-period-btn.active { background:#C9A063; color:#fff; border-color:#C9A063; }
+      </style>
       <div class="panel-header">
         <h2>Analytics</h2>
         <button class="btn btn-outline btn-sm" onclick="BB.Panels.initAnalytics()">↺ Refresh</button>
       </div>
-      <p class="note-box" style="margin-bottom:20px;">Data is collected by <code>js/analytics.js</code> on your site pages (page views, time on page, button/link clicks, optional location). Add that script to every public page for full coverage.</p>
+      <p class="note-box" style="margin-bottom:16px;">Data is collected by <code>js/analytics.js</code> on your site pages (page views, time on page, button/link clicks, optional location). Add that script to every public page for full coverage.</p>
+      <div class="analytics-period-bar">
+        <span class="period-label">Show:</span>
+        <button class="btn btn-outline btn-sm analytics-period-btn" data-period="day"   onclick="BB.Panels.setAnalyticsPeriod('day')">Today</button>
+        <button class="btn btn-outline btn-sm analytics-period-btn" data-period="week"  onclick="BB.Panels.setAnalyticsPeriod('week')">Last 7 Days</button>
+        <button class="btn btn-outline btn-sm analytics-period-btn" data-period="month" onclick="BB.Panels.setAnalyticsPeriod('month')">Last 30 Days</button>
+        <button class="btn btn-outline btn-sm analytics-period-btn active" data-period="all" onclick="BB.Panels.setAnalyticsPeriod('all')">All Time</button>
+      </div>
       <div class="stat-grid" style="margin-bottom:24px;">
         <div class="stat-card"><div class="stat-label">Page views</div><div class="stat-value" id="analytics-stat-views">—</div></div>
         <div class="stat-card"><div class="stat-label">Sessions</div><div class="stat-value" id="analytics-stat-sessions">—</div></div>
@@ -754,6 +766,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
       </div>
       <div class="admin-card" style="margin-bottom:20px;">
+        <div class="admin-card-header"><span class="admin-card-title">Buttons &amp; links clicked (totals)</span></div>
+        <div class="admin-table-wrap">
+          <table class="admin-table">
+            <thead><tr><th>Button / Link text</th><th>Tag</th><th>Link</th><th>Clicks</th></tr></thead>
+            <tbody id="analytics-buttons-tbody"></tbody>
+          </table>
+        </div>
+      </div>
+      <div class="admin-card" style="margin-bottom:20px;">
         <div class="admin-card-header"><span class="admin-card-title">Time on page (sessions)</span></div>
         <div class="admin-table-wrap">
           <table class="admin-table">
@@ -763,7 +784,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
       </div>
       <div class="admin-card" style="margin-bottom:20px;">
-        <div class="admin-card-header"><span class="admin-card-title">Button / link clicks</span></div>
+        <div class="admin-card-header"><span class="admin-card-title">Recent click activity (log)</span></div>
         <div class="admin-table-wrap">
           <table class="admin-table">
             <thead><tr><th>Page</th><th>Tag</th><th>Text</th><th>Link</th><th>Time</th></tr></thead>
