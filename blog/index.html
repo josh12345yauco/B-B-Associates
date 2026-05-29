@@ -689,11 +689,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div class="sidebar-section">
               <p class="sidebar-title">Popular Articles</p>
               <div class="sidebar-links">
-                <a href="/service-areas/article/?id=luxury-kitchen-cost-guide" class="sidebar-link">The True Cost of a Luxury Kitchen Remodel on the Main Line in 2025</a>
-                <a href="/service-areas/article/?id=design-build-vs-separate" class="sidebar-link">Why Design-Build is Better Than Hiring Separately</a>
-                <a href="/service-areas/article/?id=bathroom-tile-trends-2025" class="sidebar-link">Top Bathroom Tile Trends — 2025</a>
-                <a href="/service-areas/article/?id=kitchen-renovation-timeline" class="sidebar-link">How Long Does a Kitchen Renovation Really Take?</a>
-                <a href="/service-areas/article/?id=main-line-kitchen-neighborhood-guide" class="sidebar-link">Main Line PA Kitchen Remodeling: Neighborhood Guide</a>
+                <a href="/blog/article/?id=luxury-kitchen-cost-guide" class="sidebar-link">The True Cost of a Luxury Kitchen Remodel on the Main Line in 2025</a>
+                <a href="/blog/article/?id=design-build-vs-separate" class="sidebar-link">Why Design-Build is Better Than Hiring Separately</a>
+                <a href="/blog/article/?id=bathroom-tile-trends-2025" class="sidebar-link">Top Bathroom Tile Trends — 2025</a>
+                <a href="/blog/article/?id=kitchen-renovation-timeline" class="sidebar-link">How Long Does a Kitchen Renovation Really Take?</a>
+                <a href="/blog/article/?id=main-line-kitchen-neighborhood-guide" class="sidebar-link">Main Line PA Kitchen Remodeling: Neighborhood Guide</a>
               </div>
             </div>
 
@@ -861,18 +861,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       if (!featured || !container) return;
       var tagsLabel = featured.tags.map(function(t){ return t.charAt(0).toUpperCase()+t.slice(1); }).join(' · ');
       container.innerHTML = '<article class="featured-post reveal">' +
-        '<a href="/service-areas/article/?id=' + featured.id + '" class="featured-post-img">' +
+        '<a href="/blog/article/?id=' + featured.id + '" class="featured-post-img">' +
           '<img src="' + featured.heroImage + '" alt="' + featured.title + ' by B&amp;B Associates Creations" loading="lazy">' +
         '</a>' +
         '<div class="featured-post-content">' +
           '<p class="featured-label">' + featured.category + ' · ' + tagsLabel + '</p>' +
-          '<h3 class="featured-post-title"><a href="/service-areas/article/?id=' + featured.id + '">' + featured.title + '</a></h3>' +
+          '<h3 class="featured-post-title"><a href="/blog/article/?id=' + featured.id + '">' + featured.title + '</a></h3>' +
           '<p class="featured-post-excerpt">' + featured.excerpt + '</p>' +
           '<div class="post-meta">' +
             '<span class="post-read-time">' + featured.readTime + '</span>' +
             '<span class="post-read-time">·</span>' +
             '<span class="post-read-time">' + featured.date + '</span>' +
-            '<a href="/service-areas/article/?id=' + featured.id + '" class="post-read-link">Read Article →</a>' +
+            '<a href="/blog/article/?id=' + featured.id + '" class="post-read-link">Read Article →</a>' +
           '</div>' +
         '</div>' +
       '</article>';
@@ -893,7 +893,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       }
       grid.innerHTML = articles.map(function(a) {
         var dateRead = a.date + ' · ' + a.readTime;
-        return '<a href="/service-areas/article/?id=' + a.id + '" class="post-card">' +
+        return '<a href="/blog/article/?id=' + a.id + '" class="post-card">' +
           '<div class="post-card-img"><img src="' + a.heroImage + '" alt="' + a.title + '" loading="lazy"></div>' +
           '<div class="post-card-body">' +
             '<p class="post-card-category">' + a.category + '</p>' +

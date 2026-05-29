@@ -15,7 +15,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <!-- Title and meta set dynamically by JS -->
   <title>Journal | B&B Associates Creations</title>
   <meta name="description" content="Expert insights on luxury kitchen and bathroom remodeling from B&B Associates Creations.">
-  <link id="canonical" rel="canonical" href="https://www.bbassociatesco.com/blog/article.html">
+  <link id="canonical" rel="canonical" href="https://www.bbassociatesco.com/blog/article/">
   <meta property="og:type" content="article">
   <meta id="og-title" property="og:title" content="Journal | B&B Associates Creations">
   <meta id="og-description" property="og:description" content="Expert insights on luxury remodeling from B&B Associates Creations.">
@@ -431,7 +431,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <a href="/about/" class="footer-link">About</a>
             <a href="/contact/" class="footer-link">Contact</a>
             <a href="/estimator/" class="footer-link">Online Estimator</a>
-            <a href="/blog/" class="footer-link">Journal</a>
+            <a href="/blog/" class="footer-link">Blog</a>
           </nav>
         </div>
 
@@ -509,7 +509,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
   <script>if(typeof gsap!=='undefined'&&typeof ScrollTrigger!=='undefined')gsap.registerPlugin(ScrollTrigger);</script>
-  <script src="articles-data.js"></script>
+  <script src="../articles-data.js"></script>
 
   <script>
     // ── READ ARTICLE ID FROM URL ──────────────────
@@ -530,7 +530,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       document.title = `${article.title} | B&B Associates Creations`;
       document.querySelector('meta[name="description"]').content = article.excerpt;
       document.getElementById('canonical').href =
-        `https://www.bbassociatesco.com/blog/article.html?id=${article.id}`;
+        `https://www.bbassociatesco.com/blog/article/?id=${article.id}`;
       document.getElementById('og-title').content = document.title;
       document.getElementById('og-description').content = article.excerpt;
       document.getElementById('og-image').content = article.heroImage;
@@ -572,7 +572,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
       // ── BUILD RELATED SIDEBAR ─────────────────────
       const relatedHtml = relatedArticles.map(r => `
-        <a href="/service-areas/article/?id=${r.id}" class="sidebar-related-card">
+        <a href="/blog/article/?id=${r.id}" class="sidebar-related-card">
           <div class="sidebar-related-img">
             <img src="${r.heroImage}" alt="${r.title}" loading="lazy">
           </div>

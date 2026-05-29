@@ -61,7 +61,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     /* ── HERO ──────────────────────────────────────────────── */
     .sa-hero { position: relative; min-height: 88vh; display: flex; flex-direction: column; justify-content: flex-end; overflow: hidden; }
     .sa-hero-image { position: absolute; inset: 0; background-size: cover; background-position: center 35%; z-index: 0; }
-    .sa-hero-overlay { position: absolute; inset: 0; background: linear-gradient(to right, rgba(10,12,18,0.97) 0%, rgba(10,12,18,0.88) 42%, rgba(10,12,18,0.52) 68%, rgba(10,12,18,0.15) 100%), linear-gradient(to top, rgba(10,12,18,0.60) 0%, transparent 45%); z-index: 1; }
+    .sa-hero-overlay { position: absolute; inset: 0; background: linear-gradient(to right, rgba(11,27,63,0.97) 0%, rgba(11,27,63,0.88) 42%, rgba(11,27,63,0.52) 68%, rgba(11,27,63,0.15) 100%), linear-gradient(to top, rgba(11,27,63,0.60) 0%, transparent 45%); z-index: 1; }
     .sa-hero-inner { position: relative; z-index: 2; max-width: var(--grid-max); margin: 0 auto; padding: 160px var(--grid-padding) var(--sp-10); width: 100%; }
     .sa-hero-content { max-width: 640px; }
     .sa-hero-breadcrumb { display: flex; align-items: center; gap: var(--sp-2); font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(255,255,255,0.38); margin-bottom: var(--sp-7); }
@@ -161,6 +161,62 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       .sa-showroom-band { grid-template-columns: 1fr; gap: var(--sp-5); }
     }
   </style>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Do you serve both Warminster Township and Ivyland Borough?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — both Warminster Township and the adjacent Ivyland Borough are within our Bucks County service area. We're about 20 minutes from Warminster via Street Road and Route 611, and we serve the surrounding Hatboro area as well."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you pull all required permits through Warminster Township?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — we handle all permit applications and inspection coordination with Warminster Township's Building Department. Permit management is included in our standard project scope at no additional charge. You won't need to interact with the township directly."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does a kitchen renovation cost in Warminster?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Kitchen renovations in Warminster range from $45,000–$150,000+ depending on scope, layout changes, and material selections. We provide a detailed, line-item estimate before any contract is signed — covering every cost from cabinetry to installation."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I find the best kitchen and bathroom remodeling contractor near me in Warminster, PA?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Look for a licensed, locally established contractor with verifiable reviews and real local projects — not just a national lead-generation listing. B&B Associates has been a kitchen and bathroom remodeling contractor based in Ambler since 1999, with 25 years of completed projects across Bucks County. As a design-build remodeler, we handle design, materials, permits, and construction under one roof — so you're not coordinating a separate designer and builder."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does a bathroom remodel cost in Warminster, PA?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Bathroom renovations in the Warminster area generally range from $20,000 to $85,000+, with master and spa-style baths at the higher end and hall, guest, or powder rooms lower. You receive a fully itemized, line-item estimate before any work begins, and a free in-home consultation is the best way to get an accurate bathroom remodel cost for your space."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does a kitchen or bathroom remodel take in Warminster, PA?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Plan for roughly 12–20 weeks start to finish for a full kitchen — including design, permitting, and 4–10 weeks of on-site construction — and about 5–7 weeks of construction for most bathrooms. Older homes can add time if wiring, plumbing, or structural conditions surface during demolition, which is why we assess thoroughly before committing to a schedule."
+      }
+    }
+  ]
+}
+  </script>
 </head>
 <body>
 <!-- Google Tag Manager (noscript) -->
@@ -191,7 +247,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <main>
     <section class="sa-hero">
-      <div class="sa-hero-image" style="background-image:url('../portfolio/KITCHENS/B&B - Prager-kitchen/6D9E26B3-82C7-4C72-880A-373543ECEFDA.jpeg')"></div>
+      <div class="sa-hero-image" style="background-image:url('/portfolio/KITCHENS/B&B - Prager-kitchen/6D9E26B3-82C7-4C72-880A-373543ECEFDA.jpeg')"></div>
       <div class="sa-hero-overlay"></div>
       <div class="sa-hero-inner">
         <div class="sa-hero-content">
@@ -356,6 +412,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div class="town-faq-item">
             <button class="town-faq-question" aria-expanded="false">What does a kitchen renovation cost in Warminster?<span class="town-faq-icon" aria-hidden="true"></span></button>
             <div class="town-faq-answer" role="region"><div class="town-faq-answer-inner">Kitchen renovations in Warminster range from $45,000–$150,000+ depending on scope, layout changes, and material selections. We provide a detailed, line-item estimate before any contract is signed — covering every cost from cabinetry to installation.</div></div>
+          </div>
+          <div class="town-faq-item">
+            <button class="town-faq-question" aria-expanded="false">How do I find the best kitchen and bathroom remodeling contractor near me in Warminster, PA?<span class="town-faq-icon" aria-hidden="true"></span></button>
+            <div class="town-faq-answer" role="region"><div class="town-faq-answer-inner">Look for a licensed, locally established contractor with verifiable reviews and real local projects — not just a national lead-generation listing. B&amp;B Associates has been a kitchen and bathroom remodeling contractor based in Ambler since 1999, with 25 years of completed projects across Bucks County. As a design-build remodeler, we handle design, materials, permits, and construction under one roof — so you're not coordinating a separate designer and builder.</div></div>
+          </div>
+          <div class="town-faq-item">
+            <button class="town-faq-question" aria-expanded="false">How much does a bathroom remodel cost in Warminster, PA?<span class="town-faq-icon" aria-hidden="true"></span></button>
+            <div class="town-faq-answer" role="region"><div class="town-faq-answer-inner">Bathroom renovations in the Warminster area generally range from $20,000 to $85,000+, with master and spa-style baths at the higher end and hall, guest, or powder rooms lower. You receive a fully itemized, line-item estimate before any work begins, and a free in-home consultation is the best way to get an accurate bathroom remodel cost for your space.</div></div>
+          </div>
+          <div class="town-faq-item">
+            <button class="town-faq-question" aria-expanded="false">How long does a kitchen or bathroom remodel take in Warminster, PA?<span class="town-faq-icon" aria-hidden="true"></span></button>
+            <div class="town-faq-answer" role="region"><div class="town-faq-answer-inner">Plan for roughly 12–20 weeks start to finish for a full kitchen — including design, permitting, and 4–10 weeks of on-site construction — and about 5–7 weeks of construction for most bathrooms. Older homes can add time if wiring, plumbing, or structural conditions surface during demolition, which is why we assess thoroughly before committing to a schedule.</div></div>
           </div>
         </div>
       </div>
