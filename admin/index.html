@@ -736,68 +736,96 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         .analytics-period-bar { display:flex; gap:8px; align-items:center; flex-wrap:wrap; margin-bottom:20px; }
         .analytics-period-bar .period-label { font-size:12px; color:#888; margin-right:4px; }
         .analytics-period-btn.active { background:#C9A063; color:#fff; border-color:#C9A063; }
+        .conv-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:14px; }
+        .conv-card { background:#fff; border:1px solid #ece7df; border-left:4px solid #C9A063; border-radius:10px; padding:16px; }
+        .conv-card .conv-num { font-size:30px; font-weight:700; line-height:1; color:#1a1a1a; }
+        .conv-card .conv-lbl { font-size:12px; color:#777; margin-top:6px; }
+        .report-head { display:flex; justify-content:space-between; align-items:flex-start; gap:16px; flex-wrap:wrap; }
+        .report-brand { font-size:12px; color:#999; }
+        #analytics-source-note { font-size:12px; color:#888; margin:2px 0 16px; }
+        /* Clean print = client-ready PDF */
+        @media print {
+          body * { visibility:hidden; }
+          #panel-analytics, #panel-analytics * { visibility:visible; }
+          #panel-analytics { position:absolute; left:0; top:0; width:100%; padding:0; }
+          .analytics-period-bar, .analytics-no-print { display:none !important; }
+          .admin-card, .conv-card, .stat-card { break-inside:avoid; }
+        }
       </style>
       <div class="panel-header">
-        <h2>Analytics</h2>
-        <button class="btn btn-outline btn-sm" onclick="BB.Panels.initAnalytics()">↺ Refresh</button>
+        <h2>Results &amp; Analytics</h2>
+        <div style="display:flex;gap:8px;">
+          <button class="btn btn-outline btn-sm analytics-no-print" onclick="BB.Panels.refreshAnalytics()">↺ Refresh</button>
+          <button class="btn btn-sm analytics-no-print" style="background:#C9A063;color:#fff;" onclick="BB.Panels.printAnalyticsReport()">🖨 Export Client Report (PDF)</button>
+        </div>
       </div>
-      <p class="note-box" style="margin-bottom:16px;">Data is collected by <code>js/analytics.js</code> on your site pages (page views, time on page, button/link clicks, optional location). Add that script to every public page for full coverage.</p>
-      <div class="analytics-period-bar">
+      <div class="report-head">
+        <div>
+          <div class="report-brand">B&amp;B Associates Creations — Website Performance Report</div>
+          <h3 id="analytics-report-period" style="margin:2px 0 0;">Results</h3>
+        </div>
+      </div>
+      <p id="analytics-source-note">Loading real visitor data…</p>
+      <div class="analytics-period-bar analytics-no-print">
         <span class="period-label">Show:</span>
         <button class="btn btn-outline btn-sm analytics-period-btn" data-period="day"   onclick="BB.Panels.setAnalyticsPeriod('day')">Today</button>
         <button class="btn btn-outline btn-sm analytics-period-btn" data-period="week"  onclick="BB.Panels.setAnalyticsPeriod('week')">Last 7 Days</button>
-        <button class="btn btn-outline btn-sm analytics-period-btn" data-period="month" onclick="BB.Panels.setAnalyticsPeriod('month')">Last 30 Days</button>
-        <button class="btn btn-outline btn-sm analytics-period-btn active" data-period="all" onclick="BB.Panels.setAnalyticsPeriod('all')">All Time</button>
+        <button class="btn btn-outline btn-sm analytics-period-btn active" data-period="month" onclick="BB.Panels.setAnalyticsPeriod('month')">Last 30 Days</button>
+        <button class="btn btn-outline btn-sm analytics-period-btn" data-period="all" onclick="BB.Panels.setAnalyticsPeriod('all')">All Time</button>
       </div>
+
       <div class="stat-grid" style="margin-bottom:24px;">
-        <div class="stat-card"><div class="stat-label">Page views</div><div class="stat-value" id="analytics-stat-views">—</div></div>
-        <div class="stat-card"><div class="stat-label">Sessions</div><div class="stat-value" id="analytics-stat-sessions">—</div></div>
-        <div class="stat-card"><div class="stat-label">Avg time on page</div><div class="stat-value" id="analytics-stat-avg-time">—</div></div>
-        <div class="stat-card"><div class="stat-label">Button/link clicks</div><div class="stat-value" id="analytics-stat-clicks">—</div></div>
-        <div class="stat-card"><div class="stat-label">Locations captured</div><div class="stat-value" id="analytics-stat-locations">—</div></div>
+        <div class="stat-card"><div class="stat-label">Unique Visitors</div><div class="stat-value" id="analytics-stat-visitors">—</div></div>
+        <div class="stat-card"><div class="stat-label">Visits</div><div class="stat-value" id="analytics-stat-sessions">—</div></div>
+        <div class="stat-card"><div class="stat-label">Page Views</div><div class="stat-value" id="analytics-stat-views">—</div></div>
+        <div class="stat-card"><div class="stat-label">Avg Time on Page</div><div class="stat-value" id="analytics-stat-avg-time">—</div></div>
+        <div class="stat-card"><div class="stat-label">Total Conversions</div><div class="stat-value" id="analytics-stat-conversions">—</div></div>
+        <div class="stat-card"><div class="stat-label">Conversion Rate</div><div class="stat-value" id="analytics-stat-convrate">—</div></div>
       </div>
+
       <div class="admin-card" style="margin-bottom:20px;">
-        <div class="admin-card-header"><span class="admin-card-title">Page visits (by path)</span></div>
+        <div class="admin-card-header"><span class="admin-card-title">Conversions — what the site generated</span></div>
+        <div style="padding:16px;">
+          <div class="conv-grid">
+            <div class="conv-card"><div class="conv-num" id="conv-call">—</div><div class="conv-lbl">📞 Call button taps</div></div>
+            <div class="conv-card"><div class="conv-num" id="conv-form">—</div><div class="conv-lbl">✉️ Form / contact submits</div></div>
+            <div class="conv-card"><div class="conv-num" id="conv-estimator">—</div><div class="conv-lbl">🧮 Estimator completions</div></div>
+            <div class="conv-card"><div class="conv-num" id="conv-directions">—</div><div class="conv-lbl">📍 Directions / map clicks</div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="admin-card" style="margin-bottom:20px;">
+        <div class="admin-card-header"><span class="admin-card-title">Visitors per day</span></div>
+        <div id="analytics-trend" style="padding:16px;"></div>
+      </div>
+
+      <div class="admin-card" style="margin-bottom:20px;">
+        <div class="admin-card-header"><span class="admin-card-title">Where visitors are located</span></div>
         <div class="admin-table-wrap">
           <table class="admin-table">
-            <thead><tr><th>Page</th><th>Visits</th></tr></thead>
+            <thead><tr><th>City / Region</th><th>Visitors</th></tr></thead>
+            <tbody id="analytics-locations-tbody"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="admin-card" style="margin-bottom:20px;">
+        <div class="admin-card-header"><span class="admin-card-title">Most-viewed pages</span></div>
+        <div class="admin-table-wrap">
+          <table class="admin-table">
+            <thead><tr><th>Page</th><th>Views</th></tr></thead>
             <tbody id="analytics-pageviews-tbody"></tbody>
           </table>
         </div>
       </div>
-      <div class="admin-card" style="margin-bottom:20px;">
-        <div class="admin-card-header"><span class="admin-card-title">Buttons &amp; links clicked (totals)</span></div>
+
+      <div class="admin-card analytics-no-print">
+        <div class="admin-card-header"><span class="admin-card-title">Buttons &amp; links clicked</span></div>
         <div class="admin-table-wrap">
           <table class="admin-table">
-            <thead><tr><th>Button / Link text</th><th>Tag</th><th>Link</th><th>Clicks</th></tr></thead>
+            <thead><tr><th>Button / Link</th><th>Link</th><th>Clicks</th></tr></thead>
             <tbody id="analytics-buttons-tbody"></tbody>
-          </table>
-        </div>
-      </div>
-      <div class="admin-card" style="margin-bottom:20px;">
-        <div class="admin-card-header"><span class="admin-card-title">Time on page (sessions)</span></div>
-        <div class="admin-table-wrap">
-          <table class="admin-table">
-            <thead><tr><th>Page</th><th>Entered</th><th>Duration</th><th>Left</th></tr></thead>
-            <tbody id="analytics-sessions-tbody"></tbody>
-          </table>
-        </div>
-      </div>
-      <div class="admin-card" style="margin-bottom:20px;">
-        <div class="admin-card-header"><span class="admin-card-title">Recent click activity (log)</span></div>
-        <div class="admin-table-wrap">
-          <table class="admin-table">
-            <thead><tr><th>Page</th><th>Tag</th><th>Text</th><th>Link</th><th>Time</th></tr></thead>
-            <tbody id="analytics-clicks-tbody"></tbody>
-          </table>
-        </div>
-      </div>
-      <div class="admin-card">
-        <div class="admin-card-header"><span class="admin-card-title">Visitor Locations</span></div>
-        <div class="admin-table-wrap">
-          <table class="admin-table">
-            <thead><tr><th>Page</th><th>Location</th><th>Coordinates</th><th>Time</th></tr></thead>
-            <tbody id="analytics-locations-tbody"></tbody>
           </table>
         </div>
       </div>
