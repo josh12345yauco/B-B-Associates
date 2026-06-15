@@ -52,7 +52,7 @@
         form.querySelector('.sa-lead-fields') && form.querySelector('.sa-lead-fields').classList.add('hidden');
         thankYou.classList.remove('hidden');
       } else {
-        alert('Thank you. We\'ll be in touch within 1 business hour.');
+        alert('Thank you. We\'ll be in touch within 5–15 minutes.');
       }
     });
   }

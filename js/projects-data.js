@@ -586,7 +586,7 @@ const projects = [
       "Floating shower bench"
     ],
     investment: "$40,000–$55,000",
-    duration: "5 weeks",
+    duration: "3 weeks",
     video: null, /* file missing from server */
     images: [
       "/portfolio/BATHROOMS/B&B - Barenbaum -bathroom/20417733-E7F8-46EA-BCD5-6F86787E240D.jpeg",
@@ -618,7 +618,7 @@ const projects = [
       "Seamless monolithic aesthetic"
     ],
     investment: "$45,000–$60,000",
-    duration: "5 weeks",
+    duration: "3 weeks",
     video: "/portfolio/BATHROOMS/B&B - Borgia-bathroom/IMG_5410.mp4",
     images: [
       "/portfolio/BATHROOMS/B&B - Borgia-bathroom/0355861A-4E5F-4F8D-89B0-FC8F3F156B45.jpeg",
@@ -650,7 +650,7 @@ const projects = [
       "Timeless proportions and layout"
     ],
     investment: "$42,000–$58,000",
-    duration: "5 weeks",
+    duration: "4 weeks",
     video: "/portfolio/BATHROOMS/B&B - Bridle hall-bathroom/a3bfa0877c2e49cbb0bbe1b84cd55709.mp4",
     images: [
       "/portfolio/BATHROOMS/B&B - Bridle hall-bathroom/163A65E7-E665-4FE1-AF20-D2BD1B85F3B9.jpeg",
@@ -682,7 +682,7 @@ const projects = [
       "Chrome finishes for added vibrancy"
     ],
     investment: "$50,000–$65,000",
-    duration: "6 weeks",
+    duration: "4 weeks",
     video: "/portfolio/BATHROOMS/B&B - Carolyn Frank-bathroom/RPReplay_Final1665422672.mp4",
     images: [
       "/portfolio/BATHROOMS/B&B - Carolyn Frank-bathroom/1B6ADBE5-861A-42E7-A20B-D62799B81818.jpeg",
@@ -714,7 +714,7 @@ const projects = [
       "Matte black freestanding tub"
     ],
     investment: "$55,000–$70,000",
-    duration: "6 weeks",
+    duration: "4 weeks",
     video: "/portfolio/BATHROOMS/B&B - Cruz Master/1e48f5e4377d408fafd767d93b2303a9.mp4",
     images: [
       "/portfolio/BATHROOMS/B&B - Cruz Master/3A187396-30B0-429C-A94A-DFBD89EC9C69.jpeg",
@@ -746,7 +746,7 @@ const projects = [
       "Immersive modern cave aesthetic"
     ],
     investment: "$55,000–$75,000",
-    duration: "6 weeks",
+    duration: "4 weeks",
     video: "/portfolio/BATHROOMS/B&B - Emad Master Bath/IMG_6527.mp4",
     images: [
       "/portfolio/BATHROOMS/B&B - Emad Master Bath/4358B1C2-D2FE-43AB-9E16-DC20F5186ADE.jpeg",
@@ -778,7 +778,7 @@ const projects = [
       "Freestanding soaking tub centerpiece"
     ],
     investment: "$55,000–$70,000",
-    duration: "6 weeks",
+    duration: "4 weeks",
     video: "/portfolio/BATHROOMS/B&B - Garvey-bathroom/dc7b363a48614732be531b1678313c7c.mp4",
     images: [
       "/portfolio/BATHROOMS/B&B - Garvey-bathroom/55A55375-6991-4E1E-B73A-564EB2AB5E42.jpeg",
@@ -810,7 +810,7 @@ const projects = [
       "Open-concept bathroom layout"
     ],
     investment: "$50,000–$68,000",
-    duration: "6 weeks",
+    duration: "4 weeks",
     video: "/portfolio/BATHROOMS/B&B - Giedrycz Master bathroom/IMG_2372.mp4",
     images: [
       "/portfolio/BATHROOMS/B&B - Giedrycz Master bathroom/1CCAA2C7-7DAC-4C75-8F5D-50098700FD18.jpg",
@@ -844,7 +844,7 @@ const projects = [
       "Champagne bronze finishes"
     ],
     investment: "$55,000–$70,000",
-    duration: "7 weeks",
+    duration: "5 weeks",
     video: "/portfolio/BATHROOMS/B&B - Guttridge -bathroom/IMG_6132.mp4",
     images: [
       "/portfolio/BATHROOMS/B&B - Guttridge -bathroom/IMG_6078.jpg",
@@ -876,7 +876,7 @@ const projects = [
       "Seamless pattern alignment throughout"
     ],
     investment: "$42,000–$58,000",
-    duration: "5 weeks",
+    duration: "4 weeks",
     video: "/portfolio/BATHROOMS/B&B - Hartka-bathroom/IMG_4014.mp4",
     images: [
       "/portfolio/BATHROOMS/B&B - Hartka-bathroom/0DFF0DCA-8172-45BF-9C23-55A9229A3245.jpeg",
@@ -908,7 +908,7 @@ const projects = [
       "Matte black finishing details"
     ],
     investment: "$48,000–$62,000",
-    duration: "6 weeks",
+    duration: "4 weeks",
     video: "/portfolio/BATHROOMS/B&B - Hershey-bathroom/6f39490923c640b0a24d68901df0a041.mp4",
     images: [
       "/portfolio/BATHROOMS/B&B - Hershey-bathroom/08477D74-323C-4FFA-95DA-415CA31AAC2C.jpeg",
@@ -940,7 +940,7 @@ const projects = [
       "Brushed brass finishes throughout"
     ],
     investment: "$42,000–$58,000",
-    duration: "5 weeks",
+    duration: "3 weeks",
     video: "/portfolio/BATHROOMS/B&B - Kaarby-bathroom/v15025gf0000d5lqd3vog65khasgnfbg.mp4",
     images: [
       "/portfolio/BATHROOMS/B&B - Kaarby-bathroom/1BC906A9-6171-4884-B786-75B737522F80.jpeg",
@@ -974,7 +974,7 @@ const projects = [
       "Holistic luxury material composition"
     ],
     investment: "$65,000–$85,000",
-    duration: "7 weeks",
+    duration: "5 weeks",
     video: "/portfolio/BATHROOMS/B&B - LaShannon Master bathroom/IMG_5481.mp4",
     images: [
       "/portfolio/BATHROOMS/B&B - LaShannon Master bathroom/09DCC4C5-5F51-4A82-9C78-AB97A237A844.jpeg",
@@ -1006,7 +1006,7 @@ const projects = [
       "Matte black finishes throughout"
     ],
     investment: "$50,000–$65,000",
-    duration: "6 weeks",
+    duration: "4 weeks",
     video: null,
     images: [
       "/portfolio/BATHROOMS/B&B - Levinson Master Bathroom/3C24E771-25E4-4CB7-8C08-F0493A9BBA2A.jpeg",
@@ -1040,7 +1040,7 @@ const projects = [
       "Champagne bronze contrasting finishes"
     ],
     investment: "$52,000–$68,000",
-    duration: "6 weeks",
+    duration: "4 weeks",
     video: "/portfolio/BATHROOMS/B&B - Pete V-bathroom/63fe5f7a84cb4b5587bd03d3391eab15.mp4",
     images: [
       "/portfolio/BATHROOMS/B&B - Pete V-bathroom/059FFEC6-1BB2-4EF6-97A4-000D6C9D7369.jpeg",
@@ -1073,7 +1073,7 @@ const projects = [
       "Brushed brass finishing elements"
     ],
     investment: "$48,000–$65,000",
-    duration: "5 weeks",
+    duration: "3 weeks",
     video: null,
     images: [
       "/portfolio/BATHROOMS/BB-ODonnell-bathroom/085E5B7F-C0C3-4C1C-BCE2-B92BB2D4EF3C.jpeg",
@@ -1110,7 +1110,7 @@ const projects = [
       "Brushed brass fixtures throughout"
     ],
     investment: "$45,000–$60,000",
-    duration: "5 weeks",
+    duration: "3 weeks",
     video: "/portfolio/BATHROOMS/B&B - Sharada -bathroom/IMG_3080.mp4",
     images: [
       "/portfolio/BATHROOMS/B&B - Sharada -bathroom/1C191061-9F5B-4F6C-9AA5-89F710D2B392.jpeg",
@@ -1146,7 +1146,7 @@ const projects = [
       "Bronze vein vanity and countertop harmony"
     ],
     investment: "$45,000–$60,000",
-    duration: "5 weeks",
+    duration: "3 weeks",
     video: null,
     images: [
       "/portfolio/BATHROOMS/B&B - Stacey Goldberg bathroom/2434.jpg",
@@ -1172,7 +1172,7 @@ const projects = [
       "James Martin premium vanity"
     ],
     investment: "$38,000–$52,000",
-    duration: "5 weeks",
+    duration: "2 weeks",
     video: "/portfolio/BATHROOMS/B&B - Vartanian-bathroom/IMG_1567.mp4",
     images: [
       "/portfolio/BATHROOMS/B&B - Vartanian-bathroom/10E542CC-6F7C-45E4-B9E2-4ADC289B5031.jpeg",

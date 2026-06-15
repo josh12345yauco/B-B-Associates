@@ -1021,7 +1021,7 @@ const ARTICLES = [
 
 <h2>Step 5: Check Communication Quality</h2>
 <p>How long did they take to respond to your inquiry? Did they follow up? Were they on time for the consultation? Communication quality before you sign a contract is the best predictor of communication quality during construction.</p>
-<p>B&B Associates responds to all inquiries within 1 business hour and guarantees same-day scheduling for consultations. <a href="/contact/">See for yourself.</a></p>
+<p>B&B Associates responds to all inquiries within 5–15 minutes and guarantees same-day scheduling for consultations. <a href="/contact/">See for yourself.</a></p>
 <h2>Red Flags to Watch For</h2>
 <p>Some warning signs reliably predict a difficult project, and recognizing them early saves enormous heartache. Be cautious of any contractor who pressures you to sign quickly, demands a large upfront deposit (anything approaching half the project cost before work begins is a serious red flag), can't provide proof of insurance and registration, offers only a vague lump-sum price with no itemization, or has no verifiable reviews and no completed projects you can actually see. A bid dramatically below the others isn't a bargain — it's a signal that something is being cut or that change orders will balloon the price later. Trust your instincts: how a contractor behaves before you sign is the best predictor of how they'll behave during construction.</p>
 
