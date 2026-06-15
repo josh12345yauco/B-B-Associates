@@ -92,7 +92,7 @@
     {
       id: 'faq-11',
       question: 'Why should I choose B&B Associates over other remodelers?',
-      answer: 'Five reasons: 25 Years with 1,200+ Flawless Projects, 180+ Verified 5-Star Reviews, Family-Owned with No Subcontractors, 5-35% Savings Passed to You through 60+ premium suppliers, and Sub-1-Hour Response Time.',
+      answer: 'Five reasons: 25 Years with 1,200+ Flawless Projects, 180+ Verified 5-Star Reviews, Family-Owned with No Subcontractors, 5-35% Savings Passed to You through 60+ premium suppliers, and 5–15 Minute Response Time.',
       order: 11,
       hidden: false
     },
