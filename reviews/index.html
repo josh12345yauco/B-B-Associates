@@ -299,6 +299,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
     .hero-stats .stat-number { color: #B67539; }
     .hero-stats .stat-label { color: #ffffff; }
+    .hero-stats a.stat-box {
+      text-decoration: none;
+      cursor: pointer;
+      transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+    .hero-stats a.stat-box:hover {
+      opacity: 0.8;
+      transform: translateY(-3px);
+    }
 
     /* Platform label row */
     .platform-row {
@@ -308,6 +317,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       text-transform: uppercase;
       color: var(--color-gold);
       opacity: 0.7;
+    }
+    .platform-row a {
+      color: inherit;
+      text-decoration: none;
+      transition: opacity 0.3s ease;
+    }
+    .platform-row a:hover {
+      opacity: 0.7;
+      text-decoration: underline;
+      text-underline-offset: 4px;
     }
 
     /* ── FEATURED QUOTE ──────────────────────────────────── */
@@ -812,25 +831,25 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <p class="reviews-hero-sub reveal">180+ verified reviews across Google, Angi, and Houzz. 5.0 stars, every platform.</p>
 
   <div class="hero-stats" aria-label="Review statistics">
-    <div class="stat-box">
+    <a class="stat-box" href="https://www.google.com/search?q=b%26b+associates+creations+reviews&rlz=1C5CHFA_enPR1096PR1111&oq=bb+associates+creation+rev&gs_lcrp=EgZjaHJvbWUqCAgBEAAYFhgeMgYIABBFGDkyCAgBEAAYFhgeMgoIAhAAGKIEGIkFMgoIAxAAGIAEGKIEMgoIBBAAGKIEGIkFMgoIBRAAGIAEGKIE0gEINTA1NmowajeoAgCwAgA&sourceid=chrome&ie=UTF-8&zx=1785250453953#mpd=~11159209005396116063/customers/reviews" target="_blank" rel="noopener" aria-label="Read our reviews on Google">
       <div class="stat-number">5.0★</div>
       <div class="stat-label">Google Reviews</div>
-    </div>
-    <div class="stat-box">
+    </a>
+    <a class="stat-box" href="https://www.angi.com/companylist/us/pa/ambler/bandb-associates-creations%2C-llc-reviews-10836841.htm#reviews" target="_blank" rel="noopener" aria-label="Read our reviews on Angi">
       <div class="stat-number" data-count="123">123</div>
       <div class="stat-label">Angi Reviews</div>
-    </div>
-    <div class="stat-box">
+    </a>
+    <a class="stat-box" href="https://www.houzz.com/professionals/home-builders/bandb-associates-pfvwus-pf~1637622775" target="_blank" rel="noopener" aria-label="See our profile and reviews on Houzz">
       <div class="stat-number">5.0★</div>
       <div class="stat-label">Houzz Rating</div>
-    </div>
+    </a>
     <div class="stat-box">
       <div class="stat-number" data-count="180" data-suffix="+">180+</div>
       <div class="stat-label">Total Reviews</div>
     </div>
   </div>
 
-  <p class="platform-row" aria-label="Review platforms">Google · Angi · Houzz</p>
+  <p class="platform-row" aria-label="Review platforms"><a href="https://www.google.com/search?q=b%26b+associates+creations+reviews&rlz=1C5CHFA_enPR1096PR1111&oq=bb+associates+creation+rev&gs_lcrp=EgZjaHJvbWUqCAgBEAAYFhgeMgYIABBFGDkyCAgBEAAYFhgeMgoIAhAAGKIEGIkFMgoIAxAAGIAEGKIEMgoIBBAAGKIEGIkFMgoIBRAAGIAEGKIE0gEINTA1NmowajeoAgCwAgA&sourceid=chrome&ie=UTF-8&zx=1785250453953#mpd=~11159209005396116063/customers/reviews" target="_blank" rel="noopener">Google</a> · <a href="https://www.angi.com/companylist/us/pa/ambler/bandb-associates-creations%2C-llc-reviews-10836841.htm#reviews" target="_blank" rel="noopener">Angi</a> · <a href="https://www.houzz.com/professionals/home-builders/bandb-associates-pfvwus-pf~1637622775" target="_blank" rel="noopener">Houzz</a></p>
 </header>
 
 <!-- ── SECTION 3: FILTER BAR ─────────────────────────────── -->
