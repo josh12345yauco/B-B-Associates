@@ -76,8 +76,52 @@
   </url>
   <url>
     <loc>https://www.bbassociatesco.com/blog/</loc>
-    <lastmod>2026-03-16</lastmod>
+    <lastmod>2026-07-31</lastmod>
     <changefreq>weekly</changefreq>
+    <priority>0.60</priority>
+  </url>
+
+  <!-- Blog Articles (2026 SEO cluster) -->
+  <url>
+    <loc>https://www.bbassociatesco.com/blog/article/?id=kitchen-remodel-cost-montgomery-county-2026</loc>
+    <lastmod>2026-07-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://www.bbassociatesco.com/blog/article/?id=bathroom-remodel-cost-main-line-2026</loc>
+    <lastmod>2026-07-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://www.bbassociatesco.com/blog/article/?id=kitchen-remodel-timeline-delays</loc>
+    <lastmod>2026-07-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.60</priority>
+  </url>
+  <url>
+    <loc>https://www.bbassociatesco.com/blog/article/?id=design-build-vs-gc-bucks-montgomery</loc>
+    <lastmod>2026-07-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.60</priority>
+  </url>
+  <url>
+    <loc>https://www.bbassociatesco.com/blog/article/?id=how-to-vet-remodeler-ambler-doylestown</loc>
+    <lastmod>2026-07-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.60</priority>
+  </url>
+  <url>
+    <loc>https://www.bbassociatesco.com/blog/article/?id=custom-vs-semi-custom-cabinetry</loc>
+    <lastmod>2026-07-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.60</priority>
+  </url>
+  <url>
+    <loc>https://www.bbassociatesco.com/blog/article/?id=living-through-kitchen-remodel-week-by-week</loc>
+    <lastmod>2026-07-31</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.60</priority>
   </url>
 

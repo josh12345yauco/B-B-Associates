@@ -532,21 +532,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>`;
     } else {
       // ── SET META DYNAMICALLY ──────────────────────
-      document.title = `${article.title} | B&B Associates Creations`;
-      document.querySelector('meta[name="description"]').content = article.excerpt;
+      document.title = article.metaTitle || `${article.title} | B&B Associates Creations`;
+      document.querySelector('meta[name="description"]').content = article.metaDescription || article.excerpt;
       document.getElementById('canonical').href =
         `https://www.bbassociatesco.com/blog/article/?id=${article.id}`;
       document.getElementById('og-title').content = document.title;
-      document.getElementById('og-description').content = article.excerpt;
+      document.getElementById('og-description').content = article.metaDescription || article.excerpt;
       document.getElementById('og-image').content = article.heroImage;
 
       // ── SCHEMA ───────────────────────────────────
-      document.getElementById('article-schema').textContent = JSON.stringify({
+      const articleSchema = {
         "@context": "https://schema.org",
         "@type": "Article",
         "headline": article.title,
-        "description": article.excerpt,
-        "datePublished": article.date,
+        "description": article.metaDescription || article.excerpt,
         "image": article.heroImage,
         "author": {
           "@type": "Organization",
@@ -561,7 +560,26 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             "url": "https://www.bbassociatesco.com/IMAGES/B%26B%20Logo%20with%20Tagline_Solid%2Bwhite.png"
           }
         }
-      });
+      };
+      if (article.date) articleSchema.datePublished = article.date;
+      document.getElementById('article-schema').textContent = JSON.stringify(articleSchema);
+
+      // FAQPage schema generated from the same data as the visible FAQ,
+      // so the two can never drift apart.
+      if (article.faq && article.faq.length) {
+        const faqScript = document.createElement('script');
+        faqScript.type = 'application/ld+json';
+        faqScript.textContent = JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": article.faq.map(f => ({
+            "@type": "Question",
+            "name": f.q,
+            "acceptedAnswer": { "@type": "Answer", "text": f.a }
+          }))
+        });
+        document.head.appendChild(faqScript);
+      }
 
       // ── RELATED ARTICLES ──────────────────────────
       const related = ARTICLES
@@ -574,6 +592,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       const tagsHtml = article.tags.map(tag =>
         `<a href="/blog/?filter=${tag}" class="article-tag">${tag}</a>`
       ).join('');
+
+      // ── BUILD VISIBLE FAQ (mirrors FAQPage schema) ─
+      const faqHtml = (article.faq && article.faq.length) ? `
+        <h2>Frequently Asked Questions</h2>
+        ${article.faq.map(f => `<h3>${f.q}</h3><p>${f.a}</p>`).join('')}` : '';
 
       // ── BUILD RELATED SIDEBAR ─────────────────────
       const relatedHtml = relatedArticles.map(r => `
@@ -603,8 +626,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <p class="article-hero-category">${article.category}</p>
             <h1 class="article-hero-title">${article.title}</h1>
             <div class="article-hero-meta">
-              <span class="article-hero-meta-item">${article.date}</span>
-              <span class="article-hero-meta-sep">·</span>
+              ${article.date ? `<span class="article-hero-meta-item">${article.date}</span>
+              <span class="article-hero-meta-sep">·</span>` : ''}
               <span class="article-hero-meta-item">${article.readTime}</span>
             </div>
           </div>
@@ -618,6 +641,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <article>
               <div class="article-body">
                 ${article.body}
+                ${faqHtml}
               </div>
               <div class="article-tags">
                 ${tagsHtml}
