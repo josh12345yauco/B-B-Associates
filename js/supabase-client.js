@@ -131,6 +131,31 @@
           if (res.error) console.warn('[BB Supabase] deleteLead error:', res.error.message);
         });
       } catch (e) {}
+    },
+
+    /**
+     * Fetch analytics events, newest first. Optionally limit to events
+     * on/after an ISO timestamp. Resolves with [] on any failure so the
+     * admin panel can fall back to localStorage.
+     */
+    fetchEvents: function (sinceISO, limit) {
+      return new Promise(function (resolve) {
+        try {
+          var client = getClient();
+          if (!client) { resolve([]); return; }
+          var q = client.from('analytics_events').select('*')
+            .order('created_at', { ascending: false })
+            .limit(limit || 10000);
+          if (sinceISO) q = q.gte('created_at', sinceISO);
+          q.then(function (res) {
+            if (res.error) { console.warn('[BB Supabase] fetchEvents error:', res.error.message); resolve([]); return; }
+            resolve(res.data || []);
+          });
+        } catch (e) {
+          console.warn('[BB Supabase] fetchEvents exception:', e);
+          resolve([]);
+        }
+      });
     }
   };
 })();

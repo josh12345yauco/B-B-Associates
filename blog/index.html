@@ -871,8 +871,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           '<p class="featured-post-excerpt">' + featured.excerpt + '</p>' +
           '<div class="post-meta">' +
             '<span class="post-read-time">' + featured.readTime + '</span>' +
-            '<span class="post-read-time">·</span>' +
-            '<span class="post-read-time">' + featured.date + '</span>' +
+            (featured.date ? '<span class="post-read-time">·</span>' +
+            '<span class="post-read-time">' + featured.date + '</span>' : '') +
             '<a href="/blog/article/?id=' + featured.id + '" class="post-read-link">Read Article →</a>' +
           '</div>' +
         '</div>' +
@@ -893,7 +893,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         return;
       }
       grid.innerHTML = articles.map(function(a) {
-        var dateRead = a.date + ' · ' + a.readTime;
+        var dateRead = (a.date ? a.date + ' · ' : '') + a.readTime;
         return '<a href="/blog/article/?id=' + a.id + '" class="post-card">' +
           '<div class="post-card-img"><img src="' + a.heroImage + '" alt="' + a.title + '" loading="lazy"></div>' +
           '<div class="post-card-body">' +
