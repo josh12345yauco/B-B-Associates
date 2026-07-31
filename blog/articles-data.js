@@ -8,6 +8,57 @@
 
 const ARTICLES = [
   {
+    id: "kitchen-remodel-cost-montgomery-county-2026",
+    title: "How Much Does a Luxury Kitchen Remodel Cost in Montgomery County, PA? (2026 Pricing Guide)",
+    category: "Cost Guide",
+    tags: ["kitchen", "cost"],
+    date: "",
+    readTime: "9 min read",
+    excerpt: "In 2026, a true luxury kitchen remodel in Montgomery County runs $75,000–$150,000+, with well-scoped projects starting around $55,000. Here's exactly where the money goes, what older local homes add to the number, and the allowance games to watch for.",
+    metaTitle: "Kitchen Remodel Cost Montgomery County PA (2026)",
+    metaDescription: "Luxury kitchen remodels in Montgomery County, PA run $75K–$150K+ in 2026. A local design-build firm breaks down the tiers, the hidden costs, and the bid games.",
+    heroImage: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&q=80",
+    body: `<p>The honest answer first: in 2026, a genuine luxury kitchen remodel in Montgomery County — new cabinetry, stone counters, quality appliances, real design work, done by a firm you'd trust in your home — typically runs <strong>$75,000 to $150,000+</strong>. A tighter-scope project with semi-custom cabinetry and no layout changes can be done well starting around $55,000. If someone quotes you $30,000 for a "full luxury remodel" in Blue Bell or Maple Glen, that number is missing something, and you'll find out what mid-project.</p>
+<p>We're a design-build firm based in Ambler, and we've been building kitchens in these towns since 1999. This is the pricing conversation we have at nearly every consultation, written down.</p>
+
+<h2>The 2026 Pricing Tiers, Honestly</h2>
+<p>Three tiers cover almost every luxury kitchen we see in Montgomery County. Which one you land in depends on cabinetry grade, whether walls or plumbing move, and your appliance package — in roughly that order.</p>
+<h3>$55,000–$75,000: The Disciplined Refresh</h3>
+<p>Same footprint, new everything. Semi-custom cabinetry, quartz or entry-level quartzite counters, tile backsplash, new lighting and fixtures, quality appliances. No walls move, plumbing stays put. This is a legitimate luxury result when the existing layout already works — and in plenty of Lower Gwynedd and Fort Washington homes, it does.</p>
+<h3>$75,000–$110,000: The Full Transformation</h3>
+<p>Where most of our Montgomery County projects land. Custom or premium semi-custom cabinetry, natural stone, a serious appliance package, a designed lighting plan, and modest layout changes — an island added, a doorway widened, a peninsula removed. The room functions differently when it's done, not just looks different.</p>
+<h3>$110,000–$150,000+: The Architectural Rebuild</h3>
+<p>Walls come out, structural beams go in, plumbing and gas lines relocate, and the cabinetry is fully custom. Sub-Zero/Wolf-tier appliances, butler's pantries, oversized islands with waterfall stone. In the larger homes of Gladwyne, Maple Glen, and Blue Bell, this tier is common because the houses can carry it — and because buyers at that price point expect it.</p>
+
+<h2>Where Each Dollar Actually Goes</h2>
+<p>Cabinetry is the biggest line item at 30–40% of the budget, and it's the one place we tell clients not to cheap out — we've written a full breakdown of <a href="/blog/article/?id=custom-vs-semi-custom-cabinetry">custom vs. semi-custom cabinetry</a> if you're weighing that decision. Labor and installation run 20–30%; appliances 15–25%; countertops and backsplash 10–15%; design, permits, and project management 8–12%. Notice what's not on that list: a magic "per square foot" number. Two 200-square-foot kitchens can differ by $60,000 depending on what goes in them.</p>
+
+<h2>What Older Montgomery County Homes Add to the Number</h2>
+<p>This is the part national cost guides miss. A large share of the housing stock in Ambler, Fort Washington, and the older sections of Blue Bell is 1920s–1960s construction: plaster walls, undersized electrical panels, cast-iron drain stacks, and floors that have settled a half inch or more across the room. None of this is a crisis — but all of it costs money to do right.</p>
+<ul>
+  <li><strong>Electrical service upgrades ($3,000–$8,000):</strong> A modern kitchen with induction or a 48-inch range needs circuits a 100-amp panel often can't spare. Panel upgrades are one of the most common "surprises" we quote — so we check the panel at the first consultation, not during demo.</li>
+  <li><strong>Plaster and framing corrections ($2,000–$10,000):</strong> Plaster walls don't come down or patch like drywall, and out-of-level floors have to be corrected before inset cabinetry will ever sit right.</li>
+  <li><strong>Plumbing stack and supply-line work ($2,500–$9,000):</strong> If your drain stack is cast iron from the Truman administration and we're opening the wall anyway, replacing it now is far cheaper than opening a finished wall later.</li>
+</ul>
+<p>A competent local bid accounts for these up front. A lowball bid "discovers" them in week two, as change orders.</p>
+
+<h2>The Allowance Game (Read This Before You Compare Bids)</h2>
+<p>Here's the trick that makes a $70,000 kitchen look like a $52,000 kitchen on paper: allowances. A bid that carries a $4,000 countertop allowance and a $12,000 cabinetry allowance isn't lying, exactly — it's just pricing materials nobody at this market tier actually chooses. When you pick real quartzite and real cabinetry, the difference lands on you as an overage. When you compare bids, compare the allowances line by line, not the bottom line. The honest bid is often the one that looks more expensive on day one and costs less by the final invoice.</p>
+
+<h2>Timing and the 2026 Market</h2>
+<p>Material costs in the Philadelphia suburbs have kept climbing modestly — cabinetry and stone are up single digits year over year, and premium appliance brands raise prices annually with little apology. Lead times are the bigger planning issue: quality cabinetry still runs 8–12 weeks from order to delivery, which is why the design phase starts months before demolition. We've broken down the full schedule — and why so many projects run late — in our guide to <a href="/blog/article/?id=kitchen-remodel-timeline-delays">real kitchen remodel timelines</a>.</p>
+
+<h2>Getting a Real Number for Your Home</h2>
+<p>Every range in this article is honest, and none of it replaces someone standing in your kitchen looking at your panel, your stack, and your walls. That's what a free in-home consultation is for. <a href="/contact/">Schedule one here</a>, get an instant ballpark with our <a href="/estimator/">online estimator</a>, or see what these budgets actually buy in <a href="/portfolio/">our completed Montgomery County kitchens</a>. You can also read more about how we work on our <a href="/services/luxury-kitchen-remodeling/">luxury kitchen remodeling</a> page.</p>`,
+    faq: [
+      { q: "Is $100,000 too much for a kitchen remodel in Montgomery County?", a: "Not for a full transformation. Between $75,000 and $110,000 is the normal range for a luxury kitchen with custom-grade cabinetry, stone counters, premium appliances, and modest layout changes in towns like Blue Bell, Maple Glen, and Ambler. It's too much only if the scope doesn't justify it — which is why you should demand an itemized bid, not a lump sum." },
+      { q: "Why are kitchen remodel quotes so different from each other?", a: "Usually allowances. Two bids for the 'same' kitchen can differ by $20,000 because one carries realistic material allowances and the other carries placeholder numbers you'll blow through at your first showroom visit. Compare allowances line by line before comparing totals." },
+      { q: "What's the cheapest way to get a high-end look?", a: "Keep the existing layout. Walls, plumbing, and gas lines are where budgets balloon. A same-footprint remodel with well-chosen semi-custom cabinetry and one splurge material — usually the countertop — reads as luxury for $55,000–$75,000." },
+      { q: "Do older homes in the Ambler area really cost more to remodel?", a: "Often, yes — typically $5,000–$20,000 more once electrical panel upgrades, plaster work, and old plumbing are addressed properly. The real question is whether your contractor prices that work up front or springs it on you as change orders in week two." },
+      { q: "How do I get an accurate kitchen remodel estimate?", a: "Only an in-home assessment produces a reliable number, because your panel, plumbing, and structure drive so much of the cost. We provide itemized estimates after a free consultation, and our online estimator gives an instant ballpark in the meantime." }
+    ]
+  },
+  {
     id: "luxury-kitchen-cost-guide",
     title: "The True Cost of a Luxury Kitchen Remodel on the Main Line in 2025",
     category: "Cost Guide",
@@ -95,57 +146,6 @@ const ARTICLES = [
 <p><strong>What is the most expensive part of a kitchen remodel?</strong> Cabinetry, almost always. It typically represents 30–40% of the budget and drives the look, function, and longevity of the entire room. Appliances and countertops follow.</p>
 <p><strong>Does a luxury kitchen add value to my home?</strong> Yes. A well-executed kitchen is one of the highest-return improvements in this region, recovering an estimated 60–80% of its cost and dramatically improving how quickly and how well a home sells.</p>
 <p><strong>How do I get an accurate estimate?</strong> Only an in-home assessment can produce a reliable number, because so much depends on your existing plumbing, electrical, and structure. We provide a fully itemized estimate within 24 hours of your <a href="/contact/">free consultation</a>, and our <a href="/estimator/">online estimator</a> offers an instant ballpark in the meantime. Explore our <a href="/services/luxury-kitchen-remodeling/">luxury kitchen remodeling services</a> to see how we work.</p>`
-  },
-  {
-    id: "kitchen-remodel-cost-montgomery-county-2026",
-    title: "How Much Does a Luxury Kitchen Remodel Cost in Montgomery County, PA? (2026 Pricing Guide)",
-    category: "Cost Guide",
-    tags: ["kitchen", "cost"],
-    date: "",
-    readTime: "9 min read",
-    excerpt: "In 2026, a true luxury kitchen remodel in Montgomery County runs $75,000–$150,000+, with well-scoped projects starting around $55,000. Here's exactly where the money goes, what older local homes add to the number, and the allowance games to watch for.",
-    metaTitle: "Kitchen Remodel Cost Montgomery County PA (2026)",
-    metaDescription: "Luxury kitchen remodels in Montgomery County, PA run $75K–$150K+ in 2026. A local design-build firm breaks down the tiers, the hidden costs, and the bid games.",
-    heroImage: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&q=80",
-    body: `<p>The honest answer first: in 2026, a genuine luxury kitchen remodel in Montgomery County — new cabinetry, stone counters, quality appliances, real design work, done by a firm you'd trust in your home — typically runs <strong>$75,000 to $150,000+</strong>. A tighter-scope project with semi-custom cabinetry and no layout changes can be done well starting around $55,000. If someone quotes you $30,000 for a "full luxury remodel" in Blue Bell or Maple Glen, that number is missing something, and you'll find out what mid-project.</p>
-<p>We're a design-build firm based in Ambler, and we've been building kitchens in these towns since 1999. This is the pricing conversation we have at nearly every consultation, written down.</p>
-
-<h2>The 2026 Pricing Tiers, Honestly</h2>
-<p>Three tiers cover almost every luxury kitchen we see in Montgomery County. Which one you land in depends on cabinetry grade, whether walls or plumbing move, and your appliance package — in roughly that order.</p>
-<h3>$55,000–$75,000: The Disciplined Refresh</h3>
-<p>Same footprint, new everything. Semi-custom cabinetry, quartz or entry-level quartzite counters, tile backsplash, new lighting and fixtures, quality appliances. No walls move, plumbing stays put. This is a legitimate luxury result when the existing layout already works — and in plenty of Lower Gwynedd and Fort Washington homes, it does.</p>
-<h3>$75,000–$110,000: The Full Transformation</h3>
-<p>Where most of our Montgomery County projects land. Custom or premium semi-custom cabinetry, natural stone, a serious appliance package, a designed lighting plan, and modest layout changes — an island added, a doorway widened, a peninsula removed. The room functions differently when it's done, not just looks different.</p>
-<h3>$110,000–$150,000+: The Architectural Rebuild</h3>
-<p>Walls come out, structural beams go in, plumbing and gas lines relocate, and the cabinetry is fully custom. Sub-Zero/Wolf-tier appliances, butler's pantries, oversized islands with waterfall stone. In the larger homes of Gladwyne, Maple Glen, and Blue Bell, this tier is common because the houses can carry it — and because buyers at that price point expect it.</p>
-
-<h2>Where Each Dollar Actually Goes</h2>
-<p>Cabinetry is the biggest line item at 30–40% of the budget, and it's the one place we tell clients not to cheap out — we've written a full breakdown of <a href="/blog/article/?id=custom-vs-semi-custom-cabinetry">custom vs. semi-custom cabinetry</a> if you're weighing that decision. Labor and installation run 20–30%; appliances 15–25%; countertops and backsplash 10–15%; design, permits, and project management 8–12%. Notice what's not on that list: a magic "per square foot" number. Two 200-square-foot kitchens can differ by $60,000 depending on what goes in them.</p>
-
-<h2>What Older Montgomery County Homes Add to the Number</h2>
-<p>This is the part national cost guides miss. A large share of the housing stock in Ambler, Fort Washington, and the older sections of Blue Bell is 1920s–1960s construction: plaster walls, undersized electrical panels, cast-iron drain stacks, and floors that have settled a half inch or more across the room. None of this is a crisis — but all of it costs money to do right.</p>
-<ul>
-  <li><strong>Electrical service upgrades ($3,000–$8,000):</strong> A modern kitchen with induction or a 48-inch range needs circuits a 100-amp panel often can't spare. Panel upgrades are one of the most common "surprises" we quote — so we check the panel at the first consultation, not during demo.</li>
-  <li><strong>Plaster and framing corrections ($2,000–$10,000):</strong> Plaster walls don't come down or patch like drywall, and out-of-level floors have to be corrected before inset cabinetry will ever sit right.</li>
-  <li><strong>Plumbing stack and supply-line work ($2,500–$9,000):</strong> If your drain stack is cast iron from the Truman administration and we're opening the wall anyway, replacing it now is far cheaper than opening a finished wall later.</li>
-</ul>
-<p>A competent local bid accounts for these up front. A lowball bid "discovers" them in week two, as change orders.</p>
-
-<h2>The Allowance Game (Read This Before You Compare Bids)</h2>
-<p>Here's the trick that makes a $70,000 kitchen look like a $52,000 kitchen on paper: allowances. A bid that carries a $4,000 countertop allowance and a $12,000 cabinetry allowance isn't lying, exactly — it's just pricing materials nobody at this market tier actually chooses. When you pick real quartzite and real cabinetry, the difference lands on you as an overage. When you compare bids, compare the allowances line by line, not the bottom line. The honest bid is often the one that looks more expensive on day one and costs less by the final invoice.</p>
-
-<h2>Timing and the 2026 Market</h2>
-<p>Material costs in the Philadelphia suburbs have kept climbing modestly — cabinetry and stone are up single digits year over year, and premium appliance brands raise prices annually with little apology. Lead times are the bigger planning issue: quality cabinetry still runs 8–12 weeks from order to delivery, which is why the design phase starts months before demolition. We've broken down the full schedule — and why so many projects run late — in our guide to <a href="/blog/article/?id=kitchen-remodel-timeline-delays">real kitchen remodel timelines</a>.</p>
-
-<h2>Getting a Real Number for Your Home</h2>
-<p>Every range in this article is honest, and none of it replaces someone standing in your kitchen looking at your panel, your stack, and your walls. That's what a free in-home consultation is for. <a href="/contact/">Schedule one here</a>, get an instant ballpark with our <a href="/estimator/">online estimator</a>, or see what these budgets actually buy in <a href="/portfolio/">our completed Montgomery County kitchens</a>. You can also read more about how we work on our <a href="/services/luxury-kitchen-remodeling/">luxury kitchen remodeling</a> page.</p>`,
-    faq: [
-      { q: "Is $100,000 too much for a kitchen remodel in Montgomery County?", a: "Not for a full transformation. Between $75,000 and $110,000 is the normal range for a luxury kitchen with custom-grade cabinetry, stone counters, premium appliances, and modest layout changes in towns like Blue Bell, Maple Glen, and Ambler. It's too much only if the scope doesn't justify it — which is why you should demand an itemized bid, not a lump sum." },
-      { q: "Why are kitchen remodel quotes so different from each other?", a: "Usually allowances. Two bids for the 'same' kitchen can differ by $20,000 because one carries realistic material allowances and the other carries placeholder numbers you'll blow through at your first showroom visit. Compare allowances line by line before comparing totals." },
-      { q: "What's the cheapest way to get a high-end look?", a: "Keep the existing layout. Walls, plumbing, and gas lines are where budgets balloon. A same-footprint remodel with well-chosen semi-custom cabinetry and one splurge material — usually the countertop — reads as luxury for $55,000–$75,000." },
-      { q: "Do older homes in the Ambler area really cost more to remodel?", a: "Often, yes — typically $5,000–$20,000 more once electrical panel upgrades, plaster work, and old plumbing are addressed properly. The real question is whether your contractor prices that work up front or springs it on you as change orders in week two." },
-      { q: "How do I get an accurate kitchen remodel estimate?", a: "Only an in-home assessment produces a reliable number, because your panel, plumbing, and structure drive so much of the cost. We provide itemized estimates after a free consultation, and our online estimator gives an instant ballpark in the meantime." }
-    ]
   },
   {
     id: "bathroom-remodel-cost-main-line-2026",
