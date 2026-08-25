@@ -252,6 +252,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       position: relative;
       width: 100%;
       height: 100vh;
+      height: 100dvh; /* true visible viewport on mobile (excludes browser chrome) */
       min-height: 700px;
       background: var(--color-bg);
       overflow: hidden;
@@ -326,8 +327,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     /* Stacked lower group: tagline → buttons → reviews */
     .hero-lower-stack {
       position: absolute;
-      top: auto;
-      bottom: clamp(36px, 7vh, 96px); /* anchored below the marquee on every screen height */
+      /* 30px below the marquee headline (42% center + half the marquee text height) */
+      top: calc(42% + max(40px, min(5.5vw, 90px)) + 30px);
+      bottom: auto;
       left: 50%;
       transform: translateX(-50%);
       z-index: 4;
@@ -486,6 +488,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     /* Responsive */
     @media(max-width:768px) {
+      /* hero exactly matches the visible viewport on phones */
+      .home-hero { min-height: 560px; }
       .hero-marquee-track { animation-duration: 30s; }
       .hero-image-window {
         inset: 0;
@@ -500,8 +504,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         font-size: clamp(50px, 12vw, 100px);
       }
       .hero-lower-stack {
-        bottom: 56px;
-        gap: 20px;
+        top: calc(42% + max(25px, min(6vw, 50px)) + 30px);
+        bottom: auto;
+        gap: 30px;
       }
       .hero-tagline {
         font-size: clamp(16px, 3.5vw, 22px);
