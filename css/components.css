@@ -880,7 +880,14 @@
 }
 
 @media (max-width: 768px) {
-  .nav-logo-img { height: 68px; width: auto; max-width: none; flex-shrink: 0; }
+  .nav-logo-img { height: 58px; width: auto; max-width: none; flex-shrink: 0; }
+  /* center the logo in the mobile header (hamburger stays right) */
+  .nav-logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-right: 0;
+  }
   .nav-cta { display: none; }
 }
 
