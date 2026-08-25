@@ -504,10 +504,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         font-size: clamp(50px, 12vw, 100px);
       }
       .hero-lower-stack {
-        top: calc(42% + max(25px, min(6vw, 50px)) + 30px);
+        top: calc(42% + max(25px, min(6vw, 50px)) + 14px); /* tagline hugs the H1 */
         bottom: auto;
         gap: 30px;
       }
+      .hero-bottom-ctas { margin-top: 16px; }   /* buttons keep their original spot */
+      .hero-review-badge { margin-top: 12px; }  /* rating nudged down */
       .hero-tagline {
         font-size: clamp(16px, 3.5vw, 22px);
       }
