@@ -880,7 +880,7 @@
 }
 
 @media (max-width: 768px) {
-  .nav-logo-img { height: 40px; width: auto; max-width: none; flex-shrink: 0; }
+  .nav-logo-img { height: 68px; width: auto; max-width: none; flex-shrink: 0; }
   .nav-cta { display: none; }
 }
 
