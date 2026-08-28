@@ -349,6 +349,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       display: inline-flex; align-items: center; gap: 8px;
     }
     .lp-btn-outline:hover { border-color: var(--color-gold); color: var(--color-gold); transform: translateY(-2px); }
+    button.lp-btn-outline { -webkit-appearance: none; appearance: none; }
+
+    .lp-review-card--extra { display: none; }
+    .lp-review-card--extra.lp-review-card--shown {
+      display: block;
+      animation: lpReviewFadeIn 0.5s ease both;
+    }
+    @keyframes lpReviewFadeIn {
+      from { opacity: 0; transform: translateY(16px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
 
     /* ── SECTION SHARED ──────────────────────────────────────── */
     .lp-section {
@@ -1584,13 +1595,65 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <svg class="lp-review-source__svg" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path fill="#FFC107" d="M43.611 20.083H42V20H24v8h11.303c-1.649 4.657-6.08 8-11.303 8-6.627 0-12-5.373-12-12s5.373-12 12-12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4 12.955 4 4 12.955 4 24s8.955 20 20 20 20-8.955 20-20c0-1.341-.138-2.65-.389-3.917z"/><path fill="#FF3D00" d="m6.306 14.691 6.571 4.819C14.655 15.108 18.961 12 24 12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4 16.318 4 9.656 8.337 6.306 14.691z"/><path fill="#4CAF50" d="M24 44c5.166 0 9.86-1.977 13.409-5.192l-6.19-5.238C29.211 35.091 26.715 36 24 36c-5.222 0-9.652-3.343-11.303-8H5.663C9.08 39.304 16.066 44 24 44z"/><path fill="#1976D2" d="M43.611 20.083H42V20H24v8h11.303c-.792 2.237-2.231 4.166-4.087 5.571l6.19 5.238C42.022 39.196 44 34.218 44 24c0-1.341-.138-2.65-.389-3.917z"/></svg>
           </span>
         </div>
+        <div class="lp-review-card lp-review-card--extra">
+          <div class="lp-review-stars">★★★★★</div>
+          <p class="lp-review-text">"B&amp;B managed to make our 400-year-old home feel current without losing any of its soul. The attention to the original beams and floors was remarkable. Michael's team was on-site every single day. The quality of workmanship is unlike anything I've seen in 20 years of homeownership."</p>
+          <div class="lp-review-author">The Williams Family · Doylestown, PA</div>
+          <span class="lp-review-source lp-review-source--google" role="img" aria-label="Review on Google">
+            <svg class="lp-review-source__svg" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path fill="#FFC107" d="M43.611 20.083H42V20H24v8h11.303c-1.649 4.657-6.08 8-11.303 8-6.627 0-12-5.373-12-12s5.373-12 12-12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4 12.955 4 4 12.955 4 24s8.955 20 20 20 20-8.955 20-20c0-1.341-.138-2.65-.389-3.917z"/><path fill="#FF3D00" d="m6.306 14.691 6.571 4.819C14.655 15.108 18.961 12 24 12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4 16.318 4 9.656 8.337 6.306 14.691z"/><path fill="#4CAF50" d="M24 44c5.166 0 9.86-1.977 13.409-5.192l-6.19-5.238C29.211 35.091 26.715 36 24 36c-5.222 0-9.652-3.343-11.303-8H5.663C9.08 39.304 16.066 44 24 44z"/><path fill="#1976D2" d="M43.611 20.083H42V20H24v8h11.303c-.792 2.237-2.231 4.166-4.087 5.571l6.19 5.238C42.022 39.196 44 34.218 44 24c0-1.341-.138-2.65-.389-3.917z"/></svg>
+          </span>
+        </div>
+        <div class="lp-review-card lp-review-card--extra">
+          <div class="lp-review-stars">★★★★★</div>
+          <p class="lp-review-text">"Michael and his team turned our dated kitchen into something we're genuinely proud to show guests. Clean, bright, and exactly what we envisioned. The new island changed how we use the space entirely. I cannot recommend them highly enough."</p>
+          <div class="lp-review-author">The Peterson Family · Wayne, PA</div>
+          <span class="lp-review-source lp-review-source--google" role="img" aria-label="Review on Google">
+            <svg class="lp-review-source__svg" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path fill="#FFC107" d="M43.611 20.083H42V20H24v8h11.303c-1.649 4.657-6.08 8-11.303 8-6.627 0-12-5.373-12-12s5.373-12 12-12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4 12.955 4 4 12.955 4 24s8.955 20 20 20 20-8.955 20-20c0-1.341-.138-2.65-.389-3.917z"/><path fill="#FF3D00" d="m6.306 14.691 6.571 4.819C14.655 15.108 18.961 12 24 12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4 16.318 4 9.656 8.337 6.306 14.691z"/><path fill="#4CAF50" d="M24 44c5.166 0 9.86-1.977 13.409-5.192l-6.19-5.238C29.211 35.091 26.715 36 24 36c-5.222 0-9.652-3.343-11.303-8H5.663C9.08 39.304 16.066 44 24 44z"/><path fill="#1976D2" d="M43.611 20.083H42V20H24v8h11.303c-.792 2.237-2.231 4.166-4.087 5.571l6.19 5.238C42.022 39.196 44 34.218 44 24c0-1.341-.138-2.65-.389-3.917z"/></svg>
+          </span>
+        </div>
+        <div class="lp-review-card lp-review-card--extra">
+          <div class="lp-review-stars">★★★★★</div>
+          <p class="lp-review-text">"We've been telling everyone about B&amp;B. The heated floors alone are worth it for a Pennsylvania winter. The team was professional and kept our house remarkably clean throughout the project. Andrei's tile work in the shower is a true work of art."</p>
+          <div class="lp-review-author">Trisha &amp; Mark C. · Doylestown, PA</div>
+          <span class="lp-review-source lp-review-source--angi" role="img" aria-label="Review on Angi">
+            <svg class="lp-review-source__svg lp-review-source__svg--angi" viewBox="0 0 72 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><text x="0" y="18" fill="#FF6154" font-family="Manrope, system-ui, -apple-system, sans-serif" font-weight="800" font-size="18" letter-spacing="-0.04em">angi</text></svg>
+          </span>
+        </div>
+        <div class="lp-review-card lp-review-card--extra">
+          <div class="lp-review-stars">★★★★★</div>
+          <p class="lp-review-text">"Andrei was meticulous. Every tile is perfectly aligned, every fixture perfectly level. Our master bath is now the most beautiful room in the house. The frameless glass they installed is absolutely seamless."</p>
+          <div class="lp-review-author">The Hartford Family · Wayne, PA</div>
+          <span class="lp-review-source lp-review-source--google" role="img" aria-label="Review on Google">
+            <svg class="lp-review-source__svg" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path fill="#FFC107" d="M43.611 20.083H42V20H24v8h11.303c-1.649 4.657-6.08 8-11.303 8-6.627 0-12-5.373-12-12s5.373-12 12-12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4 12.955 4 4 12.955 4 24s8.955 20 20 20 20-8.955 20-20c0-1.341-.138-2.65-.389-3.917z"/><path fill="#FF3D00" d="m6.306 14.691 6.571 4.819C14.655 15.108 18.961 12 24 12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4 16.318 4 9.656 8.337 6.306 14.691z"/><path fill="#4CAF50" d="M24 44c5.166 0 9.86-1.977 13.409-5.192l-6.19-5.238C29.211 35.091 26.715 36 24 36c-5.222 0-9.652-3.343-11.303-8H5.663C9.08 39.304 16.066 44 24 44z"/><path fill="#1976D2" d="M43.611 20.083H42V20H24v8h11.303c-.792 2.237-2.231 4.166-4.087 5.571l6.19 5.238C42.022 39.196 44 34.218 44 24c0-1.341-.138-2.65-.389-3.917z"/></svg>
+          </span>
+        </div>
+        <div class="lp-review-card lp-review-card--extra">
+          <div class="lp-review-stars">★★★★★</div>
+          <p class="lp-review-text">"B&amp;B transformed our entire first floor. From the kitchen to the living area — everything flows and feels like it was designed as one. They stayed on schedule, the crew was respectful, and the result is everything we hoped for and more. Our Cambria quartz counters are stunning."</p>
+          <div class="lp-review-author">J.C. Heff · Huntingdon Valley, PA</div>
+          <span class="lp-review-source lp-review-source--angi" role="img" aria-label="Review on Angi">
+            <svg class="lp-review-source__svg lp-review-source__svg--angi" viewBox="0 0 72 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><text x="0" y="18" fill="#FF6154" font-family="Manrope, system-ui, -apple-system, sans-serif" font-weight="800" font-size="18" letter-spacing="-0.04em">angi</text></svg>
+          </span>
+        </div>
       </div>
       <div class="lp-reviews-cta reveal" style="display:flex;flex-wrap:wrap;gap:14px;justify-content:center;">
-        <a href="https://www.google.com/search?q=b%26b+associates+creations+reviews#mpd=~11159209005396116063/customers/reviews" target="_blank" rel="noopener" class="lp-btn-outline">View All Google Reviews →</a>
-        <a href="https://www.homeadvisor.com/rated.BandBAssociatesCo.39127744.html" target="_blank" rel="noopener" class="lp-btn-outline">View HomeAdvisor Reviews →</a>
+        <button type="button" id="lp-reviews-more-btn" class="lp-btn-outline" style="cursor:pointer;" aria-expanded="false">View More Reviews ↓</button>
       </div>
     </div>
   </section>
+  <script>
+    (function(){
+      var btn = document.getElementById('lp-reviews-more-btn');
+      if (!btn) return;
+      btn.addEventListener('click', function(){
+        document.querySelectorAll('.lp-review-card--extra').forEach(function(card){
+          card.classList.add('lp-review-card--shown');
+        });
+        btn.setAttribute('aria-expanded', 'true');
+        btn.parentNode.style.display = 'none';
+      });
+    })();
+  </script>
 
   <!-- ── INVESTMENT RANGES ────────────────────────────────────── -->
   <section class="lp-invest-section lp-section-full" aria-label="Investment ranges">
