@@ -1875,3 +1875,7 @@
   padding-top: var(--sp-3);
   border-top: 1px solid rgba(255,255,255,0.05);
 }
+
+/* Inquiry Form anchor: clear the fixed nav (+ mobile CTA bar) when jumping to #inquiry-form */
+#inquiry-form { scroll-margin-top: 120px; }
+@media (max-width: 768px) { #inquiry-form { scroll-margin-top: 140px; } }

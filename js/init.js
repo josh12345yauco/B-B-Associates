@@ -19,7 +19,7 @@ gsap.ticker.lagSmoothing(0);
 const nav = document.querySelector('.nav');
 
 if (nav) {
-  // Inject mobile CTA bar (Call Now + Online Estimator)
+  // Inject mobile CTA bar (Call Now + Inquire Here)
   const ctaBar = document.createElement('div');
   ctaBar.className = 'mobile-cta-bar';
   ctaBar.innerHTML =
@@ -52,9 +52,9 @@ const hamburger = document.querySelector('.nav-hamburger');
 const mobileNav = document.querySelector('.nav-mobile');
 
 if (mobileNav) {
-  mobileNav.querySelectorAll('a.nav-mobile-link[href*="estimator"]').forEach(a => {
+  mobileNav.querySelectorAll('a.nav-mobile-link.nav-mobile-cta').forEach(a => {
     if (a.querySelector('.nav-mobile-link--glasi-inner') || a.classList.contains('has-dropdown')) return;
-    const label = a.textContent.replace(/\s+/g, ' ').trim() || 'Online Estimator';
+    const label = a.textContent.replace(/\s+/g, ' ').trim() || 'Inquiry Form';
     a.classList.add('btn-glasi', 'nav-mobile-link--glasi');
     a.innerHTML =
       '<div class="corners nav-mobile-link--glasi-inner">' +
