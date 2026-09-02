@@ -313,4 +313,22 @@
     <priority>0.85</priority>
   </url>
 
+  <url>
+    <loc>https://www.bbassociatesco.com/application/</loc>
+    <lastmod>2026-09-02</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.30</priority>
+  </url>
+  <url>
+    <loc>https://www.bbassociatesco.com/privacy-policy/</loc>
+    <lastmod>2026-09-02</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.20</priority>
+  </url>
+  <url>
+    <loc>https://www.bbassociatesco.com/terms-of-service/</loc>
+    <lastmod>2026-09-02</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.20</priority>
+  </url>
 </urlset>
