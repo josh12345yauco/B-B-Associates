@@ -561,7 +561,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           }
         }
       };
-      if (article.date) articleSchema.datePublished = article.date;
+      if (article.datePublished || article.date) {
+        articleSchema.datePublished = article.datePublished || article.date;
+        articleSchema.dateModified = article.dateModified || article.datePublished || article.date;
+      }
       document.getElementById('article-schema').textContent = JSON.stringify(articleSchema);
 
       // FAQPage schema generated from the same data as the visible FAQ,
