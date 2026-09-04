@@ -1,0 +1,109 @@
+{
+  "_readme": "Service definitions for scripts/build-town-pages.js. Cost tiers are copied verbatim from the two live service pages. FAQ pool entries may use {Town}, {Township}, {Permit}, {County} placeholders; per-town faqOverrides in data/towns.json take precedence.",
+  "services": [
+    {
+      "slug": "kitchen-remodeling",
+      "key": "kitchen",
+      "name": "Kitchen Remodeling",
+      "shortName": "Kitchen",
+      "titlePattern": "Kitchen Remodeling in {Town}, PA | B&B Associates Creations",
+      "h1Pattern": "Kitchen Remodeling<br>in {Town}, PA",
+      "h1Plain": "Kitchen Remodeling in {Town}, PA",
+      "breadcrumbLabel": "Kitchen Remodeling",
+      "canonicalServicePage": "/services/luxury-kitchen-remodeling/",
+      "canonicalServiceLabel": "Luxury Kitchen Remodeling",
+      "serviceSchemaName": "Kitchen Remodeling",
+      "serviceType": "Kitchen remodeling",
+      "portfolioFilter": "/portfolio/?filter=kitchen",
+      "metaPattern": "Kitchen remodeling in {Town}, PA by B&B Associates. Design-build kitchens for {Township} homes, {Permit} permits handled, itemized estimates. Free in-home consultation.",
+      "heroAlt": "Custom kitchen remodeling in {Town}, PA by B&B Associates Creations",
+      "cardTitle": "Kitchen Remodeling in {Town}",
+      "cardBody": "Complete custom kitchen renovations for {Town} homes: custom and semi-custom cabinetry, stone countertops, islands and millwork, lighting design, appliances, and design-build execution with {Permit} permits handled inside the scope.",
+      "deliverables": [
+        "In-home design consultation with the owner",
+        "3D renderings and material selections from 60+ supplier partners",
+        "Custom and semi-custom cabinetry, designed and installed by our team",
+        "Quartz, quartzite, marble and porcelain countertops at trade pricing",
+        "Lighting design, electrical service upgrades and plumbing rough-in",
+        "Full permits and inspections with the township, included"
+      ],
+      "costTiers": [
+        { "name": "Foundation", "range": "$35,000 – $60,000", "desc": "Semi-custom cabinets, quartz counters, tile backsplash, new fixtures. The foundation of a beautiful, functional kitchen — no compromises on the details that matter most." },
+        { "name": "Premium", "range": "$60,000 – $100,000", "desc": "Full custom cabinetry, premium countertops, structural changes, lighting design. The sweet spot for homeowners who want everything done right, once." },
+        { "name": "Signature", "range": "$100,000+", "desc": "Architectural-level transformation, bespoke everything, smart home integration. For those who view their kitchen as the defining room of a home built for living at its best." }
+      ],
+      "costNote": "Every project is unique. Our estimates are fully itemized — you know where every dollar goes.",
+      "process": [
+        { "title": "Discovery Call", "desc": "We learn your vision, budget, and timeline in a focused one-hour conversation. No pressure, no pitch — just real dialogue. Free." },
+        { "title": "In-Home Consultation", "desc": "The owner comes to your {Town} home, takes measurements, and advises on the full range of possibilities given your space and goals. Also free." },
+        { "title": "Design & 3D Concept", "desc": "We produce a full design package — cabinetry, countertops, tile, lighting, flooring — with 3D visualizations and material selections drawn from 60+ premium partners." },
+        { "title": "Your Dedicated Build Team", "desc": "The same crew arrives every day, from demo through final install. No crew switching, no delay cascades. Your project is never deprioritized." },
+        { "title": "Final Walkthrough", "desc": "We walk every inch of the finished space with you. We address any punch-list items on the spot. We don't leave until you're completely satisfied." }
+      ],
+      "faqPool": [
+        { "id": "cost", "q": "How much does a kitchen remodel cost in {Town}, PA?", "a": "Most full kitchen remodels in {Town} fall between $55,000 and $150,000+, depending on cabinetry, countertops, and whether the layout changes structurally. Before any contract is signed, we provide a detailed, line-item estimate covering every cost. A free in-home consultation is the fastest way to get an accurate kitchen remodel cost for your home." },
+        { "id": "timeline", "q": "How long does a kitchen remodel take in {Town}?", "a": "Plan for roughly 12–20 weeks start to finish for a full kitchen in {Town} — including design, permitting, and 4–10 weeks of on-site construction. Older homes can add time if wiring, plumbing, or structural conditions surface during demolition, which is why we assess thoroughly before committing to a schedule." },
+        { "id": "permit", "q": "Do I need a permit to remodel a kitchen in {Township}?", "a": "Yes for electrical, plumbing, and structural work, which covers nearly every full kitchen remodel. Permits go through {Permit}. We file the applications, meet the inspectors, and close out the permits as part of our standard scope, so you never deal with the municipality directly." },
+        { "id": "wall", "q": "Can you remove the wall between my kitchen and dining room in {Town}?", "a": "Usually, yes. We have an engineer confirm whether the wall is load-bearing during the design phase and size a beam if it is, then price the structural work as its own line. The township inspects structural, plumbing, and electrical work, and we manage every permit and inspection inside the project." },
+        { "id": "quote", "q": "Why is my {Town} kitchen remodel quote higher than online estimates?", "a": "National cost calculators price cabinets and counters, not the house. In {Town}, real quotes include electrical service, plumbing relocation, plaster or drywall repair, structural work, permits, and design — items a good bid lists explicitly. Our estimates itemize each one so you can see exactly what drives the number." },
+        { "id": "best", "q": "How do I find the best kitchen remodeling contractor near me in {Town}?", "a": "Look for a licensed, locally established design-build contractor with verifiable reviews and real local projects — not just a national lead-generation listing. B&B Associates has been a kitchen and bathroom remodeling contractor based in Maple Glen since 2013, with 13 years of completed projects across {County}. We handle design, materials, permits, and construction under one roof, so you are not coordinating between a designer, a contractor, and three subcontractors." },
+        { "id": "cabinetry", "q": "Custom or semi-custom cabinetry for a {Town} kitchen?", "a": "Semi-custom is usually the right call for a same-footprint refresh of a 1980s–2000s kitchen. True inset cabinetry, doors flush within the face frame, and the fully custom layouts that older {Town} homes often need are where custom or the very top semi-custom lines earn their cost. We design and install both, and we will tell you which one the room actually needs." },
+        { "id": "showroom", "q": "Is there a showroom where I can see kitchen materials in person?", "a": "Our Ambler design showroom is coming soon — opening Winter 2026/2027. When it opens, you will be able to see countertop slabs, tile walls, cabinetry door styles, and hardware finishes from our 60+ supplier partners in person. Until then, all material selection happens through the in-home consultation and design process." },
+        { "id": "book", "q": "How far in advance should I book a kitchen remodel in {Town}?", "a": "Our schedule typically books 6–10 weeks out from the consultation date. For projects beginning in spring, the most popular season, reach out by January or February to secure your spot; for a kitchen finished before the holidays, sign by early autumn. Consultations are always free, and there is no obligation until you sign a contract." }
+      ],
+      "faqDefaultOrder": ["cost", "permit", "timeline", "wall", "quote", "best"]
+    },
+    {
+      "slug": "bathroom-remodeling",
+      "key": "bathroom",
+      "name": "Bathroom Remodeling",
+      "shortName": "Bathroom",
+      "titlePattern": "Bathroom Remodeling in {Town}, PA | B&B Associates Creations",
+      "h1Pattern": "Bathroom Remodeling<br>in {Town}, PA",
+      "h1Plain": "Bathroom Remodeling in {Town}, PA",
+      "breadcrumbLabel": "Bathroom Remodeling",
+      "canonicalServicePage": "/services/custom-bathroom-renovations/",
+      "canonicalServiceLabel": "Custom Bathroom Renovations",
+      "serviceSchemaName": "Bathroom Remodeling",
+      "serviceType": "Bathroom remodeling",
+      "portfolioFilter": "/portfolio/?filter=bathroom",
+      "metaPattern": "Bathroom remodeling in {Town}, PA by B&B Associates. Primary baths, hall baths and spa suites for {Township} homes, {Permit} permits handled. Free in-home consultation.",
+      "heroAlt": "Custom bathroom remodeling in {Town}, PA by B&B Associates Creations",
+      "cardTitle": "Bathroom Remodeling in {Town}",
+      "cardBody": "Primary baths, hall baths, and powder rooms for {Town} homes: custom tile and stone, walk-in showers with frameless glass, heated floors, custom vanities, and luxury fixtures, fully permitted through {Permit}.",
+      "deliverables": [
+        "In-home design consultation and 3D layout renderings",
+        "Custom vanity design and build with quartz or marble tops",
+        "Shower expansion, curbless entries and hand-laid custom tile",
+        "Frameless glass enclosures, rainfall and steam systems",
+        "Heated floor systems, freestanding and soaking tubs, LED lighting design",
+        "All plumbing, electrical, permits and inspections handled in-house"
+      ],
+      "costTiers": [
+        { "name": "Essential", "range": "$20,000–$40,000", "desc": "Updated tile, new vanity, refreshed fixtures, and improved lighting. A meaningful upgrade that transforms the feel of the space without a full structural overhaul." },
+        { "name": "Premium", "range": "$40,000–$75,000", "desc": "Shower expansion, custom vanity, frameless glass enclosure, and heated floors. The full luxury bathroom experience — everything you want, nothing you don't." },
+        { "name": "Signature", "range": "$75,000+", "desc": "Full master bath transformation with bespoke materials, spa features throughout, freestanding soaking tub, and architectural detail that rivals a five-star hotel." }
+      ],
+      "costNote": "Ranges reflect typical completed projects and vary based on square footage, material selections, plumbing complexity, and finish level. A precise estimate is provided after your in-home consultation — at no cost to you.",
+      "process": [
+        { "title": "Discovery Call", "desc": "We learn your vision and existing layout constraints. This introductory call is free, runs about an hour, and helps us understand what you want to achieve before we ever set foot in your home." },
+        { "title": "In-Home Consultation", "desc": "We measure your {Town} bathroom, assess plumbing and electrical conditions, and explore possibilities for the space. This on-site visit is where the real creative conversation begins." },
+        { "title": "Design & 3D Rendering", "desc": "Full bathroom design with a complete material board sourced from our 60+ supplier partners. You receive photorealistic 3D renderings so you can approve every detail — tile, fixture, vanity, layout — before construction begins." },
+        { "title": "Dedicated Build Team", "desc": "The same licensed crew arrives every day — handling every trade from tile and carpentry to plumbing and electrical. No revolving door of subcontractors, no coordination gaps." },
+        { "title": "Final Walkthrough", "desc": "We don't consider a project complete until you're in love with every detail. Our final walkthrough is thorough and unhurried — we address anything that doesn't meet your expectations before we close out." }
+      ],
+      "faqPool": [
+        { "id": "cost", "q": "How much does a bathroom remodel cost in {Town}, PA?", "a": "Bathroom renovations in the {Town} area generally range from $38,000–$55,000 for a hall bath to $55,000–$85,000 for a primary bath and $85,000–$100,000+ for a spa-level suite. You receive a fully itemized, line-item estimate before any work begins, and a free in-home consultation is the best way to get an accurate bathroom remodel cost for your space." },
+        { "id": "timeline", "q": "How long does a bathroom remodel take in {Town}?", "a": "Plan for about 5–7 weeks of construction for most {Town} bathrooms, after a six-to-eight-week design and ordering phase so the vanity, stone, and glass are on site before demolition. Older homes can add a week or two if cast-iron plumbing, plaster, or subfloor conditions surface once the walls are open." },
+        { "id": "permit", "q": "Do I need a permit to remodel a bathroom in {Township}?", "a": "Yes when the work involves plumbing, electrical, or structural changes, which covers nearly every full bathroom remodel. Permits go through {Permit}, and the rough-in is inspected before the walls close. We file the applications and coordinate every inspection as part of our standard scope." },
+        { "id": "plumbing", "q": "Should I move the plumbing in my {Town} bathroom remodel?", "a": "If the layout is the problem, yes — relocating a toilet or expanding a shower into a closet is often the best money spent in an older {Town} bathroom. Moving drains over a basement is straightforward; over a finished ceiling it means opening the ceiling, which we price as its own line so there is no surprise." },
+        { "id": "heated", "q": "Are heated bathroom floors worth it in {Town}?", "a": "In a Pennsylvania winter, yes. An electric radiant mat under tile connected to a programmable thermostat is a modest line item in most {Town} bathrooms and is the upgrade we would never leave out. It also lets you use large-format porcelain or stone floors without the cold-feet problem." },
+        { "id": "best", "q": "How do I find the best bathroom remodeling contractor near me in {Town}?", "a": "Look for a licensed, locally established design-build contractor with verifiable reviews and real local projects — not just a national lead-generation listing. B&B Associates has been a kitchen and bathroom remodeling contractor based in Maple Glen since 2013, with 13 years of completed projects across {County}. Design, materials, permits, and construction are handled under one roof." },
+        { "id": "mold", "q": "Will a remodel fix a bathroom that keeps growing mold?", "a": "Usually yes, if the remodel addresses the cause rather than the symptom. In older {Town} homes the culprit is typically a fan venting into the attic, a shower built without a waterproof membrane, or an unsealed window in the shower. We vent to the exterior, rebuild the shower on a true waterproofing system, and rebuild the window opening as part of the project." },
+        { "id": "curbless", "q": "Can you build a curbless shower in a {Town} home?", "a": "Yes. A curbless shower with a linear drain is one of the most requested upgrades from homeowners planning to stay in their {Town} home long term, and it does not have to look clinical. It requires recessing the shower floor or building up the surrounding floor, which we plan during design so the transition is seamless." },
+        { "id": "showroom", "q": "Is there a showroom where I can see bathroom materials in person?", "a": "Our Ambler design showroom is coming soon — opening Winter 2026/2027. When it opens, you will be able to see tile walls, stone slabs, vanity styles, and fixture finishes from our 60+ supplier partners in person. Until then, all material selection happens through the in-home consultation and design process." }
+      ],
+      "faqDefaultOrder": ["cost", "permit", "timeline", "plumbing", "heated", "best"]
+    }
+  ]
+}

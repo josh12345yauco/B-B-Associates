@@ -1,0 +1,36 @@
+{
+  "_readme": "Build configuration for scripts/build-town-pages.js. Bump buildDate when generated content changes so sitemap lastmod stays honest. Output is deterministic for a given buildDate (idempotent builds).",
+  "origin": "https://www.bbassociatesco.com",
+  "buildDate": "2026-09-04",
+  "gtmId": "GTM-KZZXTRLG",
+  "businessId": "https://www.bbassociatesco.com/#business",
+  "footerServiceAreas": [
+    {
+      "group": "Montgomery County",
+      "links": [
+        { "label": "Ambler PA", "href": "/service-areas/ambler-pa-remodeling-contractor/" },
+        { "label": "Blue Bell & North Wales", "href": "/service-areas/blue-bell-north-wales-remodeling/" },
+        { "label": "Lower Gwynedd PA", "href": "/service-areas/lower-gwynedd-pa-remodeling/" },
+        { "label": "Fort Washington PA", "href": "/service-areas/fort-washington-pa-remodeling/" },
+        { "label": "Horsham PA", "href": "/service-areas/horsham-pa-remodeling/" }
+      ]
+    },
+    {
+      "group": "Bucks County",
+      "links": [
+        { "label": "Newtown PA", "href": "/service-areas/newtown-pa-kitchen-bathroom-remodeling/" },
+        { "label": "Doylestown & New Hope", "href": "/service-areas/doylestown-new-hope-kitchen-remodeling/" },
+        { "label": "Yardley PA", "href": "/service-areas/yardley-pa-remodeling/" }
+      ]
+    },
+    {
+      "group": "Main Line",
+      "links": [
+        { "label": "Bryn Mawr PA", "href": "/service-areas/bryn-mawr-pa-remodeling/" },
+        { "label": "Gladwyne PA", "href": "/service-areas/gladwyne-pa-remodeling/" },
+        { "label": "Wayne & Villanova", "href": "/service-areas/wayne-villanova-bathroom-remodeling/" },
+        { "label": "Berwyn PA", "href": "/service-areas/berwyn-pa-remodeling/" }
+      ]
+    }
+  ]
+}

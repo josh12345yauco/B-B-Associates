@@ -1,0 +1,1251 @@
+{
+  "_readme": "Town data for scripts/build-town-pages.js. Facts marked in each town's `verify` array are NOT sourced from the repo and are listed in verification-needed.md; page copy only uses repo-sourced facts. Coordinates are approximate town centroids (not the HQ) and are on the verify list.",
+  "towns": [
+    {
+      "slug": "ambler",
+      "urlSlug": "ambler-pa",
+      "displayName": "Ambler",
+      "county": "Montgomery County",
+      "regionEyebrow": "Montgomery County",
+      "townships": [
+        "Ambler Borough",
+        "Upper Dublin Township"
+      ],
+      "neighborhoods": [
+        "Ambler Borough",
+        "Upper Dublin Township",
+        "Maple Glen",
+        "Spring House",
+        "Fort Washington State Park area"
+      ],
+      "heroTowns": "Ambler Borough · Upper Dublin · Maple Glen · Spring House",
+      "neighbors": [
+        "lower-gwynedd",
+        "blue-bell"
+      ],
+      "nearbyGeneral": [
+        {
+          "label": "Fort Washington",
+          "href": "/service-areas/fort-washington-pa-remodeling/"
+        },
+        {
+          "label": "Flourtown",
+          "href": "/service-areas/flourtown-pa-remodeling/"
+        },
+        {
+          "label": "Horsham",
+          "href": "/service-areas/horsham-pa-remodeling/"
+        },
+        {
+          "label": "Montgomery County",
+          "href": "/service-areas/montgomery-county/"
+        }
+      ],
+      "generalPage": "/service-areas/ambler-pa-remodeling-contractor/",
+      "generalPageLabel": "Ambler remodeling contractor",
+      "distancePhrase": "minutes from our office and warehouse at 1141 E Welsh Rd in Maple Glen",
+      "permitAuthority": "Ambler Borough or Upper Dublin Township, depending on the address",
+      "housingStock": "Victorian-era homes in Ambler Borough, 1920s–1950s plaster twins and colonials, mid-century Upper Dublin developments, and newer construction around Maple Glen and Spring House.",
+      "geo": {
+        "lat": 40.1546,
+        "lng": -75.2216
+      },
+      "heroImage": "/portfolio/KITCHENS/B&B - Beth Rubin-kitchen/153E1359-5284-48E5-9F68-B497880FF6F7.jpeg",
+      "introImage": "/IMAGES/Custom-Kitchen-Ambler-Pa.webp",
+      "introImageBath": "/IMAGES/Custom-Bathroom-Ambler-Pa.webp",
+      "ogImage": "https://www.bbassociatesco.com/IMAGES/Custom-Kitchen-Ambler-Pa.webp",
+      "ogImageBath": "https://www.bbassociatesco.com/IMAGES/Custom-Bathroom-Ambler-Pa.webp",
+      "portfolio": {
+        "kitchen": [
+          "rubin-kitchen",
+          "hess-kitchen",
+          "olaughlin-kitchen"
+        ],
+        "bathroom": [
+          "vartanian-bathroom",
+          "hartka-bathroom",
+          "petev-bathroom"
+        ]
+      },
+      "relatedArticles": {
+        "kitchen": [
+          "ambler-fort-washington-old-house-kitchen-wiring-plaster",
+          "kitchen-remodel-cost-montgomery-county-2026"
+        ],
+        "bathroom": [
+          "fort-washington-bathroom-mold-ventilation-remodel",
+          "heated-bathroom-floors"
+        ]
+      },
+      "content": {
+        "kitchen": {
+          "introH2": "The Kitchen Remodeler Down the Street",
+          "answerFirst": "B&B Associates has remodeled kitchens in Ambler since 2013 from an office and warehouse minutes away on East Welsh Road in Maple Glen. Most full kitchen remodels in Ambler land between $55,000 and $150,000+, and in a pre-1960 Borough home you should plan on $5,000–$20,000 of that going to wiring, plaster, and plumbing you will never see.",
+          "sections": [
+            {
+              "h2": "What an Ambler kitchen usually starts as",
+              "paragraphs": [
+                "Ambler has three kinds of kitchens. In the Borough, the Victorian-era and 1920s–1950s homes have small, closed kitchens with plaster walls, a single window over the sink, and a back door that was never meant to be the main entrance. In the Upper Dublin neighborhoods around Fort Washington State Park, the mid-century colonials have a workable footprint but builder-grade cabinets and a soffit that makes the room feel a foot shorter than it is. Around Maple Glen and Spring House, the newer construction has the square footage and simply needs the finishes and lighting it was never given.",
+                "We have worked in all three for 13 years, which matters because the right kitchen for a Borough twin is not the right kitchen for a 1990s colonial. In the older homes we open the kitchen to the dining room where the framing allows it and run cabinetry to the ceiling to recover the height the plaster ceilings give you. In the newer homes the work is mostly layout: a real island with 42 inches of clearance, a proper lighting plan, and an appliance package the room can support."
+              ]
+            },
+            {
+              "h2": "What Ambler kitchen projects run into behind the walls",
+              "paragraphs": [
+                "The number we tell every Borough homeowner first: in a home built before about 1960, plan on $5,000–$20,000 of the budget going to the house itself. The most common item is the electrical panel. Many Ambler Borough homes still run on 100-amp service, and an induction range or a 48-inch range needs dedicated circuits a full panel cannot provide. A 200-amp service upgrade in Ambler runs $3,000–$8,000 depending on the meter location and whether the utility drop has to change. Plaster comes next; it comes off in chunks and powder, and it has to be repaired by someone who knows plaster. Cast iron and galvanized supply lines in the older Upper Dublin colonials are the third item.",
+                "None of this is a reason not to remodel. It is a reason to hire a design-build firm that prices it explicitly. A good bid for a pre-1960 kitchen in Ambler has a line for electrical service, a plaster allowance with the square footage it assumes, and permit and inspection coordination with Ambler Borough or Upper Dublin Township included, because both will inspect the electrical and plumbing. We write our estimates that way so the number you sign is the number you pay."
+              ]
+            },
+            {
+              "h2": "Investment and timing for Ambler kitchens",
+              "paragraphs": [
+                "A same-footprint refresh in a newer Maple Glen or Spring House home, with semi-custom cabinetry, quartz or quartzite counters, tile backsplash, and a designed lighting plan, generally lands between $55,000 and $75,000. Opening walls, moving plumbing, and building an island moves the project into the $75,000–$110,000 range. Full custom kitchens with inset cabinetry, natural stone, and professional appliances run $110,000–$150,000+. Older Borough homes add the behind-the-walls costs above on top of whichever tier fits the finishes.",
+                "Plan on roughly 12–20 weeks from the first consultation to the final walkthrough, including design, permitting, and 4–10 weeks of on-site construction. Because our office is minutes away, Ambler projects get faster response on site visits, material deliveries, and inspections than a crew driving in from across the county. The consultation is free, and you receive a fully itemized estimate before any contract is signed."
+              ]
+            }
+          ],
+          "faqOverrides": [
+            {
+              "q": "How much does a kitchen remodel cost in Ambler, PA?",
+              "a": "Most full kitchen remodels in Ambler and the surrounding Montgomery County area fall between $55,000 and $150,000+, depending on cabinetry, countertops, and whether the layout changes structurally. Pre-1960 Ambler Borough homes typically add $5,000–$20,000 for electrical service, plaster, and plumbing updates. We provide a detailed, line-item estimate before any contract is signed."
+            },
+            {
+              "q": "Do I need a permit to remodel my kitchen in Ambler?",
+              "a": "Yes for electrical, plumbing, and structural work, which covers nearly every full kitchen remodel. Permits go through Ambler Borough or Upper Dublin Township depending on your address, and both inspect the electrical and plumbing. We file, meet the inspectors, and close out the permits as part of our standard scope."
+            }
+          ],
+          "metaDescription": "Kitchen remodeling in Ambler, PA by B&B Associates, minutes away in Maple Glen. Design-build kitchens, permits handled, itemized estimates. Free consultation."
+        },
+        "bathroom": {
+          "introH2": "Bathrooms Built by Your Neighbors",
+          "answerFirst": "B&B Associates remodels bathrooms across Ambler Borough, Upper Dublin, Maple Glen, and Spring House from an office minutes away on East Welsh Road. Hall baths in Ambler generally run $38,000–$55,000, primary baths $55,000–$85,000, and spa-level suites $85,000–$100,000+, with older homes adding cost for venting, waterproofing, and cast-iron plumbing that a cosmetic update never fixes.",
+          "sections": [
+            {
+              "h2": "Why the 1950s and 60s bathrooms around Ambler keep failing",
+              "paragraphs": [
+                "A large share of the housing stock in Ambler and Upper Dublin is 1920s–1960s construction, and the bathrooms in those homes share a set of problems. The exhaust fan, if there is one, often vents into the attic instead of outside. The shower wall was built on drywall or old mud-set tile with no waterproof membrane. There is frequently a window inside the shower that has not been sealed properly in decades. The result is a bathroom that grows mold no matter how often it is cleaned, and a homeowner who has replaced the fan twice without fixing anything.",
+                "Those are not cosmetic problems and they do not have cosmetic fixes. When we remodel a bathroom in one of these homes we vent the fan through the roof or the wall to the exterior, build the shower on a true waterproofing system, and rebuild the window opening so water has nowhere to go. That is the difference between a bathroom that looks new for two years and one that stays dry for thirty."
+              ]
+            },
+            {
+              "h2": "What we plan for in Ambler Borough and Upper Dublin homes",
+              "paragraphs": [
+                "In the Borough's older twins and colonials, the bathroom is usually small, the drain stack is cast iron, and the floor has settled enough that a large-format tile will telegraph every dip unless the subfloor is rebuilt. We assess all of that during the free in-home consultation so the estimate accounts for it. Moving a toilet or expanding a shower into a closet is often the best money spent in these houses, because the original layout was drawn for a family that bathed once a week.",
+                "A bathroom remodel that involves plumbing, electrical, and often a window change is permitted through Ambler Borough or Upper Dublin Township, and both inspect the rough-in before the walls close. We handle the applications and the inspection scheduling inside our scope. Most Ambler bathrooms take about 5–7 weeks of construction once materials are on site; older homes can add a week if the stack or the framing needs more than expected."
+              ]
+            },
+            {
+              "h2": "Investment and where the money goes",
+              "paragraphs": [
+                "A hall or guest bath done right in Ambler, with proper venting, a waterproofed tiled shower, a new vanity, and updated lighting, runs $38,000–$55,000. Primary baths with a custom vanity, expanded walk-in shower with frameless glass, and heated floors run $55,000–$85,000. Spa suites with steam, a freestanding tub, and large-format porcelain throughout run $85,000–$100,000+. Ranges reflect completed projects and depend on square footage, plumbing moves, and finish level.",
+                "Heated floors are the upgrade we would never leave out in a Pennsylvania winter, and in a small Ambler bathroom the electric radiant mat is a modest line item. Spend on the shower waterproofing and the vanity; those are the two things you cannot upgrade later without starting over. Every project includes a fully itemized estimate before any work begins, and the consultation is free."
+              ]
+            }
+          ],
+          "faqOverrides": [
+            {
+              "q": "How much does a bathroom remodel cost in Ambler, PA?",
+              "a": "Bathroom remodels in the Ambler area generally range from $38,000–$55,000 for a hall bath to $55,000–$85,000 for a primary bath and $85,000–$100,000+ for a spa-level suite. Older Ambler Borough and Upper Dublin homes may add cost for exterior venting, waterproofing, and cast-iron plumbing replacement. You receive a fully itemized estimate before any work begins."
+            },
+            {
+              "q": "My Ambler bathroom keeps growing mold. Will a remodel fix it?",
+              "a": "Usually yes, if the remodel addresses the cause rather than the symptom. In 1920s–1960s Ambler and Upper Dublin homes the culprit is typically a fan venting into the attic, a shower built without a waterproof membrane, or an unsealed window in the shower. We vent to the exterior, rebuild the shower on a true waterproofing system, and rebuild the window opening as part of the project."
+            }
+          ],
+          "metaDescription": "Bathroom remodeling in Ambler, PA by B&B Associates, minutes away in Maple Glen. Hall baths, primary baths and spa suites, permits handled. Free consultation."
+        }
+      },
+      "verify": [
+        "Coordinates 40.1546, -75.2216 (Ambler Borough centroid) are from general geographic knowledge, not the repo."
+      ]
+    },
+    {
+      "slug": "bryn-mawr",
+      "urlSlug": "bryn-mawr-pa",
+      "displayName": "Bryn Mawr",
+      "county": "Main Line",
+      "regionEyebrow": "Philadelphia Main Line",
+      "townships": [
+        "Lower Merion Township"
+      ],
+      "neighborhoods": [
+        "Lower Merion Township",
+        "Haverford",
+        "Penn Valley",
+        "Gladwyne border"
+      ],
+      "heroTowns": "Bryn Mawr · Lower Merion Township · Haverford · Penn Valley",
+      "neighbors": [
+        "gladwyne",
+        "villanova",
+        "berwyn"
+      ],
+      "nearbyGeneral": [
+        {
+          "label": "Haverford & Ardmore",
+          "href": "/service-areas/haverford-ardmore-remodeling/"
+        },
+        {
+          "label": "Wayne & Villanova",
+          "href": "/service-areas/wayne-villanova-bathroom-remodeling/"
+        },
+        {
+          "label": "Main Line PA",
+          "href": "/service-areas/main-line-pa-remodeling/"
+        }
+      ],
+      "generalPage": "/service-areas/bryn-mawr-pa-remodeling/",
+      "generalPageLabel": "Bryn Mawr remodeling overview",
+      "distancePhrase": "about 30 minutes from our Maple Glen office",
+      "permitAuthority": "Lower Merion Township Building & Code Enforcement (with historic review where a property is subject to it)",
+      "housingStock": "Gilded Age estates, Collegiate Gothic stone homes, Tudor and Colonial Revival houses from the 1900s–1940s, and arts-and-crafts bungalows, many with plaster walls, cast-iron drain stacks, and historic overlay considerations in Lower Merion Township.",
+      "geo": {
+        "lat": 40.0218,
+        "lng": -75.3163
+      },
+      "heroImage": "/portfolio/KITCHENS/B&B - Prager-kitchen/6D9E26B3-82C7-4C72-880A-373543ECEFDA.jpeg",
+      "introImage": "/IMAGES/Custom-Kitchen-Main-Line.webp",
+      "introImageBath": "/IMAGES/Custom-Bathroom-Ambler-Pa.webp",
+      "ogImage": "https://www.bbassociatesco.com/IMAGES/Custom-Kitchen-Main-Line.webp",
+      "ogImageBath": "https://www.bbassociatesco.com/IMAGES/Custom-Bathroom-Ambler-Pa.webp",
+      "portfolio": {
+        "kitchen": [
+          "prager-kitchen",
+          "mcbride-kitchen",
+          "giedrycz-kitchen"
+        ],
+        "bathroom": [
+          "lashannon-bathroom",
+          "hershey-bathroom",
+          "levinson-bathroom"
+        ]
+      },
+      "relatedArticles": {
+        "kitchen": [
+          "main-line-kitchen-neighborhood-guide",
+          "custom-vs-semi-custom-cabinetry"
+        ],
+        "bathroom": [
+          "gladwyne-bryn-mawr-stone-home-bathroom-remodel",
+          "bathroom-remodel-cost-main-line-2026"
+        ]
+      },
+      "content": {
+        "kitchen": {
+          "introH2": "Kitchens for Bryn Mawr’s Architecture",
+          "answerFirst": "B&B Associates designs and builds kitchens in Bryn Mawr’s Tudor, Colonial Revival, and stone homes, and handles Lower Merion Township permits and historic review inside the project scope. Kitchen remodels in Bryn Mawr typically run $55,000–$180,000+, with the stone and plaster construction of pre-1950 homes adding structural and electrical work that a newer colonial never sees.",
+          "sections": [
+            {
+              "h2": "What a Bryn Mawr kitchen has to live up to",
+              "paragraphs": [
+                "Bryn Mawr is one of the most architecturally distinctive communities on the Main Line: Gilded Age estates, Collegiate Gothic stone houses, gracious Tudor and Colonial Revival homes, and a significant stock of arts-and-crafts bungalows that reward character-conscious renovation. The kitchens in these homes were built as service rooms. They sit at the back of the house, behind a swinging door, with a butler’s pantry between them and the dining room, and they were never intended to be the room where the family lives.",
+                "The remodel that works here respects the proportions of the house and then quietly rebuilds the room around modern life. True inset cabinetry, doors flush within the face frame, is the classic look of Main Line estate kitchens in Bryn Mawr and Villanova, and it is one of the reasons custom or top-tier semi-custom lines are the only routes that execute it well. Honed marble or quartzite, a range hood scaled to the ceiling height, and a lighting plan that finally gives the room daylight are the details that make the kitchen feel like it was always meant to be there."
+              ]
+            },
+            {
+              "h2": "What the stone hands us",
+              "paragraphs": [
+                "Every pre-1950 Bryn Mawr house hands us at least one of these: a load-bearing wall exactly where the island wants to go, plaster and lath that has to be repaired by someone who knows plaster, an electrical panel that cannot support an induction range, or a cast-iron drain stack eighty years past its design life running through the wall you want to open. We assess all of it during the free in-home consultation, and an engineer sizes any beam before we price it. A wall between a Bryn Mawr kitchen and dining room is often carrying more than it should, and we would rather know that in the design phase than during demolition.",
+                "Lower Merion Township has detailed code requirements and a thorough inspection schedule for plumbing, electrical, and structural work, and it enforces them. Properties subject to historic overlay review add a submission we manage as well. All of that is part of our standard scope; you never deal with the Building & Code Enforcement Department yourself."
+              ]
+            },
+            {
+              "h2": "Investment and timing in Bryn Mawr",
+              "paragraphs": [
+                "Refined renovations without major structural work in Bryn Mawr tend to begin around $55,000–$75,000. Full transformations with custom inset cabinetry, natural stone, premium appliances, and structural changes routinely run $100,000–$180,000+, and the larger estate kitchens go beyond that. What moves the number is rarely the finishes; it is the structure, the electrical service, and the plaster, which is why our estimates itemize each of them.",
+                "Design and selections take six to ten weeks because custom cabinetry and stone have lead times. Construction in a Bryn Mawr stone home runs 8–12 weeks on site, longer if a beam or a service upgrade is involved. We book six to ten weeks out, so a kitchen you want finished before the holidays needs a signed contract by early autumn. The consultation is free and the estimate is fully itemized before you sign anything."
+              ]
+            }
+          ],
+          "faqOverrides": [
+            {
+              "q": "How much does a kitchen remodel cost in Bryn Mawr, PA?",
+              "a": "Kitchen renovations in Bryn Mawr and Lower Merion Township typically range from $55,000–$180,000+ depending on scope, structural changes, and material selections. Main Line homes often require additional structural coordination, electrical upgrades, and higher-end materials to match the quality of the home, which we account for in a detailed, line-item estimate."
+            },
+            {
+              "q": "Can you remove the wall between my Bryn Mawr kitchen and dining room?",
+              "a": "Usually, yes. In pre-1950 Bryn Mawr stone homes that wall is often load-bearing, so we have an engineer size a beam during the design phase and price the structural work explicitly. Lower Merion Township inspects structural, plumbing, and electrical work, and we manage every permit and inspection inside the project."
+            }
+          ],
+          "metaDescription": "Kitchen remodeling in Bryn Mawr, PA by B&B Associates. Design-build kitchens for Tudor, Colonial Revival and stone homes, Lower Merion permits handled."
+        },
+        "bathroom": {
+          "introH2": "Bathrooms Behind the Stone",
+          "answerFirst": "B&B Associates remodels primary baths, hall baths, and powder rooms in Bryn Mawr’s Tudor, Colonial Revival, and stone homes, with Lower Merion Township permits and any historic review handled in scope. A primary bathroom in a pre-1950 Bryn Mawr home runs $65,000–$100,000+ in 2026, and roughly $10,000–$20,000 of that is the house itself.",
+          "sections": [
+            {
+              "h2": "What a pre-1950 Bryn Mawr bathroom actually involves",
+              "paragraphs": [
+                "Homes in Bryn Mawr, Gladwyne, Villanova, and Haverford built between 1900 and 1950 almost always hand us at least one of these: a cast-iron drain stack that is beautiful workmanship and eighty years past its design life, plaster walls that have to be repaired by someone who knows plaster, a wall that leaks because the original window was never flashed, and a primary bath that was last touched in the 1970s. A cast-iron tub under a window, a 32-inch shower stall, a single vanity, and tile that has outlived three owners is the room we walk into most often.",
+                "The right remodel here is not a refresh. It is replacing the stack while the walls are open, building the shower on a true waterproofing system, rebuilding the window surround in solid stone so water has nowhere to go, and running new supply lines so the water pressure the house has always struggled with is finally solved. In a 2005 colonial in Blue Bell those items would be close to zero. In a Bryn Mawr stone house they are the reason the job costs what it costs."
+              ]
+            },
+            {
+              "h2": "Design choices that suit Lower Merion homes",
+              "paragraphs": [
+                "Spend on the vanity and the stone, because in a Bryn Mawr home the finishes have to carry the room’s proportions. A custom vanity in stained white oak with a honed quartzite top, a freestanding tub under the original window, a 60-inch-plus walk-in shower with a bench and a linear drain, and large-format porcelain floors over electric radiant heat is the primary bath we build most in Lower Merion. Curbless showers that do not look clinical are increasingly the request from homeowners planning to stay in these houses for decades.",
+                "Lower Merion Township inspects plumbing, electrical, and structural work on a thorough schedule and enforces it. Properties under historic review add a submission we prepare. We file, meet the inspectors, and close out inside our standard scope. Plan on 6–8 weeks of construction for a primary bath in a stone home, and six to ten weeks of design and selections before that because custom vanities, stone, and steam equipment have lead times."
+              ]
+            },
+            {
+              "h2": "Investment in Bryn Mawr bathrooms",
+              "paragraphs": [
+                "Hall baths in Bryn Mawr generally run $38,000–$55,000 when done properly, primary baths $55,000–$85,000 in newer construction and $65,000–$100,000+ in the pre-1950 stone homes, and spa suites with steam, a freestanding tub, and heated stone floors $85,000–$100,000+. The difference between the ranges is almost entirely the house: the stack, the plaster, the structure, and the supply lines.",
+                "Every estimate is itemized so you can see those house costs as their own lines, not buried in an allowance. The in-home consultation is free and is the fastest way to get an accurate bathroom remodel cost for your specific room, because no two Bryn Mawr bathrooms hide the same things behind the tile."
+              ]
+            }
+          ],
+          "faqOverrides": [
+            {
+              "q": "How much does a bathroom remodel cost in Bryn Mawr, PA?",
+              "a": "A primary bathroom in a pre-1950 Bryn Mawr or Gladwyne home runs $65,000–$100,000+ in 2026, with roughly $10,000–$20,000 of that going to the cast-iron stack, plaster, and structural conditions the house hands us. Hall baths generally run $38,000–$55,000 and spa suites $85,000–$100,000+. You receive a fully itemized estimate before any work begins."
+            },
+            {
+              "q": "Should I replace the cast-iron drain stack during my Bryn Mawr bathroom remodel?",
+              "a": "If the walls are open, almost always yes. Cast-iron stacks in 1900–1950 Lower Merion homes are typically well past their design life, and replacing the section you can reach while the bathroom is gutted is far cheaper than opening finished walls later. We inspect the stack during the consultation and price the replacement as its own line."
+            }
+          ],
+          "metaDescription": "Bathroom remodeling in Bryn Mawr, PA by B&B Associates. Primary baths and spa suites for Lower Merion stone homes, permits and historic review handled."
+        }
+      },
+      "verify": [
+        "Coordinates 40.0218, -75.3163 (Bryn Mawr centroid) are from general geographic knowledge, not the repo.",
+        "Drive time 'about 30 minutes from Maple Glen' is borrowed from the Berwyn page; the Bryn Mawr page does not state a drive time."
+      ]
+    },
+    {
+      "slug": "lower-gwynedd",
+      "urlSlug": "lower-gwynedd-pa",
+      "displayName": "Lower Gwynedd",
+      "county": "Montgomery County",
+      "regionEyebrow": "Montgomery County",
+      "townships": [
+        "Lower Gwynedd Township"
+      ],
+      "neighborhoods": [
+        "Spring House",
+        "Gwynedd Valley",
+        "Penllyn"
+      ],
+      "heroTowns": "Lower Gwynedd · Spring House · Gwynedd Valley · Penllyn",
+      "neighbors": [
+        "ambler",
+        "blue-bell"
+      ],
+      "nearbyGeneral": [
+        {
+          "label": "Lansdale",
+          "href": "/service-areas/lansdale-pa-remodeling/"
+        },
+        {
+          "label": "Fort Washington",
+          "href": "/service-areas/fort-washington-pa-remodeling/"
+        },
+        {
+          "label": "Horsham",
+          "href": "/service-areas/horsham-pa-remodeling/"
+        },
+        {
+          "label": "Montgomery County",
+          "href": "/service-areas/montgomery-county/"
+        }
+      ],
+      "generalPage": "/service-areas/lower-gwynedd-pa-remodeling/",
+      "generalPageLabel": "Lower Gwynedd remodeling overview",
+      "distancePhrase": "approximately 7 minutes from our office on East Welsh Road in Maple Glen",
+      "permitAuthority": "Lower Gwynedd Township Building Department",
+      "housingStock": "Mid-century colonials near Spring House, 1980s–2000s builder colonials, and newer construction in Gwynedd Valley and Penllyn.",
+      "geo": {
+        "lat": 40.1868,
+        "lng": -75.2482
+      },
+      "heroImage": "/portfolio/KITCHENS/B&B - McBride Kitchen/03A7198B-DACB-43CA-87B1-1148DB3DEEC8.jpeg",
+      "introImage": "/IMAGES/Custom-Kitchen-Ambler-Pa.webp",
+      "introImageBath": "/IMAGES/Custom-bathroom-Project-Amble-Pa.webp",
+      "ogImage": "https://www.bbassociatesco.com/IMAGES/Custom-Kitchen-Ambler-Pa.webp",
+      "ogImageBath": "https://www.bbassociatesco.com/IMAGES/Custom-bathroom-Project-Amble-Pa.webp",
+      "portfolio": {
+        "kitchen": [
+          "mcbride-kitchen",
+          "kohl-kitchen",
+          "slingsby-kitchen"
+        ],
+        "bathroom": [
+          "guttridge-bathroom",
+          "cruz-bathroom",
+          "borgia-bathroom"
+        ]
+      },
+      "relatedArticles": {
+        "kitchen": [
+          "blue-bell-1990s-kitchen-refresh-vs-gut",
+          "kitchen-remodel-cost-montgomery-county-2026"
+        ],
+        "bathroom": [
+          "yardley-primary-bathroom-closet-conversion",
+          "heated-bathroom-floors"
+        ]
+      },
+      "content": {
+        "kitchen": {
+          "introH2": "Seven Minutes Away, and It Shows",
+          "answerFirst": "B&B Associates remodels kitchens throughout Lower Gwynedd Township from an office roughly seven minutes away in Maple Glen, which means faster site visits, quicker material deliveries, and inspections that get scheduled on time. Kitchen remodels in Lower Gwynedd typically run $45,000–$150,000+, with most Spring House and Gwynedd Valley projects landing between $65,000 and $100,000.",
+          "sections": [
+            {
+              "h2": "The two kitchens we see most in Lower Gwynedd",
+              "paragraphs": [
+                "From the mid-century colonials near Spring House to the newer construction in Gwynedd Valley and Penllyn, we have worked in virtually every neighborhood in the township, and the kitchens fall into two groups. The 1960s–70s colonials have a closed kitchen with a peninsula acting as a fence between the cooking and the family room that was opened up years ago. The 1980s–2000s homes have the footprint and the windows; they were specified by a builder to a price, with raised-panel oak or maple, laminate or early granite, and a soffit above the wall cabinets hiding nothing but air.",
+                "The first group is usually a rebuild: take out the peninsula, remove the non-bearing wall to the breakfast room, and build one long island with seating on the far side so a crowd has somewhere to be. The second group is usually a refresh: remove the soffit, run new cabinetry to the ceiling with a proper crown, painted semi-custom doors, a quartzite counter, a backsplash to the underside of the wall cabinets, and a designed lighting plan with under-cabinet strips. The soffit removal is the single highest-return dollar in a Lower Gwynedd refresh."
+              ]
+            },
+            {
+              "h2": "How we decide refresh or rebuild, in order",
+              "paragraphs": [
+                "Does the work triangle function, with clear paths between sink, range, and refrigerator and nobody crossing the dishwasher door to reach the trash? If yes, lean refresh. Has the house become open while the kitchen stayed closed? If the family room and kitchen are already one social space in practice but not in plan, lean rebuild. Are the cabinet boxes sound? Builder-grade boxes from the 90s are often particleboard, and if the sink base has water damage, replacing everything is cheaper than nursing it.",
+                "Is the electrical panel ready? Most Lower Gwynedd homes of this era have 200-amp service, which is good news, but induction and a 48-inch range still need dedicated circuits; budget $1,500–$4,000 for panel work if the panel is full. How long are you staying? Under five years, a disciplined refresh returns more of its cost. Over ten, build the kitchen you actually want. Permits go through the Lower Gwynedd Township Building Department, are included in our scope, and are not billed separately."
+              ]
+            },
+            {
+              "h2": "Investment and scheduling from next door",
+              "paragraphs": [
+                "A same-footprint refresh in Lower Gwynedd lands between $55,000 and $75,000. A rebuild that removes a peninsula or a wall and adds an island runs $75,000–$110,000, and full custom kitchens with inset cabinetry and natural stone run $110,000–$150,000+. Our estimates are line-item, so the difference between the tiers is visible before you sign.",
+                "A refresh is about six weeks on site; a rebuild with a beam and relocated plumbing is closer to ten. Because we are minutes away, Lower Gwynedd homeowners can often get an earlier start date than a crew driving in from across the county, and same-day site visits when a decision comes up mid-project. The consultation is free, and the Ambler design showroom opens Winter 2026/2027 a few minutes from your door."
+              ]
+            }
+          ],
+          "faqOverrides": [
+            {
+              "q": "How much does a kitchen remodel cost in Lower Gwynedd, PA?",
+              "a": "Kitchen renovations in Lower Gwynedd typically range from $45,000–$150,000+ depending on scope, layout changes, and material selections. A same-footprint refresh of a 1980s–2000s kitchen runs about $55,000–$75,000; a rebuild that opens walls and adds an island runs $75,000–$110,000. We provide a detailed, line-item estimate before any contract is signed."
+            },
+            {
+              "q": "How close is B&B Associates to Lower Gwynedd Township?",
+              "a": "Our office and warehouse are on East Welsh Road in Maple Glen, approximately 7 minutes from Lower Gwynedd Township. That proximity means faster site visits, quicker material deliveries, and inspections with the Lower Gwynedd Township Building Department that get scheduled without delay."
+            }
+          ],
+          "metaDescription": "Kitchen remodeling in Lower Gwynedd, PA by B&B Associates, 7 minutes away in Maple Glen. Refreshes, full rebuilds and permits handled. Free consultation."
+        },
+        "bathroom": {
+          "introH2": "Turning Builder-Grade Into a Retreat",
+          "answerFirst": "B&B Associates remodels bathrooms across Lower Gwynedd, Spring House, Gwynedd Valley, and Penllyn from an office about seven minutes away in Maple Glen. Hall baths run $38,000–$55,000, primary baths $55,000–$85,000, and spa suites $85,000–$100,000+, and the 1980s–2000s colonials that make up much of the township are the easiest houses in our service area to do this work in.",
+          "sections": [
+            {
+              "h2": "The 1990s primary suite, and what it was missing",
+              "paragraphs": [
+                "Most primary bathrooms in Lower Gwynedd’s 1980s–2000s colonials were drawn by a builder who gave the room a garden tub nobody uses, a 36-inch shower stall, a double vanity with a cultured-marble top, and a fan that may or may not vent outside. The square footage is usually there. The layout is not. The most common project we do in Gwynedd Valley and Spring House is removing the tub deck, building a 60- to 72-inch walk-in shower with a bench and frameless glass in its place, and putting a freestanding tub where it belongs, or leaving it out entirely.",
+                "These houses are far easier than the stone homes we work in on the Main Line, which is why a project this ambitious usually lands under $85,000. Drywall instead of plaster, PVC instead of cast iron, and 200-amp service mean the budget goes to the room instead of the house. That is the argument for doing the primary bath in a Lower Gwynedd colonial now rather than waiting."
+              ]
+            },
+            {
+              "h2": "What we plan for in Lower Gwynedd bathrooms",
+              "paragraphs": [
+                "Moving plumbing is the decision that changes the estimate. Relocating a toilet or a shower drain in a colonial with a basement below is straightforward; over a finished first-floor ceiling it means opening the ceiling, which we price explicitly. Stealing space from an adjacent closet to get a real shower is frequently the best money spent in a 1990s suite, and we design the closet back into the plan so nothing is lost.",
+                "A remodel that involves plumbing, electrical, and lighting is permitted through the Lower Gwynedd Township Building Department, which inspects the rough-in before the walls close. We handle the permits inside our scope and coordinate the inspections. Plan on about 5–7 weeks of construction for a primary bath, with the vanity, stone, and glass ordered during a six-to-eight-week design phase so nothing waits on a lead time."
+              ]
+            },
+            {
+              "h2": "Investment and the upgrades worth making",
+              "paragraphs": [
+                "Hall baths in Lower Gwynedd with a properly waterproofed tiled shower, new vanity, and lighting run $38,000–$55,000. Primary baths with a custom vanity, expanded walk-in shower, frameless glass, and heated floors run $55,000–$85,000. Spa suites with steam, a freestanding soaking tub, and large-format porcelain throughout run $85,000–$100,000+.",
+                "Heated floors are worth it in a Pennsylvania winter and are a modest line in a bathroom this size. A curbless shower with a linear drain is the upgrade homeowners planning to stay long-term ask for most. Every project comes with a fully itemized estimate before any work begins, the consultation is free, and because we are minutes away, the walkthrough happens the week you call."
+              ]
+            }
+          ],
+          "faqOverrides": [
+            {
+              "q": "How much does a bathroom remodel cost in Lower Gwynedd, PA?",
+              "a": "Bathroom renovations in Lower Gwynedd generally run $38,000–$55,000 for a hall bath, $55,000–$85,000 for a primary bath, and $85,000–$100,000+ for a spa-level suite. The township’s 1980s–2000s colonials rarely add the structural or plumbing surprises of older homes, so more of the budget goes to the room itself. You receive a fully itemized estimate before any work begins."
+            },
+            {
+              "q": "Do you pull bathroom permits with Lower Gwynedd Township?",
+              "a": "Yes. We manage all permit applications and coordinate every required inspection with the Lower Gwynedd Township Building Department. Permits are included in our project scope as a standard service and are not billed separately."
+            }
+          ],
+          "metaDescription": "Bathroom remodeling in Lower Gwynedd, PA by B&B Associates, 7 minutes away in Maple Glen. Primary suites, hall baths and spa baths. Free in-home consultation."
+        }
+      },
+      "verify": [
+        "Coordinates 40.1868, -75.2482 (Lower Gwynedd / Spring House area) are from general geographic knowledge, not the repo."
+      ]
+    },
+    {
+      "slug": "blue-bell",
+      "urlSlug": "blue-bell-pa",
+      "displayName": "Blue Bell",
+      "county": "Montgomery County",
+      "regionEyebrow": "Montgomery County",
+      "townships": [
+        "Whitpain Township",
+        "Montgomery Township",
+        "North Wales Borough"
+      ],
+      "neighborhoods": [
+        "Whitpain Township",
+        "North Wales",
+        "Skippack Pike corridor",
+        "Township Line Road area",
+        "Montgomeryville"
+      ],
+      "heroTowns": "Blue Bell · Whitpain Township · North Wales · Montgomeryville",
+      "neighbors": [
+        "ambler",
+        "lower-gwynedd"
+      ],
+      "nearbyGeneral": [
+        {
+          "label": "Lansdale",
+          "href": "/service-areas/lansdale-pa-remodeling/"
+        },
+        {
+          "label": "Fort Washington",
+          "href": "/service-areas/fort-washington-pa-remodeling/"
+        },
+        {
+          "label": "Horsham",
+          "href": "/service-areas/horsham-pa-remodeling/"
+        },
+        {
+          "label": "Montgomery County",
+          "href": "/service-areas/montgomery-county/"
+        }
+      ],
+      "generalPage": "/service-areas/blue-bell-north-wales-remodeling/",
+      "generalPageLabel": "Blue Bell & North Wales remodeling overview",
+      "distancePhrase": "a few miles down Route 202 from our office in Maple Glen",
+      "permitAuthority": "Whitpain Township, Montgomery Township, or North Wales Borough, depending on the address",
+      "housingStock": "1960s–70s colonials, a large run of 1980s through early-2000s builder colonials with generous footprints and builder-grade finishes, and 1990s–2000s luxury builds across Whitpain and Montgomery Townships.",
+      "geo": {
+        "lat": 40.1523,
+        "lng": -75.2663
+      },
+      "heroImage": "/portfolio/KITCHENS/B&B - McBride Kitchen/03A7198B-DACB-43CA-87B1-1148DB3DEEC8.jpeg",
+      "introImage": "/IMAGES/Custom-Kitchen-Ambler-Pa.webp",
+      "introImageBath": "/IMAGES/Bathroom-remodel-in-Blue-Bell-PA.webp",
+      "ogImage": "https://www.bbassociatesco.com/IMAGES/Custom-Kitchen-Ambler-Pa.webp",
+      "ogImageBath": "https://www.bbassociatesco.com/IMAGES/Bathroom-remodel-in-Blue-Bell-PA.webp",
+      "portfolio": {
+        "kitchen": [
+          "mcbride-kitchen",
+          "olaughlin-kitchen",
+          "ferrie-kitchen"
+        ],
+        "bathroom": [
+          "garvey-bathroom",
+          "bridlehall-bathroom",
+          "kaarby-bathroom"
+        ]
+      },
+      "relatedArticles": {
+        "kitchen": [
+          "blue-bell-1990s-kitchen-refresh-vs-gut",
+          "custom-vs-semi-custom-cabinetry"
+        ],
+        "bathroom": [
+          "bathroom-remodeling-roi",
+          "heated-bathroom-floors"
+        ]
+      },
+      "content": {
+        "kitchen": {
+          "introH2": "Your 1990s Kitchen Isn’t Broken. It’s Just 30 Years Old.",
+          "answerFirst": "B&B Associates remodels kitchens in Blue Bell, Whitpain Township, and North Wales from a few miles down Route 202 in Maple Glen. If your Blue Bell kitchen was built between 1985 and 2005 and the layout works, a same-footprint refresh at $55,000–$75,000 makes it look and function like new; if the walls need to move, you are in $75,000–$110,000 territory, and most Whitpain kitchens land between $65,000 and $100,000.",
+          "sections": [
+            {
+              "h2": "Why Blue Bell kitchens are a specific kind of dated",
+              "paragraphs": [
+                "Blue Bell, North Wales, and the surrounding Whitpain and Montgomery Township neighborhoods were built out in a few big waves: colonials from the 1960s and 70s, then a large run of 1980s through early-2000s homes with generous footprints and builder-grade finishes. Those later houses are the interesting ones. They have good bones, real square footage, big windows, and kitchens specified by a builder to a price: raised-panel oak or maple, laminate or early granite, a soffit above the wall cabinets, and a peninsula that made sense when the family room was a separate room.",
+                "Twenty-five or thirty years later the cabinet boxes are usually still sound. The drawers might sag and the finish has yellowed, but nothing is broken, which is exactly why so many homeowners off Skippack Pike and Township Line Road live with it for another five years. The question that decides refresh versus rebuild is not how dated it looks. It is where people stand when you have eight of them over."
+              ]
+            },
+            {
+              "h2": "The refresh, the rebuild, and the mistakes we see in Whitpain",
+              "paragraphs": [
+                "The refresh: we do not move a pipe. We remove the soffit, run new cabinetry to the ceiling with a proper crown, install painted semi-custom doors, a quartzite counter, a backsplash that runs to the underside of the wall cabinets, a lighting plan with recessed cans and under-cabinet strips, and a new appliance package in the same openings. Six weeks on site, and the room reads like a different house. The rebuild: take the peninsula out, remove the non-bearing wall to the breakfast room, build one long island with seating so the crowd has somewhere to be, run new electrical to the island, relocate plumbing for a prep sink, and have an engineer size a beam. Ten weeks.",
+                "The mistakes: keeping the soffit, which keeps the kitchen looking like 1994 no matter what you spend on counters. Refacing thirty-year-old builder boxes, a decision you make once and regret for a decade. And buying the island before the plan, because islands need 42 inches of clearance on every side and plenty of Blue Bell kitchens are eleven feet wide."
+              ]
+            },
+            {
+              "h2": "What it costs in Blue Bell, and when to book",
+              "paragraphs": [
+                "Whitpain and Montgomery Township kitchens in 2026 mostly land between $65,000 and $100,000. Same-footprint refreshes run $55,000–$75,000, rebuilds with structural work $75,000–$110,000, and full custom kitchens with inset cabinetry and natural stone $110,000–$150,000+. Permits go through Whitpain Township, Montgomery Township, or North Wales Borough depending on your address; we handle them inside the scope and you never deal with the municipality.",
+                "We book six to ten weeks out. A kitchen you want finished before the holidays needs a signed contract by early autumn, and spring projects book in January and February. The in-home consultation is free, the estimate is fully itemized, and the Ambler design showroom opens Winter 2026/2027 a short drive up Route 202."
+              ]
+            }
+          ],
+          "faqOverrides": [
+            {
+              "q": "How much does a kitchen remodel cost in Blue Bell, PA?",
+              "a": "In 2026, a same-footprint refresh of a 1980s–2000s Blue Bell kitchen runs $55,000–$75,000. A rebuild that removes walls or a peninsula and adds an island runs $75,000–$110,000. Most Whitpain and Montgomery Township projects we complete land between $65,000 and $100,000, and every estimate is itemized before you sign."
+            },
+            {
+              "q": "Should I remove the soffit above my Blue Bell kitchen cabinets?",
+              "a": "Almost always. In Blue Bell homes of the 1985–2005 era the soffit usually hides nothing but air, and removing it so cabinetry runs to the ceiling with a proper crown is the single most effective visual upgrade in a refresh. We confirm what is inside it during the free consultation."
+            }
+          ],
+          "metaDescription": "Kitchen remodeling in Blue Bell, PA by B&B Associates. Refresh or rebuild your 1980s–2000s Whitpain Township kitchen, permits handled. Free consultation."
+        },
+        "bathroom": {
+          "introH2": "Bathrooms for Blue Bell’s Colonials",
+          "answerFirst": "B&B Associates remodels bathrooms in Blue Bell, Whitpain Township, North Wales, and Montgomeryville from a few miles away in Maple Glen. Hall baths run $38,000–$55,000, primary baths $55,000–$85,000, and spa suites $85,000–$100,000+, and because most Blue Bell homes are 1960s–2000s construction, more of that budget goes to the room and less to surprises behind the walls.",
+          "sections": [
+            {
+              "h2": "What a Blue Bell primary bath was built with",
+              "paragraphs": [
+                "The 1980s–2000s colonials that fill Whitpain and Montgomery Township came with a primary suite drawn to a price: a corner garden tub under a window, a small framed shower with a curb, a cultured-marble double vanity, a fan that may vent into the attic, and a lot of square footage used badly. The 1960s–70s colonials have the opposite problem, a hall bath and a primary bath so small that the shower was an afterthought.",
+                "In the newer homes the project is almost always a reallocation of space: the tub deck comes out, a 60- to 72-inch walk-in shower with a bench and frameless glass goes in its place, and a freestanding tub is added only if the homeowner will actually use it. In the older colonials the project is often a closet or a hallway linen cabinet giving up its footprint so the bathroom can finally hold a real shower and a vanity with storage."
+              ]
+            },
+            {
+              "h2": "What Blue Bell bathroom projects run into",
+              "paragraphs": [
+                "Compared with the stone homes we work in on the Main Line, Blue Bell houses are straightforward: drywall, PVC drains, 200-amp panels. The items we still plan for are the fan venting to the exterior, a shower rebuilt on a true waterproofing system rather than the original mud-set or drywall backing, a subfloor checked for the settling that shows up under large-format tile, and any plumbing move over a finished ceiling, which we price as its own line.",
+                "A remodel involving plumbing and electrical is permitted through Whitpain Township, Montgomery Township, or North Wales Borough depending on your address, and inspected at rough-in. We file the applications and schedule the inspections inside our scope. Most Blue Bell bathrooms take about 5–7 weeks of construction once the vanity, stone, and glass ordered during the design phase are on site."
+              ]
+            },
+            {
+              "h2": "Investment, resale, and the upgrades that matter",
+              "paragraphs": [
+                "Hall baths done right in Blue Bell run $38,000–$55,000. Primary baths with a custom vanity, expanded shower, frameless glass, and heated floors run $55,000–$85,000. Spa suites with steam, a soaking tub, and large-format porcelain throughout run $85,000–$100,000+. In a Blue Bell colonial the primary bath and the kitchen are the two rooms buyers pay for, so a well-executed bathroom is also one of the better resale investments in the township.",
+                "Heated floors are the upgrade we would never leave out in a Pennsylvania winter. A curbless shower with a linear drain is the request from homeowners planning to stay in the house for decades. The consultation is free, the estimate is itemized before any work begins, and design selections can be finalized at the Ambler showroom once it opens in Winter 2026/2027."
+              ]
+            }
+          ],
+          "faqOverrides": [
+            {
+              "q": "How much does a bathroom remodel cost in Blue Bell or North Wales, PA?",
+              "a": "Bathroom renovations in the Blue Bell and North Wales area generally run $38,000–$55,000 for a hall bath, $55,000–$85,000 for a primary bath, and $85,000–$100,000+ for a spa-level suite. The area’s 1960s–2000s colonials rarely add the structural surprises of older stone homes. You receive a fully itemized estimate before any work begins."
+            },
+            {
+              "q": "Do you handle bathroom permits in Whitpain Township and North Wales Borough?",
+              "a": "Yes. We handle all permitting in Whitpain Township, Montgomery Township, North Wales Borough, and surrounding municipalities as part of our standard scope. Permits are included in the project, not billed separately, and we coordinate every required inspection."
+            }
+          ],
+          "metaDescription": "Bathroom remodeling in Blue Bell, PA by B&B Associates. Primary baths, hall baths and spa suites for Whitpain and North Wales homes, permits handled."
+        }
+      },
+      "verify": [
+        "Coordinates 40.1523, -75.2663 (Blue Bell centroid) are from general geographic knowledge, not the repo."
+      ]
+    },
+    {
+      "slug": "newtown",
+      "urlSlug": "newtown-pa",
+      "displayName": "Newtown",
+      "county": "Bucks County",
+      "regionEyebrow": "Bucks County",
+      "townships": [
+        "Newtown Borough",
+        "Newtown Township"
+      ],
+      "neighborhoods": [
+        "Newtown Borough",
+        "Newtown Township",
+        "Court Street area",
+        "Upper Makefield Township",
+        "Yardley"
+      ],
+      "heroTowns": "Newtown Borough · Newtown Township · Upper Makefield · Yardley",
+      "neighbors": [],
+      "nearbyGeneral": [
+        {
+          "label": "Yardley",
+          "href": "/service-areas/yardley-pa-remodeling/"
+        },
+        {
+          "label": "Doylestown & New Hope",
+          "href": "/service-areas/doylestown-new-hope-kitchen-remodeling/"
+        },
+        {
+          "label": "Buckingham",
+          "href": "/service-areas/buckingham-pa-remodeling/"
+        },
+        {
+          "label": "Warminster",
+          "href": "/service-areas/warminster-pa-remodeling/"
+        },
+        {
+          "label": "Bucks County",
+          "href": "/service-areas/bucks-county/"
+        }
+      ],
+      "generalPage": "/service-areas/newtown-pa-kitchen-bathroom-remodeling/",
+      "generalPageLabel": "Newtown remodeling overview",
+      "distancePhrase": "about 25–28 minutes from our Maple Glen office via Route 413 or Route 532",
+      "permitAuthority": "Newtown Borough, Newtown Township, Upper Makefield Township, or Yardley Borough, depending on the address",
+      "housingStock": "18th-century stone colonials and row homes in Newtown Borough (some dating to the 1760s), and 1980s–2000s builder colonials across Newtown Township with oak or maple raised-panel kitchens and builder-grade baths.",
+      "geo": {
+        "lat": 40.2293,
+        "lng": -74.9368
+      },
+      "heroImage": "/portfolio/KITCHENS/B&B - Prager-kitchen/A12EE3BF-FDEB-4F6A-ADD0-BB95FCFADB88.jpeg",
+      "introImage": "/IMAGES/Custom-Kitchen-Ambler-Pa.webp",
+      "introImageBath": "/IMAGES/Custom-Bathroom-Ambler-Pa.webp",
+      "ogImage": "https://www.bbassociatesco.com/portfolio/KITCHENS/B&B - Prager-kitchen/A12EE3BF-FDEB-4F6A-ADD0-BB95FCFADB88.jpeg",
+      "ogImageBath": "https://www.bbassociatesco.com/IMAGES/Custom-Bathroom-Ambler-Pa.webp",
+      "portfolio": {
+        "kitchen": [
+          "olaughlin-kitchen",
+          "peterson-kitchen",
+          "broderick-kitchen"
+        ],
+        "bathroom": [
+          "guttridge-bathroom",
+          "hershey-bathroom",
+          "odonnell-bathroom"
+        ]
+      },
+      "relatedArticles": {
+        "kitchen": [
+          "newtown-pa-remodel-before-selling",
+          "bucks-county-older-homes"
+        ],
+        "bathroom": [
+          "newtown-pa-remodel-before-selling",
+          "yardley-primary-bathroom-closet-conversion"
+        ]
+      },
+      "content": {
+        "kitchen": {
+          "introH2": "Two Newtowns, Two Kitchens",
+          "answerFirst": "B&B Associates remodels kitchens in both Newtown Borough and Newtown Township, about 25–28 minutes from our Maple Glen office via Route 413 or 532, and handles permits in the Borough, the Township, Upper Makefield, and Yardley. Kitchen remodels in Newtown typically run $45,000–$150,000+, and the right kitchen for a 1760 stone row home is not the right kitchen for a 1998 colonial.",
+          "sections": [
+            {
+              "h2": "The Township: the 1998 colonial",
+              "paragraphs": [
+                "Most of Newtown Township was built out between the mid-1980s and the mid-2000s, and those houses share a kitchen: a good-sized room with oak or maple raised-panel cabinets, laminate or early granite, a peninsula or a small island, and a breakfast area that opens to a family room the kitchen was never quite part of. The bones are good. The finishes were chosen by a builder to a price, and the layout predates the way families actually use a kitchen today.",
+                "The remodel here is usually an open-concept redesign: the peninsula comes out, the wall to the breakfast room comes down where it is not bearing, and one long island with seating takes their place. New cabinetry runs to the ceiling, the appliances move to where the traffic wants them, and a lighting plan finally gives the room the layers it was missing. In a Township colonial a well-done kitchen and primary bath are the two rooms buyers pay for, and if you are staying three years or more you get to live in them first."
+              ]
+            },
+            {
+              "h2": "The Borough: the stone home near Court Street",
+              "paragraphs": [
+                "Newtown Borough is a different market. Its colonial-era streetscape holds stone colonials and row homes dating to the 1760s, and a glossy builder’s kitchen dropped into one of them reads as a mistake, and buyers in that market know it. The right kitchen respects the house. The Marino family’s kitchen on our Newtown page is the reference: a teal island in an older stone colonial that respects the character of the home and still feels completely modern.",
+                "What the stone hands us is the same list we see in Doylestown Borough and on the Main Line: thick walls where a doorway wants to widen, plaster that has to be repaired properly, an electrical panel that cannot support today’s appliances, and floors that have settled. We assess it during the free consultation and itemize it, so a Borough kitchen carries a visible line for the house rather than a surprise during demolition."
+              ]
+            },
+            {
+              "h2": "Investment, permits, and timing in Newtown",
+              "paragraphs": [
+                "Kitchen renovations in Newtown typically range from $45,000 to $150,000+ depending on scope and materials. Township refreshes without structural work land around $55,000–$75,000; open-concept rebuilds run $75,000–$110,000; full custom kitchens in Borough stone homes run $110,000–$150,000+ once the structure and the electrical are accounted for. Every estimate is itemized before you sign.",
+                "Newtown Township, Newtown Borough, Upper Makefield, and Yardley Borough all inspect plumbing and electrical, and a buyer’s attorney will ask for the permits when you sell. We manage every application and inspection inside our scope. Plan on 12–20 weeks from consultation to walkthrough, including design, permitting, and 4–10 weeks on site, and book six to ten weeks ahead of the start you want."
+              ]
+            }
+          ],
+          "faqOverrides": [
+            {
+              "q": "How much does a kitchen remodel cost in Newtown, PA?",
+              "a": "Kitchen renovations in Newtown typically range from $45,000 to $150,000+ depending on scope and materials. Newtown Township refreshes without structural work land around $55,000–$75,000, open-concept rebuilds $75,000–$110,000, and full custom kitchens in Newtown Borough stone homes $110,000–$150,000+. We provide a detailed itemized estimate before any work begins."
+            },
+            {
+              "q": "Is it worth remodeling my Newtown kitchen before selling?",
+              "a": "If you are staying three years or more, build the kitchen you want; in Newtown Township’s 1980s–2000s colonials and Newtown Borough’s stone homes, a well-done kitchen and primary bath are the two rooms buyers pay for, and you get to live in them first. If you are listing within a year, a disciplined refresh returns more of its cost than a full rebuild."
+            }
+          ],
+          "metaDescription": "Kitchen remodeling in Newtown, PA by B&B Associates. Design-build kitchens for Borough stone homes and Township colonials, permits handled. Free consultation."
+        },
+        "bathroom": {
+          "introH2": "Bathrooms for Borough Stone and Township Colonials",
+          "answerFirst": "B&B Associates remodels primary baths, hall baths, and powder rooms across Newtown Borough, Newtown Township, Upper Makefield, and Yardley, about 25–28 minutes from our Maple Glen office. Bathroom renovations in Newtown run $25,000–$85,000+, with primary suites in Township colonials typically $55,000–$85,000 and older Borough homes adding cost for cast iron, plaster, and structure.",
+          "sections": [
+            {
+              "h2": "What the 1980s–2000s Township colonials hand us",
+              "paragraphs": [
+                "Most primary bathrooms in Newtown Township’s 1980s–2000s colonials were drawn by a builder who gave the room a garden tub, a small framed shower, a cultured-marble double vanity, and a walk-in closet next door that is usually bigger than the bathroom. These houses are far easier than the stone homes we work on in Newtown Borough or the Main Line, which is why an ambitious primary suite here lands under $90,000.",
+                "The project we do most in the Township is taking the tub deck out, building a 60- to 72-inch walk-in shower with a bench and frameless glass, stealing a few feet from the closet where it makes the room work, and adding a freestanding tub only if the homeowner will use it. Moving plumbing over a basement is straightforward; over a finished ceiling we price it as its own line so there is no surprise."
+              ]
+            },
+            {
+              "h2": "What a Borough stone home adds",
+              "paragraphs": [
+                "In Newtown Borough’s 18th-century stone homes the bathroom was added long after the house was built, often into a former bedroom or closet, with a cast-iron stack, plaster walls, and a floor that has settled. The remodel that lasts replaces the reachable section of stack while the walls are open, builds the shower on a true waterproofing system, and rebuilds the subfloor so large-format tile lies flat. A glossy builder’s bathroom in a 1760 house reads as a mistake; a custom vanity, honed stone, and fixtures scaled to the room feel like they were always there.",
+                "Newtown Borough, Newtown Township, Upper Makefield, and Yardley Borough all inspect plumbing and electrical, and a buyer’s attorney will ask for the permits. We file and close out every permit inside our scope. Plan on 5–7 weeks of construction for a Township bath and a week or two more in a Borough stone home."
+              ]
+            },
+            {
+              "h2": "Investment in Newtown bathrooms",
+              "paragraphs": [
+                "Hall baths done right run $38,000–$55,000. Primary baths in Township colonials with a custom vanity, expanded shower, frameless glass, and heated floors run $55,000–$85,000. Spa suites with steam, a soaking tub, and large-format porcelain throughout run $85,000–$100,000+, and Borough stone homes add the house costs above to whichever tier fits the finishes.",
+                "In Newtown the primary bath is one of the two rooms buyers pay for, so it is also one of the sounder investments if a sale is anywhere on the horizon. Heated floors are a modest line and the upgrade we would never leave out. The consultation is free, the estimate is itemized before any work begins, and every permit is handled for you."
+              ]
+            }
+          ],
+          "faqOverrides": [
+            {
+              "q": "How much does a bathroom remodel cost in Newtown, PA?",
+              "a": "Bathroom renovations in Newtown run $25,000–$85,000+. Hall baths generally run $38,000–$55,000, primary baths in Newtown Township colonials $55,000–$85,000, and spa-level suites $85,000–$100,000+. Older Newtown Borough stone homes may add cost for cast-iron plumbing, plaster, and subfloor work. You receive a fully itemized estimate before any work begins."
+            },
+            {
+              "q": "Do you handle bathroom permits in Newtown Township and Newtown Borough?",
+              "a": "Yes. We manage all permit applications and inspections in Newtown Borough, Newtown Township, Yardley Borough, Upper Makefield Township, and all other Bucks County municipalities. Permitting is part of our standard project scope; you never need to interact with the permit office."
+            }
+          ],
+          "metaDescription": "Bathroom remodeling in Newtown, PA by B&B Associates. Primary and hall baths for Newtown Borough and Township homes, Bucks County permits handled."
+        }
+      },
+      "verify": [
+        "Coordinates 40.2293, -74.9368 (Newtown Borough centroid) are from general geographic knowledge, not the repo."
+      ]
+    },
+    {
+      "slug": "villanova",
+      "urlSlug": "villanova-pa",
+      "displayName": "Villanova",
+      "county": "Main Line",
+      "regionEyebrow": "Philadelphia Main Line",
+      "townships": [
+        "Radnor Township"
+      ],
+      "neighborhoods": [
+        "Radnor Township",
+        "Wayne",
+        "St. Davids",
+        "Strafford"
+      ],
+      "heroTowns": "Villanova · Radnor Township · Wayne · St. Davids · Strafford",
+      "neighbors": [
+        "bryn-mawr",
+        "gladwyne",
+        "berwyn"
+      ],
+      "nearbyGeneral": [
+        {
+          "label": "Wayne & Villanova",
+          "href": "/service-areas/wayne-villanova-bathroom-remodeling/"
+        },
+        {
+          "label": "Haverford & Ardmore",
+          "href": "/service-areas/haverford-ardmore-remodeling/"
+        },
+        {
+          "label": "Main Line PA",
+          "href": "/service-areas/main-line-pa-remodeling/"
+        }
+      ],
+      "generalPage": "/service-areas/wayne-villanova-bathroom-remodeling/",
+      "generalPageLabel": "Wayne & Villanova remodeling overview",
+      "distancePhrase": "about 30 minutes from our Maple Glen office via Route 30 or the Blue Route (I-476)",
+      "permitAuthority": "Radnor Township",
+      "housingStock": "1920s and 30s Tudor Revivals, Georgian Colonials, and Pennsylvania stone homes with arched doorways, slate roofs, and plaster walls; estates with large primary suites; homes in Radnor Township that regularly sell above $1.5 million.",
+      "geo": {
+        "lat": 40.0387,
+        "lng": -75.3432
+      },
+      "heroImage": "/portfolio/BATHROOMS/B&B - Cruz Master/3A187396-30B0-429C-A94A-DFBD89EC9C69.jpeg",
+      "introImage": "/IMAGES/Custom-Kitchen-Main-Line.webp",
+      "introImageBath": "/IMAGES/Custom-Bathroom-Ambler-Pa.webp",
+      "ogImage": "https://www.bbassociatesco.com/IMAGES/Custom-Kitchen-Main-Line.webp",
+      "ogImageBath": "https://www.bbassociatesco.com/portfolio/BATHROOMS/B&B - Cruz Master/3A187396-30B0-429C-A94A-DFBD89EC9C69.jpeg",
+      "portfolio": {
+        "kitchen": [
+          "prager-kitchen",
+          "hornig-kitchen",
+          "giedrycz-kitchen"
+        ],
+        "bathroom": [
+          "cruz-bathroom",
+          "frank-bathroom",
+          "emad-bathroom"
+        ]
+      },
+      "relatedArticles": {
+        "kitchen": [
+          "main-line-kitchen-neighborhood-guide",
+          "luxury-kitchen-cost-guide"
+        ],
+        "bathroom": [
+          "wayne-villanova-spa-bathroom-instead-of-moving",
+          "main-line-bathroom-trends"
+        ]
+      },
+      "content": {
+        "kitchen": {
+          "introH2": "Kitchens Worthy of a Radnor Township Home",
+          "answerFirst": "B&B Associates designs and builds kitchens in Villanova’s 1920s and 30s Tudors, Georgian Colonials, and stone homes, about 30 minutes from our Maple Glen office via Route 30 or the Blue Route, with Radnor Township permits handled in scope. Full kitchen remodels in Villanova fall between $55,000 and $150,000+, and the larger Villanova and Gladwyne homes routinely run $100,000–$200,000+.",
+          "sections": [
+            {
+              "h2": "What Villanova’s architecture asks of a kitchen",
+              "paragraphs": [
+                "Villanova and Wayne represent the Main Line at its most architecturally distinguished: Tudor Revivals and Georgian Colonials from the 1920s and 30s, stone homes with arched doorways, slate roofs, and plaster walls, and estates whose kitchens were built as service rooms tucked behind a butler’s pantry. Homes in Radnor Township regularly sell above $1.5 million, and the kitchens their owners want are not cosmetic updates. They are deliberate transformations executed with the precision these homes demand.",
+                "The design vocabulary that fits is specific. Inset cabinetry, doors flush within the face frame, is the classic look of Main Line estate kitchens in Bryn Mawr and Villanova. Honed marble or quartzite counters, a range hood scaled to the ceiling, a working butler’s pantry or a second prep kitchen where the floor plan supports it, and a lighting plan that finally brings daylight into a north-facing room. The renovation should feel inevitable, not imposed."
+              ]
+            },
+            {
+              "h2": "What the 1920s construction adds to the project",
+              "paragraphs": [
+                "A Villanova Tudor or stone colonial hands us the same items every time: plaster and lath that has to be repaired by a plasterer, a load-bearing wall where the island wants to be, an electrical panel that cannot carry an induction range or a 48-inch range, and often a cast-iron drain stack in the wall between the kitchen and the pantry. An engineer sizes any beam in the design phase, the panel work is priced as its own line, and the plaster carries an allowance with the square footage it assumes.",
+                "Permits go through Radnor Township, which inspects plumbing, electrical, and structural work. We file, meet the inspectors, and close out inside our standard scope. Design and selections take six to ten weeks because custom cabinetry and stone have lead times; construction in a Villanova stone home runs 8–12 weeks on site, longer when a beam or a service upgrade is involved."
+              ]
+            },
+            {
+              "h2": "Investment in Villanova kitchens",
+              "paragraphs": [
+                "Refined renovations without major structural work on the Main Line begin around $55,000–$75,000. Full transformations with custom inset cabinetry, natural stone, premium appliances, and structural changes routinely run $100,000–$200,000+ in the larger Villanova and Gladwyne homes. Our estimates itemize the structure, the electrical, and the plaster separately from the finishes so the number you sign is the number you pay.",
+                "The consultation is free, the owner comes to your home to measure and advise, and you receive photorealistic 3D renderings of the design with every material selected from our 60+ supplier partners before construction begins. We book six to ten weeks out; a kitchen for the holidays needs a contract by early autumn."
+              ]
+            }
+          ],
+          "faqOverrides": [
+            {
+              "q": "How much does a kitchen remodel cost in Villanova, PA?",
+              "a": "Most full kitchen remodels in the Villanova and Wayne area fall between $55,000 and $150,000+, and full transformations with custom inset cabinetry, natural stone, and structural changes routinely run $100,000–$200,000+ in the larger Villanova and Gladwyne homes. Before any contract is signed, we provide a detailed, line-item estimate that covers every cost."
+            },
+            {
+              "q": "Can you design a kitchen that fits our 1920s Villanova Tudor?",
+              "a": "Yes. Villanova and Wayne homes include Tudors, Georgian Colonials, and stone houses from the 1920s and 30s, and we design kitchens that honor that architectural character while introducing modern function, inset cabinetry, stone, and lighting. Our team handles Radnor Township permitting and all inspections as part of the project."
+            }
+          ],
+          "metaDescription": "Kitchen remodeling in Villanova, PA by B&B Associates. Custom inset kitchens for Radnor Township Tudors and stone homes, permits handled. Free consultation."
+        },
+        "bathroom": {
+          "introH2": "The Spa Bathroom Instead of the Bigger House",
+          "answerFirst": "B&B Associates builds spa-level primary bathrooms in Villanova’s Tudors, Georgian Colonials, and stone homes, about 30 minutes from our Maple Glen office, with Radnor Township permits handled in scope. Master bathroom renovations in Villanova and Wayne typically range from $55,000 to $150,000+, and a $75,000–$110,000 primary suite is the project Radnor Township homeowners are choosing instead of moving.",
+          "sections": [
+            {
+              "h2": "Why Villanova homeowners are building spa bathrooms instead of buying bigger houses",
+              "paragraphs": [
+                "Here is the math a lot of Villanova and Wayne homeowners are doing. Homes in Radnor Township regularly sell above $1.5 million, and the question on St. Davids, Strafford, and the older Villanova lanes is no longer whether to move. It is what it would take to make this the bathroom they would move for. A primary suite with a 66-inch walk-in shower with a bench and steam, a freestanding tub under the original window, heated stone floors, a custom double vanity, and a linear drain answers that for $75,000–$110,000, in a house they already love.",
+                "Most 1920s–30s primary baths in Villanova are too small for what we just described, and the square footage has to come from somewhere. It comes from the adjacent closet, a redundant hallway, or a small fourth bedroom, not from an addition; in Radnor Township an addition runs well into six figures and rarely beats what is achievable inside the existing walls."
+              ]
+            },
+            {
+              "h2": "What a Villanova Tudor adds to the project",
+              "paragraphs": [
+                "The Hartford family’s 1931 Tudor on our Wayne page is the reference: a herringbone marble floor that took three days to lay, in a house with the arched doorways, slate roof, and plaster walls that make Radnor Township what it is. What those houses hand us is a cast-iron drain stack eighty years past its design life, plaster to be repaired by someone who knows plaster, a wall that leaks because the original window was never flashed, and supply lines that explain the low water pressure. We replace the reachable stack while the walls are open, build the shower on a true waterproofing system, and rebuild the window surround in solid stone.",
+                "Design and selections take six to ten weeks because custom vanities, stone, and steam equipment have lead times. Permits go through Radnor Township, which inspects plumbing, electrical, and structural work; we file, meet the inspectors, and close out inside our standard scope. Construction runs 6–8 weeks for a primary suite in a stone home."
+              ]
+            },
+            {
+              "h2": "Investment in Villanova bathrooms",
+              "paragraphs": [
+                "Hall baths in Villanova run $38,000–$55,000 done properly. Primary baths run $55,000–$85,000 in newer construction and $65,000–$100,000+ in the pre-1950 stone homes. Spa suites with steam, a freestanding tub, and heated stone throughout run $85,000–$150,000+, depending on size, tile selection, fixtures, and structural changes. Homes in Villanova often feature large primary suites that reward the investment, and the market supports it.",
+                "Spend on the vanity and the stone, because in a Villanova home the finishes have to carry the room’s proportions. Heated floors are the upgrade we would never leave out. Every estimate is itemized before any work begins, and the in-home consultation is free."
+              ]
+            }
+          ],
+          "faqOverrides": [
+            {
+              "q": "How much does a master bathroom remodel cost in Villanova, PA?",
+              "a": "Master bathroom renovations in Villanova and Wayne typically range from $55,000 to $150,000+ depending on size, tile selection, fixtures, and structural changes. A spa-level primary suite with steam, a freestanding tub, and heated floors most often lands at $75,000–$110,000. Pre-1950 stone homes add roughly $10,000–$20,000 for the stack, plaster, and structure. You receive a fully itemized estimate before any work begins."
+            },
+            {
+              "q": "Should I add on to get a bigger bathroom in my Villanova home?",
+              "a": "Usually not. In Radnor Township an addition runs well into six figures and rarely beats what is achievable inside the existing walls. Most 1920s–30s Villanova primary baths gain the square footage they need from an adjacent closet, hallway, or small bedroom, which we design back into the plan so nothing is lost."
+            }
+          ],
+          "metaDescription": "Bathroom remodeling in Villanova, PA by B&B Associates. Spa-level primary suites for Radnor Township Tudors and stone homes, permits handled."
+        }
+      },
+      "verify": [
+        "Coordinates 40.0387, -75.3432 (Villanova centroid) are from general geographic knowledge, not the repo.",
+        "Villanova is treated as Radnor Township throughout (as on the Wayne & Villanova page); parts of Villanova fall in Lower Merion Township — confirm which township the target homeowners are in before quoting permit authority."
+      ]
+    },
+    {
+      "slug": "gladwyne",
+      "urlSlug": "gladwyne-pa",
+      "displayName": "Gladwyne",
+      "county": "Main Line",
+      "regionEyebrow": "Philadelphia Main Line",
+      "townships": [
+        "Lower Merion Township"
+      ],
+      "neighborhoods": [
+        "Lower Merion Township",
+        "Penn Valley",
+        "Bryn Mawr border",
+        "Villanova border"
+      ],
+      "heroTowns": "Gladwyne · Lower Merion Township · Penn Valley",
+      "neighbors": [
+        "bryn-mawr",
+        "villanova"
+      ],
+      "nearbyGeneral": [
+        {
+          "label": "Haverford & Ardmore",
+          "href": "/service-areas/haverford-ardmore-remodeling/"
+        },
+        {
+          "label": "Berwyn",
+          "href": "/service-areas/berwyn-pa-remodeling/"
+        },
+        {
+          "label": "Main Line PA",
+          "href": "/service-areas/main-line-pa-remodeling/"
+        }
+      ],
+      "generalPage": "/service-areas/gladwyne-pa-remodeling/",
+      "generalPageLabel": "Gladwyne remodeling overview",
+      "distancePhrase": "about 30 minutes from our Maple Glen office",
+      "permitAuthority": "Lower Merion Township (with additional review for historic or architecturally significant properties)",
+      "housingStock": "Multi-acre estates, manor homes, and 1900s–1940s stone colonials in Lower Merion Township, with plaster walls, cast-iron drain stacks, and original windows.",
+      "geo": {
+        "lat": 40.0426,
+        "lng": -75.279
+      },
+      "heroImage": "/portfolio/BATHROOMS/B&B - LaShannon Master bathroom/09DCC4C5-5F51-4A82-9C78-AB97A237A844.jpeg",
+      "introImage": "/IMAGES/Custom-Kitchen-Main-Line.webp",
+      "introImageBath": "/IMAGES/Custom-Bathroom-Ambler-Pa.webp",
+      "ogImage": "https://www.bbassociatesco.com/IMAGES/Custom-Kitchen-Main-Line.webp",
+      "ogImageBath": "https://www.bbassociatesco.com/portfolio/BATHROOMS/B&B - LaShannon Master bathroom/09DCC4C5-5F51-4A82-9C78-AB97A237A844.jpeg",
+      "portfolio": {
+        "kitchen": [
+          "prager-kitchen",
+          "larkin-kitchen",
+          "hornig-kitchen"
+        ],
+        "bathroom": [
+          "lashannon-bathroom",
+          "goldberg-bathroom",
+          "levinson-bathroom"
+        ]
+      },
+      "relatedArticles": {
+        "kitchen": [
+          "custom-vs-semi-custom-cabinetry",
+          "main-line-kitchen-neighborhood-guide"
+        ],
+        "bathroom": [
+          "gladwyne-bryn-mawr-stone-home-bathroom-remodel",
+          "bathroom-remodel-cost-main-line-2026"
+        ]
+      },
+      "content": {
+        "kitchen": {
+          "introH2": "Estate-Level Kitchens for Gladwyne",
+          "answerFirst": "B&B Associates designs and builds kitchens in Gladwyne’s estates, manor homes, and 1920s stone colonials, about 30 minutes from our Maple Glen office, with Lower Merion Township permits and any additional historic review handled in scope. Kitchen renovations in Gladwyne typically range from $55,000–$180,000+, and full transformations in the larger Gladwyne and Villanova homes routinely run $100,000–$200,000+.",
+          "sections": [
+            {
+              "h2": "What a Gladwyne kitchen is built for",
+              "paragraphs": [
+                "Gladwyne is one of the most exclusive communities on the Main Line: multi-acre estates, manor homes, and some of the most architecturally significant residential properties in the Delaware Valley, alongside 1920s stone colonials on the older lanes. Projects in estate homes often involve larger footprints, more complex structural work, and higher-end material selections, and frequently a second scope, a butler’s pantry or prep kitchen, running alongside the main room.",
+                "We design and install both custom and top-tier semi-custom cabinetry across everything from 1920s stone colonials in Gladwyne to newer construction, so we have no horse in that race except the finished room. In a Gladwyne kitchen the answer is usually custom: true inset doors, hand-selected rare stone from our supplier relationships, professional-grade appliances, and millwork that matches the caliber of the house. We have access to the cabinetry houses, stone yards, and specialty fixture showrooms appropriate for properties of this scale."
+              ]
+            },
+            {
+              "h2": "What the stone colonials hand us",
+              "paragraphs": [
+                "Pre-1950 Gladwyne houses give us the same list as Bryn Mawr and Villanova: plaster and lath that must be repaired by a plasterer, a load-bearing wall where the island wants to be, an electrical panel that cannot support today’s appliances, and a cast-iron drain stack in the wall between the kitchen and the pantry. We have an engineer size any beam during design and price the structural, electrical, and plaster work as their own lines so the estimate reflects the house, not just the finishes.",
+                "Lower Merion Township has detailed code requirements and a thorough inspection schedule for plumbing, electrical, and structural work, and it enforces them. Historic or architecturally significant properties add a review we manage as well. All permit applications and inspection coordination are included in our standard scope."
+              ]
+            },
+            {
+              "h2": "Investment and coordination on an estate scale",
+              "paragraphs": [
+                "Kitchen renovations in Gladwyne typically range from $55,000–$180,000+ depending on scope and material selections, and full transformations with custom cabinetry, natural stone, premium appliances, and structural changes routinely run $100,000–$200,000+ in the larger Gladwyne and Villanova homes. We provide a detailed, itemized estimate before any contract is signed.",
+                "Our design-build structure means all trades are coordinated under our management, including large estate projects with multiple concurrent renovation scopes. Design and selections take six to ten weeks because custom cabinetry and rare stone have lead times; construction runs 8–14 weeks on site depending on structure. The in-home consultation is free, and you approve photorealistic 3D renderings before anything is built."
+              ]
+            }
+          ],
+          "faqOverrides": [
+            {
+              "q": "How much does a kitchen remodel cost in Gladwyne, PA?",
+              "a": "Kitchen renovations in Gladwyne typically range from $55,000–$180,000+ depending on scope and material selections. Projects in estate homes often involve larger footprints, more complex structural work, and higher-end selections, and full transformations routinely run $100,000–$200,000+. We provide a detailed, itemized estimate before any contract is signed."
+            },
+            {
+              "q": "Can B&B Associates handle the scale of a Gladwyne estate kitchen?",
+              "a": "Yes. We have experience at all scales, including large estate projects with multiple concurrent renovation scopes such as a main kitchen and a butler’s pantry. Our design-build structure coordinates every trade under our management, and we have the custom cabinetry, rare stone, and specialty fixture relationships appropriate for properties of this caliber."
+            }
+          ],
+          "metaDescription": "Kitchen remodeling in Gladwyne, PA by B&B Associates. Estate-level custom kitchens for Lower Merion stone homes and manors, permits handled. Free consultation."
+        },
+        "bathroom": {
+          "introH2": "Behind the Stone: Gladwyne Bathrooms",
+          "answerFirst": "B&B Associates remodels primary baths and spa suites in Gladwyne’s stone colonials, manor homes, and estates, about 30 minutes from our Maple Glen office, with Lower Merion Township permits handled in scope. A primary bathroom in a pre-1950 Gladwyne home runs $65,000–$100,000+ in 2026, and roughly $10,000–$20,000 of that is the house itself.",
+          "sections": [
+            {
+              "h2": "The bathroom in the 1927 stone colonial",
+              "paragraphs": [
+                "A family in a stone colonial on one of the older lanes in Gladwyne had a primary bath last touched in the 1970s: a cast-iron tub under a window, a 32-inch shower stall, a single vanity, and pink tile that had outlived three owners. What the house hid behind that tile was a cast-iron drain stack eighty years past its design life, plaster that had to be repaired by someone who knows plaster, a wall that leaked because the original window was never flashed, and galvanized supply lines that explained the water pressure. In a 2005 colonial in Blue Bell those items would have been close to zero.",
+                "What we built was a custom vanity in stained white oak with a honed quartzite top, a freestanding tub under the original window with the surround rebuilt in solid stone so water has nowhere to go, a 66-inch walk-in shower with a bench and a linear drain, and large-format porcelain floors over electric radiant heat. The stack and the supply lines were replaced while the walls were open, which is the only sensible time to do it."
+              ]
+            },
+            {
+              "h2": "Lower Merion permits, historic review, and timing",
+              "paragraphs": [
+                "Lower Merion Township has detailed code requirements and a thorough inspection schedule for plumbing, electrical, and structural work, and it enforces them. Historic or architecturally significant properties, which describes a good share of Gladwyne, add a review submission we prepare. We file, meet the inspectors, and close out inside our standard scope; you never deal with the township yourself.",
+                "Design and selections take six to ten weeks because custom vanities, stone, and steam equipment have lead times. Construction runs 6–8 weeks for a primary suite in a stone home, and longer on estate projects where a second bath or a dressing room is part of the same scope. We book six to ten weeks out."
+              ]
+            },
+            {
+              "h2": "Where the money goes in a Gladwyne bathroom",
+              "paragraphs": [
+                "Spend on the vanity and the stone, because in a Gladwyne home the finishes have to carry the room’s proportions. Primary baths in pre-1950 stone homes run $65,000–$100,000+, spa suites with steam, a freestanding tub, and heated stone throughout $85,000–$150,000+, and hall baths done properly $38,000–$55,000. The $10,000–$20,000 that goes to the stack, the plaster, the window, and the supply lines appears as its own lines in our estimate rather than inside an allowance.",
+                "Master suites and spa baths worthy of Gladwyne’s homes come from hand-laid tile, custom vanities, thermal bath systems, and fixtures from the world’s premier brands, all sourced through our 60+ supplier partners at trade pricing. The consultation is free and the estimate is fully itemized before any work begins."
+              ]
+            }
+          ],
+          "faqOverrides": [
+            {
+              "q": "How much does a bathroom remodel cost in Gladwyne, PA?",
+              "a": "A primary bathroom in a pre-1950 Gladwyne home runs $65,000–$100,000+ in 2026, with roughly $10,000–$20,000 of that going to the cast-iron stack, plaster, window surround, and supply lines the house hands us. Spa suites run $85,000–$150,000+ and hall baths $38,000–$55,000. You receive a fully itemized estimate before any work begins."
+            },
+            {
+              "q": "Do you handle Lower Merion Township permits and historic review for Gladwyne bathrooms?",
+              "a": "Yes. All permit applications and inspection coordination through Lower Merion Township are included in our standard project scope. For historic or architecturally significant properties with additional review requirements, we prepare and manage those submissions as well."
+            }
+          ],
+          "metaDescription": "Bathroom remodeling in Gladwyne, PA by B&B Associates. Primary baths and spa suites for Lower Merion stone homes, permits and historic review handled."
+        }
+      },
+      "verify": [
+        "Coordinates 40.0426, -75.2790 (Gladwyne centroid) are from general geographic knowledge, not the repo.",
+        "Drive time 'about 30 minutes from Maple Glen' is borrowed from the Berwyn page; the Gladwyne page does not state a drive time."
+      ]
+    },
+    {
+      "slug": "berwyn",
+      "urlSlug": "berwyn-pa",
+      "displayName": "Berwyn",
+      "county": "Main Line",
+      "regionEyebrow": "Philadelphia Main Line",
+      "townships": [
+        "Tredyffrin Township",
+        "Easttown Township"
+      ],
+      "neighborhoods": [
+        "Devon",
+        "Tredyffrin Township",
+        "Easttown Township"
+      ],
+      "heroTowns": "Berwyn · Devon · Tredyffrin Township · Easttown Township",
+      "neighbors": [
+        "villanova",
+        "bryn-mawr",
+        "gladwyne"
+      ],
+      "nearbyGeneral": [
+        {
+          "label": "Wayne & Villanova",
+          "href": "/service-areas/wayne-villanova-bathroom-remodeling/"
+        },
+        {
+          "label": "Haverford & Ardmore",
+          "href": "/service-areas/haverford-ardmore-remodeling/"
+        },
+        {
+          "label": "Main Line PA",
+          "href": "/service-areas/main-line-pa-remodeling/"
+        }
+      ],
+      "generalPage": "/service-areas/berwyn-pa-remodeling/",
+      "generalPageLabel": "Berwyn remodeling overview",
+      "distancePhrase": "approximately 30 minutes from our Maple Glen office",
+      "permitAuthority": "Tredyffrin Township (or Easttown Township for Easttown addresses)",
+      "housingStock": "Brick colonials, stone ranches, and Chester County farmhouses in well-established neighborhoods, alongside newer construction; budgets span a wide range depending on the property.",
+      "geo": {
+        "lat": 40.0448,
+        "lng": -75.4388
+      },
+      "heroImage": "/portfolio/KITCHENS/B&B - Prager-kitchen/6D9E26B3-82C7-4C72-880A-373543ECEFDA.jpeg",
+      "introImage": "/IMAGES/Custom-Kitchen-Main-Line.webp",
+      "introImageBath": "/IMAGES/Custom-Bathroom-Ambler-Pa.webp",
+      "ogImage": "https://www.bbassociatesco.com/IMAGES/Custom-Kitchen-Main-Line.webp",
+      "ogImageBath": "https://www.bbassociatesco.com/IMAGES/Custom-Bathroom-Ambler-Pa.webp",
+      "portfolio": {
+        "kitchen": [
+          "broderick-kitchen",
+          "larkin-kitchen",
+          "oleg-kitchen"
+        ],
+        "bathroom": [
+          "barenbaum-bathroom",
+          "sharada-bathroom",
+          "hartka-bathroom"
+        ]
+      },
+      "relatedArticles": {
+        "kitchen": [
+          "main-line-kitchen-neighborhood-guide",
+          "how-to-vet-remodeler-ambler-doylestown"
+        ],
+        "bathroom": [
+          "bathroom-remodel-cost-main-line-2026",
+          "main-line-bathroom-trends"
+        ]
+      },
+      "content": {
+        "kitchen": {
+          "introH2": "Kitchens for Berwyn and Devon’s Established Homes",
+          "answerFirst": "B&B Associates remodels kitchens across Berwyn, Devon, and all of Tredyffrin and Easttown Townships, about 30 minutes from our Maple Glen office, with township permits handled in scope. Kitchen renovations in Berwyn typically range from $55,000–$180,000+, and because the housing stock blends gracious older homes with newer construction, budgets here span a wider range than almost anywhere else on the Main Line.",
+          "sections": [
+            {
+              "h2": "Three kinds of Berwyn kitchens",
+              "paragraphs": [
+                "Berwyn and the broader Tredyffrin Township community sit in the heart of the Main Line, where brick colonials, stone ranches, and Chester County farmhouses line the streets of well-established neighborhoods, and where newer construction has filled in alongside them. That mix is why Berwyn kitchen budgets span such a wide range. A brick colonial from the 1950s or 60s has a closed kitchen with a serviceable footprint and dated finishes. A stone ranch has a single-story plan where the kitchen can open to the living space with one beam. A farmhouse has character worth preserving and a kitchen that was added to it twice.",
+                "In the colonials and ranches the project is usually a rebuild that opens the kitchen to the family room, adds an island with real clearance, and runs cabinetry to the ceiling. In the farmhouses the work is custom millwork, honed stone, and a layout that respects the original rooms while giving the family one place to gather. In the newer homes it is finishes, lighting, and an island the builder undersized."
+              ]
+            },
+            {
+              "h2": "Remodeling a kitchen in a house you just bought",
+              "paragraphs": [
+                "Berwyn and Devon see a steady turnover of buyers moving into established homes, and the most common question we get is whether to remodel the kitchen immediately. Our advice: live in the house through at least one season before committing to a new layout, because where the light falls, where the groceries come in, and where people gather at a party are things a floor plan cannot tell you. The exception is anything unsafe or failing, an undersized panel or a leaking supply line, which is worth fixing right away and folding into the eventual remodel.",
+                "When the time comes, what these houses hand us depends on their era: plaster and undersized electrical service in the older stone and brick homes, load-bearing walls in the ranches, and settled floors in the farmhouses. We assess it all during the free in-home consultation and itemize it. Permits go through Tredyffrin Township, or Easttown Township for Easttown addresses, and we manage every application and inspection inside our scope."
+              ]
+            },
+            {
+              "h2": "Investment and timing in Berwyn",
+              "paragraphs": [
+                "Kitchen renovations in Berwyn and Tredyffrin Township typically range from $55,000–$180,000+ depending on scope and material selections. Refined renovations without structural work begin around $55,000–$75,000; rebuilds that open walls and add an island run $75,000–$110,000; full custom kitchens with inset cabinetry, natural stone, and professional appliances run $110,000–$180,000+ in the larger stone and farmhouse properties.",
+                "Plan for roughly 12–20 weeks start to finish, including design, Tredyffrin permitting, and 4–10 weeks of on-site construction; older homes can add time if wiring, plumbing, or structure surfaces during demolition, which is why we assess thoroughly before committing to a schedule. The consultation is free and the estimate is fully itemized before any contract is signed."
+              ]
+            }
+          ],
+          "faqOverrides": [
+            {
+              "q": "How much does a kitchen remodel cost in Berwyn, PA?",
+              "a": "Kitchen renovations in Berwyn and Tredyffrin Township typically range from $55,000–$180,000+ depending on scope and material selections. Refreshes without structural work begin around $55,000–$75,000, rebuilds with structural changes run $75,000–$110,000, and full custom kitchens in larger stone and farmhouse properties run $110,000–$180,000+. We provide a detailed, line-item estimate before any contract is signed."
+            },
+            {
+              "q": "We just bought a house in Berwyn. Should we remodel the kitchen right away?",
+              "a": "Usually, wait one season. Where the light falls, where groceries come in, and where guests gather are things a floor plan cannot tell you, and they should drive the layout. The exception is anything failing or unsafe, such as an undersized electrical panel or leaking supply lines, which is worth addressing now and folding into the eventual remodel."
+            }
+          ],
+          "metaDescription": "Kitchen remodeling in Berwyn, PA by B&B Associates. Design-build kitchens for Tredyffrin colonials, ranches and farmhouses, permits handled. Free consultation."
+        },
+        "bathroom": {
+          "introH2": "Bathrooms for Tredyffrin’s Colonials, Ranches, and Farmhouses",
+          "answerFirst": "B&B Associates remodels primary baths, hall baths, and powder rooms across Berwyn, Devon, and Tredyffrin and Easttown Townships, about 30 minutes from our Maple Glen office, with township permits handled in scope. Bathroom renovations in Berwyn generally range from $38,000 to $85,000+, with spa-style primary suites at the higher end and hall or powder rooms lower.",
+          "sections": [
+            {
+              "h2": "What Berwyn bathrooms start as",
+              "paragraphs": [
+                "The brick colonials and stone ranches that fill Berwyn’s established neighborhoods came with bathrooms sized for a different era: a hall bath with a tub-shower combination and a 30-inch vanity, and a primary bath that is often a converted closet with a stall shower. The farmhouses have bathrooms added long after the house was built, with a cast-iron stack and plaster walls. The newer construction has the square footage and a builder’s garden tub nobody uses.",
+                "The primary-suite project we do most in Tredyffrin is stealing space from an adjacent closet or hallway to build a 60- to 72-inch walk-in shower with a bench and frameless glass, replacing a single vanity with a custom double, and adding heated floors. In the newer homes the garden tub deck comes out and the shower expands into its footprint. In the farmhouses the reachable stack is replaced while the walls are open and the shower is built on a true waterproofing system."
+              ]
+            },
+            {
+              "h2": "What we plan for, and the permits",
+              "paragraphs": [
+                "The items we check during the free consultation are the fan venting to the exterior rather than the attic, the shower backing (drywall and old mud-set tile need a waterproofing system, not new tile), the subfloor under any large-format tile, the supply lines in the older homes, and whether a plumbing move sits over a basement or a finished ceiling. Each one that applies becomes its own line in the estimate.",
+                "All permit applications and inspection coordination with Tredyffrin Township are handled by our team as part of our standard scope; for Easttown Township addresses we manage those permits as well. Plan on about 5–7 weeks of construction for most Berwyn bathrooms, with the vanity, stone, and glass ordered during a six-to-eight-week design phase so nothing waits on a lead time."
+              ]
+            },
+            {
+              "h2": "Investment in Berwyn bathrooms",
+              "paragraphs": [
+                "Hall baths done right in Berwyn run $38,000–$55,000. Primary baths with a custom vanity, expanded walk-in shower, frameless glass, and heated floors run $55,000–$85,000. Spa suites with steam, a freestanding soaking tub, and large-format porcelain throughout run $85,000–$100,000+, and the older stone and farmhouse properties add the stack and plaster work above to whichever tier fits the finishes.",
+                "Heated floors are worth it in a Pennsylvania winter. Curbless showers that do not look clinical are the request from homeowners planning to stay in these houses for decades. Every project includes a fully itemized estimate before any work begins, and the in-home consultation is free."
+              ]
+            }
+          ],
+          "faqOverrides": [
+            {
+              "q": "How much does a bathroom remodel cost in Berwyn, PA?",
+              "a": "Bathroom renovations in Berwyn and Tredyffrin Township generally range from $38,000 to $85,000+. Hall baths run $38,000–$55,000, primary baths $55,000–$85,000, and spa-level suites $85,000–$100,000+. Older stone and farmhouse properties may add cost for cast-iron plumbing and plaster. You receive a fully itemized estimate before any work begins."
+            },
+            {
+              "q": "Do you handle bathroom permits through Tredyffrin Township?",
+              "a": "Yes. All permit applications and inspection coordination with Tredyffrin Township are handled by our team as part of our standard project scope. For Easttown Township projects, we manage those permits as well. You will not need to interact with the municipality directly."
+            }
+          ],
+          "metaDescription": "Bathroom remodeling in Berwyn, PA by B&B Associates. Primary baths, hall baths and spa suites for Tredyffrin Township homes, permits handled. Free consultation."
+        }
+      },
+      "verify": [
+        "Coordinates 40.0448, -75.4388 (Berwyn centroid) are from general geographic knowledge, not the repo.",
+        "The 'wait one season after buying' advice is drawn from the Batch 02 editorial brief (docs/content-plan/04-editorial-calendar.md #3), which is a working title, not published copy — confirm B&B agrees with the guidance."
+      ]
+    }
+  ]
+}
