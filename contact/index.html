@@ -762,6 +762,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="contact-form-col reveal">
           <div class="contact-form" id="inquiry-form">
             <h3 class="contact-form-title">Schedule Your Free Consultation</h3>
+            <!-- Shared inquiry form (js/inquiry-form.js): localStorage + Supabase + GoHighLevel POST.
+                 Previous GoHighLevel iframe embed kept below for instant revert if ever needed:
             <iframe
               src="https://links.legacylinqdigital.com/widget/form/k70Bwwhti09oNK8mRni7"
               style="width:100%;height:873px;border:none;border-radius:0px;display:block"
@@ -779,6 +781,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               data-form-id="k70Bwwhti09oNK8mRni7"
               title="Contact Form"
             ></iframe>
+            -->
+            <div id="contact-form-mount" data-bb-inquiry data-source="Contact Page" data-type="contact" data-source-label="Contact Page" data-service-area="" data-trade-param="1"></div>
           </div>
         </div>
       </div>
@@ -861,8 +865,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="footer-col">
           <p class="footer-col-title">Services</p>
           <nav class="footer-links" aria-label="Services navigation">
-            <a href="/services/" class="footer-link">Luxury Kitchen Remodeling</a>
-            <a href="/services/" class="footer-link">Custom Bathroom Renovations</a>
+            <a href="/services/luxury-kitchen-remodeling/" class="footer-link">Luxury Kitchen Remodeling</a>
+            <a href="/services/custom-bathroom-renovations/" class="footer-link">Custom Bathroom Renovations</a>
             <a href="/showroom/" class="footer-link">Ambler Design Showroom</a>
             <a href="/reviews/" class="footer-link">Client Reviews</a>
           </nav>
@@ -945,133 +949,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <script src="/js/init.js"></script>
   <script src="/js/analytics.js"></script>
   <script src="/js/data-layer.js"></script>
-  <script src="https://links.legacylinqdigital.com/js/form_embed.js"></script>
-  <script>
-  /* ── Dynamic form rendering from BB_FORM_CONFIG ── */
-  (function(){
-    var STORAGE_KEY = 'BB_FORM_CONFIG';
-    var DEFAULT_CONFIG = [
-      { id: 'row-names', type: 'row', fields: [
-        { id: 'f-first', type: 'text',  name: 'first_name', label: 'First Name',    placeholder: 'Jane',          required: true  },
-        { id: 'f-last',  type: 'text',  name: 'last_name',  label: 'Last Name',     placeholder: 'Smith',         required: true  }
-      ]},
-      { id: 'f-phone',   type: 'tel',      name: 'phone',        label: 'Phone Number',                          placeholder: '(215) 555-0100',                                             required: true  },
-      { id: 'f-email',   type: 'email',    name: 'email',        label: 'Email Address',                         placeholder: 'jane@email.com',                                             required: true  },
-      { id: 'f-project', type: 'select',   name: 'project_type', label: 'Project Type',                          required: false, options: [
-        { value: 'kitchen',  label: 'Kitchen Remodeling'  },
-        { value: 'bathroom', label: 'Bathroom Renovation' },
-        { value: 'both',     label: 'Kitchen + Bathroom'  }
-      ]},
-      { id: 'f-message', type: 'textarea', name: 'message',      label: 'Tell Us About Your Project (optional)', placeholder: 'Briefly describe your vision, timeline, or any questions...', required: false, rows: 6 }
-    ];
-
-    function getConfig() {
-      try { var s = localStorage.getItem(STORAGE_KEY); return s ? JSON.parse(s) : DEFAULT_CONFIG; }
-      catch(e) { return DEFAULT_CONFIG; }
-    }
-
-    function esc(v) {
-      return String(v == null ? '' : v).replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
-    }
-
-    function buildField(f) {
-      var req = f.required ? ' required' : '';
-      var star = f.required ? ' <span style="color:#b17500">*</span>' : '';
-      if (f.type === 'select') {
-        var opts = (f.options || []).map(function(o){
-          return '<option value="' + esc(o.value) + '">' + esc(o.label) + '</option>';
-        }).join('');
-        return '<div class="field"><label for="cf-' + esc(f.id) + '">' + esc(f.label) + star + '</label>' +
-          '<select id="cf-' + esc(f.id) + '" name="' + esc(f.name) + '"' + req + '>' +
-          '<option value="" disabled selected>Select ' + esc(f.label.toLowerCase()) + '</option>' + opts + '</select></div>';
-      }
-      if (f.type === 'textarea') {
-        return '<div class="field"><label for="cf-' + esc(f.id) + '">' + esc(f.label) + star + '</label>' +
-          '<textarea id="cf-' + esc(f.id) + '" name="' + esc(f.name) + '" rows="' + (f.rows||3) + '" placeholder="' + esc(f.placeholder||'') + '"' + req + '></textarea></div>';
-      }
-      return '<div class="field"><label for="cf-' + esc(f.id) + '">' + esc(f.label) + star + '</label>' +
-        '<input type="' + esc(f.type) + '" id="cf-' + esc(f.id) + '" name="' + esc(f.name) + '" placeholder="' + esc(f.placeholder||'') + '"' + req + '></div>';
-    }
-
-    function render() {
-      var container = document.getElementById('contact-form-fields');
-      if (!container) return;
-      var html = '';
-      getConfig().forEach(function(f) {
-        if (f.type === 'row' && f.fields) {
-          html += '<div class="form-row">';
-          f.fields.forEach(function(sf){ html += buildField(sf); });
-          html += '</div>';
-        } else {
-          html += buildField(f);
-        }
-      });
-      container.innerHTML = html;
-    }
-
-    render();
-
-    /* ── Trade Professional URL param routing ── */
-    (function() {
-      var params = new URLSearchParams(window.location.search);
-      if (params.get('type') === 'trade') {
-        var title = document.querySelector('.contact-form-title');
-        if (title) title.textContent = 'Register as a Trade Professional';
-        var submitBtn = document.querySelector('#contact-page-form button[type="submit"]');
-        if (submitBtn) submitBtn.textContent = 'Submit Trade Registration →';
-        var msgField = document.getElementById('cf-f-message');
-        if (msgField && !msgField.value) msgField.value = "I'd like to register as a trade professional.";
-        var projectSelect = document.getElementById('cf-f-project');
-        if (projectSelect) {
-          var tradeOpt = document.createElement('option');
-          tradeOpt.value = 'trade';
-          tradeOpt.textContent = 'Trade Professional Registration';
-          tradeOpt.selected = true;
-          projectSelect.insertBefore(tradeOpt, projectSelect.firstChild);
-        }
-      }
-    })();
-
-    /* ── Submit: save lead to localStorage + Supabase + GHL ── */
-    var form = document.getElementById('contact-page-form');
-    if (!form) return;
-    form.addEventListener('submit', function(e) {
-      e.preventDefault();
-      try {
-        var data = { id: 'lead-' + Date.now(), date: new Date().toISOString(), status: 'new', type: 'contact', source: 'Contact Page' };
-        form.querySelectorAll('[name]').forEach(function(el){ data[el.name] = el.value.trim(); });
-        data.firstName = data.first_name || '';
-        data.lastName  = data.last_name  || '';
-        data.phone     = data.phone      || '';
-        data.email     = data.email      || '';
-        data.description = data.message  || '';
-        var leads = JSON.parse(localStorage.getItem('bb_leads') || '[]');
-        leads.unshift(data);
-        localStorage.setItem('bb_leads', JSON.stringify(leads));
-        if (window.BB && window.BB.Supabase) BB.Supabase.insertLead(data);
-
-        /* ── Also submit to GHL for email alerts ── */
-        var ghlBody = new FormData();
-        ghlBody.append('first_name', data.firstName);
-        ghlBody.append('last_name', data.lastName);
-        ghlBody.append('phone', data.phone);
-        ghlBody.append('email', data.email);
-        ghlBody.append('message', data.description);
-        ghlBody.append('formId', 'Ey8fdi6O3JIdS1xYUhkw');
-        ghlBody.append('location_id', '');
-        fetch('https://links.legacylinqdigital.com/widget/form/Ey8fdi6O3JIdS1xYUhkw', {
-          method: 'POST',
-          body: ghlBody,
-          mode: 'no-cors'
-        }).catch(function(){});
-      } catch(err){}
-      /* Show success feedback */
-      var note = form.querySelector('.form-note');
-      if (note) { note.textContent = '\u2713 Sent! We\'ll be in touch within 5–15 minutes.'; note.style.color = '#b17500'; }
-      form.querySelectorAll('input,textarea,select').forEach(function(el){ el.value = ''; });
-    });
-  })();
-  </script>
+  <script src="/js/inquiry-form.js"></script>
 
 <script>(function(){var logo=document.querySelector(".nav-logo");if(!logo)return;var clicks=0,timer=null;logo.addEventListener("click",function(e){clicks++;if(timer)clearTimeout(timer);if(clicks>=6){e.preventDefault();clicks=0;window.location.href="/admin/index.html";return;}timer=setTimeout(function(){clicks=0;},3000);});})()</script>
 </body>

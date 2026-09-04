@@ -4,16 +4,26 @@
    Load this on every page AFTER GSAP + ScrollTrigger CDN.
    ============================================================ */
 
-// ── LENIS SMOOTH SCROLL ──────────────────────────────────────
-const lenis = new Lenis({
-  duration: 1.2,
-  easing: t => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-  smooth: true,
-});
+// ── LIBRARY GUARDS ───────────────────────────────────────────
+// Some pages (service-area towns, legal pages, thank-you) do not load
+// Lenis/GSAP. Everything below that depends on them is guarded so nav,
+// hamburger, dropdowns and the mobile CTA bar always initialise.
+const HAS_GSAP = typeof gsap !== 'undefined';
+const HAS_ST = HAS_GSAP && typeof ScrollTrigger !== 'undefined';
+const HAS_LENIS = typeof Lenis !== 'undefined';
 
-lenis.on('scroll', ScrollTrigger.update);
-gsap.ticker.add(time => lenis.raf(time * 1000));
-gsap.ticker.lagSmoothing(0);
+// ── LENIS SMOOTH SCROLL ──────────────────────────────────────
+let lenis = null;
+if (HAS_LENIS && HAS_GSAP) {
+  lenis = new Lenis({
+    duration: 1.2,
+    easing: t => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+    smooth: true,
+  });
+  if (HAS_ST) lenis.on('scroll', ScrollTrigger.update);
+  gsap.ticker.add(time => lenis.raf(time * 1000));
+  gsap.ticker.lagSmoothing(0);
+}
 
 // ── NAVIGATION SCROLL BEHAVIOR ───────────────────────────────
 const nav = document.querySelector('.nav');
@@ -138,6 +148,9 @@ if (hamburger && mobileNav) {
   });
 })();
 
+// ── GSAP-DEPENDENT ANIMATIONS (skipped when GSAP is not loaded) ──
+if (HAS_GSAP && HAS_ST) {
+
 // ── UNIVERSAL SCROLL REVEAL ───────────────────────────────────
 // Apply .reveal class to any element for auto-animation
 gsap.utils.toArray('.reveal').forEach(el => {
@@ -247,6 +260,8 @@ gsap.utils.toArray('[data-parallax]').forEach(el => {
   });
 });
 
+} // end GSAP-dependent animations
+
 // ── ACCORDION ────────────────────────────────────────────────
 document.querySelectorAll('.accordion-trigger').forEach(trigger => {
   trigger.addEventListener('click', () => {
@@ -296,7 +311,7 @@ if (lightbox) {
 }
 
 // ── REDUCED MOTION ───────────────────────────────────────────
-if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+if (HAS_GSAP && HAS_ST && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
   gsap.globalTimeline.timeScale(0);
   ScrollTrigger.getAll().forEach(t => t.kill());
 }

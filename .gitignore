@@ -12,3 +12,7 @@ retractable-*.pdf
 BrightPathways-Postcard-Final*
 Brochure-BrightPathways-Final*
 StrengthInCare-Postcard-Final*
+
+# Secrets — never commit
+.env
+.env.*

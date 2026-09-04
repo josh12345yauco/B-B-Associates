@@ -179,6 +179,93 @@
     <priority>0.60</priority>
   </url>
 
+  <!-- Blog Articles (earlier library) -->
+  <url>
+    <loc>https://www.bbassociatesco.com/blog/article/?id=luxury-kitchen-cost-guide</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.60</priority>
+  </url>
+  <url>
+    <loc>https://www.bbassociatesco.com/blog/article/?id=doylestown-historic-homes</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.60</priority>
+  </url>
+  <url>
+    <loc>https://www.bbassociatesco.com/blog/article/?id=design-build-vs-separate</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.60</priority>
+  </url>
+  <url>
+    <loc>https://www.bbassociatesco.com/blog/article/?id=bathroom-tile-trends-2025</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.60</priority>
+  </url>
+  <url>
+    <loc>https://www.bbassociatesco.com/blog/article/?id=kitchen-renovation-timeline</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.60</priority>
+  </url>
+  <url>
+    <loc>https://www.bbassociatesco.com/blog/article/?id=main-line-kitchen-neighborhood-guide</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.60</priority>
+  </url>
+  <url>
+    <loc>https://www.bbassociatesco.com/blog/article/?id=kitchen-cabinet-trends-2025</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.60</priority>
+  </url>
+  <url>
+    <loc>https://www.bbassociatesco.com/blog/article/?id=countertop-material-guide</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.60</priority>
+  </url>
+  <url>
+    <loc>https://www.bbassociatesco.com/blog/article/?id=bathroom-remodeling-roi</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.60</priority>
+  </url>
+  <url>
+    <loc>https://www.bbassociatesco.com/blog/article/?id=transitional-vs-modern-kitchen</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.60</priority>
+  </url>
+  <url>
+    <loc>https://www.bbassociatesco.com/blog/article/?id=custom-cabinetry-montgomery-county</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.60</priority>
+  </url>
+  <url>
+    <loc>https://www.bbassociatesco.com/blog/article/?id=heated-bathroom-floors</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.60</priority>
+  </url>
+  <url>
+    <loc>https://www.bbassociatesco.com/blog/article/?id=bucks-county-older-homes</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.60</priority>
+  </url>
+  <url>
+    <loc>https://www.bbassociatesco.com/blog/article/?id=choosing-remodeling-contractor-philadelphia</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.60</priority>
+  </url>
+  <url>
+    <loc>https://www.bbassociatesco.com/blog/article/?id=open-concept-kitchen-costs</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.60</priority>
+  </url>
+  <url>
+    <loc>https://www.bbassociatesco.com/blog/article/?id=main-line-bathroom-trends</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.60</priority>
+  </url>
+  <url>
+    <loc>https://www.bbassociatesco.com/blog/article/?id=kitchen-island-design-ideas</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.60</priority>
+  </url>
+
   <!-- Service Area Pages -->
   <url>
     <loc>https://www.bbassociatesco.com/service-areas/ambler-pa-remodeling-contractor/</loc>

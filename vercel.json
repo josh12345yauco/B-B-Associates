@@ -50,6 +50,16 @@
       "source": "/kitchen-bathroom-remodeling-montgomery-county-pa/",
       "destination": "/kitchen-bathroom-renovation-design/",
       "permanent": true
+    },
+    {
+      "source": "/services/kitchen-remodeling",
+      "destination": "/services/luxury-kitchen-remodeling/",
+      "permanent": true
+    },
+    {
+      "source": "/services/kitchen-remodeling/",
+      "destination": "/services/luxury-kitchen-remodeling/",
+      "permanent": true
     }
   ]
 }
