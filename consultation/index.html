@@ -665,8 +665,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <script src="/js/inquiry-form.js"></script>
 <script>
 /* ── Consultation form lead capture ──
-   Existing flow kept (localStorage bb_leads), then the shared pipeline:
-   Supabase insertLead + POST to the GoHighLevel form endpoint with the
+   Existing flow kept (localStorage bb_leads), then the shared pipeline in
+   /js/inquiry-form.js: Supabase insertLead + JSON POST to the GoHighLevel
+   inbound webhook (once BB_INQUIRY_CONFIG.ghlWebhook is set) with the
    consultation answers summarised into the message field. */
 (function(){
   var form = document.getElementById('contact-form');
