@@ -230,7 +230,7 @@ const EXTRA_CSS = `
     .town-service-thumb{width:150px;aspect-ratio:3/4;object-fit:cover;display:block;border:1px solid var(--color-gold-border);border-radius:2px;margin-bottom:var(--sp-4)}
     .st-articles{padding:var(--sp-8) 0;background:var(--color-bg-2)}
     @media (max-width:900px){.st-tiers{grid-template-columns:1fr}.st-content h2{font-size:var(--text-h4)}.sa-intro-grid{grid-template-columns:1fr !important}}
-    @media (max-width:760px){.town-service-thumb{width:160px}.town-form-wrap{max-width:100%;box-sizing:border-box;overflow:hidden}.town-form-wrap iframe{width:100% !important;max-width:100% !important}}
+    @media (max-width:760px){.town-service-thumb{width:160px}.town-form-wrap{max-width:100%;box-sizing:border-box;overflow:hidden;padding:var(--sp-5) var(--sp-3) !important}.town-form-wrap iframe{width:100% !important;max-width:100% !important}}
 `;
 
 /* ── Page ────────────────────────────────────────────────────── */
