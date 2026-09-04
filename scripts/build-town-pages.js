@@ -224,7 +224,13 @@ const EXTRA_CSS = `
     .st-project-meta{font-family:var(--font-sans);font-size:var(--text-label);letter-spacing:var(--tracking-wide);text-transform:uppercase;color:var(--color-text-dim);padding:0 var(--sp-4) var(--sp-4)}
     .st-project:hover{border-color:var(--color-gold)}
     .st-links{display:flex;flex-wrap:wrap;justify-content:center;gap:var(--sp-3)}
-    @media (max-width:900px){.st-tiers,.st-portfolio-grid{grid-template-columns:1fr}.st-content h2{font-size:var(--text-h4)}}
+    .sa-intro-grid{grid-template-columns:1fr 46% !important}
+    .sa-intro-grid > .reveal:first-child{max-width:560px}
+    .sa-intro-body{font-size:calc(var(--text-body) - 2px) !important;max-width:520px}
+    .town-service-thumb{width:150px;aspect-ratio:3/4;object-fit:cover;display:block;border:1px solid var(--color-gold-border);border-radius:2px;margin-bottom:var(--sp-4)}
+    .st-articles{padding:var(--sp-8) 0;background:var(--color-bg-2)}
+    @media (max-width:900px){.st-tiers{grid-template-columns:1fr}.st-content h2{font-size:var(--text-h4)}.sa-intro-grid{grid-template-columns:1fr !important}}
+    @media (max-width:760px){.town-service-thumb{width:160px}.town-form-wrap{max-width:100%;box-sizing:border-box;overflow:hidden}.town-form-wrap iframe{width:100% !important;max-width:100% !important}}
 `;
 
 /* ── Page ────────────────────────────────────────────────────── */
@@ -341,8 +347,7 @@ ${nav()}
           <div class="sa-hero-divider"></div>
           <p class="sa-hero-towns">${esc(town.heroTowns)}</p>
           <div class="sa-hero-actions">
-            <a href="#get-estimate" class="phil-btn phil-btn-fill"><div class="phil-fill"></div><span class="phil-label">Free Consultation</span></a>
-            <a href="tel:+12674028758" class="phil-btn phil-btn-fill phil-btn-fill-dark"><div class="phil-fill"></div><span class="phil-label">267-402-8758</span></a>
+            <a href="#get-estimate" class="phil-btn phil-btn-fill"><div class="phil-fill"></div><span class="phil-label">Inquiry Form</span></a>
           </div>
         </div>
       </div>
@@ -398,6 +403,7 @@ ${sectionsHtml}
         <h2 style="font-family:var(--font-display);font-size:var(--text-h2);font-weight:300;font-style:italic;color:#1a1a1a;line-height:var(--leading-tight);margin-bottom:var(--sp-3);">${esc(fill(service.cardTitle, town, service))}</h2>
         <div class="town-services-grid">
           <div class="town-service-card">
+            ${projects[0] ? `<img class="town-service-thumb" src="${attr(projects[0].thumbnail)}" alt="Real B&amp;B Associates project — ${attr(projects[0].title)}" loading="lazy" width="450" height="600">` : ''}
             <h3 class="town-service-h3">${esc(service.name)}</h3>
             <p class="town-service-body">${esc(fill(service.cardBody, town, service))}</p>
             <ul class="town-service-list">
@@ -417,15 +423,33 @@ ${tiersHtml}
       </div>
     </section>
 
-    <!-- PORTFOLIO -->
-    <section class="st-portfolio" aria-label="Recent ${attr(service.shortName.toLowerCase())} projects">
-      <div class="container">
-        <p class="section-label" style="color:var(--color-gold);">Recent Work</p>
-        <h2 style="font-family:var(--font-display);font-size:var(--text-h2);font-weight:300;font-style:italic;color:var(--color-white);line-height:var(--leading-tight);margin-bottom:var(--sp-3);">${esc(service.shortName)} Projects to Explore</h2>
-        <div class="st-portfolio-grid">
-${projectsHtml}
+    <!-- PORTFOLIO CAROUSEL (non-clickable, shared block) -->
+    <div data-bb-carousel data-eyebrow="From Our Portfolio" data-title="Recent Kitchens &amp; Bathrooms Near ${attr(town.displayName)}"></div>
+${articles.length ? `    <section class="st-articles" aria-label="Related articles">
+      <div class="container" style="text-align:center;">
+        <p class="section-label" style="color:var(--color-gold);">From the Journal</p>
+        <div class="st-links">
+${articles.map(a => `          <a href="/blog/article/?id=${attr(a.id)}" class="btn btn-ghost">Read: ${esc(a.title)} →</a>`).join('\n')}
         </div>
-${articlesHtml}
+      </div>
+    </section>
+` : ''}
+    <!-- REVIEWS (shared block, 4 at a time) -->
+    <section class="section" style="background:#FAF8F6;padding:var(--section-padding-y) 0;" aria-label="Client reviews">
+      <div class="container">
+        <p class="section-label" style="display:block;text-align:center;margin-bottom:var(--sp-7);color:var(--color-gold);">From Our Neighbors</p>
+        <div data-bb-reviews data-initial="4" data-step="4"></div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="town-faq">
+      <div class="container">
+        <p class="section-label" style="color:var(--color-gold);">Questions</p>
+        <h2 class="town-faq-h2">${esc(service.name)} Questions from ${esc(town.displayName)} Homeowners</h2>
+        <div>
+${faqHtml}
+        </div>
       </div>
     </section>
 
@@ -443,28 +467,6 @@ ${articlesHtml}
             <div data-bb-inquiry data-source="${attr(formSource)}" data-type="service_town" data-source-label="Service Areas" data-service-area="${attr(formSource)}"></div>
           </div>
         </div>
-      </div>
-    </section>
-
-    <!-- FAQ -->
-    <section class="town-faq">
-      <div class="container">
-        <p class="section-label" style="color:var(--color-gold);">Questions</p>
-        <h2 class="town-faq-h2">${esc(service.name)} Questions from ${esc(town.displayName)} Homeowners</h2>
-        <div>
-${faqHtml}
-        </div>
-      </div>
-    </section>
-
-    <!-- CTA -->
-    <section class="cta-panel">
-      <p class="section-label">Start Today</p>
-      <div class="headline-reveal"><span class="line-wrap"><span class="line-inner"><h2 class="cta-panel-title">Ready for Your Free Consultation?</h2></span></span></div>
-      <p class="cta-panel-body">We'll come to your ${esc(town.displayName)} home, review the space, and walk you through what's possible — at no cost and no obligation.</p>
-      <div class="cta-panel-actions">
-        <a href="#get-estimate" class="phil-btn phil-btn-fill"><div class="phil-fill"></div><span class="phil-label">Get a Free Estimate →</span></a>
-        <span class="cta-panel-secondary">or call <a href="tel:+12674028758">267-402-8758</a></span>
       </div>
     </section>
 
@@ -491,6 +493,8 @@ ${footer()}
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js"></script>
   <script src="/js/supabase-client.js"></script>
   <script src="/js/inquiry-form.js"></script>
+  <script src="/js/project-carousel.js"></script>
+  <script src="/js/town-reviews.js"></script>
   <script>
     document.querySelectorAll('.town-faq-question').forEach(function(btn){btn.addEventListener('click',function(){var item=this.closest('.town-faq-item');var isOpen=item.classList.contains('open');document.querySelectorAll('.town-faq-item.open').forEach(function(el){el.classList.remove('open');el.querySelector('.town-faq-question').setAttribute('aria-expanded','false')});if(!isOpen){item.classList.add('open');this.setAttribute('aria-expanded','true')}})});
   </script>

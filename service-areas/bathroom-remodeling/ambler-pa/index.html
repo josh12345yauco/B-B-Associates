@@ -568,7 +568,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .st-project-meta{font-family:var(--font-sans);font-size:var(--text-label);letter-spacing:var(--tracking-wide);text-transform:uppercase;color:var(--color-text-dim);padding:0 var(--sp-4) var(--sp-4)}
     .st-project:hover{border-color:var(--color-gold)}
     .st-links{display:flex;flex-wrap:wrap;justify-content:center;gap:var(--sp-3)}
-    @media (max-width:900px){.st-tiers,.st-portfolio-grid{grid-template-columns:1fr}.st-content h2{font-size:var(--text-h4)}}
+    .sa-intro-grid{grid-template-columns:1fr 46% !important}
+    .sa-intro-grid > .reveal:first-child{max-width:560px}
+    .sa-intro-body{font-size:calc(var(--text-body) - 2px) !important;max-width:520px}
+    .town-service-thumb{width:150px;aspect-ratio:3/4;object-fit:cover;display:block;border:1px solid var(--color-gold-border);border-radius:2px;margin-bottom:var(--sp-4)}
+    .st-articles{padding:var(--sp-8) 0;background:var(--color-bg-2)}
+    @media (max-width:900px){.st-tiers{grid-template-columns:1fr}.st-content h2{font-size:var(--text-h4)}.sa-intro-grid{grid-template-columns:1fr !important}}
+    @media (max-width:760px){.town-service-thumb{width:160px}.town-form-wrap{max-width:100%;box-sizing:border-box;overflow:hidden}.town-form-wrap iframe{width:100% !important;max-width:100% !important}}
   </style>
 </head>
 <body>
@@ -623,8 +629,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div class="sa-hero-divider"></div>
           <p class="sa-hero-towns">Ambler Borough · Upper Dublin · Maple Glen · Spring House</p>
           <div class="sa-hero-actions">
-            <a href="#get-estimate" class="phil-btn phil-btn-fill"><div class="phil-fill"></div><span class="phil-label">Free Consultation</span></a>
-            <a href="tel:+12674028758" class="phil-btn phil-btn-fill phil-btn-fill-dark"><div class="phil-fill"></div><span class="phil-label">267-402-8758</span></a>
+            <a href="#get-estimate" class="phil-btn phil-btn-fill"><div class="phil-fill"></div><span class="phil-label">Inquiry Form</span></a>
           </div>
         </div>
       </div>
@@ -688,6 +693,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <h2 style="font-family:var(--font-display);font-size:var(--text-h2);font-weight:300;font-style:italic;color:#1a1a1a;line-height:var(--leading-tight);margin-bottom:var(--sp-3);">Bathroom Remodeling in Ambler</h2>
         <div class="town-services-grid">
           <div class="town-service-card">
+            <img class="town-service-thumb" src="/portfolio/BATHROOMS/B&amp;B - Vartanian-bathroom/10E542CC-6F7C-45E4-B9E2-4ADC289B5031.jpeg" alt="Real B&amp;B Associates project — Boutique Glazed Subway Tile Bath" loading="lazy" width="450" height="600">
             <h3 class="town-service-h3">Bathroom Remodeling</h3>
             <p class="town-service-body">Primary baths, hall baths, and powder rooms for Ambler homes: custom tile and stone, walk-in showers with frameless glass, heated floors, custom vanities, and luxury fixtures, fully permitted through Ambler Borough or Upper Dublin Township, depending on the address.</p>
             <ul class="town-service-list">
@@ -714,49 +720,23 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
     </section>
 
-    <!-- PORTFOLIO -->
-    <section class="st-portfolio" aria-label="Recent bathroom projects">
-      <div class="container">
-        <p class="section-label" style="color:var(--color-gold);">Recent Work</p>
-        <h2 style="font-family:var(--font-display);font-size:var(--text-h2);font-weight:300;font-style:italic;color:var(--color-white);line-height:var(--leading-tight);margin-bottom:var(--sp-3);">Bathroom Projects to Explore</h2>
-        <div class="st-portfolio-grid">
-          <a href="/portfolio/project/?id=vartanian-bathroom" class="st-project">
-            <img src="/portfolio/BATHROOMS/B&amp;B - Vartanian-bathroom/10E542CC-6F7C-45E4-B9E2-4ADC289B5031.jpeg" alt="Boutique Glazed Subway Tile Bath — bathroom remodel by B&amp;B Associates" loading="lazy" width="800" height="600">
-            <p class="st-project-title">Boutique Glazed Subway Tile Bath</p>
-            <p class="st-project-meta">Transitional · 2 weeks · $38,000–$52,000</p>
-          </a>
-          <a href="/portfolio/project/?id=hartka-bathroom" class="st-project">
-            <img src="/portfolio/BATHROOMS/B&amp;B - Hartka-bathroom/0DFF0DCA-8172-45BF-9C23-55A9229A3245.jpeg" alt="Custom Tile Master Bathroom — bathroom remodel by B&amp;B Associates" loading="lazy" width="800" height="600">
-            <p class="st-project-title">Custom Tile Master Bathroom</p>
-            <p class="st-project-meta">Transitional · 4 weeks · $42,000–$58,000</p>
-          </a>
-          <a href="/portfolio/project/?id=petev-bathroom" class="st-project">
-            <img src="/portfolio/BATHROOMS/B&amp;B - Pete V-bathroom/059FFEC6-1BB2-4EF6-97A4-000D6C9D7369.jpeg" alt="Curbless Seamless Porcelain Bath — bathroom remodel by B&amp;B Associates" loading="lazy" width="800" height="600">
-            <p class="st-project-title">Curbless Seamless Porcelain Bath</p>
-            <p class="st-project-meta">Contemporary · 4 weeks · $52,000–$68,000</p>
-          </a>
-        </div>
-        <div class="st-links" style="margin-top:var(--sp-6)">
+    <!-- PORTFOLIO CAROUSEL (non-clickable, shared block) -->
+    <div data-bb-carousel data-eyebrow="From Our Portfolio" data-title="Recent Kitchens &amp; Bathrooms Near Ambler"></div>
+    <section class="st-articles" aria-label="Related articles">
+      <div class="container" style="text-align:center;">
+        <p class="section-label" style="color:var(--color-gold);">From the Journal</p>
+        <div class="st-links">
           <a href="/blog/article/?id=fort-washington-bathroom-mold-ventilation-remodel" class="btn btn-ghost">Read: The Fort Washington Bathroom That Kept Growing Mold (and Why a New Fan Wasn't the Fix) →</a>
           <a href="/blog/article/?id=heated-bathroom-floors" class="btn btn-ghost">Read: Heated Bathroom Floors: Are They Worth It in Pennsylvania? →</a>
         </div>
       </div>
     </section>
 
-    <!-- LEAD FORM (shared inquiry form) -->
-    <section class="town-form-section" id="get-estimate">
+    <!-- REVIEWS (shared block, 4 at a time) -->
+    <section class="section" style="background:#FAF8F6;padding:var(--section-padding-y) 0;" aria-label="Client reviews">
       <div class="container">
-        <div class="town-form-grid">
-          <div>
-            <p class="section-label">Start Here</p>
-            <h2 class="town-form-h2">Tell Us About Your<br>Ambler Bathroom Project</h2>
-            <p class="town-form-sub">Fill out the form and we'll be in touch within 5–15 minutes to discuss your project, answer questions, and schedule a free in-home consultation.</p>
-          </div>
-          <div class="town-form-wrap">
-            <p class="town-form-title">Request Your Free Estimate</p>
-            <div data-bb-inquiry data-source="Ambler — Bathroom Remodeling" data-type="service_town" data-source-label="Service Areas" data-service-area="Ambler — Bathroom Remodeling"></div>
-          </div>
-        </div>
+        <p class="section-label" style="display:block;text-align:center;margin-bottom:var(--sp-7);color:var(--color-gold);">From Our Neighbors</p>
+        <div data-bb-reviews data-initial="4" data-step="4"></div>
       </div>
     </section>
 
@@ -794,14 +774,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
     </section>
 
-    <!-- CTA -->
-    <section class="cta-panel">
-      <p class="section-label">Start Today</p>
-      <div class="headline-reveal"><span class="line-wrap"><span class="line-inner"><h2 class="cta-panel-title">Ready for Your Free Consultation?</h2></span></span></div>
-      <p class="cta-panel-body">We'll come to your Ambler home, review the space, and walk you through what's possible — at no cost and no obligation.</p>
-      <div class="cta-panel-actions">
-        <a href="#get-estimate" class="phil-btn phil-btn-fill"><div class="phil-fill"></div><span class="phil-label">Get a Free Estimate →</span></a>
-        <span class="cta-panel-secondary">or call <a href="tel:+12674028758">267-402-8758</a></span>
+    <!-- LEAD FORM (shared inquiry form) -->
+    <section class="town-form-section" id="get-estimate">
+      <div class="container">
+        <div class="town-form-grid">
+          <div>
+            <p class="section-label">Start Here</p>
+            <h2 class="town-form-h2">Tell Us About Your<br>Ambler Bathroom Project</h2>
+            <p class="town-form-sub">Fill out the form and we'll be in touch within 5–15 minutes to discuss your project, answer questions, and schedule a free in-home consultation.</p>
+          </div>
+          <div class="town-form-wrap">
+            <p class="town-form-title">Request Your Free Estimate</p>
+            <div data-bb-inquiry data-source="Ambler — Bathroom Remodeling" data-type="service_town" data-source-label="Service Areas" data-service-area="Ambler — Bathroom Remodeling"></div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -850,6 +836,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js"></script>
   <script src="/js/supabase-client.js"></script>
   <script src="/js/inquiry-form.js"></script>
+  <script src="/js/project-carousel.js"></script>
+  <script src="/js/town-reviews.js"></script>
   <script>
     document.querySelectorAll('.town-faq-question').forEach(function(btn){btn.addEventListener('click',function(){var item=this.closest('.town-faq-item');var isOpen=item.classList.contains('open');document.querySelectorAll('.town-faq-item.open').forEach(function(el){el.classList.remove('open');el.querySelector('.town-faq-question').setAttribute('aria-expanded','false')});if(!isOpen){item.classList.add('open');this.setAttribute('aria-expanded','true')}})});
   </script>

@@ -400,7 +400,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     .sa-intro-grid {
       display: grid;
-      grid-template-columns: 55% 1fr;
+      grid-template-columns: 46% 1fr;
       gap: var(--sp-12);
       align-items: start;
       padding-bottom: var(--section-padding-y);
@@ -436,7 +436,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     .sa-intro-body {
       font-family: var(--font-sans);
-      font-size: var(--text-body);
+      font-size: calc(var(--text-body) - 2px);
+      max-width: 520px;
       color: #4B5563;
       line-height: 1.75;
       margin-bottom: var(--sp-4);
@@ -764,7 +765,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       /* 3:4 project thumbnails in the What We Build cards */
     .sa-service-card.has-thumb { grid-template-columns: 150px 1fr !important; }
     .sa-service-thumb { grid-row: 1 / 4; grid-column: 1; width: 150px; aspect-ratio: 3 / 4; object-fit: cover; display: block; border: 1px solid var(--color-gold-border); border-radius: 2px; align-self: start; }
-    @media (max-width: 640px) { .sa-service-card.has-thumb { grid-template-columns: 1fr !important; } .sa-service-thumb { grid-row: auto; width: 120px; margin-bottom: var(--sp-3); } }
+    @media (max-width: 760px) {
+      /* Stacked service cards: thumbnail, title, then body copy */
+      .sa-service-card.has-thumb { display: block !important; padding: var(--sp-6) var(--sp-5) !important; }
+      .sa-service-card.has-thumb > * { grid-column: auto !important; grid-row: auto !important; }
+      .sa-service-thumb { width: 160px; margin: 0 0 var(--sp-4); }
+      .sa-service-card.has-thumb .sa-service-title { margin-bottom: var(--sp-3); }
+      .sa-service-card.has-thumb .sa-service-desc { margin-bottom: var(--sp-4); }
+      /* Lead form: title, copy, then the form, stacked and inside the viewport */
+      .sa-lead-grid { grid-template-columns: 1fr !important; gap: var(--sp-6) !important; max-width: 100% !important; }
+      .sa-lead-box { max-width: 100%; box-sizing: border-box; padding: var(--sp-5) var(--sp-4) !important; overflow: hidden; }
+      .sa-lead-box iframe { width: 100% !important; max-width: 100% !important; }
+      #get-estimate .container { padding-left: var(--sp-4); padding-right: var(--sp-4); }
+    }
+    .sa-intro-grid > .reveal:first-child { max-width: 560px; }
 </style>
 </head>
 <body>
@@ -1181,13 +1195,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- LEAD FORM -->
     <section id="get-estimate" style="padding:var(--section-padding-y) 0;background:var(--color-bg);">
       <div class="container">
-        <div style="display:grid;grid-template-columns:1fr 1fr;gap:var(--sp-10);align-items:start;max-width:var(--grid-max);margin:0 auto;">
+        <div class="sa-lead-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:var(--sp-10);align-items:start;max-width:var(--grid-max);margin:0 auto;">
           <div>
             <p class="section-label" style="color:var(--color-gold);">Start Your Project</p>
             <h2 style="font-family:var(--font-display);font-size:var(--text-h2);font-weight:300;font-style:italic;color:var(--color-white);line-height:var(--leading-tight);margin-bottom:var(--sp-4);">Request a Free Estimate in Ambler</h2>
             <p style="font-family:var(--font-sans);font-size:var(--text-body-lg);font-weight:300;color:var(--color-text);line-height:var(--leading-body);margin-bottom:var(--sp-6);">Tell us about your project and we'll respond within 5–15 minutes.</p>
           </div>
-          <div style="background:#ffffff;border:1px solid #e5e7eb;padding:var(--sp-8);">
+          <div class="sa-lead-box" style="background:#ffffff;border:1px solid #e5e7eb;padding:var(--sp-8);">
             <div data-bb-inquiry data-source="Ambler" data-type="service_area" data-source-label="Service Areas" data-service-area="Ambler"></div>
           </div>
         </div>

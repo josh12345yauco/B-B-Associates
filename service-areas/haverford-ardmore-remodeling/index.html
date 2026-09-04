@@ -122,7 +122,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     /* ── HERO ──────────────────────────────────────────────── */
     .sa-hero { position: relative; min-height: 88vh; display: flex; flex-direction: column; justify-content: flex-end; overflow: hidden; }
     .sa-hero-image { position: absolute; inset: 0; background-size: cover; background-position: center 35%; z-index: 0; }
-    .sa-hero-overlay { position: absolute; inset: 0; background: linear-gradient(to right, rgba(11,27,63,0.97) 0%, rgba(11,27,63,0.88) 42%, rgba(11,27,63,0.52) 68%, rgba(11,27,63,0.15) 100%), linear-gradient(to top, rgba(11,27,63,0.60) 0%, transparent 45%); z-index: 1; }
+    .sa-hero-overlay { position: absolute; inset: 0; background: linear-gradient(to right, rgba(26,28,35,0.97) 0%, rgba(26,28,35,0.88) 42%, rgba(26,28,35,0.52) 68%, rgba(26,28,35,0.15) 100%), linear-gradient(to top, rgba(26,28,35,0.60) 0%, transparent 45%); z-index: 1; }
     .sa-hero-inner { position: relative; z-index: 2; max-width: var(--grid-max); margin: 0 auto; padding: 160px var(--grid-padding) var(--sp-10); width: 100%; }
     .sa-hero-content { max-width: 640px; }
     .sa-hero-breadcrumb { display: flex; align-items: center; gap: var(--sp-2); font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(255,255,255,0.38); margin-bottom: var(--sp-7); }
@@ -130,7 +130,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .sa-hero-breadcrumb a:hover { color: var(--color-gold); }
     .sa-hero-breadcrumb-sep { color: rgba(255,255,255,0.18); }
     .sa-hero-eyebrow { font-family: var(--font-mono); font-size: var(--text-label); letter-spacing: var(--tracking-widest); text-transform: uppercase; color: var(--color-gold); margin-bottom: var(--sp-4); }
-    .sa-hero-h1 { font-family: var(--font-display); font-size: clamp(20px, 2.2vw, 34px); font-weight: 300; line-height: 1.15; color: #ffffff; letter-spacing: -0.01em; margin-bottom: var(--sp-5); }
+    .sa-hero-h1 { font-family: var(--font-display); font-size: clamp(30px, 3.4vw, 42px); font-weight: 300; line-height: 1.15; color: #ffffff; letter-spacing: -0.01em; margin-bottom: var(--sp-5); }
     .sa-hero-divider { width: 44px; height: 1px; background: var(--color-gold); margin-bottom: var(--sp-5); }
     .sa-hero-towns { font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(255,255,255,0.45); margin-bottom: var(--sp-8); line-height: 1.8; }
     .sa-hero-actions { display: flex; gap: var(--sp-4); flex-wrap: wrap; }
@@ -142,7 +142,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     @media (max-width: 640px) { .sa-hero { min-height: 100svh; } .sa-hero-stats { grid-template-columns: repeat(2, 1fr); } .sa-hero-stat:nth-child(2) { border-right: none; } .sa-hero-stat:nth-child(3), .sa-hero-stat:nth-child(4) { border-top: 1px solid rgba(255,255,255,0.07); } }
     /* ── INTRO SECTION ─────────────────────────────────────── */
     .sa-intro-section { background: #FAF8F6; padding: var(--section-padding-y) 0; }
-    .sa-intro-grid { display: grid; grid-template-columns: 1fr 40%; gap: var(--sp-14); align-items: start; }
+    .sa-intro-grid { display: grid; grid-template-columns: 1fr 46%; gap: var(--sp-14); align-items: start; }
     .sa-intro-label { font-family: var(--font-mono); font-size: var(--text-label); letter-spacing: var(--tracking-widest); text-transform: uppercase; color: var(--color-gold); margin-bottom: var(--sp-4); display: block; }
     .sa-intro-h2 { font-family: var(--font-display); font-size: clamp(26px, 3vw, 42px); font-weight: 300; color: #1a1a1a; line-height: 1.2; letter-spacing: -0.01em; margin-bottom: var(--sp-6); }
     .sa-intro-body { font-family: var(--font-sans); font-size: var(--text-body-lg); color: #4B5563; line-height: var(--leading-body); margin-bottom: var(--sp-5); }
@@ -221,7 +221,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       .sa-trust-strip-item:last-child { border-bottom: none; }
       .sa-showroom-band { grid-template-columns: 1fr; gap: var(--sp-5); }
     }
-  </style>
+      /* ── Approved 2026-09 design rollout ── */
+    .sa-intro-grid > .reveal:first-child { max-width: 560px; }
+    .sa-intro-body { font-size: calc(var(--text-body) - 2px) !important; max-width: 520px; }
+    .town-service-thumb { width: 150px; aspect-ratio: 3 / 4; object-fit: cover; display: block; border: 1px solid var(--color-gold-border); border-radius: 2px; margin-bottom: var(--sp-4); }
+    @media (max-width: 760px) { .town-service-thumb { width: 160px; } .town-form-wrap { max-width: 100%; box-sizing: border-box; overflow: hidden; } .town-form-wrap iframe { width: 100% !important; max-width: 100% !important; } }
+</style>
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -256,7 +261,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       "name": "How do I find the best kitchen and bathroom remodeling contractor near me in Haverford or Ardmore?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Look for a licensed, locally established contractor with verifiable reviews and real local projects — not just a national lead-generation listing. B&B Associates has been a kitchen and bathroom remodeling contractor based in Maple Glen since 1999, with 25 years of completed projects across the Main Line. As a design-build remodeler, we handle design, materials, permits, and construction under one roof — so you're not coordinating a separate designer and builder."
+        "text": "Look for a licensed, locally established contractor with verifiable reviews and real local projects — not just a national lead-generation listing. B&B Associates has been a kitchen and bathroom remodeling contractor based in Maple Glen since 2013, with 13 years of completed projects across the Main Line. As a design-build remodeler, we handle design, materials, permits, and construction under one roof — so you're not coordinating a separate designer and builder."
       }
     },
     {
@@ -324,19 +329,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <p class="sa-hero-eyebrow">Philadelphia Main Line</p>
           <div class="headline-reveal">
             <span class="line-wrap"><span class="line-inner">
-              <h1 class="sa-hero-h1">Kitchen & Bathroom Remodeling<br>in Haverford & Ardmore, PA</h1>
+              <h1 class="sa-hero-h1">Kitchen &amp; Bathroom Remodeling &amp; Renovations<br>in Haverford & Ardmore, PA</h1>
             </span></span>
           </div>
           <div class="sa-hero-divider"></div>
           <p class="sa-hero-towns">Haverford · Ardmore · Wynnewood · Lower Merion Township</p>
           <div class="sa-hero-actions">
-            <a href="/contact/" class="phil-btn phil-btn-fill"><div class="phil-fill"></div><span class="phil-label">Free Consultation</span></a>
-            <a href="/contact/#inquiry-form" class="phil-btn phil-btn-fill phil-btn-fill-dark"><div class="phil-fill"></div><span class="phil-label">Inquiry Form</span></a>
+            <a href="#get-estimate" class="phil-btn phil-btn-fill"><div class="phil-fill"></div><span class="phil-label">Inquiry Form</span></a>
           </div>
         </div>
       </div>
       <div class="sa-hero-stats">
-        <div class="sa-hero-stat"><span class="sa-hero-stat-num">25+</span><span class="sa-hero-stat-label">Years Local</span></div>
+        <div class="sa-hero-stat"><span class="sa-hero-stat-num">13+</span><span class="sa-hero-stat-label">Years Local</span></div>
         <div class="sa-hero-stat"><span class="sa-hero-stat-num">600+</span><span class="sa-hero-stat-label">Projects Built</span></div>
         <div class="sa-hero-stat"><span class="sa-hero-stat-num">5.0★</span><span class="sa-hero-stat-label">183 Reviews</span></div>
         <div class="sa-hero-stat"><span class="sa-hero-stat-num">Free</span><span class="sa-hero-stat-label">Consultation</span></div>
@@ -355,7 +359,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <p class="sa-intro-body">Haverford and Ardmore sit at the heart of the Main Line — a community known for its distinguished older homes, walkable neighborhoods, and discerning homeowners.</p>
             <p class="sa-intro-body">B&B Associates brings the design-build process that Main Line clients expect: one team, one contract, direct accountability from concept through completion.</p>
             <div style="display:flex;gap:var(--sp-4);flex-wrap:wrap;">
-              <a href="/contact/" class="phil-btn phil-btn-fill phil-btn-fill-dark"><div class="phil-fill"></div><span class="phil-label">Schedule Consultation</span></a>
+              <a href="#get-estimate" class="phil-btn phil-btn-fill phil-btn-fill-dark"><div class="phil-fill"></div><span class="phil-label">Request an Estimate</span></a>
               <a href="/portfolio/" class="phil-btn phil-btn-fill phil-btn-fill-dark"><div class="phil-fill"></div><span class="phil-label">View Portfolio</span></a>
             </div>
           </div>
@@ -372,8 +376,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>
             </div>
             <div>
-              <p class="sa-trust-strip-title">25+ Years Local</p>
-              <p class="sa-trust-strip-body">Locally owned, family operated since 1999</p>
+              <p class="sa-trust-strip-title">13+ Years Local</p>
+              <p class="sa-trust-strip-body">Locally owned, family operated since 2013</p>
             </div>
           </div>
           <div class="sa-trust-strip-item">
@@ -396,15 +400,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </div>
         </div>
       </div>
-      <!-- Showroom band -->
-      <div class="sa-showroom-band reveal">
-        <div>
-          <p class="sa-showroom-band-eyebrow">Coming Winter 2026/2027</p>
-          <h3 class="sa-showroom-band-title">See It Before You Build It</h3>
-          <a href="/showroom/" class="phil-btn phil-btn-fill"><div class="phil-fill"></div><span class="phil-label">Join the Invite List</span></a>
-        </div>
-        <p class="sa-showroom-band-body">Our Ambler design showroom opens Winter 2026. Walk through tile walls, countertop slabs, cabinetry door styles, and hardware finishes from 60+ supplier partners — and see the difference before you decide.</p>
-      </div>
+      <!-- Portfolio carousel (replaces showroom band) -->
+      <div data-bb-carousel data-eyebrow="From Our Portfolio" data-title="Recent Kitchens &amp; Bathrooms Near Haverford &amp; Ardmore"></div>
     </section>
 
     <section class="town-services">
@@ -413,6 +410,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <h2 style="font-family:var(--font-display);font-size:var(--text-h2);font-weight:300;font-style:italic;color:#1a1a1a;line-height:var(--leading-tight);margin-bottom:var(--sp-3);">Remodeling Services for<br>Haverford & Ardmore Homeowners</h2>
         <div class="town-services-grid">
           <div class="town-service-card">
+            <img class="town-service-thumb" src="/portfolio/KITCHENS/B&amp;B - Prager-kitchen/6D9E26B3-82C7-4C72-880A-373543ECEFDA.jpeg" alt="Real B&amp;B Associates project — Kitchen Remodeling" loading="lazy" width="450" height="600">
             <h3 class="town-service-h3">Kitchen Remodeling</h3>
             <p class="town-service-body">Luxury kitchen renovations for Haverford, Ardmore, and Lower Merion Township homes — custom cabinetry, rare stone countertops, professional-grade appliances, and design-build execution matched to Main Line standards.</p>
             <ul class="town-service-list">
@@ -425,6 +423,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div class="town-service-range">Investment: $55K – $180K+</div>
           </div>
           <div class="town-service-card">
+            <img class="town-service-thumb" src="/portfolio/BATHROOMS/B&amp;B - LaShannon Master bathroom/09DCC4C5-5F51-4A82-9C78-AB97A237A844.jpeg" alt="Real B&amp;B Associates project — Bathroom Renovation" loading="lazy" width="450" height="600">
             <h3 class="town-service-h3">Bathroom Renovation</h3>
             <p class="town-service-body">Master suites, hall baths, and powder rooms — hand-laid tile, heated floors, frameless glass, custom vanity millwork, and luxury fixtures. Permitted and coordinated through Lower Merion Township.</p>
             <ul class="town-service-list">
@@ -435,6 +434,46 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <li>Waterworks, Kohler, Kallista & luxury fixture packages</li>
             </ul>
             <div class="town-service-range">Investment: $40K – $120K+</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- REVIEWS (shared block, 4 at a time) -->
+    <section class="section" style="background:#FAF8F6;padding:var(--section-padding-y) 0;" aria-label="Client reviews">
+      <div class="container">
+        <p class="section-label" style="display:block;text-align:center;margin-bottom:var(--sp-7);color:var(--color-gold);">From Our Neighbors</p>
+        <div data-bb-reviews data-initial="4" data-step="4"></div>
+      </div>
+    </section>
+
+    <section class="town-faq">
+      <div class="container">
+        <p class="section-label" style="color:var(--color-gold);">Questions</p>
+        <h2 class="town-faq-h2">Common Questions from Haverford & Ardmore Homeowners</h2>
+        <div>
+          <div class="town-faq-item">
+            <button class="town-faq-question" aria-expanded="false">Do you serve Wynnewood and all of Lower Merion Township?<span class="town-faq-icon" aria-hidden="true"></span></button>
+            <div class="town-faq-answer" role="region"><div class="town-faq-answer-inner">Yes — Haverford, Ardmore, Wynnewood, Narberth, and all communities within Lower Merion Township are within our Main Line service area. We're based in Maple Glen, approximately 32 minutes away, and we regularly work throughout this area on kitchen and bathroom renovations.</div></div>
+          </div>
+          <div class="town-faq-item">
+            <button class="town-faq-question" aria-expanded="false">Do you handle permits through Lower Merion Township?<span class="town-faq-icon" aria-hidden="true"></span></button>
+            <div class="town-faq-answer" role="region"><div class="town-faq-answer-inner">Yes — all permit applications and inspection coordination with Lower Merion Township are managed by our team as a standard part of every project. Lower Merion has detailed code requirements for renovation work, and our team has extensive experience navigating them efficiently. You won't need to interact with the township directly.</div></div>
+          </div>
+          <div class="town-faq-item">
+            <button class="town-faq-question" aria-expanded="false">What does a kitchen remodel cost in Haverford or Ardmore?<span class="town-faq-icon" aria-hidden="true"></span></button>
+            <div class="town-faq-answer" role="region"><div class="town-faq-answer-inner">Kitchen renovations in Haverford and Ardmore typically range from $55,000–$180,000+ depending on scope, materials, and the specific characteristics of your home. We provide a detailed, line-item estimate — covering every cost — before any contract is signed.</div></div>
+          </div>
+          <div class="town-faq-item">
+            <button class="town-faq-question" aria-expanded="false">How do I find the best kitchen and bathroom remodeling contractor near me in Haverford or Ardmore?<span class="town-faq-icon" aria-hidden="true"></span></button>
+            <div class="town-faq-answer" role="region"><div class="town-faq-answer-inner">Look for a licensed, locally established contractor with verifiable reviews and real local projects — not just a national lead-generation listing. B&amp;B Associates has been a kitchen and bathroom remodeling contractor based in Maple Glen since 2013, with 13 years of completed projects across the Main Line. As a design-build remodeler, we handle design, materials, permits, and construction under one roof — so you're not coordinating a separate designer and builder.</div></div>
+          </div>
+          <div class="town-faq-item">
+            <button class="town-faq-question" aria-expanded="false">How much does a bathroom remodel cost in Haverford or Ardmore?<span class="town-faq-icon" aria-hidden="true"></span></button>
+            <div class="town-faq-answer" role="region"><div class="town-faq-answer-inner">Bathroom renovations in the Haverford and Ardmore area generally range from $20,000 to $85,000+, with master and spa-style baths at the higher end and hall, guest, or powder rooms lower. You receive a fully itemized, line-item estimate before any work begins, and a free in-home consultation is the best way to get an accurate bathroom remodel cost for your space.</div></div>
+          </div>
+          <div class="town-faq-item">
+            <button class="town-faq-question" aria-expanded="false">How long does a kitchen or bathroom remodel take in Haverford or Ardmore?<span class="town-faq-icon" aria-hidden="true"></span></button>
+            <div class="town-faq-answer" role="region"><div class="town-faq-answer-inner">Plan for roughly 12–20 weeks start to finish for a full kitchen — including design, permitting, and 4–10 weeks of on-site construction — and about 5–7 weeks of construction for most bathrooms. Older homes can add time if wiring, plumbing, or structural conditions surface during demolition, which is why we assess thoroughly before committing to a schedule.</div></div>
           </div>
         </div>
       </div>
@@ -458,49 +497,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div data-bb-inquiry data-source="Haverford &amp; Ardmore" data-type="service_area" data-source-label="Service Areas" data-service-area="Haverford &amp; Ardmore"></div>
           </div>
         </div>
-      </div>
-    </section>
-
-    <section class="town-faq">
-      <div class="container">
-        <p class="section-label" style="color:var(--color-gold);">Questions</p>
-        <h2 class="town-faq-h2">Common Questions from Haverford & Ardmore Homeowners</h2>
-        <div>
-          <div class="town-faq-item">
-            <button class="town-faq-question" aria-expanded="false">Do you serve Wynnewood and all of Lower Merion Township?<span class="town-faq-icon" aria-hidden="true"></span></button>
-            <div class="town-faq-answer" role="region"><div class="town-faq-answer-inner">Yes — Haverford, Ardmore, Wynnewood, Narberth, and all communities within Lower Merion Township are within our Main Line service area. We're based in Maple Glen, approximately 32 minutes away, and we regularly work throughout this area on kitchen and bathroom renovations.</div></div>
-          </div>
-          <div class="town-faq-item">
-            <button class="town-faq-question" aria-expanded="false">Do you handle permits through Lower Merion Township?<span class="town-faq-icon" aria-hidden="true"></span></button>
-            <div class="town-faq-answer" role="region"><div class="town-faq-answer-inner">Yes — all permit applications and inspection coordination with Lower Merion Township are managed by our team as a standard part of every project. Lower Merion has detailed code requirements for renovation work, and our team has extensive experience navigating them efficiently. You won't need to interact with the township directly.</div></div>
-          </div>
-          <div class="town-faq-item">
-            <button class="town-faq-question" aria-expanded="false">What does a kitchen remodel cost in Haverford or Ardmore?<span class="town-faq-icon" aria-hidden="true"></span></button>
-            <div class="town-faq-answer" role="region"><div class="town-faq-answer-inner">Kitchen renovations in Haverford and Ardmore typically range from $55,000–$180,000+ depending on scope, materials, and the specific characteristics of your home. We provide a detailed, line-item estimate — covering every cost — before any contract is signed.</div></div>
-          </div>
-          <div class="town-faq-item">
-            <button class="town-faq-question" aria-expanded="false">How do I find the best kitchen and bathroom remodeling contractor near me in Haverford or Ardmore?<span class="town-faq-icon" aria-hidden="true"></span></button>
-            <div class="town-faq-answer" role="region"><div class="town-faq-answer-inner">Look for a licensed, locally established contractor with verifiable reviews and real local projects — not just a national lead-generation listing. B&amp;B Associates has been a kitchen and bathroom remodeling contractor based in Maple Glen since 1999, with 25 years of completed projects across the Main Line. As a design-build remodeler, we handle design, materials, permits, and construction under one roof — so you're not coordinating a separate designer and builder.</div></div>
-          </div>
-          <div class="town-faq-item">
-            <button class="town-faq-question" aria-expanded="false">How much does a bathroom remodel cost in Haverford or Ardmore?<span class="town-faq-icon" aria-hidden="true"></span></button>
-            <div class="town-faq-answer" role="region"><div class="town-faq-answer-inner">Bathroom renovations in the Haverford and Ardmore area generally range from $20,000 to $85,000+, with master and spa-style baths at the higher end and hall, guest, or powder rooms lower. You receive a fully itemized, line-item estimate before any work begins, and a free in-home consultation is the best way to get an accurate bathroom remodel cost for your space.</div></div>
-          </div>
-          <div class="town-faq-item">
-            <button class="town-faq-question" aria-expanded="false">How long does a kitchen or bathroom remodel take in Haverford or Ardmore?<span class="town-faq-icon" aria-hidden="true"></span></button>
-            <div class="town-faq-answer" role="region"><div class="town-faq-answer-inner">Plan for roughly 12–20 weeks start to finish for a full kitchen — including design, permitting, and 4–10 weeks of on-site construction — and about 5–7 weeks of construction for most bathrooms. Older homes can add time if wiring, plumbing, or structural conditions surface during demolition, which is why we assess thoroughly before committing to a schedule.</div></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="cta-panel">
-      <p class="section-label">Start Today</p>
-      <div class="headline-reveal"><span class="line-wrap"><span class="line-inner"><h2 class="cta-panel-title">Ready for Your Free Consultation?</h2></span></span></div>
-      <p class="cta-panel-body">We'll come to your Haverford or Ardmore home, review the space, and walk you through what's possible — at no cost and no obligation.</p>
-      <div class="cta-panel-actions">
-        <a href="#get-estimate" class="phil-btn phil-btn-fill"><div class="phil-fill"></div><span class="phil-label">Get a Free Estimate →</span></a>
-        <span class="cta-panel-secondary">or call <a href="tel:+12674028758">267-402-8758</a></span>
       </div>
     </section>
 
@@ -555,6 +551,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js"></script>
   <script src="/js/supabase-client.js"></script>
   <script src="/js/inquiry-form.js"></script>
+  <script src="/js/project-carousel.js"></script>
+  <script src="/js/town-reviews.js"></script>
   <script>
     document.querySelectorAll('.town-faq-question').forEach(function(btn){btn.addEventListener('click',function(){var item=this.closest('.town-faq-item');var isOpen=item.classList.contains('open');document.querySelectorAll('.town-faq-item.open').forEach(function(el){el.classList.remove('open');el.querySelector('.town-faq-question').setAttribute('aria-expanded','false')});if(!isOpen){item.classList.add('open');this.setAttribute('aria-expanded','true')}})});
   </script>

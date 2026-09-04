@@ -139,8 +139,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       position: absolute;
       inset: 0;
       background:
-        linear-gradient(to right, rgba(11,27,63,0.97) 0%, rgba(11,27,63,0.88) 42%, rgba(11,27,63,0.52) 68%, rgba(11,27,63,0.15) 100%),
-        linear-gradient(to top, rgba(11,27,63,0.60) 0%, transparent 45%);
+        linear-gradient(to right, rgba(26,28,35,0.97) 0%, rgba(26,28,35,0.88) 42%, rgba(26,28,35,0.52) 68%, rgba(26,28,35,0.15) 100%),
+        linear-gradient(to top, rgba(26,28,35,0.60) 0%, transparent 45%);
       z-index: 1;
     }
     .sa-hero-inner {
@@ -176,7 +176,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
     .sa-hero-h1 {
       font-family: var(--font-display);
-      font-size: clamp(20px, 2.2vw, 34px);
+      font-size: clamp(30px, 3.4vw, 42px);
       font-weight: 300;
       line-height: 1.15;
       color: #ffffff;
@@ -251,7 +251,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .sa-intro-section { background: #FAF8F6; padding: var(--section-padding-y) 0; }
     .sa-intro-grid {
       display: grid;
-      grid-template-columns: 1fr 40%;
+      grid-template-columns: 1fr 46%;
       gap: var(--sp-14);
       align-items: start;
     }
@@ -431,7 +431,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       .sa-trust-strip-item:last-child { border-bottom: none; }
       .sa-showroom-band { grid-template-columns: 1fr; gap: var(--sp-5); }
     }
-  </style>
+      /* ── Approved 2026-09 design rollout ── */
+    .sa-intro-grid > .reveal:first-child { max-width: 560px; }
+    .sa-intro-body { font-size: calc(var(--text-body) - 2px) !important; max-width: 520px; }
+    .town-service-thumb { width: 150px; aspect-ratio: 3 / 4; object-fit: cover; display: block; border: 1px solid var(--color-gold-border); border-radius: 2px; margin-bottom: var(--sp-4); }
+    @media (max-width: 760px) { .town-service-thumb { width: 160px; } .town-form-wrap { max-width: 100%; box-sizing: border-box; overflow: hidden; } .town-form-wrap iframe { width: 100% !important; max-width: 100% !important; } }
+</style>
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -466,7 +471,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       "name": "How do I find the best kitchen and bathroom remodeling contractor near me in Chalfont, PA?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Look for a licensed, locally established contractor with verifiable reviews and real local projects — not just a national lead-generation listing. B&B Associates has been a kitchen and bathroom remodeling contractor based in Maple Glen since 1999, with 25 years of completed projects across Bucks County. As a design-build remodeler, we handle design, materials, permits, and construction under one roof — so you're not coordinating a separate designer and builder."
+        "text": "Look for a licensed, locally established contractor with verifiable reviews and real local projects — not just a national lead-generation listing. B&B Associates has been a kitchen and bathroom remodeling contractor based in Maple Glen since 2013, with 13 years of completed projects across Bucks County. As a design-build remodeler, we handle design, materials, permits, and construction under one roof — so you're not coordinating a separate designer and builder."
       }
     },
     {
@@ -534,19 +539,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <p class="sa-hero-eyebrow">Bucks County, PA</p>
           <div class="headline-reveal">
             <span class="line-wrap"><span class="line-inner">
-              <h1 class="sa-hero-h1">Kitchen & Bathroom Remodeling<br>in Chalfont, PA</h1>
+              <h1 class="sa-hero-h1">Kitchen &amp; Bathroom Remodeling &amp; Renovations<br>in Chalfont, PA</h1>
             </span></span>
           </div>
           <div class="sa-hero-divider"></div>
           <p class="sa-hero-towns">Chalfont · New Britain Township · Butler Avenue · North Wales</p>
           <div class="sa-hero-actions">
-            <a href="/contact/" class="phil-btn phil-btn-fill"><div class="phil-fill"></div><span class="phil-label">Free Consultation</span></a>
-            <a href="/contact/#inquiry-form" class="phil-btn phil-btn-fill phil-btn-fill-dark"><div class="phil-fill"></div><span class="phil-label">Inquiry Form</span></a>
+            <a href="#get-estimate" class="phil-btn phil-btn-fill"><div class="phil-fill"></div><span class="phil-label">Inquiry Form</span></a>
           </div>
         </div>
       </div>
       <div class="sa-hero-stats">
-        <div class="sa-hero-stat"><span class="sa-hero-stat-num">25+</span><span class="sa-hero-stat-label">Years Local</span></div>
+        <div class="sa-hero-stat"><span class="sa-hero-stat-num">13+</span><span class="sa-hero-stat-label">Years Local</span></div>
         <div class="sa-hero-stat"><span class="sa-hero-stat-num">600+</span><span class="sa-hero-stat-label">Projects Built</span></div>
         <div class="sa-hero-stat"><span class="sa-hero-stat-num">5.0★</span><span class="sa-hero-stat-label">183 Reviews</span></div>
         <div class="sa-hero-stat"><span class="sa-hero-stat-num">Free</span><span class="sa-hero-stat-label">Consultation</span></div>
@@ -565,7 +569,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <p class="sa-intro-body">Chalfont Borough and New Britain Township occupy a prime position in central Bucks County — with excellent schools, convenient access to the Route 202 corridor, and a well-established base of homeowners invested in their properties.</p>
             <p class="sa-intro-body">From the Victorian-era homes in Chalfont Borough to the spacious colonials throughout New Britain Township, we design kitchens and bathrooms that honor the character of these homes while meeting modern expectations for function, efficiency, and luxury.</p>
             <div style="display:flex;gap:var(--sp-4);flex-wrap:wrap;">
-              <a href="/contact/" class="phil-btn phil-btn-fill phil-btn-fill-dark"><div class="phil-fill"></div><span class="phil-label">Schedule Consultation</span></a>
+              <a href="#get-estimate" class="phil-btn phil-btn-fill phil-btn-fill-dark"><div class="phil-fill"></div><span class="phil-label">Request an Estimate</span></a>
               <a href="/portfolio/" class="phil-btn phil-btn-fill phil-btn-fill-dark"><div class="phil-fill"></div><span class="phil-label">View Portfolio</span></a>
             </div>
           </div>
@@ -582,8 +586,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>
             </div>
             <div>
-              <p class="sa-trust-strip-title">25+ Years Local</p>
-              <p class="sa-trust-strip-body">Locally owned, family operated since 1999</p>
+              <p class="sa-trust-strip-title">13+ Years Local</p>
+              <p class="sa-trust-strip-body">Locally owned, family operated since 2013</p>
             </div>
           </div>
           <div class="sa-trust-strip-item">
@@ -606,15 +610,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </div>
         </div>
       </div>
-      <!-- Showroom band -->
-      <div class="sa-showroom-band reveal">
-        <div>
-          <p class="sa-showroom-band-eyebrow">Coming Winter 2026/2027</p>
-          <h3 class="sa-showroom-band-title">See It Before You Build It</h3>
-          <a href="/showroom/" class="phil-btn phil-btn-fill"><div class="phil-fill"></div><span class="phil-label">Join the Invite List</span></a>
-        </div>
-        <p class="sa-showroom-band-body">Our Ambler design showroom opens Winter 2026. Walk through tile walls, countertop slabs, cabinetry door styles, and hardware finishes from 60+ supplier partners — and see the difference before you decide.</p>
-      </div>
+      <!-- Portfolio carousel (replaces showroom band) -->
+      <div data-bb-carousel data-eyebrow="From Our Portfolio" data-title="Recent Kitchens &amp; Bathrooms Near Chalfont"></div>
     </section>
 
     <section class="town-services">
@@ -623,6 +620,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <h2 style="font-family:var(--font-display);font-size:var(--text-h2);font-weight:300;font-style:italic;color:#1a1a1a;line-height:var(--leading-tight);margin-bottom:var(--sp-3);">Remodeling Services for<br>Chalfont Homeowners</h2>
         <div class="town-services-grid">
           <div class="town-service-card">
+            <img class="town-service-thumb" src="/portfolio/KITCHENS/BB-OLaughlin-kitchen/06BCD805-17A2-4A11-B4B7-6215BA68270F.jpeg" alt="Real B&amp;B Associates project — Kitchen Remodeling" loading="lazy" width="450" height="600">
             <h3 class="town-service-h3">Kitchen Remodeling</h3>
             <p class="town-service-body">Complete kitchen renovations for Chalfont and New Britain Township homes — custom cabinetry, premium stone, open-concept reconfigurations, and full project management through permit closeout.</p>
             <ul class="town-service-list">
@@ -635,6 +633,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div class="town-service-range">Investment: $45K – $150K+</div>
           </div>
           <div class="town-service-card">
+            <img class="town-service-thumb" src="/portfolio/BATHROOMS/B&amp;B - Guttridge -bathroom/IMG_6078.jpg" alt="Real B&amp;B Associates project — Bathroom Renovation" loading="lazy" width="450" height="600">
             <h3 class="town-service-h3">Bathroom Renovation</h3>
             <p class="town-service-body">Master baths, hall baths, and powder rooms — custom tile and stone, heated floors, frameless glass enclosures, and premium fixtures. Fully permitted and inspected.</p>
             <ul class="town-service-list">
@@ -645,6 +644,46 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <li>Premium plumbing fixture packages</li>
             </ul>
             <div class="town-service-range">Investment: $25K – $90K+</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- REVIEWS (shared block, 4 at a time) -->
+    <section class="section" style="background:#FAF8F6;padding:var(--section-padding-y) 0;" aria-label="Client reviews">
+      <div class="container">
+        <p class="section-label" style="display:block;text-align:center;margin-bottom:var(--sp-7);color:var(--color-gold);">From Our Neighbors</p>
+        <div data-bb-reviews data-initial="4" data-step="4"></div>
+      </div>
+    </section>
+
+    <section class="town-faq">
+      <div class="container">
+        <p class="section-label" style="color:var(--color-gold);">Questions</p>
+        <h2 class="town-faq-h2">Common Questions from Chalfont Homeowners</h2>
+        <div>
+          <div class="town-faq-item">
+            <button class="town-faq-question" aria-expanded="false">Do you serve both Chalfont Borough and New Britain Township?<span class="town-faq-icon" aria-hidden="true"></span></button>
+            <div class="town-faq-answer" role="region"><div class="town-faq-answer-inner">Yes — both Chalfont Borough and New Britain Township are within our central Bucks County service area. We're based in Maple Glen, approximately 20 minutes away, and we've completed projects throughout this area including homes along Butler Avenue and in the surrounding residential communities.</div></div>
+          </div>
+          <div class="town-faq-item">
+            <button class="town-faq-question" aria-expanded="false">Do you pull permits through Chalfont Borough?<span class="town-faq-icon" aria-hidden="true"></span></button>
+            <div class="town-faq-answer" role="region"><div class="town-faq-answer-inner">Yes — we handle all permit applications and inspections with Chalfont Borough for borough projects, and with New Britain Township for township projects. Permit management is included in our standard scope at no additional charge.</div></div>
+          </div>
+          <div class="town-faq-item">
+            <button class="town-faq-question" aria-expanded="false">What's the typical cost for a kitchen remodel in Chalfont?<span class="town-faq-icon" aria-hidden="true"></span></button>
+            <div class="town-faq-answer" role="region"><div class="town-faq-answer-inner">Kitchen renovations in the Chalfont area typically range from $45,000–$150,000+ depending on scope, layout changes, and material selections. We provide a detailed, line-item estimate before any contract is signed — every cost itemized and explained.</div></div>
+          </div>
+          <div class="town-faq-item">
+            <button class="town-faq-question" aria-expanded="false">How do I find the best kitchen and bathroom remodeling contractor near me in Chalfont, PA?<span class="town-faq-icon" aria-hidden="true"></span></button>
+            <div class="town-faq-answer" role="region"><div class="town-faq-answer-inner">Look for a licensed, locally established contractor with verifiable reviews and real local projects — not just a national lead-generation listing. B&amp;B Associates has been a kitchen and bathroom remodeling contractor based in Maple Glen since 2013, with 13 years of completed projects across Bucks County. As a design-build remodeler, we handle design, materials, permits, and construction under one roof — so you're not coordinating a separate designer and builder.</div></div>
+          </div>
+          <div class="town-faq-item">
+            <button class="town-faq-question" aria-expanded="false">How much does a bathroom remodel cost in Chalfont, PA?<span class="town-faq-icon" aria-hidden="true"></span></button>
+            <div class="town-faq-answer" role="region"><div class="town-faq-answer-inner">Bathroom renovations in the Chalfont area generally range from $20,000 to $85,000+, with master and spa-style baths at the higher end and hall, guest, or powder rooms lower. You receive a fully itemized, line-item estimate before any work begins, and a free in-home consultation is the best way to get an accurate bathroom remodel cost for your space.</div></div>
+          </div>
+          <div class="town-faq-item">
+            <button class="town-faq-question" aria-expanded="false">How long does a kitchen or bathroom remodel take in Chalfont, PA?<span class="town-faq-icon" aria-hidden="true"></span></button>
+            <div class="town-faq-answer" role="region"><div class="town-faq-answer-inner">Plan for roughly 12–20 weeks start to finish for a full kitchen — including design, permitting, and 4–10 weeks of on-site construction — and about 5–7 weeks of construction for most bathrooms. Older homes can add time if wiring, plumbing, or structural conditions surface during demolition, which is why we assess thoroughly before committing to a schedule.</div></div>
           </div>
         </div>
       </div>
@@ -671,49 +710,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
     </section>
 
-    <section class="town-faq">
-      <div class="container">
-        <p class="section-label" style="color:var(--color-gold);">Questions</p>
-        <h2 class="town-faq-h2">Common Questions from Chalfont Homeowners</h2>
-        <div>
-          <div class="town-faq-item">
-            <button class="town-faq-question" aria-expanded="false">Do you serve both Chalfont Borough and New Britain Township?<span class="town-faq-icon" aria-hidden="true"></span></button>
-            <div class="town-faq-answer" role="region"><div class="town-faq-answer-inner">Yes — both Chalfont Borough and New Britain Township are within our central Bucks County service area. We're based in Maple Glen, approximately 20 minutes away, and we've completed projects throughout this area including homes along Butler Avenue and in the surrounding residential communities.</div></div>
-          </div>
-          <div class="town-faq-item">
-            <button class="town-faq-question" aria-expanded="false">Do you pull permits through Chalfont Borough?<span class="town-faq-icon" aria-hidden="true"></span></button>
-            <div class="town-faq-answer" role="region"><div class="town-faq-answer-inner">Yes — we handle all permit applications and inspections with Chalfont Borough for borough projects, and with New Britain Township for township projects. Permit management is included in our standard scope at no additional charge.</div></div>
-          </div>
-          <div class="town-faq-item">
-            <button class="town-faq-question" aria-expanded="false">What's the typical cost for a kitchen remodel in Chalfont?<span class="town-faq-icon" aria-hidden="true"></span></button>
-            <div class="town-faq-answer" role="region"><div class="town-faq-answer-inner">Kitchen renovations in the Chalfont area typically range from $45,000–$150,000+ depending on scope, layout changes, and material selections. We provide a detailed, line-item estimate before any contract is signed — every cost itemized and explained.</div></div>
-          </div>
-          <div class="town-faq-item">
-            <button class="town-faq-question" aria-expanded="false">How do I find the best kitchen and bathroom remodeling contractor near me in Chalfont, PA?<span class="town-faq-icon" aria-hidden="true"></span></button>
-            <div class="town-faq-answer" role="region"><div class="town-faq-answer-inner">Look for a licensed, locally established contractor with verifiable reviews and real local projects — not just a national lead-generation listing. B&amp;B Associates has been a kitchen and bathroom remodeling contractor based in Maple Glen since 1999, with 25 years of completed projects across Bucks County. As a design-build remodeler, we handle design, materials, permits, and construction under one roof — so you're not coordinating a separate designer and builder.</div></div>
-          </div>
-          <div class="town-faq-item">
-            <button class="town-faq-question" aria-expanded="false">How much does a bathroom remodel cost in Chalfont, PA?<span class="town-faq-icon" aria-hidden="true"></span></button>
-            <div class="town-faq-answer" role="region"><div class="town-faq-answer-inner">Bathroom renovations in the Chalfont area generally range from $20,000 to $85,000+, with master and spa-style baths at the higher end and hall, guest, or powder rooms lower. You receive a fully itemized, line-item estimate before any work begins, and a free in-home consultation is the best way to get an accurate bathroom remodel cost for your space.</div></div>
-          </div>
-          <div class="town-faq-item">
-            <button class="town-faq-question" aria-expanded="false">How long does a kitchen or bathroom remodel take in Chalfont, PA?<span class="town-faq-icon" aria-hidden="true"></span></button>
-            <div class="town-faq-answer" role="region"><div class="town-faq-answer-inner">Plan for roughly 12–20 weeks start to finish for a full kitchen — including design, permitting, and 4–10 weeks of on-site construction — and about 5–7 weeks of construction for most bathrooms. Older homes can add time if wiring, plumbing, or structural conditions surface during demolition, which is why we assess thoroughly before committing to a schedule.</div></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="cta-panel">
-      <p class="section-label">Start Today</p>
-      <div class="headline-reveal"><span class="line-wrap"><span class="line-inner"><h2 class="cta-panel-title">Ready for Your Free Consultation?</h2></span></span></div>
-      <p class="cta-panel-body">We'll come to your Chalfont home, review the space, and walk you through what's possible — at no cost and no obligation.</p>
-      <div class="cta-panel-actions">
-        <a href="#get-estimate" class="phil-btn phil-btn-fill"><div class="phil-fill"></div><span class="phil-label">Get a Free Estimate →</span></a>
-        <span class="cta-panel-secondary">or call <a href="tel:+12674028758">267-402-8758</a></span>
-      </div>
-    </section>
-  
     <section style="padding:var(--section-padding-y) 0;background:var(--color-bg);" aria-label="Nearby communities">
       <div class="container" style="max-width:1100px;margin:0 auto;padding:0 var(--sp-5);text-align:center;">
         <p class="eyebrow" style="margin-bottom:var(--sp-3);">Also Serving Nearby Bucks County Communities</p>
@@ -765,6 +761,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js"></script>
   <script src="/js/supabase-client.js"></script>
   <script src="/js/inquiry-form.js"></script>
+  <script src="/js/project-carousel.js"></script>
+  <script src="/js/town-reviews.js"></script>
   <script>
     document.querySelectorAll('.town-faq-question').forEach(function(btn){btn.addEventListener('click',function(){var item=this.closest('.town-faq-item');var isOpen=item.classList.contains('open');document.querySelectorAll('.town-faq-item.open').forEach(function(el){el.classList.remove('open');el.querySelector('.town-faq-question').setAttribute('aria-expanded','false')});if(!isOpen){item.classList.add('open');this.setAttribute('aria-expanded','true')}})});
   </script>
