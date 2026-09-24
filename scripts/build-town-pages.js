@@ -114,8 +114,10 @@ function businessSchema(town) {
       "https://www.facebook.com/bbassociatescreations",
       "https://www.tiktok.com/@bb.associates",
       "https://www.houzz.com/professionals/home-builders/bandb-associates-pfvwus-pf~1637622775",
-      "https://www.angi.com/companylist/us/pa/ambler/bandb-associates-creations%2C-llc-reviews-10836841.htm"
+      "https://www.angi.com/companylist/us/pa/ambler/bandb-associates-creations%2C-llc-reviews-10836841.htm",
+      "https://www.homeadvisor.com/rated.BandBAssociatesCo.39127744.html"
     ],
+    "knowsAbout": ["Kitchen remodeling", "Bathroom remodeling", "Custom cabinetry", "Tile installation", "Walk-in showers", "Design-build remodeling", "Kitchen design", "Countertop installation", "Home remodeling permits in Montgomery County and Bucks County, PA"],
     "areaServed": { "@type": "City", "name": town.displayName, "containedInPlace": { "@type": "State", "name": "Pennsylvania" } },
     "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5.0", "reviewCount": "183", "bestRating": "5" }
   };
@@ -354,7 +356,7 @@ ${nav()}
         </div>
       </div>
       <div class="sa-hero-stats">
-        <div class="sa-hero-stat"><span class="sa-hero-stat-num">25+</span><span class="sa-hero-stat-label">Years Local</span></div>
+        <div class="sa-hero-stat"><span class="sa-hero-stat-num">13+</span><span class="sa-hero-stat-label">Years Local</span></div>
         <div class="sa-hero-stat"><span class="sa-hero-stat-num">5.0★</span><span class="sa-hero-stat-label">183 Reviews</span></div>
         <div class="sa-hero-stat"><span class="sa-hero-stat-num">60+</span><span class="sa-hero-stat-label">Supplier Partners</span></div>
         <div class="sa-hero-stat"><span class="sa-hero-stat-num">Free</span><span class="sa-hero-stat-label">Consultation</span></div>
