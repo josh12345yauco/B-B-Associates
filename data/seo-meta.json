@@ -1,0 +1,109 @@
+{
+  "_readme": "Hand-built page titles + meta descriptions applied by scripts/apply-seo-meta.py (A1, 2026-09-24). Titles ≤70 chars, descriptions 120–165 chars. Generated service×town pages get theirs from data/services.json.",
+  "pages": {
+    "service-areas/ambler-pa-remodeling-contractor": {
+      "title": "Ambler, PA Kitchen & Bathroom Remodeler | B&B Associates",
+      "description": "Family-owned kitchen and bathroom remodeler based in Ambler, PA. Design-build, tile showers, custom cabinetry, permits handled. 5.0★ reviews. Free consultation."
+    },
+    "service-areas/berwyn-pa-remodeling": {
+      "title": "Berwyn, PA Kitchen & Bathroom Remodeling | B&B Associates",
+      "description": "Kitchen and bathroom remodeling in Berwyn and Devon, PA: custom vanities, cabinetry, tile showers and design-build renovations. 5.0★ reviews. Free consultation."
+    },
+    "service-areas/blue-bell-north-wales-remodeling": {
+      "title": "Blue Bell & North Wales Kitchen & Bathroom Remodeling | B&B Associates",
+      "description": "Kitchen design-build and bathroom remodeling in Blue Bell and North Wales, PA, minutes from our office. Custom cabinetry, tile showers, permits handled. 5.0★."
+    },
+    "service-areas/bryn-mawr-pa-remodeling": {
+      "title": "Bryn Mawr Kitchen & Bathroom Design-Build Remodeling | B&B Associates",
+      "description": "Design-build kitchen and bathroom remodeling for Bryn Mawr and Main Line homes. Custom vanities, cabinetry, tile work, itemized estimates. 5.0★ reviews."
+    },
+    "service-areas/buckingham-pa-remodeling": {
+      "title": "Buckingham, PA Bathroom & Kitchen Remodeling | B&B Associates",
+      "description": "Bathroom and kitchen remodeling in Buckingham Township, PA: tile showers, bathroom cabinetry, custom countertops, design-build kitchens. 5.0★ reviews."
+    },
+    "service-areas/bucks-county": {
+      "title": "Bucks County, PA Luxury Kitchen & Bathroom Remodeling | B&B Associates",
+      "description": "Luxury kitchen and bathroom remodeling across Bucks County: Doylestown, New Hope, Newtown, Yardley, Warrington, Chalfont. Permits handled. 5.0★ reviews."
+    },
+    "service-areas/chalfont-pa-remodeling": {
+      "title": "Chalfont, PA Kitchen & Bathroom Remodeling Company | B&B Associates",
+      "description": "Kitchen and bathroom remodeling company serving Chalfont and New Britain, PA. Custom cabinets, countertops, tile showers, permits handled. 5.0★ reviews."
+    },
+    "service-areas/doylestown-new-hope-kitchen-remodeling": {
+      "title": "Doylestown & New Hope Luxury Kitchen Design-Build | B&B Associates",
+      "description": "Luxury kitchen design-build and bathroom remodeling in Doylestown, New Hope, Solebury and Buckingham, PA. Historic-home experience, permits handled. 5.0★ reviews."
+    },
+    "service-areas/flourtown-pa-remodeling": {
+      "title": "Flourtown, PA Bathroom & Kitchen Remodeler | B&B Associates",
+      "description": "Bathroom and kitchen remodeling in Flourtown, Erdenheim and Whitemarsh, PA, 12 minutes from our office. Tile showers, custom cabinets, permits handled. 5.0★ reviews."
+    },
+    "service-areas/fort-washington-pa-remodeling": {
+      "title": "Fort Washington, PA Kitchen & Bathroom Remodeling | B&B Associates",
+      "description": "Kitchen and bathroom remodeling in Fort Washington, PA: custom cabinetry, bathroom vanities, tile showers and home additions. 5.0★ reviews. Free consultation."
+    },
+    "service-areas/gladwyne-pa-remodeling": {
+      "title": "Gladwyne, PA Kitchen & Bathroom Remodeling | B&B Associates",
+      "description": "Kitchen and bathroom remodeling for Gladwyne, PA stone homes and estates: custom cabinets, bathroom cabinetry, countertops, tile. 5.0★ reviews. Free consultation."
+    },
+    "service-areas/haverford-ardmore-remodeling": {
+      "title": "Haverford & Ardmore Kitchen & Bathroom Remodeling | B&B Associates",
+      "description": "Family-owned kitchen and bathroom remodeler serving Haverford and Ardmore, PA. Kitchen cabinets, bathroom cabinetry, walk-in showers, permits handled. 5.0★ reviews."
+    },
+    "service-areas/horsham-pa-remodeling": {
+      "title": "Horsham, PA Kitchen & Bathroom Remodeling | B&B Associates",
+      "description": "Kitchen and bathroom remodeling in Horsham Township, PA, 15 minutes from our office. Design-build kitchens, tile showers, bathroom repairs, permits handled. 5.0★."
+    },
+    "service-areas/lansdale-pa-remodeling": {
+      "title": "Lansdale, PA Kitchen & Bathroom Remodeling Company | B&B Associates",
+      "description": "Kitchen and bathroom remodeling company serving Lansdale, PA and Montgomery Township. Design-build, custom cabinetry, tile showers, permits handled. 5.0★ reviews."
+    },
+    "service-areas/lower-gwynedd-pa-remodeling": {
+      "title": "Lower Gwynedd, PA Kitchen & Bathroom Remodeling | B&B Associates",
+      "description": "Kitchen and bathroom remodeling in Lower Gwynedd and Gwynedd Valley, PA, minutes from our Maple Glen office. Custom cabinetry, permits handled. 5.0★ reviews."
+    },
+    "service-areas/main-line-pa-remodeling": {
+      "title": "Main Line, PA Luxury Kitchen & Bathroom Remodeling | B&B Associates",
+      "description": "High-end kitchen and bathroom remodeling across the Main Line: Bryn Mawr, Wayne, Villanova, Gladwyne, Berwyn, Ardmore. Design-build, itemized pricing. 5.0★ reviews."
+    },
+    "service-areas/montgomery-county": {
+      "title": "Montgomery County, PA Kitchen & Bathroom Remodeling | B&B Associates",
+      "description": "Luxury kitchen and bathroom remodeling across Montgomery County, PA: Ambler, Blue Bell, Horsham, Lansdale, Fort Washington and more. 5.0★ reviews. Free consultation."
+    },
+    "service-areas/newtown-pa-kitchen-bathroom-remodeling": {
+      "title": "Newtown, PA Luxury Kitchen Design & Custom Kitchens | B&B Associates",
+      "description": "Luxury kitchen design-build, custom kitchens and bathroom remodeling in Newtown Borough and Newtown Township, PA. Permits handled. 5.0★ reviews. Free consultation."
+    },
+    "service-areas/warminster-pa-remodeling": {
+      "title": "Warminster, PA Kitchen & Bathroom Remodeling Contractor | B&B",
+      "description": "Kitchen contractor and bathroom remodeler serving Warminster, PA. Design-build kitchens, home additions, tile showers, permits handled. 5.0★ reviews."
+    },
+    "service-areas/warrington-pa-remodeling": {
+      "title": "Warrington, PA Luxury Kitchen & Bathroom Remodeler | B&B Associates",
+      "description": "Luxury kitchen remodeler and bathroom remodeling company serving Warrington, PA and central Bucks County. Custom cabinetry, tile showers, permits handled. 5.0★."
+    },
+    "service-areas/wayne-villanova-bathroom-remodeling": {
+      "title": "Wayne & Villanova Luxury Bathroom & Kitchen Remodeling | B&B",
+      "description": "Luxury bathroom remodeling and kitchen renovation in Wayne and Villanova, PA. Spa bathrooms, walk-in tile showers, custom vanities, design-build kitchens. 5.0★."
+    },
+    "service-areas/yardley-pa-remodeling": {
+      "title": "Yardley, PA Kitchen Design-Build & Remodeling Company | B&B Associates",
+      "description": "Kitchen remodeling company serving Yardley and Lower Makefield, PA: kitchen design and build, bathroom remodeling, cabinetry, countertops. Permits handled. 5.0★."
+    },
+    "services/luxury-kitchen-remodeling": {
+      "title": "Luxury Kitchen Remodeling | Montgomery & Bucks County | B&B Associates",
+      "description": "Design-build luxury kitchen remodeling for Montgomery County, Bucks County and Main Line homes: custom cabinetry, islands, layout changes, itemized pricing. 5.0★."
+    },
+    "services/custom-bathroom-renovations": {
+      "title": "Custom Bathroom Remodeling in Montgomery & Bucks County | B&B",
+      "description": "Custom bathroom remodeling across Montgomery County, Bucks County and the Main Line: walk-in tile showers, heated floors, custom vanities, primary suites. 5.0★."
+    },
+    "services": {
+      "title": "Kitchen & Bathroom Remodeling Services in PA | B&B Associates",
+      "description": "Design-build kitchen remodeling, bathroom remodeling and custom cabinetry for Montgomery County, Bucks County and the Main Line. Itemized estimates, permits handled."
+    },
+    "service-areas": {
+      "title": "Service Areas: Montgomery, Bucks County & Main Line | B&B Associates",
+      "description": "Where B&B Associates remodels kitchens and bathrooms: 22 towns across Montgomery County, Bucks County and the Main Line, all within about 30 minutes of Maple Glen."
+    }
+  }
+}
