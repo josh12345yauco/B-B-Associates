@@ -39,3 +39,13 @@ rubin-kitchen · broderick-kitchen · bryn-michaels-kitchen · lee-kitchen · fe
 ## 5. Design rollout awaiting approval
 
 The Ambler page is the only page carrying the new design (see the handoff report). Once approved, the same changes roll out to the other 21 town pages and, where applicable, to the generator template for the 16 service × town pages.
+
+## 6. SEO/GEO sprint 2026-09-24 (branch `seo-geo-sprint-2026-09`) — please confirm
+
+- **7 new generator towns** (Doylestown, New Hope, Yardley, Langhorne, Horsham, Warrington, Chalfont): coordinates and drive-time phrases are from general geographic knowledge, listed per town in `data/towns.json → verify[]`. The Doylestown pages say Historical Architectural Review Board review applies to *exterior* changes in the Borough historic district only; confirm current Borough practice.
+- **Cost guide tiers** (`/kitchen-remodel-cost/`, `/bathroom-remodel-cost/`) use the ranges already on the two service pages ($35K–$60K / $60K–$100K / $100K+ and $20K–$40K / $40K–$75K / $75K+) and say luxury kitchens with structural work "commonly reach $150,000+". Confirm these are the numbers you want quoted in 2026.
+- **Custom cabinetry page** names Kraft Maid and Dura Supreme (already on the kitchen service page) and "5–35% below retail" (also already published). It states B&B does **not** offer refacing/refinishing as a standalone service, matching `llms.txt`. Confirm.
+- **Years in business:** generated-page hero stat changed from "25+ Years Local" to "13+" to match the documented 2013 instruction. The site still says 1999/25 years in some journal copy. Pick one.
+- **Showroom naming:** 146 instances of "Ambler (Design) Showroom" across the site while the showroom page lists the Maple Glen address. Not changed; awaiting the decision in the action plan (B3).
+- **Google Business Profile website link** currently points at `https://bbassociatesco.com/?utm_source=gbp` (non-www; 2,920 impressions in GSC at position 4.1). It 308-redirects fine, but the canonical is `www`. Update the GBP link to `https://www.bbassociatesco.com/?utm_source=gbp` so the GBP-driven traffic lands on the canonical host.
+- **Profile URLs not added to schema** because they are not in the repo: BBB, Google Maps/GBP short link, Yelp. Send them and they go into `sameAs` on every page via `scripts/apply-seo-schema.py`.

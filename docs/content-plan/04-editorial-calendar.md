@@ -19,6 +19,24 @@ See `03-batch-01-briefs.md`. Ten anecdotal, problem/solution/why pieces spread a
 | 9 | Aging in Place on the Main Line: Curbless Showers That Don't Look Clinical | Haverford / Bryn Mawr | Why you should |
 | 10 | The Doylestown Bathroom Nobody Could Fit a Tub Into | Doylestown | Problem → solution |
 
+## Timing rule (added 2026-09-24, from Google Trends PA 5-year seasonality)
+
+Search demand for both terms peaks **January–March** and again in **July**; the low is **September–December** (kitchen lowest in October, bathroom lowest in December). Publish and promote ahead of demand:
+
+| Window | Publish by | Content |
+|---|---|---|
+| New Year (Jan–Mar 2027) | **Nov 15, 2026** | Batch 02 (below) + refresh both cost guides with "2027" figures if tiers change |
+| Summer (Jul 2027) | **May 15, 2027** | Batch 03 + a "why sign in June" piece |
+| Soft quarter (Sep–Dec) | ongoing | Evergreen: cost guides, cabinetry, tile; Houzz/GBP review push, not new articles |
+
+Priorities inside Batch 02, ranked by what the 2026-09-23 research showed:
+1. **Bucks County first.** B&B was named in 0/6 AI answers for Doylestown and 1/6 for Newtown; "Bucks County" is a +140% rising topic. Ship #10 (Doylestown), #6 (Newtown) and #4 (Chalfont/Buckingham) before the Montgomery pieces, and add a Langhorne piece (the only lower-Bucks town with Trends city data).
+2. **Cost intent.** "kitchen remodel cost" / "bathroom remodel cost" are the #1 related query in every Trends window. #8 becomes a refresh of `/kitchen-remodel-cost/` rather than a new article; add a bathroom-cost-by-town companion for `/bathroom-remodel-cost/`.
+3. **Custom cabinets** is the one rising niche term (12-mo avg ≈3× 5-yr). Add: "Hickory, white oak or painted maple: choosing cabinet wood for a Montgomery County kitchen" (links `/services/custom-cabinetry/`).
+4. **AI-style questions.** Every new article gets one FAQ phrased the way people ask engines ("Who is the best…", "Which remodeler has the best reviews for tile in…").
+
+Pages that now exist and should be linked from every relevant new article: `/kitchen-remodel-cost/`, `/bathroom-remodel-cost/`, `/services/custom-cabinetry/`, and the 30 service × town pages (`/service-areas/kitchen-remodeling/<town>-pa/`, `/service-areas/bathroom-remodeling/<town>-pa/`).
+
 ## Batch 03 — Q1 2027 (themes)
 - Showroom-opening tie-ins (only once the Ambler showroom is actually open): "What to bring to your first showroom visit."
 - Seasonal: "Why January is the best month to sign a kitchen contract in Montgomery County."
