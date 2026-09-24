@@ -22,6 +22,7 @@ changed = 0
 for f in sorted(ROOT.rglob("index.html")):
     rel = str(f.relative_to(ROOT))
     if any(s in f.parts for s in ("node_modules", "ESTIMATOR-Pre", "admin", "design-estimator")): continue
+    if rel.startswith(("service-areas/kitchen-remodeling/", "service-areas/bathroom-remodeling/", "kitchen-remodel-cost/", "bathroom-remodel-cost/", "services/custom-cabinetry/")): continue  # generated; schema comes from the generators
     src = f.read_text(); orig = src
     def patch(m):
         try: data = json.loads(m.group(2))

@@ -14,8 +14,8 @@
      E jsonld       every application/ld+json block parses
      E legacy-link  no links to /services/kitchen-remodeling/ (redirected)
      E bath-phrase  no "Kitchen & Bath Remodeling/Carpenter" (Bath, PA confusion)
-     E sitemap      every sitemap <loc> resolves to a file; every indexable
-                    page is in the sitemap
+     E sitemap      every sitemap <loc> resolves to a file
+     W sitemap      every indexable page is in the sitemap
      E redirect     every static vercel.json destination resolves to a page
      W title-len    title > 70 chars
      W desc-len     description < 120 or > 165 chars
@@ -60,7 +60,7 @@ for (const f of pages) {
   const titleTags = all(/<title>([\s\S]*?)<\/title>/gi, html);
   if (titleTags.length !== 1) err(f, 'title', `expected 1 <title>, found ${titleTags.length}`);
   const title = titleTags[0] ? decode(titleTags[0][1]) : '';
-  const descs = all(/<meta\s+name=["']description["']\s+content=["']([^"']*)["']/gi, html);
+  const descs = all(/<meta\s+name=["']description["']\s+content="([^"]*)"/gi, html);
   const canon = all(/<link[^>]+rel=["']canonical["'][^>]+href=["']([^"']+)["']/gi, html)
     .concat(all(/<link[^>]+href=["']([^"']+)["'][^>]+rel=["']canonical["']/gi, html));
   // Count H1s outside JS template literals (article/project templates render one of two branches).

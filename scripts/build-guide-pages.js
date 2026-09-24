@@ -14,7 +14,9 @@ const { gtmHead, gtmBody, nav, footer, businessSchema, faqSchema, ld, esc, attr,
 
 const ROOT = path.resolve(__dirname, '..');
 const GUIDES = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/guides.json'), 'utf8')).pages;
-const HQ = town.TOWNS.find(t => t.slug === 'ambler'); // businessSchema needs a town for geo; HQ address is in the block itself
+const HQ = town.TOWNS.find(t => t.slug === 'ambler');
+const REGION = [{ "@type": "AdministrativeArea", "name": "Montgomery County, PA" }, { "@type": "AdministrativeArea", "name": "Bucks County, PA" }, { "@type": "Place", "name": "Philadelphia Main Line, PA" }];
+const regionalBusiness = () => ({ ...businessSchema(HQ), areaServed: REGION });
 
 const GUIDE_CSS = `
     .gd-tiers{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--sp-5);margin:var(--sp-6) 0}
@@ -41,7 +43,7 @@ function pageSchema(page) {
     "name": page.serviceName, "serviceType": page.serviceName, "url": url, "description": page.description,
     "provider": { "@id": SITE.businessId }, "areaServed": ["Montgomery County, PA", "Bucks County, PA", "Philadelphia Main Line, PA"] };
   return { "@context": "https://schema.org", "@type": "WebPage", "@id": url + "#webpage", "url": url, "name": page.title,
-    "description": page.description, "dateModified": SITE.buildDate, "isPartOf": { "@id": SITE.origin + "/#website" },
+    "description": page.description, "dateModified": SITE.buildDate,
     "about": { "@id": SITE.businessId }, "publisher": { "@id": SITE.businessId } };
 }
 
@@ -104,7 +106,7 @@ ${gtmHead()}
   <link rel="stylesheet" href="/css/design-system.css">
   <link rel="stylesheet" href="/css/components.css">
 ${ld(pageSchema(page))}
-${ld(businessSchema(HQ))}
+${ld(regionalBusiness())}
 ${ld(breadcrumbSchema(page))}
 ${ld(faqSchema(page.faqs))}
   <style>${CSS}${EXTRA_CSS}${GUIDE_CSS}  </style>

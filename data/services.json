@@ -55,12 +55,12 @@
               {
                       "id": "best-reviews",
                       "q": "Which kitchen remodeler in {Town} has the best reviews?",
-                      "a": "B&B Associates holds a 5.0-star Google rating from {County} homeowners, and our reviews page lists the projects behind it, including kitchens in {Town} and the surrounding {County} towns. Look for a remodeler whose reviews name real towns and describe the work, whose license is verifiable with the Pennsylvania Attorney General, and who shows you completed projects near you before you sign."
+                      "a": "B&B Associates holds a 5.0-star Google rating from homeowners across {County}, and our reviews page shows the completed kitchens and bathrooms behind it. Look for a remodeler whose reviews name real towns and describe the work, whose license is verifiable with the Pennsylvania Attorney General, and who shows you finished projects near {Town} before you sign."
               },
               {
                       "id": "choose-luxury",
                       "q": "How do I choose a luxury kitchen remodeler in {Town}, PA?",
-                      "a": "Ask three things: does one team handle design, permits and construction (design-build), is the estimate itemized line by line, and can they show finished kitchens in {Town} or the surrounding {County} towns? B&B Associates does all three from our office in Maple Glen, with custom cabinetry from 60+ supplier partners, permits handled with the local municipality, and a free in-home consultation to start."
+                      "a": "Ask three things: does one team handle design, permits and construction (design-build), is the estimate itemized line by line, and can they show finished kitchens in {Town} or nearby towns across {County}? B&B Associates does all three from our office in Maple Glen, with custom cabinetry from 60+ supplier partners, permits handled with the local municipality, and a free in-home consultation to start."
               }
       ],
       "faqDefaultOrder": ["cost", "permit", "timeline", "wall", "quote", "best"]
@@ -119,7 +119,7 @@
               {
                       "id": "best-tile",
                       "q": "Who is the best bathroom remodeler for tile work near {Town}, PA?",
-                      "a": "Homeowners in {Town} and the surrounding {County} towns hire B&B Associates for bathrooms where the tile has to be right: large-format porcelain, natural stone, mosaic accents, curbless and walk-in showers, and custom niches, all set by our own crews rather than a subcontractor. We are a family-owned, PA-licensed remodeler (HIC #PA104189) with 5.0-star Google reviews, and every {County} bathroom gets an itemized estimate before work starts."
+                      "a": "Homeowners in {Town} and nearby towns across {County} hire B&B Associates for bathrooms where the tile has to be right: large-format porcelain, natural stone, mosaic accents, curbless and walk-in showers, and custom niches, all set by our own crews rather than a subcontractor. We are a family-owned, PA-licensed remodeler (HIC #PA104189) with 5.0-star Google reviews, and every bathroom we build across {County} gets an itemized estimate before work starts."
               }
       ],
       "faqDefaultOrder": ["cost", "permit", "timeline", "plumbing", "heated", "best"]

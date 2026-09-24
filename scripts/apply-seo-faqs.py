@@ -70,6 +70,7 @@ def add_tile(src, t, rel):
         m = re.search(r'<h3 class="(sa-service-title|town-service-h3)">[^<]*Bath[^<]*</h3>', src)
         i = m.start() if m else -1
         if i < 0: continue
+        pcls = "sa-service-desc" if m.group(1) == "sa-service-title" else "town-service-body"
         j = src.index("</p>", i) + 4
         return src[:j] + f'\n            <p class="{pcls}">{esc(para)}</p>' + src[j:]
     print(f"  !! {rel}: bathroom card not found"); return src

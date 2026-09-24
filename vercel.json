@@ -99,6 +99,18 @@
     },
     {
       "source": "/service-areas/article",
+      "destination": "/blog/article/?id=:id",
+      "permanent": true,
+      "has": [
+        {
+          "type": "query",
+          "key": "id",
+          "value": "(?<id>.+)"
+        }
+      ]
+    },
+    {
+      "source": "/service-areas/article",
       "destination": "/blog/",
       "permanent": true
     },
@@ -460,7 +472,7 @@
       "permanent": true
     },
     {
-      "source": "/transform-your-kitchen-the-definitive-guide-to-selecting-the-perfect-:rest*",
+      "source": "/transform-your-kitchen-the-definitive-guide-to-selecting-the-perfect-:rest(.*)",
       "destination": "/services/custom-cabinetry/",
       "permanent": true
     }

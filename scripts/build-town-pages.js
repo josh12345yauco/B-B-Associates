@@ -65,6 +65,7 @@ function pickFaqs(town, service) {
     // skip pool items that duplicate an override's topic (cost / permit)
     if ([...overrideKeys].some(k => k.startsWith(key.slice(0, 12)) || key.startsWith(k.slice(0, 12)))) continue;
     if ((f.id === 'cost') || (f.id === 'permit' && overrides.some(o => /permit/i.test(o.q)))) continue;
+    if (f.id === 'best' && (service.faqAlways || []).length) continue; // faqAlways carries the 'best remodeler' questions
     chosen.push({ q, a: fill(f.a, town, service) });
     if (overrides.length + chosen.length >= 6) break;
   }
@@ -522,9 +523,20 @@ function updateSitemap(urls, marker = '  <!-- Service × Town Pages (generated b
     const re = new RegExp(`\\s*<url>\\s*<loc>${absUrl(url).replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}</loc>[\\s\\S]*?</url>`, 'g');
     xml = xml.replace(re, '');
   }
-  xml = xml.replace(new RegExp(`\\n?${marker.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\n?`, 'g'), '\n');
   const insert = `\n${marker}\n${urls.map(block).join('\n')}\n`;
-  xml = xml.replace(/\s*<\/urlset>\s*$/, insert + '</urlset>\n');
+  const escMarker = marker.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  if (xml.includes(marker)) {
+    // Replace the block in place (marker through the last generated <url> that follows it,
+    // stopping at the next comment or </urlset>) so reruns are diff-free.
+    const start = xml.indexOf(marker);
+    const after = xml.slice(start + marker.length);
+    const nextComment = after.search(/\n\s*<!-- /);
+    const endUrlset = after.search(/\s*<\/urlset>/);
+    const stop = start + marker.length + (nextComment >= 0 && nextComment < endUrlset ? nextComment : endUrlset);
+    xml = xml.slice(0, start) + insert.replace(/^\n/, '').replace(/\n$/, '') + xml.slice(stop);
+  } else {
+    xml = xml.replace(/\s*<\/urlset>\s*$/, insert + '</urlset>\n');
+  }
   xml = xml.replace(/\n{3,}/g, '\n\n');
   fs.writeFileSync(path.join(ROOT, 'sitemap.xml'), xml);
 }
