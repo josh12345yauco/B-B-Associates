@@ -1,0 +1,361 @@
+{
+  "_readme": "Evergreen guide + service pages built by scripts/build-guide-pages.js (A5/A7, 2026-09-24). Cost figures are the tiers already published on the two service pages; do not add new dollar figures without confirming with B&B.",
+  "pages": [
+    {
+      "slug": "/kitchen-remodel-cost/",
+      "kind": "guide",
+      "title": "Kitchen Remodel Cost in PA (2026) | Montgomery, Bucks & Main Line",
+      "description": "How much does a kitchen remodel cost in Pennsylvania? 2026 ranges from B&B Associates: $35K–$60K refresh, $60K–$100K custom, $100K+ luxury. Drivers, timelines.",
+      "h1": "How Much Does a Kitchen Remodel<br>Cost in Pennsylvania?",
+      "eyebrow": "2026 Cost Guide · Montgomery County, Bucks County & the Main Line",
+      "heroImage": "/IMAGES/kitchen-remodeling-services.webp",
+      "ogImage": "https://www.bbassociatesco.com/IMAGES/kitchen-remodeling-services.webp",
+      "breadcrumb": [
+        [
+          "/services/",
+          "Services"
+        ],
+        [
+          "/services/luxury-kitchen-remodeling/",
+          "Kitchen Remodeling"
+        ]
+      ],
+      "breadcrumbLabel": "Kitchen Remodel Cost",
+      "introH2": "The Short Answer",
+      "answerFirst": "In 2026, a kitchen remodel by B&B Associates in Montgomery County, Bucks County or on the Main Line runs from about $35,000 for a semi-custom refresh to $100,000 and beyond for a full architectural transformation. Most of our clients land between $60,000 and $100,000: full custom cabinetry, premium countertops, new lighting and some layout change. Every estimate is itemized line by line before work begins, and the in-home consultation that produces it is free.",
+      "tiers": {
+        "label": "Investment Guide",
+        "h2": "Kitchen Remodel Cost by Tier",
+        "note": "Ranges reflect typical completed B&B projects and vary with square footage, material selections and structural scope. A precise number comes from your free in-home consultation.",
+        "rows": [
+          [
+            "Foundation",
+            "$35,000 – $60,000",
+            "Semi-custom cabinets, quartz counters, tile backsplash, new fixtures and lighting. Layout stays where it is."
+          ],
+          [
+            "Premium",
+            "$60,000 – $100,000",
+            "Full custom cabinetry, premium stone, lighting design and moderate structural change, such as widening an opening or moving an island."
+          ],
+          [
+            "Signature",
+            "$100,000+",
+            "Architectural-level transformation: walls removed, plumbing and gas relocated, bespoke cabinetry throughout, smart-home integration. Full luxury kitchens with structural work commonly reach $150,000+."
+          ]
+        ]
+      },
+      "sections": [
+        {
+          "h2": "What Actually Drives the Price",
+          "paragraphs": [
+            "Cabinetry is almost always the largest single line on a kitchen estimate, and it is the line with the widest range. Premium semi-custom cabinetry covers most luxury kitchens beautifully at 30–50% less than full custom; full custom earns its price when you need non-standard sizes, unusual wood species like hickory or walnut, or inset doors with furniture-grade details.",
+            "The second driver is what moves. Keeping the sink, range and refrigerator where they are keeps plumbing, gas and electrical work to a minimum. Relocating any of them, or opening a wall to the dining room, adds trades, permits and inspections, and that is the difference between the Foundation and Signature tiers more often than the finishes are.",
+            "Third is the house itself. Ambler's Victorian-era homes and the 1920s–1950s colonials in Fort Washington and Flourtown often need a panel upgrade, new circuits and plaster repair once the walls open. Bucks County stone homes in Doylestown, New Hope and Newtown bring their own surprises. We assess for these before we quote, which is why our estimates rarely change after demolition."
+          ]
+        },
+        {
+          "h2": "What Is Included in a B&B Estimate",
+          "paragraphs": [
+            "Design, permits, materials, labor and project management under one contract. There is no separate designer's invoice and no permit runaround: we file with Ambler Borough, Upper Dublin, Whitpain, Newtown Township, Doylestown Borough or whichever municipality governs your address, and we coordinate every inspection.",
+            "Because we buy through 60+ supplier partners, cabinetry, stone, tile and fixtures come in at trade pricing, typically 5–35% below retail. That is built into the estimate you see, not added later.",
+            "What is not included is anything we have not seen. If demolition reveals a rotted subfloor or knob-and-tube wiring, we stop, show you, and price the fix as a separate line before touching it. No surprise costs, no change-order games."
+          ]
+        },
+        {
+          "h2": "How Long a Kitchen Remodel Takes",
+          "paragraphs": [
+            "Plan for roughly 12–20 weeks from first design meeting to final walkthrough. Design and selections take 3–8 weeks, permitting 2–4 weeks depending on the township, and construction 4–10 weeks. Custom cabinetry lead times are the usual reason a schedule stretches, so we order cabinets before demolition, not after.",
+            "You can live in the house through most of it. We set up a temporary kitchen, seal the work zone, and keep a predictable daily schedule so the disruption has an end date you can plan around."
+          ]
+        },
+        {
+          "h2": "Ways to Control the Number",
+          "paragraphs": [
+            "Keep the plumbing where it is. Choose premium semi-custom cabinetry unless you truly need custom. Put the budget into the surfaces you touch every day, counters and hardware, and be practical about the ones you don't. Decide on everything before construction starts; mid-project changes cost more than the same decision made on paper.",
+            "And get an itemized estimate from anyone you consider. A single-number quote hides where the money goes and makes it impossible to compare two contractors honestly."
+          ]
+        }
+      ],
+      "faqs": [
+        {
+          "q": "How much does a kitchen remodel cost in Montgomery County, PA?",
+          "a": "Between $35,000 and $150,000+, with most B&B Associates kitchens in Ambler, Blue Bell, Horsham, Lansdale and Fort Washington falling in the $60,000–$100,000 range for full custom cabinetry, premium countertops and some layout change. A free in-home consultation produces an itemized estimate for your specific kitchen."
+        },
+        {
+          "q": "How much does a kitchen remodel cost in Bucks County or on the Main Line?",
+          "a": "The same tiers apply in Doylestown, Newtown, Yardley, Bryn Mawr, Wayne and Villanova: roughly $35,000–$60,000 for a semi-custom refresh, $60,000–$100,000 for full custom, and $100,000+ for structural, luxury-level work. Older stone homes and estates tend toward the upper tiers because of what the walls contain."
+        },
+        {
+          "q": "Is $50,000 enough for a kitchen remodel?",
+          "a": "Yes, if the layout stays put. $50,000 buys premium semi-custom cabinetry, quartz countertops, a tile backsplash, new lighting and fixtures in most Montgomery and Bucks County kitchens. It generally does not cover moving plumbing or removing walls."
+        },
+        {
+          "q": "Does the design cost extra?",
+          "a": "No. B&B Associates is a design-build remodeler, so design, material selection, permits and construction are one scope under one contract. The initial in-home consultation is free and produces an itemized estimate."
+        },
+        {
+          "q": "How long does a kitchen remodel take in Pennsylvania?",
+          "a": "About 12–20 weeks start to finish: 3–8 weeks of design and selections, 2–4 weeks of permitting, and 4–10 weeks of construction. Custom cabinetry lead times and older-home surprises are the two things that add time."
+        },
+        {
+          "q": "How do I get an exact kitchen remodel cost for my house?",
+          "a": "Book a free in-home consultation. We measure, look at the mechanicals, talk through what you want to change, and return an itemized estimate with every line visible, before any work or deposit."
+        }
+      ],
+      "related": [
+        [
+          "/blog/article/?id=kitchen-remodel-cost-montgomery-county-2026",
+          "Luxury kitchen remodel cost in Montgomery County (2026 guide)"
+        ],
+        [
+          "/blog/article/?id=luxury-kitchen-cost-guide",
+          "The true cost of a luxury kitchen on the Main Line"
+        ],
+        [
+          "/blog/article/?id=open-concept-kitchen-costs",
+          "What open-concept structural changes really cost"
+        ],
+        [
+          "/blog/article/?id=custom-vs-semi-custom-cabinetry",
+          "Custom vs. semi-custom cabinetry: what's worth it"
+        ],
+        [
+          "/blog/article/?id=kitchen-renovation-timeline",
+          "How long a full kitchen renovation takes"
+        ],
+        [
+          "/services/custom-cabinetry/",
+          "Custom cabinetry: woods, door styles and pricing"
+        ]
+      ],
+      "formLabel": "Kitchen",
+      "formSource": "Kitchen Remodel Cost Guide"
+    },
+    {
+      "slug": "/bathroom-remodel-cost/",
+      "kind": "guide",
+      "title": "Bathroom Remodel Cost in PA (2026) | Montgomery, Bucks & Main Line",
+      "description": "How much does a bathroom remodel cost in Pennsylvania? 2026 ranges from B&B Associates: $20K–$40K refresh, $40K–$75K full, $75K+ primary suite. Tile, timelines.",
+      "h1": "How Much Does a Bathroom Remodel<br>Cost in Pennsylvania?",
+      "eyebrow": "2026 Cost Guide · Montgomery County, Bucks County & the Main Line",
+      "heroImage": "/IMAGES/Custom-Bathroom-Ambler-Pa.webp",
+      "ogImage": "https://www.bbassociatesco.com/IMAGES/Custom-Bathroom-Ambler-Pa.webp",
+      "breadcrumb": [
+        [
+          "/services/",
+          "Services"
+        ],
+        [
+          "/services/custom-bathroom-renovations/",
+          "Bathroom Remodeling"
+        ]
+      ],
+      "breadcrumbLabel": "Bathroom Remodel Cost",
+      "introH2": "The Short Answer",
+      "answerFirst": "In 2026, a bathroom remodel by B&B Associates in Montgomery County, Bucks County or on the Main Line runs from about $20,000 for a hall bath refresh to $75,000 and beyond for a full primary suite with spa features. Most of our bathrooms land between $40,000 and $75,000: an expanded walk-in tile shower, custom vanity, frameless glass and heated floors. Every estimate is itemized before work starts, and the in-home consultation is free.",
+      "tiers": {
+        "label": "Investment Guide",
+        "h2": "Bathroom Remodel Cost by Tier",
+        "note": "Ranges reflect typical completed B&B projects and vary with square footage, tile selections, plumbing complexity and finish level. A precise number comes from your free in-home consultation.",
+        "rows": [
+          [
+            "Essential",
+            "$20,000 – $40,000",
+            "New tile, vanity, fixtures and lighting in the existing layout. Hall baths, guest baths and powder rooms usually sit here."
+          ],
+          [
+            "Premium",
+            "$40,000 – $75,000",
+            "Shower expansion or tub-to-shower conversion, custom vanity, frameless glass enclosure, heated floors. The full luxury bathroom in the existing footprint."
+          ],
+          [
+            "Signature",
+            "$75,000+",
+            "Primary suite transformation: plumbing relocated, walls moved or a closet absorbed, freestanding soaking tub, spa features and bespoke materials throughout."
+          ]
+        ]
+      },
+      "sections": [
+        {
+          "h2": "What Actually Drives the Price",
+          "paragraphs": [
+            "Plumbing that moves. Keeping the toilet, shower and vanity where they are is the single biggest cost control in a bathroom. Relocating a drain in a slab or a second-floor joist bay, or absorbing a closet to enlarge a primary bath the way we did in Yardley, is what pushes a project from Premium to Signature.",
+            "Tile is second, and it is where a bathroom is won or lost. Large-format porcelain, natural stone, mosaic accents, curbless showers and custom niches all take more layout, more waterproofing and more skilled hours than a standard tub surround. Our own crews set every surface, which is why homeowners searching for a bathroom remodeler with strong tile reviews end up calling us.",
+            "Third is glass and fixtures. Frameless enclosures, thermostatic valves, wall-hung toilets and heated floors are each a few thousand dollars, and together they define the difference between a nice bathroom and one that feels like a hotel."
+          ]
+        },
+        {
+          "h2": "About One-Day Bathroom Remodels",
+          "paragraphs": [
+            "Searches for one-day bathroom remodel cost are rising across Pennsylvania. The honest answer: a one-day bathroom is an acrylic liner or overlay fitted over your existing tub and walls. It is fast and it is cheaper up front, and it is not a remodel. Nothing behind the wall is inspected or fixed, the shape of the space does not change, and when the liner fails or the substrate behind it does, the real remodel still has to happen.",
+            "A tiled B&B bathroom takes 5–7 weeks of construction and is built to be the last time you touch that room for twenty years. We think that is the better math, and we will say so in the consultation."
+          ]
+        },
+        {
+          "h2": "What Is Included in a B&B Estimate",
+          "paragraphs": [
+            "Design, permits, materials, plumbing, electrical, tile, glass, fixtures and project management under one contract. We file permits with your municipality, whether that is Upper Dublin, Lower Merion, Newtown Township or Doylestown Borough, and we coordinate every inspection.",
+            "Vanities, tile, stone and fixtures come through our 60+ supplier partners at trade pricing, typically 5–35% below retail, already reflected in the number you see. Anything we cannot see before demolition, such as rot under a tub or corroded galvanized supply lines, is shown to you and priced separately before we proceed."
+          ]
+        },
+        {
+          "h2": "How Long a Bathroom Remodel Takes",
+          "paragraphs": [
+            "Most bathrooms are 5–7 weeks of construction after 2–4 weeks of design and selections and 2–4 weeks of permitting. Custom glass is measured after tile is set and typically takes two weeks to arrive, so the last item installed is usually the shower door. Primary suites with structural change run longer. Older homes in Ambler, Gladwyne and Bryn Mawr can add time if plumbing has to be brought to code once walls open."
+          ]
+        }
+      ],
+      "faqs": [
+        {
+          "q": "How much does a bathroom remodel cost in Montgomery County, PA?",
+          "a": "Between $20,000 and $85,000+, with most B&B Associates bathrooms in Ambler, Blue Bell, Horsham and Fort Washington in the $40,000–$75,000 range for a walk-in tile shower, custom vanity, frameless glass and heated floors. A free in-home consultation produces an itemized estimate."
+        },
+        {
+          "q": "How much does a bathroom remodel cost in Bucks County or on the Main Line?",
+          "a": "The same tiers apply in Doylestown, Newtown, Yardley, Bryn Mawr, Wayne and Villanova: about $20,000–$40,000 for a refresh in the existing layout, $40,000–$75,000 for a full remodel, and $75,000+ for a primary suite with relocated plumbing. Main Line stone homes often sit in the upper tiers."
+        },
+        {
+          "q": "How much does a tub-to-shower conversion cost?",
+          "a": "It depends on whether the drain moves. A conversion in the existing footprint with a tiled walk-in shower and frameless glass typically falls in the Premium tier; adding a curbless entry, a bench or relocated plumbing moves it up. We price it line by line after seeing the space."
+        },
+        {
+          "q": "Why not a one-day bathroom remodel?",
+          "a": "A one-day bathroom is an acrylic overlay fitted over your existing tub and walls. Nothing behind the wall is inspected or fixed and the layout cannot change. It is cheaper up front and it is not a remodel; a tiled B&B bathroom takes 5–7 weeks and is built to last decades."
+        },
+        {
+          "q": "How long does a bathroom remodel take?",
+          "a": "About 5–7 weeks of construction for most bathrooms, after 2–4 weeks of design and selections and 2–4 weeks of permitting. Custom shower glass arrives about two weeks after tile is finished and is usually the last item installed."
+        },
+        {
+          "q": "How do I get an exact bathroom remodel cost for my house?",
+          "a": "Book a free in-home consultation. We look at the plumbing, measure, and talk through tile, glass and fixtures, then return an itemized estimate with every line visible before any work or deposit."
+        }
+      ],
+      "related": [
+        [
+          "/blog/article/?id=bathroom-remodel-cost-main-line-2026",
+          "High-end bathroom remodel cost on the Main Line (2026)"
+        ],
+        [
+          "/blog/article/?id=yardley-primary-bathroom-closet-conversion",
+          "The Yardley primary bath we built out of a closet, and what it cost"
+        ],
+        [
+          "/blog/article/?id=bathroom-tile-trends-2025",
+          "Bathroom tile trends we're installing"
+        ],
+        [
+          "/blog/article/?id=heated-bathroom-floors",
+          "Heated bathroom floors: cost and payoff"
+        ],
+        [
+          "/blog/article/?id=bathroom-remodeling-roi",
+          "Bathroom remodeling ROI in Pennsylvania"
+        ],
+        [
+          "/services/custom-bathroom-renovations/",
+          "Custom bathroom remodeling service"
+        ]
+      ],
+      "formLabel": "Bathroom",
+      "formSource": "Bathroom Remodel Cost Guide"
+    },
+    {
+      "slug": "/services/custom-cabinetry/",
+      "kind": "service",
+      "serviceName": "Custom Cabinetry",
+      "title": "Custom Kitchen Cabinetry in Montgomery & Bucks County | B&B Associates",
+      "description": "Custom and premium semi-custom cabinetry for Montgomery, Bucks County and Main Line homes: hickory, white oak, walnut, painted maple. 60+ suppliers, trade pricing.",
+      "h1": "Custom Cabinetry<br>Built for the Way You Cook",
+      "eyebrow": "Kitchen & Bathroom Cabinetry · Montgomery County, Bucks County & the Main Line",
+      "heroImage": "/IMAGES/Custom-Kitchen-Main-Line.webp",
+      "ogImage": "https://www.bbassociatesco.com/IMAGES/Custom-Kitchen-Main-Line.webp",
+      "breadcrumb": [
+        [
+          "/services/",
+          "Services"
+        ]
+      ],
+      "breadcrumbLabel": "Custom Cabinetry",
+      "introH2": "Custom, Semi-Custom, and the Honest Difference",
+      "answerFirst": "B&B Associates designs, sources and installs custom and premium semi-custom cabinetry for kitchens and bathrooms across Montgomery County, Bucks County and the Main Line. Through 60+ supplier partners, including Kraft Maid and Dura Supreme, cabinetry comes in at trade pricing, typically 5–35% below retail. Premium semi-custom covers most luxury kitchens beautifully at 30–50% less than full custom; we will tell you plainly which one your kitchen actually needs.",
+      "sections": [
+        {
+          "h2": "Wood Species and Finishes We Build With",
+          "paragraphs": [
+            "Painted maple remains the most requested finish in Montgomery and Bucks County kitchens: a hard, tight-grained wood that takes a factory finish evenly and hides nothing behind a bad paint job. White oak, rift-cut for a straight, quiet grain, is the wood of choice for the warm, natural kitchens homeowners are asking for in 2026. Walnut brings depth to islands and bar areas.",
+            "Hickory is the fastest-growing request we see, on the site and in Google Trends for Pennsylvania. Its dramatic color variation reads rustic or modern depending on the door style, and it is one of the hardest domestic woods, which matters in a kitchen with kids and dogs. We match species to the light in your room, not to a catalog page."
+          ]
+        },
+        {
+          "h2": "Door Styles: Inset, Overlay, Shaker and Slab",
+          "paragraphs": [
+            "Inset doors sit flush inside the face frame, the furniture-grade look found in older Main Line and Bucks County homes; they cost more because every reveal has to be perfect. Full-overlay doors cover the frame and give a cleaner, more contemporary line for less. Shaker profiles suit both; slab doors in white oak or walnut carry the modern kitchens we build in Blue Bell and Newtown Township.",
+            "Two-tone kitchens, a painted perimeter with a stained island, remain the most common way our clients get both warmth and light in one room. We build the sample doors and set them in your kitchen before you decide."
+          ]
+        },
+        {
+          "h2": "Bathroom Vanities and Built-Ins",
+          "paragraphs": [
+            "The same cabinetry program covers custom vanities, linen towers and medicine cabinets, sized to the wall rather than to the nearest stock width. A custom vanity in Berwyn, Bryn Mawr or Gladwyne is usually the difference between a bathroom that looks renovated and one that looks designed.",
+            "We also build mudroom lockers, pantry systems and dining-room built-ins as part of a kitchen project, so the millwork matches across the rooms you see from the kitchen."
+          ]
+        },
+        {
+          "h2": "What Custom Cabinetry Costs",
+          "paragraphs": [
+            "Cabinetry is the largest single line in most kitchen estimates. In our Foundation tier ($35,000–$60,000 kitchens) it is premium semi-custom; in Premium and Signature kitchens ($60,000–$100,000+) it is typically full custom with inset doors, specialty woods and interior fittings. Because we buy at trade pricing and install with our own crews, the cabinet line on a B&B estimate is itemized: boxes, doors, finish, hardware and installation each visible.",
+            "Cabinet refacing and refinishing are frequent questions from Yardley and Lower Gwynedd. We will do it when the boxes are sound and the layout works, and we will tell you when it is money better put toward new cabinetry."
+          ]
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Custom or semi-custom cabinetry: which do I need?",
+          "a": "Premium semi-custom covers most luxury kitchens at 30–50% less than full custom, with a wide range of sizes, finishes and interior fittings. Full custom earns its price when you need non-standard dimensions, inset doors, unusual species like hickory or walnut, or millwork that has to match across rooms. We show you both in your kitchen before you decide."
+        },
+        {
+          "q": "What cabinet brands does B&B Associates use?",
+          "a": "We work with 60+ supplier partners, including Kraft Maid and Dura Supreme for cabinetry, and regional custom shops for full-custom and inset work. Trade pricing, typically 5–35% below retail, is built into every itemized estimate."
+        },
+        {
+          "q": "Do you build custom bathroom vanities?",
+          "a": "Yes. Custom vanities, linen towers and medicine cabinets are part of every B&B bathroom remodel, sized to the wall and finished to match the rest of the house."
+        },
+        {
+          "q": "Do you do cabinet refacing or refinishing?",
+          "a": "When the cabinet boxes are sound and the layout already works, yes. When they are not, we say so; refacing a failing box is money better put toward new cabinetry."
+        },
+        {
+          "q": "How long do custom cabinets take?",
+          "a": "Custom cabinetry lead time is the usual reason a kitchen schedule stretches, so we order before demolition. Expect several weeks from final sign-off to delivery depending on the maker; your project schedule accounts for it."
+        }
+      ],
+      "related": [
+        [
+          "/blog/article/?id=custom-cabinetry-montgomery-county",
+          "The complete guide to custom cabinetry in Montgomery County"
+        ],
+        [
+          "/blog/article/?id=custom-vs-semi-custom-cabinetry",
+          "Custom vs. semi-custom cabinetry: what's actually worth it"
+        ],
+        [
+          "/blog/article/?id=kitchen-cabinet-trends-2025",
+          "Kitchen cabinet trends we're building"
+        ],
+        [
+          "/kitchen-remodel-cost/",
+          "Kitchen remodel cost guide"
+        ],
+        [
+          "/services/luxury-kitchen-remodeling/",
+          "Luxury kitchen remodeling service"
+        ]
+      ],
+      "formLabel": "Cabinetry",
+      "formSource": "Custom Cabinetry Service Page"
+    }
+  ]
+}
