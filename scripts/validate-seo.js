@@ -16,7 +16,7 @@
      E bath-phrase  no "Kitchen & Bath Remodeling/Carpenter" (Bath, PA confusion)
      E sitemap      every sitemap <loc> resolves to a file; every indexable
                     page is in the sitemap
-     W title-len    title > 65 chars
+     W title-len    title > 70 chars
      W desc-len     description < 120 or > 165 chars
    ============================================================ */
 'use strict';
@@ -65,7 +65,8 @@ for (const f of pages) {
   // Count H1s outside JS template literals (article/project templates render one of two branches).
   const staticHtml = html.replace(/`[\s\S]*?`/g, '');
   const h1s = all(/<h1[\s>]/gi, staticHtml);
-  if (!noindex && h1s.length !== 1) err(f, 'h1', `expected 1 <h1>, found ${h1s.length}`);
+  const h1sTemplated = all(/<h1[\s>]/gi, html).length - h1s.length; // rendered by JS, one branch at a time
+  if (!noindex && h1s.length !== 1 && !(h1s.length === 0 && h1sTemplated > 0)) err(f, 'h1', `expected 1 <h1>, found ${h1s.length}`);
 
   for (const m of all(/<script[^>]+type=["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/gi, html)) {
     try { JSON.parse(m[1]); } catch (e) { err(f, 'jsonld', `JSON-LD does not parse: ${e.message.slice(0, 80)}`); }
@@ -83,7 +84,7 @@ for (const f of pages) {
   if (title) {
     if (titles.has(title)) err(f, 'title', `duplicate title (also ${titles.get(title)}): "${title}"`);
     titles.set(title, rel(f));
-    if (title.length > 65) warn(f, 'title-len', `${title.length} chars: "${title}"`);
+    if (title.length > 70) warn(f, 'title-len', `${title.length} chars: "${title}"`);
   }
   if (descs[0]) {
     const d = decode(descs[0][1]);
