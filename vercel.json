@@ -60,6 +60,409 @@
       "source": "/services/kitchen-remodeling/",
       "destination": "/services/luxury-kitchen-remodeling/",
       "permanent": true
+    },
+    {
+      "source": "/portfolio/project.html",
+      "destination": "/portfolio/project/?id=:id",
+      "permanent": true,
+      "has": [
+        {
+          "type": "query",
+          "key": "id",
+          "value": "(?<id>.+)"
+        }
+      ]
+    },
+    {
+      "source": "/blog/article.html",
+      "destination": "/blog/article/?id=:id",
+      "permanent": true,
+      "has": [
+        {
+          "type": "query",
+          "key": "id",
+          "value": "(?<id>.+)"
+        }
+      ]
+    },
+    {
+      "source": "/service-areas/article/",
+      "destination": "/blog/article/?id=:id",
+      "permanent": true,
+      "has": [
+        {
+          "type": "query",
+          "key": "id",
+          "value": "(?<id>.+)"
+        }
+      ]
+    },
+    {
+      "source": "/service-areas/article",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/article/",
+      "destination": "/blog/",
+      "permanent": false,
+      "missing": [
+        {
+          "type": "query",
+          "key": "id"
+        }
+      ]
+    },
+    {
+      "source": "/portfolio/project/",
+      "destination": "/portfolio/",
+      "permanent": false,
+      "missing": [
+        {
+          "type": "query",
+          "key": "id"
+        }
+      ]
+    },
+    {
+      "source": "/estimator.html",
+      "destination": "/contact/",
+      "permanent": true
+    },
+    {
+      "source": "/:path*/estimator.html",
+      "destination": "/contact/",
+      "permanent": true
+    },
+    {
+      "source": "/index.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/index.php",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/services/kitchen-remodeling.html",
+      "destination": "/services/luxury-kitchen-remodeling/",
+      "permanent": true
+    },
+    {
+      "source": "/service-areas/main-line-pa.html",
+      "destination": "/service-areas/main-line-pa-remodeling/",
+      "permanent": true
+    },
+    {
+      "source": "/service-areas/kitchen-remodeling",
+      "destination": "/services/luxury-kitchen-remodeling/",
+      "permanent": true
+    },
+    {
+      "source": "/service-areas/kitchen-remodeling/",
+      "destination": "/services/luxury-kitchen-remodeling/",
+      "permanent": true
+    },
+    {
+      "source": "/service-areas/bathroom-remodeling",
+      "destination": "/services/custom-bathroom-renovations/",
+      "permanent": true
+    },
+    {
+      "source": "/service-areas/bathroom-remodeling/",
+      "destination": "/services/custom-bathroom-renovations/",
+      "permanent": true
+    },
+    {
+      "source": "/service-areas/:slug.html",
+      "destination": "/service-areas/:slug/",
+      "permanent": true
+    },
+    {
+      "source": "/services/:slug.html",
+      "destination": "/services/:slug/",
+      "permanent": true
+    },
+    {
+      "source": "/:slug.html",
+      "destination": "/:slug/",
+      "permanent": true
+    },
+    {
+      "source": "/:path*/index.html",
+      "destination": "/:path*/",
+      "permanent": true
+    },
+    {
+      "source": "/tag/:path*",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/category/:path*",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/projects/:slug",
+      "destination": "/portfolio/",
+      "permanent": true
+    },
+    {
+      "source": "/projects/:slug/",
+      "destination": "/portfolio/",
+      "permanent": true
+    },
+    {
+      "source": "/download",
+      "destination": "/contact/",
+      "permanent": true
+    },
+    {
+      "source": "/download/",
+      "destination": "/contact/",
+      "permanent": true
+    },
+    {
+      "source": "/bb-form-submission/:path*",
+      "destination": "/contact/",
+      "permanent": true
+    },
+    {
+      "source": "/bb-form-submission",
+      "destination": "/contact/",
+      "permanent": true
+    },
+    {
+      "source": "/bb-form-submission/",
+      "destination": "/contact/",
+      "permanent": true
+    },
+    {
+      "source": "/services/bathroom-and-kitchen-remodeling",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/services/bathroom-and-kitchen-remodeling/",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/services/portfolio",
+      "destination": "/portfolio/",
+      "permanent": true
+    },
+    {
+      "source": "/services/portfolio/",
+      "destination": "/portfolio/",
+      "permanent": true
+    },
+    {
+      "source": "/bathroom-remodeling-bucks-county",
+      "destination": "/service-areas/bucks-county/",
+      "permanent": true
+    },
+    {
+      "source": "/bathroom-remodeling-bucks-county/",
+      "destination": "/service-areas/bucks-county/",
+      "permanent": true
+    },
+    {
+      "source": "/bucks-county-kitchen-designers",
+      "destination": "/service-areas/bucks-county/",
+      "permanent": true
+    },
+    {
+      "source": "/bucks-county-kitchen-designers/",
+      "destination": "/service-areas/bucks-county/",
+      "permanent": true
+    },
+    {
+      "source": "/kitchen-remodeling-services-bucks-county-pa",
+      "destination": "/service-areas/bucks-county/",
+      "permanent": true
+    },
+    {
+      "source": "/kitchen-remodeling-services-bucks-county-pa/",
+      "destination": "/service-areas/bucks-county/",
+      "permanent": true
+    },
+    {
+      "source": "/montgomery-county-bathroom-remodeling",
+      "destination": "/service-areas/montgomery-county/",
+      "permanent": true
+    },
+    {
+      "source": "/montgomery-county-bathroom-remodeling/",
+      "destination": "/service-areas/montgomery-county/",
+      "permanent": true
+    },
+    {
+      "source": "/brushed-nickel-bathroom-lights",
+      "destination": "/services/custom-bathroom-renovations/",
+      "permanent": true
+    },
+    {
+      "source": "/brushed-nickel-bathroom-lights/",
+      "destination": "/services/custom-bathroom-renovations/",
+      "permanent": true
+    },
+    {
+      "source": "/shower-wall-lights-for-stylish-bathroom-illumination",
+      "destination": "/services/custom-bathroom-renovations/",
+      "permanent": true
+    },
+    {
+      "source": "/shower-wall-lights-for-stylish-bathroom-illumination/",
+      "destination": "/services/custom-bathroom-renovations/",
+      "permanent": true
+    },
+    {
+      "source": "/wood-bathroom-vanities",
+      "destination": "/services/custom-bathroom-renovations/",
+      "permanent": true
+    },
+    {
+      "source": "/wood-bathroom-vanities/",
+      "destination": "/services/custom-bathroom-renovations/",
+      "permanent": true
+    },
+    {
+      "source": "/master-bathroom-cabinet-ideas",
+      "destination": "/services/custom-bathroom-renovations/",
+      "permanent": true
+    },
+    {
+      "source": "/master-bathroom-cabinet-ideas/",
+      "destination": "/services/custom-bathroom-renovations/",
+      "permanent": true
+    },
+    {
+      "source": "/gray-cabinets",
+      "destination": "/services/custom-cabinetry/",
+      "permanent": true
+    },
+    {
+      "source": "/gray-cabinets/",
+      "destination": "/services/custom-cabinetry/",
+      "permanent": true
+    },
+    {
+      "source": "/gray-kitchen-cabinets",
+      "destination": "/services/custom-cabinetry/",
+      "permanent": true
+    },
+    {
+      "source": "/gray-kitchen-cabinets/",
+      "destination": "/services/custom-cabinetry/",
+      "permanent": true
+    },
+    {
+      "source": "/kitchen-cabinet-door-sizes",
+      "destination": "/services/custom-cabinetry/",
+      "permanent": true
+    },
+    {
+      "source": "/kitchen-cabinet-door-sizes/",
+      "destination": "/services/custom-cabinetry/",
+      "permanent": true
+    },
+    {
+      "source": "/kitchen-cabinets-in-philadelphia",
+      "destination": "/services/custom-cabinetry/",
+      "permanent": true
+    },
+    {
+      "source": "/kitchen-cabinets-in-philadelphia/",
+      "destination": "/services/custom-cabinetry/",
+      "permanent": true
+    },
+    {
+      "source": "/how-to-choose-a-kitchen-remodeling-contractor",
+      "destination": "/blog/article/?id=how-to-vet-remodeler-ambler-doylestown",
+      "permanent": true
+    },
+    {
+      "source": "/how-to-choose-a-kitchen-remodeling-contractor/",
+      "destination": "/blog/article/?id=how-to-vet-remodeler-ambler-doylestown",
+      "permanent": true
+    },
+    {
+      "source": "/how-to-prepare-for-a-kitchen-remodel",
+      "destination": "/blog/article/?id=living-through-kitchen-remodel-week-by-week",
+      "permanent": true
+    },
+    {
+      "source": "/how-to-prepare-for-a-kitchen-remodel/",
+      "destination": "/blog/article/?id=living-through-kitchen-remodel-week-by-week",
+      "permanent": true
+    },
+    {
+      "source": "/kitchen-island-remodel-ideas",
+      "destination": "/blog/article/?id=kitchen-island-design-ideas",
+      "permanent": true
+    },
+    {
+      "source": "/kitchen-island-remodel-ideas/",
+      "destination": "/blog/article/?id=kitchen-island-design-ideas",
+      "permanent": true
+    },
+    {
+      "source": "/kitchen-remodel-checklist",
+      "destination": "/blog/article/?id=kitchen-renovation-timeline",
+      "permanent": true
+    },
+    {
+      "source": "/kitchen-remodel-checklist/",
+      "destination": "/blog/article/?id=kitchen-renovation-timeline",
+      "permanent": true
+    },
+    {
+      "source": "/ranch-home-additions",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/ranch-home-additions/",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/revamp-your-home-the-ultimate-guide-to-kitchen-and-bath-remodeling",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/revamp-your-home-the-ultimate-guide-to-kitchen-and-bath-remodeling/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/transform-your-home-kitchen-and-bathroom-design-trends-for-2024",
+      "destination": "/blog/article/?id=kitchen-cabinet-trends-2025",
+      "permanent": true
+    },
+    {
+      "source": "/transform-your-home-kitchen-and-bathroom-design-trends-for-2024/",
+      "destination": "/blog/article/?id=kitchen-cabinet-trends-2025",
+      "permanent": true
+    },
+    {
+      "source": "/white-wood-kitchen",
+      "destination": "/portfolio/?filter=kitchen",
+      "permanent": true
+    },
+    {
+      "source": "/white-wood-kitchen/",
+      "destination": "/portfolio/?filter=kitchen",
+      "permanent": true
+    },
+    {
+      "source": "/transform-your-kitchen-the-definitive-guide-to-selecting-the-perfect-:rest*",
+      "destination": "/services/custom-cabinetry/",
+      "permanent": true
     }
   ]
 }

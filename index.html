@@ -3838,8 +3838,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         div.style.left = p.x + 'px';
         div.style.top = p.y + 'px';
         div.innerHTML = '<span class="orbital-point-tooltip">' + s.tooltip + '</span>' + (icons[s.icon] || '') + '<span class="orbital-point-label">' + s.label + '</span>';
-        div.addEventListener('click', function() { window.location.href = 'estimator.html?step=' + s.id; });
-        div.addEventListener('keydown', function(e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); window.location.href = 'estimator.html?step=' + s.id; } });
+        div.addEventListener('click', function() { window.location.href = '/contact/'; });
+        div.addEventListener('keydown', function(e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); window.location.href = '/contact/'; } });
         pointsEl.appendChild(div);
       });
 

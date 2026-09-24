@@ -16,6 +16,7 @@
      E bath-phrase  no "Kitchen & Bath Remodeling/Carpenter" (Bath, PA confusion)
      E sitemap      every sitemap <loc> resolves to a file; every indexable
                     page is in the sitemap
+     E redirect     every static vercel.json destination resolves to a page
      W title-len    title > 70 chars
      W desc-len     description < 120 or > 165 chars
    ============================================================ */
@@ -105,6 +106,16 @@ for (const u of indexableUrls) {
   if (/\/(thank-you|privacy-policy|terms-of-service|application|consultation)\/$/.test(u)) continue;
   if (/\/(portfolio\/project|blog\/article)\/$/.test(u)) continue; // param-driven templates
   if (!locSet.has(u)) warn(path.join(ROOT, 'sitemap.xml'), 'sitemap', `indexable page not in sitemap: ${u}`);
+}
+
+// vercel.json: every static destination must resolve to a page (or to another redirect source)
+const vercel = JSON.parse(fs.readFileSync(path.join(ROOT, 'vercel.json'), 'utf8'));
+const sources = new Set(vercel.redirects.map(r => r.source));
+for (const r of vercel.redirects) {
+  const d = r.destination.split('?')[0];
+  if (d.includes(':')) continue;
+  const file = path.join(ROOT, d, d.endsWith('/') ? 'index.html' : '');
+  if (!fs.existsSync(file) && !sources.has(d) && !sources.has(d.replace(/\/$/, ''))) err(path.join(ROOT, 'vercel.json'), 'redirect', `${r.source} → ${r.destination} has no page`);
 }
 
 if (!quiet) { warnings.forEach(w => console.log('W ' + w)); }
