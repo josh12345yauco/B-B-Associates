@@ -207,12 +207,12 @@
       "permanent": true
     },
     {
-      "source": "/tag/:path*",
+      "source": "/tag/:path(.*)",
       "destination": "/blog/",
       "permanent": true
     },
     {
-      "source": "/category/:path*",
+      "source": "/category/:path(.*)",
       "destination": "/blog/",
       "permanent": true
     },
@@ -237,7 +237,7 @@
       "permanent": true
     },
     {
-      "source": "/bb-form-submission/:path*",
+      "source": "/bb-form-submission/:path(.*)",
       "destination": "/contact/",
       "permanent": true
     },
