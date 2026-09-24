@@ -68,7 +68,9 @@ function pickFaqs(town, service) {
     chosen.push({ q, a: fill(f.a, town, service) });
     if (overrides.length + chosen.length >= 6) break;
   }
-  return overrides.concat(chosen).slice(0, 6);
+  // Always-on AI-style questions (data/seo-faqs.json → services.json faqAlways), appended last.
+  const always = (service.faqAlways || []).map(f => ({ q: fill(f.q, town, service), a: fill(f.a, town, service) }));
+  return overrides.concat(chosen).slice(0, 6).concat(always);
 }
 
 /* ── Blocks ──────────────────────────────────────────────────── */

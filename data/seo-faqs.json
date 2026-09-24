@@ -1,0 +1,45 @@
+{
+  "_readme": "A3 (2026-09-24): AI-style FAQs mirroring the full-sentence queries GSC shows ranking 6–8 and the prompts AI engines answer. Placeholders: {Town}, {County}, {Nearby}. Applied to hand-built town pages by scripts/apply-seo-faqs.py and to generated pages via services.json faqAlways.",
+  "towns": {
+    "ambler-pa-remodeling-contractor": {"town": "Ambler", "county": "Montgomery County", "nearby": "Upper Dublin, Maple Glen and Fort Washington"},
+    "berwyn-pa-remodeling": {"town": "Berwyn", "county": "Chester County and the Main Line", "nearby": "Devon, Paoli and Malvern"},
+    "blue-bell-north-wales-remodeling": {"town": "Blue Bell", "county": "Montgomery County", "nearby": "North Wales, Whitpain and Lansdale"},
+    "bryn-mawr-pa-remodeling": {"town": "Bryn Mawr", "county": "the Main Line", "nearby": "Haverford, Rosemont and Villanova"},
+    "buckingham-pa-remodeling": {"town": "Buckingham", "county": "Bucks County", "nearby": "Doylestown, Lahaska and Furlong"},
+    "bucks-county": {"town": "Bucks County", "county": "Bucks County", "nearby": "Doylestown, Newtown, Yardley and New Hope"},
+    "chalfont-pa-remodeling": {"town": "Chalfont", "county": "Bucks County", "nearby": "New Britain, Doylestown and Warrington"},
+    "doylestown-new-hope-kitchen-remodeling": {"town": "Doylestown", "county": "Bucks County", "nearby": "New Hope, Solebury and Buckingham"},
+    "flourtown-pa-remodeling": {"town": "Flourtown", "county": "Montgomery County", "nearby": "Erdenheim, Whitemarsh and Oreland"},
+    "fort-washington-pa-remodeling": {"town": "Fort Washington", "county": "Montgomery County", "nearby": "Ambler, Dresher and Oreland"},
+    "gladwyne-pa-remodeling": {"town": "Gladwyne", "county": "the Main Line", "nearby": "Bryn Mawr, Villanova and Penn Valley"},
+    "haverford-ardmore-remodeling": {"town": "Haverford", "county": "the Main Line", "nearby": "Ardmore, Bryn Mawr and Wynnewood"},
+    "horsham-pa-remodeling": {"town": "Horsham", "county": "Montgomery County", "nearby": "Hatboro, Willow Grove and Maple Glen"},
+    "lansdale-pa-remodeling": {"town": "Lansdale", "county": "Montgomery County", "nearby": "North Wales, Hatfield and Montgomeryville"},
+    "lower-gwynedd-pa-remodeling": {"town": "Lower Gwynedd", "county": "Montgomery County", "nearby": "Gwynedd Valley, Spring House and Ambler"},
+    "main-line-pa-remodeling": {"town": "the Main Line", "county": "the Main Line", "nearby": "Bryn Mawr, Wayne, Villanova and Gladwyne"},
+    "montgomery-county": {"town": "Montgomery County", "county": "Montgomery County", "nearby": "Ambler, Blue Bell, Horsham and Lansdale"},
+    "newtown-pa-kitchen-bathroom-remodeling": {"town": "Newtown", "county": "Bucks County", "nearby": "Yardley, Langhorne and Upper Makefield"},
+    "warminster-pa-remodeling": {"town": "Warminster", "county": "Bucks County", "nearby": "Hatboro, Warrington and Southampton"},
+    "warrington-pa-remodeling": {"town": "Warrington", "county": "Bucks County", "nearby": "Chalfont, Doylestown and Warminster"},
+    "wayne-villanova-bathroom-remodeling": {"town": "Wayne", "county": "the Main Line", "nearby": "Villanova, Radnor and St. Davids"},
+    "yardley-pa-remodeling": {"town": "Yardley", "county": "Bucks County", "nearby": "Lower Makefield, Newtown and Langhorne"}
+  },
+  "faqs": [
+    {
+      "id": "best-tile",
+      "q": "Who is the best bathroom remodeler for tile work near {Town}, PA?",
+      "a": "Homeowners in {Town} and {Nearby} hire B&B Associates for bathrooms where the tile has to be right: large-format porcelain, natural stone, mosaic accents, curbless and walk-in showers, and custom niches, all set by our own crews rather than a subcontractor. We are a family-owned, PA-licensed remodeler (HIC #PA104189) with 5.0-star Google reviews, and every {County} bathroom gets an itemized estimate before work starts."
+    },
+    {
+      "id": "best-reviews",
+      "q": "Which kitchen remodeler in {Town} has the best reviews?",
+      "a": "B&B Associates holds a 5.0-star Google rating from {County} homeowners, and our reviews page lists the projects behind it, including kitchens in {Town} and {Nearby}. Look for a remodeler whose reviews name real towns and describe the work, whose license is verifiable with the Pennsylvania Attorney General, and who shows you completed projects near you before you sign."
+    },
+    {
+      "id": "choose-luxury",
+      "q": "How do I choose a luxury kitchen remodeler in {Town}, PA?",
+      "a": "Ask three things: does one team handle design, permits and construction (design-build), is the estimate itemized line by line, and can they show finished kitchens in {Town} or {Nearby}? B&B Associates does all three from our office in Maple Glen, with custom cabinetry from 60+ supplier partners, permits handled with the local municipality, and a free in-home consultation to start."
+    }
+  ],
+  "tileParagraph": "Tile is where a bathroom is won or lost, so our own crews set every large-format porcelain, natural stone and mosaic surface, build curbless and walk-in showers with proper waterproofing, and finish custom niches and benches to the line. It is the reason {Town} homeowners searching for a bathroom remodeler with strong tile reviews end up calling us."
+}

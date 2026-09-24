@@ -51,6 +51,18 @@
         { "id": "showroom", "q": "Is there a showroom where I can see kitchen materials in person?", "a": "Our Ambler design showroom is coming soon — opening Winter 2026/2027. When it opens, you will be able to see countertop slabs, tile walls, cabinetry door styles, and hardware finishes from our 60+ supplier partners in person. Until then, all material selection happens through the in-home consultation and design process." },
         { "id": "book", "q": "How far in advance should I book a kitchen remodel in {Town}?", "a": "Our schedule typically books 6–10 weeks out from the consultation date. For projects beginning in spring, the most popular season, reach out by January or February to secure your spot; for a kitchen finished before the holidays, sign by early autumn. Consultations are always free, and there is no obligation until you sign a contract." }
       ],
+      "faqAlways": [
+              {
+                      "id": "best-reviews",
+                      "q": "Which kitchen remodeler in {Town} has the best reviews?",
+                      "a": "B&B Associates holds a 5.0-star Google rating from {County} homeowners, and our reviews page lists the projects behind it, including kitchens in {Town} and the surrounding {County} towns. Look for a remodeler whose reviews name real towns and describe the work, whose license is verifiable with the Pennsylvania Attorney General, and who shows you completed projects near you before you sign."
+              },
+              {
+                      "id": "choose-luxury",
+                      "q": "How do I choose a luxury kitchen remodeler in {Town}, PA?",
+                      "a": "Ask three things: does one team handle design, permits and construction (design-build), is the estimate itemized line by line, and can they show finished kitchens in {Town} or the surrounding {County} towns? B&B Associates does all three from our office in Maple Glen, with custom cabinetry from 60+ supplier partners, permits handled with the local municipality, and a free in-home consultation to start."
+              }
+      ],
       "faqDefaultOrder": ["cost", "permit", "timeline", "wall", "quote", "best"]
     },
     {
@@ -102,6 +114,13 @@
         { "id": "mold", "q": "Will a remodel fix a bathroom that keeps growing mold?", "a": "Usually yes, if the remodel addresses the cause rather than the symptom. In older {Town} homes the culprit is typically a fan venting into the attic, a shower built without a waterproof membrane, or an unsealed window in the shower. We vent to the exterior, rebuild the shower on a true waterproofing system, and rebuild the window opening as part of the project." },
         { "id": "curbless", "q": "Can you build a curbless shower in a {Town} home?", "a": "Yes. A curbless shower with a linear drain is one of the most requested upgrades from homeowners planning to stay in their {Town} home long term, and it does not have to look clinical. It requires recessing the shower floor or building up the surrounding floor, which we plan during design so the transition is seamless." },
         { "id": "showroom", "q": "Is there a showroom where I can see bathroom materials in person?", "a": "Our Ambler design showroom is coming soon — opening Winter 2026/2027. When it opens, you will be able to see tile walls, stone slabs, vanity styles, and fixture finishes from our 60+ supplier partners in person. Until then, all material selection happens through the in-home consultation and design process." }
+      ],
+      "faqAlways": [
+              {
+                      "id": "best-tile",
+                      "q": "Who is the best bathroom remodeler for tile work near {Town}, PA?",
+                      "a": "Homeowners in {Town} and the surrounding {County} towns hire B&B Associates for bathrooms where the tile has to be right: large-format porcelain, natural stone, mosaic accents, curbless and walk-in showers, and custom niches, all set by our own crews rather than a subcontractor. We are a family-owned, PA-licensed remodeler (HIC #PA104189) with 5.0-star Google reviews, and every {County} bathroom gets an itemized estimate before work starts."
+              }
       ],
       "faqDefaultOrder": ["cost", "permit", "timeline", "plumbing", "heated", "best"]
     }
