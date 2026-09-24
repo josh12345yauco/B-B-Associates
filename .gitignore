@@ -16,3 +16,4 @@ StrengthInCare-Postcard-Final*
 # Secrets — never commit
 .env
 .env.*
+.superpowers/
