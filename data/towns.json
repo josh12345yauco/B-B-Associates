@@ -62,6 +62,7 @@
           "olaughlin-kitchen"
         ],
         "bathroom": [
+          "ambler-elegant-master-bath",
           "vartanian-bathroom",
           "hartka-bathroom",
           "petev-bathroom"
@@ -530,6 +531,8 @@
           "ferrie-kitchen"
         ],
         "bathroom": [
+          "blue-bell-fireplace-master-bath",
+          "blue-bell-oceania-master-bath",
           "garvey-bathroom",
           "bridlehall-bathroom",
           "kaarby-bathroom"
@@ -1307,6 +1310,7 @@
       "ogImageBath": "https://www.bbassociatesco.com/IMAGES/Custom-Bathroom-Ambler-Pa.webp",
       "portfolio": {
         "kitchen": [
+          "doylestown-sage-vanilla-kitchen",
           "hess-kitchen",
           "hornig-kitchen",
           "kohl-kitchen"

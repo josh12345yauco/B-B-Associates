@@ -270,7 +270,7 @@ function buildPage(town, service) {
   const projectsHtml = projects.map(p => `          <a href="/portfolio/project/?id=${attr(p.id)}" class="st-project">
             <img src="${attr(p.thumbnail)}" alt="${attr(p.title)} — ${attr(p.type.toLowerCase())} remodel by B&amp;B Associates" loading="lazy" width="800" height="600">
             <p class="st-project-title">${esc(p.title)}</p>
-            <p class="st-project-meta">${esc(p.style)} · ${esc(p.duration)} · ${esc(p.investment)}</p>
+            <p class="st-project-meta">${esc([p.style, p.duration, p.investment].filter(Boolean).join(' · '))}</p>
           </a>`).join('\n');
 
   const articlesHtml = articles.length ? `        <div class="st-links" style="margin-top:var(--sp-6)">

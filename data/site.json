@@ -1,7 +1,7 @@
 {
   "_readme": "Build configuration for scripts/build-town-pages.js. Bump buildDate when generated content changes so sitemap lastmod stays honest. Output is deterministic for a given buildDate (idempotent builds).",
   "origin": "https://www.bbassociatesco.com",
-  "buildDate": "2026-09-24",
+  "buildDate": "2026-09-25",
   "gtmId": "GTM-KZZXTRLG",
   "businessId": "https://www.bbassociatesco.com/#business",
   "footerServiceAreas": [

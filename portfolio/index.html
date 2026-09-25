@@ -623,9 +623,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         if (hasAdminOrder) {
           filtered = allVisible;
         } else {
-          // Default interleave: video projects first, kitchen/bath alternating
-          const withVideo = allVisible.filter(p => p.video);
-          const withoutVideo = allVisible.filter(p => !p.video);
+          // Pinned projects (newest work, flagged `pinned: true` in projects-data.js) always lead, in data order
+          const pinned = allVisible.filter(p => p.pinned);
+          const unpinned = allVisible.filter(p => !p.pinned);
+          // Then the default interleave: video projects first, kitchen/bath alternating
+          const withVideo = unpinned.filter(p => p.video);
+          const withoutVideo = unpinned.filter(p => !p.video);
           const kitchens = withVideo.filter(p => p.type === 'Kitchen');
           const bathrooms = withVideo.filter(p => p.type === 'Bathroom');
           const interleaved = [];
@@ -634,7 +637,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             if (bathrooms[i]) interleaved.push(bathrooms[i]);
             if (kitchens[i]) interleaved.push(kitchens[i]);
           }
-          filtered = [...interleaved, ...withoutVideo];
+          filtered = [...pinned, ...interleaved, ...withoutVideo];
         }
       } else {
         filtered = allVisible.filter(p => {

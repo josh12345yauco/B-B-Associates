@@ -567,12 +567,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         },
         "location": {"@type": "Place", "address": {"@type": "PostalAddress", "addressLocality": project.town, "addressRegion": "PA"}},
         "image": project.images,
-        "review": {
-          "@type": "Review",
-          "reviewRating": {"@type": "Rating", "ratingValue": project.review.stars},
-          "author": {"@type": "Person", "name": project.review.author},
-          "reviewBody": project.review.text
-        }
+        ...(project.review && project.review.text ? {
+          "review": {
+            "@type": "Review",
+            "reviewRating": {"@type": "Rating", "ratingValue": project.review.stars || 5},
+            "author": {"@type": "Person", "name": project.review.author},
+            "reviewBody": project.review.text
+          }
+        } : {})
       });
 
       // ── RELATED PROJECTS ──────────────────────────
@@ -622,10 +624,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <p class="project-meta-label">Design Style</p>
               <p class="project-meta-value">${project.style}</p>
             </div>
+            ${project.duration ? `
             <div class="project-meta-item">
               <p class="project-meta-label">Duration</p>
               <p class="project-meta-value">${project.duration}</p>
-            </div>
+            </div>` : ''}
           </aside>
           <div class="project-description">
             ${project.description.split('. ').reduce((acc, sent, i) => {
@@ -681,7 +684,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </div>
         </section>
 
-        <!-- REVIEW PANEL -->
+        <!-- REVIEW PANEL (only when the project has a client review) -->
+        ${project.review && project.review.text ? `
         <section class="project-review-panel" aria-labelledby="review-heading">
           <div class="review-quote-mark" aria-hidden="true">"</div>
           <h2 id="review-heading" class="sr-only">Client Review</h2>
@@ -696,6 +700,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <a href="/reviews/">Read all 180+ reviews from B&amp;B clients →</a>
           </p>
         </section>
+        ` : ''}
 
         <!-- RELATED PROJECTS -->
         ${related.length > 0 ? `

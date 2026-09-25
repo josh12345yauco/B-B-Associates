@@ -5,12 +5,385 @@
 
 const projects = [
 
+  /* ────────────────── NEW WORK (2026) — pinned to the top of the portfolio ──────────────────
+     Sourced from @bbassociatescreations Instagram posts (Apr–Sep 2026). Ordered newest first.
+     `pinned: true` keeps these ahead of the default kitchen/bath interleave on /portfolio/.
+     Media lives in portfolio/{KITCHENS,BATHROOMS}/BB-<Town>-<project>/ (optimized JPG + reel.mp4).
+     review/duration intentionally omitted until real client details are available. */
+
+  {
+    id: "lansdale-master-bathroom",
+    title: "Brushed Brass & Navy Master Bathroom",
+    town: "Lansdale",
+    county: "Montgomery County",
+    type: "Bathroom",
+    year: 2026,
+    style: "Transitional",
+    pinned: true,
+    instagram: "https://www.instagram.com/bbassociatescreations/reel/DdHGe4CBhCy/",
+    description: "An elegant master bathroom in Lansdale built around large-format Leida 24x48 porcelain that wraps the floor and shower walls in soft, marble-veined stone. A custom frameless glass door opens onto a walk-in shower with a built-in bench and recessed niche, while a freestanding soaking tub sits beneath the windows under the vaulted ceiling. Navy vanity cabinetry grounds the palette and is topped with Calacatta Premata quartz, with the same stone carried into the shower set. Brushed brass fixtures, hardware, and a floor-mounted tub filler tie every element together with warmth.",
+    highlights: [
+      "Leida 24x48 porcelain floor and shower walls",
+      "Custom frameless glass shower door",
+      "Navy vanity cabinetry",
+      "Calacatta Premata quartz counter and stone set",
+      "Freestanding soaking tub with brass floor filler",
+      "Brushed brass finishes throughout"
+    ],
+    video: "/portfolio/BATHROOMS/BB-Lansdale-master-bathroom/reel.mp4",
+    images: [
+      "/portfolio/BATHROOMS/BB-Lansdale-master-bathroom/01.jpg",
+      "/portfolio/BATHROOMS/BB-Lansdale-master-bathroom/02.jpg",
+      "/portfolio/BATHROOMS/BB-Lansdale-master-bathroom/03.jpg",
+      "/portfolio/BATHROOMS/BB-Lansdale-master-bathroom/04.jpg",
+      "/portfolio/BATHROOMS/BB-Lansdale-master-bathroom/05.jpg",
+      "/portfolio/BATHROOMS/BB-Lansdale-master-bathroom/06.jpg"
+    ],
+    thumbnail: "/portfolio/BATHROOMS/BB-Lansdale-master-bathroom/01.jpg",
+    tags: ["bathroom", "montgomery-county"],
+    review: null
+  },
+
+  {
+    id: "bala-cynwyd-wood-stain-kitchen",
+    title: "Natural Maple Wood-Stain Kitchen",
+    town: "Bala Cynwyd",
+    county: "Montgomery County",
+    type: "Kitchen",
+    year: 2026,
+    style: "Contemporary",
+    pinned: true,
+    instagram: "https://www.instagram.com/bbassociatescreations/p/DdEj50pnGah/",
+    description: "This Bala Cynwyd kitchen celebrates the natural grain of maple, with wood-stained cabinetry running floor to ceiling and wrapping a generous peninsula with seating. A marble backsplash rises behind the range and along the sink wall, its soft veining echoed in the light stone countertops. Champagne bronze faucet, hardware, and glass globe pendants add a refined glow against the warm wood. Wide-plank light hardwood floors and stainless appliances keep the space bright, open, and easy to live in.",
+    highlights: [
+      "Natural maple wood-stain cabinetry",
+      "Marble backsplash",
+      "Champagne bronze finishes",
+      "Peninsula with bar seating",
+      "Glass globe pendant lighting"
+    ],
+    video: "/portfolio/KITCHENS/BB-BalaCynwyd-wood-stain-kitchen/reel.mp4",
+    images: [
+      "/portfolio/KITCHENS/BB-BalaCynwyd-wood-stain-kitchen/01.jpg",
+      "/portfolio/KITCHENS/BB-BalaCynwyd-wood-stain-kitchen/02.jpg",
+      "/portfolio/KITCHENS/BB-BalaCynwyd-wood-stain-kitchen/03.jpg",
+      "/portfolio/KITCHENS/BB-BalaCynwyd-wood-stain-kitchen/04.jpg",
+      "/portfolio/KITCHENS/BB-BalaCynwyd-wood-stain-kitchen/05.jpg",
+      "/portfolio/KITCHENS/BB-BalaCynwyd-wood-stain-kitchen/06.jpg",
+      "/portfolio/KITCHENS/BB-BalaCynwyd-wood-stain-kitchen/07.jpg",
+      "/portfolio/KITCHENS/BB-BalaCynwyd-wood-stain-kitchen/08.jpg",
+      "/portfolio/KITCHENS/BB-BalaCynwyd-wood-stain-kitchen/09.jpg",
+      "/portfolio/KITCHENS/BB-BalaCynwyd-wood-stain-kitchen/10.jpg",
+      "/portfolio/KITCHENS/BB-BalaCynwyd-wood-stain-kitchen/11.jpg",
+      "/portfolio/KITCHENS/BB-BalaCynwyd-wood-stain-kitchen/12.jpg",
+      "/portfolio/KITCHENS/BB-BalaCynwyd-wood-stain-kitchen/13.jpg"
+    ],
+    thumbnail: "/portfolio/KITCHENS/BB-BalaCynwyd-wood-stain-kitchen/01.jpg",
+    tags: ["kitchen", "montgomery-county", "main-line"],
+    review: null
+  },
+
+  {
+    id: "pipersville-bronze-master-bath",
+    title: "Bronze & Checkerboard Master Bath",
+    town: "Pipersville",
+    county: "Bucks County",
+    type: "Bathroom",
+    year: 2026,
+    style: "Classic",
+    pinned: true,
+    instagram: "https://www.instagram.com/bbassociatescreations/p/Dbn0GASnJow/",
+    description: "A classic Bucks County master bath in Pipersville, defined by a chess-pattern floor that sets a bold, timeless rhythm underfoot. Ivy King Hill textured tiles line the walk-in shower behind a frameless glass enclosure, and custom wainscoting dresses the walls around the freestanding tub. A washed oak vanity brings natural warmth, paired with champagne bronze faucets, hardware, and shower fixtures. Large windows flood the room with daylight, making the layered textures and finishes glow.",
+    highlights: [
+      "Ivy King Hill textured shower tile",
+      "Chess-pattern tile floor",
+      "Custom wainscoting",
+      "Washed oak vanity",
+      "Freestanding tub",
+      "Champagne bronze finishes"
+    ],
+    video: "/portfolio/BATHROOMS/BB-Pipersville-bronze-master-bath/reel.mp4",
+    images: [
+      "/portfolio/BATHROOMS/BB-Pipersville-bronze-master-bath/01.jpg",
+      "/portfolio/BATHROOMS/BB-Pipersville-bronze-master-bath/02.jpg",
+      "/portfolio/BATHROOMS/BB-Pipersville-bronze-master-bath/03.jpg",
+      "/portfolio/BATHROOMS/BB-Pipersville-bronze-master-bath/04.jpg",
+      "/portfolio/BATHROOMS/BB-Pipersville-bronze-master-bath/05.jpg",
+      "/portfolio/BATHROOMS/BB-Pipersville-bronze-master-bath/06.jpg",
+      "/portfolio/BATHROOMS/BB-Pipersville-bronze-master-bath/07.jpg",
+      "/portfolio/BATHROOMS/BB-Pipersville-bronze-master-bath/08.jpg",
+      "/portfolio/BATHROOMS/BB-Pipersville-bronze-master-bath/09.jpg",
+      "/portfolio/BATHROOMS/BB-Pipersville-bronze-master-bath/10.jpg",
+      "/portfolio/BATHROOMS/BB-Pipersville-bronze-master-bath/11.jpg",
+      "/portfolio/BATHROOMS/BB-Pipersville-bronze-master-bath/12.jpg",
+      "/portfolio/BATHROOMS/BB-Pipersville-bronze-master-bath/13.jpg",
+      "/portfolio/BATHROOMS/BB-Pipersville-bronze-master-bath/14.jpg",
+      "/portfolio/BATHROOMS/BB-Pipersville-bronze-master-bath/15.jpg",
+      "/portfolio/BATHROOMS/BB-Pipersville-bronze-master-bath/16.jpg",
+      "/portfolio/BATHROOMS/BB-Pipersville-bronze-master-bath/17.jpg",
+      "/portfolio/BATHROOMS/BB-Pipersville-bronze-master-bath/18.jpg",
+      "/portfolio/BATHROOMS/BB-Pipersville-bronze-master-bath/19.jpg",
+      "/portfolio/BATHROOMS/BB-Pipersville-bronze-master-bath/20.jpg"
+    ],
+    thumbnail: "/portfolio/BATHROOMS/BB-Pipersville-bronze-master-bath/01.jpg",
+    tags: ["bathroom", "bucks-county"],
+    review: null
+  },
+
+  {
+    id: "doylestown-sage-vanilla-kitchen",
+    title: "Sage & Vanilla Two-Tone Kitchen",
+    town: "Doylestown",
+    county: "Bucks County",
+    type: "Kitchen",
+    year: 2026,
+    style: "Transitional",
+    pinned: true,
+    instagram: "https://www.instagram.com/bbassociatescreations/p/DagCSRQiUBh/",
+    description: "A two-tone Doylestown kitchen that pairs painted vanilla perimeter cabinetry with a painted sage island and accent cabinets for a palette that feels fresh and grounded. Fantasy Brown countertops run across every surface, their soft movement complemented by a boutique subway tile backsplash. Brushed brass pulls, faucet, and pendant lights warm the scheme, while a microwave drawer keeps the island counters clean and open. Hardwood floors and abundant natural light complete an inviting, hardworking family kitchen.",
+    highlights: [
+      "Painted vanilla perimeter cabinetry",
+      "Painted sage island and accent cabinets",
+      "Fantasy Brown countertops",
+      "Boutique subway tile backsplash",
+      "Microwave drawer",
+      "Brushed brass finishes"
+    ],
+    video: "/portfolio/KITCHENS/BB-Doylestown-sage-vanilla-kitchen/reel.mp4",
+    images: [
+      "/portfolio/KITCHENS/BB-Doylestown-sage-vanilla-kitchen/01.jpg",
+      "/portfolio/KITCHENS/BB-Doylestown-sage-vanilla-kitchen/02.jpg",
+      "/portfolio/KITCHENS/BB-Doylestown-sage-vanilla-kitchen/03.jpg",
+      "/portfolio/KITCHENS/BB-Doylestown-sage-vanilla-kitchen/04.jpg",
+      "/portfolio/KITCHENS/BB-Doylestown-sage-vanilla-kitchen/05.jpg",
+      "/portfolio/KITCHENS/BB-Doylestown-sage-vanilla-kitchen/06.jpg",
+      "/portfolio/KITCHENS/BB-Doylestown-sage-vanilla-kitchen/07.jpg",
+      "/portfolio/KITCHENS/BB-Doylestown-sage-vanilla-kitchen/08.jpg",
+      "/portfolio/KITCHENS/BB-Doylestown-sage-vanilla-kitchen/09.jpg",
+      "/portfolio/KITCHENS/BB-Doylestown-sage-vanilla-kitchen/10.jpg",
+      "/portfolio/KITCHENS/BB-Doylestown-sage-vanilla-kitchen/11.jpg",
+      "/portfolio/KITCHENS/BB-Doylestown-sage-vanilla-kitchen/12.jpg",
+      "/portfolio/KITCHENS/BB-Doylestown-sage-vanilla-kitchen/13.jpg"
+    ],
+    thumbnail: "/portfolio/KITCHENS/BB-Doylestown-sage-vanilla-kitchen/01.jpg",
+    tags: ["kitchen", "bucks-county"],
+    review: null
+  },
+
+  {
+    id: "ambler-elegant-master-bath",
+    title: "Elegant Multi-Tone Master Bath",
+    town: "Ambler",
+    county: "Montgomery County",
+    type: "Bathroom",
+    year: 2026,
+    style: "Transitional",
+    pinned: true,
+    instagram: "https://www.instagram.com/bbassociatescreations/p/DaNw1P_HDxK/",
+    description: "An elegant Ambler master bath layered with multi-tone subway tiles on the walls and large 24x48 slab tiles across a heated floor. Custom vanities in a soft oat paint stretch along the room, including a dedicated seated makeup station, each topped with LED mirrors with built-in defoggers. A freestanding tub sits beneath a chandelier and plantation shutters, with a frameless glass shower tucked beside it. Brushed brass finishes carry through every faucet, handle, and fixture for a warm, cohesive glow.",
+    highlights: [
+      "Multi-tone subway wall tile",
+      "24x48 slab tile floor with radiant heat",
+      "Custom oat-painted vanities with makeup station",
+      "LED mirrors with defoggers",
+      "Freestanding tub under a chandelier",
+      "Brushed brass finishes throughout"
+    ],
+    video: "/portfolio/BATHROOMS/BB-Ambler-elegant-master-bath/reel.mp4",
+    images: [
+      "/portfolio/BATHROOMS/BB-Ambler-elegant-master-bath/01.jpg",
+      "/portfolio/BATHROOMS/BB-Ambler-elegant-master-bath/02.jpg",
+      "/portfolio/BATHROOMS/BB-Ambler-elegant-master-bath/03.jpg",
+      "/portfolio/BATHROOMS/BB-Ambler-elegant-master-bath/04.jpg",
+      "/portfolio/BATHROOMS/BB-Ambler-elegant-master-bath/05.jpg",
+      "/portfolio/BATHROOMS/BB-Ambler-elegant-master-bath/06.jpg",
+      "/portfolio/BATHROOMS/BB-Ambler-elegant-master-bath/07.jpg",
+      "/portfolio/BATHROOMS/BB-Ambler-elegant-master-bath/08.jpg",
+      "/portfolio/BATHROOMS/BB-Ambler-elegant-master-bath/09.jpg",
+      "/portfolio/BATHROOMS/BB-Ambler-elegant-master-bath/10.jpg",
+      "/portfolio/BATHROOMS/BB-Ambler-elegant-master-bath/11.jpg",
+      "/portfolio/BATHROOMS/BB-Ambler-elegant-master-bath/12.jpg",
+      "/portfolio/BATHROOMS/BB-Ambler-elegant-master-bath/13.jpg",
+      "/portfolio/BATHROOMS/BB-Ambler-elegant-master-bath/14.jpg",
+      "/portfolio/BATHROOMS/BB-Ambler-elegant-master-bath/15.jpg",
+      "/portfolio/BATHROOMS/BB-Ambler-elegant-master-bath/16.jpg",
+      "/portfolio/BATHROOMS/BB-Ambler-elegant-master-bath/17.jpg",
+      "/portfolio/BATHROOMS/BB-Ambler-elegant-master-bath/18.jpg",
+      "/portfolio/BATHROOMS/BB-Ambler-elegant-master-bath/19.jpg",
+      "/portfolio/BATHROOMS/BB-Ambler-elegant-master-bath/20.jpg"
+    ],
+    thumbnail: "/portfolio/BATHROOMS/BB-Ambler-elegant-master-bath/01.jpg",
+    tags: ["bathroom", "montgomery-county"],
+    review: null
+  },
+
+  {
+    id: "blue-bell-oceania-master-bath",
+    title: "Oceania Azul Master Bath",
+    town: "Blue Bell",
+    county: "Montgomery County",
+    type: "Bathroom",
+    year: 2026,
+    style: "Contemporary",
+    pinned: true,
+    instagram: "https://www.instagram.com/bbassociatescreations/reel/DZux97gBO3T/",
+    description: "Oceania Azul slab tiles give this Blue Bell master bath its signature look, sweeping across the floor and up the shower walls in dramatic blue-gray veining. A Maple Latte custom vanity with double sinks is topped with Premata Calacatta quartz and framed by arched mirrors and sconces. The walk-in shower features a sliding glass door, a rain head, and a recessed storage niche cut from the same stone. Champagne bronze fixtures and hardware add warmth, and a freestanding tub completes the spa-like retreat.",
+    highlights: [
+      "Oceania Azul slab tile floor and shower",
+      "Maple Latte custom double vanity",
+      "Premata Calacatta quartz counters",
+      "Champagne bronze finishes",
+      "Freestanding tub"
+    ],
+    video: "/portfolio/BATHROOMS/BB-BlueBell-oceania-master-bath/reel.mp4",
+    images: [
+      "/portfolio/BATHROOMS/BB-BlueBell-oceania-master-bath/01.jpg",
+      "/portfolio/BATHROOMS/BB-BlueBell-oceania-master-bath/02.jpg",
+      "/portfolio/BATHROOMS/BB-BlueBell-oceania-master-bath/03.jpg",
+      "/portfolio/BATHROOMS/BB-BlueBell-oceania-master-bath/04.jpg",
+      "/portfolio/BATHROOMS/BB-BlueBell-oceania-master-bath/05.jpg",
+      "/portfolio/BATHROOMS/BB-BlueBell-oceania-master-bath/06.jpg"
+    ],
+    thumbnail: "/portfolio/BATHROOMS/BB-BlueBell-oceania-master-bath/01.jpg",
+    tags: ["bathroom", "montgomery-county"],
+    review: null
+  },
+
+  {
+    id: "fort-washington-total-kitchen",
+    title: "Vanilla & Two-Tone Wood Island Kitchen",
+    town: "Fort Washington",
+    county: "Montgomery County",
+    type: "Kitchen",
+    year: 2026,
+    style: "Transitional",
+    pinned: true,
+    instagram: "https://www.instagram.com/bbassociatescreations/p/DZcze78DqMD/",
+    description: "A total kitchen renovation in Fort Washington that turned a small corner kitchen into a larger, welcoming space. To extend cabinet storage along the exterior wall, the height of a window was shortened, allowing full runs of vanilla cabinetry and a custom hood to frame the room. A two-tone wood island anchors the center with seating and prep space, topped like the perimeter in quartz. A multi-tone glazed textured backsplash, washed hardwood floors, and brushed brass hardware and fixtures bring depth and warmth to the bright, open layout.",
+    highlights: [
+      "Corner kitchen opened into a larger space",
+      "Window shortened to extend cabinet storage",
+      "Vanilla cabinetry with two-tone wood island",
+      "Multi-tone glazed texture backsplash",
+      "Quartz countertops",
+      "Washed hardwood floors and brushed brass finishes"
+    ],
+    video: "/portfolio/KITCHENS/BB-FortWashington-total-kitchen/reel.mp4",
+    images: [
+      "/portfolio/KITCHENS/BB-FortWashington-total-kitchen/01.jpg",
+      "/portfolio/KITCHENS/BB-FortWashington-total-kitchen/02.jpg",
+      "/portfolio/KITCHENS/BB-FortWashington-total-kitchen/03.jpg",
+      "/portfolio/KITCHENS/BB-FortWashington-total-kitchen/04.jpg",
+      "/portfolio/KITCHENS/BB-FortWashington-total-kitchen/05.jpg",
+      "/portfolio/KITCHENS/BB-FortWashington-total-kitchen/06.jpg",
+      "/portfolio/KITCHENS/BB-FortWashington-total-kitchen/07.jpg",
+      "/portfolio/KITCHENS/BB-FortWashington-total-kitchen/08.jpg",
+      "/portfolio/KITCHENS/BB-FortWashington-total-kitchen/09.jpg",
+      "/portfolio/KITCHENS/BB-FortWashington-total-kitchen/10.jpg",
+      "/portfolio/KITCHENS/BB-FortWashington-total-kitchen/11.jpg",
+      "/portfolio/KITCHENS/BB-FortWashington-total-kitchen/12.jpg",
+      "/portfolio/KITCHENS/BB-FortWashington-total-kitchen/13.jpg",
+      "/portfolio/KITCHENS/BB-FortWashington-total-kitchen/14.jpg",
+      "/portfolio/KITCHENS/BB-FortWashington-total-kitchen/15.jpg",
+      "/portfolio/KITCHENS/BB-FortWashington-total-kitchen/16.jpg",
+      "/portfolio/KITCHENS/BB-FortWashington-total-kitchen/17.jpg"
+    ],
+    thumbnail: "/portfolio/KITCHENS/BB-FortWashington-total-kitchen/01.jpg",
+    tags: ["kitchen", "montgomery-county"],
+    review: null
+  },
+
+  {
+    id: "blue-bell-fireplace-master-bath",
+    title: "Fireplace Wall Master Bath",
+    town: "Blue Bell",
+    county: "Montgomery County",
+    type: "Bathroom",
+    year: 2026,
+    style: "Modern",
+    pinned: true,
+    instagram: "https://www.instagram.com/bbassociatescreations/p/DYuxpbpDo-W/",
+    description: "This Blue Bell master bathroom renovation is centered on a floor-to-ceiling stacked-stone accent wall with a built-in linear fireplace, set beneath a skylight that washes the texture in daylight. A freestanding tub rests in front of the fireplace wall, creating a true spa moment. The shower was enlarged and enclosed in glass with a sliding door, and a recessed storage unit was built into the wall to keep everything within reach. Matte black fixtures, hardware, and a dark vanity provide crisp contrast against the marble-look floor tile.",
+    highlights: [
+      "Floor-to-ceiling stacked-stone fireplace wall",
+      "Freestanding tub beneath a skylight",
+      "Enlarged glass shower with sliding door",
+      "Recessed storage unit",
+      "Matte black finishes"
+    ],
+    video: "/portfolio/BATHROOMS/BB-BlueBell-fireplace-master-bath/reel.mp4",
+    images: [
+      "/portfolio/BATHROOMS/BB-BlueBell-fireplace-master-bath/01.jpg",
+      "/portfolio/BATHROOMS/BB-BlueBell-fireplace-master-bath/02.jpg",
+      "/portfolio/BATHROOMS/BB-BlueBell-fireplace-master-bath/03.jpg",
+      "/portfolio/BATHROOMS/BB-BlueBell-fireplace-master-bath/04.jpg",
+      "/portfolio/BATHROOMS/BB-BlueBell-fireplace-master-bath/05.jpg",
+      "/portfolio/BATHROOMS/BB-BlueBell-fireplace-master-bath/06.jpg",
+      "/portfolio/BATHROOMS/BB-BlueBell-fireplace-master-bath/07.jpg",
+      "/portfolio/BATHROOMS/BB-BlueBell-fireplace-master-bath/08.jpg",
+      "/portfolio/BATHROOMS/BB-BlueBell-fireplace-master-bath/09.jpg",
+      "/portfolio/BATHROOMS/BB-BlueBell-fireplace-master-bath/10.jpg",
+      "/portfolio/BATHROOMS/BB-BlueBell-fireplace-master-bath/11.jpg",
+      "/portfolio/BATHROOMS/BB-BlueBell-fireplace-master-bath/12.jpg",
+      "/portfolio/BATHROOMS/BB-BlueBell-fireplace-master-bath/13.jpg",
+      "/portfolio/BATHROOMS/BB-BlueBell-fireplace-master-bath/14.jpg",
+      "/portfolio/BATHROOMS/BB-BlueBell-fireplace-master-bath/15.jpg",
+      "/portfolio/BATHROOMS/BB-BlueBell-fireplace-master-bath/16.jpg",
+      "/portfolio/BATHROOMS/BB-BlueBell-fireplace-master-bath/17.jpg"
+    ],
+    thumbnail: "/portfolio/BATHROOMS/BB-BlueBell-fireplace-master-bath/01.jpg",
+    tags: ["bathroom", "montgomery-county"],
+    review: null
+  },
+
+  {
+    id: "fort-washington-harbor-vanity-bath",
+    title: "Harbor Vanity & Ivy White Master Bath",
+    town: "Fort Washington",
+    county: "Montgomery County",
+    type: "Bathroom",
+    year: 2026,
+    style: "Classic",
+    pinned: true,
+    instagram: "https://www.instagram.com/bbassociatescreations/p/DW6rgbulfNO/",
+    description: "A serene Fort Washington master bathroom anchored by a Harbor custom vanity with Bianco Carrara quartz countertops, arched mirrors, and warm brass sconces. The walk-in shower is lined in a boutique multi-tone Ivy White tile with a built-in bench and enclosed in frameless glass. Underfoot, a soft wood-look porcelain plank floor adds natural warmth without the maintenance of hardwood. Brushed brass finishes run throughout, from the faucets and shower set to the cabinet hardware and lighting.",
+    highlights: [
+      "Harbor custom vanity",
+      "Bianco Carrara quartz countertops",
+      "Boutique multi-tone Ivy White shower tile",
+      "Frameless glass shower with bench",
+      "Wood-look porcelain plank floor",
+      "Brushed brass finishes throughout"
+    ],
+    video: "/portfolio/BATHROOMS/BB-FortWashington-harbor-vanity-bath/reel.mp4",
+    images: [
+      "/portfolio/BATHROOMS/BB-FortWashington-harbor-vanity-bath/01.jpg",
+      "/portfolio/BATHROOMS/BB-FortWashington-harbor-vanity-bath/02.jpg",
+      "/portfolio/BATHROOMS/BB-FortWashington-harbor-vanity-bath/03.jpg",
+      "/portfolio/BATHROOMS/BB-FortWashington-harbor-vanity-bath/04.jpg",
+      "/portfolio/BATHROOMS/BB-FortWashington-harbor-vanity-bath/05.jpg",
+      "/portfolio/BATHROOMS/BB-FortWashington-harbor-vanity-bath/06.jpg",
+      "/portfolio/BATHROOMS/BB-FortWashington-harbor-vanity-bath/07.jpg",
+      "/portfolio/BATHROOMS/BB-FortWashington-harbor-vanity-bath/08.jpg",
+      "/portfolio/BATHROOMS/BB-FortWashington-harbor-vanity-bath/09.jpg",
+      "/portfolio/BATHROOMS/BB-FortWashington-harbor-vanity-bath/10.jpg",
+      "/portfolio/BATHROOMS/BB-FortWashington-harbor-vanity-bath/11.jpg",
+      "/portfolio/BATHROOMS/BB-FortWashington-harbor-vanity-bath/12.jpg",
+      "/portfolio/BATHROOMS/BB-FortWashington-harbor-vanity-bath/13.jpg",
+      "/portfolio/BATHROOMS/BB-FortWashington-harbor-vanity-bath/14.jpg"
+    ],
+    thumbnail: "/portfolio/BATHROOMS/BB-FortWashington-harbor-vanity-bath/01.jpg",
+    tags: ["bathroom", "montgomery-county"],
+    review: null
+  },
+
   /* ─────────────────────────── KITCHENS ─────────────────────────── */
 
   {
     id: "rubin-kitchen",
     title: "Stacked White & Gray Kitchen",
-    town: "Pennsylvania",
+    town: "Ambler",
+    county: "Montgomery County",
     type: "Kitchen",
     year: 2023,
     style: "Transitional",
@@ -35,14 +408,15 @@ const projects = [
       "/portfolio/KITCHENS/B&B - Beth Rubin-kitchen/C80991C9-CA4F-4100-A5A5-427DE2433923.jpeg"
     ],
     thumbnail: "/portfolio/KITCHENS/B&B - Beth Rubin-kitchen/153E1359-5284-48E5-9F68-B497880FF6F7.jpeg",
-    tags: ["kitchen"],
-    review: { text: "The stacked cabinets completely transformed our kitchen. The B&B team executed every detail flawlessly — from the crown molding to the brushed nickel fixtures. We cook in here every night now just to enjoy the space.", author: "The Rubin Family", town: "Pennsylvania", stars: 5, source: "Google" }
+    tags: ["kitchen", "montgomery-county"],
+    review: { text: "The stacked cabinets completely transformed our kitchen. The B&B team executed every detail flawlessly — from the crown molding to the brushed nickel fixtures. We cook in here every night now just to enjoy the space.", author: "The Rubin Family", town: "Ambler", stars: 5, source: "Google" }
   },
 
   {
     id: "broderick-kitchen",
     title: "Open-Concept Cherry Amber Kitchen",
-    town: "Pennsylvania",
+    town: "Newtown",
+    county: "Bucks County",
     type: "Kitchen",
     year: 2023,
     style: "Transitional",
@@ -67,14 +441,15 @@ const projects = [
       "/portfolio/KITCHENS/B&B - Bill Broderick -kitchen/F098A4C3-BEED-467B-8DBF-41CEA6998618.jpeg"
     ],
     thumbnail: "/portfolio/KITCHENS/B&B - Bill Broderick -kitchen/08173010-D148-4016-9EE9-4BBE6DDF4F67.jpeg",
-    tags: ["kitchen"],
-    review: { text: "B&B turned our disjointed layout into a spectacular open kitchen. The Cherry Amber cabinets are stunning and the quartzite countertops are exactly what we dreamed of. Best investment we've ever made in our home.", author: "The Broderick Family", town: "Pennsylvania", stars: 5, source: "Google" }
+    tags: ["kitchen", "bucks-county"],
+    review: { text: "B&B turned our disjointed layout into a spectacular open kitchen. The Cherry Amber cabinets are stunning and the quartzite countertops are exactly what we dreamed of. Best investment we've ever made in our home.", author: "The Broderick Family", town: "Newtown", stars: 5, source: "Google" }
   },
 
   {
     id: "bryn-michaels-kitchen",
     title: "Two-Tone Natural Green Kitchen",
-    town: "Pennsylvania",
+    town: "Horsham",
+    county: "Montgomery County",
     type: "Kitchen",
     year: 2023,
     style: "Contemporary",
@@ -99,14 +474,15 @@ const projects = [
       "/portfolio/KITCHENS/B&B - Bryn Michaels Kitchen/D58CDD57-EFEA-46BF-8905-C10E6CCAD410.jpeg"
     ],
     thumbnail: "/portfolio/KITCHENS/B&B - Bryn Michaels Kitchen/294E52B4-81AA-44D1-A230-24D9680D37BB.jpeg",
-    tags: ["kitchen"],
-    review: { text: "We wanted something truly unique and B&B delivered beyond our expectations. The green backsplash is a conversation piece every time we have guests. The brass finishes tie everything together beautifully.", author: "The Michaels Family", town: "Pennsylvania", stars: 5, source: "Google" }
+    tags: ["kitchen", "montgomery-county"],
+    review: { text: "We wanted something truly unique and B&B delivered beyond our expectations. The green backsplash is a conversation piece every time we have guests. The brass finishes tie everything together beautifully.", author: "The Michaels Family", town: "Horsham", stars: 5, source: "Google" }
   },
 
   {
     id: "lee-kitchen",
     title: "Structural Raised-Floor Kitchen",
-    town: "Pennsylvania",
+    town: "Horsham",
+    county: "Montgomery County",
     type: "Kitchen",
     year: 2023,
     style: "Transitional",
@@ -131,14 +507,15 @@ const projects = [
       "/portfolio/KITCHENS/B&B - Chris Lee Kitchen /DD35D8B1-63DD-4CBF-B73E-6A6A64A7E7CA.jpeg"
     ],
     thumbnail: "/portfolio/KITCHENS/B&B - Chris Lee Kitchen /41957DB3-DDE9-44D4-A476-DA4308EA0100.jpeg",
-    tags: ["kitchen"],
-    review: { text: "The structural challenge in our kitchen was significant and B&B handled it with complete professionalism. The result is a perfectly level, open space that is now the heart of our home. The quartz island is stunning.", author: "The Lee Family", town: "Pennsylvania", stars: 5, source: "Google" }
+    tags: ["kitchen", "montgomery-county"],
+    review: { text: "The structural challenge in our kitchen was significant and B&B handled it with complete professionalism. The result is a perfectly level, open space that is now the heart of our home. The quartz island is stunning.", author: "The Lee Family", town: "Horsham", stars: 5, source: "Google" }
   },
 
   {
     id: "ferrie-kitchen",
     title: "Navy & White Champagne Kitchen",
-    town: "Pennsylvania",
+    town: "Blue Bell",
+    county: "Montgomery County",
     type: "Kitchen",
     year: 2023,
     style: "Transitional",
@@ -163,14 +540,15 @@ const projects = [
       "/portfolio/KITCHENS/B&B - Ferrie-kitchen/FA947963-AA7E-43CA-8487-97306D31E079.jpeg"
     ],
     thumbnail: "/portfolio/KITCHENS/B&B - Ferrie-kitchen/6534D687-3AE7-4524-9657-EE34302DB729.jpeg",
-    tags: ["kitchen"],
-    review: { text: "The navy and white combination is absolutely gorgeous. The champagne bronze fixtures are the perfect finishing touch. B&B's attention to detail on every single element made this kitchen exactly what we envisioned.", author: "The Ferrie Family", town: "Pennsylvania", stars: 5, source: "Google" }
+    tags: ["kitchen", "montgomery-county"],
+    review: { text: "The navy and white combination is absolutely gorgeous. The champagne bronze fixtures are the perfect finishing touch. B&B's attention to detail on every single element made this kitchen exactly what we envisioned.", author: "The Ferrie Family", town: "Blue Bell", stars: 5, source: "Google" }
   },
 
   {
     id: "ganescu-kitchen",
     title: "Seamless Storage Kitchen",
-    town: "Pennsylvania",
+    town: "Warrington",
+    county: "Bucks County",
     type: "Kitchen",
     year: 2022,
     style: "Contemporary",
@@ -195,14 +573,15 @@ const projects = [
       "/portfolio/KITCHENS/B&B - Ganescu Kitchen/F5E520F7-3BFA-4841-8EF1-75F2BD739DC3.jpeg"
     ],
     thumbnail: "/portfolio/KITCHENS/B&B - Ganescu Kitchen/063A7109-A4EE-4AF8-9792-B964EFDB7B3F.jpeg",
-    tags: ["kitchen"],
-    review: { text: "We had so much clutter before B&B redesigned our kitchen. The reduced-depth cabinets gave us everything we needed without feeling cramped. The lower countertop extension is perfect for family meals.", author: "The Ganescu Family", town: "Pennsylvania", stars: 5, source: "Google" }
+    tags: ["kitchen", "bucks-county"],
+    review: { text: "We had so much clutter before B&B redesigned our kitchen. The reduced-depth cabinets gave us everything we needed without feeling cramped. The lower countertop extension is perfect for family meals.", author: "The Ganescu Family", town: "Warrington", stars: 5, source: "Google" }
   },
 
   {
     id: "giedrycz-kitchen",
     title: "Navy Arch Custom Kitchen",
-    town: "Pennsylvania",
+    town: "Villanova",
+    county: "Main Line",
     type: "Kitchen",
     year: 2022,
     style: "Contemporary",
@@ -226,14 +605,15 @@ const projects = [
       "/portfolio/KITCHENS/B&B - Giedrycz Kitchen/D4B3763A-1952-40A4-ADB4-4E5860415F0A.jpeg"
     ],
     thumbnail: "/portfolio/KITCHENS/B&B - Giedrycz Kitchen/021A219C-F9C8-4FB0-B564-36FFF126EDCB.jpeg",
-    tags: ["kitchen"],
-    review: { text: "The arched cabinet detail is something we never imagined possible — and B&B designed the whole kitchen around it perfectly. The navy and white combination is timeless. Everyone who sees it is floored.", author: "The Giedrycz Family", town: "Pennsylvania", stars: 5, source: "Google" }
+    tags: ["kitchen", "main-line"],
+    review: { text: "The arched cabinet detail is something we never imagined possible — and B&B designed the whole kitchen around it perfectly. The navy and white combination is timeless. Everyone who sees it is floored.", author: "The Giedrycz Family", town: "Villanova", stars: 5, source: "Google" }
   },
 
   {
     id: "hess-kitchen",
     title: "Vanilla Island Open Kitchen",
-    town: "Pennsylvania",
+    town: "Ambler",
+    county: "Montgomery County",
     type: "Kitchen",
     year: 2022,
     style: "Transitional",
@@ -258,14 +638,15 @@ const projects = [
       "/portfolio/KITCHENS/B&B - Hess Kitchen /DC390C6F-CE31-4609-8ED6-AA41E830B85D.jpeg"
     ],
     thumbnail: "/portfolio/KITCHENS/B&B - Hess Kitchen /22A33749-9A97-40C9-9583-3D217973E06D.jpeg",
-    tags: ["kitchen"],
-    review: { text: "Removing that peninsula was the best decision we ever made. B&B opened up our entire kitchen and the new island layout is perfect for our family. The vanilla and navy combo is elegant and warm at the same time.", author: "The Hess Family", town: "Pennsylvania", stars: 5, source: "Google" }
+    tags: ["kitchen", "montgomery-county"],
+    review: { text: "Removing that peninsula was the best decision we ever made. B&B opened up our entire kitchen and the new island layout is perfect for our family. The vanilla and navy combo is elegant and warm at the same time.", author: "The Hess Family", town: "Ambler", stars: 5, source: "Google" }
   },
 
   {
     id: "hornig-kitchen",
     title: "Stacked Brass & Black Kitchen",
-    town: "Pennsylvania",
+    town: "Villanova",
+    county: "Main Line",
     type: "Kitchen",
     year: 2023,
     style: "Contemporary",
@@ -292,14 +673,15 @@ const projects = [
       "/portfolio/KITCHENS/B&B - Hornig-kitchen/93B6B928-BA88-4CC7-906E-DA061B90FB06.jpeg"
     ],
     thumbnail: "/portfolio/KITCHENS/B&B - Hornig-kitchen/250A9B19-812C-4437-A819-2A9F84DEE3FB.jpeg",
-    tags: ["kitchen"],
-    review: { text: "The stacked cabinets and brass hardware are exactly what we wanted. B&B's eye for mixing finishes is extraordinary — the black island against the brass fixtures looks like something from a design magazine.", author: "The Hornig Family", town: "Pennsylvania", stars: 5, source: "Google" }
+    tags: ["kitchen", "main-line"],
+    review: { text: "The stacked cabinets and brass hardware are exactly what we wanted. B&B's eye for mixing finishes is extraordinary — the black island against the brass fixtures looks like something from a design magazine.", author: "The Hornig Family", town: "Villanova", stars: 5, source: "Google" }
   },
 
   {
     id: "kohl-kitchen",
     title: "Open-Concept Grey & Navy Kitchen",
-    town: "Pennsylvania",
+    town: "Doylestown",
+    county: "Bucks County",
     type: "Kitchen",
     year: 2023,
     style: "Transitional",
@@ -324,14 +706,15 @@ const projects = [
       "/portfolio/KITCHENS/B&B - Jeff Kohl Kitchen/IMG_2820.jpg"
     ],
     thumbnail: "/portfolio/KITCHENS/B&B - Jeff Kohl Kitchen/IMG_2798.jpg",
-    tags: ["kitchen"],
-    review: { text: "Our kitchen went from cramped and disconnected to completely open and beautiful. The grey and navy combination with Cambria countertops is spectacular. B&B's structural work was flawless from start to finish.", author: "The Kohl Family", town: "Pennsylvania", stars: 5, source: "Google" }
+    tags: ["kitchen", "bucks-county"],
+    review: { text: "Our kitchen went from cramped and disconnected to completely open and beautiful. The grey and navy combination with Cambria countertops is spectacular. B&B's structural work was flawless from start to finish.", author: "The Kohl Family", town: "Doylestown", stars: 5, source: "Google" }
   },
 
   {
     id: "larkin-kitchen",
     title: "Cherry Amber Structural Kitchen",
-    town: "Pennsylvania",
+    town: "Gladwyne",
+    county: "Main Line",
     type: "Kitchen",
     year: 2022,
     style: "Transitional",
@@ -358,14 +741,15 @@ const projects = [
       "/portfolio/KITCHENS/B&B - Larkin Kitchen/C452F8A1-FF94-4AE9-897E-73E3D4E5483B.jpeg"
     ],
     thumbnail: "/portfolio/KITCHENS/B&B - Larkin Kitchen/02E0CC2D-DE46-4236-BC95-B3C1C07DE13B.jpeg",
-    tags: ["kitchen"],
-    review: { text: "The Cherry Amber cabinets and herringbone brick floors are unlike anything we've seen in any home. B&B managed an incredibly complex structural project with complete professionalism. Absolutely love our kitchen.", author: "The Larkin Family", town: "Pennsylvania", stars: 5, source: "Google" }
+    tags: ["kitchen", "main-line"],
+    review: { text: "The Cherry Amber cabinets and herringbone brick floors are unlike anything we've seen in any home. B&B managed an incredibly complex structural project with complete professionalism. Absolutely love our kitchen.", author: "The Larkin Family", town: "Gladwyne", stars: 5, source: "Google" }
   },
 
   {
     id: "mcbride-kitchen",
     title: "White Quartzite Glazed Kitchen",
-    town: "Pennsylvania",
+    town: "Blue Bell",
+    county: "Montgomery County",
     type: "Kitchen",
     year: 2022,
     style: "Classic",
@@ -391,14 +775,15 @@ const projects = [
       "/portfolio/KITCHENS/B&B - McBride Kitchen/C7414D5A-4FD0-40BB-AFD0-05AE5499FCAD.jpeg"
     ],
     thumbnail: "/portfolio/KITCHENS/B&B - McBride Kitchen/03A7198B-DACB-43CA-87B1-1148DB3DEEC8.jpeg",
-    tags: ["kitchen"],
-    review: { text: "Classic, timeless, and beautifully executed. The quartzite countertops are absolutely gorgeous and the matte black finishes are the perfect touch. B&B delivered exactly what we wanted — a kitchen built to last.", author: "The McBride Family", town: "Pennsylvania", stars: 5, source: "Google" }
+    tags: ["kitchen", "montgomery-county"],
+    review: { text: "Classic, timeless, and beautifully executed. The quartzite countertops are absolutely gorgeous and the matte black finishes are the perfect touch. B&B delivered exactly what we wanted — a kitchen built to last.", author: "The McBride Family", town: "Blue Bell", stars: 5, source: "Google" }
   },
 
   {
     id: "peterson-kitchen",
     title: "Historic 1700s Farmhouse Kitchen",
-    town: "Pennsylvania",
+    town: "New Hope",
+    county: "Bucks County",
     type: "Kitchen",
     year: 2022,
     style: "Farmhouse",
@@ -423,14 +808,15 @@ const projects = [
       "/portfolio/KITCHENS/B&B - Njani Peterson Kitchen /FB2C0944-1F25-4F10-A2B5-10BBD2013E3F.jpeg"
     ],
     thumbnail: "/portfolio/KITCHENS/B&B - Njani Peterson Kitchen /13AB3ECD-C8EF-49B0-B794-DB2CE47818B6.jpeg",
-    tags: ["kitchen"],
-    review: { text: "B&B understood our 300-year-old home in a way no other contractor ever has. They preserved what mattered most — the beams, the pine floors — while giving us a modern, functional kitchen. It is a masterpiece.", author: "The Peterson Family", town: "Pennsylvania", stars: 5, source: "Google" }
+    tags: ["kitchen", "bucks-county"],
+    review: { text: "B&B understood our 300-year-old home in a way no other contractor ever has. They preserved what mattered most — the beams, the pine floors — while giving us a modern, functional kitchen. It is a masterpiece.", author: "The Peterson Family", town: "New Hope", stars: 5, source: "Google" }
   },
 
   {
     id: "olaughlin-kitchen",
     title: "Open-Concept Shaker Kitchen",
-    town: "Pennsylvania",
+    town: "Ambler",
+    county: "Montgomery County",
     type: "Kitchen",
     year: 2023,
     style: "Transitional",
@@ -458,14 +844,15 @@ const projects = [
       "/portfolio/KITCHENS/BB-OLaughlin-kitchen/D404AB9C-6212-4EFE-8049-773E3251418C.jpeg"
     ],
     thumbnail: "/portfolio/KITCHENS/BB-OLaughlin-kitchen/056F5D4A-01E4-476B-9D9C-06884681B5C9.jpeg",
-    tags: ["kitchen"],
-    review: { text: "The scale of what B&B accomplished here is remarkable. They expanded our kitchen through the entire front of the house and it looks and feels incredible. The backsplash tile is stunning and the brass finishes are perfect.", author: "The O'Laughlin Family", town: "Pennsylvania", stars: 5, source: "Google" }
+    tags: ["kitchen", "montgomery-county"],
+    review: { text: "The scale of what B&B accomplished here is remarkable. They expanded our kitchen through the entire front of the house and it looks and feels incredible. The backsplash tile is stunning and the brass finishes are perfect.", author: "The O'Laughlin Family", town: "Ambler", stars: 5, source: "Google" }
   },
 
   {
     id: "oleg-kitchen",
     title: "White Shaker Subway Kitchen",
-    town: "Pennsylvania",
+    town: "Berwyn",
+    county: "Main Line",
     type: "Kitchen",
     year: 2022,
     style: "Classic",
@@ -493,14 +880,15 @@ const projects = [
       "/portfolio/KITCHENS/B&B - Oleg Kitchen /E7A12EC8-CBA6-4A2E-A405-4B8B9C7C97EA.jpeg"
     ],
     thumbnail: "/portfolio/KITCHENS/B&B - Oleg Kitchen /05B686C2-2287-4232-894A-C6AE7F9593C9.jpeg",
-    tags: ["kitchen"],
-    review: { text: "Classic, clean, and beautifully done. The matte black against the white cabinets is exactly the look we wanted. B&B was professional, efficient, and the quality of work is outstanding.", author: "The Oleg Family", town: "Pennsylvania", stars: 5, source: "Google" }
+    tags: ["kitchen", "main-line"],
+    review: { text: "Classic, clean, and beautifully done. The matte black against the white cabinets is exactly the look we wanted. B&B was professional, efficient, and the quality of work is outstanding.", author: "The Oleg Family", town: "Berwyn", stars: 5, source: "Google" }
   },
 
   {
     id: "prager-kitchen",
     title: "Custom Walnut Island Kitchen",
-    town: "Pennsylvania",
+    town: "Bryn Mawr",
+    county: "Main Line",
     type: "Kitchen",
     year: 2023,
     style: "Contemporary",
@@ -529,14 +917,15 @@ const projects = [
       "/portfolio/KITCHENS/B&B - Prager-kitchen/Before.jpg"
     ],
     thumbnail: "/portfolio/KITCHENS/B&B - Prager-kitchen/0DB0D4AE-8BC9-4CF0-B0BF-A4E71397B8DA.jpeg",
-    tags: ["kitchen"],
-    review: { text: "The walnut island with Cambria countertops is the most beautiful thing in our home. B&B's custom cabinetry work is extraordinary — the garage drawers are practical genius. The herringbone backsplash is perfection.", author: "The Prager Family", town: "Pennsylvania", stars: 5, source: "Google" }
+    tags: ["kitchen", "main-line"],
+    review: { text: "The walnut island with Cambria countertops is the most beautiful thing in our home. B&B's custom cabinetry work is extraordinary — the garage drawers are practical genius. The herringbone backsplash is perfection.", author: "The Prager Family", town: "Bryn Mawr", stars: 5, source: "Google" }
   },
 
   {
     id: "slingsby-kitchen",
     title: "Sage Welborn & White Island Kitchen",
-    town: "Pennsylvania",
+    town: "Lower Gwynedd",
+    county: "Montgomery County",
     type: "Kitchen",
     year: 2023,
     style: "Transitional",
@@ -565,8 +954,8 @@ const projects = [
       "/portfolio/KITCHENS/B&B - Slingsby Kitchen/IMG_9363.jpg"
     ],
     thumbnail: "/portfolio/KITCHENS/B&B - Slingsby Kitchen/1CE15249-F293-4B34-B3C6-5F1C86012F0C.jpeg",
-    tags: ["kitchen"],
-    review: { text: "The sage Welborn cabinetry is absolutely stunning — it photographs beautifully and looks even better in person. The picket fence backsplash is such a unique touch. B&B brought our vision to life perfectly.", author: "The Slingsby Family", town: "Pennsylvania", stars: 5, source: "Google" }
+    tags: ["kitchen", "montgomery-county"],
+    review: { text: "The sage Welborn cabinetry is absolutely stunning — it photographs beautifully and looks even better in person. The picket fence backsplash is such a unique touch. B&B brought our vision to life perfectly.", author: "The Slingsby Family", town: "Lower Gwynedd", stars: 5, source: "Google" }
   },
 
   /* ─────────────────────────── BATHROOMS ─────────────────────────── */
@@ -574,7 +963,8 @@ const projects = [
   {
     id: "barenbaum-bathroom",
     title: "Reclaimed Wood Accent Bathroom",
-    town: "Pennsylvania",
+    town: "Berwyn",
+    county: "Main Line",
     type: "Bathroom",
     year: 2022,
     style: "Contemporary",
@@ -599,14 +989,15 @@ const projects = [
       "/portfolio/BATHROOMS/B&B - Barenbaum -bathroom/CEEE5230-C896-4419-A0F6-B0020702A9DF.jpeg"
     ],
     thumbnail: "/portfolio/BATHROOMS/B&B - Barenbaum -bathroom/20417733-E7F8-46EA-BCD5-6F86787E240D.jpeg",
-    tags: ["bathroom"],
-    review: { text: "The reclaimed wood vanity is the most talked-about feature in our home. B&B understood the vision immediately and delivered a bathroom that feels like a boutique hotel. The glass enclosure and bench are perfection.", author: "The Barenbaum Family", town: "Pennsylvania", stars: 5, source: "Google" }
+    tags: ["bathroom", "main-line"],
+    review: { text: "The reclaimed wood vanity is the most talked-about feature in our home. B&B understood the vision immediately and delivered a bathroom that feels like a boutique hotel. The glass enclosure and bench are perfection.", author: "The Barenbaum Family", town: "Berwyn", stars: 5, source: "Google" }
   },
 
   {
     id: "borgia-bathroom",
     title: "Floor-to-Ceiling Slab Tile Bathroom",
-    town: "Pennsylvania",
+    town: "Lower Gwynedd",
+    county: "Montgomery County",
     type: "Bathroom",
     year: 2023,
     style: "Contemporary",
@@ -631,14 +1022,15 @@ const projects = [
       "/portfolio/BATHROOMS/B&B - Borgia-bathroom/CFEC2FCD-52C6-4720-97FA-341F96CD25BA.jpeg"
     ],
     thumbnail: "/portfolio/BATHROOMS/B&B - Borgia-bathroom/0355861A-4E5F-4F8D-89B0-FC8F3F156B45.jpeg",
-    tags: ["bathroom"],
-    review: { text: "The floor-to-ceiling slab tile is breathtaking. The waterfall quartz on the tub is something we never would have thought of ourselves. B&B's design sensibility is extraordinary and the execution was flawless.", author: "The Borgia Family", town: "Pennsylvania", stars: 5, source: "Google" }
+    tags: ["bathroom", "montgomery-county"],
+    review: { text: "The floor-to-ceiling slab tile is breathtaking. The waterfall quartz on the tub is something we never would have thought of ourselves. B&B's design sensibility is extraordinary and the execution was flawless.", author: "The Borgia Family", town: "Lower Gwynedd", stars: 5, source: "Google" }
   },
 
   {
     id: "bridlehall-bathroom",
     title: "Classic Transitional Master Bath",
-    town: "Pennsylvania",
+    town: "Blue Bell",
+    county: "Montgomery County",
     type: "Bathroom",
     year: 2022,
     style: "Transitional",
@@ -663,14 +1055,15 @@ const projects = [
       "/portfolio/BATHROOMS/B&B - Bridle hall-bathroom/EA85FC51-C384-48DD-ABF6-FFE9430D7360.jpeg"
     ],
     thumbnail: "/portfolio/BATHROOMS/B&B - Bridle hall-bathroom/163A65E7-E665-4FE1-AF20-D2BD1B85F3B9.jpeg",
-    tags: ["bathroom"],
-    review: { text: "Our master bath is now a room we love walking into every single morning. B&B perfectly balanced classic and modern in a way that feels completely natural. The quality of every detail is beyond anything we expected.", author: "The Bridle Hall Family", town: "Pennsylvania", stars: 5, source: "Google" }
+    tags: ["bathroom", "montgomery-county"],
+    review: { text: "Our master bath is now a room we love walking into every single morning. B&B perfectly balanced classic and modern in a way that feels completely natural. The quality of every detail is beyond anything we expected.", author: "The Bridle Hall Family", town: "Blue Bell", stars: 5, source: "Google" }
   },
 
   {
     id: "frank-bathroom",
     title: "Macaubas Azure Statement Bath",
-    town: "Pennsylvania",
+    town: "Villanova",
+    county: "Main Line",
     type: "Bathroom",
     year: 2022,
     style: "Contemporary",
@@ -695,14 +1088,15 @@ const projects = [
       "/portfolio/BATHROOMS/B&B - Carolyn Frank-bathroom/ECE0C7C2-F33C-4DCB-ADC7-E12262EE99D7.jpeg"
     ],
     thumbnail: "/portfolio/BATHROOMS/B&B - Carolyn Frank-bathroom/1B6ADBE5-861A-42E7-A20B-D62799B81818.jpeg",
-    tags: ["bathroom"],
-    review: { text: "The Macaubas Azul tile is absolutely breathtaking — there is nothing else like it. B&B sourced this material beautifully and the chrome finishes make it pop even more. Our bathroom is genuinely one of a kind.", author: "Carolyn F.", town: "Pennsylvania", stars: 5, source: "Google" }
+    tags: ["bathroom", "main-line"],
+    review: { text: "The Macaubas Azul tile is absolutely breathtaking — there is nothing else like it. B&B sourced this material beautifully and the chrome finishes make it pop even more. Our bathroom is genuinely one of a kind.", author: "Carolyn F.", town: "Villanova", stars: 5, source: "Google" }
   },
 
   {
     id: "cruz-bathroom",
     title: "Modern Dark Spa Master Bath",
-    town: "Pennsylvania",
+    town: "Lower Gwynedd",
+    county: "Montgomery County",
     type: "Bathroom",
     year: 2023,
     style: "Modern",
@@ -727,14 +1121,15 @@ const projects = [
       "/portfolio/BATHROOMS/B&B - Cruz Master/F73F2550-1A7F-4B75-98A7-DB435856D30C.jpeg"
     ],
     thumbnail: "/portfolio/BATHROOMS/B&B - Cruz Master/3A187396-30B0-429C-A94A-DFBD89EC9C69.jpeg",
-    tags: ["bathroom"],
-    review: { text: "This bathroom is a masterpiece. The curbless shower with accent tile all around is unlike anything I've ever seen. The black tub and backlit mirror make it feel like a five-star spa. B&B exceeded every expectation.", author: "The Cruz Family", town: "Pennsylvania", stars: 5, source: "Google" }
+    tags: ["bathroom", "montgomery-county"],
+    review: { text: "This bathroom is a masterpiece. The curbless shower with accent tile all around is unlike anything I've ever seen. The black tub and backlit mirror make it feel like a five-star spa. B&B exceeded every expectation.", author: "The Cruz Family", town: "Lower Gwynedd", stars: 5, source: "Google" }
   },
 
   {
     id: "emad-bathroom",
     title: "Monochromatic Modern Cave Bath",
-    town: "Pennsylvania",
+    town: "Doylestown",
+    county: "Bucks County",
     type: "Bathroom",
     year: 2023,
     style: "Modern",
@@ -759,14 +1154,15 @@ const projects = [
       "/portfolio/BATHROOMS/B&B - Emad Master Bath/E57ED722-257A-487A-8951-A5DFF9295C79.jpeg"
     ],
     thumbnail: "/portfolio/BATHROOMS/B&B - Emad Master Bath/4358B1C2-D2FE-43AB-9E16-DC20F5186ADE.jpeg",
-    tags: ["bathroom"],
-    review: { text: "People do not believe this is our bathroom when they see photos. The monochromatic tile and the TV embedded in the wall are incredible. B&B created something truly extraordinary here — it is beyond our wildest imagination.", author: "Emad", town: "Pennsylvania", stars: 5, source: "Google" }
+    tags: ["bathroom", "bucks-county"],
+    review: { text: "People do not believe this is our bathroom when they see photos. The monochromatic tile and the TV embedded in the wall are incredible. B&B created something truly extraordinary here — it is beyond our wildest imagination.", author: "Emad", town: "Doylestown", stars: 5, source: "Google" }
   },
 
   {
     id: "garvey-bathroom",
     title: "Hexagon Stone Spa Master Bath",
-    town: "Pennsylvania",
+    town: "Doylestown",
+    county: "Bucks County",
     type: "Bathroom",
     year: 2022,
     style: "Contemporary",
@@ -791,14 +1187,15 @@ const projects = [
       "/portfolio/BATHROOMS/B&B - Garvey-bathroom/E6849471-272E-481E-9B4F-5539653D8279.jpeg"
     ],
     thumbnail: "/portfolio/BATHROOMS/B&B - Garvey-bathroom/55A55375-6991-4E1E-B73A-564EB2AB5E42.jpeg",
-    tags: ["bathroom"],
-    review: { text: "The hexagon stone tile is unlike anything we've ever seen in a residential bathroom. B&B installed it flawlessly and the curbless shower is something we use every day with pure joy. The freestanding tub is the crown jewel.", author: "The Garvey Family", town: "Pennsylvania", stars: 5, source: "Google" }
+    tags: ["bathroom", "bucks-county"],
+    review: { text: "The hexagon stone tile is unlike anything we've ever seen in a residential bathroom. B&B installed it flawlessly and the curbless shower is something we use every day with pure joy. The freestanding tub is the crown jewel.", author: "The Garvey Family", town: "Doylestown", stars: 5, source: "Google" }
   },
 
   {
     id: "giedrycz-bathroom",
     title: "Zero-Entry Open Concept Bath",
-    town: "Pennsylvania",
+    town: "Doylestown",
+    county: "Bucks County",
     type: "Bathroom",
     year: 2022,
     style: "Contemporary",
@@ -825,14 +1222,15 @@ const projects = [
       "/portfolio/BATHROOMS/B&B - Giedrycz Master bathroom/E64F19D9-B20E-41D8-B7CE-CADE736716BC.jpg"
     ],
     thumbnail: "/portfolio/BATHROOMS/B&B - Giedrycz Master bathroom/1CCAA2C7-7DAC-4C75-8F5D-50098700FD18.jpg",
-    tags: ["bathroom"],
-    review: { text: "The open concept layout and curbless shower completely transformed how we think about bathrooms. The custom wall-to-wall vanity is stunning and the accent tile to the ceiling is a breathtaking design move. B&B is exceptional.", author: "The Giedrycz Family", town: "Pennsylvania", stars: 5, source: "Google" }
+    tags: ["bathroom", "bucks-county"],
+    review: { text: "The open concept layout and curbless shower completely transformed how we think about bathrooms. The custom wall-to-wall vanity is stunning and the accent tile to the ceiling is a breathtaking design move. B&B is exceptional.", author: "The Giedrycz Family", town: "Doylestown", stars: 5, source: "Google" }
   },
 
   {
     id: "guttridge-bathroom",
     title: "Spa & Laundry Master Bath",
-    town: "Pennsylvania",
+    town: "Newtown",
+    county: "Bucks County",
     type: "Bathroom",
     year: 2023,
     style: "Transitional",
@@ -857,14 +1255,15 @@ const projects = [
       "/portfolio/BATHROOMS/B&B - Guttridge -bathroom/IMG_6107.jpg"
     ],
     thumbnail: "/portfolio/BATHROOMS/B&B - Guttridge -bathroom/IMG_6078.jpg",
-    tags: ["bathroom"],
-    review: { text: "Having the laundry integrated into our master bath was a dream — and B&B made it look as beautiful as the rest of the room. The Carrera tile and champagne bronze finishes are absolutely gorgeous. Incredibly well done.", author: "The Guttridge Family", town: "Pennsylvania", stars: 5, source: "Google" }
+    tags: ["bathroom", "bucks-county"],
+    review: { text: "Having the laundry integrated into our master bath was a dream — and B&B made it look as beautiful as the rest of the room. The Carrera tile and champagne bronze finishes are absolutely gorgeous. Incredibly well done.", author: "The Guttridge Family", town: "Newtown", stars: 5, source: "Google" }
   },
 
   {
     id: "hartka-bathroom",
     title: "Custom Tile Master Bathroom",
-    town: "Pennsylvania",
+    town: "Ambler",
+    county: "Montgomery County",
     type: "Bathroom",
     year: 2022,
     style: "Transitional",
@@ -889,14 +1288,15 @@ const projects = [
       "/portfolio/BATHROOMS/B&B - Hartka-bathroom/E776636F-8F84-442A-A18C-1A312A4D833A.jpeg"
     ],
     thumbnail: "/portfolio/BATHROOMS/B&B - Hartka-bathroom/0DFF0DCA-8172-45BF-9C23-55A9229A3245.jpeg",
-    tags: ["bathroom"],
-    review: { text: "The tile work in our master bath is beyond perfect. Every single tile is exactly where it should be. B&B brought a level of craftsmanship to this project that we have never seen before. We are absolutely thrilled.", author: "The Hartka Family", town: "Pennsylvania", stars: 5, source: "Google" }
+    tags: ["bathroom", "montgomery-county"],
+    review: { text: "The tile work in our master bath is beyond perfect. Every single tile is exactly where it should be. B&B brought a level of craftsmanship to this project that we have never seen before. We are absolutely thrilled.", author: "The Hartka Family", town: "Ambler", stars: 5, source: "Google" }
   },
 
   {
     id: "hershey-bathroom",
     title: "Statuario Porcelain Master Bath",
-    town: "Pennsylvania",
+    town: "Bryn Mawr",
+    county: "Main Line",
     type: "Bathroom",
     year: 2023,
     style: "Classic",
@@ -921,14 +1321,15 @@ const projects = [
       "/portfolio/BATHROOMS/B&B - Hershey-bathroom/F3E78EB8-C293-4FC5-A2AC-CA74DD8057FF.jpeg"
     ],
     thumbnail: "/portfolio/BATHROOMS/B&B - Hershey-bathroom/08477D74-323C-4FFA-95DA-415CA31AAC2C.jpeg",
-    tags: ["bathroom"],
-    review: { text: "The Statuario tile is absolutely spectacular — rich, bright, and beautifully installed. The gray vanity and matte black finishes are the perfect balance of classic and modern. Our bathroom is now our favorite room in the house.", author: "The Hershey Family", town: "Pennsylvania", stars: 5, source: "Google" }
+    tags: ["bathroom", "main-line"],
+    review: { text: "The Statuario tile is absolutely spectacular — rich, bright, and beautifully installed. The gray vanity and matte black finishes are the perfect balance of classic and modern. Our bathroom is now our favorite room in the house.", author: "The Hershey Family", town: "Bryn Mawr", stars: 5, source: "Google" }
   },
 
   {
     id: "kaarby-bathroom",
     title: "Exotic Boutique Cream Tile Bath",
-    town: "Pennsylvania",
+    town: "Yardley",
+    county: "Bucks County",
     type: "Bathroom",
     year: 2022,
     style: "Contemporary",
@@ -955,14 +1356,15 @@ const projects = [
       "/portfolio/BATHROOMS/B&B - Kaarby-bathroom/E2B64184-C182-4997-A77D-0C3C8BBAB97B.jpeg"
     ],
     thumbnail: "/portfolio/BATHROOMS/B&B - Kaarby-bathroom/1BC906A9-6171-4884-B786-75B737522F80.jpeg",
-    tags: ["bathroom"],
-    review: { text: "The cream subway tile paired with the exotic porcelain floor is a combination we would never have thought of — and it works perfectly. The black vanity and brass finishes pull it all together. A truly boutique bathroom.", author: "The Kaarby Family", town: "Pennsylvania", stars: 5, source: "Google" }
+    tags: ["bathroom", "bucks-county"],
+    review: { text: "The cream subway tile paired with the exotic porcelain floor is a combination we would never have thought of — and it works perfectly. The black vanity and brass finishes pull it all together. A truly boutique bathroom.", author: "The Kaarby Family", town: "Yardley", stars: 5, source: "Google" }
   },
 
   {
     id: "lashannon-bathroom",
     title: "Mother of Pearl Luxury Bath",
-    town: "Pennsylvania",
+    town: "Gladwyne",
+    county: "Main Line",
     type: "Bathroom",
     year: 2023,
     style: "Contemporary",
@@ -987,14 +1389,15 @@ const projects = [
       "/portfolio/BATHROOMS/B&B - LaShannon Master bathroom/F3BE2140-01AA-4B9B-BF69-682DFB369315.jpeg"
     ],
     thumbnail: "/portfolio/BATHROOMS/B&B - LaShannon Master bathroom/09DCC4C5-5F51-4A82-9C78-AB97A237A844.jpeg",
-    tags: ["bathroom"],
-    review: { text: "The mother of pearl tub and sinks are the most breathtaking features we have ever seen in a home. B&B sourced and installed these extraordinary pieces with unmatched skill. This bathroom is a true work of art.", author: "LaShannon", town: "Pennsylvania", stars: 5, source: "Google" }
+    tags: ["bathroom", "main-line"],
+    review: { text: "The mother of pearl tub and sinks are the most breathtaking features we have ever seen in a home. B&B sourced and installed these extraordinary pieces with unmatched skill. This bathroom is a true work of art.", author: "LaShannon", town: "Gladwyne", stars: 5, source: "Google" }
   },
 
   {
     id: "levinson-bathroom",
     title: "Statuario Makeup Station Bath",
-    town: "Pennsylvania",
+    town: "Bryn Mawr",
+    county: "Main Line",
     type: "Bathroom",
     year: 2022,
     style: "Classic",
@@ -1021,14 +1424,15 @@ const projects = [
       "/portfolio/BATHROOMS/B&B - Levinson Master Bathroom/FD839396-5BB6-4ED5-AB14-31F72789D8BC.jpeg"
     ],
     thumbnail: "/portfolio/BATHROOMS/B&B - Levinson Master Bathroom/3C24E771-25E4-4CB7-8C08-F0493A9BBA2A.jpeg",
-    tags: ["bathroom"],
-    review: { text: "The makeup station was the feature I always wanted and B&B designed it better than I imagined. The Statuario tile and matte black finishes are absolutely stunning. I use this bathroom every morning with pure joy.", author: "The Levinson Family", town: "Pennsylvania", stars: 5, source: "Google" }
+    tags: ["bathroom", "main-line"],
+    review: { text: "The makeup station was the feature I always wanted and B&B designed it better than I imagined. The Statuario tile and matte black finishes are absolutely stunning. I use this bathroom every morning with pure joy.", author: "The Levinson Family", town: "Bryn Mawr", stars: 5, source: "Google" }
   },
 
   {
     id: "petev-bathroom",
     title: "Curbless Seamless Porcelain Bath",
-    town: "Pennsylvania",
+    town: "Ambler",
+    county: "Montgomery County",
     type: "Bathroom",
     year: 2023,
     style: "Contemporary",
@@ -1054,14 +1458,15 @@ const projects = [
       "/portfolio/BATHROOMS/B&B - Pete V-bathroom/BE5667E3-5AFD-4988-B107-7C4BAA2EC630.jpeg"
     ],
     thumbnail: "/portfolio/BATHROOMS/B&B - Pete V-bathroom/059FFEC6-1BB2-4EF6-97A4-000D6C9D7369.jpeg",
-    tags: ["bathroom"],
-    review: { text: "The seamless porcelain flowing from the shower walls to the floor is a design I had never seen executed this perfectly. The curbless shower makes it feel like a true spa. B&B's craftsmanship is in a class of its own.", author: "Pete V.", town: "Pennsylvania", stars: 5, source: "Google" }
+    tags: ["bathroom", "montgomery-county"],
+    review: { text: "The seamless porcelain flowing from the shower walls to the floor is a design I had never seen executed this perfectly. The curbless shower makes it feel like a true spa. B&B's craftsmanship is in a class of its own.", author: "Pete V.", town: "Ambler", stars: 5, source: "Google" }
   },
 
   {
     id: "odonnell-bathroom",
     title: "Exotic Coastal Teal Bathroom",
-    town: "Pennsylvania",
+    town: "Newtown",
+    county: "Bucks County",
     type: "Bathroom",
     year: 2022,
     style: "Contemporary",
@@ -1091,14 +1496,15 @@ const projects = [
       "/portfolio/BATHROOMS/BB-ODonnell-bathroom/D6D861F7-51A4-427D-BD8B-627F5E4A520C.jpeg"
     ],
     thumbnail: "/portfolio/BATHROOMS/BB-ODonnell-bathroom/085E5B7F-C0C3-4C1C-BCE2-B92BB2D4EF3C.jpeg",
-    tags: ["bathroom"],
-    review: { text: "The teal exotic tile in the shower is unlike anything I have seen anywhere. B&B created a coastal escape right in our home. The wood grain vanity balances it perfectly and the brass finishes tie it all together beautifully.", author: "Ryan O'Donnell", town: "Pennsylvania", stars: 5, source: "Google" }
+    tags: ["bathroom", "bucks-county"],
+    review: { text: "The teal exotic tile in the shower is unlike anything I have seen anywhere. B&B created a coastal escape right in our home. The wood grain vanity balances it perfectly and the brass finishes tie it all together beautifully.", author: "Ryan O'Donnell", town: "Newtown", stars: 5, source: "Google" }
   },
 
   {
     id: "sharada-bathroom",
     title: "Exotic Tile Wood Plank Bathroom",
-    town: "Pennsylvania",
+    town: "Langhorne",
+    county: "Bucks County",
     type: "Bathroom",
     year: 2023,
     style: "Contemporary",
@@ -1127,14 +1533,15 @@ const projects = [
       "/portfolio/BATHROOMS/B&B - Sharada -bathroom/E73BF8CC-ABC8-4F61-9DC1-003137BD304A.jpeg"
     ],
     thumbnail: "/portfolio/BATHROOMS/B&B - Sharada -bathroom/1C191061-9F5B-4F6C-9AA5-89F710D2B392.jpeg",
-    tags: ["bathroom"],
-    review: { text: "The combination of the exotic wall tile with the wood plank floor is absolutely stunning — it is a pairing I would never have imagined but works perfectly. The painted mist vanity and brass finishes are the ideal finishing touch.", author: "Sharada", town: "Pennsylvania", stars: 5, source: "Google" }
+    tags: ["bathroom", "bucks-county"],
+    review: { text: "The combination of the exotic wall tile with the wood plank floor is absolutely stunning — it is a pairing I would never have imagined but works perfectly. The painted mist vanity and brass finishes are the ideal finishing touch.", author: "Sharada", town: "Langhorne", stars: 5, source: "Google" }
   },
 
   {
     id: "goldberg-bathroom",
     title: "Golden Carrera Champagne Bath",
-    town: "Pennsylvania",
+    town: "Gladwyne",
+    county: "Main Line",
     type: "Bathroom",
     year: 2022,
     style: "Classic",
@@ -1153,14 +1560,15 @@ const projects = [
       "/portfolio/BATHROOMS/B&B - Stacey Goldberg bathroom/2435.jpg"
     ],
     thumbnail: "/portfolio/BATHROOMS/B&B - Stacey Goldberg bathroom/2434.jpg",
-    tags: ["bathroom"],
-    review: { text: "The golden Carrera tile with the Turkish stone accents is beyond anything I could have imagined. The champagne brass finishes are exactly right. B&B took my vision and elevated it to something I am endlessly proud of.", author: "Stacey G.", town: "Pennsylvania", stars: 5, source: "Google" }
+    tags: ["bathroom", "main-line"],
+    review: { text: "The golden Carrera tile with the Turkish stone accents is beyond anything I could have imagined. The champagne brass finishes are exactly right. B&B took my vision and elevated it to something I am endlessly proud of.", author: "Stacey G.", town: "Gladwyne", stars: 5, source: "Google" }
   },
 
   {
     id: "vartanian-bathroom",
     title: "Boutique Glazed Subway Tile Bath",
-    town: "Pennsylvania",
+    town: "Ambler",
+    county: "Montgomery County",
     type: "Bathroom",
     year: 2023,
     style: "Transitional",
@@ -1193,8 +1601,8 @@ const projects = [
       "/portfolio/BATHROOMS/B&B - Vartanian-bathroom/F939B43E-C46F-4339-A451-5B66D5370468.jpeg"
     ],
     thumbnail: "/portfolio/BATHROOMS/B&B - Vartanian-bathroom/10E542CC-6F7C-45E4-B9E2-4ADC289B5031.jpeg",
-    tags: ["bathroom"],
-    review: { text: "Walking into our bathroom now feels like walking into a boutique hotel. The glazed subway tile extending across the entire vanity wall is simply incredible. The Kohler fixtures and James Martin vanity are the perfect finishing touches.", author: "The Vartanian Family", town: "Pennsylvania", stars: 5, source: "Google" }
+    tags: ["bathroom", "montgomery-county"],
+    review: { text: "Walking into our bathroom now feels like walking into a boutique hotel. The glazed subway tile extending across the entire vanity wall is simply incredible. The Kohler fixtures and James Martin vanity are the perfect finishing touches.", author: "The Vartanian Family", town: "Ambler", stars: 5, source: "Google" }
   }
 
 ];
