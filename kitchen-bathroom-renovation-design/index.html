@@ -507,6 +507,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       scroll-snap-align: center;
       text-decoration: none;
       color: inherit;
+      border: none; padding: 0; margin: 0; background: transparent;
+      display: block; cursor: pointer; -webkit-tap-highlight-color: transparent;
+      font: inherit; text-align: inherit;
+    }
+    .lp-featured-card:focus-visible {
+      outline: 2px solid var(--color-gold); outline-offset: 3px;
     }
     .lp-featured-img-wrap {
       position: relative;
@@ -1203,49 +1209,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       .lp-compare-table th, .lp-compare-table td { padding: 12px 14px; }
     }
 
-    /* ── INVESTMENT RANGES ───────────────────────────────────── */
-    .lp-invest-section { background: var(--color-bg); color: var(--color-bg); }
-    .lp-invest-header { text-align: center; margin-bottom: 48px; }
-    .lp-invest-header .lp-gold-line { margin: 20px auto; }
-    .lp-invest-grid {
-      display: grid; grid-template-columns: 1fr 1fr;
-      gap: 24px; max-width: 1000px; margin: 0 auto 32px;
-    }
-    .lp-invest-card {
-      background: #ffffff;
-      border: 1px solid rgba(15, 23, 42, 0.1);
-      padding: 40px 36px;
-      transition: border-color 0.3s ease, box-shadow 0.3s ease;
-      box-shadow: 0 4px 24px rgba(15, 23, 42, 0.06);
-    }
-    .lp-invest-card:hover {
-      border-color: var(--color-gold-border);
-      box-shadow: 0 8px 32px rgba(15, 23, 42, 0.1);
-    }
-    .lp-invest-type {
-      font-family: var(--font-sans); font-size: 11px; font-weight: 600;
-      letter-spacing: 0.2em; text-transform: uppercase;
-      color: var(--color-gold); margin-bottom: 16px;
-    }
-    .lp-invest-range {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: clamp(28px, 3.5vw, 46px); font-weight: 300;
-      color: #0f172a;
-      line-height: 1.1; margin-bottom: 16px;
-    }
-    .lp-invest-body { font-size: 14px; color: #334155; line-height: 1.7; margin-bottom: 20px; }
-    .lp-invest-projects {
-      font-size: 12px; color: #475569;
-      border-top: 1px solid rgba(15, 23, 42, 0.1);
-      padding-top: 16px; line-height: 1.8;
-    }
-    .lp-invest-projects strong { color: #0f172a; }
-    .lp-invest-cta { text-align: center; }
-    @media(max-width:640px) {
-      .lp-invest-grid { grid-template-columns: 1fr; }
-      .lp-invest-card { padding: 28px 24px; }
-    }
-
     /* ── TEAM SECTION ────────────────────────────────────────── */
     .lp-team-section {
       background: var(--color-bg-2);
@@ -1358,29 +1321,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .lp-footer-info a { color: var(--color-white); text-decoration: none; }
     .lp-footer-info a:hover { color: var(--color-gold-light); }
     .lp-footer-copy { font-size: 12px; color: var(--color-white); }
-    .lp-footer-social {
-      display: flex; align-items: center; gap: 12px;
-      text-align: left; justify-content: flex-start;
-    }
-    .lp-footer-social a {
-      display: inline-flex; align-items: center; justify-content: flex-start;
-      width: 40px; height: 40px;
-      text-align: left;
-      text-decoration: none;
-      color: var(--color-white);
-      border: none;
-      border-radius: 2px;
-      transition: color 0.25s ease, background 0.25s ease;
-    }
-    .lp-footer-social a:hover {
-      color: var(--color-gold-light);
-      background: rgba(255, 255, 255, 0.06);
-    }
-    .lp-footer-social a svg {
-      display: block; width: 18px; height: 18px;
-      fill: currentColor; color: inherit;
-    }
-
     /* ── MOBILE STICKY CTA BAR (rich dual style, matches hero bar) ── */
     .lp-sticky-bar {
       position: fixed; bottom: 0; left: 0; right: 0; z-index: 999;
@@ -1522,36 +1462,36 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="lp-featured-videos-shell">
           <button class="lp-featured-arrow lp-featured-arrow--left" type="button" aria-label="Previous videos">‹</button>
           <div class="lp-featured-carousel" aria-label="Featured project videos" data-lp-featured-carousel>
-            <a href="/portfolio/project/?id=barenbaum-bathroom" class="lp-featured-card">
+            <button type="button" class="lp-featured-card" data-project-id="barenbaum-bathroom" aria-label="Open project gallery: Barenbaum Bathroom">
               <div class="lp-featured-img-wrap">
                 <video src="/portfolio/BATHROOMS/B&amp;B - Barenbaum -bathroom/IMG_9420.mp4" poster="../portfolio/BATHROOMS/B&amp;B - Barenbaum -bathroom/20417733-E7F8-46EA-BCD5-6F86787E240D.jpeg" autoplay loop muted playsinline preload="auto"></video>
               </div>
-            </a>
-            <a href="/portfolio/project/?id=broderick-kitchen" class="lp-featured-card">
+            </button>
+            <button type="button" class="lp-featured-card" data-project-id="broderick-kitchen" aria-label="Open project gallery: Broderick Kitchen">
               <div class="lp-featured-img-wrap">
                 <video src="/portfolio/KITCHENS/B&amp;B - Bill Broderick -kitchen/IMG_0811.mp4" poster="../portfolio/KITCHENS/B&amp;B - Bill Broderick -kitchen/08173010-D148-4016-9EE9-4BBE6DDF4F67.jpeg" autoplay loop muted playsinline preload="auto"></video>
               </div>
-            </a>
-            <a href="/portfolio/project/?id=bryn-michaels-kitchen" class="lp-featured-card">
+            </button>
+            <button type="button" class="lp-featured-card" data-project-id="bryn-michaels-kitchen" aria-label="Open project gallery: Bryn Michaels Kitchen">
               <div class="lp-featured-img-wrap">
                 <video src="/portfolio/KITCHENS/B&amp;B - Bryn Michaels Kitchen/def2b212633147c9abf52dbc2351495e.mp4" poster="../portfolio/KITCHENS/B&amp;B - Bryn Michaels Kitchen/294E52B4-81AA-44D1-A230-24D9680D37BB.jpeg" autoplay loop muted playsinline preload="auto"></video>
               </div>
-            </a>
-            <a href="/portfolio/project/?id=borgia-bathroom" class="lp-featured-card">
+            </button>
+            <button type="button" class="lp-featured-card" data-project-id="borgia-bathroom" aria-label="Open project gallery: Borgia Bathroom">
               <div class="lp-featured-img-wrap">
                 <video src="/portfolio/BATHROOMS/B&amp;B - Borgia-bathroom/IMG_5410.mp4" poster="../portfolio/BATHROOMS/B&amp;B - Borgia-bathroom/0355861A-4E5F-4F8D-89B0-FC8F3F156B45.jpeg" autoplay loop muted playsinline preload="auto"></video>
               </div>
-            </a>
-            <a href="/portfolio/project/?id=rubin-kitchen" class="lp-featured-card">
+            </button>
+            <button type="button" class="lp-featured-card" data-project-id="rubin-kitchen" aria-label="Open project gallery: Rubin Kitchen">
               <div class="lp-featured-img-wrap">
                 <video src="/portfolio/KITCHENS/B&amp;B - Beth Rubin-kitchen/IMG_2883.mp4" poster="../portfolio/KITCHENS/B&amp;B - Beth Rubin-kitchen/153E1359-5284-48E5-9F68-B497880FF6F7.jpeg" autoplay loop muted playsinline preload="auto"></video>
               </div>
-            </a>
-            <a href="/portfolio/project/?id=ferrie-kitchen" class="lp-featured-card">
+            </button>
+            <button type="button" class="lp-featured-card" data-project-id="ferrie-kitchen" aria-label="Open project gallery: Ferrie Kitchen">
               <div class="lp-featured-img-wrap">
                 <video src="/portfolio/KITCHENS/B&amp;B - Ferrie-kitchen/IMG_0761.mp4" poster="../portfolio/KITCHENS/B&amp;B - Ferrie-kitchen/6534D687-3AE7-4524-9657-EE34302DB729.jpeg" autoplay loop muted playsinline preload="auto"></video>
               </div>
-            </a>
+            </button>
           </div>
           <button class="lp-featured-arrow lp-featured-arrow--right" type="button" aria-label="Next videos">›</button>
         </div>
@@ -1746,47 +1686,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       });
     })();
   </script>
-
-  <!-- ── INVESTMENT RANGES ────────────────────────────────────── -->
-  <section class="lp-invest-section lp-section-full" aria-label="Investment ranges">
-    <div class="lp-section">
-      <div class="lp-invest-header reveal">
-        <p class="lp-eyebrow">Transparent Pricing</p>
-        <h2 class="lp-heading">What Does a B&amp;B Remodel Cost?</h2>
-        <div class="lp-gold-line" style="margin:20px auto;"></div>
-        <p class="lp-subheading" style="margin:0 auto;">We believe in complete transparency. Here's what homeowners in our area typically invest in a B&amp;B remodel.</p>
-      </div>
-      <div class="lp-invest-grid">
-        <div class="lp-invest-card reveal">
-          <p class="lp-invest-type">Kitchen Remodeling</p>
-          <div class="lp-invest-range">$50,000 – $135,000</div>
-          <p class="lp-invest-body">Complete custom kitchen renovations, depending on square footage, scope, and material selections. Structural work, custom cabinetry, countertops, appliances, lighting, and flooring all included.</p>
-          <div class="lp-invest-projects">
-            <strong>Typical Project Size Pricing:</strong><br>
-            Small · $50,000 – $60,000<br>
-            Medium · $65,000 – $85,000<br>
-            Large · $85,000 – $100,000<br>
-            Very Large (full first floor) · $100,000 – $135,000
-          </div>
-        </div>
-        <div class="lp-invest-card reveal reveal-delay-1">
-          <p class="lp-invest-type">Bathroom Renovation</p>
-          <div class="lp-invest-range">$20,000 – $65,000</div>
-          <p class="lp-invest-body">Luxury bathroom transformations from powder rooms to full primary suite renovations. Custom tile work, vanities, curbless showers, freestanding tubs, lighting, and all finishes included.</p>
-          <div class="lp-invest-projects">
-            <strong>Typical Project Size Pricing:</strong><br>
-            Small (hall bath) · $20,000 – $25,000<br>
-            Medium (master) · $35,000 – $40,000<br>
-            Large (master) · $40,000 – $55,000<br>
-            Very Large · $50,000 – $65,000
-          </div>
-        </div>
-      </div>
-      <div class="lp-invest-cta reveal">
-        <a href="#form" class="lp-btn-primary">Inquiry Form →</a>
-      </div>
-    </div>
-  </section>
 
   <!-- ── LEAD FORM ───────────────────────────────────────── -->
   <section class="lp-form-section lp-form-section--light" id="form" aria-label="Request free consultation">
@@ -2041,15 +1940,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         1141 E Welsh Rd, Maple Glen, PA 19002 &nbsp;·&nbsp;
         <a href="tel:+12674028758">267-402-8758</a> &nbsp;·&nbsp;
         Mon–Sat 8am–6pm &nbsp;·&nbsp;
-        <a href="/privacy-policy/">Privacy Policy</a>
-      </div>
-      <div class="lp-footer-social">
-        <a href="https://instagram.com/bbassociatescreations" target="_blank" rel="noopener noreferrer" aria-label="B&amp;B Associates on Instagram">
-          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-        </a>
-        <a href="https://facebook.com/bbassociatescreations" target="_blank" rel="noopener noreferrer" aria-label="B&amp;B Associates on Facebook">
-          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-        </a>
+        <a href="/privacy-policy/" target="_blank" rel="noopener">Privacy Policy</a>
       </div>
       <div class="lp-footer-copy">© 2026 B&amp;B Associates Creations LLC. All rights reserved. &nbsp;·&nbsp; PA HIC #PA104189</div>
     </div>
@@ -2165,14 +2056,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           var rawPoster = p.thumbnail ? p.thumbnail : '';
           var videoSrc = lpEscAttr(rawVideo);
           var posterSrc = lpEscAttr(rawPoster);
-          var projectUrl = '/portfolio/project/?id=' + encodeURIComponent(p.id);
           var attrsFirst = 'src="' + videoSrc + '" poster="' + posterSrc + '" autoplay loop muted playsinline preload="auto"';
           var attrsLazy = 'poster="' + posterSrc + '" data-src="' + videoSrc + '" loop muted playsinline preload="none"';
           var vidOpen = index === 0
             ? '<video ' + attrsFirst + '>'
             : '<video ' + attrsLazy + '>';
-          return '<a href="' + projectUrl + '" class="lp-featured-card">' +
-            '<div class="lp-featured-img-wrap">' + vidOpen + '</video></div></a>';
+          return '<button type="button" class="lp-featured-card" data-project-id="' + lpEscAttr(p.id) + '" aria-label="Open project gallery">' +
+            '<div class="lp-featured-img-wrap">' + vidOpen + '</video></div></button>';
         }).join('');
       } catch (e) {}
     })();
@@ -2313,21 +2203,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         document.body.style.overflow = '';
       }
 
-      document.querySelectorAll('.lp-masonry-item[data-project-id]').forEach(function (btn) {
-        btn.addEventListener('click', function () {
-          var id = btn.getAttribute('data-project-id');
-          if (id) openForProject(id);
-        });
-      });
-
-      // Featured video cards open the same lightbox instead of navigating away
-      document.querySelectorAll('.lp-featured-card').forEach(function (card) {
-        card.addEventListener('click', function (e) {
-          var m = (card.getAttribute('href') || '').match(/[?&]id=([^&]+)/);
-          if (!m) return;
-          e.preventDefault();
-          openForProject(decodeURIComponent(m[1]));
-        });
+      /* Delegated so it also catches the featured cards the carousel rebuilds at runtime.
+         Every project tile is a <button data-project-id> — no href anywhere on this page,
+         so nothing can navigate off the landing page and no link-click tag can misfire. */
+      document.addEventListener('click', function (e) {
+        var t = e.target && e.target.closest ? e.target.closest('[data-project-id]') : null;
+        if (!t) return;
+        var id = t.getAttribute('data-project-id');
+        if (id) openForProject(id);
       });
 
       btnClose.addEventListener('click', closeLb);
