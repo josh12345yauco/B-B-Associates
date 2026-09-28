@@ -103,7 +103,7 @@ for (const u of locs) {
   if (!fs.existsSync(file)) err(path.join(ROOT, 'sitemap.xml'), 'sitemap', `<loc> has no file: ${u}`);
 }
 for (const u of indexableUrls) {
-  if (/\/(thank-you|privacy-policy|terms-of-service|application|consultation)\/$/.test(u)) continue;
+  if (/\/(thank-you-contact|thank-you|privacy-policy|terms-of-service|application|consultation)\/$/.test(u)) continue;
   if (/\/(portfolio\/project|blog\/article)\/$/.test(u)) continue; // param-driven templates
   if (!locSet.has(u)) warn(path.join(ROOT, 'sitemap.xml'), 'sitemap', `indexable page not in sitemap: ${u}`);
 }
