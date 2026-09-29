@@ -1,5 +1,5 @@
 /* ============================================================
-   B&B Associates — Reviews block for service-area pages
+   B&B Associates Creations — Reviews block for service-area pages
    Renders real client reviews (same nine that appear on /reviews/)
    four at a time, with a "Show More Reviews" button that reveals the
    next four. Mount with:

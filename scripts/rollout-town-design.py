@@ -99,7 +99,7 @@ def rollout(path):
         def thumb_a(mm):
             title = mm.group(2)
             src = KIT[reg] if 'itchen' in title else (BATH[reg] if 'ath' in title else DESIGN)
-            alt = 'Real B&amp;B Associates project — ' + html.escape(html.unescape(re.sub(r'<[^>]+>', '', title)))
+            alt = 'Real B&amp;B Associates Creations project — ' + html.escape(html.unescape(re.sub(r'<[^>]+>', '', title)))
             card = mm.group(1).replace('class="sa-service-card"', 'class="sa-service-card has-thumb"')
             return card + '<img class="sa-service-thumb" src="' + src + '" alt="' + alt + '" loading="lazy" width="450" height="600">\n            <h3 class="sa-service-title">' + title + '</h3>'
         h, n = re.subn(r'(<div class="sa-service-card"[^>]*>)\s*<div class="sa-service-icon" aria-hidden="true">[^<]*</div>\s*<h3 class="sa-service-title">(.*?)</h3>', thumb_a, h, flags=re.S)
@@ -108,7 +108,7 @@ def rollout(path):
         def thumb_b(mm):
             title = mm.group(1)
             src = KIT[reg] if 'itchen' in title else BATH[reg]
-            return '<div class="town-service-card">\n            <img class="town-service-thumb" src="' + src + '" alt="Real B&amp;B Associates project — ' + html.escape(html.unescape(title)) + '" loading="lazy" width="450" height="600">\n            <h3 class="town-service-h3">' + title + '</h3>'
+            return '<div class="town-service-card">\n            <img class="town-service-thumb" src="' + src + '" alt="Real B&amp;B Associates Creations project — ' + html.escape(html.unescape(title)) + '" loading="lazy" width="450" height="600">\n            <h3 class="town-service-h3">' + title + '</h3>'
         h, n = re.subn(r'<div class="town-service-card">\s*<h3 class="town-service-h3">(.*?)</h3>', thumb_b, h, flags=re.S)
         log.append(f'thumbs {n}')
     # 6. showroom band → carousel

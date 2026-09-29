@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /* ============================================================
-   B&B Associates — SEO regression gate
+   B&B Associates Creations — SEO regression gate
    ------------------------------------------------------------
    Walks every HTML page in the site and checks the on-page SEO
    invariants the sprints depend on. Exit 1 on any error.

@@ -1,5 +1,5 @@
 /* ============================================================
-   B&B Associates — Portfolio photo carousel (service-area pages)
+   B&B Associates Creations — Portfolio photo carousel (service-area pages)
    Non-clickable, auto-scrolling strip of real kitchen & bathroom
    project photos from js/projects-data.js. Mount with:
      <div data-bb-carousel></div>
@@ -9,59 +9,59 @@
   var ITEMS = [
   {
     "src": "/portfolio/KITCHENS/B&B - Beth Rubin-kitchen/153E1359-5284-48E5-9F68-B497880FF6F7.jpeg",
-    "alt": "Stacked White & Gray Kitchen — kitchen remodel by B&B Associates"
+    "alt": "Stacked White & Gray Kitchen — kitchen remodel by B&B Associates Creations"
   },
   {
     "src": "/portfolio/BATHROOMS/B&B - LaShannon Master bathroom/09DCC4C5-5F51-4A82-9C78-AB97A237A844.jpeg",
-    "alt": "Mother of Pearl Luxury Bath — bathroom remodel by B&B Associates"
+    "alt": "Mother of Pearl Luxury Bath — bathroom remodel by B&B Associates Creations"
   },
   {
     "src": "/portfolio/KITCHENS/B&B - McBride Kitchen/03A7198B-DACB-43CA-87B1-1148DB3DEEC8.jpeg",
-    "alt": "White Quartzite Glazed Kitchen — kitchen remodel by B&B Associates"
+    "alt": "White Quartzite Glazed Kitchen — kitchen remodel by B&B Associates Creations"
   },
   {
     "src": "/portfolio/BATHROOMS/B&B - Cruz Master/3A187396-30B0-429C-A94A-DFBD89EC9C69.jpeg",
-    "alt": "Modern Dark Spa Master Bath — bathroom remodel by B&B Associates"
+    "alt": "Modern Dark Spa Master Bath — bathroom remodel by B&B Associates Creations"
   },
   {
     "src": "/portfolio/KITCHENS/B&B - Prager-kitchen/0DB0D4AE-8BC9-4CF0-B0BF-A4E71397B8DA.jpeg",
-    "alt": "Custom Walnut Island Kitchen — kitchen remodel by B&B Associates"
+    "alt": "Custom Walnut Island Kitchen — kitchen remodel by B&B Associates Creations"
   },
   {
     "src": "/portfolio/BATHROOMS/B&B - Hershey-bathroom/08477D74-323C-4FFA-95DA-415CA31AAC2C.jpeg",
-    "alt": "Statuario Porcelain Master Bath — bathroom remodel by B&B Associates"
+    "alt": "Statuario Porcelain Master Bath — bathroom remodel by B&B Associates Creations"
   },
   {
     "src": "/portfolio/KITCHENS/B&B - Hess Kitchen /22A33749-9A97-40C9-9583-3D217973E06D.jpeg",
-    "alt": "Vanilla Island Open Kitchen — kitchen remodel by B&B Associates"
+    "alt": "Vanilla Island Open Kitchen — kitchen remodel by B&B Associates Creations"
   },
   {
     "src": "/portfolio/BATHROOMS/B&B - Garvey-bathroom/55A55375-6991-4E1E-B73A-564EB2AB5E42.jpeg",
-    "alt": "Hexagon Stone Spa Master Bath — bathroom remodel by B&B Associates"
+    "alt": "Hexagon Stone Spa Master Bath — bathroom remodel by B&B Associates Creations"
   },
   {
     "src": "/portfolio/KITCHENS/BB-OLaughlin-kitchen/056F5D4A-01E4-476B-9D9C-06884681B5C9.jpeg",
-    "alt": "Open-Concept Shaker Kitchen — kitchen remodel by B&B Associates"
+    "alt": "Open-Concept Shaker Kitchen — kitchen remodel by B&B Associates Creations"
   },
   {
     "src": "/portfolio/BATHROOMS/B&B - Guttridge -bathroom/IMG_6078.jpg",
-    "alt": "Spa & Laundry Master Bath — bathroom remodel by B&B Associates"
+    "alt": "Spa & Laundry Master Bath — bathroom remodel by B&B Associates Creations"
   },
   {
     "src": "/portfolio/KITCHENS/B&B - Giedrycz Kitchen/021A219C-F9C8-4FB0-B564-36FFF126EDCB.jpeg",
-    "alt": "Navy Arch Custom Kitchen — kitchen remodel by B&B Associates"
+    "alt": "Navy Arch Custom Kitchen — kitchen remodel by B&B Associates Creations"
   },
   {
     "src": "/portfolio/BATHROOMS/B&B - Vartanian-bathroom/10E542CC-6F7C-45E4-B9E2-4ADC289B5031.jpeg",
-    "alt": "Boutique Glazed Subway Tile Bath — bathroom remodel by B&B Associates"
+    "alt": "Boutique Glazed Subway Tile Bath — bathroom remodel by B&B Associates Creations"
   },
   {
     "src": "/portfolio/KITCHENS/B&B - Ferrie-kitchen/6534D687-3AE7-4524-9657-EE34302DB729.jpeg",
-    "alt": "Navy & White Champagne Kitchen — kitchen remodel by B&B Associates"
+    "alt": "Navy & White Champagne Kitchen — kitchen remodel by B&B Associates Creations"
   },
   {
     "src": "/portfolio/BATHROOMS/B&B - Stacey Goldberg bathroom/2434.jpg",
-    "alt": "Golden Carrera Champagne Bath — bathroom remodel by B&B Associates"
+    "alt": "Golden Carrera Champagne Bath — bathroom remodel by B&B Associates Creations"
   }
 ];
   var CSS = '' +

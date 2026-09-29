@@ -1,11 +1,11 @@
 /* ============================================================
-   B&B Associates — Business identity (single source of truth)
+   B&B Associates Creations — Business identity (single source of truth)
    Keep in sync with the static JSON-LD blocks and footer NAP.
    Load before /js/init.js and before any page script that
    builds schema or contact markup.
    ============================================================ */
 window.BB_BUSINESS = {
-  businessName: "B&B Associates",
+  businessName: "B&B Associates Creations",
   legalName: "B&B Associates Creations LLC",
   streetAddress: "1141 E Welsh Rd",
   city: "Maple Glen",

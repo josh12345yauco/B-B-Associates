@@ -22,7 +22,7 @@
     {
       id: 'faq-1',
       question: 'How much does a custom kitchen remodel cost in the Main Line area?',
-      answer: 'Complete custom kitchen renovations in the Main Line, Bucks County, and Montgomery County typically range from $75,000 to $250,000+, depending on square footage, materials selected, and scope of work. At B&B Associates, we provide transparent, itemized estimates during your free in-home consultation. Our 25 years of experience and relationships with 60+ premium suppliers allow us to pass 5–35% in savings directly to you. <a href="/contact/#inquiry-form">Fill out our inquiry form</a> to schedule your consultation today.',
+      answer: 'Complete custom kitchen renovations in the Main Line, Bucks County, and Montgomery County typically range from $75,000 to $250,000+, depending on square footage, materials selected, and scope of work. At B&B Associates Creations, we provide transparent, itemized estimates during your free in-home consultation. Our 25 years of experience and relationships with 60+ premium suppliers allow us to pass 5–35% in savings directly to you. <a href="/contact/#inquiry-form">Fill out our inquiry form</a> to schedule your consultation today.',
       order: 1,
       hidden: false
     },
@@ -43,7 +43,7 @@
     {
       id: 'faq-4',
       question: 'What types of projects do you specialize in?',
-      answer: 'B&B Associates exclusively specializes in two services: complete custom kitchen renovations and full luxury bathroom builds. We focus on high-end, full-scope transformations for homes valued at $550,000 and above in the Main Line, Bucks County, and Montgomery County.',
+      answer: 'B&B Associates Creations exclusively specializes in two services: complete custom kitchen renovations and full luxury bathroom builds. We focus on high-end, full-scope transformations for homes valued at $550,000 and above in the Main Line, Bucks County, and Montgomery County.',
       order: 4,
       hidden: false
     },
@@ -70,7 +70,7 @@
     },
     {
       id: 'faq-8',
-      question: 'What is the process for getting started with B&B Associates?',
+      question: 'What is the process for getting started with B&B Associates Creations?',
       answer: 'Our signature 3-step process makes luxury remodeling stress-free: Step 1: Discuss Your Layout – Free in-home consultation. Step 2: Pick Your Shape – Custom CAD drawings and material selection. Step 3: Pick Your Options – Finalize fixtures, appliances, and finishes, then receive your transparent, itemized proposal.',
       order: 8,
       hidden: false
@@ -85,21 +85,21 @@
     {
       id: 'faq-10',
       question: 'What kind of warranty do you offer on your work?',
-      answer: 'B&B Associates offers a lifetime commitment guarantee—we stand behind our work forever, even beyond the standard warranty period. Every project includes a 5-year comprehensive workmanship warranty covering all labor, plus full manufacturer warranties on fixtures, appliances, cabinetry, and materials.',
+      answer: 'B&B Associates Creations offers a lifetime commitment guarantee—we stand behind our work forever, even beyond the standard warranty period. Every project includes a 5-year comprehensive workmanship warranty covering all labor, plus full manufacturer warranties on fixtures, appliances, cabinetry, and materials.',
       order: 10,
       hidden: false
     },
     {
       id: 'faq-11',
-      question: 'Why should I choose B&B Associates over other remodelers?',
+      question: 'Why should I choose B&B Associates Creations over other remodelers?',
       answer: 'Five reasons: 25 Years with 1,200+ Flawless Projects, 180+ Verified 5-Star Reviews, Family-Owned with No Subcontractors, 5-35% Savings Passed to You through 60+ premium suppliers, and 5–15 Minute Response Time.',
       order: 11,
       hidden: false
     },
     {
       id: 'faq-12',
-      question: 'What makes B&B Associates different from big-box contractors?',
-      answer: 'Big-box contractors treat remodeling like an assembly line. B&B Associates treats it like an art form. We offer boutique vs. factory service, ownership involvement, no subcontractors, access to 60+ high-end suppliers, and a lifetime commitment.',
+      question: 'What makes B&B Associates Creations different from big-box contractors?',
+      answer: 'Big-box contractors treat remodeling like an assembly line. B&B Associates Creations treats it like an art form. We offer boutique vs. factory service, ownership involvement, no subcontractors, access to 60+ high-end suppliers, and a lifetime commitment.',
       order: 12,
       hidden: false
     }

@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /* ============================================================
-   B&B Associates — Guide / service page generator
+   B&B Associates Creations — Guide / service page generator
    Reads data/guides.json, reuses the shared blocks from
    scripts/build-town-pages.js (GTM, nav, footer, schema, CSS) and
    writes one page per entry, then upserts sitemap.xml.
@@ -155,7 +155,7 @@ ${nav()}
             <h2 class="sa-intro-h2">${esc(page.kind === 'service' ? page.serviceName : page.breadcrumbLabel)}</h2>
             <p class="sa-intro-body">${esc(page.answerFirst)}</p>
           </div>
-          <div class="sa-intro-visual"><div class="sa-intro-img-wrap"><img src="${attr(page.heroImage)}" alt="${attr(page.breadcrumbLabel)} — B&amp;B Associates project" loading="lazy" width="800" height="600"></div></div>
+          <div class="sa-intro-visual"><div class="sa-intro-img-wrap"><img src="${attr(page.heroImage)}" alt="${attr(page.breadcrumbLabel)} — B&amp;B Associates Creations project" loading="lazy" width="800" height="600"></div></div>
         </div>
       </div>
     </section>

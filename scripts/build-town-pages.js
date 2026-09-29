@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /* ============================================================
-   B&B Associates — Service × Town page generator
+   B&B Associates Creations — Service × Town page generator
    ------------------------------------------------------------
    Reads:   data/towns.json, data/services.json, data/site.json,
             scripts/templates/service-town.css, js/projects-data.js,
@@ -96,7 +96,7 @@ function businessSchema(town) {
     "@context": "https://schema.org",
     "@type": "HomeAndConstructionBusiness",
     "@id": SITE.businessId,
-    "name": "B&B Associates",
+    "name": "B&B Associates Creations",
     "legalName": "B&B Associates Creations LLC",
     "alternateName": "B&B Associates Creations",
     "url": SITE.origin + "/",
@@ -198,7 +198,7 @@ function footer() {
         <div class="footer-col"><p class="footer-col-title">Navigation</p><nav class="footer-links" aria-label="Footer navigation"><a href="/" class="footer-link">Home</a><a href="/services/" class="footer-link">Services</a><a href="/showroom/" class="footer-link">Showroom</a><a href="/portfolio/" class="footer-link">Portfolio</a><a href="/about/" class="footer-link">About</a><a href="/contact/" class="footer-link">Contact</a><a href="/contact/#inquiry-form" class="footer-link">Inquiry Form</a><a href="/blog/" class="footer-link">Blog</a></nav></div>
         <div class="footer-col"><p class="footer-col-title">Services</p><nav class="footer-links" aria-label="Services navigation"><a href="/services/luxury-kitchen-remodeling/" class="footer-link">Luxury Kitchen Remodeling</a><a href="/services/custom-bathroom-renovations/" class="footer-link">Custom Bathroom Renovations</a><a href="/services/custom-cabinetry/" class="footer-link">Custom Cabinetry</a><a href="/kitchen-remodel-cost/" class="footer-link">Kitchen Remodel Cost Guide</a><a href="/bathroom-remodel-cost/" class="footer-link">Bathroom Remodel Cost Guide</a><a href="/showroom/" class="footer-link">Ambler Design Showroom</a><a href="/reviews/" class="footer-link">Client Reviews</a></nav></div>
         <div class="footer-col"><p class="footer-col-title">Service Areas</p><nav class="footer-links" aria-label="Service areas navigation">${areas}<a href="/service-areas/" class="footer-link" style="color:var(--color-gold);">View All Areas →</a></nav></div>
-        <div class="footer-col footer-col-stay-informed"><p class="footer-col-title">Stay Connected</p><p class="footer-newsletter-sub">Design insights, project reveals, and exclusive updates — delivered monthly.</p><form class="footer-newsletter-form" aria-label="Newsletter signup"><input type="email" placeholder="Your email address" required><button type="submit">Subscribe</button></form><div class="footer-connect-inline"><div class="footer-contact-line"><a href="tel:+12674028758">267-402-8758</a></div><div class="footer-contact-line"><a href="mailto:bb3associates@gmail.com">bb3associates@gmail.com</a></div><div class="footer-contact-line"><address>1141 E Welsh Rd, Maple Glen, PA 19002</address></div><div class="footer-social-row"><a href="https://instagram.com/bbassociatescreations" class="footer-social-link" target="_blank" rel="noopener" aria-label="B&amp;B Associates on Instagram">Instagram</a><a href="https://facebook.com/bbassociatescreations" class="footer-social-link" target="_blank" rel="noopener" aria-label="B&amp;B Associates on Facebook">Facebook</a><a href="https://www.tiktok.com/@bb.associates" class="footer-social-link" target="_blank" rel="noopener" aria-label="B&amp;B Associates on TikTok">TikTok</a></div></div></div>
+        <div class="footer-col footer-col-stay-informed"><p class="footer-col-title">Stay Connected</p><p class="footer-newsletter-sub">Design insights, project reveals, and exclusive updates — delivered monthly.</p><form class="footer-newsletter-form" aria-label="Newsletter signup"><input type="email" placeholder="Your email address" required><button type="submit">Subscribe</button></form><div class="footer-connect-inline"><div class="footer-contact-line"><a href="tel:+12674028758">267-402-8758</a></div><div class="footer-contact-line"><a href="mailto:bb3associates@gmail.com">bb3associates@gmail.com</a></div><div class="footer-contact-line"><address>1141 E Welsh Rd, Maple Glen, PA 19002</address></div><div class="footer-social-row"><a href="https://instagram.com/bbassociatescreations" class="footer-social-link" target="_blank" rel="noopener" aria-label="B&amp;B Associates Creations on Instagram">Instagram</a><a href="https://facebook.com/bbassociatescreations" class="footer-social-link" target="_blank" rel="noopener" aria-label="B&amp;B Associates Creations on Facebook">Facebook</a><a href="https://www.tiktok.com/@bb.associates" class="footer-social-link" target="_blank" rel="noopener" aria-label="B&amp;B Associates Creations on TikTok">TikTok</a></div></div></div>
       </div>
       <div class="footer-bottom">
         <p class="footer-copy">&copy; 2026 B&amp;B Associates Creations LLC. All Rights Reserved. &nbsp;·&nbsp; PA HIC #PA104189</p>
@@ -268,7 +268,7 @@ function buildPage(town, service) {
           </div>`).join('\n');
 
   const projectsHtml = projects.map(p => `          <a href="/portfolio/project/?id=${attr(p.id)}" class="st-project">
-            <img src="${attr(p.thumbnail)}" alt="${attr(p.title)} — ${attr(p.type.toLowerCase())} remodel by B&amp;B Associates" loading="lazy" width="800" height="600">
+            <img src="${attr(p.thumbnail)}" alt="${attr(p.title)} — ${attr(p.type.toLowerCase())} remodel by B&amp;B Associates Creations" loading="lazy" width="800" height="600">
             <p class="st-project-title">${esc(p.title)}</p>
             <p class="st-project-meta">${esc([p.style, p.duration, p.investment].filter(Boolean).join(' · '))}</p>
           </a>`).join('\n');
@@ -374,7 +374,7 @@ ${nav()}
               <h2 class="sa-intro-h2">${esc(c.introH2)}</h2>
             </span></span></div>
             <p class="st-answer">${esc(c.answerFirst)}</p>
-            <p class="sa-intro-body">B&amp;B Associates is a family-operated design-build remodeler based in Maple Glen, PA, serving ${esc(town.displayName)} ${esc(town.distancePhrase)}. One team handles design, materials, permits, and construction — with a fully itemized estimate before any contract is signed.</p>
+            <p class="sa-intro-body">B&amp;B Associates Creations is a family-operated design-build remodeler based in Maple Glen, PA, serving ${esc(town.displayName)} ${esc(town.distancePhrase)}. One team handles design, materials, permits, and construction — with a fully itemized estimate before any contract is signed.</p>
             <div style="display:flex;gap:var(--sp-4);flex-wrap:wrap;">
               <a href="#get-estimate" class="phil-btn phil-btn-fill phil-btn-fill-dark"><div class="phil-fill"></div><span class="phil-label">Request an Estimate</span></a>
               <a href="${attr(service.portfolioFilter)}" class="phil-btn phil-btn-fill phil-btn-fill-dark"><div class="phil-fill"></div><span class="phil-label">View ${esc(service.shortName)} Projects</span></a>
@@ -408,7 +408,7 @@ ${sectionsHtml}
         <h2 style="font-family:var(--font-display);font-size:var(--text-h2);font-weight:300;font-style:italic;color:#1a1a1a;line-height:var(--leading-tight);margin-bottom:var(--sp-3);">${esc(fill(service.cardTitle, town, service))}</h2>
         <div class="town-services-grid">
           <div class="town-service-card">
-            ${projects[0] ? `<img class="town-service-thumb" src="${attr(projects[0].thumbnail)}" alt="Real B&amp;B Associates project — ${attr(projects[0].title)}" loading="lazy" width="450" height="600">` : ''}
+            ${projects[0] ? `<img class="town-service-thumb" src="${attr(projects[0].thumbnail)}" alt="Real B&amp;B Associates Creations project — ${attr(projects[0].title)}" loading="lazy" width="450" height="600">` : ''}
             <h3 class="town-service-h3">${esc(service.name)}</h3>
             <p class="town-service-body">${esc(fill(service.cardBody, town, service))}</p>
             <ul class="town-service-list">

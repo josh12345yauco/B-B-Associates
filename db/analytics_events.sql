@@ -1,5 +1,5 @@
 -- ============================================================
--- B&B Associates — analytics_events table
+-- B&B Associates Creations — analytics_events table
 -- Run this ONCE in the Supabase SQL Editor
 -- (Dashboard → your project → SQL Editor → New query → paste → Run)
 -- ============================================================

@@ -6,7 +6,7 @@
       "key": "kitchen",
       "name": "Kitchen Remodeling",
       "shortName": "Kitchen",
-      "titlePattern": "{Town}, PA Kitchen Remodeling | Design-Build | B&B Associates",
+      "titlePattern": "{Town}, PA Kitchen Remodeling | Design-Build | B&B Associates Creations",
       "h1Pattern": "Kitchen Remodeling<br>in {Town}, PA",
       "h1Plain": "Kitchen Remodeling in {Town}, PA",
       "breadcrumbLabel": "Kitchen Remodeling",
@@ -15,7 +15,7 @@
       "serviceSchemaName": "Kitchen Remodeling",
       "serviceType": "Kitchen remodeling",
       "portfolioFilter": "/portfolio/?filter=kitchen",
-      "metaPattern": "Kitchen remodeling in {Town}, PA by B&B Associates. Design-build kitchens for {Township} homes, {Permit} permits handled, itemized estimates. Free in-home consultation.",
+      "metaPattern": "Kitchen remodeling in {Town}, PA by B&B Associates Creations. Design-build kitchens for {Township} homes, {Permit} permits handled, itemized estimates. Free in-home consultation.",
       "heroAlt": "Custom kitchen remodeling in {Town}, PA by B&B Associates Creations",
       "cardTitle": "Kitchen Remodeling in {Town}",
       "cardBody": "Complete custom kitchen renovations for {Town} homes: custom and semi-custom cabinetry, stone countertops, islands and millwork, lighting design, appliances, and design-build execution with {Permit} permits handled inside the scope.",
@@ -46,7 +46,7 @@
         { "id": "permit", "q": "Do I need a permit to remodel a kitchen in {Township}?", "a": "Yes for electrical, plumbing, and structural work, which covers nearly every full kitchen remodel. Permits go through {Permit}. We file the applications, meet the inspectors, and close out the permits as part of our standard scope, so you never deal with the municipality directly." },
         { "id": "wall", "q": "Can you remove the wall between my kitchen and dining room in {Town}?", "a": "Usually, yes. We have an engineer confirm whether the wall is load-bearing during the design phase and size a beam if it is, then price the structural work as its own line. The township inspects structural, plumbing, and electrical work, and we manage every permit and inspection inside the project." },
         { "id": "quote", "q": "Why is my {Town} kitchen remodel quote higher than online estimates?", "a": "National cost calculators price cabinets and counters, not the house. In {Town}, real quotes include electrical service, plumbing relocation, plaster or drywall repair, structural work, permits, and design — items a good bid lists explicitly. Our estimates itemize each one so you can see exactly what drives the number." },
-        { "id": "best", "q": "How do I find the best kitchen remodeling contractor near me in {Town}?", "a": "Look for a licensed, locally established design-build contractor with verifiable reviews and real local projects — not just a national lead-generation listing. B&B Associates has been a kitchen and bathroom remodeling contractor based in Maple Glen since 2013, with 13 years of completed projects across {County}. We handle design, materials, permits, and construction under one roof, so you are not coordinating between a designer, a contractor, and three subcontractors." },
+        { "id": "best", "q": "How do I find the best kitchen remodeling contractor near me in {Town}?", "a": "Look for a licensed, locally established design-build contractor with verifiable reviews and real local projects — not just a national lead-generation listing. B&B Associates Creations has been a kitchen and bathroom remodeling contractor based in Maple Glen since 2013, with 13 years of completed projects across {County}. We handle design, materials, permits, and construction under one roof, so you are not coordinating between a designer, a contractor, and three subcontractors." },
         { "id": "cabinetry", "q": "Custom or semi-custom cabinetry for a {Town} kitchen?", "a": "Semi-custom is usually the right call for a same-footprint refresh of a 1980s–2000s kitchen. True inset cabinetry, doors flush within the face frame, and the fully custom layouts that older {Town} homes often need are where custom or the very top semi-custom lines earn their cost. We design and install both, and we will tell you which one the room actually needs." },
         { "id": "showroom", "q": "Is there a showroom where I can see kitchen materials in person?", "a": "Our Ambler design showroom is coming soon — opening Winter 2026/2027. When it opens, you will be able to see countertop slabs, tile walls, cabinetry door styles, and hardware finishes from our 60+ supplier partners in person. Until then, all material selection happens through the in-home consultation and design process." },
         { "id": "book", "q": "How far in advance should I book a kitchen remodel in {Town}?", "a": "Our schedule typically books 6–10 weeks out from the consultation date. For projects beginning in spring, the most popular season, reach out by January or February to secure your spot; for a kitchen finished before the holidays, sign by early autumn. Consultations are always free, and there is no obligation until you sign a contract." }
@@ -55,12 +55,12 @@
               {
                       "id": "best-reviews",
                       "q": "Which kitchen remodeler in {Town} has the best reviews?",
-                      "a": "B&B Associates holds a 5.0-star Google rating from homeowners across {County}, and our reviews page shows the completed kitchens and bathrooms behind it. Look for a remodeler whose reviews name real towns and describe the work, whose license is verifiable with the Pennsylvania Attorney General, and who shows you finished projects near {Town} before you sign."
+                      "a": "B&B Associates Creations holds a 5.0-star Google rating from homeowners across {County}, and our reviews page shows the completed kitchens and bathrooms behind it. Look for a remodeler whose reviews name real towns and describe the work, whose license is verifiable with the Pennsylvania Attorney General, and who shows you finished projects near {Town} before you sign."
               },
               {
                       "id": "choose-luxury",
                       "q": "How do I choose a luxury kitchen remodeler in {Town}, PA?",
-                      "a": "Ask three things: does one team handle design, permits and construction (design-build), is the estimate itemized line by line, and can they show finished kitchens in {Town} or nearby towns across {County}? B&B Associates does all three from our office in Maple Glen, with custom cabinetry from 60+ supplier partners, permits handled with the local municipality, and a free in-home consultation to start."
+                      "a": "Ask three things: does one team handle design, permits and construction (design-build), is the estimate itemized line by line, and can they show finished kitchens in {Town} or nearby towns across {County}? B&B Associates Creations does all three from our office in Maple Glen, with custom cabinetry from 60+ supplier partners, permits handled with the local municipality, and a free in-home consultation to start."
               }
       ],
       "faqDefaultOrder": ["cost", "permit", "timeline", "wall", "quote", "best"]
@@ -70,7 +70,7 @@
       "key": "bathroom",
       "name": "Bathroom Remodeling",
       "shortName": "Bathroom",
-      "titlePattern": "{Town}, PA Bathroom Remodeling | Tile Showers | B&B Associates",
+      "titlePattern": "{Town}, PA Bathroom Remodeling | Tile Showers | B&B Associates Creations",
       "h1Pattern": "Bathroom Remodeling<br>in {Town}, PA",
       "h1Plain": "Bathroom Remodeling in {Town}, PA",
       "breadcrumbLabel": "Bathroom Remodeling",
@@ -79,7 +79,7 @@
       "serviceSchemaName": "Bathroom Remodeling",
       "serviceType": "Bathroom remodeling",
       "portfolioFilter": "/portfolio/?filter=bathroom",
-      "metaPattern": "Bathroom remodeling in {Town}, PA by B&B Associates. Primary baths, hall baths and spa suites for {Township} homes, {Permit} permits handled. Free in-home consultation.",
+      "metaPattern": "Bathroom remodeling in {Town}, PA by B&B Associates Creations. Primary baths, hall baths and spa suites for {Township} homes, {Permit} permits handled. Free in-home consultation.",
       "heroAlt": "Custom bathroom remodeling in {Town}, PA by B&B Associates Creations",
       "cardTitle": "Bathroom Remodeling in {Town}",
       "cardBody": "Primary baths, hall baths, and powder rooms for {Town} homes: custom tile and stone, walk-in showers with frameless glass, heated floors, custom vanities, and luxury fixtures, fully permitted through {Permit}.",
@@ -110,7 +110,7 @@
         { "id": "permit", "q": "Do I need a permit to remodel a bathroom in {Township}?", "a": "Yes when the work involves plumbing, electrical, or structural changes, which covers nearly every full bathroom remodel. Permits go through {Permit}, and the rough-in is inspected before the walls close. We file the applications and coordinate every inspection as part of our standard scope." },
         { "id": "plumbing", "q": "Should I move the plumbing in my {Town} bathroom remodel?", "a": "If the layout is the problem, yes — relocating a toilet or expanding a shower into a closet is often the best money spent in an older {Town} bathroom. Moving drains over a basement is straightforward; over a finished ceiling it means opening the ceiling, which we price as its own line so there is no surprise." },
         { "id": "heated", "q": "Are heated bathroom floors worth it in {Town}?", "a": "In a Pennsylvania winter, yes. An electric radiant mat under tile connected to a programmable thermostat is a modest line item in most {Town} bathrooms and is the upgrade we would never leave out. It also lets you use large-format porcelain or stone floors without the cold-feet problem." },
-        { "id": "best", "q": "How do I find the best bathroom remodeling contractor near me in {Town}?", "a": "Look for a licensed, locally established design-build contractor with verifiable reviews and real local projects — not just a national lead-generation listing. B&B Associates has been a kitchen and bathroom remodeling contractor based in Maple Glen since 2013, with 13 years of completed projects across {County}. Design, materials, permits, and construction are handled under one roof." },
+        { "id": "best", "q": "How do I find the best bathroom remodeling contractor near me in {Town}?", "a": "Look for a licensed, locally established design-build contractor with verifiable reviews and real local projects — not just a national lead-generation listing. B&B Associates Creations has been a kitchen and bathroom remodeling contractor based in Maple Glen since 2013, with 13 years of completed projects across {County}. Design, materials, permits, and construction are handled under one roof." },
         { "id": "mold", "q": "Will a remodel fix a bathroom that keeps growing mold?", "a": "Usually yes, if the remodel addresses the cause rather than the symptom. In older {Town} homes the culprit is typically a fan venting into the attic, a shower built without a waterproof membrane, or an unsealed window in the shower. We vent to the exterior, rebuild the shower on a true waterproofing system, and rebuild the window opening as part of the project." },
         { "id": "curbless", "q": "Can you build a curbless shower in a {Town} home?", "a": "Yes. A curbless shower with a linear drain is one of the most requested upgrades from homeowners planning to stay in their {Town} home long term, and it does not have to look clinical. It requires recessing the shower floor or building up the surrounding floor, which we plan during design so the transition is seamless." },
         { "id": "showroom", "q": "Is there a showroom where I can see bathroom materials in person?", "a": "Our Ambler design showroom is coming soon — opening Winter 2026/2027. When it opens, you will be able to see tile walls, stone slabs, vanity styles, and fixture finishes from our 60+ supplier partners in person. Until then, all material selection happens through the in-home consultation and design process." }
@@ -119,7 +119,7 @@
               {
                       "id": "best-tile",
                       "q": "Who is the best bathroom remodeler for tile work near {Town}, PA?",
-                      "a": "Homeowners in {Town} and nearby towns across {County} hire B&B Associates for bathrooms where the tile has to be right: large-format porcelain, natural stone, mosaic accents, curbless and walk-in showers, and custom niches, all set by our own crews rather than a subcontractor. We are a family-owned, PA-licensed remodeler (HIC #PA104189) with 5.0-star Google reviews, and every bathroom we build across {County} gets an itemized estimate before work starts."
+                      "a": "Homeowners in {Town} and nearby towns across {County} hire B&B Associates Creations for bathrooms where the tile has to be right: large-format porcelain, natural stone, mosaic accents, curbless and walk-in showers, and custom niches, all set by our own crews rather than a subcontractor. We are a family-owned, PA-licensed remodeler (HIC #PA104189) with 5.0-star Google reviews, and every bathroom we build across {County} gets an itemized estimate before work starts."
               }
       ],
       "faqDefaultOrder": ["cost", "permit", "timeline", "plumbing", "heated", "best"]

@@ -1,5 +1,5 @@
 /**
- * B&B Associates — First-party visitor analytics
+ * B&B Associates Creations — First-party visitor analytics
  * --------------------------------------------------------------
  * Sends real visitor activity to a CENTRAL Supabase table
  * (`analytics_events`) so it can be aggregated across ALL visitors

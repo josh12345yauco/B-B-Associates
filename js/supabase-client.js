@@ -1,5 +1,5 @@
 /**
- * B&B Associates — Supabase Client
+ * B&B Associates Creations — Supabase Client
  * Initializes the Supabase client and exposes BB.Supabase.insertLead()
  * for all form handlers to use.
  */

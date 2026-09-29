@@ -1,5 +1,5 @@
 /**
- * B&B Associates — Service Area Lead Capture
+ * B&B Associates Creations — Service Area Lead Capture
  * Pushes form submissions to localStorage.bb_leads with type, source, and service_area.
  * Include this script on every service area page and set data-service-area on the form (or on a wrapper).
  */
