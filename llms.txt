@@ -15,8 +15,8 @@
 
 ## Services
 
-- Luxury Kitchen Remodeling: https://www.bbassociatesco.com/services/luxury-kitchen-remodeling/
-- Custom Bathroom Renovations: https://www.bbassociatesco.com/services/custom-bathroom-renovations/
+- Luxury Kitchen Remodeling: https://www.bbassociatesco.com/services/kitchen-remodeling/
+- Custom Bathroom Renovations: https://www.bbassociatesco.com/services/bathroom-remodeling/
 - Custom Cabinetry (kitchen + bath, custom and premium semi-custom): https://www.bbassociatesco.com/services/custom-cabinetry/
 - All services: https://www.bbassociatesco.com/services/
 
@@ -39,8 +39,8 @@ Scope: full custom kitchen renovations and full bathroom renovations (primary/ma
 ## Key pages
 
 - Home: https://www.bbassociatesco.com/
-- Luxury Kitchen Remodeling: https://www.bbassociatesco.com/services/luxury-kitchen-remodeling/
-- Custom Bathroom Renovations: https://www.bbassociatesco.com/services/custom-bathroom-renovations/
+- Luxury Kitchen Remodeling: https://www.bbassociatesco.com/services/kitchen-remodeling/
+- Custom Bathroom Renovations: https://www.bbassociatesco.com/services/bathroom-remodeling/
 - Service Areas: https://www.bbassociatesco.com/service-areas/
 - Portfolio: https://www.bbassociatesco.com/portfolio/
 - Journal (blog): https://www.bbassociatesco.com/blog/

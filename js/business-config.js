@@ -17,6 +17,13 @@ window.BB_BUSINESS = {
   phoneE164: "+1-267-402-8758",
   email: "bb3associates@gmail.com",
   website: "https://www.bbassociatesco.com/",
+  /* Review claim shown across the site. Rounded DOWN to the nearest 10 so it
+     stays true as new reviews arrive. To change it everywhere, run:
+       python3 scripts/update-review-count.py "200+"                        */
+  reviewsDisplay: "180+",
+  reviewPlatforms: "Google and Angi",
+  yearsInBusiness: 13,
+  foundedYear: 2013,
   licenseNumber: "PA104189",
   licenseLabel: "PA HIC #PA104189",
   logo: "https://www.bbassociatesco.com/IMAGES/bb-logo-tagline-navy.png"

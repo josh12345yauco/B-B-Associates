@@ -2,6 +2,36 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "redirects": [
     {
+      "source": "/services/luxury-kitchen-remodeling",
+      "destination": "/services/kitchen-remodeling/",
+      "permanent": true
+    },
+    {
+      "source": "/services/luxury-kitchen-remodeling/",
+      "destination": "/services/kitchen-remodeling/",
+      "permanent": true
+    },
+    {
+      "source": "/services/luxury-kitchen-remodeling.html",
+      "destination": "/services/kitchen-remodeling/",
+      "permanent": true
+    },
+    {
+      "source": "/services/custom-bathroom-renovations",
+      "destination": "/services/bathroom-remodeling/",
+      "permanent": true
+    },
+    {
+      "source": "/services/custom-bathroom-renovations/",
+      "destination": "/services/bathroom-remodeling/",
+      "permanent": true
+    },
+    {
+      "source": "/services/custom-bathroom-renovations.html",
+      "destination": "/services/bathroom-remodeling/",
+      "permanent": true
+    },
+    {
       "source": "/estimator",
       "destination": "/contact/",
       "permanent": false
@@ -49,16 +79,6 @@
     {
       "source": "/kitchen-bathroom-remodeling-montgomery-county-pa/",
       "destination": "/kitchen-bathroom-renovation-design/",
-      "permanent": true
-    },
-    {
-      "source": "/services/kitchen-remodeling",
-      "destination": "/services/luxury-kitchen-remodeling/",
-      "permanent": true
-    },
-    {
-      "source": "/services/kitchen-remodeling/",
-      "destination": "/services/luxury-kitchen-remodeling/",
       "permanent": true
     },
     {
@@ -158,7 +178,7 @@
     },
     {
       "source": "/services/kitchen-remodeling.html",
-      "destination": "/services/luxury-kitchen-remodeling/",
+      "destination": "/services/kitchen-remodeling/",
       "permanent": true
     },
     {
@@ -168,22 +188,22 @@
     },
     {
       "source": "/service-areas/kitchen-remodeling",
-      "destination": "/services/luxury-kitchen-remodeling/",
+      "destination": "/services/kitchen-remodeling/",
       "permanent": true
     },
     {
       "source": "/service-areas/kitchen-remodeling/",
-      "destination": "/services/luxury-kitchen-remodeling/",
+      "destination": "/services/kitchen-remodeling/",
       "permanent": true
     },
     {
       "source": "/service-areas/bathroom-remodeling",
-      "destination": "/services/custom-bathroom-renovations/",
+      "destination": "/services/bathroom-remodeling/",
       "permanent": true
     },
     {
       "source": "/service-areas/bathroom-remodeling/",
-      "destination": "/services/custom-bathroom-renovations/",
+      "destination": "/services/bathroom-remodeling/",
       "permanent": true
     },
     {
@@ -313,42 +333,42 @@
     },
     {
       "source": "/brushed-nickel-bathroom-lights",
-      "destination": "/services/custom-bathroom-renovations/",
+      "destination": "/services/bathroom-remodeling/",
       "permanent": true
     },
     {
       "source": "/brushed-nickel-bathroom-lights/",
-      "destination": "/services/custom-bathroom-renovations/",
+      "destination": "/services/bathroom-remodeling/",
       "permanent": true
     },
     {
       "source": "/shower-wall-lights-for-stylish-bathroom-illumination",
-      "destination": "/services/custom-bathroom-renovations/",
+      "destination": "/services/bathroom-remodeling/",
       "permanent": true
     },
     {
       "source": "/shower-wall-lights-for-stylish-bathroom-illumination/",
-      "destination": "/services/custom-bathroom-renovations/",
+      "destination": "/services/bathroom-remodeling/",
       "permanent": true
     },
     {
       "source": "/wood-bathroom-vanities",
-      "destination": "/services/custom-bathroom-renovations/",
+      "destination": "/services/bathroom-remodeling/",
       "permanent": true
     },
     {
       "source": "/wood-bathroom-vanities/",
-      "destination": "/services/custom-bathroom-renovations/",
+      "destination": "/services/bathroom-remodeling/",
       "permanent": true
     },
     {
       "source": "/master-bathroom-cabinet-ideas",
-      "destination": "/services/custom-bathroom-renovations/",
+      "destination": "/services/bathroom-remodeling/",
       "permanent": true
     },
     {
       "source": "/master-bathroom-cabinet-ideas/",
-      "destination": "/services/custom-bathroom-renovations/",
+      "destination": "/services/bathroom-remodeling/",
       "permanent": true
     },
     {

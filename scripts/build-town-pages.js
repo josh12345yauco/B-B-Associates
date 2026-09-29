@@ -119,8 +119,10 @@ function businessSchema(town) {
       "https://www.homeadvisor.com/rated.BandBAssociatesCo.39127744.html"
     ],
     "knowsAbout": ["Kitchen remodeling", "Bathroom remodeling", "Custom cabinetry", "Tile installation", "Walk-in showers", "Design-build remodeling", "Kitchen design", "Countertop installation", "Home remodeling permits in Montgomery County and Bucks County, PA"],
-    "areaServed": { "@type": "City", "name": town.displayName, "containedInPlace": { "@type": "State", "name": "Pennsylvania" } },
-    "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5.0", "reviewCount": "183", "bestRating": "5" }
+    "areaServed": { "@type": "City", "name": town.displayName, "containedInPlace": { "@type": "State", "name": "Pennsylvania" } }
+    /* No aggregateRating here on purpose: Google does not show stars for a
+       business's own self-reported rating, and a hard-coded count goes stale.
+       Review figures live in visible copy only (see js/business-config.js). */
   };
 }
 function serviceSchema(town, service, url) {
@@ -196,7 +198,7 @@ function footer() {
       </div>
       <div class="footer-grid">
         <div class="footer-col"><p class="footer-col-title">Navigation</p><nav class="footer-links" aria-label="Footer navigation"><a href="/" class="footer-link">Home</a><a href="/services/" class="footer-link">Services</a><a href="/showroom/" class="footer-link">Showroom</a><a href="/portfolio/" class="footer-link">Portfolio</a><a href="/about/" class="footer-link">About</a><a href="/contact/" class="footer-link">Contact</a><a href="/contact/#inquiry-form" class="footer-link">Inquiry Form</a><a href="/blog/" class="footer-link">Blog</a></nav></div>
-        <div class="footer-col"><p class="footer-col-title">Services</p><nav class="footer-links" aria-label="Services navigation"><a href="/services/luxury-kitchen-remodeling/" class="footer-link">Luxury Kitchen Remodeling</a><a href="/services/custom-bathroom-renovations/" class="footer-link">Custom Bathroom Renovations</a><a href="/services/custom-cabinetry/" class="footer-link">Custom Cabinetry</a><a href="/kitchen-remodel-cost/" class="footer-link">Kitchen Remodel Cost Guide</a><a href="/bathroom-remodel-cost/" class="footer-link">Bathroom Remodel Cost Guide</a><a href="/showroom/" class="footer-link">Ambler Design Showroom</a><a href="/reviews/" class="footer-link">Client Reviews</a></nav></div>
+        <div class="footer-col"><p class="footer-col-title">Services</p><nav class="footer-links" aria-label="Services navigation"><a href="/services/kitchen-remodeling/" class="footer-link">Luxury Kitchen Remodeling</a><a href="/services/bathroom-remodeling/" class="footer-link">Custom Bathroom Renovations</a><a href="/services/custom-cabinetry/" class="footer-link">Custom Cabinetry</a><a href="/kitchen-remodel-cost/" class="footer-link">Kitchen Remodel Cost Guide</a><a href="/bathroom-remodel-cost/" class="footer-link">Bathroom Remodel Cost Guide</a><a href="/showroom/" class="footer-link">Ambler Design Showroom</a><a href="/reviews/" class="footer-link">Client Reviews</a></nav></div>
         <div class="footer-col"><p class="footer-col-title">Service Areas</p><nav class="footer-links" aria-label="Service areas navigation">${areas}<a href="/service-areas/" class="footer-link" style="color:var(--color-gold);">View All Areas →</a></nav></div>
         <div class="footer-col footer-col-stay-informed"><p class="footer-col-title">Stay Connected</p><p class="footer-newsletter-sub">Design insights, project reveals, and exclusive updates — delivered monthly.</p><form class="footer-newsletter-form" aria-label="Newsletter signup"><input type="email" placeholder="Your email address" required><button type="submit">Subscribe</button></form><div class="footer-connect-inline"><div class="footer-contact-line"><a href="tel:+12674028758">267-402-8758</a></div><div class="footer-contact-line"><a href="mailto:bb3associates@gmail.com">bb3associates@gmail.com</a></div><div class="footer-contact-line"><address>1141 E Welsh Rd, Maple Glen, PA 19002</address></div><div class="footer-social-row"><a href="https://instagram.com/bbassociatescreations" class="footer-social-link" target="_blank" rel="noopener" aria-label="B&amp;B Associates Creations on Instagram">Instagram</a><a href="https://facebook.com/bbassociatescreations" class="footer-social-link" target="_blank" rel="noopener" aria-label="B&amp;B Associates Creations on Facebook">Facebook</a><a href="https://www.tiktok.com/@bb.associates" class="footer-social-link" target="_blank" rel="noopener" aria-label="B&amp;B Associates Creations on TikTok">TikTok</a></div></div></div>
       </div>
@@ -358,7 +360,7 @@ ${nav()}
       </div>
       <div class="sa-hero-stats">
         <div class="sa-hero-stat"><span class="sa-hero-stat-num">13+</span><span class="sa-hero-stat-label">Years Local</span></div>
-        <div class="sa-hero-stat"><span class="sa-hero-stat-num">5.0★</span><span class="sa-hero-stat-label">183 Reviews</span></div>
+        <div class="sa-hero-stat"><span class="sa-hero-stat-num">5.0★</span><span class="sa-hero-stat-label">180+ Reviews</span></div>
         <div class="sa-hero-stat"><span class="sa-hero-stat-num">60+</span><span class="sa-hero-stat-label">Supplier Partners</span></div>
         <div class="sa-hero-stat"><span class="sa-hero-stat-num">Free</span><span class="sa-hero-stat-label">Consultation</span></div>
       </div>

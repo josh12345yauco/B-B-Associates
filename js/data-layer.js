@@ -22,7 +22,7 @@
     {
       id: 'faq-1',
       question: 'How much does a custom kitchen remodel cost in the Main Line area?',
-      answer: 'Complete custom kitchen renovations in the Main Line, Bucks County, and Montgomery County typically range from $75,000 to $250,000+, depending on square footage, materials selected, and scope of work. At B&B Associates Creations, we provide transparent, itemized estimates during your free in-home consultation. Our 25 years of experience and relationships with 60+ premium suppliers allow us to pass 5–35% in savings directly to you. <a href="/contact/#inquiry-form">Fill out our inquiry form</a> to schedule your consultation today.',
+      answer: 'Complete custom kitchen renovations in the Main Line, Bucks County, and Montgomery County typically range from $75,000 to $250,000+, depending on square footage, materials selected, and scope of work. At B&B Associates Creations, we provide transparent, itemized estimates during your free in-home consultation. Our 13 years of experience and relationships with 60+ premium suppliers allow us to pass 5–35% in savings directly to you. <a href="/contact/#inquiry-form">Fill out our inquiry form</a> to schedule your consultation today.',
       order: 1,
       hidden: false
     },
@@ -92,7 +92,7 @@
     {
       id: 'faq-11',
       question: 'Why should I choose B&B Associates Creations over other remodelers?',
-      answer: 'Five reasons: 25 Years with 1,200+ Flawless Projects, 180+ Verified 5-Star Reviews, Family-Owned with No Subcontractors, 5-35% Savings Passed to You through 60+ premium suppliers, and 5–15 Minute Response Time.',
+      answer: 'Five reasons: 13 Years with 1,200+ Flawless Projects, 180+ Verified 5-Star Reviews, Family-Owned with No Subcontractors, 5-35% Savings Passed to You through 60+ premium suppliers, and 5–15 Minute Response Time.',
       order: 11,
       hidden: false
     },

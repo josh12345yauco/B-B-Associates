@@ -12,7 +12,8 @@
      E canonical    one <link rel=canonical> matching the page's own URL
      E h1           exactly one <h1>
      E jsonld       every application/ld+json block parses
-     E legacy-link  no links to /services/kitchen-remodeling/ (redirected)
+     E legacy-link  no links to the old service URLs (now redirected):
+                    /services/luxury-kitchen-remodeling/, /services/custom-bathroom-renovations/
      E bath-phrase  no "Kitchen & Bath Remodeling/Carpenter" (Bath, PA confusion)
      E sitemap      every sitemap <loc> resolves to a file
      W sitemap      every indexable page is in the sitemap
@@ -72,7 +73,7 @@ for (const f of pages) {
   for (const m of all(/<script[^>]+type=["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/gi, html)) {
     try { JSON.parse(m[1]); } catch (e) { err(f, 'jsonld', `JSON-LD does not parse: ${e.message.slice(0, 80)}`); }
   }
-  if (/href=["']\/services\/kitchen-remodeling\/?["']/.test(html)) err(f, 'legacy-link', 'links to redirected /services/kitchen-remodeling/');
+  if (/href=["']\/services\/(luxury-kitchen-remodeling|custom-bathroom-renovations)\/?["']/.test(html)) err(f, 'legacy-link', 'links to a redirected old service URL');
   const bath = all(/Kitchen\s*(?:&|&amp;)\s*Bath\s+(Remodel|Carpent)/g, html);
   if (bath.length) err(f, 'bath-phrase', `"Kitchen & Bath ${bath[0][1]}…" ×${bath.length} (reads as Bath, PA)`);
 
