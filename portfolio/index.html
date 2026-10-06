@@ -624,21 +624,23 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         if (hasAdminOrder) {
           filtered = allVisible;
         } else {
-          // Pinned projects (newest work, flagged `pinned: true` in projects-data.js) always lead, in data order
-          const pinned = allVisible.filter(p => p.pinned);
-          const unpinned = allVisible.filter(p => !p.pinned);
-          // Then the default interleave: video projects first, kitchen/bath alternating
-          const withVideo = unpinned.filter(p => p.video);
-          const withoutVideo = unpinned.filter(p => !p.video);
-          const kitchens = withVideo.filter(p => p.type === 'Kitchen');
-          const bathrooms = withVideo.filter(p => p.type === 'Bathroom');
+          // "All" strictly alternates kitchen, bathroom, kitchen, bathroom ... all the way down.
+          // Within each type the newest work leads: pinned 2026 projects, then projects
+          // with video, then the rest, each group in data order.
+          const rank = p => (p.pinned ? 0 : p.video ? 1 : 2);
+          const byNewest = list => list
+            .map((p, i) => ({ p, i }))
+            .sort((a, b) => rank(a.p) - rank(b.p) || a.i - b.i)
+            .map(x => x.p);
+          const kitchens = byNewest(allVisible.filter(p => p.type === 'Kitchen'));
+          const bathrooms = byNewest(allVisible.filter(p => p.type !== 'Kitchen'));
           const interleaved = [];
-          const maxLen = Math.max(bathrooms.length, kitchens.length);
+          const maxLen = Math.max(kitchens.length, bathrooms.length);
           for (let i = 0; i < maxLen; i++) {
-            if (bathrooms[i]) interleaved.push(bathrooms[i]);
             if (kitchens[i]) interleaved.push(kitchens[i]);
+            if (bathrooms[i]) interleaved.push(bathrooms[i]);
           }
-          filtered = [...pinned, ...interleaved, ...withoutVideo];
+          filtered = interleaved;
         }
       } else {
         filtered = allVisible.filter(p => {

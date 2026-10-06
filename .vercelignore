@@ -6,3 +6,6 @@ docs/
 
 # Internal working documents - never serve these on the public site
 /*.md
+portfolio/YOUTUBE/
+portfolio/bbassociates-*
+portfolio/tools/

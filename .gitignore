@@ -17,3 +17,12 @@ StrengthInCare-Postcard-Final*
 .env
 .env.*
 .superpowers/
+
+# Raw Instagram downloads and YouTube material - source files only, never part of the site.
+# The projects built from them live in portfolio/KITCHENS and portfolio/BATHROOMS.
+portfolio/YOUTUBE/
+portfolio/bbassociates-*-media/
+portfolio/bbassociates-post*/
+portfolio/bbassociates-posts-*-captions.md
+portfolio/BB-FortWashington-Harbor-Vanity-Bath_2026-04-04_DWudUQBCSiN.mp4
+portfolio/tools/
