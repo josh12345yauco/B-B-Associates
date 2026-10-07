@@ -12,8 +12,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <link rel="icon" type="image/png" href="/IMAGES/bandbassociates.png">
   <link rel="apple-touch-icon" href="/IMAGES/bandbassociates.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Luxury Kitchen & Bathroom Remodeling | B&B Associates Creations | Ambler, PA</title>
-  <meta name="description" content="B&B Associates Creations — 13 years of luxury kitchen and bathroom remodeling across Montgomery County, Bucks County, and the Philadelphia Main Line. 1,200+ projects. Free consultation.">
+  <title>Luxury Kitchen &amp; Bathroom Remodeling | B&amp;B Associates Creations</title>
+  <meta name="description" content="13 years of luxury kitchen and bathroom remodeling across Montgomery County, Bucks County and the Main Line. 1,200+ projects. Free consultation.">
   <link rel="canonical" href="https://www.bbassociatesco.com/">
 
   <!-- Open Graph -->
@@ -27,7 +27,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Luxury Kitchen &amp; Bathroom Remodeling | B&amp;B Associates Creations | Ambler, PA">
+  <meta name="twitter:title" content="Luxury Kitchen &amp; Bathroom Remodeling | B&amp;B Associates Creations">
   <meta name="twitter:description" content="13 years. 1,200+ projects. Flawless design-build remodeling across Montgomery County, Bucks County, and the Philadelphia Main Line.">
   <meta name="twitter:image" content="https://www.bbassociatesco.com/IMAGES/Custom-Kitchen-Ambler-Pa.webp">
 
@@ -3793,7 +3793,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       const featuredProjects = featuredIds.map(id => projects.find(p => p.id === id)).filter(Boolean);
       const display = featuredProjects.length >= 6 ? featuredProjects : projects.filter(p=>!p._hidden).slice(0, 6);
       collSlider.innerHTML = display.map(p => `
-        <a href="/portfolio/project/?id=${p.id}" class="collections-card" aria-label="${p.title} — ${p.town}">
+        <a href="${'/portfolio/' + p.id + '/'}" class="collections-card" aria-label="${p.title} — ${p.town}">
           <img src="${p.thumbnail}" alt="${p.style} ${p.type.toLowerCase()} remodel in ${p.town} by B&amp;B Associates Creations" loading="lazy">
           <div class="collections-card-info">
             <p class="collections-card-meta">${p.town} · ${p.type}</p>
@@ -4044,7 +4044,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     carousel.innerHTML = cards.map(function(p){
       var videoSrc = encodePath(p.video);
       var posterSrc = p.thumbnail ? encodePath(p.thumbnail) : '';
-      var projectUrl = '/portfolio/project/?id=' + p.id;
+      var projectUrl = '/portfolio/' + p.id + '/';
       var posterAttr = posterSrc ? ' poster="' + posterSrc + '"' : '';
       return '<a href="' + projectUrl + '" class="recent-project-card">' +
         '<div class="recent-project-img-wrap">' +

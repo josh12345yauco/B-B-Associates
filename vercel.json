@@ -2,6 +2,98 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "redirects": [
     {
+      "source": "/blog/article/",
+      "has": [
+        {
+          "type": "query",
+          "key": "id",
+          "value": "(?<id>[a-z0-9-]+)"
+        }
+      ],
+      "destination": "/blog/:id/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/article",
+      "has": [
+        {
+          "type": "query",
+          "key": "id",
+          "value": "(?<id>[a-z0-9-]+)"
+        }
+      ],
+      "destination": "/blog/:id/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/article/index.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "id",
+          "value": "(?<id>[a-z0-9-]+)"
+        }
+      ],
+      "destination": "/blog/:id/",
+      "permanent": true
+    },
+    {
+      "source": "/portfolio/project/",
+      "has": [
+        {
+          "type": "query",
+          "key": "id",
+          "value": "(?<id>[a-z0-9-]+)"
+        }
+      ],
+      "destination": "/portfolio/:id/",
+      "permanent": true
+    },
+    {
+      "source": "/portfolio/project",
+      "has": [
+        {
+          "type": "query",
+          "key": "id",
+          "value": "(?<id>[a-z0-9-]+)"
+        }
+      ],
+      "destination": "/portfolio/:id/",
+      "permanent": true
+    },
+    {
+      "source": "/portfolio/project/index.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "id",
+          "value": "(?<id>[a-z0-9-]+)"
+        }
+      ],
+      "destination": "/portfolio/:id/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/article/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/article",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/portfolio/project/",
+      "destination": "/portfolio/",
+      "permanent": true
+    },
+    {
+      "source": "/portfolio/project",
+      "destination": "/portfolio/",
+      "permanent": true
+    },
+    {
       "source": "/services/luxury-kitchen-remodeling",
       "destination": "/services/kitchen-remodeling/",
       "permanent": true
@@ -83,7 +175,7 @@
     },
     {
       "source": "/portfolio/project.html",
-      "destination": "/portfolio/project/?id=:id",
+      "destination": "/portfolio/:id/",
       "permanent": true,
       "has": [
         {
@@ -95,7 +187,7 @@
     },
     {
       "source": "/blog/article.html",
-      "destination": "/blog/article/?id=:id",
+      "destination": "/blog/:id/",
       "permanent": true,
       "has": [
         {
@@ -107,7 +199,7 @@
     },
     {
       "source": "/service-areas/article/",
-      "destination": "/blog/article/?id=:id",
+      "destination": "/blog/:id/",
       "permanent": true,
       "has": [
         {
@@ -119,7 +211,7 @@
     },
     {
       "source": "/service-areas/article",
-      "destination": "/blog/article/?id=:id",
+      "destination": "/blog/:id/",
       "permanent": true,
       "has": [
         {
@@ -133,28 +225,6 @@
       "source": "/service-areas/article",
       "destination": "/blog/",
       "permanent": true
-    },
-    {
-      "source": "/blog/article/",
-      "destination": "/blog/",
-      "permanent": false,
-      "missing": [
-        {
-          "type": "query",
-          "key": "id"
-        }
-      ]
-    },
-    {
-      "source": "/portfolio/project/",
-      "destination": "/portfolio/",
-      "permanent": false,
-      "missing": [
-        {
-          "type": "query",
-          "key": "id"
-        }
-      ]
     },
     {
       "source": "/estimator.html",
@@ -413,42 +483,42 @@
     },
     {
       "source": "/how-to-choose-a-kitchen-remodeling-contractor",
-      "destination": "/blog/article/?id=how-to-vet-remodeler-ambler-doylestown",
+      "destination": "/blog/how-to-vet-remodeler-ambler-doylestown/",
       "permanent": true
     },
     {
       "source": "/how-to-choose-a-kitchen-remodeling-contractor/",
-      "destination": "/blog/article/?id=how-to-vet-remodeler-ambler-doylestown",
+      "destination": "/blog/how-to-vet-remodeler-ambler-doylestown/",
       "permanent": true
     },
     {
       "source": "/how-to-prepare-for-a-kitchen-remodel",
-      "destination": "/blog/article/?id=living-through-kitchen-remodel-week-by-week",
+      "destination": "/blog/living-through-kitchen-remodel-week-by-week/",
       "permanent": true
     },
     {
       "source": "/how-to-prepare-for-a-kitchen-remodel/",
-      "destination": "/blog/article/?id=living-through-kitchen-remodel-week-by-week",
+      "destination": "/blog/living-through-kitchen-remodel-week-by-week/",
       "permanent": true
     },
     {
       "source": "/kitchen-island-remodel-ideas",
-      "destination": "/blog/article/?id=kitchen-island-design-ideas",
+      "destination": "/blog/kitchen-island-design-ideas/",
       "permanent": true
     },
     {
       "source": "/kitchen-island-remodel-ideas/",
-      "destination": "/blog/article/?id=kitchen-island-design-ideas",
+      "destination": "/blog/kitchen-island-design-ideas/",
       "permanent": true
     },
     {
       "source": "/kitchen-remodel-checklist",
-      "destination": "/blog/article/?id=kitchen-renovation-timeline",
+      "destination": "/blog/kitchen-renovation-timeline/",
       "permanent": true
     },
     {
       "source": "/kitchen-remodel-checklist/",
-      "destination": "/blog/article/?id=kitchen-renovation-timeline",
+      "destination": "/blog/kitchen-renovation-timeline/",
       "permanent": true
     },
     {
@@ -473,12 +543,12 @@
     },
     {
       "source": "/transform-your-home-kitchen-and-bathroom-design-trends-for-2024",
-      "destination": "/blog/article/?id=kitchen-cabinet-trends-2025",
+      "destination": "/blog/kitchen-cabinet-trends-2025/",
       "permanent": true
     },
     {
       "source": "/transform-your-home-kitchen-and-bathroom-design-trends-for-2024/",
-      "destination": "/blog/article/?id=kitchen-cabinet-trends-2025",
+      "destination": "/blog/kitchen-cabinet-trends-2025/",
       "permanent": true
     },
     {

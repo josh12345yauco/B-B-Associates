@@ -542,7 +542,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       document.querySelector('meta[name="description"]').content =
         `${project.style} ${project.type.toLowerCase()} remodel in ${project.town}. ${project.highlights.slice(0,2).join(', ')}. By B&B Associates Creations.`;
       document.getElementById('canonical').href =
-        `https://www.bbassociatesco.com/portfolio/project/?id=${project.id}`;
+        `https://www.bbassociatesco.com/portfolio/${project.id}/`;
       document.getElementById('og-title').content = document.title;
       document.getElementById('og-description').content = document.querySelector('meta[name="description"]').content;
       document.getElementById('og-image').content = project.images[0];
@@ -714,7 +714,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <h2 id="related-heading" class="headline-reveal" style="font-family:var(--font-display);font-size:var(--text-h2);color:var(--color-white);font-weight:var(--weight-light);margin-bottom:0;"><span class="line-wrap"><span class="line-inner">You Might Also Like</span></span></h2>
             <div class="related-grid reveal-group">
               ${related.map(r => `
-                <a href="/portfolio/project/?id=${r.id}" class="project-card" style="display:block;" aria-label="${r.title} — ${r.town}">
+                <a href="${'/portfolio/' + r.id + '/'}" class="project-card" style="display:block;" aria-label="${r.title} — ${r.town}">
                   <img src="${r.thumbnail}" alt="${r.style} ${r.type.toLowerCase()} in ${r.town} by B&amp;B Associates Creations" loading="lazy">
                   <div class="project-card-overlay">
                     <p class="project-card-meta">${r.town} · ${r.year}</p>

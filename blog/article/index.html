@@ -543,7 +543,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       document.title = article.metaTitle || `${article.title} | B&B Associates Creations`;
       document.querySelector('meta[name="description"]').content = article.metaDescription || article.excerpt;
       document.getElementById('canonical').href =
-        `https://www.bbassociatesco.com/blog/article/?id=${article.id}`;
+        `https://www.bbassociatesco.com/blog/${article.id}/`;
       document.getElementById('og-title').content = document.title;
       document.getElementById('og-description').content = article.metaDescription || article.excerpt;
       document.getElementById('og-image').content = article.heroImage;
@@ -624,7 +624,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
       // ── BUILD RELATED SIDEBAR ─────────────────────
       const relatedHtml = relatedArticles.map(r => `
-        <a href="/blog/article/?id=${r.id}" class="sidebar-related-card">
+        <a href="${'/blog/' + r.id + '/'}" class="sidebar-related-card">
           <div class="sidebar-related-img">
             <img src="${r.heroImage}" alt="${r.title}" loading="lazy">
           </div>

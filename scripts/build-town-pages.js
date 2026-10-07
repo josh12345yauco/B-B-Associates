@@ -270,14 +270,14 @@ function buildPage(town, service) {
             <div class="town-faq-answer" role="region"><div class="town-faq-answer-inner">${esc(f.a)}</div></div>
           </div>`).join('\n');
 
-  const projectsHtml = projects.map(p => `          <a href="/portfolio/project/?id=${attr(p.id)}" class="st-project">
+  const projectsHtml = projects.map(p => `          <a href="/portfolio/${attr(p.id)}/" class="st-project">
             <img src="${attr(p.thumbnail)}" alt="${attr(p.title)} — ${attr(p.type.toLowerCase())} remodel by B&amp;B Associates Creations" loading="lazy" width="800" height="600">
             <p class="st-project-title">${esc(p.title)}</p>
             <p class="st-project-meta">${esc([p.style, p.duration, p.investment].filter(Boolean).join(' · '))}</p>
           </a>`).join('\n');
 
   const articlesHtml = articles.length ? `        <div class="st-links" style="margin-top:var(--sp-6)">
-${articles.map(a => `          <a href="/blog/article/?id=${attr(a.id)}" class="btn btn-ghost">Read: ${esc(a.title)} →</a>`).join('\n')}
+${articles.map(a => `          <a href="/blog/${attr(a.id)}/" class="btn btn-ghost">Read: ${esc(a.title)} →</a>`).join('\n')}
         </div>` : '';
 
   const tiersHtml = service.costTiers.map(t => `          <div class="st-tier"><p class="st-tier-name">${esc(t.name)}</p><p class="st-tier-range">${esc(t.range)}</p></div>`).join('\n');
@@ -437,7 +437,7 @@ ${articles.length ? `    <section class="st-articles" aria-label="Related articl
       <div class="container" style="text-align:center;">
         <p class="section-label" style="color:var(--color-gold);">From the Journal</p>
         <div class="st-links">
-${articles.map(a => `          <a href="/blog/article/?id=${attr(a.id)}" class="btn btn-ghost">Read: ${esc(a.title)} →</a>`).join('\n')}
+${articles.map(a => `          <a href="/blog/${attr(a.id)}/" class="btn btn-ghost">Read: ${esc(a.title)} →</a>`).join('\n')}
         </div>
       </div>
     </section>
