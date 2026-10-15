@@ -394,7 +394,7 @@ const projects = [
       "Textured flooring for warmth and depth",
       "Brushed nickel hardware throughout"
     ],
-    investment: "$55,000–$75,000",
+    investment: "$65,000–$85,000",
     duration: "7 weeks",
     video: "/portfolio/KITCHENS/B&B - Beth Rubin-kitchen/IMG_2883.mp4",
     images: [
@@ -427,7 +427,7 @@ const projects = [
       "Natural quartzite stone countertops",
       "Large center island with beverage station"
     ],
-    investment: "$90,000–$120,000",
+    investment: "$100,000–$135,000",
     duration: "10 weeks",
     video: "/portfolio/KITCHENS/B&B - Bill Broderick -kitchen/IMG_0811.mp4",
     images: [
@@ -460,7 +460,7 @@ const projects = [
       "Brushed brass fixtures and hardware",
       "Custom island with contrasting finish"
     ],
-    investment: "$60,000–$80,000",
+    investment: "$65,000–$85,000",
     duration: "7 weeks",
     video: "/portfolio/KITCHENS/B&B - Bryn Michaels Kitchen/def2b212633147c9abf52dbc2351495e.mp4",
     images: [
@@ -493,7 +493,7 @@ const projects = [
       "Natural quartz countertop island centerpiece",
       "Off-white and navy two-tone cabinetry"
     ],
-    investment: "$95,000–$130,000",
+    investment: "$100,000–$135,000",
     duration: "12 weeks",
     video: "/portfolio/KITCHENS/B&B - Chris Lee Kitchen /IMG_6560.mp4",
     images: [
@@ -526,7 +526,7 @@ const projects = [
       "Champagne bronze fixtures throughout",
       "Seamless color composition top to bottom"
     ],
-    investment: "$60,000–$80,000",
+    investment: "$65,000–$85,000",
     duration: "7 weeks",
     video: "/portfolio/KITCHENS/B&B - Ferrie-kitchen/IMG_0761.mp4",
     images: [
@@ -559,7 +559,7 @@ const projects = [
       "Maximized storage without visual overwhelm",
       "Seamless kitchen-to-seating integration"
     ],
-    investment: "$50,000–$65,000",
+    investment: "$50,000–$60,000",
     duration: "6 weeks",
     video: null,
     images: [
@@ -624,7 +624,7 @@ const projects = [
       "Contrasting navy island as focal point",
       "Open-concept first-floor integration"
     ],
-    investment: "$55,000–$75,000",
+    investment: "$65,000–$85,000",
     duration: "7 weeks",
     video: "/portfolio/KITCHENS/B&B - Hess Kitchen /IMG_2266.mp4",
     images: [
@@ -692,7 +692,7 @@ const projects = [
       "Contrasting navy island",
       "Cambria countertops throughout"
     ],
-    investment: "$80,000–$110,000",
+    investment: "$85,000–$100,000",
     duration: "9 weeks",
     video: "/portfolio/KITCHENS/B&B - Jeff Kohl Kitchen/IMG_2830.mp4",
     images: [
@@ -725,7 +725,7 @@ const projects = [
       "Black island with butcher block cap",
       "Herringbone brick flooring"
     ],
-    investment: "$85,000–$110,000",
+    investment: "$85,000–$100,000",
     duration: "10 weeks",
     video: "/portfolio/KITCHENS/B&B - Larkin Kitchen/39dfe7ffc6aa44a78f81ed2a0004c83c.mp4",
     images: [
@@ -760,7 +760,7 @@ const projects = [
       "Matte black fixtures and hardware",
       "Glazed backsplash tile detail"
     ],
-    investment: "$55,000–$75,000",
+    investment: "$65,000–$85,000",
     duration: "7 weeks",
     video: "/portfolio/KITCHENS/B&B - McBride Kitchen/e0413d4d418f46dfaf9b586ae3ab6572.mp4",
     images: [
@@ -794,7 +794,7 @@ const projects = [
       "Custom vintage sage cabinetry",
       "Exposed beam preservation"
     ],
-    investment: "$70,000–$90,000",
+    investment: "$65,000–$85,000",
     duration: "9 weeks",
     video: null, /* file missing from server */
     images: [
@@ -827,7 +827,7 @@ const projects = [
       "Zelie multitone textured backsplash",
       "Brushed brass and matte black finishes"
     ],
-    investment: "$90,000–$120,000",
+    investment: "$100,000–$135,000",
     duration: "11 weeks",
     video: "/portfolio/KITCHENS/BB-OLaughlin-kitchen/0f60df4b608b47ed87714df2cdd775f4.mp4",
     images: [
@@ -863,7 +863,7 @@ const projects = [
       "Matte black fixtures and finishes",
       "Textured subway tile backsplash"
     ],
-    investment: "$50,000–$65,000",
+    investment: "$50,000–$60,000",
     duration: "6 weeks",
     video: "/portfolio/KITCHENS/B&B - Oleg Kitchen /IMG_9321.mp4",
     images: [
@@ -899,7 +899,7 @@ const projects = [
       "Cambria quartz countertops",
       "Herringbone backsplash with champagne bronze"
     ],
-    investment: "$75,000–$100,000",
+    investment: "$100,000–$135,000",
     duration: "9 weeks",
     video: "/portfolio/KITCHENS/B&B - Prager-kitchen/fb608850f7a54cb99f98a76a6a90a86c.mp4",
     images: [
@@ -1008,7 +1008,7 @@ const projects = [
       "Waterfall quartz tub surround",
       "Seamless monolithic aesthetic"
     ],
-    investment: "$45,000–$60,000",
+    investment: "$40,000–$55,000",
     duration: "3 weeks",
     video: "/portfolio/BATHROOMS/B&B - Borgia-bathroom/IMG_5410.mp4",
     images: [
@@ -1041,7 +1041,7 @@ const projects = [
       "Walk-in shower with luxury detailing",
       "Timeless proportions and layout"
     ],
-    investment: "$42,000–$58,000",
+    investment: "$40,000–$55,000",
     duration: "4 weeks",
     video: "/portfolio/BATHROOMS/B&B - Bridle hall-bathroom/a3bfa0877c2e49cbb0bbe1b84cd55709.mp4",
     images: [
@@ -1107,7 +1107,7 @@ const projects = [
       "Floating vanity with backlit mirror",
       "Matte black freestanding tub"
     ],
-    investment: "$55,000–$70,000",
+    investment: "$50,000–$65,000",
     duration: "4 weeks",
     video: "/portfolio/BATHROOMS/B&B - Cruz Master/1e48f5e4377d408fafd767d93b2303a9.mp4",
     images: [
@@ -1140,7 +1140,7 @@ const projects = [
       "Recessed flat-screen TV in tile",
       "Immersive modern cave aesthetic"
     ],
-    investment: "$55,000–$75,000",
+    investment: "$50,000–$65,000",
     duration: "4 weeks",
     video: "/portfolio/BATHROOMS/B&B - Emad Master Bath/IMG_6527.mp4",
     images: [
@@ -1173,7 +1173,7 @@ const projects = [
       "Brushed brass fixtures and finishes",
       "Freestanding soaking tub centerpiece"
     ],
-    investment: "$55,000–$70,000",
+    investment: "$50,000–$65,000",
     duration: "4 weeks",
     video: "/portfolio/BATHROOMS/B&B - Garvey-bathroom/dc7b363a48614732be531b1678313c7c.mp4",
     images: [
@@ -1206,7 +1206,7 @@ const projects = [
       "Accent tile from countertop to ceiling",
       "Open-concept bathroom layout"
     ],
-    investment: "$50,000–$68,000",
+    investment: "$40,000–$55,000",
     duration: "4 weeks",
     video: "/portfolio/BATHROOMS/B&B - Giedrycz Master bathroom/IMG_2372.mp4",
     images: [
@@ -1241,7 +1241,7 @@ const projects = [
       "Soft brown-vein Carrera wall tile",
       "Champagne bronze finishes"
     ],
-    investment: "$55,000–$70,000",
+    investment: "$50,000–$65,000",
     duration: "5 weeks",
     video: "/portfolio/BATHROOMS/B&B - Guttridge -bathroom/IMG_6132.mp4",
     images: [
@@ -1274,7 +1274,7 @@ const projects = [
       "Premium fixture selection",
       "Seamless pattern alignment throughout"
     ],
-    investment: "$42,000–$58,000",
+    investment: "$50,000–$65,000",
     duration: "4 weeks",
     video: "/portfolio/BATHROOMS/B&B - Hartka-bathroom/IMG_4014.mp4",
     images: [
@@ -1307,7 +1307,7 @@ const projects = [
       "Soft gray vanity cabinetry",
       "Matte black finishing details"
     ],
-    investment: "$48,000–$62,000",
+    investment: "$40,000–$55,000",
     duration: "4 weeks",
     video: "/portfolio/BATHROOMS/B&B - Hershey-bathroom/6f39490923c640b0a24d68901df0a041.mp4",
     images: [
@@ -1340,7 +1340,7 @@ const projects = [
       "Black vanity as design anchor",
       "Brushed brass finishes throughout"
     ],
-    investment: "$42,000–$58,000",
+    investment: "$40,000–$55,000",
     duration: "3 weeks",
     video: "/portfolio/BATHROOMS/B&B - Kaarby-bathroom/v15025gf0000d5lqd3vog65khasgnfbg.mp4",
     images: [
@@ -1375,7 +1375,7 @@ const projects = [
       "Custom polished wood and quartz vanity",
       "Holistic luxury material composition"
     ],
-    investment: "$65,000–$85,000",
+    investment: "$50,000–$65,000",
     duration: "5 weeks",
     video: "/portfolio/BATHROOMS/B&B - LaShannon Master bathroom/IMG_5481.mp4",
     images: [
@@ -1443,7 +1443,7 @@ const projects = [
       "Large-format textured porcelain",
       "Champagne bronze contrasting finishes"
     ],
-    investment: "$52,000–$68,000",
+    investment: "$50,000–$65,000",
     duration: "4 weeks",
     video: "/portfolio/BATHROOMS/B&B - Pete V-bathroom/63fe5f7a84cb4b5587bd03d3391eab15.mp4",
     images: [
@@ -1477,7 +1477,7 @@ const projects = [
       "Vibrant blue and teal porcelain tile",
       "Brushed brass finishing elements"
     ],
-    investment: "$48,000–$65,000",
+    investment: "$50,000–$65,000",
     duration: "3 weeks",
     video: null,
     images: [
@@ -1515,7 +1515,7 @@ const projects = [
       "Painted mist custom vanity",
       "Brushed brass fixtures throughout"
     ],
-    investment: "$45,000–$60,000",
+    investment: "$40,000–$55,000",
     duration: "3 weeks",
     video: "/portfolio/BATHROOMS/B&B - Sharada -bathroom/IMG_3080.mp4",
     images: [
@@ -1552,7 +1552,7 @@ const projects = [
       "Champagne brass finishes",
       "Bronze vein vanity and countertop harmony"
     ],
-    investment: "$45,000–$60,000",
+    investment: "$50,000–$65,000",
     duration: "3 weeks",
     video: null,
     images: [
@@ -1579,7 +1579,7 @@ const projects = [
       "Kohler brushed brass fixtures",
       "James Martin premium vanity"
     ],
-    investment: "$38,000–$52,000",
+    investment: "$40,000–$55,000",
     duration: "2 weeks",
     video: "/portfolio/BATHROOMS/B&B - Vartanian-bathroom/IMG_1567.mp4",
     images: [

@@ -1307,7 +1307,7 @@
 .project-card-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, rgba(26,28,35,0.92) 0%, rgba(26,28,35,0.4) 50%, transparent 100%);
+  background: linear-gradient(to top, rgba(15,16,21,0.96) 0%, rgba(15,16,21,0.85) 28%, rgba(15,16,21,0.45) 55%, rgba(15,16,21,0.1) 80%, transparent 100%);
   opacity: 0;
   transition: opacity var(--dur-fast) var(--ease-out-quart);
   display: flex;

@@ -22,14 +22,14 @@
     {
       id: 'faq-1',
       question: 'How much does a custom kitchen remodel cost in the Main Line area?',
-      answer: 'Complete custom kitchen renovations in the Main Line, Bucks County, and Montgomery County typically range from $75,000 to $250,000+, depending on square footage, materials selected, and scope of work. At B&B Associates Creations, we provide transparent, itemized estimates during your free in-home consultation. Our 13 years of experience and relationships with 60+ premium suppliers allow us to pass 5–35% in savings directly to you. <a href="/contact/#inquiry-form">Fill out our inquiry form</a> to schedule your consultation today.',
+      answer: 'Complete custom kitchen renovations in the Main Line, Bucks County, and Montgomery County typically range from $50,000 to $135,000, depending mostly on size: small kitchens $50,000–$60,000, medium $65,000–$85,000, large $85,000–$100,000, and very large or full first-floor renovations $100,000–$135,000. At B&B Associates Creations, we provide transparent, itemized estimates during your free in-home consultation. Our 13 years of experience and relationships with 60+ premium suppliers allow us to pass 5–35% in savings directly to you. <a href="/contact/#inquiry-form">Fill out our inquiry form</a> to schedule your consultation today.',
       order: 1,
       hidden: false
     },
     {
       id: 'faq-2',
       question: 'How much does a complete bathroom renovation cost in Bucks County?',
-      answer: 'Luxury bathroom transformations in Bucks County, Montgomery County, and the Main Line typically range from $25,000 to $150,000+ depending on the size (powder room vs. primary suite) and finish selections. Our projects include complete demolition, custom vanities, premium tile work, luxury fixtures, and all plumbing and electrical updates.',
+      answer: 'Luxury bathroom transformations in Bucks County, Montgomery County, and the Main Line typically range from $20,000 to $65,000, depending mostly on size: small hall baths $20,000–$25,000, medium primary baths $35,000–$40,000, large primary baths $40,000–$55,000, and very large baths $50,000–$65,000. Our projects include complete demolition, custom vanities, premium tile work, luxury fixtures, and all plumbing and electrical updates.',
       order: 2,
       hidden: false
     },

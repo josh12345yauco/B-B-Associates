@@ -2,6 +2,26 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "redirects": [
     {
+      "source": "/service-areas/kitchen-remodeling/yardley-pa",
+      "destination": "/service-areas/yardley-pa-remodeling/",
+      "permanent": true
+    },
+    {
+      "source": "/service-areas/kitchen-remodeling/yardley-pa/",
+      "destination": "/service-areas/yardley-pa-remodeling/",
+      "permanent": true
+    },
+    {
+      "source": "/service-areas/bathroom-remodeling/yardley-pa",
+      "destination": "/service-areas/yardley-pa-remodeling/",
+      "permanent": true
+    },
+    {
+      "source": "/service-areas/bathroom-remodeling/yardley-pa/",
+      "destination": "/service-areas/yardley-pa-remodeling/",
+      "permanent": true
+    },
+    {
       "source": "/blog/article/",
       "has": [
         {
@@ -237,11 +257,6 @@
       "permanent": true
     },
     {
-      "source": "/index.html",
-      "destination": "/",
-      "permanent": true
-    },
-    {
       "source": "/index.php",
       "destination": "/",
       "permanent": true
@@ -289,11 +304,6 @@
     {
       "source": "/:slug.html",
       "destination": "/:slug/",
-      "permanent": true
-    },
-    {
-      "source": "/:path*/index.html",
-      "destination": "/:path*/",
       "permanent": true
     },
     {
@@ -564,6 +574,16 @@
     {
       "source": "/transform-your-kitchen-the-definitive-guide-to-selecting-the-perfect-:rest(.*)",
       "destination": "/services/custom-cabinetry/",
+      "permanent": true
+    },
+    {
+      "source": "/index.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/:path*/index.html",
+      "destination": "/:path*/",
       "permanent": true
     }
   ]

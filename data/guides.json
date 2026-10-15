@@ -1,11 +1,11 @@
 {
-  "_readme": "Evergreen guide + service pages built by scripts/build-guide-pages.js (A5/A7, 2026-09-24). Cost figures are the tiers already published on the two service pages; do not add new dollar figures without confirming with B&B.",
+  "_readme": "Evergreen guide + service pages built by scripts/build-guide-pages.js (A5/A7, 2026-09-24). Cost figures come ONLY from data/pricing.json (owner-approved size tiers, Oct 2026).",
   "pages": [
     {
       "slug": "/kitchen-remodel-cost/",
       "kind": "guide",
       "title": "Kitchen Remodel Cost in PA (2026): Montgomery, Bucks, Main Line | B&B",
-      "description": "How much does a kitchen remodel cost in Pennsylvania? 2026 ranges from B&B Associates Creations: $35K–$60K refresh, $60K–$100K custom, $100K+ luxury. Drivers, timelines.",
+      "description": "How much does a kitchen remodel cost in Pennsylvania? 2026 B&B ranges by size: small $50K–$60K, medium $65K–$85K, large $85K–$100K, first floor up to $135K.",
       "h1": "How Much Does a Kitchen Remodel<br>Cost in Pennsylvania?",
       "eyebrow": "2026 Cost Guide · Montgomery County, Bucks County & the Main Line",
       "heroImage": "/IMAGES/kitchen-remodeling-services.webp",
@@ -22,26 +22,31 @@
       ],
       "breadcrumbLabel": "Kitchen Remodel Cost",
       "introH2": "The Short Answer",
-      "answerFirst": "In 2026, a kitchen remodel by B&B Associates Creations in Montgomery County, Bucks County or on the Main Line runs from about $35,000 for a semi-custom refresh to $100,000 and beyond for a full architectural transformation. Most of our clients land between $60,000 and $100,000: full custom cabinetry, premium countertops, new lighting and some layout change. Every estimate is itemized line by line before work begins, and the in-home consultation that produces it is free.",
+      "answerFirst": "In 2026, a kitchen remodel by B&B Associates Creations in Montgomery County, Bucks County or on the Main Line runs $50,000 to $135,000, and the biggest driver is the size of the kitchen. Small kitchens run $50,000–$60,000, medium $65,000–$85,000, large $85,000–$100,000, and very large or full first-floor renovations $100,000–$135,000. Every estimate is itemized line by line before work begins, and the in-home consultation that produces it is free.",
       "tiers": {
         "label": "Investment Guide",
-        "h2": "Kitchen Remodel Cost by Tier",
-        "note": "Ranges reflect typical completed B&B projects and vary with square footage, material selections and structural scope. A precise number comes from your free in-home consultation.",
+        "h2": "Kitchen Remodel Cost by Size",
+        "note": "These are the ranges most of our clients land in. Finish selections and structural work move a project up or down within its size range. A precise number comes from your free in-home consultation.",
         "rows": [
           [
-            "Foundation",
-            "$35,000 – $60,000",
-            "Semi-custom cabinets, quartz counters, tile backsplash, new fixtures and lighting. Layout stays where it is."
+            "Small kitchen",
+            "$50,000 – $60,000",
+            "A compact or galley kitchen: new cabinetry, stone counters, tile backsplash, lighting and fixtures, usually in the existing layout."
           ],
           [
-            "Premium",
-            "$60,000 – $100,000",
-            "Full custom cabinetry, premium stone, lighting design and moderate structural change, such as widening an opening or moving an island."
+            "Medium kitchen",
+            "$65,000 – $85,000",
+            "The typical suburban kitchen: full cabinetry and stone, new lighting plan, an island or peninsula reworked, minor layout changes."
           ],
           [
-            "Signature",
-            "$100,000+",
-            "Architectural-level transformation: walls removed, plumbing and gas relocated, bespoke cabinetry throughout, smart-home integration. Full luxury kitchens with structural work commonly reach $150,000+."
+            "Large kitchen",
+            "$85,000 – $100,000",
+            "Larger rooms with more cabinetry and counter run, an island with seating, upgraded appliances and layout changes such as moving a sink or range."
+          ],
+          [
+            "Very large / full first floor",
+            "$100,000 – $135,000",
+            "Kitchens opened to the family and dining rooms: walls removed with structural beams, plumbing and gas relocated, cabinetry throughout the first floor."
           ]
         ]
       },
@@ -50,7 +55,7 @@
           "h2": "What Actually Drives the Price",
           "paragraphs": [
             "Cabinetry is almost always the largest single line on a kitchen estimate, and it is the line with the widest range. Premium semi-custom cabinetry covers most luxury kitchens beautifully at 30–50% less than full custom; full custom earns its price when you need non-standard sizes, unusual wood species like hickory or walnut, or inset doors with furniture-grade details.",
-            "The second driver is what moves. Keeping the sink, range and refrigerator where they are keeps plumbing, gas and electrical work to a minimum. Relocating any of them, or opening a wall to the dining room, adds trades, permits and inspections, and that is the difference between the Foundation and Signature tiers more often than the finishes are.",
+            "The second driver is what moves. Keeping the sink, range and refrigerator where they are keeps plumbing, gas and electrical work to a minimum. Relocating any of them, or opening a wall to the dining room, adds trades, permits and inspections, and that moves a project toward the top of its size range more often than the finishes do.",
             "Third is the house itself. Ambler's Victorian-era homes and the 1920s–1950s colonials in Fort Washington and Flourtown often need a panel upgrade, new circuits and plaster repair once the walls open. Bucks County stone homes in Doylestown, New Hope and Newtown bring their own surprises. We assess for these before we quote, which is why our estimates rarely change after demolition."
           ]
         },
@@ -80,15 +85,15 @@
       "faqs": [
         {
           "q": "How much does a kitchen remodel cost in Montgomery County, PA?",
-          "a": "Between $35,000 and $150,000+, with most B&B Associates Creations kitchens in Ambler, Blue Bell, Horsham, Lansdale and Fort Washington falling in the $60,000–$100,000 range for full custom cabinetry, premium countertops and some layout change. A free in-home consultation produces an itemized estimate for your specific kitchen."
+          "a": "Between $50,000 and $135,000, depending mostly on size: small kitchens $50,000–$60,000, medium $65,000–$85,000, large $85,000–$100,000, and very large or full first-floor renovations $100,000–$135,000. This applies to our work in Ambler, Blue Bell, Horsham, Lansdale and Fort Washington. A free in-home consultation produces an itemized number for your kitchen."
         },
         {
           "q": "How much does a kitchen remodel cost in Bucks County or on the Main Line?",
-          "a": "The same tiers apply in Doylestown, Newtown, Yardley, Bryn Mawr, Wayne and Villanova: roughly $35,000–$60,000 for a semi-custom refresh, $60,000–$100,000 for full custom, and $100,000+ for structural, luxury-level work. Older stone homes and estates tend toward the upper tiers because of what the walls contain."
+          "a": "The same size ranges apply in Doylestown, Newtown, Yardley, Bryn Mawr, Wayne and Villanova: $50,000–$60,000 for a small kitchen, $65,000–$85,000 medium, $85,000–$100,000 large, and $100,000–$135,000 for a very large kitchen or full first floor. Older stone homes tend to land higher within their size range because of what the walls contain."
         },
         {
           "q": "Is $50,000 enough for a kitchen remodel?",
-          "a": "Yes, if the layout stays put. $50,000 buys premium semi-custom cabinetry, quartz countertops, a tile backsplash, new lighting and fixtures in most Montgomery and Bucks County kitchens. It generally does not cover moving plumbing or removing walls."
+          "a": "For a small kitchen, yes. Small kitchens run $50,000–$60,000 and include new cabinetry, stone counters, a tile backsplash, lighting and fixtures. Most medium and larger kitchens, or any project that moves walls or plumbing, will land higher."
         },
         {
           "q": "Does the design cost extra?",
@@ -136,7 +141,7 @@
       "slug": "/bathroom-remodel-cost/",
       "kind": "guide",
       "title": "Bathroom Remodel Cost in PA (2026): Montgomery, Bucks, Main Line | B&B",
-      "description": "How much does a bathroom remodel cost in Pennsylvania? 2026 ranges from B&B Associates Creations: $20K–$40K refresh, $40K–$75K full, $75K+ primary suite. Tile, timelines.",
+      "description": "How much does a bathroom remodel cost in Pennsylvania? 2026 B&B ranges by size: hall bath $20K–$25K, primary $35K–$55K, largest suites $50K–$65K.",
       "h1": "How Much Does a Bathroom Remodel<br>Cost in Pennsylvania?",
       "eyebrow": "2026 Cost Guide · Montgomery County, Bucks County & the Main Line",
       "heroImage": "/IMAGES/Custom-Bathroom-Ambler-Pa.webp",
@@ -153,26 +158,31 @@
       ],
       "breadcrumbLabel": "Bathroom Remodel Cost",
       "introH2": "The Short Answer",
-      "answerFirst": "In 2026, a bathroom remodel by B&B Associates Creations in Montgomery County, Bucks County or on the Main Line runs from about $20,000 for a hall bath refresh to $75,000 and beyond for a full primary suite with spa features. Most of our bathrooms land between $40,000 and $75,000: an expanded walk-in tile shower, custom vanity, frameless glass and heated floors. Every estimate is itemized before work starts, and the in-home consultation is free.",
+      "answerFirst": "In 2026, a bathroom remodel by B&B Associates Creations in Montgomery County, Bucks County or on the Main Line runs $20,000 to $65,000, depending mostly on size. A small hall bath runs $20,000–$25,000, a medium primary bath $35,000–$40,000, a large primary bath $40,000–$55,000, and a very large bath $50,000–$65,000. Every estimate is itemized before work starts, and the in-home consultation is free.",
       "tiers": {
         "label": "Investment Guide",
-        "h2": "Bathroom Remodel Cost by Tier",
-        "note": "Ranges reflect typical completed B&B projects and vary with square footage, tile selections, plumbing complexity and finish level. A precise number comes from your free in-home consultation.",
+        "h2": "Bathroom Remodel Cost by Size",
+        "note": "These are the ranges most of our clients land in. Finish selections and layout changes move a project up or down within its size range. A precise number comes from your free in-home consultation.",
         "rows": [
           [
-            "Essential",
-            "$20,000 – $40,000",
-            "New tile, vanity, fixtures and lighting in the existing layout. Hall baths, guest baths and powder rooms usually sit here."
+            "Small hall bath",
+            "$20,000 – $25,000",
+            "Hall, guest or kids' bath: new tile, vanity, fixtures, lighting and a tub or shower, in the existing layout."
           ],
           [
-            "Premium",
-            "$40,000 – $75,000",
-            "Shower expansion or tub-to-shower conversion, custom vanity, frameless glass enclosure, heated floors. The full luxury bathroom in the existing footprint."
+            "Medium primary bath",
+            "$35,000 – $40,000",
+            "A primary bath in its existing footprint: walk-in tile shower, frameless glass, double vanity and new lighting."
           ],
           [
-            "Signature",
-            "$75,000+",
-            "Primary suite transformation: plumbing relocated, walls moved or a closet absorbed, freestanding soaking tub, spa features and bespoke materials throughout."
+            "Large primary bath",
+            "$40,000 – $55,000",
+            "A larger primary bath: expanded shower, freestanding tub, heated floors, custom vanity, sometimes plumbing moved."
+          ],
+          [
+            "Very large bath",
+            "$50,000 – $65,000",
+            "The largest primary suites: layout changes, curbless shower, freestanding tub, heated floors and custom millwork throughout."
           ]
         ]
       },
@@ -180,7 +190,7 @@
         {
           "h2": "What Actually Drives the Price",
           "paragraphs": [
-            "Plumbing that moves. Keeping the toilet, shower and vanity where they are is the single biggest cost control in a bathroom. Relocating a drain in a slab or a second-floor joist bay, or absorbing a closet to enlarge a primary bath the way we did in Yardley, is what pushes a project from Premium to Signature.",
+            "Plumbing that moves. Keeping the toilet, shower and vanity where they are is the single biggest cost control in a bathroom. Relocating a drain in a slab or a second-floor joist bay, or absorbing a closet to enlarge a primary bath the way we did in Yardley, is what pushes a project toward the top of its size range.",
             "Tile is second, and it is where a bathroom is won or lost. Large-format porcelain, natural stone, mosaic accents, curbless showers and custom niches all take more layout, more waterproofing and more skilled hours than a standard tub surround. Our own crews set every surface, which is why homeowners searching for a bathroom remodeler with strong tile reviews end up calling us.",
             "Third is glass and fixtures. Frameless enclosures, thermostatic valves, wall-hung toilets and heated floors are each a few thousand dollars, and together they define the difference between a nice bathroom and one that feels like a hotel."
           ]
@@ -209,15 +219,15 @@
       "faqs": [
         {
           "q": "How much does a bathroom remodel cost in Montgomery County, PA?",
-          "a": "Between $20,000 and $85,000+, with most B&B Associates Creations bathrooms in Ambler, Blue Bell, Horsham and Fort Washington in the $40,000–$75,000 range for a walk-in tile shower, custom vanity, frameless glass and heated floors. A free in-home consultation produces an itemized estimate."
+          "a": "Between $20,000 and $65,000, depending mostly on size: small hall baths $20,000–$25,000, medium primary baths $35,000–$40,000, large primary baths $40,000–$55,000, and very large baths $50,000–$65,000. This applies to our work in Ambler, Blue Bell, Horsham and Fort Washington. A free in-home consultation produces an itemized number for your bathroom."
         },
         {
           "q": "How much does a bathroom remodel cost in Bucks County or on the Main Line?",
-          "a": "The same tiers apply in Doylestown, Newtown, Yardley, Bryn Mawr, Wayne and Villanova: about $20,000–$40,000 for a refresh in the existing layout, $40,000–$75,000 for a full remodel, and $75,000+ for a primary suite with relocated plumbing. Main Line stone homes often sit in the upper tiers."
+          "a": "The same size ranges apply in Doylestown, Newtown, Yardley, Bryn Mawr, Wayne and Villanova: $20,000–$25,000 for a hall bath, $35,000–$40,000 for a medium primary bath, $40,000–$55,000 for a large primary bath and $50,000–$65,000 for the largest suites. Older stone homes tend to land higher within their size range because of the plumbing and plaster behind the walls."
         },
         {
           "q": "How much does a tub-to-shower conversion cost?",
-          "a": "It depends on whether the drain moves. A conversion in the existing footprint with a tiled walk-in shower and frameless glass typically falls in the Premium tier; adding a curbless entry, a bench or relocated plumbing moves it up. We price it line by line after seeing the space."
+          "a": "It depends on whether the drain moves. In a hall bath, a conversion to a tiled walk-in shower with frameless glass usually lands in the $20,000–$25,000 range; in a primary bath, $35,000–$40,000. Adding a curbless entry, a bench or relocated plumbing moves it up within the range. We price it line by line after seeing the space."
         },
         {
           "q": "Why not a one-day bathroom remodel?",
@@ -305,7 +315,7 @@
         {
           "h2": "What Custom Cabinetry Costs",
           "paragraphs": [
-            "Cabinetry is the largest single line in most kitchen estimates. In our Foundation tier ($35,000–$60,000 kitchens) it is premium semi-custom; in Premium and Signature kitchens ($60,000–$100,000+) it is typically full custom with inset doors, specialty woods and interior fittings. Because we buy at trade pricing and install with our own crews, the cabinet line on a B&B estimate is itemized: boxes, doors, finish, hardware and installation each visible.",
+            "Cabinetry is the largest single line in most kitchen estimates. In small and medium kitchens ($50,000–$85,000) it is usually premium semi-custom; in large and very large kitchens ($85,000–$135,000) it is typically full custom with inset doors, specialty woods and interior fittings. Because we buy at trade pricing and install with our own crews, the cabinet line on a B&B estimate is itemized: boxes, doors, finish, hardware and installation each visible.",
             "Cabinet refacing and refinishing are frequent questions from Yardley and Lower Gwynedd. We do not offer them as standalone services; our work is full kitchen and bathroom remodels. If your layout already works and the boxes are sound, we will tell you that plainly rather than sell you a remodel you do not need."
           ]
         }

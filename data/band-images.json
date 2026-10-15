@@ -1,0 +1,13 @@
+{
+  "_readme": "Wide (landscape) photos for the full-width bands on town hub pages, curated by eye. Keyed by county; a town can override with bandImages in data/towns.json.",
+  "Bucks County": {
+    "kitchen": {
+      "project": "kohl-kitchen",
+      "image": "/portfolio/KITCHENS/B&B - Jeff Kohl Kitchen/IMG_2810.jpg"
+    },
+    "bathroom": {
+      "project": "guttridge-bathroom",
+      "image": "/portfolio/BATHROOMS/B&B - Guttridge -bathroom/IMG_6078.jpg"
+    }
+  }
+}

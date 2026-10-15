@@ -37,6 +37,15 @@ const ARTICLES = evalData('blog/articles-data.js', 'ARTICLES');
 const projectById = Object.fromEntries(PROJECTS.map(p => [p.id, p]));
 const articleById = Object.fromEntries(ARTICLES.map(a => [a.id, a]));
 
+
+/* ── Pricing guard: town copy may not quote project totals. Official ranges live in
+   data/pricing.json (owner-approved). Sentences with a figure of $20,000+ are dropped;
+   small sub-costs (wiring, permits) stay. ─────────────────────────────────────────── */
+const bigMoney = t => [...String(t).matchAll(/\$\s?(\d{1,3}(?:,\d{3})+|\d+(?:\.\d+)?\s?[kK])/g)]
+  .some(m => { const v = m[1].replace(/[,\s]/g, '').toLowerCase(); return (v.endsWith('k') ? parseFloat(v) * 1000 : parseFloat(v)) >= 20000; });
+const oldTier = t => /\b(Foundation|Premium|Signature|Essential)\s+(tier|range)|\bour (Foundation|Premium|Signature|Essential)\b|\b(Foundation|Premium|Signature|Essential) (and|or) (Premium|Signature)\b/i.test(t);
+const noTotals = t => String(t).split(/(?<=[.!?])\s+/).filter(x => !bigMoney(x) && !oldTier(x)).join(' ');
+
 /* ── Helpers ─────────────────────────────────────────────────── */
 const esc = s => String(s == null ? '' : s)
   .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
@@ -48,11 +57,11 @@ const fill = (tpl, town, service) => String(tpl)
   .replace(/\{County\}/g, town.county === 'Main Line' ? 'the Main Line' : town.county)
   .replace(/\{Service\}/g, service.name);
 const townBySlug = Object.fromEntries(TOWNS.map(t => [t.slug, t]));
-const pageUrl = (service, town) => `/service-areas/${service.slug}/${town.urlSlug}/`;
+const pageUrl = (service, town) => town.consolidate ? town.generalPage : `/service-areas/${service.slug}/${town.urlSlug}/`;
 const absUrl = p => SITE.origin + p;
 
 function pickFaqs(town, service) {
-  const overrides = (town.content[service.key].faqOverrides || []).map(f => ({ q: f.q, a: f.a }));
+  const overrides = (town.content[service.key].faqOverrides || []).filter(f => !bigMoney(f.a) && !oldTier(f.a)).map(f => ({ q: f.q, a: f.a }));
   const pool = service.faqPool;
   // Rotate the shared pool per town so sibling pages share fewer questions.
   const idx = TOWNS.findIndex(t => t.slug === town.slug);
@@ -247,7 +256,7 @@ function buildPage(town, service) {
   const c = town.content[service.key];
   const isBath = service.key === 'bathroom';
   const title = fill(service.titlePattern, town, service);
-  const description = c.metaDescription || fill(service.metaPattern, town, service);
+  const description = (c.metaDescription && !bigMoney(c.metaDescription)) ? c.metaDescription : fill(service.metaPattern, town, service);
   const ogImage = isBath ? (town.ogImageBath || town.ogImage) : town.ogImage;
   const introImage = isBath ? (town.introImageBath || town.introImage) : town.introImage;
   const faqs = pickFaqs(town, service);
@@ -262,7 +271,7 @@ function buildPage(town, service) {
     .map(l => `<a href="${attr(l.href)}" class="btn btn-ghost">Remodeling in ${esc(l.label)} →</a>`);
 
   const sectionsHtml = c.sections.map(s =>
-    `<h2>${esc(s.h2)}</h2>\n` + s.paragraphs.map(p => `<p>${esc(p)}</p>`).join('\n')
+    `<h2>${esc(s.h2)}</h2>\n` + s.paragraphs.map(noTotals).filter(Boolean).map(p => `<p>${esc(p)}</p>`).join('\n')
   ).join('\n');
 
   const faqHtml = faqs.map(f => `          <div class="town-faq-item">
@@ -376,7 +385,7 @@ ${nav()}
             <div class="headline-reveal"><span class="line-wrap"><span class="line-inner">
               <h2 class="sa-intro-h2">${esc(c.introH2)}</h2>
             </span></span></div>
-            <p class="st-answer">${esc(c.answerFirst)}</p>
+            <p class="st-answer">${esc(noTotals(c.answerFirst))}</p>
             <p class="sa-intro-body">B&amp;B Associates Creations is a family-operated design-build remodeler based in Maple Glen, PA, serving ${esc(town.displayName)} ${esc(town.distancePhrase)}. One team handles design, materials, permits, and construction — with a fully itemized estimate before any contract is signed.</p>
             <div style="display:flex;gap:var(--sp-4);flex-wrap:wrap;">
               <a href="#get-estimate" class="phil-btn phil-btn-fill phil-btn-fill-dark"><div class="phil-fill"></div><span class="phil-label">Request an Estimate</span></a>
@@ -421,7 +430,7 @@ ${service.deliverables.map(d => `              <li>${esc(d)}</li>`).join('\n')}
           </div>
           <div class="town-service-card">
             <h3 class="town-service-h3">Typical ${esc(service.shortName)} Investment</h3>
-            <p class="town-service-body">Sitewide tiers for reference; the ${esc(town.displayName)} ranges above reflect what we see locally. ${esc(service.costNote)}</p>
+            <p class="town-service-body">Typical ranges by size for ${esc(town.displayName)} and the rest of our service area. ${esc(service.costNote)}</p>
             <div class="st-tiers">
 ${tiersHtml}
             </div>
@@ -513,7 +522,7 @@ ${footer()}
 }
 
 /* ── Sitemap upsert ──────────────────────────────────────────── */
-function updateSitemap(urls, marker = '  <!-- Service × Town Pages (generated by scripts/build-town-pages.js) -->', priority = '0.80') {
+function updateSitemap(urls, marker = '  <!-- Service × Town Pages (generated by scripts/build-town-pages.js) -->', priority = '0.80', familyRe = null) {
   let xml = read('sitemap.xml');
   const block = url => `  <url>
     <loc>${absUrl(url)}</loc>
@@ -526,19 +535,14 @@ function updateSitemap(urls, marker = '  <!-- Service × Town Pages (generated b
     const re = new RegExp(`\\s*<url>\\s*<loc>${absUrl(url).replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}</loc>[\\s\\S]*?</url>`, 'g');
     xml = xml.replace(re, '');
   }
-  const insert = `\n${marker}\n${urls.map(block).join('\n')}\n`;
-  const escMarker = marker.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  // Drop every entry in the generated families (so towns that were consolidated disappear),
+  // then re-insert the current set right after the marker. Nothing else in the sitemap is touched.
+  if (familyRe) xml = xml.replace(new RegExp(`\\s*<url>\\s*<loc>[^<]*${familyRe}[^<]*</loc>[\\s\\S]*?</url>`, 'g'), '');
+  const insert = `${marker}\n${urls.map(block).join('\n')}`;
   if (xml.includes(marker)) {
-    // Replace the block in place (marker through the last generated <url> that follows it,
-    // stopping at the next comment or </urlset>) so reruns are diff-free.
-    const start = xml.indexOf(marker);
-    const after = xml.slice(start + marker.length);
-    const nextComment = after.search(/\n\s*<!-- /);
-    const endUrlset = after.search(/\s*<\/urlset>/);
-    const stop = start + marker.length + (nextComment >= 0 && nextComment < endUrlset ? nextComment : endUrlset);
-    xml = xml.slice(0, start) + insert.replace(/^\n/, '').replace(/\n$/, '') + xml.slice(stop);
+    xml = xml.replace(marker, insert);
   } else {
-    xml = xml.replace(/\s*<\/urlset>\s*$/, insert + '</urlset>\n');
+    xml = xml.replace(/\s*<\/urlset>\s*$/, `\n${insert}\n</urlset>\n`);
   }
   xml = xml.replace(/\n{3,}/g, '\n\n');
   fs.writeFileSync(path.join(ROOT, 'sitemap.xml'), xml);
@@ -549,6 +553,7 @@ function main() {
   const written = [];
   for (const service of SERVICES) {
     for (const town of TOWNS) {
+      if (town.consolidate) continue; // merged into town.generalPage by build-town-hubs.js
       const url = pageUrl(service, town);
       const dir = path.join(ROOT, url.slice(1));
       fs.mkdirSync(dir, { recursive: true });
@@ -559,7 +564,7 @@ function main() {
       written.push({ url, changed: prev !== html, bytes: html.length });
     }
   }
-  updateSitemap(written.map(w => w.url));
+  updateSitemap(written.map(w => w.url), undefined, undefined, '/service-areas/(?:kitchen|bathroom)-remodeling/');
   for (const w of written) console.log(`${w.changed ? 'wrote ' : 'same  '} ${w.url} (${w.bytes} bytes)`);
   console.log(`${written.length} pages; sitemap.xml updated (lastmod ${SITE.buildDate}).`);
 }

@@ -1,0 +1,49 @@
+{
+  "_readme": "OFFICIAL B&B pricing, owner-approved 2026-10-15. Single source of truth for every price on the site. Size-based tiers only.",
+  "kitchen": [
+    {
+      "label": "Small kitchen",
+      "range": "$50,000 – $60,000"
+    },
+    {
+      "label": "Medium kitchen",
+      "range": "$65,000 – $85,000"
+    },
+    {
+      "label": "Large kitchen",
+      "range": "$85,000 – $100,000"
+    },
+    {
+      "label": "Very large / full first floor",
+      "range": "$100,000 – $135,000"
+    }
+  ],
+  "bathroom": [
+    {
+      "label": "Small hall bath",
+      "range": "$20,000 – $25,000"
+    },
+    {
+      "label": "Medium primary bath",
+      "range": "$35,000 – $40,000"
+    },
+    {
+      "label": "Large primary bath",
+      "range": "$40,000 – $55,000"
+    },
+    {
+      "label": "Very large bath",
+      "range": "$50,000 – $65,000"
+    }
+  ],
+  "kitchenSummary": "$50,000 to $135,000",
+  "bathroomSummary": "$20,000 to $65,000",
+  "note": "These are the ranges most of our clients land in, based on size. Finish selections move a project up or down within its range. Every estimate is fully itemized before you sign.",
+  "hubTitles": [
+    "{Town}, PA Kitchen & Bathroom Remodeling | B&B Associates Creations",
+    "{Town} Kitchen & Bathroom Remodeling | B&B Associates Creations",
+    "{Town} Kitchen & Bathroom Remodelers | B&B Associates Creations",
+    "{Town} Kitchen & Bathroom Remodels | B&B Associates Creations"
+  ],
+  "hubDescription": "Kitchen and bathroom remodeling in {Town}, PA by a local design-build team. Kitchens from $50k, bathrooms from $20k. Itemized estimates, free consult."
+}
