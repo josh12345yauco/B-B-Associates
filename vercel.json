@@ -292,6 +292,16 @@
       "permanent": true
     },
     {
+      "source": "/index.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/:path*/index.html",
+      "destination": "/:path*/",
+      "permanent": true
+    },
+    {
       "source": "/service-areas/:slug.html",
       "destination": "/service-areas/:slug/",
       "permanent": true
@@ -574,16 +584,6 @@
     {
       "source": "/transform-your-kitchen-the-definitive-guide-to-selecting-the-perfect-:rest(.*)",
       "destination": "/services/custom-cabinetry/",
-      "permanent": true
-    },
-    {
-      "source": "/index.html",
-      "destination": "/",
-      "permanent": true
-    },
-    {
-      "source": "/:path*/index.html",
-      "destination": "/:path*/",
       "permanent": true
     }
   ]
