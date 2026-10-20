@@ -29,23 +29,23 @@
       ],
       "costTiers": [
         {
-          "name": "Small kitchen",
+          "name": "Small",
           "range": "$50,000 – $60,000",
           "desc": ""
         },
         {
-          "name": "Medium kitchen",
-          "range": "$65,000 – $85,000",
+          "name": "Medium",
+          "range": "$60,000 – $75,000",
           "desc": ""
         },
         {
-          "name": "Large kitchen",
-          "range": "$85,000 – $100,000",
+          "name": "Large",
+          "range": "$75,000 – $90,000",
           "desc": ""
         },
         {
-          "name": "Very large / full first floor",
-          "range": "$100,000 – $135,000",
+          "name": "Extra large",
+          "range": "$90,000 – $135,000",
           "desc": ""
         }
       ],
@@ -76,7 +76,7 @@
         {
           "id": "cost",
           "q": "How much does a kitchen remodel cost in {Town}, PA?",
-          "a": "Kitchen remodels in {Town} run $50,000 to $135,000, depending mostly on size: small kitchens $50,000–$60,000, medium $65,000–$85,000, large $85,000–$100,000, and very large or full first-floor renovations $100,000–$135,000. Before any contract is signed, we provide a detailed, line-item estimate covering every cost. A free in-home consultation is the fastest way to get an accurate kitchen remodel cost for your home."
+          "a": "Kitchen remodels in {Town} run $50,000 to $135,000, depending mostly on size: small kitchens $50,000–$60,000, medium $60,000–$75,000, large $75,000–$90,000, and extra-large kitchens $90,000–$135,000. Before any contract is signed, we provide a detailed, line-item estimate covering every cost. A free in-home consultation is the fastest way to get an accurate kitchen remodel cost for your home."
         },
         {
           "id": "timeline",
@@ -168,23 +168,23 @@
       ],
       "costTiers": [
         {
-          "name": "Small hall bath",
+          "name": "Small",
           "range": "$20,000 – $25,000",
           "desc": ""
         },
         {
-          "name": "Medium primary bath",
-          "range": "$35,000 – $40,000",
+          "name": "Medium",
+          "range": "$25,000 – $35,000",
           "desc": ""
         },
         {
-          "name": "Large primary bath",
-          "range": "$40,000 – $55,000",
+          "name": "Large",
+          "range": "$35,000 – $55,000",
           "desc": ""
         },
         {
-          "name": "Very large bath",
-          "range": "$50,000 – $65,000",
+          "name": "Extra large",
+          "range": "$55,000 – $75,000",
           "desc": ""
         }
       ],
@@ -215,7 +215,7 @@
         {
           "id": "cost",
           "q": "How much does a bathroom remodel cost in {Town}, PA?",
-          "a": "Bathroom remodels in the {Town} area run $20,000 to $65,000, depending mostly on size: small hall baths $20,000–$25,000, medium primary baths $35,000–$40,000, large primary baths $40,000–$55,000, and very large baths $50,000–$65,000. You receive a fully itemized, line-item estimate before any work begins, and a free in-home consultation is the best way to get an accurate bathroom remodel cost for your space."
+          "a": "Bathroom remodels in the {Town} area run $20,000 to $75,000, depending mostly on size: small $20,000–$25,000, medium $25,000–$35,000, large $35,000–$55,000, and extra large $55,000–$75,000. You receive a fully itemized, line-item estimate before any work begins, and a free in-home consultation is the best way to get an accurate bathroom remodel cost for your space."
         },
         {
           "id": "timeline",

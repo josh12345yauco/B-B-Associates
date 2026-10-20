@@ -1213,6 +1213,49 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       .lp-compare-table th, .lp-compare-table td { padding: 12px 14px; }
     }
 
+    /* ── INVESTMENT RANGES ───────────────────────────────────── */
+    .lp-invest-section { background: var(--color-bg); color: var(--color-bg); }
+    .lp-invest-header { text-align: center; margin-bottom: 48px; }
+    .lp-invest-header .lp-gold-line { margin: 20px auto; }
+    .lp-invest-grid {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 24px; max-width: 1000px; margin: 0 auto 32px;
+    }
+    .lp-invest-card {
+      background: #ffffff;
+      border: 1px solid rgba(15, 23, 42, 0.1);
+      padding: 40px 36px;
+      transition: border-color 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 4px 24px rgba(15, 23, 42, 0.06);
+    }
+    .lp-invest-card:hover {
+      border-color: var(--color-gold-border);
+      box-shadow: 0 8px 32px rgba(15, 23, 42, 0.1);
+    }
+    .lp-invest-type {
+      font-family: var(--font-sans); font-size: 11px; font-weight: 600;
+      letter-spacing: 0.2em; text-transform: uppercase;
+      color: var(--color-gold); margin-bottom: 16px;
+    }
+    .lp-invest-range {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(28px, 3.5vw, 46px); font-weight: 300;
+      color: #0f172a;
+      line-height: 1.1; margin-bottom: 16px;
+    }
+    .lp-invest-body { font-size: 14px; color: #334155; line-height: 1.7; margin-bottom: 20px; }
+    .lp-invest-projects {
+      font-size: 12px; color: #475569;
+      border-top: 1px solid rgba(15, 23, 42, 0.1);
+      padding-top: 16px; line-height: 1.8;
+    }
+    .lp-invest-projects strong { color: #0f172a; }
+    .lp-invest-cta { text-align: center; }
+    @media(max-width:640px) {
+      .lp-invest-grid { grid-template-columns: 1fr; }
+      .lp-invest-card { padding: 28px 24px; }
+    }
+
     /* ── TEAM SECTION ────────────────────────────────────────── */
     .lp-team-section {
       background: var(--color-bg-2);
@@ -1690,6 +1733,47 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       });
     })();
   </script>
+
+  <!-- ── INVESTMENT RANGES ────────────────────────────────────── -->
+  <section class="lp-invest-section lp-section-full" aria-label="Investment ranges">
+    <div class="lp-section">
+      <div class="lp-invest-header reveal">
+        <p class="lp-eyebrow">Transparent Pricing</p>
+        <h2 class="lp-heading">What Does a B&amp;B Remodel Cost?</h2>
+        <div class="lp-gold-line" style="margin:20px auto;"></div>
+        <p class="lp-subheading" style="margin:0 auto;">Here's what homeowners in our area typically invest, based on the size of the room. Every estimate is fully itemized before you sign.</p>
+      </div>
+      <div class="lp-invest-grid">
+        <div class="lp-invest-card reveal">
+          <p class="lp-invest-type">Kitchen Remodeling</p>
+          <div class="lp-invest-range">$50,000 – $135,000</div>
+          <p class="lp-invest-body">Complete custom kitchen renovations, depending on size, scope, and material selections. Structural work, custom cabinetry, countertops, appliances, lighting, and flooring all included.</p>
+          <div class="lp-invest-projects">
+            <strong>Pricing by size:</strong><br>
+            Small · $50,000 – $60,000<br>
+            Medium · $60,000 – $75,000<br>
+            Large · $75,000 – $90,000<br>
+            Extra large · $90,000 – $135,000
+          </div>
+        </div>
+        <div class="lp-invest-card reveal reveal-delay-1">
+          <p class="lp-invest-type">Bathroom Renovation</p>
+          <div class="lp-invest-range">$20,000 – $75,000</div>
+          <p class="lp-invest-body">Bathroom transformations from hall baths to full suites. Custom tile work, vanities, curbless showers, freestanding tubs, lighting, and all finishes included.</p>
+          <div class="lp-invest-projects">
+            <strong>Pricing by size:</strong><br>
+            Small · $20,000 – $25,000<br>
+            Medium · $25,000 – $35,000<br>
+            Large · $35,000 – $55,000<br>
+            Extra large · $55,000 – $75,000
+          </div>
+        </div>
+      </div>
+      <div class="lp-invest-cta reveal">
+        <a href="#form" class="lp-btn-primary">Get Your Free Estimate →</a>
+      </div>
+    </div>
+  </section>
 
   <!-- ── LEAD FORM ───────────────────────────────────────── -->
   <section class="lp-form-section lp-form-section--light" id="form" aria-label="Request free consultation">

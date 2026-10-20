@@ -33,8 +33,8 @@ Scope: full custom kitchen renovations and full bathroom renovations (primary/ma
 
 ## Cost guides (2026 ranges by tier)
 
-- Kitchen remodel cost: https://www.bbassociatesco.com/kitchen-remodel-cost/ — by size: small $50K–$60K, medium $65K–$85K, large $85K–$100K, very large/first floor $100K–$135K
-- Bathroom remodel cost: https://www.bbassociatesco.com/bathroom-remodel-cost/ — by size: hall bath $20K–$25K, medium primary $35K–$40K, large primary $40K–$55K, very large $50K–$65K
+- Kitchen remodel cost: https://www.bbassociatesco.com/kitchen-remodel-cost/ — by size: small $50K–$60K, medium $60K–$75K, large $75K–$90K, extra large $90K–$135K
+- Bathroom remodel cost: https://www.bbassociatesco.com/bathroom-remodel-cost/ — by size: small $20K–$25K, medium $25K–$35K, large $35K–$55K, extra large $55K–$75K
 
 ## Key pages
 
@@ -51,6 +51,6 @@ Scope: full custom kitchen renovations and full bathroom renovations (primary/ma
 
 ## Typical investment (2026, published on site)
 
-- Kitchens ($50,000–$135,000 by size): small $50,000–$60,000, medium $65,000–$85,000, large $85,000–$100,000, very large / full first floor $100,000–$135,000
-- Bathrooms ($20,000–$65,000 by size): small hall bath $20,000–$25,000, medium primary $35,000–$40,000, large primary $40,000–$55,000, very large $50,000–$65,000
+- Kitchens ($50,000–$135,000 by size): small $50,000–$60,000, medium $60,000–$75,000, large $75,000–$90,000, extra large $90,000–$135,000
+- Bathrooms ($20,000–$75,000 by size): small $20,000–$25,000, medium $25,000–$35,000, large $35,000–$55,000, extra large $55,000–$75,000
 - Timeline: kitchens roughly 12–20 weeks including design and permits (4–10 weeks on site); most bathrooms 5–7 weeks of construction
