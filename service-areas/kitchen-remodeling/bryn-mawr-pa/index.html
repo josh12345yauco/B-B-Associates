@@ -598,6 +598,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .st-articles{padding:var(--sp-8) 0;background:var(--color-bg-2)}
     @media (max-width:900px){.st-tiers{grid-template-columns:1fr}.st-content h2{font-size:var(--text-h4)}.sa-intro-grid{grid-template-columns:1fr !important}}
     @media (max-width:760px){.town-service-thumb{width:160px}.town-form-wrap{max-width:100%;box-sizing:border-box;overflow:hidden;padding:var(--sp-5) var(--sp-3) !important}.town-form-wrap iframe{width:100% !important;max-width:100% !important}}
+  
+    /* town projects strip (scripts/add-town-projects.js) */
+    .tp-section{padding:var(--section-padding-y) 0;background:var(--color-bg-2, #f4f1ec)}
+    .tp-intro{max-width:720px;margin:0 auto;text-align:center}
+    .tp-intro h2{font-family:var(--font-display);font-size:var(--text-h2);font-weight:400;line-height:var(--leading-tight);margin:var(--sp-2, 8px) 0 var(--sp-4, 16px)}
+    .tp-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--sp-5, 24px);margin-top:var(--sp-6, 32px)}
+    .tp-card{display:flex;flex-direction:column;text-decoration:none;color:inherit;border:1px solid var(--color-border-dim, rgba(0,0,0,.12));background:var(--color-bg, #fff);transition:border-color .2s}
+    .tp-card:hover{border-color:var(--color-gold, #b17500)}
+    .tp-card img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover}
+    .tp-meta{font-family:var(--font-sans);font-size:var(--text-label, 12px);letter-spacing:var(--tracking-wide, .08em);text-transform:uppercase;color:var(--color-gold, #b17500);padding:var(--sp-4, 16px) var(--sp-4, 16px) 0;margin:0}
+    .tp-title{font-family:var(--font-display);font-size:var(--text-h4, 22px);font-weight:400;line-height:1.2;padding:var(--sp-2, 8px) var(--sp-4, 16px) 0;margin:0}
+    .tp-desc{font-size:15px;line-height:1.55;color:var(--color-text-dim, #555);padding:var(--sp-2, 8px) var(--sp-4, 16px) var(--sp-4, 16px);margin:0}
+    .tp-more{text-align:center;margin-top:var(--sp-6, 32px)}
+    @media (max-width:900px){.tp-grid{grid-template-columns:1fr}}
   </style>
 </head>
 <body>
@@ -746,6 +760,39 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <!-- PORTFOLIO CAROUSEL (non-clickable, shared block) -->
     <div data-bb-carousel data-eyebrow="From Our Portfolio" data-title="Recent Kitchens &amp; Bathrooms Near Bryn Mawr"></div>
+    <!-- TOWN-PROJECTS:START (scripts/add-town-projects.js) -->
+    <section class="tp-section" aria-label="Kitchen projects near Bryn Mawr">
+      <div class="container">
+        <div class="tp-intro">
+          <p class="section-label" style="color:var(--color-gold);">Our Work Near Bryn Mawr</p>
+          <h2>Real kitchens we've built in and around Bryn Mawr</h2>
+          <p>1 of the projects below are a finished B&amp;B kitchen in Bryn Mawr; the rest are our nearest jobs. Each one has its own page with photos, scope and materials.</p>
+        </div>
+        <div class="tp-grid">
+          <a href="/portfolio/prager-kitchen/" class="tp-card">
+            <img src="/portfolio/KITCHENS/B&amp;B - Prager-kitchen/0DB0D4AE-8BC9-4CF0-B0BF-A4E71397B8DA.jpeg" alt="Contemporary kitchen remodel in Bryn Mawr by B&amp;B Associates Creations" loading="lazy" decoding="async" width="800" height="600">
+            <p class="tp-meta">Bryn Mawr · 2023 · Contemporary</p>
+            <h3 class="tp-title">Custom Walnut Island Kitchen</h3>
+            <p class="tp-desc">A large, meticulously appointed kitchen featuring full custom cabinetry with garage drawers designed for maximum functionality.</p>
+          </a>
+          <a href="/portfolio/hornig-kitchen/" class="tp-card">
+            <img src="/portfolio/KITCHENS/B&amp;B - Hornig-kitchen/250A9B19-812C-4437-A819-2A9F84DEE3FB.jpeg" alt="Contemporary kitchen remodel in Villanova by B&amp;B Associates Creations" loading="lazy" decoding="async" width="800" height="600">
+            <p class="tp-meta">Villanova · about 2 mi away · 2023 · Contemporary</p>
+            <h3 class="tp-title">Stacked Brass &amp; Black Kitchen</h3>
+            <p class="tp-desc">A beautiful kitchen showcasing stacked cabinetry running all the way to the ceiling, finished with a clean crown that completes the architectural statement.</p>
+          </a>
+          <a href="/portfolio/giedrycz-kitchen/" class="tp-card">
+            <img src="/portfolio/KITCHENS/B&amp;B - Giedrycz Kitchen/021A219C-F9C8-4FB0-B564-36FFF126EDCB.jpeg" alt="Contemporary kitchen remodel in Villanova by B&amp;B Associates Creations" loading="lazy" decoding="async" width="800" height="600">
+            <p class="tp-meta">Villanova · about 2 mi away · 2022 · Contemporary</p>
+            <h3 class="tp-title">Navy Arch Custom Kitchen</h3>
+            <p class="tp-desc">A full custom kitchen designed around the signature arched extension by the sink — a structural and aesthetic statement that defines the entire room.</p>
+          </a>
+        </div>
+        <p class="tp-more"><a href="/portfolio/?filter=kitchen" class="btn btn-ghost">See all kitchens in our portfolio →</a></p>
+      </div>
+    </section>
+    <!-- TOWN-PROJECTS:END -->
+
     <section class="st-articles" aria-label="Related articles">
       <div class="container" style="text-align:center;">
         <p class="section-label" style="color:var(--color-gold);">From the Journal</p>

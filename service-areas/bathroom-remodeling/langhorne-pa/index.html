@@ -590,6 +590,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .st-articles{padding:var(--sp-8) 0;background:var(--color-bg-2)}
     @media (max-width:900px){.st-tiers{grid-template-columns:1fr}.st-content h2{font-size:var(--text-h4)}.sa-intro-grid{grid-template-columns:1fr !important}}
     @media (max-width:760px){.town-service-thumb{width:160px}.town-form-wrap{max-width:100%;box-sizing:border-box;overflow:hidden;padding:var(--sp-5) var(--sp-3) !important}.town-form-wrap iframe{width:100% !important;max-width:100% !important}}
+  
+    /* town projects strip (scripts/add-town-projects.js) */
+    .tp-section{padding:var(--section-padding-y) 0;background:var(--color-bg-2, #f4f1ec)}
+    .tp-intro{max-width:720px;margin:0 auto;text-align:center}
+    .tp-intro h2{font-family:var(--font-display);font-size:var(--text-h2);font-weight:400;line-height:var(--leading-tight);margin:var(--sp-2, 8px) 0 var(--sp-4, 16px)}
+    .tp-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--sp-5, 24px);margin-top:var(--sp-6, 32px)}
+    .tp-card{display:flex;flex-direction:column;text-decoration:none;color:inherit;border:1px solid var(--color-border-dim, rgba(0,0,0,.12));background:var(--color-bg, #fff);transition:border-color .2s}
+    .tp-card:hover{border-color:var(--color-gold, #b17500)}
+    .tp-card img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover}
+    .tp-meta{font-family:var(--font-sans);font-size:var(--text-label, 12px);letter-spacing:var(--tracking-wide, .08em);text-transform:uppercase;color:var(--color-gold, #b17500);padding:var(--sp-4, 16px) var(--sp-4, 16px) 0;margin:0}
+    .tp-title{font-family:var(--font-display);font-size:var(--text-h4, 22px);font-weight:400;line-height:1.2;padding:var(--sp-2, 8px) var(--sp-4, 16px) 0;margin:0}
+    .tp-desc{font-size:15px;line-height:1.55;color:var(--color-text-dim, #555);padding:var(--sp-2, 8px) var(--sp-4, 16px) var(--sp-4, 16px);margin:0}
+    .tp-more{text-align:center;margin-top:var(--sp-6, 32px)}
+    @media (max-width:900px){.tp-grid{grid-template-columns:1fr}}
   </style>
 </head>
 <body>
@@ -738,6 +752,39 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <!-- PORTFOLIO CAROUSEL (non-clickable, shared block) -->
     <div data-bb-carousel data-eyebrow="From Our Portfolio" data-title="Recent Kitchens &amp; Bathrooms Near Langhorne"></div>
+    <!-- TOWN-PROJECTS:START (scripts/add-town-projects.js) -->
+    <section class="tp-section" aria-label="Bathroom projects near Langhorne">
+      <div class="container">
+        <div class="tp-intro">
+          <p class="section-label" style="color:var(--color-gold);">Our Work Near Langhorne</p>
+          <h2>Real bathrooms we've built in and around Langhorne</h2>
+          <p>1 of the projects below are a finished B&amp;B bathroom in Langhorne; the rest are our nearest jobs. Each one has its own page with photos, scope and materials.</p>
+        </div>
+        <div class="tp-grid">
+          <a href="/portfolio/sharada-bathroom/" class="tp-card">
+            <img src="/portfolio/BATHROOMS/B&amp;B - Sharada -bathroom/1C191061-9F5B-4F6C-9AA5-89F710D2B392.jpeg" alt="Contemporary bathroom remodel in Langhorne by B&amp;B Associates Creations" loading="lazy" decoding="async" width="800" height="600">
+            <p class="tp-meta">Langhorne · 2023 · Contemporary</p>
+            <h3 class="tp-title">Exotic Tile Wood Plank Bathroom</h3>
+            <p class="tp-desc">A bathroom of rich material contrasts, anchored by textured exotic tile on the walls that delivers bold visual energy and character.</p>
+          </a>
+          <a href="/portfolio/guttridge-bathroom/" class="tp-card">
+            <img src="/portfolio/BATHROOMS/B&amp;B - Guttridge -bathroom/IMG_6078.jpg" alt="Transitional bathroom remodel in Newtown by B&amp;B Associates Creations" loading="lazy" decoding="async" width="800" height="600">
+            <p class="tp-meta">Newtown · about 4 mi away · 2023 · Transitional</p>
+            <h3 class="tp-title">Spa &amp; Laundry Master Bath</h3>
+            <p class="tp-desc">A practical master bathroom redesigned with intelligence and elegance to incorporate a full laundry area within the space — a rare and highly functional integration that required careful planning and expert execution.</p>
+          </a>
+          <a href="/portfolio/odonnell-bathroom/" class="tp-card">
+            <img src="/portfolio/BATHROOMS/BB-ODonnell-bathroom/085E5B7F-C0C3-4C1C-BCE2-B92BB2D4EF3C.jpeg" alt="Contemporary bathroom remodel in Newtown by B&amp;B Associates Creations" loading="lazy" decoding="async" width="800" height="600">
+            <p class="tp-meta">Newtown · about 4 mi away · 2022 · Contemporary</p>
+            <h3 class="tp-title">Exotic Coastal Teal Bathroom</h3>
+            <p class="tp-desc">An exotic coastal bathroom accomplished through the powerful contrast of soft wood grains and vibrant blue-and-teal stone.</p>
+          </a>
+        </div>
+        <p class="tp-more"><a href="/portfolio/?filter=bathroom" class="btn btn-ghost">See all bathrooms in our portfolio →</a></p>
+      </div>
+    </section>
+    <!-- TOWN-PROJECTS:END -->
+
     <section class="st-articles" aria-label="Related articles">
       <div class="container" style="text-align:center;">
         <p class="section-label" style="color:var(--color-gold);">From the Journal</p>

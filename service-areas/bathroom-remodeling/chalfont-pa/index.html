@@ -590,6 +590,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .st-articles{padding:var(--sp-8) 0;background:var(--color-bg-2)}
     @media (max-width:900px){.st-tiers{grid-template-columns:1fr}.st-content h2{font-size:var(--text-h4)}.sa-intro-grid{grid-template-columns:1fr !important}}
     @media (max-width:760px){.town-service-thumb{width:160px}.town-form-wrap{max-width:100%;box-sizing:border-box;overflow:hidden;padding:var(--sp-5) var(--sp-3) !important}.town-form-wrap iframe{width:100% !important;max-width:100% !important}}
+  
+    /* town projects strip (scripts/add-town-projects.js) */
+    .tp-section{padding:var(--section-padding-y) 0;background:var(--color-bg-2, #f4f1ec)}
+    .tp-intro{max-width:720px;margin:0 auto;text-align:center}
+    .tp-intro h2{font-family:var(--font-display);font-size:var(--text-h2);font-weight:400;line-height:var(--leading-tight);margin:var(--sp-2, 8px) 0 var(--sp-4, 16px)}
+    .tp-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--sp-5, 24px);margin-top:var(--sp-6, 32px)}
+    .tp-card{display:flex;flex-direction:column;text-decoration:none;color:inherit;border:1px solid var(--color-border-dim, rgba(0,0,0,.12));background:var(--color-bg, #fff);transition:border-color .2s}
+    .tp-card:hover{border-color:var(--color-gold, #b17500)}
+    .tp-card img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover}
+    .tp-meta{font-family:var(--font-sans);font-size:var(--text-label, 12px);letter-spacing:var(--tracking-wide, .08em);text-transform:uppercase;color:var(--color-gold, #b17500);padding:var(--sp-4, 16px) var(--sp-4, 16px) 0;margin:0}
+    .tp-title{font-family:var(--font-display);font-size:var(--text-h4, 22px);font-weight:400;line-height:1.2;padding:var(--sp-2, 8px) var(--sp-4, 16px) 0;margin:0}
+    .tp-desc{font-size:15px;line-height:1.55;color:var(--color-text-dim, #555);padding:var(--sp-2, 8px) var(--sp-4, 16px) var(--sp-4, 16px);margin:0}
+    .tp-more{text-align:center;margin-top:var(--sp-6, 32px)}
+    @media (max-width:900px){.tp-grid{grid-template-columns:1fr}}
   </style>
 </head>
 <body>
@@ -737,6 +751,39 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <!-- PORTFOLIO CAROUSEL (non-clickable, shared block) -->
     <div data-bb-carousel data-eyebrow="From Our Portfolio" data-title="Recent Kitchens &amp; Bathrooms Near Chalfont"></div>
+    <!-- TOWN-PROJECTS:START (scripts/add-town-projects.js) -->
+    <section class="tp-section" aria-label="Bathroom projects near Chalfont">
+      <div class="container">
+        <div class="tp-intro">
+          <p class="section-label" style="color:var(--color-gold);">Our Work Near Chalfont</p>
+          <h2>The closest B&amp;B bathrooms to Chalfont</h2>
+          <p>We haven't published a bathroom from Chalfont itself yet, so these are our nearest finished projects, with the real town and distance on each. Each one has its own page with photos, scope and materials.</p>
+        </div>
+        <div class="tp-grid">
+          <a href="/portfolio/emad-bathroom/" class="tp-card">
+            <img src="/portfolio/BATHROOMS/B&amp;B - Emad Master Bath/4358B1C2-D2FE-43AB-9E16-DC20F5186ADE.jpeg" alt="Modern bathroom remodel in Doylestown by B&amp;B Associates Creations" loading="lazy" decoding="async" width="800" height="600">
+            <p class="tp-meta">Doylestown · about 4 mi away · 2023 · Modern</p>
+            <h3 class="tp-title">Monochromatic Modern Cave Bath</h3>
+            <p class="tp-desc">This bathroom showcases a floor-to-ceiling monochromatic tile scheme that creates the immersive illusion of a modern cave — dramatic, enveloping, and completely unlike anything conventional.</p>
+          </a>
+          <a href="/portfolio/garvey-bathroom/" class="tp-card">
+            <img src="/portfolio/BATHROOMS/B&amp;B - Garvey-bathroom/55A55375-6991-4E1E-B73A-564EB2AB5E42.jpeg" alt="Contemporary bathroom remodel in Doylestown by B&amp;B Associates Creations" loading="lazy" decoding="async" width="800" height="600">
+            <p class="tp-meta">Doylestown · about 4 mi away · 2022 · Contemporary</p>
+            <h3 class="tp-title">Hexagon Stone Spa Master Bath</h3>
+            <p class="tp-desc">A large master bathroom defined by the luxury of hexagon natural stone tile — a material that brings organic texture and a sense of artisan craftsmanship to every surface it touches.</p>
+          </a>
+          <a href="/portfolio/giedrycz-bathroom/" class="tp-card">
+            <img src="/portfolio/BATHROOMS/B&amp;B - Giedrycz Master bathroom/1CCAA2C7-7DAC-4C75-8F5D-50098700FD18.jpg" alt="Contemporary bathroom remodel in Doylestown by B&amp;B Associates Creations" loading="lazy" decoding="async" width="800" height="600">
+            <p class="tp-meta">Doylestown · about 4 mi away · 2022 · Contemporary</p>
+            <h3 class="tp-title">Zero-Entry Open Concept Bath</h3>
+            <p class="tp-desc">The defining principle of this bathroom was creating a truly open-concept space, enhanced by the seamless zero-entry curbless shower that blurs the boundary between the shower zone and the rest of the room.</p>
+          </a>
+        </div>
+        <p class="tp-more"><a href="/portfolio/?filter=bathroom" class="btn btn-ghost">See all bathrooms in our portfolio →</a></p>
+      </div>
+    </section>
+    <!-- TOWN-PROJECTS:END -->
+
     <section class="st-articles" aria-label="Related articles">
       <div class="container" style="text-align:center;">
         <p class="section-label" style="color:var(--color-gold);">From the Journal</p>

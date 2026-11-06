@@ -598,6 +598,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .st-articles{padding:var(--sp-8) 0;background:var(--color-bg-2)}
     @media (max-width:900px){.st-tiers{grid-template-columns:1fr}.st-content h2{font-size:var(--text-h4)}.sa-intro-grid{grid-template-columns:1fr !important}}
     @media (max-width:760px){.town-service-thumb{width:160px}.town-form-wrap{max-width:100%;box-sizing:border-box;overflow:hidden;padding:var(--sp-5) var(--sp-3) !important}.town-form-wrap iframe{width:100% !important;max-width:100% !important}}
+  
+    /* town projects strip (scripts/add-town-projects.js) */
+    .tp-section{padding:var(--section-padding-y) 0;background:var(--color-bg-2, #f4f1ec)}
+    .tp-intro{max-width:720px;margin:0 auto;text-align:center}
+    .tp-intro h2{font-family:var(--font-display);font-size:var(--text-h2);font-weight:400;line-height:var(--leading-tight);margin:var(--sp-2, 8px) 0 var(--sp-4, 16px)}
+    .tp-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--sp-5, 24px);margin-top:var(--sp-6, 32px)}
+    .tp-card{display:flex;flex-direction:column;text-decoration:none;color:inherit;border:1px solid var(--color-border-dim, rgba(0,0,0,.12));background:var(--color-bg, #fff);transition:border-color .2s}
+    .tp-card:hover{border-color:var(--color-gold, #b17500)}
+    .tp-card img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover}
+    .tp-meta{font-family:var(--font-sans);font-size:var(--text-label, 12px);letter-spacing:var(--tracking-wide, .08em);text-transform:uppercase;color:var(--color-gold, #b17500);padding:var(--sp-4, 16px) var(--sp-4, 16px) 0;margin:0}
+    .tp-title{font-family:var(--font-display);font-size:var(--text-h4, 22px);font-weight:400;line-height:1.2;padding:var(--sp-2, 8px) var(--sp-4, 16px) 0;margin:0}
+    .tp-desc{font-size:15px;line-height:1.55;color:var(--color-text-dim, #555);padding:var(--sp-2, 8px) var(--sp-4, 16px) var(--sp-4, 16px);margin:0}
+    .tp-more{text-align:center;margin-top:var(--sp-6, 32px)}
+    @media (max-width:900px){.tp-grid{grid-template-columns:1fr}}
   </style>
 </head>
 <body>
@@ -746,6 +760,39 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <!-- PORTFOLIO CAROUSEL (non-clickable, shared block) -->
     <div data-bb-carousel data-eyebrow="From Our Portfolio" data-title="Recent Kitchens &amp; Bathrooms Near Newtown"></div>
+    <!-- TOWN-PROJECTS:START (scripts/add-town-projects.js) -->
+    <section class="tp-section" aria-label="Kitchen projects near Newtown">
+      <div class="container">
+        <div class="tp-intro">
+          <p class="section-label" style="color:var(--color-gold);">Our Work Near Newtown</p>
+          <h2>Real kitchens we've built in and around Newtown</h2>
+          <p>1 of the projects below are a finished B&amp;B kitchen in Newtown; the rest are our nearest jobs. Each one has its own page with photos, scope and materials.</p>
+        </div>
+        <div class="tp-grid">
+          <a href="/portfolio/broderick-kitchen/" class="tp-card">
+            <img src="/portfolio/KITCHENS/B&amp;B - Bill Broderick -kitchen/08173010-D148-4016-9EE9-4BBE6DDF4F67.jpeg" alt="Transitional kitchen remodel in Newtown by B&amp;B Associates Creations" loading="lazy" decoding="async" width="800" height="600">
+            <p class="tp-meta">Newtown · 2023 · Transitional</p>
+            <h3 class="tp-title">Open-Concept Cherry Amber Kitchen</h3>
+            <p class="tp-desc">This large kitchen was accomplished with considerable restructuring, including wall removal and enclosing outer exits while redirecting them to adjacent rooms.</p>
+          </a>
+          <a href="/portfolio/peterson-kitchen/" class="tp-card">
+            <img src="/portfolio/KITCHENS/B&amp;B - Njani Peterson Kitchen /13AB3ECD-C8EF-49B0-B794-DB2CE47818B6.jpeg" alt="Farmhouse kitchen remodel in New Hope by B&amp;B Associates Creations" loading="lazy" decoding="async" width="800" height="600">
+            <p class="tp-meta">New Hope · about 9 mi away · 2022 · Farmhouse</p>
+            <h3 class="tp-title">Historic 1700s Farmhouse Kitchen</h3>
+            <p class="tp-desc">A one-of-a-kind project for an original Pennsylvania farmhouse built in the 1700s.</p>
+          </a>
+          <a href="/portfolio/ganescu-kitchen/" class="tp-card">
+            <img src="/portfolio/KITCHENS/B&amp;B - Ganescu Kitchen/063A7109-A4EE-4AF8-9792-B964EFDB7B3F.jpeg" alt="Contemporary kitchen remodel in Warrington by B&amp;B Associates Creations" loading="lazy" decoding="async" width="800" height="600">
+            <p class="tp-meta">Warrington · about 11 mi away · 2022 · Contemporary</p>
+            <h3 class="tp-title">Seamless Storage Kitchen</h3>
+            <p class="tp-desc">The key to this kitchen was storage — and finding a way to maximize capacity without overwhelming the space.</p>
+          </a>
+        </div>
+        <p class="tp-more"><a href="/portfolio/?filter=kitchen" class="btn btn-ghost">See all kitchens in our portfolio →</a></p>
+      </div>
+    </section>
+    <!-- TOWN-PROJECTS:END -->
+
     <section class="st-articles" aria-label="Related articles">
       <div class="container" style="text-align:center;">
         <p class="section-label" style="color:var(--color-gold);">From the Journal</p>

@@ -598,6 +598,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .st-articles{padding:var(--sp-8) 0;background:var(--color-bg-2)}
     @media (max-width:900px){.st-tiers{grid-template-columns:1fr}.st-content h2{font-size:var(--text-h4)}.sa-intro-grid{grid-template-columns:1fr !important}}
     @media (max-width:760px){.town-service-thumb{width:160px}.town-form-wrap{max-width:100%;box-sizing:border-box;overflow:hidden;padding:var(--sp-5) var(--sp-3) !important}.town-form-wrap iframe{width:100% !important;max-width:100% !important}}
+  
+    /* town projects strip (scripts/add-town-projects.js) */
+    .tp-section{padding:var(--section-padding-y) 0;background:var(--color-bg-2, #f4f1ec)}
+    .tp-intro{max-width:720px;margin:0 auto;text-align:center}
+    .tp-intro h2{font-family:var(--font-display);font-size:var(--text-h2);font-weight:400;line-height:var(--leading-tight);margin:var(--sp-2, 8px) 0 var(--sp-4, 16px)}
+    .tp-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--sp-5, 24px);margin-top:var(--sp-6, 32px)}
+    .tp-card{display:flex;flex-direction:column;text-decoration:none;color:inherit;border:1px solid var(--color-border-dim, rgba(0,0,0,.12));background:var(--color-bg, #fff);transition:border-color .2s}
+    .tp-card:hover{border-color:var(--color-gold, #b17500)}
+    .tp-card img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover}
+    .tp-meta{font-family:var(--font-sans);font-size:var(--text-label, 12px);letter-spacing:var(--tracking-wide, .08em);text-transform:uppercase;color:var(--color-gold, #b17500);padding:var(--sp-4, 16px) var(--sp-4, 16px) 0;margin:0}
+    .tp-title{font-family:var(--font-display);font-size:var(--text-h4, 22px);font-weight:400;line-height:1.2;padding:var(--sp-2, 8px) var(--sp-4, 16px) 0;margin:0}
+    .tp-desc{font-size:15px;line-height:1.55;color:var(--color-text-dim, #555);padding:var(--sp-2, 8px) var(--sp-4, 16px) var(--sp-4, 16px);margin:0}
+    .tp-more{text-align:center;margin-top:var(--sp-6, 32px)}
+    @media (max-width:900px){.tp-grid{grid-template-columns:1fr}}
   </style>
 </head>
 <body>
@@ -746,6 +760,39 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <!-- PORTFOLIO CAROUSEL (non-clickable, shared block) -->
     <div data-bb-carousel data-eyebrow="From Our Portfolio" data-title="Recent Kitchens &amp; Bathrooms Near Ambler"></div>
+    <!-- TOWN-PROJECTS:START (scripts/add-town-projects.js) -->
+    <section class="tp-section" aria-label="Kitchen projects near Ambler">
+      <div class="container">
+        <div class="tp-intro">
+          <p class="section-label" style="color:var(--color-gold);">Our Work Near Ambler</p>
+          <h2>Real kitchens we've built in and around Ambler</h2>
+          <p>Every projects below is a finished B&amp;B kitchen in Ambler. Each one has its own page with photos, scope and materials.</p>
+        </div>
+        <div class="tp-grid">
+          <a href="/portfolio/rubin-kitchen/" class="tp-card">
+            <img src="/portfolio/KITCHENS/B&amp;B - Beth Rubin-kitchen/153E1359-5284-48E5-9F68-B497880FF6F7.jpeg" alt="Transitional kitchen remodel in Ambler by B&amp;B Associates Creations" loading="lazy" decoding="async" width="800" height="600">
+            <p class="tp-meta">Ambler · 2023 · Transitional</p>
+            <h3 class="tp-title">Stacked White &amp; Gray Kitchen</h3>
+            <p class="tp-desc">This kitchen is a masterclass in using whites and grays without creating a sterile environment.</p>
+          </a>
+          <a href="/portfolio/olaughlin-kitchen/" class="tp-card">
+            <img src="/portfolio/KITCHENS/BB-OLaughlin-kitchen/056F5D4A-01E4-476B-9D9C-06884681B5C9.jpeg" alt="Transitional kitchen remodel in Ambler by B&amp;B Associates Creations" loading="lazy" decoding="async" width="800" height="600">
+            <p class="tp-meta">Ambler · 2023 · Transitional</p>
+            <h3 class="tp-title">Open-Concept Shaker Kitchen</h3>
+            <p class="tp-desc">A large, open-concept kitchen accomplished by removing adjacent walls and expanding the footprint from the back to the front of the house.</p>
+          </a>
+          <a href="/portfolio/hess-kitchen/" class="tp-card">
+            <img src="/portfolio/KITCHENS/B&amp;B - Hess Kitchen /22A33749-9A97-40C9-9583-3D217973E06D.jpeg" alt="Transitional kitchen remodel in Ambler by B&amp;B Associates Creations" loading="lazy" decoding="async" width="800" height="600">
+            <p class="tp-meta">Ambler · 2022 · Transitional</p>
+            <h3 class="tp-title">Vanilla Island Open Kitchen</h3>
+            <p class="tp-desc">The scope of this project was to eliminate the compartmentalized sensation created by the existing peninsula and separate sitting area.</p>
+          </a>
+        </div>
+        <p class="tp-more"><a href="/portfolio/?filter=kitchen" class="btn btn-ghost">See all kitchens in our portfolio →</a></p>
+      </div>
+    </section>
+    <!-- TOWN-PROJECTS:END -->
+
     <section class="st-articles" aria-label="Related articles">
       <div class="container" style="text-align:center;">
         <p class="section-label" style="color:var(--color-gold);">From the Journal</p>
