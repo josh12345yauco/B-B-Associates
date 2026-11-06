@@ -23,95 +23,47 @@
     },
     {
       "source": "/blog/article/",
-      "has": [
-        {
-          "type": "query",
-          "key": "id",
-          "value": "(?<id>[a-z0-9-]+)"
-        }
-      ],
-      "destination": "/blog/:id/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/article",
-      "has": [
-        {
-          "type": "query",
-          "key": "id",
-          "value": "(?<id>[a-z0-9-]+)"
-        }
-      ],
-      "destination": "/blog/:id/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/article/index.html",
-      "has": [
-        {
-          "type": "query",
-          "key": "id",
-          "value": "(?<id>[a-z0-9-]+)"
-        }
-      ],
-      "destination": "/blog/:id/",
-      "permanent": true
-    },
-    {
-      "source": "/portfolio/project/",
-      "has": [
-        {
-          "type": "query",
-          "key": "id",
-          "value": "(?<id>[a-z0-9-]+)"
-        }
-      ],
-      "destination": "/portfolio/:id/",
-      "permanent": true
-    },
-    {
-      "source": "/portfolio/project",
-      "has": [
-        {
-          "type": "query",
-          "key": "id",
-          "value": "(?<id>[a-z0-9-]+)"
-        }
-      ],
-      "destination": "/portfolio/:id/",
-      "permanent": true
-    },
-    {
-      "source": "/portfolio/project/index.html",
-      "has": [
-        {
-          "type": "query",
-          "key": "id",
-          "value": "(?<id>[a-z0-9-]+)"
-        }
-      ],
-      "destination": "/portfolio/:id/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/article/",
       "destination": "/blog/",
-      "permanent": true
+      "permanent": true,
+      "missing": [
+        {
+          "type": "query",
+          "key": "id"
+        }
+      ]
     },
     {
       "source": "/blog/article",
       "destination": "/blog/",
-      "permanent": true
+      "permanent": true,
+      "missing": [
+        {
+          "type": "query",
+          "key": "id"
+        }
+      ]
     },
     {
       "source": "/portfolio/project/",
       "destination": "/portfolio/",
-      "permanent": true
+      "permanent": true,
+      "missing": [
+        {
+          "type": "query",
+          "key": "id"
+        }
+      ]
     },
     {
       "source": "/portfolio/project",
       "destination": "/portfolio/",
-      "permanent": true
+      "permanent": true,
+      "missing": [
+        {
+          "type": "query",
+          "key": "id"
+        }
+      ]
     },
     {
       "source": "/services/luxury-kitchen-remodeling",
@@ -194,57 +146,15 @@
       "permanent": true
     },
     {
-      "source": "/portfolio/project.html",
-      "destination": "/portfolio/:id/",
-      "permanent": true,
-      "has": [
-        {
-          "type": "query",
-          "key": "id",
-          "value": "(?<id>.+)"
-        }
-      ]
-    },
-    {
-      "source": "/blog/article.html",
-      "destination": "/blog/:id/",
-      "permanent": true,
-      "has": [
-        {
-          "type": "query",
-          "key": "id",
-          "value": "(?<id>.+)"
-        }
-      ]
-    },
-    {
-      "source": "/service-areas/article/",
-      "destination": "/blog/:id/",
-      "permanent": true,
-      "has": [
-        {
-          "type": "query",
-          "key": "id",
-          "value": "(?<id>.+)"
-        }
-      ]
-    },
-    {
-      "source": "/service-areas/article",
-      "destination": "/blog/:id/",
-      "permanent": true,
-      "has": [
-        {
-          "type": "query",
-          "key": "id",
-          "value": "(?<id>.+)"
-        }
-      ]
-    },
-    {
       "source": "/service-areas/article",
       "destination": "/blog/",
-      "permanent": true
+      "permanent": true,
+      "missing": [
+        {
+          "type": "query",
+          "key": "id"
+        }
+      ]
     },
     {
       "source": "/estimator.html",
